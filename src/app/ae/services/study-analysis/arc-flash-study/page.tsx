@@ -3,6 +3,9 @@ import { getServicePageBySlug } from "@/lib/strapi";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 
+// Force dynamic rendering — Strapi is not available at build time on Vercel
+export const dynamic = "force-dynamic";
+
 const PAGE_URL = "https://carelabz.com/ae/services/study-analysis/arc-flash-study";
 
 export async function generateMetadata(): Promise<Metadata> {
