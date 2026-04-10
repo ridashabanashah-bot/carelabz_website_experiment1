@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Metadata } from "next"
+import Image from "next/image"
+import Link from "next/link"
 import {
   Shield,
   Zap,
@@ -14,390 +14,331 @@ import {
   Linkedin,
   Twitter,
   Facebook,
-} from "lucide-react";
-import { StickyNavbar } from "@/components/sticky-navbar";
-import { FaqAccordion, type FAQItem } from "@/components/faq-accordion";
-import { JsonLd } from "@/components/JsonLd";
-import { getServicePageBySlug } from "@/lib/strapi";
+} from "lucide-react"
+import { StickyNavbar } from "@/components/sticky-navbar"
+import { FAQAccordion, type FAQItem } from "@/components/faq-accordion"
+import { JsonLd } from "@/components/json-ld"
 
 /* ------------------------------------------------------------------ */
-/*  TypeScript Interfaces                                              */
+/*  TypeScript Interfaces for CMS Integration                          */
 /* ------------------------------------------------------------------ */
 
 interface TrustBadge {
-  label: string;
-  icon: string;
+  label: string
+  icon: string
 }
 
 interface FeatureCard {
-  icon: "shield" | "zap" | "file-text" | "users";
-  title: string;
-  description: string;
+  icon: "shield" | "zap" | "file-text" | "users"
+  title: string
+  description: string
 }
 
 interface BulletPoint {
-  text: string;
+  text: string
 }
 
 interface ContentSection {
-  eyebrow?: string;
-  heading: string;
-  description: string;
-  bullets?: BulletPoint[];
-  image: string;
-  imageAlt: string;
+  eyebrow?: string
+  heading: string
+  description: string
+  bullets?: BulletPoint[]
+  imageAlt: string
 }
 
 interface ProcessStep {
-  step: string;
-  title: string;
-  description: string;
+  step: string
+  title: string
+  description: string
 }
 
 interface IndustryCard {
-  name: string;
-  image: string;
-  imageAlt: string;
+  name: string
+  imageAlt: string
 }
 
 interface InsightCard {
-  category: string;
-  title: string;
-  excerpt: string;
-  href: string;
-  image: string;
-  imageAlt: string;
+  category: string
+  title: string
+  excerpt: string
+  href: string
+  imageAlt: string
 }
 
 interface FooterLink {
-  label: string;
-  href: string;
+  label: string
+  href: string
 }
 
 interface ContactInfo {
-  address: string;
-  phone: string;
-  email: string;
+  address: string
+  phone: string
+  email: string
 }
 
 interface PageData {
   hero: {
-    eyebrow: string;
-    headline: string;
-    subtext: string;
-    primaryCta: string;
-    secondaryCta: string;
-    image: string;
-    imageAlt: string;
-  };
-  trustBadges: TrustBadge[];
+    eyebrow: string
+    headline: string
+    subtext: string
+    primaryCta: string
+    secondaryCta: string
+  }
+  trustBadges: TrustBadge[]
   challenges: {
-    heading: string;
-    subheading: string;
-    features: FeatureCard[];
-  };
-  safetySection: ContentSection;
-  reportsSection: ContentSection;
+    heading: string
+    subheading: string
+    features: FeatureCard[]
+  }
+  safetySection: ContentSection
+  reportsSection: ContentSection
   riskAssessment: {
-    heading: string;
-    steps: ProcessStep[];
-  };
+    heading: string
+    steps: ProcessStep[]
+  }
   industries: {
-    heading: string;
-    cards: IndustryCard[];
-  };
+    heading: string
+    cards: IndustryCard[]
+  }
   insights: {
-    heading: string;
-    cards: InsightCard[];
-  };
-  faqs: FAQItem[];
+    heading: string
+    cards: InsightCard[]
+  }
+  faqs: FAQItem[]
   cta: {
-    heading: string;
-    subtext: string;
-    primaryCta: string;
-    secondaryCta: string;
-  };
+    heading: string
+    subtext: string
+    primaryCta: string
+    secondaryCta: string
+  }
   footer: {
-    companyBlurb: string;
-    services: FooterLink[];
-    industries: FooterLink[];
-    contact: ContactInfo;
-  };
+    companyBlurb: string
+    services: FooterLink[]
+    industries: FooterLink[]
+    contact: ContactInfo
+  }
 }
 
 /* ------------------------------------------------------------------ */
-/*  Hardcoded Page Content (Phase 1 — Strapi only supplies             */
-/*  title / metaTitle / metaDescription / faqs)                        */
+/*  Page Content Data (wire this to Strapi later)                      */
 /* ------------------------------------------------------------------ */
 
-const FALLBACK_TITLE = "Arc Flash Study & Analysis in Dubai, UAE";
-const FALLBACK_META_TITLE = "Arc Flash Study Dubai UAE | CareLAbz";
-const FALLBACK_META_DESCRIPTION =
-  "Expert arc flash study and analysis services in Dubai UAE. ETAP-based assessments, hazard analysis and compliance for industrial facilities.";
-
-const FALLBACK_FAQS: FAQItem[] = [
-  {
-    question: "What is an arc flash study and why is it required in the UAE?",
-    answer:
-      "An arc flash study is an engineering analysis that calculates the incident energy available at each point in an electrical system where workers may be exposed. It determines arc flash boundaries, hazard risk categories, and required PPE levels. In the UAE, DEWA regulations and international standards such as NFPA 70E and IEEE 1584 require facility owners to assess and mitigate arc flash hazards to protect personnel and ensure regulatory compliance.",
+const PAGE_DATA: PageData = {
+  hero: {
+    eyebrow: "POWER SYSTEM SAFETY",
+    headline: "Arc Flash Study & Analysis in Dubai, UAE",
+    subtext:
+      "Protect your workforce and assets with comprehensive arc flash hazard analysis. ETAP-based assessments, IEEE 1584 compliance, and actionable safety recommendations for industrial facilities.",
+    primaryCta: "Request a Quote",
+    secondaryCta: "Download Brochure",
   },
-  {
-    question: "How long does an arc flash study take in Dubai?",
-    answer:
-      "A typical arc flash study takes between 2 and 6 weeks depending on the size and complexity of the electrical system. The timeline includes on-site data collection, power system modelling in ETAP software, short-circuit and coordination analysis, incident energy calculations, and final report preparation. Larger facilities with multiple substations may require additional time.",
-  },
-  {
-    question: "What does an arc flash study include?",
-    answer:
-      "A complete arc flash study includes on-site data collection of all electrical equipment, single-line diagram verification, short-circuit analysis, protective device coordination study, incident energy calculations at every working point, arc flash hazard labels for panels and switchgear, a detailed engineering report with PPE recommendations, and remediation guidance to reduce incident energy levels where possible.",
-  },
-  {
-    question: "How much does an arc flash study cost in the UAE?",
-    answer:
-      "The cost of an arc flash study depends on the number of panels, switchgear, and substations in your facility, as well as the complexity of the electrical distribution system. CareLAbz provides custom quotes tailored to each project. Contact us for a free consultation and we will assess your requirements and provide a detailed proposal at no obligation.",
-  },
-  {
-    question: "Which industries need arc flash studies in Dubai?",
-    answer:
-      "Arc flash studies are essential for any facility with medium- or low-voltage electrical distribution. Key industries include oil and gas, manufacturing, data centres, hospitals and healthcare facilities, hotels and hospitality, commercial buildings, district cooling plants, and utility substations. Any workplace where personnel interact with energised electrical equipment should have an up-to-date arc flash study.",
-  },
-  {
-    question:
-      "What standards does CareLAbz follow for arc flash studies in UAE?",
-    answer:
-      "CareLAbz follows internationally recognised standards including IEEE 1584 (Guide for Performing Arc-Flash Hazard Calculations), NFPA 70E (Standard for Electrical Safety in the Workplace), and IEC 61482 for protective clothing against thermal hazards of an electric arc. All studies also comply with DEWA requirements and local authority regulations applicable in Dubai and the wider UAE.",
-  },
-];
-
-function buildPageData(overrides: {
-  headline: string;
-  subtext: string;
-  faqs: FAQItem[];
-}): PageData {
-  return {
-    hero: {
-      eyebrow: "POWER SYSTEM SAFETY",
-      headline: overrides.headline,
-      subtext: overrides.subtext,
-      primaryCta: "Request a Quote",
-      secondaryCta: "Download Brochure",
-      image: "/images/hero-arc-flash.jpg",
-      imageAlt:
-        "Electrical engineer performing arc flash safety assessment",
-    },
-    trustBadges: [
-      { label: "DEWA Compliant", icon: "dewa" },
-      { label: "IEEE 1584", icon: "ieee" },
-      { label: "NFPA 70E", icon: "nfpa" },
-      { label: "ETAP Software", icon: "etap" },
-    ],
-    challenges: {
-      heading: "Solving Your Critical Infrastructure Challenges",
-      subheading:
-        "Our engineering expertise helps you identify and mitigate electrical hazards before they become incidents.",
-      features: [
-        {
-          icon: "shield",
-          title: "Hazard Identification",
-          description:
-            "Comprehensive analysis of your electrical system to identify all potential arc flash hazards at every working point.",
-        },
-        {
-          icon: "zap",
-          title: "Incident Energy Calculations",
-          description:
-            "Precise calculations using ETAP software to determine incident energy levels and arc flash boundaries.",
-        },
-        {
-          icon: "file-text",
-          title: "Compliance Documentation",
-          description:
-            "Complete documentation package meeting DEWA, IEEE 1584, and NFPA 70E requirements for audits and inspections.",
-        },
-      ],
-    },
-    safetySection: {
-      eyebrow: "COMPREHENSIVE PROTECTION",
-      heading: "Inventive Support for Elevating Safety",
-      description:
-        "Our arc flash studies provide the foundation for a safer workplace. We combine advanced power system modeling with practical engineering recommendations to reduce risk across your facility.",
-      bullets: [
-        { text: "On-site data collection and system verification" },
-        { text: "Single-line diagram development and validation" },
-        { text: "Short-circuit and protective device coordination" },
-        { text: "PPE category recommendations for each location" },
-        { text: "Arc flash warning labels for all equipment" },
-        { text: "Remediation strategies to reduce incident energy" },
-      ],
-      image: "/images/safety-assessment.jpg",
-      imageAlt: "Engineer performing electrical safety assessment",
-    },
-    reportsSection: {
-      eyebrow: "DETAILED DELIVERABLES",
-      heading: "Arc Flash Reports",
-      description:
-        "Every study culminates in a comprehensive engineering report that serves as your roadmap to electrical safety compliance. Our reports are designed to be actionable, providing clear guidance for facility managers, safety officers, and maintenance teams.",
-      bullets: [
-        { text: "Executive summary with key findings and priorities" },
-        { text: "Incident energy values at each equipment location" },
-        { text: "Arc flash boundary distances and working distances" },
-        { text: "PPE requirements by hazard risk category" },
-        { text: "Equipment labeling specifications per NFPA 70E" },
-        { text: "Recommendations for hazard mitigation" },
-      ],
-      image: "/images/arc-flash-report.jpg",
-      imageAlt: "Arc flash study engineering report documentation",
-    },
-    riskAssessment: {
-      heading: "Arc Flash Risk Assessment",
-      steps: [
-        {
-          step: "01",
-          title: "Data Collection",
-          description:
-            "On-site survey of all electrical equipment including switchgear, panels, transformers, and protective devices.",
-        },
-        {
-          step: "02",
-          title: "System Modeling",
-          description:
-            "Build accurate power system model in ETAP software with verified equipment parameters and configurations.",
-        },
-        {
-          step: "03",
-          title: "Short-Circuit Analysis",
-          description:
-            "Calculate available fault currents at each bus and equipment location throughout the system.",
-        },
-        {
-          step: "04",
-          title: "Coordination Study",
-          description:
-            "Evaluate protective device settings to ensure proper coordination and minimize arc flash duration.",
-        },
-        {
-          step: "05",
-          title: "Energy Calculations",
-          description:
-            "Determine incident energy levels and arc flash boundaries using IEEE 1584 methodology.",
-        },
-        {
-          step: "06",
-          title: "Report & Labels",
-          description:
-            "Deliver comprehensive report with PPE recommendations and compliant arc flash warning labels.",
-        },
-      ],
-    },
-    industries: {
-      heading: "Industries We Empower",
-      cards: [
-        {
-          name: "Oil & Gas",
-          image: "/images/industries/oil-and-gas.jpg",
-          imageAlt: "Oil and gas refinery at sunset",
-        },
-        {
-          name: "Healthcare",
-          image: "/images/industries/healthcare.jpg",
-          imageAlt: "Modern hospital facility",
-        },
-        {
-          name: "Data Centers",
-          image: "/images/industries/data-centers.jpg",
-          imageAlt: "Server room with blue lighting",
-        },
-        {
-          name: "Manufacturing",
-          image: "/images/industries/manufacturing.jpg",
-          imageAlt: "Industrial manufacturing plant",
-        },
-        {
-          name: "Utilities",
-          image: "/images/industries/utilities.jpg",
-          imageAlt: "Electrical utility substation",
-        },
-        {
-          name: "Commercial Real Estate",
-          image: "/images/industries/commercial-real-estate.jpg",
-          imageAlt: "Modern commercial building",
-        },
-        {
-          name: "Education",
-          image: "/images/industries/education.jpg",
-          imageAlt: "University campus building",
-        },
-        {
-          name: "Government",
-          image: "/images/industries/government.jpg",
-          imageAlt: "Government administrative building",
-        },
-      ],
-    },
-    insights: {
-      heading: "Latest Insights",
-      cards: [
-        {
-          category: "Safety Standards",
-          title: "Understanding IEEE 1584-2018 Updates",
-          excerpt:
-            "Key changes in the latest arc flash calculation standard and what they mean for your facility assessments.",
-          href: "/insights/ieee-1584-2018-updates",
-          image: "/images/insights/understanding-ieee-1584-2018.jpg",
-          imageAlt: "IEEE standards documentation",
-        },
-        {
-          category: "Compliance",
-          title: "DEWA Requirements for Arc Flash Studies",
-          excerpt:
-            "A comprehensive guide to meeting Dubai Electricity and Water Authority electrical safety regulations.",
-          href: "/insights/dewa-arc-flash-requirements",
-          image: "/images/insights/dewa-requirements-for-arc-f.jpg",
-          imageAlt: "DEWA compliance checklist",
-        },
-        {
-          category: "Best Practices",
-          title: "Reducing Incident Energy in Your Facility",
-          excerpt:
-            "Practical strategies for lowering arc flash hazard levels through system design and protective device settings.",
-          href: "/insights/reducing-incident-energy",
-          image: "/images/insights/reducing-incident-energy-in.jpg",
-          imageAlt: "Electrical panel with safety equipment",
-        },
-      ],
-    },
-    faqs: overrides.faqs,
-    cta: {
-      heading: "Ready to Make Your Facility Safer?",
-      subtext:
-        "Get expert arc flash analysis and protect your workforce with comprehensive hazard assessments.",
-      primaryCta: "Schedule a Consultation",
-      secondaryCta: "Call Us",
-    },
-    footer: {
-      companyBlurb:
-        "CareLAbz provides professional electrical safety services including arc flash studies, power system analysis, and compliance solutions for industrial and commercial facilities across the UAE.",
-      services: [
-        { label: "Arc Flash Study", href: "/services/arc-flash-study" },
-        { label: "Short Circuit Analysis", href: "/services/short-circuit" },
-        { label: "Coordination Study", href: "/services/coordination" },
-        { label: "Load Flow Analysis", href: "/services/load-flow" },
-        { label: "Power Quality", href: "/services/power-quality" },
-      ],
-      industries: [
-        { label: "Oil & Gas", href: "/industries/oil-gas" },
-        { label: "Healthcare", href: "/industries/healthcare" },
-        { label: "Data Centers", href: "/industries/data-centers" },
-        { label: "Manufacturing", href: "/industries/manufacturing" },
-        { label: "Utilities", href: "/industries/utilities" },
-      ],
-      contact: {
-        address: "Dubai, United Arab Emirates",
-        phone: "+971 4 XXX XXXX",
-        email: "info@carelabz.com",
+  trustBadges: [
+    { label: "DEWA Compliant", icon: "dewa" },
+    { label: "IEEE 1584", icon: "ieee" },
+    { label: "NFPA 70E", icon: "nfpa" },
+    { label: "ETAP Software", icon: "etap" },
+  ],
+  challenges: {
+    heading: "Solving Your Critical Infrastructure Challenges",
+    subheading:
+      "Our engineering expertise helps you identify and mitigate electrical hazards before they become incidents.",
+    features: [
+      {
+        icon: "shield",
+        title: "Hazard Identification",
+        description:
+          "Comprehensive analysis of your electrical system to identify all potential arc flash hazards at every working point.",
       },
+      {
+        icon: "zap",
+        title: "Incident Energy Calculations",
+        description:
+          "Precise calculations using ETAP software to determine incident energy levels and arc flash boundaries.",
+      },
+      {
+        icon: "file-text",
+        title: "Compliance Documentation",
+        description:
+          "Complete documentation package meeting DEWA, IEEE 1584, and NFPA 70E requirements for audits and inspections.",
+      },
+    ],
+  },
+  safetySection: {
+    eyebrow: "COMPREHENSIVE PROTECTION",
+    heading: "Inventive Support for Elevating Safety",
+    description:
+      "Our arc flash studies provide the foundation for a safer workplace. We combine advanced power system modeling with practical engineering recommendations to reduce risk across your facility.",
+    bullets: [
+      { text: "On-site data collection and system verification" },
+      { text: "Single-line diagram development and validation" },
+      { text: "Short-circuit and protective device coordination" },
+      { text: "PPE category recommendations for each location" },
+      { text: "Arc flash warning labels for all equipment" },
+      { text: "Remediation strategies to reduce incident energy" },
+    ],
+    imageAlt: "Engineer performing electrical safety assessment",
+  },
+  reportsSection: {
+    eyebrow: "DETAILED DELIVERABLES",
+    heading: "Arc Flash Reports",
+    description:
+      "Every study culminates in a comprehensive engineering report that serves as your roadmap to electrical safety compliance. Our reports are designed to be actionable, providing clear guidance for facility managers, safety officers, and maintenance teams.",
+    bullets: [
+      { text: "Executive summary with key findings and priorities" },
+      { text: "Incident energy values at each equipment location" },
+      { text: "Arc flash boundary distances and working distances" },
+      { text: "PPE requirements by hazard risk category" },
+      { text: "Equipment labeling specifications per NFPA 70E" },
+      { text: "Recommendations for hazard mitigation" },
+    ],
+    imageAlt: "Arc flash study engineering report documentation",
+  },
+  riskAssessment: {
+    heading: "Arc Flash Risk Assessment",
+    steps: [
+      {
+        step: "01",
+        title: "Data Collection",
+        description:
+          "On-site survey of all electrical equipment including switchgear, panels, transformers, and protective devices.",
+      },
+      {
+        step: "02",
+        title: "System Modeling",
+        description:
+          "Build accurate power system model in ETAP software with verified equipment parameters and configurations.",
+      },
+      {
+        step: "03",
+        title: "Short-Circuit Analysis",
+        description:
+          "Calculate available fault currents at each bus and equipment location throughout the system.",
+      },
+      {
+        step: "04",
+        title: "Coordination Study",
+        description:
+          "Evaluate protective device settings to ensure proper coordination and minimize arc flash duration.",
+      },
+      {
+        step: "05",
+        title: "Energy Calculations",
+        description:
+          "Determine incident energy levels and arc flash boundaries using IEEE 1584 methodology.",
+      },
+      {
+        step: "06",
+        title: "Report & Labels",
+        description:
+          "Deliver comprehensive report with PPE recommendations and compliant arc flash warning labels.",
+      },
+    ],
+  },
+  industries: {
+    heading: "Industries We Empower",
+    cards: [
+      { name: "Oil & Gas", imageAlt: "Oil and gas refinery at sunset" },
+      { name: "Healthcare", imageAlt: "Modern hospital facility" },
+      { name: "Data Centers", imageAlt: "Server room with blue lighting" },
+      { name: "Manufacturing", imageAlt: "Industrial manufacturing plant" },
+      { name: "Utilities", imageAlt: "Electrical utility substation" },
+      { name: "Commercial Real Estate", imageAlt: "Modern commercial building" },
+      { name: "Education", imageAlt: "University campus building" },
+      { name: "Government", imageAlt: "Government administrative building" },
+    ],
+  },
+  insights: {
+    heading: "Latest Insights",
+    cards: [
+      {
+        category: "Safety Standards",
+        title: "Understanding IEEE 1584-2018 Updates",
+        excerpt:
+          "Key changes in the latest arc flash calculation standard and what they mean for your facility assessments.",
+        href: "/insights/ieee-1584-2018-updates",
+        imageAlt: "IEEE standards documentation",
+      },
+      {
+        category: "Compliance",
+        title: "DEWA Requirements for Arc Flash Studies",
+        excerpt:
+          "A comprehensive guide to meeting Dubai Electricity and Water Authority electrical safety regulations.",
+        href: "/insights/dewa-arc-flash-requirements",
+        imageAlt: "DEWA compliance checklist",
+      },
+      {
+        category: "Best Practices",
+        title: "Reducing Incident Energy in Your Facility",
+        excerpt:
+          "Practical strategies for lowering arc flash hazard levels through system design and protective device settings.",
+        href: "/insights/reducing-incident-energy",
+        imageAlt: "Electrical panel with safety equipment",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "What is an arc flash study and why is it required in the UAE?",
+      answer:
+        "An arc flash study is an engineering analysis that calculates the incident energy available at each point in an electrical system where workers may be exposed. It determines arc flash boundaries, hazard risk categories, and required PPE levels. In the UAE, DEWA regulations and international standards such as NFPA 70E and IEEE 1584 require facility owners to assess and mitigate arc flash hazards to protect personnel and ensure regulatory compliance.",
     },
-  };
+    {
+      question: "How long does an arc flash study take in Dubai?",
+      answer:
+        "A typical arc flash study takes between 2 and 6 weeks depending on the size and complexity of the electrical system. The timeline includes on-site data collection, power system modelling in ETAP software, short-circuit and coordination analysis, incident energy calculations, and final report preparation. Larger facilities with multiple substations may require additional time.",
+    },
+    {
+      question: "What does an arc flash study include?",
+      answer:
+        "A complete arc flash study includes on-site data collection of all electrical equipment, single-line diagram verification, short-circuit analysis, protective device coordination study, incident energy calculations at every working point, arc flash hazard labels for panels and switchgear, a detailed engineering report with PPE recommendations, and remediation guidance to reduce incident energy levels where possible.",
+    },
+    {
+      question: "How much does an arc flash study cost in the UAE?",
+      answer:
+        "The cost of an arc flash study depends on the number of panels, switchgear, and substations in your facility, as well as the complexity of the electrical distribution system. CareLAbz provides custom quotes tailored to each project. Contact us for a free consultation and we will assess your requirements and provide a detailed proposal at no obligation.",
+    },
+    {
+      question: "Which industries need arc flash studies in Dubai?",
+      answer:
+        "Arc flash studies are essential for any facility with medium- or low-voltage electrical distribution. Key industries include oil and gas, manufacturing, data centres, hospitals and healthcare facilities, hotels and hospitality, commercial buildings, district cooling plants, and utility substations. Any workplace where personnel interact with energised electrical equipment should have an up-to-date arc flash study.",
+    },
+    {
+      question:
+        "What standards does CareLAbz follow for arc flash studies in UAE?",
+      answer:
+        "CareLAbz follows internationally recognised standards including IEEE 1584 (Guide for Performing Arc-Flash Hazard Calculations), NFPA 70E (Standard for Electrical Safety in the Workplace), and IEC 61482 for protective clothing against thermal hazards of an electric arc. All studies also comply with DEWA requirements and local authority regulations applicable in Dubai and the wider UAE.",
+    },
+  ],
+  cta: {
+    heading: "Ready to Make Your Facility Safer?",
+    subtext:
+      "Get expert arc flash analysis and protect your workforce with comprehensive hazard assessments.",
+    primaryCta: "Schedule a Consultation",
+    secondaryCta: "Call Us",
+  },
+  footer: {
+    companyBlurb:
+      "CareLAbz provides professional electrical safety services including arc flash studies, power system analysis, and compliance solutions for industrial and commercial facilities across the UAE.",
+    services: [
+      { label: "Arc Flash Study", href: "/services/arc-flash-study" },
+      { label: "Short Circuit Analysis", href: "/services/short-circuit" },
+      { label: "Coordination Study", href: "/services/coordination" },
+      { label: "Load Flow Analysis", href: "/services/load-flow" },
+      { label: "Power Quality", href: "/services/power-quality" },
+    ],
+    industries: [
+      { label: "Oil & Gas", href: "/industries/oil-gas" },
+      { label: "Healthcare", href: "/industries/healthcare" },
+      { label: "Data Centers", href: "/industries/data-centers" },
+      { label: "Manufacturing", href: "/industries/manufacturing" },
+      { label: "Utilities", href: "/industries/utilities" },
+    ],
+    contact: {
+      address: "Dubai, United Arab Emirates",
+      phone: "+971 4 XXX XXXX",
+      email: "info@carelabz.com",
+    },
+  },
 }
 
 /* ------------------------------------------------------------------ */
@@ -405,25 +346,15 @@ function buildPageData(overrides: {
 /* ------------------------------------------------------------------ */
 
 const PAGE_URL =
-  "https://carelabz.com/ae/services/study-analysis/arc-flash-study";
+  "https://carelabz.com/ae/services/study-analysis/arc-flash-study"
+const META_TITLE = "Arc Flash Study Dubai UAE | CareLAbz"
+const META_DESCRIPTION =
+  "Expert arc flash study and analysis services in Dubai UAE. ETAP-based assessments, hazard analysis and compliance for industrial facilities."
 
-async function fetchStrapiSafe() {
-  try {
-    return await getServicePageBySlug("arc-flash-study");
-  } catch {
-    return null;
-  }
-}
-
-export async function generateMetadata(): Promise<Metadata> {
-  const strapi = await fetchStrapiSafe();
-  const metaTitle = strapi?.metaTitle || FALLBACK_META_TITLE;
-  const metaDescription =
-    strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
-
+export function generateMetadata(): Metadata {
   return {
-    title: metaTitle,
-    description: metaDescription,
+    title: META_TITLE,
+    description: META_DESCRIPTION,
     keywords: [
       "arc flash study Dubai",
       "arc flash analysis UAE",
@@ -436,18 +367,18 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: PAGE_URL,
     },
     openGraph: {
-      title: metaTitle,
-      description: metaDescription,
+      title: META_TITLE,
+      description: META_DESCRIPTION,
       url: PAGE_URL,
       siteName: "CareLAbz",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: metaTitle,
-      description: metaDescription,
+      title: META_TITLE,
+      description: META_DESCRIPTION,
     },
-  };
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -455,18 +386,18 @@ export async function generateMetadata(): Promise<Metadata> {
 /* ------------------------------------------------------------------ */
 
 function FeatureIcon({ icon }: { icon: FeatureCard["icon"] }) {
-  const iconClass = "w-8 h-8 text-orange-500";
+  const iconClass = "size-8 text-orange-500"
   switch (icon) {
     case "shield":
-      return <Shield className={iconClass} />;
+      return <Shield className={iconClass} />
     case "zap":
-      return <Zap className={iconClass} />;
+      return <Zap className={iconClass} />
     case "file-text":
-      return <FileText className={iconClass} />;
+      return <FileText className={iconClass} />
     case "users":
-      return <Users className={iconClass} />;
+      return <Users className={iconClass} />
     default:
-      return <Shield className={iconClass} />;
+      return <Shield className={iconClass} />
   }
 }
 
@@ -474,70 +405,20 @@ function FeatureIcon({ icon }: { icon: FeatureCard["icon"] }) {
 /*  Section Components                                                 */
 /* ------------------------------------------------------------------ */
 
-function HeroSection({
-  data,
-}: {
-  data: PageData["hero"] & { trustBadges: TrustBadge[] };
-}) {
+function HeroSection({ data }: { data: PageData["hero"] & { trustBadges: TrustBadge[] } }) {
   return (
     <section className="relative bg-navy pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden">
       {/* Circuit pattern background */}
       <div className="absolute inset-0 opacity-10">
-        <svg
-          className="absolute inset-0 h-full w-full"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern
-              id="circuit"
-              x="0"
-              y="0"
-              width="100"
-              height="100"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M0 50h40M60 50h40M50 0v40M50 60v40"
-                stroke="currentColor"
-                strokeWidth="1"
-                fill="none"
-                className="text-white"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="4"
-                fill="currentColor"
-                className="text-orange-500"
-              />
-              <circle
-                cx="0"
-                cy="50"
-                r="2"
-                fill="currentColor"
-                className="text-white"
-              />
-              <circle
-                cx="100"
-                cy="50"
-                r="2"
-                fill="currentColor"
-                className="text-white"
-              />
-              <circle
-                cx="50"
-                cy="0"
-                r="2"
-                fill="currentColor"
-                className="text-white"
-              />
-              <circle
-                cx="50"
-                cy="100"
-                r="2"
-                fill="currentColor"
-                className="text-white"
-              />
+            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <path d="M0 50h40M60 50h40M50 0v40M50 60v40" stroke="currentColor" strokeWidth="1" fill="none" className="text-white" />
+              <circle cx="50" cy="50" r="4" fill="currentColor" className="text-orange-500" />
+              <circle cx="0" cy="50" r="2" fill="currentColor" className="text-white" />
+              <circle cx="100" cy="50" r="2" fill="currentColor" className="text-white" />
+              <circle cx="50" cy="0" r="2" fill="currentColor" className="text-white" />
+              <circle cx="50" cy="100" r="2" fill="currentColor" className="text-white" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#circuit)" />
@@ -554,7 +435,7 @@ function HeroSection({
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 text-balance">
               {data.headline}
             </h1>
-            <p className="hero-subtext text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               {data.subtext}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -579,8 +460,8 @@ function HeroSection({
                   key={badge.label}
                   className="flex flex-col items-center justify-center rounded-lg bg-white/5 border border-white/10 p-4 backdrop-blur-sm"
                 >
-                  <div className="w-10 h-10 mb-2 flex items-center justify-center rounded-full bg-white/10">
-                    <CheckCircle className="w-5 h-5 text-orange-400" />
+                  <div className="size-10 mb-2 flex items-center justify-center rounded-full bg-white/10">
+                    <CheckCircle className="size-5 text-orange-400" />
                   </div>
                   <span className="text-xs font-semibold text-white/90 text-center">
                     {badge.label}
@@ -595,10 +476,9 @@ function HeroSection({
             <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/20 to-orange-500/5 rounded-3xl blur-3xl" />
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800 shadow-2xl">
               <Image
-                src={data.image}
-                alt={data.imageAlt}
+                src="/images/hero-arc-flash.jpg"
+                alt="Electrical engineer performing arc flash safety assessment"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
                 priority
               />
@@ -607,12 +487,12 @@ function HeroSection({
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function ChallengesSection({ data }: { data: PageData["challenges"] }) {
   return (
-    <section className="bg-offWhite py-16 sm:py-24">
+    <section className="bg-off-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-4 text-balance">
@@ -632,18 +512,14 @@ function ChallengesSection({ data }: { data: PageData["challenges"] }) {
               <div className="mb-6 inline-flex items-center justify-center rounded-xl bg-orange-50 p-3 transition-colors group-hover:bg-orange-100">
                 <FeatureIcon icon={feature.icon} />
               </div>
-              <h3 className="text-xl font-bold text-navy mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {feature.description}
-              </p>
+              <h3 className="text-xl font-bold text-navy mb-3">{feature.title}</h3>
+              <p className="text-slate-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function ContentSectionLeft({ data }: { data: ContentSection }) {
@@ -655,10 +531,9 @@ function ContentSectionLeft({ data }: { data: ContentSection }) {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src={data.image}
+                src="/images/safety-assessment.jpg"
                 alt={data.imageAlt}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -681,7 +556,7 @@ function ContentSectionLeft({ data }: { data: ContentSection }) {
               <ul className="space-y-4">
                 {data.bullets.map((bullet, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-orange-500 shrink-0 mt-0.5" />
+                    <CheckCircle className="size-6 text-orange-500 shrink-0 mt-0.5" />
                     <span className="text-slate-700">{bullet.text}</span>
                   </li>
                 ))}
@@ -691,12 +566,12 @@ function ContentSectionLeft({ data }: { data: ContentSection }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function ContentSectionRight({ data }: { data: ContentSection }) {
   return (
-    <section className="bg-offWhite py-16 sm:py-24">
+    <section className="bg-off-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -716,7 +591,7 @@ function ContentSectionRight({ data }: { data: ContentSection }) {
               <ul className="space-y-4">
                 {data.bullets.map((bullet, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-orange-500 shrink-0 mt-0.5" />
+                    <CheckCircle className="size-6 text-orange-500 shrink-0 mt-0.5" />
                     <span className="text-slate-700">{bullet.text}</span>
                   </li>
                 ))}
@@ -728,10 +603,9 @@ function ContentSectionRight({ data }: { data: ContentSection }) {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src={data.image}
+                src="/images/arc-flash-report.jpg"
                 alt={data.imageAlt}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -739,14 +613,10 @@ function ContentSectionRight({ data }: { data: ContentSection }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-function RiskAssessmentSection({
-  data,
-}: {
-  data: PageData["riskAssessment"];
-}) {
+function RiskAssessmentSection({ data }: { data: PageData["riskAssessment"] }) {
   return (
     <section className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -776,7 +646,7 @@ function RiskAssessmentSection({
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function IndustriesSection({ data }: { data: PageData["industries"] }) {
@@ -796,10 +666,9 @@ function IndustriesSection({ data }: { data: PageData["industries"] }) {
               className="group relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer"
             >
               <Image
-                src={card.image}
+                src={`/images/industries/${card.name.toLowerCase().replace(/\s+/g, "-").replace("&", "and")}.jpg`}
                 alt={card.imageAlt}
                 fill
-                sizes="(max-width: 768px) 100vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
@@ -811,12 +680,12 @@ function IndustriesSection({ data }: { data: PageData["industries"] }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function InsightsSection({ data }: { data: PageData["insights"] }) {
   return (
-    <section className="bg-offWhite py-16 sm:py-24">
+    <section className="bg-off-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-4 text-balance">
@@ -832,10 +701,9 @@ function InsightsSection({ data }: { data: PageData["insights"] }) {
             >
               <div className="relative aspect-[16/9] overflow-hidden">
                 <Image
-                  src={card.image}
+                  src={`/images/insights/${card.title.toLowerCase().replace(/\s+/g, "-").slice(0, 30)}.jpg`}
                   alt={card.imageAlt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -854,7 +722,7 @@ function InsightsSection({ data }: { data: PageData["insights"] }) {
                   className="inline-flex items-center text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                 >
                   Read more
-                  <ArrowRight className="ml-1 w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                  <ArrowRight className="ml-1 size-4 transition-transform group-hover/link:translate-x-1" />
                 </Link>
               </div>
             </article>
@@ -862,7 +730,7 @@ function InsightsSection({ data }: { data: PageData["insights"] }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function FAQSection({ faqs }: { faqs: FAQItem[] }) {
@@ -874,15 +742,18 @@ function FAQSection({ faqs }: { faqs: FAQItem[] }) {
             Frequently Asked Questions
           </h2>
         </div>
-        <FaqAccordion faqs={faqs} />
+        <FAQAccordion faqs={faqs} />
       </div>
     </section>
-  );
+  )
 }
 
 function CTABanner({ data }: { data: PageData["cta"] }) {
   return (
-    <section id="contact" className="relative py-16 sm:py-24 overflow-hidden">
+    <section
+      id="contact"
+      className="relative py-16 sm:py-24 overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-navy" />
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">
@@ -902,13 +773,13 @@ function CTABanner({ data }: { data: PageData["cta"] }) {
             href="tel:+97140000000"
             className="inline-flex items-center justify-center rounded-lg border-2 border-white/50 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-500"
           >
-            <Phone className="mr-2 w-5 h-5" />
+            <Phone className="mr-2 size-5" />
             {data.secondaryCta}
           </Link>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function Footer({ data }: { data: PageData["footer"] }) {
@@ -918,10 +789,7 @@ function Footer({ data }: { data: PageData["footer"] }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <Link
-              href="/"
-              className="text-xl font-bold text-white mb-4 inline-block"
-            >
+            <Link href="/" className="text-xl font-bold text-white mb-4 inline-block">
               CareLAbz
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mt-4">
@@ -974,13 +842,11 @@ function Footer({ data }: { data: PageData["footer"] }) {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-orange-400 shrink-0 mt-0.5" />
-                <span className="text-slate-400 text-sm">
-                  {data.contact.address}
-                </span>
+                <MapPin className="size-5 text-orange-400 shrink-0 mt-0.5" />
+                <span className="text-slate-400 text-sm">{data.contact.address}</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-orange-400 shrink-0" />
+                <Phone className="size-5 text-orange-400 shrink-0" />
                 <a
                   href={`tel:${data.contact.phone.replace(/\s/g, "")}`}
                   className="text-slate-400 text-sm hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
@@ -989,7 +855,7 @@ function Footer({ data }: { data: PageData["footer"] }) {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-orange-400 shrink-0" />
+                <Mail className="size-5 text-orange-400 shrink-0" />
                 <a
                   href={`mailto:${data.contact.email}`}
                   className="text-slate-400 text-sm hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
@@ -1027,7 +893,7 @@ function Footer({ data }: { data: PageData["footer"] }) {
                 aria-label="LinkedIn"
                 className="text-slate-500 hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="size-5" />
               </a>
               <a
                 href="https://twitter.com"
@@ -1036,7 +902,7 @@ function Footer({ data }: { data: PageData["footer"] }) {
                 aria-label="Twitter"
                 className="text-slate-500 hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
-                <Twitter className="w-5 h-5" />
+                <Twitter className="size-5" />
               </a>
               <a
                 href="https://facebook.com"
@@ -1045,14 +911,14 @@ function Footer({ data }: { data: PageData["footer"] }) {
                 aria-label="Facebook"
                 className="text-slate-500 hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="size-5" />
               </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 /* ------------------------------------------------------------------ */
@@ -1060,23 +926,13 @@ function Footer({ data }: { data: PageData["footer"] }) {
 /* ------------------------------------------------------------------ */
 
 export default async function ArcFlashStudyPage() {
-  const strapi = await fetchStrapiSafe();
-
-  const headline = strapi?.title || FALLBACK_TITLE;
-  const subtext = strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
-  const faqs: FAQItem[] =
-    strapi?.faqs && strapi.faqs.length > 0
-      ? strapi.faqs.map((f) => ({ question: f.question, answer: f.answer }))
-      : FALLBACK_FAQS;
-
-  const data = buildPageData({ headline, subtext, faqs });
-  const metaDescription = strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
+  const data = PAGE_DATA
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: headline,
-    description: metaDescription,
+    name: "Arc Flash Study & Analysis in Dubai, UAE",
+    description: META_DESCRIPTION,
     url: PAGE_URL,
     provider: {
       "@type": "Organization",
@@ -1087,7 +943,7 @@ export default async function ArcFlashStudyPage() {
       "@type": "Place",
       name: "Dubai, UAE",
     },
-  };
+  }
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -1100,7 +956,7 @@ export default async function ArcFlashStudyPage() {
         text: faq.answer,
       },
     })),
-  };
+  }
 
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
@@ -1113,38 +969,18 @@ export default async function ArcFlashStudyPage() {
       addressLocality: "Dubai",
       addressCountry: "AE",
     },
-  };
+  }
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://carelabz.com/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: "https://carelabz.com/ae/services",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Study & Analysis",
-        item: "https://carelabz.com/ae/services/study-analysis",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Arc Flash Study",
-        item: PAGE_URL,
-      },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://carelabz.com/" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://carelabz.com/ae/services" },
+      { "@type": "ListItem", position: 3, name: "Study & Analysis", item: "https://carelabz.com/ae/services/study-analysis" },
+      { "@type": "ListItem", position: 4, name: "Arc Flash Study", item: PAGE_URL },
     ],
-  };
+  }
 
   return (
     <>
@@ -1156,9 +992,7 @@ export default async function ArcFlashStudyPage() {
       <StickyNavbar />
 
       <main>
-        <HeroSection
-          data={{ ...data.hero, trustBadges: data.trustBadges }}
-        />
+        <HeroSection data={{ ...data.hero, trustBadges: data.trustBadges }} />
         <ChallengesSection data={data.challenges} />
         <ContentSectionLeft data={data.safetySection} />
         <ContentSectionRight data={data.reportsSection} />
@@ -1171,5 +1005,5 @@ export default async function ArcFlashStudyPage() {
 
       <Footer data={data.footer} />
     </>
-  );
+  )
 }

@@ -12,6 +12,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        navy: "#0B1A2F",
+        offWhite: "#F8FAFC",
+        slateCard: "#1E293B",
+        "off-white": "#F8FAFC",
+        "slate-card": "#1E293B",
       },
     },
   },
