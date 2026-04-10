@@ -4,12 +4,12 @@ const nextConfig = {
     return [
       {
         source: "/arc-flash-study-analysis",
-        destination: "/ae/services/study-analysis/arc-flash-study",
+        destination: "/ae/services/study-analysis/arc-flash-study/",
         permanent: true, // 301 redirect
       },
       {
         source: "/arc-flash-study-analysis/",
-        destination: "/ae/services/study-analysis/arc-flash-study",
+        destination: "/ae/services/study-analysis/arc-flash-study/",
         permanent: true, // 301 redirect (trailing slash variant)
       },
     ];

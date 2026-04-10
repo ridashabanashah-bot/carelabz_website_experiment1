@@ -405,7 +405,7 @@ function buildPageData(overrides: {
 /* ------------------------------------------------------------------ */
 
 const PAGE_URL =
-  "https://carelabz.com/ae/services/study-analysis/arc-flash-study";
+  "https://carelabz.com/ae/services/study-analysis/arc-flash-study/";
 
 async function fetchStrapiSafe() {
   try {
@@ -432,8 +432,26 @@ export async function generateMetadata(): Promise<Metadata> {
       "arc flash hazard analysis",
       "NFPA 70E Dubai",
     ],
+    authors: [{ name: "CareLAbz Engineering Team" }],
+    creator: "CareLAbz",
+    publisher: "CareLAbz",
     alternates: {
       canonical: PAGE_URL,
+      languages: {
+        "en-AE": PAGE_URL,
+        "x-default": PAGE_URL,
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
     openGraph: {
       title: metaTitle,
@@ -441,11 +459,20 @@ export async function generateMetadata(): Promise<Metadata> {
       url: PAGE_URL,
       siteName: "CareLAbz",
       type: "website",
+      images: [
+        {
+          url: "/og/arc-flash-study.jpg",
+          width: 1200,
+          height: 630,
+          alt: "CareLAbz Arc Flash Study Services in Dubai UAE",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: metaTitle,
       description: metaDescription,
+      images: ["/og/arc-flash-study.jpg"],
     },
   };
 }
@@ -548,15 +575,64 @@ function HeroSection({
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="text-center lg:text-left">
+            <nav
+              aria-label="Breadcrumb"
+              className="mb-6 text-sm text-slate-300"
+            >
+              <ol className="flex flex-wrap items-center justify-center lg:justify-start gap-x-2 gap-y-1">
+                <li>
+                  <Link
+                    href="/"
+                    className="hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-slate-500">
+                  /
+                </li>
+                <li>
+                  <Link
+                    href="/ae/services/"
+                    className="hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-slate-500">
+                  /
+                </li>
+                <li>
+                  <Link
+                    href="/ae/services/study-analysis/"
+                    className="hover:text-orange-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                  >
+                    Study &amp; Analysis
+                  </Link>
+                </li>
+                <li aria-hidden="true" className="text-slate-500">
+                  /
+                </li>
+                <li aria-current="page" className="text-white">
+                  Arc Flash Study
+                </li>
+              </ol>
+            </nav>
             <span className="inline-block text-xs font-bold tracking-widest text-orange-400 uppercase mb-4">
               {data.eyebrow}
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 text-balance">
               {data.headline}
             </h1>
-            <p className="hero-subtext text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            <p className="hero-subtext text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-4 leading-relaxed">
               {data.subtext}
             </p>
+            <time
+              dateTime="2026-04-10"
+              className="block text-sm text-slate-400 mb-8"
+            >
+              Last updated April 2026
+            </time>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 href="#contact"
@@ -1075,18 +1151,63 @@ export default async function ArcFlashStudyPage() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: headline,
+    name: "Arc Flash Study and Analysis",
+    serviceType: "Arc Flash Hazard Analysis",
     description: metaDescription,
     url: PAGE_URL,
     provider: {
       "@type": "Organization",
       name: "CareLAbz",
       url: "https://carelabz.com",
+      telephone: "+971-4-XXX-XXXX",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Dubai",
+        addressRegion: "Dubai",
+        addressCountry: "AE",
+      },
     },
-    areaServed: {
-      "@type": "Place",
-      name: "Dubai, UAE",
+    areaServed: [
+      { "@type": "Place", name: "Dubai" },
+      { "@type": "Place", name: "United Arab Emirates" },
+    ],
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Industrial and commercial facility operators",
     },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Electrical Safety Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Short Circuit Analysis",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Protective Device Coordination Study",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Power Quality Analysis",
+          },
+        },
+      ],
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".hero-subtext", ".faq-answer"],
+    },
+    datePublished: "2026-04-09",
+    dateModified: "2026-04-10",
   };
 
   const faqJsonLd = {
@@ -1107,12 +1228,16 @@ export default async function ArcFlashStudyPage() {
     "@type": "LocalBusiness",
     name: "CareLAbz",
     url: "https://carelabz.com",
-    telephone: "+971 4 XXX XXXX",
+    telephone: "+971-4-XXX-XXXX",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Business Bay",
       addressLocality: "Dubai",
+      addressRegion: "Dubai",
+      postalCode: "00000",
       addressCountry: "AE",
     },
+    areaServed: "United Arab Emirates",
   };
 
   const breadcrumbJsonLd = {
@@ -1129,13 +1254,13 @@ export default async function ArcFlashStudyPage() {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://carelabz.com/ae/services",
+        item: "https://carelabz.com/ae/services/",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Study & Analysis",
-        item: "https://carelabz.com/ae/services/study-analysis",
+        item: "https://carelabz.com/ae/services/study-analysis/",
       },
       {
         "@type": "ListItem",
@@ -1146,12 +1271,33 @@ export default async function ArcFlashStudyPage() {
     ],
   };
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How CareLAbz Performs an Arc Flash Study",
+    description:
+      "Step-by-step process for conducting an IEEE 1584 compliant arc flash study in Dubai UAE",
+    totalTime: "P2W",
+    tool: [
+      { "@type": "HowToTool", name: "ETAP software" },
+      { "@type": "HowToTool", name: "Power system analyzer" },
+      { "@type": "HowToTool", name: "Arc flash label printer" },
+    ],
+    step: data.riskAssessment.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.title,
+      text: s.description,
+    })),
+  };
+
   return (
     <>
       <JsonLd data={serviceJsonLd} />
       <JsonLd data={faqJsonLd} />
       <JsonLd data={localBusinessJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={howToJsonLd} />
 
       <StickyNavbar />
 
