@@ -133,7 +133,7 @@ interface PageData {
 const FALLBACK_TITLE = "Arc Flash Study & Analysis in Dubai, UAE";
 const FALLBACK_META_TITLE = "Arc Flash Study Dubai UAE | CareLAbz";
 const FALLBACK_META_DESCRIPTION =
-  "Expert arc flash study and analysis services in Dubai UAE. ETAP-based assessments, hazard analysis and compliance for industrial facilities.";
+  "CareLAbz: IEEE 1584 arc flash studies in Dubai and the UAE. ETAP modelling, DEWA-compliant reports, PPE labelling, incident energy mitigation — 2–6 weeks.";
 
 const FALLBACK_FAQS: FAQItem[] = [
   {
@@ -154,7 +154,7 @@ const FALLBACK_FAQS: FAQItem[] = [
   {
     question: "How much does an arc flash study cost in the UAE?",
     answer:
-      "The cost of an arc flash study depends on the number of panels, switchgear, and substations in your facility, as well as the complexity of the electrical distribution system. CareLAbz provides custom quotes tailored to each project. Contact us for a free consultation and we will assess your requirements and provide a detailed proposal at no obligation.",
+      "Arc flash studies in the UAE typically range from AED 15,000 for a small single-substation facility to AED 80,000+ for large multi-building industrial sites. CareLAbz quotes are based on the number of panels surveyed, switchgear count, drawing availability, and whether protection setting optimization is required. Most mid-sized commercial projects fall in the AED 25,000–45,000 range. Contact us for a no-obligation proposal.",
   },
   {
     question: "Which industries need arc flash studies in Dubai?",
@@ -166,6 +166,27 @@ const FALLBACK_FAQS: FAQItem[] = [
       "What standards does CareLAbz follow for arc flash studies in UAE?",
     answer:
       "CareLAbz follows internationally recognised standards including IEEE 1584 (Guide for Performing Arc-Flash Hazard Calculations), NFPA 70E (Standard for Electrical Safety in the Workplace), and IEC 61482 for protective clothing against thermal hazards of an electric arc. All studies also comply with DEWA requirements and local authority regulations applicable in Dubai and the wider UAE.",
+  },
+  {
+    question: "Is an arc flash study legally required in the UAE?",
+    answer:
+      "The UAE does not yet have a single federal arc flash law, but DEWA regulations, employer duty of care under UAE Labour Law, and insurance underwriting requirements effectively mandate arc flash studies for any facility operating significant medium- or low-voltage equipment. IEEE 1584 and NFPA 70E are the de facto global standards that authorities, insurers, and auditors use to assess whether a UAE facility has met its electrical safety obligations.",
+  },
+  {
+    question:
+      "What is the difference between arc flash and short circuit analysis?",
+    answer:
+      "Short circuit analysis calculates the fault current that flows during a bolted, zero-impedance fault and is used to size breakers, cables, and switchgear. Arc flash analysis builds on top of that short circuit result to calculate the incident energy released when a fault sustains an arc, which determines worker PPE and boundary distances. The two studies are complementary — you cannot perform an accurate arc flash study without first completing a short circuit analysis.",
+  },
+  {
+    question: "How often should an arc flash study be updated?",
+    answer:
+      "NFPA 70E 2024 Article 130.5(G) requires arc flash studies to be reviewed at least every 5 years, or sooner after any significant modification to the electrical system such as new equipment, upstream utility changes, or revised protection settings. CareLAbz offers dedicated update services and can re-run existing ETAP models substantially faster than a full original study, keeping your labels and PPE categories continuously compliant.",
+  },
+  {
+    question: "Who performs arc flash studies in Dubai?",
+    answer:
+      "Arc flash studies in Dubai are performed by qualified electrical engineers with power system analysis experience, typically working for specialist consulting firms such as CareLAbz. The engineer must understand IEEE 1584 calculation methods, be proficient in ETAP or equivalent software, and have practical field experience collecting data from live electrical installations. For Dubai projects, clients generally prefer DEWA-approved consultants with a proven track record in UAE industrial and commercial facilities.",
   },
 ];
 
@@ -183,7 +204,7 @@ function buildPageData(overrides: {
       secondaryCta: "Download Brochure",
       image: "/images/hero-arc-flash.jpg",
       imageAlt:
-        "Electrical engineer performing arc flash safety assessment",
+        "CareLAbz engineer performing on-site arc flash data collection at a Dubai industrial facility",
     },
     trustBadges: [
       { label: "DEWA Compliant", icon: "dewa" },
@@ -230,7 +251,8 @@ function buildPageData(overrides: {
         { text: "Remediation strategies to reduce incident energy" },
       ],
       image: "/images/safety-assessment.jpg",
-      imageAlt: "Engineer performing electrical safety assessment",
+      imageAlt:
+        "Qualified worker wearing NFPA 70E compliant arc flash PPE during live electrical work in the UAE",
     },
     reportsSection: {
       eyebrow: "DETAILED DELIVERABLES",
@@ -246,7 +268,8 @@ function buildPageData(overrides: {
         { text: "Recommendations for hazard mitigation" },
       ],
       image: "/images/arc-flash-report.jpg",
-      imageAlt: "Arc flash study engineering report documentation",
+      imageAlt:
+        "IEEE 1584 compliant arc flash hazard report with incident energy calculations for a DEWA-regulated facility",
     },
     riskAssessment: {
       heading: "Arc Flash Risk Assessment",
@@ -295,42 +318,50 @@ function buildPageData(overrides: {
         {
           name: "Oil & Gas",
           image: "/images/industries/oil-and-gas.jpg",
-          imageAlt: "Oil and gas refinery at sunset",
+          imageAlt:
+            "Arc flash study for an oil and gas refinery in the UAE",
         },
         {
           name: "Healthcare",
           image: "/images/industries/healthcare.jpg",
-          imageAlt: "Modern hospital facility",
+          imageAlt:
+            "Arc flash hazard analysis for a Dubai hospital and healthcare facility",
         },
         {
           name: "Data Centers",
           image: "/images/industries/data-centers.jpg",
-          imageAlt: "Server room with blue lighting",
+          imageAlt:
+            "Arc flash hazard analysis for a Dubai data centre",
         },
         {
           name: "Manufacturing",
           image: "/images/industries/manufacturing.jpg",
-          imageAlt: "Industrial manufacturing plant",
+          imageAlt:
+            "NFPA 70E compliance and arc flash study for a UAE manufacturing plant",
         },
         {
           name: "Utilities",
           image: "/images/industries/utilities.jpg",
-          imageAlt: "Electrical utility substation",
+          imageAlt:
+            "IEEE 1584 arc flash study for a DEWA electrical utility substation in Dubai",
         },
         {
           name: "Commercial Real Estate",
           image: "/images/industries/commercial-real-estate.jpg",
-          imageAlt: "Modern commercial building",
+          imageAlt:
+            "Arc flash study for a Dubai commercial real estate and office tower",
         },
         {
           name: "Education",
           image: "/images/industries/education.jpg",
-          imageAlt: "University campus building",
+          imageAlt:
+            "Arc flash hazard analysis for a UAE university and education campus",
         },
         {
           name: "Government",
           image: "/images/industries/government.jpg",
-          imageAlt: "Government administrative building",
+          imageAlt:
+            "Arc flash study for a UAE government administrative building in Dubai",
         },
       ],
     },
@@ -344,7 +375,8 @@ function buildPageData(overrides: {
             "Key changes in the latest arc flash calculation standard and what they mean for your facility assessments.",
           href: "/insights/ieee-1584-2018-updates",
           image: "/images/insights/understanding-ieee-1584-2018.jpg",
-          imageAlt: "IEEE standards documentation",
+          imageAlt:
+            "IEEE 1584-2018 arc flash calculation standard documentation and updates",
         },
         {
           category: "Compliance",
@@ -353,7 +385,8 @@ function buildPageData(overrides: {
             "A comprehensive guide to meeting Dubai Electricity and Water Authority electrical safety regulations.",
           href: "/insights/dewa-arc-flash-requirements",
           image: "/images/insights/dewa-requirements-for-arc-f.jpg",
-          imageAlt: "DEWA compliance checklist",
+          imageAlt:
+            "DEWA arc flash study compliance checklist for Dubai electrical installations",
         },
         {
           category: "Best Practices",
@@ -362,7 +395,8 @@ function buildPageData(overrides: {
             "Practical strategies for lowering arc flash hazard levels through system design and protective device settings.",
           href: "/insights/reducing-incident-energy",
           image: "/images/insights/reducing-incident-energy-in.jpg",
-          imageAlt: "Electrical panel with safety equipment",
+          imageAlt:
+            "Electrical panel and protective device settings used to reduce arc flash incident energy in a UAE facility",
         },
       ],
     },
@@ -624,8 +658,51 @@ function HeroSection({
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 text-balance">
               {data.headline}
             </h1>
-            <p className="hero-subtext text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 mb-4 leading-relaxed">
-              {data.subtext}
+            <p className="hero-subtext text-lg md:text-xl text-slate-300 max-w-3xl mx-auto lg:mx-0 mt-6 mb-4 leading-relaxed">
+              <strong>
+                An arc flash study is an engineering analysis that calculates
+                the incident energy released during an electrical arc fault,
+                so workers can be protected with the correct PPE and equipment
+                boundaries.
+              </strong>{" "}
+              CareLAbz combines{" "}
+              <a
+                href="https://etap.com/"
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-orange-400/60 underline-offset-4 hover:text-orange-300 transition-colors"
+              >
+                ETAP
+              </a>{" "}
+              modelling, on-site data collection, and{" "}
+              <a
+                href="https://www.dewa.gov.ae/"
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-orange-400/60 underline-offset-4 hover:text-orange-300 transition-colors"
+              >
+                DEWA
+              </a>
+              -compliant reporting to deliver actionable arc flash mitigation
+              aligned with{" "}
+              <a
+                href="https://standards.ieee.org/ieee/1584/"
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-orange-400/60 underline-offset-4 hover:text-orange-300 transition-colors"
+              >
+                IEEE 1584
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.nfpa.org/codes-and-standards/nfpa-70e"
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-orange-400/60 underline-offset-4 hover:text-orange-300 transition-colors"
+              >
+                NFPA 70E
+              </a>{" "}
+              for industrial and commercial facilities across the UAE.
             </p>
             <time
               dateTime="2026-04-10"
