@@ -1079,9 +1079,16 @@ function Footer({ data }: { data: PageData["footer"] }) {
           <div className="lg:col-span-1">
             <Link
               href="/"
-              className="text-xl font-bold text-white mb-4 inline-block"
+              aria-label="CareLabs — Test, Calibrate, Inspect, Certify"
+              className="inline-block mb-4"
             >
-              CareLAbz
+              <Image
+                src="/images/logo/carelabs-logo.svg"
+                alt="CareLabs"
+                width={1063}
+                height={354}
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mt-4">
               {data.companyBlurb}

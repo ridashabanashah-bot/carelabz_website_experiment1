@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 
@@ -33,9 +34,17 @@ export function StickyNavbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold tracking-wide text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+            aria-label="CareLabs — Test, Calibrate, Inspect, Certify"
+            className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
           >
-            CareLAbz
+            <Image
+              src="/images/logo/carelabs-logo.svg"
+              alt="CareLabs"
+              width={1063}
+              height={354}
+              priority
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
