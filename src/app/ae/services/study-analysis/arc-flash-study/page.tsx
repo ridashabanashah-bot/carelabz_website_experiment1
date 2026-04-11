@@ -1083,10 +1083,10 @@ function Footer({ data }: { data: PageData["footer"] }) {
               className="inline-block mb-4"
             >
               <Image
-                src="/images/logo/carelabs-logo.svg"
+                src="/images/logo/carelabs-logo.png"
                 alt="CareLabs"
-                width={1063}
-                height={354}
+                width={866}
+                height={288}
                 className="h-12 w-auto"
               />
             </Link>

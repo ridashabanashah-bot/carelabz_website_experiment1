@@ -38,10 +38,10 @@ export function StickyNavbar() {
             className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
           >
             <Image
-              src="/images/logo/carelabs-logo.svg"
+              src="/images/logo/carelabs-logo.png"
               alt="CareLabs"
-              width={1063}
-              height={354}
+              width={866}
+              height={288}
               priority
               className="h-10 w-auto"
             />
