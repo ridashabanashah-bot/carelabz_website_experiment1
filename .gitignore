@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# leftover artifacts
+carelabz logo.webp
+dev-server.log
+prod-server.log
+page.html
