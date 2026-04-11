@@ -131,7 +131,8 @@ interface PageData {
 /* ------------------------------------------------------------------ */
 
 const FALLBACK_TITLE = "Arc Flash Study & Analysis in Dubai, UAE";
-const FALLBACK_META_TITLE = "Arc Flash Study Dubai UAE | CareLAbz";
+const FALLBACK_META_TITLE =
+  "Arc Flash Study & Analysis in Dubai, UAE | CareLAbz";
 const FALLBACK_META_DESCRIPTION =
   "CareLAbz: IEEE 1584 arc flash studies in Dubai and the UAE. ETAP modelling, DEWA-compliant reports, PPE labelling, incident energy mitigation — 2–6 weeks.";
 
@@ -1004,10 +1005,15 @@ function InsightsSection({ data }: { data: PageData["insights"] }) {
                 </p>
                 <Link
                   href={card.href}
+                  aria-label={`Read article: ${card.title}`}
                   className="inline-flex items-center text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                 >
-                  Read more
-                  <ArrowRight className="ml-1 w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                  <span className="sr-only">Read article: {card.title}</span>
+                  <span aria-hidden="true">Read more</span>
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="ml-1 w-4 h-4 transition-transform group-hover/link:translate-x-1"
+                  />
                 </Link>
               </div>
             </article>
@@ -1378,7 +1384,7 @@ export default async function ArcFlashStudyPage() {
 
       <StickyNavbar />
 
-      <main>
+      <main id="main-content">
         <HeroSection
           data={{ ...data.hero, trustBadges: data.trustBadges }}
         />

@@ -1,62 +1,142 @@
-# Build Summary: Arc Flash Study Page Experiment
+# Arc Flash Study Page — v0 Integration Build Summary
 
-## What Was Built
+## Scope
 
-A one-page experiment migrating the **Arc Flash Study & Analysis** service page from WordPress to Next.js 14 (App Router). The page lives at `/ae/services/study-analysis/arc-flash-study` and a 308 permanent redirect from the old WordPress URL `/arc-flash-study-analysis` ensures no SEO equity is lost.
+Phase 2 of the Carelabz website rebuild: integrate the v0-designed arc flash
+study page into the existing Next.js 14 + Tailwind v3 project with full
+SEO/AEO compliance, 5 page-level JSON-LD schemas plus the root Organization
+schema, and pass the 37-point audit from `docs/SEO-AEO-AUDIT.md`.
 
-## What Each Agent Did
+Final canonical URL:
+`https://carelabz.com/ae/services/study-analysis/arc-flash-study/`
+(trailing slash everywhere — redirect, canonical, JSON-LD, sitemap).
 
-### Build Fixer Agent
-- Hardcoded all arc flash page content directly in `page.tsx`, removing the Strapi CMS dependency
-- Ensured the page builds and renders without any external API calls
-- Set up the `next.config.mjs` redirects from old WordPress URLs
+## Agent team breakdown
 
-### UI Designer Agent
-- Styled the page with a dark navy (`#0a1628`) and white Tailwind CSS design
-- Built responsive components: Navbar, Hero section, Trust Badges, Body content (prose), FAQ Accordion (`<details>`/`<summary>`), Contact CTA, and Footer
-- Added `@tailwindcss/typography` plugin for rich body content styling
+### Integration Engineer
+- Converted the v0 export from Tailwind v4 (`@utility`, `@custom-variant`,
+  `@theme inline`, `oklch()` tokens) to Tailwind v3, porting `navy`,
+  `offWhite`, and `slateCard` into `tailwind.config.ts`.
+- Dropped the entire shadcn `components/ui/*` bundle, `tw-animate-css`, and
+  the `@vercel/analytics` import that weren't used by the real page.
+- Ported the three custom components we actually need (`StickyNavbar`,
+  `FaqAccordion`, `MobileNav`) into `src/components/` and merged the existing
+  `JsonLd` helper.
+- Rewrote `src/app/ae/services/study-analysis/arc-flash-study/page.tsx` as a
+  server component that merges Strapi (`title`, `metaTitle`, `metaDescription`,
+  `faqs`) with a hardcoded `PAGE_DATA` for hero, features, process steps,
+  industries, insights, CTA, and footer. Strapi failures fall back silently.
+- Moved industry and insight image filenames into explicit `image` fields on
+  each card (no more fragile filename generation) and added the required
+  `sizes` prop to every `<Image fill>`.
 
-### SEO Agent
-- Added 4 JSON-LD structured data schemas: Service, FAQPage, LocalBusiness, BreadcrumbList
-- Configured Open Graph and Twitter Card meta tags
-- Added canonical URL, meta description, and keyword meta tags
-- Created a reusable `JsonLd` component at `src/components/JsonLd.tsx`
+### SEO Specialist
+- Added `metadataBase: new URL("https://carelabz.com")` and
+  `<html lang="en-AE">` in `src/app/layout.tsx`.
+- Registered 5 page-level JSON-LD blocks (`Service`, `FAQPage`,
+  `LocalBusiness`, `BreadcrumbList`, `HowTo`) plus a root `Organization`
+  schema with `sameAs` pointing at LinkedIn, Facebook, Twitter, and
+  `en.wikipedia.org/wiki/Arc_flash`.
+- Wired `alternates.canonical` + `alternates.languages` (`en-AE` and
+  `x-default`), `robots.googleBot` with `max-image-preview: large` and
+  `max-snippet: -1`, `authors` / `creator` / `publisher`, OG image
+  (1200×630 at `/og/arc-flash-study.jpg`), and Twitter summary card.
+- Normalized the trailing slash across the canonical, all JSON-LD `url`
+  fields, the breadcrumb items, the sitemap entry, and the redirect
+  destination in `next.config.mjs`. Added `trailingSlash: true` in Next
+  config so the dev/prod server actually serves the slash variant instead
+  of 308-ing it away.
+- Updated `src/app/sitemap.ts` with `priority: 0.9` and
+  `changeFrequency: "monthly"` for the new URL.
+- Added the 2 old-URL redirects (`/arc-flash-study-analysis` and
+  `/arc-flash-study-analysis/`) targeting the trailing-slash canonical.
 
-### QA Agent
-- Verified `npm run build` passes with zero errors
-- Tested HTTP 200 on the arc flash page URL
-- Tested HTTP 308 redirect from old WordPress URL to new URL
-- Verified HTML contains: H1 tag, JSON-LD scripts (8 instances), meta description, "Frequently Asked Questions" text, and 6 `<details>` FAQ elements
-- Committed all changes and pushed to GitHub
+### Content Writer
+- 10 AEO-optimized FAQ answers (all 53–74 words), covering the audit's
+  missing People Also Ask queries (legal requirement in the UAE,
+  arc-flash-vs-short-circuit, update cadence, who performs studies in
+  Dubai).
+- Bold definitional lede paragraph directly under the H1 with inline
+  entity links to IEEE 1584, NFPA 70E, DEWA, and ETAP (all
+  `target="_blank" rel="noopener"`).
+- Meta description rewritten to the 154-char IEEE 1584 variant.
+- Image alts rewritten to be keyword- and location-specific (Dubai,
+  UAE, DEWA, IEEE 1584, NFPA 70E).
+- Visible `<time dateTime="2026-04-10">Last updated April 2026</time>`
+  below the hero, mirrored by `dateModified` / `datePublished` in the
+  Service JSON-LD.
+- `hero-subtext` and `faq-answer` className hooks to match the
+  `SpeakableSpecification.cssSelector` array.
 
-## How to Verify
+### QA Agent (this run)
+- `npm run lint` — zero errors, zero warnings.
+- `npm run build` — zero TypeScript or build errors.
+- Ran the full 37-point audit from `docs/SEO-AEO-AUDIT.md`; found 2
+  failures and fixed both in-place:
+  1. `FALLBACK_META_TITLE` was 36 chars (needs 40–65) → rewritten to
+     "Arc Flash Study & Analysis in Dubai, UAE | CareLAbz" (52 chars).
+  2. No skip-to-content link existed anywhere → added one in
+     `src/app/layout.tsx` targeting `#main-content`, and added
+     `id="main-content"` to the `<main>` tag in the page.
+- Also found and fixed a critical trailing-slash mismatch during smoke
+  testing: Next.js default is `trailingSlash: false`, so requests to
+  the canonical URL were being 308'd to the no-slash variant. Added
+  `trailingSlash: true` to `next.config.mjs`.
+- Fixed a Lighthouse SEO check failure (`link-text`) by giving the 3
+  "Read more" insight links explicit `aria-label` + `sr-only`
+  accessible names keyed on the card title.
+- Smoke-tested all 3 curl endpoints, verified 6 JSON-LD blocks render
+  in the HTML with the correct `@type` mix, ran Lighthouse against the
+  production build, captured a full-page 1440×900 screenshot, moved
+  the audit/handoff markdowns into `docs/`, deleted `v0-export/`, and
+  removed the stale `v0-export` entry from `tsconfig.json` exclude.
 
-### Vercel Production URL
-- **Arc Flash Page:** https://carelabz.com/ae/services/study-analysis/arc-flash-study
-- **Redirect (old URL):** https://carelabz.com/arc-flash-study-analysis (should 308 redirect to the new URL)
+## Final Lighthouse scores (production build)
 
-### Local Verification
-```bash
-npm run build    # must pass with zero errors
-npm run start    # start production server on port 3000
-curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/ae/services/study-analysis/arc-flash-study  # expect 200
-curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/arc-flash-study-analysis  # expect 308
-```
+| Category       | Score | Target | Status |
+|----------------|-------|--------|--------|
+| Performance    | 98    | ≥ 90   | PASS   |
+| Accessibility  | 96    | ≥ 95   | PASS   |
+| Best Practices | 96    | ≥ 95   | PASS   |
+| SEO            | 100   | = 100  | PASS   |
 
-## Files Changed
+Raw report: `data/lighthouse-report.json`.
 
-| File | Description |
-|------|-------------|
-| `src/app/ae/services/study-analysis/arc-flash-study/page.tsx` | Main page with hardcoded content, UI components, SEO metadata, and JSON-LD schemas |
-| `src/app/layout.tsx` | Root layout with updated site-wide metadata |
-| `src/app/globals.css` | Global styles and Tailwind directives |
-| `src/components/JsonLd.tsx` | Reusable JSON-LD structured data component |
-| `next.config.mjs` | Redirect rules from old WordPress URL |
-| `carelabz-cms/package.json` | CMS package updates |
-| `carelabz-cms/railway.json` | Railway deployment config |
-| `.env.example` | Environment variable template |
-| `.github/workflows/ci.yml` | CI workflow |
-| `CLAUDE.md` | Claude Code project context |
-| `INTERN-SETUP.md` | Intern onboarding guide |
-| `agent-docs/` | Agent team documentation |
-| `skills/` | Reusable Claude Code skills |
+## 37-point audit result
+
+**37 / 37 passing** after QA fixes.
+
+Fixes made during QA:
+1. Check 8 (title 40–65 chars): extended `FALLBACK_META_TITLE` from 36 to
+   52 chars.
+2. Check 35 (skip-to-content link): added `<a href="#main-content">` at
+   the top of `<body>` in `src/app/layout.tsx` and `id="main-content"`
+   on the page's `<main>` element.
+3. Unlisted-but-critical: added `trailingSlash: true` in `next.config.mjs`
+   so the canonical URL actually resolves without a 308 stripping the
+   slash (this was not one of the 37 checks but would have broken
+   production indexing).
+4. Lighthouse `link-text` audit: the 3 "Read more" insight links are now
+   wrapped with an `aria-label` and a `sr-only` descriptive label
+   referencing the article title.
+
+## Screenshot
+
+`data/screenshots/arc-flash-study-final.png` (full-page 1440×900 capture
+against the production build at
+`http://localhost:3000/ae/services/study-analysis/arc-flash-study/`).
+
+## How to verify live
+
+- Page: https://carelabz-website-experiment1.vercel.app/ae/services/study-analysis/arc-flash-study/
+- Old URL redirect: https://carelabz-website-experiment1.vercel.app/arc-flash-study-analysis
+
+## Re-verification steps
+
+1. `git checkout feat/v0-seo-aeo-integration`
+2. `npm install && npm run build`
+3. `npm run dev`
+4. Open http://localhost:3000/ae/services/study-analysis/arc-flash-study/
+5. Run `npx lighthouse http://localhost:3000/ae/services/study-analysis/arc-flash-study/ --only-categories=seo --chrome-flags="--headless=new"` — expect SEO = 100.
+6. `curl -sL -o /dev/null -w "%{url_effective}\n" http://localhost:3000/arc-flash-study-analysis`
+   — expect the final URL to be the trailing-slash canonical.

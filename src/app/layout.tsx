@@ -45,6 +45,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-orange-500 focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <JsonLd data={organizationJsonLd} />
         {children}
       </body>
