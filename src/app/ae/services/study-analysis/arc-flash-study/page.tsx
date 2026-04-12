@@ -18,7 +18,7 @@ import {
 import { StickyNavbar } from "@/components/sticky-navbar";
 import { FaqAccordion, type FAQItem } from "@/components/faq-accordion";
 import { JsonLd } from "@/components/JsonLd";
-import { getServicePageBySlug } from "@/lib/strapi";
+import { getServicePageBySlug, type ServicePage } from "@/lib/strapi";
 
 /* ------------------------------------------------------------------ */
 /*  TypeScript Interfaces                                              */
@@ -115,7 +115,9 @@ interface PageData {
     heading: string;
     subtext: string;
     primaryCta: string;
+    primaryHref: string;
     secondaryCta: string;
+    secondaryHref: string;
   };
   footer: {
     companyBlurb: string;
@@ -126,292 +128,92 @@ interface PageData {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Hardcoded Page Content (Phase 1 — Strapi only supplies             */
-/*  title / metaTitle / metaDescription / faqs)                        */
+/*  Strapi → PageData mapper                                           */
 /* ------------------------------------------------------------------ */
 
-const FALLBACK_TITLE = "Arc Flash Study & Analysis in Dubai, UAE";
-const FALLBACK_META_TITLE =
-  "Arc Flash Study & Analysis in Dubai, UAE | CareLAbz";
-const FALLBACK_META_DESCRIPTION =
-  "CareLAbz: IEEE 1584 arc flash studies in Dubai and the UAE. ETAP modelling, DEWA-compliant reports, PPE labelling, incident energy mitigation — 2–6 weeks.";
+const ICON_CYCLE: FeatureCard["icon"][] = ["shield", "zap", "file-text", "users"];
 
-const FALLBACK_FAQS: FAQItem[] = [
-  {
-    question: "What is an arc flash study and why is it required in the UAE?",
-    answer:
-      "An arc flash study is an engineering analysis that calculates the incident energy available at each point in an electrical system where workers may be exposed. It determines arc flash boundaries, hazard risk categories, and required PPE levels. In the UAE, DEWA regulations and international standards such as NFPA 70E and IEEE 1584 require facility owners to assess and mitigate arc flash hazards to protect personnel and ensure regulatory compliance.",
-  },
-  {
-    question: "How long does an arc flash study take in Dubai?",
-    answer:
-      "A typical arc flash study takes between 2 and 6 weeks depending on the size and complexity of the electrical system. The timeline includes on-site data collection, power system modelling in ETAP software, short-circuit and coordination analysis, incident energy calculations, and final report preparation. Larger facilities with multiple substations may require additional time.",
-  },
-  {
-    question: "What does an arc flash study include?",
-    answer:
-      "A complete arc flash study includes on-site data collection of all electrical equipment, single-line diagram verification, short-circuit analysis, protective device coordination study, incident energy calculations at every working point, arc flash hazard labels for panels and switchgear, a detailed engineering report with PPE recommendations, and remediation guidance to reduce incident energy levels where possible.",
-  },
-  {
-    question: "How much does an arc flash study cost in the UAE?",
-    answer:
-      "Arc flash studies in the UAE typically range from AED 15,000 for a small single-substation facility to AED 80,000+ for large multi-building industrial sites. CareLAbz quotes are based on the number of panels surveyed, switchgear count, drawing availability, and whether protection setting optimization is required. Most mid-sized commercial projects fall in the AED 25,000–45,000 range. Contact us for a no-obligation proposal.",
-  },
-  {
-    question: "Which industries need arc flash studies in Dubai?",
-    answer:
-      "Arc flash studies are essential for any facility with medium- or low-voltage electrical distribution. Key industries include oil and gas, manufacturing, data centres, hospitals and healthcare facilities, hotels and hospitality, commercial buildings, district cooling plants, and utility substations. Any workplace where personnel interact with energised electrical equipment should have an up-to-date arc flash study.",
-  },
-  {
-    question:
-      "What standards does CareLAbz follow for arc flash studies in UAE?",
-    answer:
-      "CareLAbz follows internationally recognised standards including IEEE 1584 (Guide for Performing Arc-Flash Hazard Calculations), NFPA 70E (Standard for Electrical Safety in the Workplace), and IEC 61482 for protective clothing against thermal hazards of an electric arc. All studies also comply with DEWA requirements and local authority regulations applicable in Dubai and the wider UAE.",
-  },
-  {
-    question: "Is an arc flash study legally required in the UAE?",
-    answer:
-      "The UAE does not yet have a single federal arc flash law, but DEWA regulations, employer duty of care under UAE Labour Law, and insurance underwriting requirements effectively mandate arc flash studies for any facility operating significant medium- or low-voltage equipment. IEEE 1584 and NFPA 70E are the de facto global standards that authorities, insurers, and auditors use to assess whether a UAE facility has met its electrical safety obligations.",
-  },
-  {
-    question:
-      "What is the difference between arc flash and short circuit analysis?",
-    answer:
-      "Short circuit analysis calculates the fault current that flows during a bolted, zero-impedance fault and is used to size breakers, cables, and switchgear. Arc flash analysis builds on top of that short circuit result to calculate the incident energy released when a fault sustains an arc, which determines worker PPE and boundary distances. The two studies are complementary — you cannot perform an accurate arc flash study without first completing a short circuit analysis.",
-  },
-  {
-    question: "How often should an arc flash study be updated?",
-    answer:
-      "NFPA 70E 2024 Article 130.5(G) requires arc flash studies to be reviewed at least every 5 years, or sooner after any significant modification to the electrical system such as new equipment, upstream utility changes, or revised protection settings. CareLAbz offers dedicated update services and can re-run existing ETAP models substantially faster than a full original study, keeping your labels and PPE categories continuously compliant.",
-  },
-  {
-    question: "Who performs arc flash studies in Dubai?",
-    answer:
-      "Arc flash studies in Dubai are performed by qualified electrical engineers with power system analysis experience, typically working for specialist consulting firms such as CareLAbz. The engineer must understand IEEE 1584 calculation methods, be proficient in ETAP or equivalent software, and have practical field experience collecting data from live electrical installations. For Dubai projects, clients generally prefer DEWA-approved consultants with a proven track record in UAE industrial and commercial facilities.",
-  },
-];
-
-function buildPageData(overrides: {
-  headline: string;
-  subtext: string;
-  faqs: FAQItem[];
-}): PageData {
+function buildPageDataFromStrapi(strapi: ServicePage): PageData {
   return {
     hero: {
-      eyebrow: "POWER SYSTEM SAFETY",
-      headline: overrides.headline,
-      subtext: overrides.subtext,
-      primaryCta: "Request a Quote",
-      secondaryCta: "Download Brochure",
-      image: "/images/hero-arc-flash.jpg",
-      imageAlt:
-        "CareLAbz engineer performing on-site arc flash data collection at a Dubai industrial facility",
+      eyebrow: strapi.eyebrow ?? "",
+      headline: strapi.title,
+      subtext: strapi.metaDescription,
+      primaryCta: strapi.ctaPrimaryText ?? "",
+      secondaryCta: strapi.ctaSecondaryText ?? "",
+      image: strapi.heroImagePath ?? "",
+      imageAlt: strapi.heroImageAlt ?? "",
     },
-    trustBadges: [
-      { label: "DEWA Compliant", icon: "dewa" },
-      { label: "IEEE 1584", icon: "ieee" },
-      { label: "NFPA 70E", icon: "nfpa" },
-      { label: "ETAP Software", icon: "etap" },
-    ],
+    trustBadges: (strapi.trustBadges ?? []).map((b) => ({
+      label: b.label,
+      icon: b.label.toLowerCase().replace(/\s+/g, "-"),
+    })),
     challenges: {
-      heading: "Solving Your Critical Infrastructure Challenges",
-      subheading:
-        "Our engineering expertise helps you identify and mitigate electrical hazards before they become incidents.",
-      features: [
-        {
-          icon: "shield",
-          title: "Hazard Identification",
-          description:
-            "Comprehensive analysis of your electrical system to identify all potential arc flash hazards at every working point.",
-        },
-        {
-          icon: "zap",
-          title: "Incident Energy Calculations",
-          description:
-            "Precise calculations using ETAP software to determine incident energy levels and arc flash boundaries.",
-        },
-        {
-          icon: "file-text",
-          title: "Compliance Documentation",
-          description:
-            "Complete documentation package meeting DEWA, IEEE 1584, and NFPA 70E requirements for audits and inspections.",
-        },
-      ],
+      heading: strapi.featuresHeading ?? "",
+      subheading: strapi.featuresSubtext ?? "",
+      features: (strapi.features ?? []).map((f, i) => ({
+        icon: ICON_CYCLE[i % ICON_CYCLE.length],
+        title: f.title,
+        description: f.description,
+      })),
     },
     safetySection: {
-      eyebrow: "COMPREHENSIVE PROTECTION",
-      heading: "Inventive Support for Elevating Safety",
-      description:
-        "Our arc flash studies provide the foundation for a safer workplace. We combine advanced power system modeling with practical engineering recommendations to reduce risk across your facility.",
-      bullets: [
-        { text: "On-site data collection and system verification" },
-        { text: "Single-line diagram development and validation" },
-        { text: "Short-circuit and protective device coordination" },
-        { text: "PPE category recommendations for each location" },
-        { text: "Arc flash warning labels for all equipment" },
-        { text: "Remediation strategies to reduce incident energy" },
-      ],
-      image: "/images/safety-assessment.jpg",
-      imageAlt:
-        "Qualified worker wearing NFPA 70E compliant arc flash PPE during live electrical work in the UAE",
+      eyebrow: strapi.safetyEyebrow ?? undefined,
+      heading: strapi.safetyHeading ?? "",
+      description: strapi.safetyBody ?? "",
+      bullets: (strapi.safetyBullets ?? []).map((s) => ({ text: s })),
+      image: strapi.safetyImage ?? "",
+      imageAlt: strapi.safetyImageAlt ?? "",
     },
     reportsSection: {
-      eyebrow: "DETAILED DELIVERABLES",
-      heading: "Arc Flash Reports",
-      description:
-        "Every study culminates in a comprehensive engineering report that serves as your roadmap to electrical safety compliance. Our reports are designed to be actionable, providing clear guidance for facility managers, safety officers, and maintenance teams.",
-      bullets: [
-        { text: "Executive summary with key findings and priorities" },
-        { text: "Incident energy values at each equipment location" },
-        { text: "Arc flash boundary distances and working distances" },
-        { text: "PPE requirements by hazard risk category" },
-        { text: "Equipment labeling specifications per NFPA 70E" },
-        { text: "Recommendations for hazard mitigation" },
-      ],
-      image: "/images/arc-flash-report.jpg",
-      imageAlt:
-        "IEEE 1584 compliant arc flash hazard report with incident energy calculations for a DEWA-regulated facility",
+      eyebrow: strapi.reportsEyebrow ?? undefined,
+      heading: strapi.reportsHeading ?? "",
+      description: strapi.reportsBody ?? "",
+      bullets: (strapi.reportsBullets ?? []).map((s) => ({ text: s })),
+      image: strapi.reportsImage ?? "",
+      imageAlt: strapi.reportsImageAlt ?? "",
     },
     riskAssessment: {
-      heading: "Arc Flash Risk Assessment",
-      steps: [
-        {
-          step: "01",
-          title: "Data Collection",
-          description:
-            "On-site survey of all electrical equipment including switchgear, panels, transformers, and protective devices.",
-        },
-        {
-          step: "02",
-          title: "System Modeling",
-          description:
-            "Build accurate power system model in ETAP software with verified equipment parameters and configurations.",
-        },
-        {
-          step: "03",
-          title: "Short-Circuit Analysis",
-          description:
-            "Calculate available fault currents at each bus and equipment location throughout the system.",
-        },
-        {
-          step: "04",
-          title: "Coordination Study",
-          description:
-            "Evaluate protective device settings to ensure proper coordination and minimize arc flash duration.",
-        },
-        {
-          step: "05",
-          title: "Energy Calculations",
-          description:
-            "Determine incident energy levels and arc flash boundaries using IEEE 1584 methodology.",
-        },
-        {
-          step: "06",
-          title: "Report & Labels",
-          description:
-            "Deliver comprehensive report with PPE recommendations and compliant arc flash warning labels.",
-        },
-      ],
+      heading: strapi.processHeading ?? "",
+      steps: (strapi.processSteps ?? []).map((s) => ({
+        step: String(s.number).padStart(2, "0"),
+        title: s.title,
+        description: s.description,
+      })),
     },
     industries: {
-      heading: "Industries We Empower",
-      cards: [
-        {
-          name: "Oil & Gas",
-          image: "/images/industries/oil-and-gas.jpg",
-          imageAlt:
-            "Arc flash study for an oil and gas refinery in the UAE",
-        },
-        {
-          name: "Healthcare",
-          image: "/images/industries/healthcare.jpg",
-          imageAlt:
-            "Arc flash hazard analysis for a Dubai hospital and healthcare facility",
-        },
-        {
-          name: "Data Centers",
-          image: "/images/industries/data-centers.jpg",
-          imageAlt:
-            "Arc flash hazard analysis for a Dubai data centre",
-        },
-        {
-          name: "Manufacturing",
-          image: "/images/industries/manufacturing.jpg",
-          imageAlt:
-            "NFPA 70E compliance and arc flash study for a UAE manufacturing plant",
-        },
-        {
-          name: "Utilities",
-          image: "/images/industries/utilities.jpg",
-          imageAlt:
-            "IEEE 1584 arc flash study for a DEWA electrical utility substation in Dubai",
-        },
-        {
-          name: "Commercial Real Estate",
-          image: "/images/industries/commercial-real-estate.jpg",
-          imageAlt:
-            "Arc flash study for a Dubai commercial real estate and office tower",
-        },
-        {
-          name: "Education",
-          image: "/images/industries/education.jpg",
-          imageAlt:
-            "Arc flash hazard analysis for a UAE university and education campus",
-        },
-        {
-          name: "Government",
-          image: "/images/industries/government.jpg",
-          imageAlt:
-            "Arc flash study for a UAE government administrative building in Dubai",
-        },
-      ],
+      heading: strapi.industriesHeading ?? "",
+      cards: (strapi.industries ?? []).map((ind) => ({
+        name: ind.name,
+        image: ind.image,
+        imageAlt: ind.alt,
+      })),
     },
     insights: {
-      heading: "Latest Insights",
-      cards: [
-        {
-          category: "Safety Standards",
-          title: "Understanding IEEE 1584-2018 Updates",
-          excerpt:
-            "Key changes in the latest arc flash calculation standard and what they mean for your facility assessments.",
-          href: "/insights/ieee-1584-2018-updates",
-          image: "/images/insights/understanding-ieee-1584-2018.jpg",
-          imageAlt:
-            "IEEE 1584-2018 arc flash calculation standard documentation and updates",
-        },
-        {
-          category: "Compliance",
-          title: "DEWA Requirements for Arc Flash Studies",
-          excerpt:
-            "A comprehensive guide to meeting Dubai Electricity and Water Authority electrical safety regulations.",
-          href: "/insights/dewa-arc-flash-requirements",
-          image: "/images/insights/dewa-requirements-for-arc-f.jpg",
-          imageAlt:
-            "DEWA arc flash study compliance checklist for Dubai electrical installations",
-        },
-        {
-          category: "Best Practices",
-          title: "Reducing Incident Energy in Your Facility",
-          excerpt:
-            "Practical strategies for lowering arc flash hazard levels through system design and protective device settings.",
-          href: "/insights/reducing-incident-energy",
-          image: "/images/insights/reducing-incident-energy-in.jpg",
-          imageAlt:
-            "Electrical panel and protective device settings used to reduce arc flash incident energy in a UAE facility",
-        },
-      ],
+      heading: strapi.insightsHeading ?? "",
+      cards: (strapi.insights ?? []).map((ins) => ({
+        category: ins.category,
+        title: ins.title,
+        excerpt: ins.description,
+        href: ins.href,
+        image: ins.image,
+        imageAlt: ins.alt,
+      })),
     },
-    faqs: overrides.faqs,
+    faqs: (strapi.faqs ?? []).map((f) => ({
+      question: f.question,
+      answer: f.answer,
+    })),
     cta: {
-      heading: "Ready to Make Your Facility Safer?",
-      subtext:
-        "Get expert arc flash analysis and protect your workforce with comprehensive hazard assessments.",
-      primaryCta: "Schedule a Consultation",
-      secondaryCta: "Call Us",
+      heading: strapi.ctaBannerHeading ?? "",
+      subtext: strapi.ctaBannerBody ?? "",
+      primaryCta: strapi.ctaBannerPrimaryText ?? "",
+      primaryHref: strapi.ctaBannerPrimaryHref ?? "/contact",
+      secondaryCta: strapi.ctaBannerSecondaryText ?? "",
+      secondaryHref: strapi.ctaBannerSecondaryHref ?? "tel:+97140000000",
     },
     footer: {
-      companyBlurb:
-        "CareLAbz provides professional electrical safety services including arc flash studies, power system analysis, and compliance solutions for industrial and commercial facilities across the UAE.",
+      companyBlurb: strapi.footerDescription ?? "",
       services: [
         { label: "Arc Flash Study", href: "/services/arc-flash-study" },
         { label: "Short Circuit Analysis", href: "/services/short-circuit" },
@@ -427,9 +229,9 @@ function buildPageData(overrides: {
         { label: "Utilities", href: "/industries/utilities" },
       ],
       contact: {
-        address: "Dubai, United Arab Emirates",
-        phone: "+971 4 XXX XXXX",
-        email: "info@carelabz.com",
+        phone: strapi.footerPhone ?? "",
+        email: strapi.footerEmail ?? "",
+        address: strapi.footerAddress ?? "",
       },
     },
   };
@@ -452,9 +254,15 @@ async function fetchStrapiSafe() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const strapi = await fetchStrapiSafe();
-  const metaTitle = strapi?.metaTitle || FALLBACK_META_TITLE;
-  const metaDescription =
-    strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
+
+  if (!strapi) {
+    return {
+      title: "Carelabs — Electrical Safety Services",
+    };
+  }
+
+  const metaTitle = strapi.metaTitle;
+  const metaDescription = strapi.metaDescription;
 
   return {
     title: metaTitle,
@@ -467,9 +275,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "arc flash hazard analysis",
       "NFPA 70E Dubai",
     ],
-    authors: [{ name: "CareLAbz Engineering Team" }],
-    creator: "CareLAbz",
-    publisher: "CareLAbz",
+    authors: [{ name: "Carelabs Engineering Team" }],
+    creator: "Carelabs",
+    publisher: "Carelabs",
     alternates: {
       canonical: PAGE_URL,
       languages: {
@@ -492,14 +300,14 @@ export async function generateMetadata(): Promise<Metadata> {
       title: metaTitle,
       description: metaDescription,
       url: PAGE_URL,
-      siteName: "CareLAbz",
+      siteName: "Carelabs",
       type: "website",
       images: [
         {
           url: "/og/arc-flash-study.jpg",
           width: 1200,
           height: 630,
-          alt: "CareLAbz Arc Flash Study Services in Dubai UAE",
+          alt: "Carelabs Arc Flash Study Services in Dubai UAE",
         },
       ],
     },
@@ -666,7 +474,7 @@ function HeroSection({
                 so workers can be protected with the correct PPE and equipment
                 boundaries.
               </strong>{" "}
-              CareLAbz combines{" "}
+              Carelabs combines{" "}
               <a
                 href="https://etap.com/"
                 target="_blank"
@@ -1052,13 +860,13 @@ function CTABanner({ data }: { data: PageData["cta"] }) {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/contact"
+            href={data.primaryHref}
             className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3.5 text-base font-semibold text-navy shadow-lg transition-all hover:bg-slate-100 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-500"
           >
             {data.primaryCta}
           </Link>
           <Link
-            href="tel:+97140000000"
+            href={data.secondaryHref}
             className="inline-flex items-center justify-center rounded-lg border-2 border-white/50 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10 hover:border-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-500"
           >
             <Phone className="mr-2 w-5 h-5" />
@@ -1170,7 +978,7 @@ function Footer({ data }: { data: PageData["footer"] }) {
         {/* Bottom Row */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} CareLAbz. All rights reserved.
+            &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link
@@ -1228,26 +1036,26 @@ function Footer({ data }: { data: PageData["footer"] }) {
 export default async function ArcFlashStudyPage() {
   const strapi = await fetchStrapiSafe();
 
-  const headline = strapi?.title || FALLBACK_TITLE;
-  const subtext = strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
-  const faqs: FAQItem[] =
-    strapi?.faqs && strapi.faqs.length > 0
-      ? strapi.faqs.map((f) => ({ question: f.question, answer: f.answer }))
-      : FALLBACK_FAQS;
+  if (!strapi) {
+    return (
+      <main id="main-content" className="flex min-h-screen items-center justify-center bg-navy">
+        <p className="text-white text-lg">Page content unavailable. Please try again later.</p>
+      </main>
+    );
+  }
 
-  const data = buildPageData({ headline, subtext, faqs });
-  const metaDescription = strapi?.metaDescription || FALLBACK_META_DESCRIPTION;
+  const data = buildPageDataFromStrapi(strapi);
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Arc Flash Study and Analysis",
+    name: strapi.title,
     serviceType: "Arc Flash Hazard Analysis",
-    description: metaDescription,
+    description: strapi.metaDescription,
     url: PAGE_URL,
     provider: {
       "@type": "Organization",
-      name: "CareLAbz",
+      name: "Carelabs",
       url: "https://carelabz.com",
       telephone: "+971-4-XXX-XXXX",
       address: {
@@ -1316,7 +1124,7 @@ export default async function ArcFlashStudyPage() {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "CareLAbz",
+    name: "Carelabs",
     url: "https://carelabz.com",
     telephone: "+971-4-XXX-XXXX",
     address: {
@@ -1364,7 +1172,7 @@ export default async function ArcFlashStudyPage() {
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "How CareLAbz Performs an Arc Flash Study",
+    name: "How Carelabs Performs an Arc Flash Study",
     description:
       "Step-by-step process for conducting an IEEE 1584 compliant arc flash study in Dubai UAE",
     totalTime: "P2W",
