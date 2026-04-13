@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "ContactPage",
+    "description": "Regional contact page content"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "region": { "type": "string", "required": true },
+    "heroHeadline": { "type": "string" },
+    "heroSubtext": { "type": "text" },
+    "phone": { "type": "string" },
+    "email": { "type": "string" },
+    "address": { "type": "string" },
+    "mapEmbedUrl": { "type": "string" },
+    "officeHours": { "type": "string" },
+    "formHeading": { "type": "string" },
+    "formSubtext": { "type": "text" },
+    "metaTitle": { "type": "string" },
+    "metaDescription": { "type": "text" }
+  }
+}

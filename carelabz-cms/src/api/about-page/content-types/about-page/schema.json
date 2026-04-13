@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "AboutPage",
+    "description": "Regional about page content"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "region": { "type": "string", "required": true },
+    "heroHeadline": { "type": "string" },
+    "heroSubtext": { "type": "text" },
+    "heroImage": { "type": "string" },
+    "heroImageAlt": { "type": "string" },
+    "missionHeading": { "type": "string" },
+    "missionBody": { "type": "text" },
+    "valuesHeading": { "type": "string" },
+    "values": { "type": "json" },
+    "teamHeading": { "type": "string" },
+    "team": { "type": "json" },
+    "statsHeading": { "type": "string" },
+    "stats": { "type": "json" },
+    "certifications": { "type": "json" },
+    "ctaBannerHeading": { "type": "string" },
+    "ctaBannerSubtext": { "type": "string" },
+    "ctaBannerPrimaryText": { "type": "string" },
+    "ctaBannerPrimaryHref": { "type": "string" },
+    "metaTitle": { "type": "string" },
+    "metaDescription": { "type": "text" }
+  }
+}

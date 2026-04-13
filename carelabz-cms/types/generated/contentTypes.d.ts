@@ -430,6 +430,247 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutPageAboutPage extends Struct.CollectionTypeSchema {
+  collectionName: 'about_pages';
+  info: {
+    description: 'Regional about page content';
+    displayName: 'AboutPage';
+    pluralName: 'about-pages';
+    singularName: 'about-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    certifications: Schema.Attribute.JSON;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBannerHeading: Schema.Attribute.String;
+    ctaBannerPrimaryHref: Schema.Attribute.String;
+    ctaBannerPrimaryText: Schema.Attribute.String;
+    ctaBannerSubtext: Schema.Attribute.String;
+    heroHeadline: Schema.Attribute.String;
+    heroImage: Schema.Attribute.String;
+    heroImageAlt: Schema.Attribute.String;
+    heroSubtext: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-page.about-page'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    missionBody: Schema.Attribute.Text;
+    missionHeading: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    region: Schema.Attribute.String & Schema.Attribute.Required;
+    stats: Schema.Attribute.JSON;
+    statsHeading: Schema.Attribute.String;
+    team: Schema.Attribute.JSON;
+    teamHeading: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.JSON;
+    valuesHeading: Schema.Attribute.String;
+  };
+}
+
+export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
+  collectionName: 'blog_posts';
+  info: {
+    description: 'Blog articles';
+    displayName: 'BlogPost';
+    pluralName: 'blog-posts';
+    singularName: 'blog-post';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    author: Schema.Attribute.String;
+    body: Schema.Attribute.RichText & Schema.Attribute.Required;
+    category: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    excerpt: Schema.Attribute.Text;
+    faqs: Schema.Attribute.JSON;
+    heroImage: Schema.Attribute.String;
+    heroImageAlt: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-post.blog-post'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    publishedDate: Schema.Attribute.Date;
+    region: Schema.Attribute.String;
+    relatedPosts: Schema.Attribute.JSON;
+    seoKeywords: Schema.Attribute.JSON;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    tags: Schema.Attribute.JSON;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
+  collectionName: 'case_studies';
+  info: {
+    description: 'Client case studies';
+    displayName: 'CaseStudy';
+    pluralName: 'case-studies';
+    singularName: 'case-study';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    body: Schema.Attribute.RichText;
+    challenge: Schema.Attribute.Text;
+    client: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaHref: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    excerpt: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.String;
+    heroImageAlt: Schema.Attribute.String;
+    industry: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::case-study.case-study'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    publishedDate: Schema.Attribute.Date;
+    region: Schema.Attribute.String;
+    results: Schema.Attribute.JSON;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    solution: Schema.Attribute.Text;
+    tags: Schema.Attribute.JSON;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactPageContactPage extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_pages';
+  info: {
+    description: 'Regional contact page content';
+    displayName: 'ContactPage';
+    pluralName: 'contact-pages';
+    singularName: 'contact-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.String;
+    formHeading: Schema.Attribute.String;
+    formSubtext: Schema.Attribute.Text;
+    heroHeadline: Schema.Attribute.String;
+    heroSubtext: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-page.contact-page'
+    > &
+      Schema.Attribute.Private;
+    mapEmbedUrl: Schema.Attribute.String;
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    officeHours: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    region: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    description: 'Regional homepage content';
+    displayName: 'HomePage';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBannerHeading: Schema.Attribute.String;
+    ctaBannerPrimaryHref: Schema.Attribute.String;
+    ctaBannerPrimaryText: Schema.Attribute.String;
+    ctaBannerSecondaryHref: Schema.Attribute.String;
+    ctaBannerSecondaryText: Schema.Attribute.String;
+    ctaBannerSubtext: Schema.Attribute.String;
+    footerAddress: Schema.Attribute.String;
+    footerDescription: Schema.Attribute.String;
+    footerEmail: Schema.Attribute.String;
+    footerPhone: Schema.Attribute.String;
+    heroEyebrow: Schema.Attribute.String;
+    heroHeadline: Schema.Attribute.String;
+    heroImage: Schema.Attribute.String;
+    heroImageAlt: Schema.Attribute.String;
+    heroPrimaryCtaHref: Schema.Attribute.String;
+    heroPrimaryCtaText: Schema.Attribute.String;
+    heroSecondaryCtaHref: Schema.Attribute.String;
+    heroSecondaryCtaText: Schema.Attribute.String;
+    heroSubtext: Schema.Attribute.Text;
+    industries: Schema.Attribute.JSON;
+    industriesHeading: Schema.Attribute.String;
+    insights: Schema.Attribute.JSON;
+    insightsHeading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    ogImage: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    region: Schema.Attribute.String & Schema.Attribute.Required;
+    seoKeywords: Schema.Attribute.JSON;
+    services: Schema.Attribute.JSON;
+    servicesHeading: Schema.Attribute.String;
+    servicesSubtext: Schema.Attribute.String;
+    trustBadges: Schema.Attribute.JSON;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyFeatures: Schema.Attribute.JSON;
+    whyHeading: Schema.Attribute.String;
+    whySubtext: Schema.Attribute.String;
+  };
+}
+
 export interface ApiServicePageServicePage extends Struct.CollectionTypeSchema {
   collectionName: 'service_pages';
   info: {
@@ -456,8 +697,10 @@ export interface ApiServicePageServicePage extends Struct.CollectionTypeSchema {
     ctaPrimaryText: Schema.Attribute.String;
     ctaSecondaryHref: Schema.Attribute.String;
     ctaSecondaryText: Schema.Attribute.String;
+    definitionalLede: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
     faqs: Schema.Attribute.Component<'shared.faq-item', true>;
+    faqSectionHeading: Schema.Attribute.String;
     features: Schema.Attribute.JSON;
     featuresHeading: Schema.Attribute.String;
     featuresSubtext: Schema.Attribute.String;
@@ -471,6 +714,7 @@ export interface ApiServicePageServicePage extends Struct.CollectionTypeSchema {
     industriesHeading: Schema.Attribute.String;
     insights: Schema.Attribute.JSON;
     insightsHeading: Schema.Attribute.String;
+    lastUpdated: Schema.Attribute.Date;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -496,6 +740,7 @@ export interface ApiServicePageServicePage extends Struct.CollectionTypeSchema {
     safetyHeading: Schema.Attribute.String;
     safetyImage: Schema.Attribute.String;
     safetyImageAlt: Schema.Attribute.String;
+    seoKeywords: Schema.Attribute.JSON;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     trustBadges: Schema.Attribute.JSON;
@@ -1016,6 +1261,11 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-page.about-page': ApiAboutPageAboutPage;
+      'api::blog-post.blog-post': ApiBlogPostBlogPost;
+      'api::case-study.case-study': ApiCaseStudyCaseStudy;
+      'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::home-page.home-page': ApiHomePageHomePage;
       'api::service-page.service-page': ApiServicePageServicePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

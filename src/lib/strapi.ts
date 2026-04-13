@@ -132,3 +132,27 @@ export async function getServicePageBySlug(
 
   return json.data[0];
 }
+
+export async function getServicesByRegion(region: string): Promise<ServicePage[]> {
+  try {
+    const res = await fetch(
+      `${STRAPI_URL}/api/service-pages?filters[region][$eq]=${region}&populate=*`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+        },
+        next: { revalidate: 60 },
+      }
+    );
+
+    if (!res.ok) return [];
+
+    const json: StrapiResponse<ServicePage[]> = await res.json();
+
+    if (!json.data || json.data.length === 0) return [];
+
+    return json.data;
+  } catch {
+    return [];
+  }
+}
