@@ -1,147 +1,206 @@
-# CareLAbz Website Migration — Claude Code Briefing
+# Carelabs Website Rebuild — Claude Code Project Context
 
-This file auto-loads when Claude Code opens this project. It contains everything Claude needs to understand the project without being re-explained.
+**Read this file before taking any action in this repo.**
+
+---
 
 ## Project Overview
 
-We are rebuilding carelabz.com from WordPress to a modern headless CMS stack. This is a phased migration:
+Migrating **carelabz.com** from WordPress to a fully headless stack:
 
-- **Phase 1 (current):** Migrate a single page as an experiment
-- **Phase 2:** Migrate all pages for one country (AE — United Arab Emirates)
-- **Phase 3:** Roll out to all 50 countries
+| Layer | Tool | Version |
+|-------|------|---------|
+| Frontend | Next.js App Router | 14 |
+| Styling | Tailwind CSS | 3.x |
+| Icons | Lucide React | latest |
+| CMS | Strapi | v5 (Cloud) |
+| Hosting (FE) | Vercel | auto-deploy on push |
+| Source Control | GitHub | two remotes |
 
-## The Experiment (Phase 1)
+## Repositories
 
-Migrating one URL to prove the stack works end-to-end:
+| Remote | URL |
+|--------|-----|
+| `origin` | github.com/ridashabanashah-bot/carelabz_website_experiment1 |
+| `company` | github.com/carelabz/carelabz-website-experiment1 |
+| CMS `origin` | github.com/ridashabanashah-bot/carelabz-cms |
+| CMS `company` | github.com/carelabz/carelabz-cms |
 
-| | URL |
-|---|---|
-| **Old (WordPress)** | `carelabz.com/arc-flash-study-analysis/` |
-| **New (Next.js)** | `carelabz.com/ae/services/study-analysis/arc-flash-study/` |
-| **301 Redirect** | Old → New (configured in `next.config.mjs`) |
+**Git rule:** Always push to BOTH remotes: `git push origin main && git push company main`
 
-## Tech Stack
+## Live URLs
 
-| Layer | Technology | Version |
-|---|---|---|
-| Frontend | Next.js (App Router) | 14.2.35 |
-| Language | TypeScript | ^5 |
-| Styling | Tailwind CSS | ^3.4.1 |
-| CMS | Strapi 5 | 5.42.0 |
-| CMS Database | PostgreSQL (Railway) / SQLite (local dev) |
-| Hosting | Vercel (auto-deploys on git push to `main`) |
-| Code | GitHub (`ridashabanashah-bot/carelabz_website_experiment1`) |
-| CMS Hosting | Railway |
+- **Vercel:** https://carelabz-website-experiment1-ivory.vercel.app
+- **Strapi Cloud:** https://rational-cheese-8e8c4f80ea.strapiapp.com
+- **Strapi API Token:** in `.env.local` as `STRAPI_API_TOKEN`
+
+---
+
+## Brand Identity
+
+### Colors (DO NOT deviate)
+
+| Name | Hex | Tailwind class |
+|------|-----|---------------|
+| Navy | `#0B1A2F` | `bg-navy`, `text-navy` |
+| Orange | `#F97316` | `bg-orange-500`, `text-orange-500` |
+| Off-White | `#F8FAFC` | `bg-offWhite` |
+| Slate Card | `#1E293B` | `bg-slateCard` |
+
+These are defined in `tailwind.config.ts` under `theme.extend.colors`.
+
+### Company Name
+
+**Always "Carelabs"** — capital C only. Never "CareLAbz", "CARELABS", "Care Labs", or "carelabs".
+
+Exception: the domain `carelabz.com` and email `info@carelabz.com` use the original spelling with z.
+
+### Logo
+
+- File: `/images/logo/carelabs-logo.png` (866x288, transparent PNG)
+- Blue "care" + orange "labs" wordmark
+- Tagline: "Test | Calibrate | Inspect | Certify"
+
+---
+
+## Brand Voice Guidelines
+
+Source: Carelabz Brand Voice Skill (audit/skills/carelabz-brand-voice)
+
+### Tone Attributes
+
+1. **Authoritative** — Earned through deep expertise, not claimed. Backed by specific technical knowledge and client results. Never defensive or apologetic about complexity.
+
+2. **Precise** — Exact numbers over ranges. Specific methodologies over generic descriptions. Technical accuracy is non-negotiable. Define terms when necessary.
+
+3. **Confident** — Straightforward language without hedging. "We solve X" not "We help you explore solutions for X." Clear about what Carelabs does and doesn't do.
+
+4. **Not Salesy** — No pressure language. Benefits emerge from explaining the work, not from persuasion. Assumes buyer intelligence. Focuses on outcomes, not emotional triggers.
+
+### Writing Rules
+
+- Lead with the problem, then the solution
+- Be specific with numbers and standards (IEEE 1584, NFPA 70E, OSHA, NEC, DEWA, IEC)
+- Never use jargon without explanation
+- Never oversell — no "revolutionary", "game-changing", "cutting-edge"
+- No vague claims — "industry-leading" requires proof
+- No exclamation points (one per page maximum)
+- Break complex topics into clear sections with structured lists
+- Technical depth shows expertise — don't oversimplify
+
+### Delete on Sight
+
+- "Innovative", "disruption", "game-changing", "next-generation"
+- "AI-powered", "machine learning" (unless specific and relevant)
+- "Synergy", "leverage", "optimize" (when used vaguely)
+- "We're passionate about", "We love", "Our team is obsessed with"
+- "Best-in-class", "world-class" (without proof)
+
+---
+
+## Technical Rules
+
+### Content
+
+- **Zero hardcoded content** — everything from Strapi CMS
+- Every page uses `export const dynamic = "force-dynamic"` (Strapi is fetched at request time)
+- If Strapi is unreachable, show a graceful fallback message
+- All `??` null coalescing fallbacks for Strapi fields
+
+### Images
+
+- All images use `next/image` with `fill` and `sizes` props
+- Never use `<img>` tags directly
+- Compress all JPGs to under 150KB
+- OG images at 1200x630
+
+### Components
+
+- Lucide React for ALL icons — no emoji icons, no custom SVG icons
+- Existing shared components: `StickyNavbar`, `FaqAccordion`, `MobileNav`, `JsonLd`
+- Tailwind v3 only — no v4 `@theme` syntax, no `size-*` classes (use `w-* h-*`)
+- No shadcn/ui — plain Tailwind + Lucide
+
+### TypeScript
+
+- Strict mode
+- No `any` types — use `unknown` with narrowing
+- All Strapi interfaces in `src/lib/strapi*.ts`
+
+---
 
 ## URL Structure
 
-The site serves multiple countries. The URL pattern is:
-
 ```
-carelabz.com/{country-slug}/services/{category-slug}/{service-slug}/
-```
-
-For Phase 1, the only active country slug is `ae` (UAE).
-
-Future country slugs will include: `us`, `uk`, `sa`, `qa`, `kw`, `bh`, `om`, `eg`, `jo`, `lb`, `in`, `pk`, etc. (50 total).
-
-## Project Structure
-
-```
-website_rebuild_project/          ← Next.js frontend (root)
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx            ← Root layout
-│   │   ├── page.tsx              ← Homepage
-│   │   └── ae/services/study-analysis/arc-flash-study/
-│   │       └── page.tsx          ← The migrated page (server component)
-│   ├── lib/
-│   │   └── strapi.ts             ← Strapi API client with TypeScript types
-│   └── styles/
-│       └── globals.css
-├── next.config.mjs               ← Redirects (301 old→new) + Next.js config
-├── .env.local                    ← NEXT_PUBLIC_STRAPI_URL, STRAPI_API_TOKEN
-│
-├── carelabz-cms/                 ← Strapi 5 CMS (separate app)
-│   └── src/
-│       ├── api/service-page/     ← ServicePage collection type
-│       │   └── content-types/service-page/schema.json
-│       └── components/shared/    ← Reusable Strapi components
-│           └── faq-item.json     ← FAQ question/answer pair
-│
-└── skills/                       ← Claude skills for this project
-    ├── wp-content-extraction/
-    ├── strapi5-content-modeling/
-    ├── nextjs-strapi-integration/
-    ├── seo-redirect-management/
-    ├── vercel-deployment/
-    └── content-migration-pipeline/
+/[country-code]/                          — regional homepage
+/[country-code]/services/                 — services index
+/[country-code]/services/[category]/      — category index
+/[country-code]/services/[category]/[slug]/ — individual service
+/[country-code]/blog/                     — blog index
+/[country-code]/blog/[slug]/              — individual blog post
+/[country-code]/case-studies/             — case studies index
+/[country-code]/case-studies/[slug]/      — individual case study
+/[country-code]/about/                    — about page
+/[country-code]/contact/                  — contact page
 ```
 
-## Strapi Content Model
+Active country codes: `us`, `ae` (more coming)
 
-### ServicePage (collection type)
+All URLs use trailing slashes (`trailingSlash: true` in next.config.mjs).
 
-| Field | Type | Notes |
-|---|---|---|
-| `title` | String (required) | Page heading |
-| `slug` | UID → title (required) | URL identifier |
-| `body` | Rich Text (required) | Main page content (HTML) |
-| `metaTitle` | String (required) | Browser tab / SEO title |
-| `metaDescription` | Text (required) | Meta description tag |
-| `faqs` | Component (repeatable) → `shared.faq-item` | FAQ section |
+---
 
-### shared.faq-item (component)
+## Strapi Content Types
 
-| Field | Type |
-|---|---|
-| `question` | String (required) |
-| `answer` | Text (required) |
+| Content Type | API Endpoint | Fields |
+|-------------|-------------|--------|
+| ServicePage | `/api/service-pages` | 46+ fields |
+| HomePage | `/api/home-pages` | 34 fields |
+| BlogPost | `/api/blog-posts` | 16 fields |
+| CaseStudy | `/api/case-studies` | 18 fields |
+| AboutPage | `/api/about-pages` | 20 fields |
+| ContactPage | `/api/contact-pages` | 12 fields |
 
-## Strapi 5 API Notes
+All content types use `region` field to filter by country (e.g., `filters[region][$eq]=us`).
 
-- **Response format:** Strapi 5 returns flat data — fields are directly on the object, NOT nested under `data.attributes` like Strapi 4. The `strapi.ts` client handles both formats as a safety fallback.
-- **Populate:** Strapi 5 does NOT include relations/components by default. Always use `?populate=faqs` (or `populate=*`).
-- **Draft & Publish:** Content must be explicitly published to appear in API responses.
-- **API endpoint:** `GET /api/service-pages?filters[slug][$eq]=arc-flash-study&populate=faqs`
+---
 
-## Environment Variables
+## SEO Rules
 
-### Next.js Frontend (`.env.local` — never committed)
-```
-NEXT_PUBLIC_STRAPI_URL=<Railway Strapi URL or http://localhost:1337>
-STRAPI_API_TOKEN=<Read-only API token from Strapi admin>
-```
+- Every page MUST have: unique metaTitle (50-60 chars), metaDescription (150-160 chars), canonical URL, OG image
+- JSON-LD schemas: Service, FAQPage, LocalBusiness, BreadcrumbList, HowTo (where applicable), Organization (in layout)
+- hreflang tags for multi-region pages
+- Sitemap at `src/app/sitemap.ts`
+- robots.txt at `src/app/robots.ts` — allow `/`, disallow `/api/`, `/admin/`
+- All FAQ answers: 50-80 words, natural AEO-friendly phrasing
+- Keywords array from Strapi `seoKeywords` field
 
-### Vercel (set in dashboard, not in code)
-Same variables as above, plus:
-```
-NEXT_PUBLIC_SITE_URL=https://carelabz.com
-REVALIDATION_SECRET=<random string for webhook revalidation>
-```
+---
 
-## Key Commands
+## Regional Standards Reference
 
-```bash
-# Frontend (from project root)
-npm run dev          # Start Next.js dev server (localhost:3000)
-npm run build        # Production build (also runs type checking)
-npm run lint         # ESLint
+| Region | Standards |
+|--------|----------|
+| UAE | DEWA, IEEE 1584, NFPA 70E, IEC 61482, IEC 60364 |
+| USA | NFPA 70E, IEEE 1584, OSHA (1910 Subpart S), NEC, ANSI |
+| UK | BS 7671, IET Wiring Regulations, HSE |
 
-# CMS (from carelabz-cms/)
-cd carelabz-cms
-npm run develop      # Start Strapi dev server (localhost:1337)
-npm run build        # Build Strapi admin panel
-```
+---
 
-## Rules for Claude
+## Common Tasks
 
-1. **Always use TypeScript** — no `.js` files in `src/`.
-2. **Server components by default** — only add `'use client'` when you need interactivity (onClick, useState, etc.).
-3. **Fetch from Strapi using `src/lib/strapi.ts`** — don't create ad-hoc fetch calls.
-4. **Never commit `.env.local`** — it's in `.gitignore`.
-5. **301 redirects go in `next.config.mjs`** — not in `vercel.json`.
-6. **Tailwind CSS only** — no inline styles, no CSS modules, no styled-components on the frontend.
-7. **Test the build before pushing** — run `npm run build` to catch TypeScript errors.
-8. **Strapi schema changes must be committed** — the `schema.json` files in `carelabz-cms/src/` are version-controlled.
-9. **ISR revalidation is 60 seconds** — set in the `strapi.ts` fetch client via `next: { revalidate: 60 }`.
+### Adding a new service page
+1. Create entry in Strapi (ServicePage content type, set region)
+2. The dynamic route picks it up automatically
+3. Add 301 redirect in `next.config.mjs` if old WordPress URL exists
+
+### Adding a new country
+1. Create homepage entry in Strapi (HomePage, set region to new country code)
+2. Create route folder `src/app/[country-code]/`
+3. Add hreflang entries to layout
+4. Add sitemap entries
+
+### Deploying
+1. Commit changes
+2. Push to both remotes: `git push origin main && git push company main`
+3. Vercel auto-deploys from company remote
