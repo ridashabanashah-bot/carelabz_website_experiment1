@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Montserrat } from "next/font/google";
 import {
-  Zap,
   Shield,
   FileText,
   CheckCircle,
@@ -10,18 +10,37 @@ import {
   Phone,
   Mail,
   MapPin,
-  AlertTriangle,
+  Zap,
+  Activity,
   BarChart2,
   Settings,
-  Activity,
   Cpu,
   ClipboardList,
+  Factory,
+  Building2,
+  Server,
+  Wrench,
+  Flame,
+  GraduationCap,
+  Landmark,
+  Building,
+  ArrowRight,
+  Linkedin,
+  Twitter,
+  Facebook,
 } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
-import { FaqAccordion } from "@/components/faq-accordion";
+import { FloatingSidebar } from "@/components/service-page/floating-sidebar";
+import { FeatureTabs } from "@/components/service-page/feature-tabs";
+import { ServiceFaqAccordion } from "@/components/service-page/faq-accordion-new";
 import { getServicePageBySlug, ServicePage } from "@/lib/strapi";
 
 export const dynamic = "force-dynamic";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 interface ServicePageProps {
   params: { category: string; slug: string };
@@ -44,24 +63,25 @@ export async function generateMetadata({
   };
 }
 
-// Fallback icon list for process steps
-const STEP_ICONS = [
-  ClipboardList,
-  Cpu,
-  BarChart2,
-  Settings,
-  Activity,
-  Shield,
-];
+const STEP_ICONS = [ClipboardList, Cpu, BarChart2, Settings, Activity, Shield];
 
-// Fallback icon for features
-const FEATURE_ICONS = [AlertTriangle, Zap, CheckCircle];
+const INDUSTRY_ICONS: Record<string, typeof Building2> = {
+  "Oil & Gas": Flame,
+  Healthcare: Building2,
+  "Data Centers": Server,
+  Manufacturing: Factory,
+  Utilities: Zap,
+  "Commercial Real Estate": Building,
+  Education: GraduationCap,
+  Government: Landmark,
+};
 
 function buildPageData(service: ServicePage) {
   return {
     title: service.title,
-    eyebrow: service.eyebrow || "Electrical Safety",
-    definitionalLede: service.definitionalLede || service.metaDescription || "",
+    eyebrow: service.eyebrow || "ELECTRICAL SAFETY",
+    definitionalLede:
+      service.definitionalLede || service.metaDescription || "",
     trustBadges: service.trustBadges || [
       { label: "NEC Compliant" },
       { label: "NFPA 70E" },
@@ -73,19 +93,20 @@ function buildPageData(service: ServicePage) {
       service.featuresSubtext ||
       "Our engineers identify and resolve electrical safety risks before they become costly incidents.",
     features: service.features || [],
-    safetyEyebrow: service.safetyEyebrow || "Worker Safety",
+    safetyEyebrow: service.safetyEyebrow || "WORKER SAFETY",
     safetyHeading: service.safetyHeading || "Protecting Your Team",
     safetyBody:
       service.safetyBody ||
-      "Electrical hazards are among the leading causes of workplace injuries. Our studies provide the data you need to implement proper PPE, establish safe work boundaries, and train your team.",
+      "Electrical hazards are among the leading causes of workplace injuries.",
     safetyBullets: service.safetyBullets || [],
     safetyImage: service.safetyImage || null,
     safetyImageAlt: service.safetyImageAlt || "Electrical safety",
-    reportsEyebrow: service.reportsEyebrow || "Deliverables",
-    reportsHeading: service.reportsHeading || "Comprehensive Report Package",
+    reportsEyebrow: service.reportsEyebrow || "DELIVERABLES",
+    reportsHeading:
+      service.reportsHeading || "Comprehensive Report Package",
     reportsBody:
       service.reportsBody ||
-      "Every engagement concludes with a detailed report package designed to support your compliance programme and internal engineering team.",
+      "Every engagement concludes with a detailed report package.",
     reportsBullets: service.reportsBullets || [],
     reportsImage: service.reportsImage || null,
     reportsImageAlt: service.reportsImageAlt || "Engineering report",
@@ -100,23 +121,30 @@ function buildPageData(service: ServicePage) {
     ctaBannerBody:
       service.ctaBannerBody ||
       "Our certified engineers deliver fast turnaround, clear reports, and full compliance support.",
-    ctaBannerPrimaryText: service.ctaBannerPrimaryText || "Get a Free Quote",
-    ctaBannerPrimaryHref: service.ctaBannerPrimaryHref || "/us/contact/",
-    ctaBannerSecondaryText: service.ctaBannerSecondaryText || "View All Services",
+    ctaBannerPrimaryText:
+      service.ctaBannerPrimaryText || "Get a Free Quote",
+    ctaBannerPrimaryHref:
+      service.ctaBannerPrimaryHref || "/us/contact/",
+    ctaBannerSecondaryText:
+      service.ctaBannerSecondaryText || "View All Services",
     ctaBannerSecondaryHref:
       service.ctaBannerSecondaryHref || "/us/services/",
     faqs: service.faqs || [],
-    faqSectionHeading: service.faqSectionHeading || "Frequently Asked Questions",
+    faqSectionHeading:
+      service.faqSectionHeading || "Frequently Asked Questions",
     footerDescription:
       service.footerDescription ||
-      "Professional electrical safety services for US facilities. NEC, NFPA 70E, OSHA, and IEEE 1584 compliant.",
-    footerPhone: service.footerPhone || null,
-    footerEmail: service.footerEmail || null,
-    footerAddress: service.footerAddress || null,
+      "Professional electrical safety services for US facilities.",
+    footerPhone: service.footerPhone || "+1 (800) 123-4567",
+    footerEmail: service.footerEmail || "info@carelabz.com",
+    footerAddress:
+      service.footerAddress || "Houston, TX, United States",
   };
 }
 
-export default async function ServiceDetailPage({ params }: ServicePageProps) {
+export default async function ServiceDetailPage({
+  params,
+}: ServicePageProps) {
   const strapiSlug = `${params.slug}-us`;
   const service = await getServicePageBySlug(strapiSlug);
 
@@ -127,108 +155,74 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const data = buildPageData(service);
 
   return (
-    <>
+    <main className={`${montserrat.className} bg-[#EEF4FF]`}>
       <StickyNavbar />
+      <FloatingSidebar />
 
-      {/* ================================================================
-          HERO SECTION
-      ================================================================ */}
-      <section className="relative overflow-hidden bg-navy pt-24 pb-20">
-        {/* Circuit SVG background */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-10"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="100%"
-            viewBox="0 0 1200 600"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <g stroke="#60a5fa" strokeWidth="1" fill="none">
-              <line x1="0" y1="100" x2="200" y2="100" />
-              <line x1="200" y1="100" x2="200" y2="200" />
-              <line x1="200" y1="200" x2="400" y2="200" />
-              <line x1="400" y1="200" x2="400" y2="50" />
-              <line x1="400" y1="50" x2="700" y2="50" />
-              <line x1="700" y1="50" x2="700" y2="300" />
-              <line x1="700" y1="300" x2="1000" y2="300" />
-              <line x1="1000" y1="300" x2="1000" y2="150" />
-              <line x1="1000" y1="150" x2="1200" y2="150" />
-              <line x1="0" y1="400" x2="300" y2="400" />
-              <line x1="300" y1="400" x2="300" y2="500" />
-              <line x1="300" y1="500" x2="600" y2="500" />
-              <line x1="600" y1="500" x2="600" y2="350" />
-              <line x1="600" y1="350" x2="900" y2="350" />
-              <line x1="900" y1="350" x2="900" y2="450" />
-              <line x1="900" y1="450" x2="1200" y2="450" />
-              <circle cx="200" cy="200" r="4" fill="#60a5fa" />
-              <circle cx="400" cy="50" r="4" fill="#60a5fa" />
-              <circle cx="700" cy="300" r="4" fill="#60a5fa" />
-              <circle cx="1000" cy="150" r="4" fill="#60a5fa" />
-              <circle cx="300" cy="500" r="4" fill="#60a5fa" />
-              <circle cx="600" cy="350" r="4" fill="#60a5fa" />
-            </g>
-          </svg>
-        </div>
-
+      {/* ============================================================ */}
+      {/*  HERO                                                        */}
+      {/* ============================================================ */}
+      <section className="bg-[#EEF4FF] pt-32 pb-24 relative overflow-hidden">
+        <div className="absolute w-[700px] h-[700px] rounded-full bg-white/50 -top-48 -right-48" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-[#374151]">
               <li>
-                <Link href="/us/services/" className="hover:text-orange-400 transition-colors">
+                <Link
+                  href="/us/services/"
+                  className="hover:text-[#FF6633] transition-colors"
+                >
                   Services
                 </Link>
               </li>
-              <li aria-hidden="true" className="text-slate-600">
+              <li>
                 <ChevronRight className="h-3 w-3" />
               </li>
               <li>
                 <Link
                   href={`/us/services/${params.category}/`}
-                  className="hover:text-orange-400 transition-colors capitalize"
+                  className="hover:text-[#FF6633] transition-colors capitalize"
                 >
                   {params.category === "study-analysis"
                     ? "Study & Analysis"
                     : "Inspection"}
                 </Link>
               </li>
-              <li aria-hidden="true" className="text-slate-600">
+              <li>
                 <ChevronRight className="h-3 w-3" />
               </li>
-              <li className="text-white font-medium">{service.title}</li>
+              <li className="text-[#1A2538] font-medium">{service.title}</li>
             </ol>
           </nav>
 
-          <div className="mx-auto max-w-4xl">
-            {/* Eyebrow */}
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-orange-400">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold text-[#1A2538] uppercase tracking-widest mb-4">
               {data.eyebrow}
             </p>
-
-            {/* H1 */}
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-[#1A2538] leading-tight mb-6">
               {service.title}
             </h1>
-
-            {/* Definitional lede */}
             {data.definitionalLede && (
-              <p className="text-xl font-semibold text-slate-200 leading-relaxed mb-8">
+              <p className="text-xl text-[#374151] leading-relaxed mb-8">
                 {data.definitionalLede}
               </p>
             )}
+            <Link
+              href={data.ctaBannerPrimaryHref}
+              className="inline-flex items-center bg-[#FF6633] text-white rounded-[50px] h-[50px] px-8 font-semibold hover:scale-105 transition-all shadow-sm"
+            >
+              Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
 
-            {/* Trust badges */}
             {data.trustBadges.length > 0 && (
-              <div className="flex flex-wrap gap-3 mt-8">
+              <div className="flex flex-wrap gap-3 mt-10">
                 {data.trustBadges.map((badge, i) => (
                   <span
                     key={i}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-xs font-semibold text-orange-300"
+                    className="inline-flex items-center gap-1.5 bg-white rounded-full px-4 py-2 text-sm font-medium text-[#0050B3] border border-blue-100 shadow-sm"
                   >
-                    <Shield className="h-3 w-3" />
+                    <Shield className="h-3.5 w-3.5" />
                     {badge.label}
                   </span>
                 ))}
@@ -238,345 +232,383 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         </div>
       </section>
 
-      <main id="main-content">
-        {/* ================================================================
-            FEATURES / CHALLENGES SECTION
-        ================================================================ */}
-        {data.features.length > 0 && (
-          <section className="bg-offWhite py-20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl text-center mb-12">
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl mb-4">
-                  {data.featuresHeading}
-                </h2>
-                {data.featuresSubtext && (
-                  <p className="text-slate-600 leading-relaxed">
-                    {data.featuresSubtext}
-                  </p>
-                )}
-              </div>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {data.features.slice(0, 6).map((feature, i) => {
-                  const Icon = FEATURE_ICONS[i % FEATURE_ICONS.length];
-                  return (
-                    <div
-                      key={i}
-                      className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm"
-                    >
-                      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/10">
-                        <Icon className="h-6 w-6 text-orange-500" />
-                      </div>
-                      <h3 className="text-lg font-bold text-navy mb-2">
-                        {feature.title}
-                      </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">
-                        {feature.description}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================
-            SAFETY SECTION — image left, content right
-        ================================================================ */}
-        <section className="bg-white py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-              {/* Image */}
-              <div className="relative rounded-2xl overflow-hidden bg-slate-100 aspect-[4/3]">
-                {data.safetyImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={data.safetyImage}
-                    alt={data.safetyImageAlt}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-navy/5">
-                    <Shield className="h-24 w-24 text-navy/20" />
-                  </div>
-                )}
-              </div>
-
-              {/* Content */}
-              <div>
-                <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-500">
-                  {data.safetyEyebrow}
-                </p>
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl mb-4">
-                  {data.safetyHeading}
-                </h2>
-                <p className="text-slate-600 leading-relaxed mb-6">
-                  {data.safetyBody}
-                </p>
-                {data.safetyBullets.length > 0 && (
-                  <ul className="space-y-3">
-                    {data.safetyBullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
-                        <span className="text-slate-700 text-sm">{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================================================================
-            REPORTS SECTION — content left, image right
-        ================================================================ */}
-        <section className="bg-offWhite py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-              {/* Content */}
-              <div>
-                <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-500">
-                  {data.reportsEyebrow}
-                </p>
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl mb-4">
-                  {data.reportsHeading}
-                </h2>
-                <p className="text-slate-600 leading-relaxed mb-6">
-                  {data.reportsBody}
-                </p>
-                {data.reportsBullets.length > 0 && (
-                  <ul className="space-y-3">
-                    {data.reportsBullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <FileText className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
-                        <span className="text-slate-700 text-sm">{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-
-              {/* Image */}
-              <div className="relative rounded-2xl overflow-hidden bg-slate-100 aspect-[4/3]">
-                {data.reportsImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={data.reportsImage}
-                    alt={data.reportsImageAlt}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-navy/5">
-                    <FileText className="h-24 w-24 text-navy/20" />
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================================================================
-            PROCESS STEPS — 6-step grid
-        ================================================================ */}
-        {data.processSteps.length > 0 && (
-          <section className="bg-white py-20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl text-center mb-12">
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl">
-                  {data.processHeading}
-                </h2>
-              </div>
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {data.processSteps.map((step, i) => {
-                  const Icon = STEP_ICONS[i % STEP_ICONS.length];
-                  return (
-                    <div
-                      key={step.number}
-                      className="relative rounded-xl border border-slate-200 bg-offWhite p-6"
-                    >
-                      <div className="mb-4 flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-navy text-white text-sm font-bold">
-                          {step.number}
-                        </div>
-                        <Icon className="h-5 w-5 text-orange-500" />
-                      </div>
-                      <h3 className="text-base font-bold text-navy mb-2">
-                        {step.title}
-                      </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================
-            INDUSTRIES — 8 cards on navy background
-        ================================================================ */}
-        {data.industries.length > 0 && (
-          <section className="bg-navy py-20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl text-center mb-12">
-                <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                  {data.industriesHeading}
-                </h2>
-              </div>
-              <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-                {data.industries.map((industry, i) => (
-                  <div
-                    key={i}
-                    className="relative overflow-hidden rounded-xl bg-slateCard border border-slate-700 p-6 text-center"
-                  >
-                    {industry.image && (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={industry.image}
-                        alt={industry.alt}
-                        className="mx-auto mb-3 h-12 w-12 object-contain opacity-80"
-                      />
-                    )}
-                    <p className="text-sm font-semibold text-white">
-                      {industry.name}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================
-            INSIGHTS — 3 cards
-        ================================================================ */}
-        {data.insights.length > 0 && (
-          <section className="bg-offWhite py-20">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="mb-10">
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl">
-                  {data.insightsHeading}
-                </h2>
-              </div>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {data.insights.slice(0, 3).map((insight, i) => (
-                  <article
-                    key={i}
-                    className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    {insight.image && (
-                      <div className="aspect-[16/9] overflow-hidden bg-slate-100">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={insight.image}
-                          alt={insight.alt}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                    )}
-                    <div className="p-6">
-                      <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-orange-500">
-                        {insight.category}
-                      </p>
-                      <h3 className="text-base font-bold text-navy mb-2">
-                        {insight.title}
-                      </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                        {insight.description}
-                      </p>
-                      <Link
-                        href={insight.href}
-                        className="text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors"
-                      >
-                        Read more →
-                      </Link>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================
-            FAQ SECTION
-        ================================================================ */}
-        {data.faqs.length > 0 && (
-          <section className="bg-white py-20">
-            <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-              <div className="mb-10 text-center">
-                <h2 className="text-3xl font-bold text-navy sm:text-4xl">
-                  {data.faqSectionHeading}
-                </h2>
-              </div>
-              <FaqAccordion faqs={data.faqs} />
-            </div>
-          </section>
-        )}
-
-        {/* ================================================================
-            CTA BANNER
-        ================================================================ */}
-        <section className="bg-navy py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl mb-4">
-              {data.ctaBannerHeading}
+      {/* ============================================================ */}
+      {/*  INTRO                                                       */}
+      {/* ============================================================ */}
+      <section className="bg-[#EEF4FF] py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl font-semibold text-[#1A2538] mb-6">
+              {data.featuresHeading}
             </h2>
-            {data.ctaBannerBody && (
-              <p className="text-lg text-slate-300 leading-relaxed mb-8">
-                {data.ctaBannerBody}
+            {data.featuresSubtext && (
+              <p className="text-lg text-[#374151] leading-relaxed">
+                {data.featuresSubtext}
               </p>
             )}
-            <div className="flex flex-wrap justify-center gap-4">
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  FEATURE TABS                                                */}
+      {/* ============================================================ */}
+      {data.features.length > 0 && (
+        <section className="bg-white py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] mb-12">
+              What We Deliver
+            </h2>
+            <FeatureTabs features={data.features} />
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  SAFETY SECTION                                              */}
+      {/* ============================================================ */}
+      <section className="bg-[#EEF4FF] py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-sm font-semibold text-[#FF6633] uppercase tracking-widest mb-4">
+                {data.safetyEyebrow}
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2538] mb-6">
+                {data.safetyHeading}
+              </h2>
+              <p className="text-[#374151] leading-relaxed mb-8">
+                {data.safetyBody}
+              </p>
+              {data.safetyBullets.length > 0 && (
+                <ul className="space-y-4 mb-8">
+                  {data.safetyBullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#0050B3]" />
+                      <span className="text-[#374151]">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <Link
-                href={data.ctaBannerPrimaryHref || "/us/contact/"}
-                className="inline-flex items-center rounded-lg bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+                href="/us/contact/"
+                className="inline-flex items-center bg-[#0050B3] text-white rounded-[50px] h-[50px] px-8 font-semibold hover:scale-105 transition-all shadow-sm"
               >
-                {data.ctaBannerPrimaryText}
+                Contact Us <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-              {data.ctaBannerSecondaryText && (
-                <Link
-                  href={data.ctaBannerSecondaryHref || "/us/services/"}
-                  className="inline-flex items-center rounded-lg border border-white/30 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
-                >
-                  {data.ctaBannerSecondaryText}
-                </Link>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden bg-blue-100 aspect-[4/3] flex items-center justify-center">
+              {data.safetyImage ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={data.safetyImage}
+                  alt={data.safetyImageAlt}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <Shield className="h-24 w-24 text-[#0050B3]/20" />
               )}
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      {/* ================================================================
-          FOOTER
-      ================================================================ */}
-      <footer className="bg-slateCard text-white py-12">
+      {/* ============================================================ */}
+      {/*  REPORTS SECTION                                             */}
+      {/* ============================================================ */}
+      <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-3">
-            <div>
-              <h3 className="text-lg font-bold mb-4">Carelabs USA</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                {data.footerDescription}
-              </p>
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="relative rounded-2xl overflow-hidden bg-slate-100 aspect-[4/3] flex items-center justify-center order-2 lg:order-1">
+              {data.reportsImage ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={data.reportsImage}
+                  alt={data.reportsImageAlt}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <FileText className="h-24 w-24 text-slate-300" />
+              )}
             </div>
+            <div className="order-1 lg:order-2">
+              <p className="text-sm font-semibold text-[#FF6633] uppercase tracking-widest mb-4">
+                {data.reportsEyebrow}
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2538] mb-6">
+                {data.reportsHeading}
+              </h2>
+              <p className="text-[#374151] leading-relaxed mb-8">
+                {data.reportsBody}
+              </p>
+              {data.reportsBullets.length > 0 && (
+                <ol className="space-y-4 mb-8">
+                  {data.reportsBullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <span className="flex-shrink-0 flex items-center justify-center bg-[#0050B3] text-white rounded-full w-8 h-8 text-sm font-bold">
+                        {i + 1}
+                      </span>
+                      <span className="text-[#374151] pt-1">{bullet}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+              <Link
+                href="/us/contact/"
+                className="inline-flex items-center bg-[#0050B3] text-white rounded-[50px] h-[50px] px-8 font-semibold hover:scale-105 transition-all shadow-sm"
+              >
+                Reach Out <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  PROCESS STEPS                                               */}
+      {/* ============================================================ */}
+      {data.processSteps.length > 0 && (
+        <section className="bg-[#EEF4FF] py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-16">
+              {data.processHeading}
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {data.processSteps.map((step, i) => {
+                const Icon = STEP_ICONS[i % STEP_ICONS.length];
+                return (
+                  <div
+                    key={step.number}
+                    className="relative bg-white rounded-[30px] shadow-sm p-8"
+                  >
+                    <span className="absolute top-4 right-6 text-6xl font-bold text-[#0050B3]/10">
+                      {String(step.number).padStart(2, "0")}
+                    </span>
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50">
+                      <Icon className="h-6 w-6 text-[#0050B3]" />
+                    </div>
+                    <h3 className="text-lg font-bold text-[#1A2538] mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-[#374151] text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  EQUIPMENT / INDUSTRIES FROM STRAPI                          */}
+      {/* ============================================================ */}
+      {data.industries.length > 0 && (
+        <section className="bg-white py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-16">
+              {data.industriesHeading}
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {data.industries.map((industry, i) => {
+                const Icon =
+                  INDUSTRY_ICONS[industry.name] || Wrench;
+                return (
+                  <div
+                    key={i}
+                    className="bg-white rounded-2xl border border-slate-200 p-6 text-center hover:border-[#0050B3] hover:shadow-md transition-all cursor-pointer"
+                  >
+                    <Icon className="h-8 w-8 text-[#0050B3] mx-auto mb-3" />
+                    <p className="text-sm font-medium text-[#1A2538]">
+                      {industry.name}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  INDUSTRIES WE EMPOWER (static for all US pages)             */}
+      {/* ============================================================ */}
+      <section className="bg-[#EEF4FF] py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-16">
+            Industries We Empower
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Oil & Gas", desc: "Upstream, midstream, and downstream facilities" },
+              { name: "Healthcare", desc: "Hospitals, clinics, and medical campuses" },
+              { name: "Data Centers", desc: "Tier I through Tier IV facilities" },
+              { name: "Manufacturing", desc: "Production lines and industrial plants" },
+              { name: "Utilities", desc: "Generation, transmission, and distribution" },
+              { name: "Commercial Real Estate", desc: "Office buildings and retail complexes" },
+              { name: "Education", desc: "Universities, schools, and research labs" },
+              { name: "Government", desc: "Federal, state, and municipal facilities" },
+            ].map((ind) => {
+              const Icon = INDUSTRY_ICONS[ind.name] || Building2;
+              return (
+                <div
+                  key={ind.name}
+                  className="bg-white border-l-4 border-[#0050B3] rounded-r-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <Icon className="h-5 w-5 text-[#0050B3]" />
+                    <h3 className="font-bold text-[#1A2538]">{ind.name}</h3>
+                  </div>
+                  <p className="text-sm text-[#374151]">{ind.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  INSIGHTS                                                    */}
+      {/* ============================================================ */}
+      {data.insights.length > 0 && (
+        <section className="bg-white py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] mb-12">
+              {data.insightsHeading}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {data.insights.slice(0, 3).map((insight, i) => (
+                <article
+                  key={i}
+                  className="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-slate-100 transition-all bg-white"
+                >
+                  <div className="aspect-[16/9] bg-slate-200 flex items-center justify-center">
+                    {insight.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={insight.image}
+                        alt={insight.alt}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <FileText className="h-12 w-12 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#FF6633] mb-2">
+                      {insight.category}
+                    </p>
+                    <h3 className="text-lg font-bold text-[#1A2538] mb-2 line-clamp-2">
+                      {insight.title}
+                    </h3>
+                    <p className="text-[#374151] text-sm mb-4 line-clamp-2">
+                      {insight.description}
+                    </p>
+                    <Link
+                      href={insight.href}
+                      className="text-sm font-semibold text-[#FF6633] hover:text-[#e55a2d] transition-colors inline-flex items-center"
+                    >
+                      Read More{" "}
+                      <ArrowRight className="ml-1 w-4 h-4" />
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  FAQ                                                         */}
+      {/* ============================================================ */}
+      {data.faqs.length > 0 && (
+        <section className="bg-[#EEF4FF] py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-12">
+              {data.faqSectionHeading}
+            </h2>
+            <ServiceFaqAccordion faqs={data.faqs} />
+          </div>
+        </section>
+      )}
+
+      {/* ============================================================ */}
+      {/*  CTA BANNER                                                  */}
+      {/* ============================================================ */}
+      <section className="bg-[#0050B3] py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            {data.ctaBannerHeading}
+          </h2>
+          {data.ctaBannerBody && (
+            <p className="text-lg text-blue-100 mb-10 max-w-2xl mx-auto">
+              {data.ctaBannerBody}
+            </p>
+          )}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href={data.ctaBannerSecondaryHref}
+              className="inline-flex items-center justify-center rounded-[50px] border-2 border-white text-white h-[50px] px-8 font-semibold hover:bg-white hover:text-[#0050B3] transition-all"
+            >
+              {data.ctaBannerSecondaryText}
+            </Link>
+            <Link
+              href={data.ctaBannerPrimaryHref}
+              className="inline-flex items-center justify-center rounded-[50px] bg-[#FF6633] text-white h-[50px] px-8 font-semibold hover:scale-105 transition-all shadow-lg"
+            >
+              {data.ctaBannerPrimaryText}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  FOOTER                                                      */}
+      {/* ============================================================ */}
+      <footer className="bg-[#23282D] pt-16 pb-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Newsletter */}
+          <div className="text-center mb-16">
+            <h3 className="text-xl font-bold text-white mb-2">
+              Subscribe to Our Newsletter
+            </h3>
+            <p className="text-slate-400 text-sm mb-6">
+              Get the latest electrical safety insights delivered to your
+              inbox.
+            </p>
+            <div className="flex max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 rounded-l-[50px] px-6 py-3 text-sm bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-[#FF6633]"
+              />
+              <button className="rounded-r-[50px] bg-[#FF6633] px-6 py-3 text-sm font-semibold text-white hover:bg-[#e55a2d] transition-colors">
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          {/* Links Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="text-lg font-bold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                Services
+              </h4>
+              <ul className="space-y-2 text-sm">
                 <li>
                   <Link
                     href="/us/services/study-analysis/"
-                    className="hover:text-orange-400 transition-colors"
+                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
                   >
-                    Study &amp; Analysis
+                    Study & Analysis
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/us/services/inspection/"
-                    className="hover:text-orange-400 transition-colors"
+                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
                   >
                     Inspection
                   </Link>
@@ -584,54 +616,105 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <ul className="space-y-3 text-sm text-slate-400">
-                {data.footerPhone && (
-                  <li className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-orange-400 shrink-0" />
-                    <a
-                      href={`tel:${data.footerPhone}`}
-                      className="hover:text-orange-400 transition-colors"
-                    >
-                      {data.footerPhone}
-                    </a>
-                  </li>
-                )}
-                {data.footerEmail && (
-                  <li className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-orange-400 shrink-0" />
-                    <a
-                      href={`mailto:${data.footerEmail}`}
-                      className="hover:text-orange-400 transition-colors"
-                    >
-                      {data.footerEmail}
-                    </a>
-                  </li>
-                )}
-                {data.footerAddress && (
-                  <li className="flex items-start gap-2">
-                    <MapPin className="mt-0.5 h-4 w-4 text-orange-400 shrink-0" />
-                    <span>{data.footerAddress}</span>
-                  </li>
-                )}
-                {!data.footerPhone && !data.footerEmail && !data.footerAddress && (
-                  <li>
-                    <Link
-                      href="/us/contact/"
-                      className="hover:text-orange-400 transition-colors"
-                    >
-                      Get a Quote
-                    </Link>
-                  </li>
-                )}
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                Company
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    href="/us/about/"
+                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/us/case-studies/"
+                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                  >
+                    Case Studies
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/us/blog/"
+                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                  >
+                    Blog
+                  </Link>
+                </li>
               </ul>
             </div>
+            <div>
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                Contact
+              </h4>
+              <ul className="space-y-2 text-sm text-slate-400">
+                <li className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-[#FF6633]" />
+                  <a
+                    href={`tel:${data.footerPhone}`}
+                    className="hover:text-[#FF6633] transition-colors"
+                  >
+                    {data.footerPhone}
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-[#FF6633]" />
+                  <a
+                    href={`mailto:${data.footerEmail}`}
+                    className="hover:text-[#FF6633] transition-colors"
+                  >
+                    {data.footerEmail}
+                  </a>
+                </li>
+                <li className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-[#FF6633] mt-0.5" />
+                  <span>{data.footerAddress}</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
+                Follow Us
+              </h4>
+              <div className="flex gap-3">
+                <a
+                  href="https://linkedin.com/company/carelabz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://twitter.com/carelabz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                >
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://facebook.com/carelabz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
+
+          {/* Bottom */}
+          <div className="border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
+            &copy; {new Date().getFullYear()} Carelabs. All rights
+            reserved.
           </div>
         </div>
       </footer>
-    </>
+    </main>
   );
 }

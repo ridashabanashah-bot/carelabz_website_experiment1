@@ -1,15 +1,14 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 
 const NAV_LINKS = [
-  { label: "Services", href: "/services" },
-  { label: "Industries", href: "/industries" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/us/services/" },
+  { label: "About", href: "/us/about/" },
+  { label: "Blog", href: "/us/blog/" },
+  { label: "Contact", href: "/us/contact/" },
 ];
 
 export function StickyNavbar() {
@@ -26,49 +25,40 @@ export function StickyNavbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-navy shadow-lg" : "bg-transparent"
+        isScrolled
+          ? "bg-white/90 backdrop-blur-md shadow-lg"
+          : "bg-white shadow-sm"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link
-            href="/"
-            aria-label="CareLabs — Test, Calibrate, Inspect, Certify"
-            className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
-          >
+        <div className="flex h-[74px] items-center justify-between">
+          <Link href="/us/" className="flex items-center">
             <Image
               src="/images/logo/carelabs-logo.png"
-              alt="CareLabs"
+              alt="Carelabs"
               width={866}
               height={288}
               priority
               className="h-10 w-auto"
             />
           </Link>
-
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/90 transition-colors hover:text-orange-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                className="text-sm font-medium text-[#1A2538] hover:text-[#FF6633] transition-colors"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-
-          {/* Desktop CTA */}
           <Link
-            href="#contact"
-            className="hidden md:inline-flex items-center rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+            href="/us/contact/"
+            className="hidden md:inline-flex items-center rounded-[50px] bg-[#FF6633] px-6 py-2.5 text-sm font-semibold text-white hover:scale-105 transition-all shadow-sm"
           >
             Get a Quote
           </Link>
-
-          {/* Mobile Navigation */}
           <MobileNav links={NAV_LINKS} />
         </div>
       </div>
