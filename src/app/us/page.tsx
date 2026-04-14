@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
 import { JsonLd } from "@/components/JsonLd";
+import { ServiceFaqAccordion } from "@/components/service-page/faq-accordion-new";
 import { getHomePage } from "@/lib/strapi-home";
 
 // ── Icon helpers ────────────────────────────────────────────────────────────
@@ -386,6 +387,18 @@ export default async function USHomePage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Customer Queries / FAQ ──────────────────────────────────────── */}
+      {page.faqs && page.faqs.length > 0 && (
+        <section className="bg-[#EEF4FF] py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-12">
+              {page.faqsHeading ?? "Customer Queries"}
+            </h2>
+            <ServiceFaqAccordion faqs={page.faqs} />
           </div>
         </section>
       )}

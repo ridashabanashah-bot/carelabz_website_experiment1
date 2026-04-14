@@ -76,6 +76,8 @@ export interface HomePage {
   metaDescription: string | null;
   seoKeywords: string[] | null;
   ogImage: string | null;
+  faqsHeading: string | null;
+  faqs: { question: string; answer: string }[] | null;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
