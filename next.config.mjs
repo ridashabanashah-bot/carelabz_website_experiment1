@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "rational-cheese-8e8c4f80ea.strapiapp.com",
+      },
+      {
+        protocol: "https",
+        hostname: "**.strapiapp.com",
+      },
+    ],
+  },
   async redirects() {
     /** Helper: creates both trailing-slash and non-trailing-slash source variants */
     function pair(source, destination) {

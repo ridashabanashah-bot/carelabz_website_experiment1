@@ -32,16 +32,16 @@ export default async function ServicesIndexPage() {
       <StickyNavbar />
 
       {/* Hero Section */}
-      <section className="bg-navy pt-24 pb-16">
+      <section className="bg-[#EEF4FF] pt-24 pb-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-orange-400 mb-3">
               USA Electrical Engineering
             </p>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+            <h1 className="text-4xl font-bold tracking-tight text-[#1A2538] sm:text-5xl lg:text-6xl mb-6">
               Our Services
             </h1>
-            <p className="text-lg text-slate-300 leading-relaxed">
+            <p className="text-lg text-[#374151] leading-relaxed">
               Comprehensive electrical safety services designed to keep your
               facilities compliant, your workers protected, and your operations
               running smoothly — delivered by certified engineers across the

@@ -63,12 +63,12 @@ export default async function AboutPage() {
       <StickyNavbar />
       <main id="main-content">
         {/* Hero Section */}
-        <section className="bg-navy pt-32 pb-20 px-4">
+        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A2538] mb-6">
               {headline}
             </h1>
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-[#374151] max-w-2xl mx-auto">
               {subtext}
             </p>
           </div>

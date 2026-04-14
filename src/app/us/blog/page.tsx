@@ -35,15 +35,15 @@ export default async function BlogIndexPage() {
 
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-navy pt-32 pb-20 px-4">
+        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-4">
               Insights &amp; Resources
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] mb-6">
               Insights &amp; Resources
             </h1>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg text-[#374151] max-w-2xl mx-auto">
               Stay ahead of electrical safety regulations, compliance standards,
               and best practices. Expert knowledge from the CareLabs engineering
               team to help US facilities stay safe and compliant.
@@ -72,7 +72,7 @@ export default async function BlogIndexPage() {
                       tabIndex={-1}
                       aria-hidden="true"
                     >
-                      {post.heroImage ? (
+                      {post.heroImage && post.heroImage.startsWith("http") ? (
                         <Image
                           src={post.heroImage}
                           alt={post.heroImageAlt ?? post.title}
@@ -81,8 +81,8 @@ export default async function BlogIndexPage() {
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       ) : (
-                        <div className="absolute inset-0 bg-gradient-to-br from-navy to-slateCard flex items-center justify-center">
-                          <span className="text-white/30 text-6xl font-bold">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#0050B3] to-[#1A2538] flex items-center justify-center">
+                          <span className="text-white/20 text-6xl font-bold">
                             CL
                           </span>
                         </div>

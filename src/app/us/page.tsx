@@ -111,7 +111,7 @@ export default async function USHomePage() {
       <StickyNavbar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen bg-navy overflow-hidden flex items-center">
+      <section className="relative min-h-screen bg-[#EEF4FF] overflow-hidden flex items-center">
         {/* Circuit SVG pattern background */}
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <svg
@@ -154,12 +154,12 @@ export default async function USHomePage() {
                 </span>
               )}
               {page.heroHeadline && (
-                <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
+                <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] leading-tight mb-6">
                   {page.heroHeadline}
                 </h1>
               )}
               {page.heroSubtext && (
-                <p className="text-lg text-white/70 mb-8 leading-relaxed">
+                <p className="text-lg text-[#374151] mb-8 leading-relaxed">
                   {page.heroSubtext}
                 </p>
               )}
@@ -178,7 +178,7 @@ export default async function USHomePage() {
                 {page.heroSecondaryCtaText && page.heroSecondaryCtaHref && (
                   <Link
                     href={page.heroSecondaryCtaHref}
-                    className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/5"
+                    className="inline-flex items-center gap-2 rounded-lg border-2 border-[#1A2538]/30 px-6 py-3 text-sm font-semibold text-[#1A2538] transition-colors hover:border-[#1A2538]/60 hover:bg-[#1A2538]/5"
                   >
                     {page.heroSecondaryCtaText}
                   </Link>
@@ -191,10 +191,10 @@ export default async function USHomePage() {
                   {page.trustBadges.map((badge, i) => (
                     <div
                       key={i}
-                      className="rounded-lg bg-white/5 border border-white/10 p-4 flex items-center gap-2"
+                      className="rounded-lg bg-white border border-blue-100 p-4 flex items-center gap-2"
                     >
                       <CheckCircle className="w-4 h-4 text-orange-400 shrink-0" />
-                      <span className="text-xs text-white/80 font-medium">
+                      <span className="text-xs text-[#0050B3] font-medium">
                         {badge.label}
                       </span>
                     </div>

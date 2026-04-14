@@ -84,28 +84,28 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <main id="main-content">
         {/* Hero */}
-        <section className="bg-navy pt-28 pb-16 px-4">
+        <section className="bg-[#EEF4FF] pt-28 pb-16 px-4">
           <div className="mx-auto max-w-4xl">
             {/* Breadcrumb */}
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-2 text-sm text-white/50 mb-6 flex-wrap"
+              className="flex items-center gap-2 text-sm text-[#374151] mb-6 flex-wrap"
             >
               <Link
                 href="/"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#1A2538] transition-colors"
               >
                 Home
               </Link>
               <span aria-hidden="true">/</span>
               <Link
                 href="/us/blog/"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#1A2538] transition-colors"
               >
                 Blog
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-white/80 line-clamp-1">{post.title}</span>
+              <span className="text-[#1A2538] line-clamp-1">{post.title}</span>
             </nav>
 
             {/* Category tag */}
@@ -116,16 +116,16 @@ export default async function BlogPostPage({ params }: PageProps) {
             )}
 
             {/* Title */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A2538] mb-6 leading-tight">
               {post.title}
             </h1>
 
             {/* Author + Date */}
-            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm mb-10">
+            <div className="flex flex-wrap items-center gap-4 text-[#374151] text-sm mb-10">
               {post.author && (
                 <span>
                   By{" "}
-                  <span className="text-white/80 font-medium">{post.author}</span>
+                  <span className="text-[#1A2538] font-medium">{post.author}</span>
                 </span>
               )}
               {post.publishedDate && (
@@ -136,7 +136,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Hero Image */}
-            {post.heroImage && (
+            {post.heroImage && post.heroImage.startsWith("http") ? (
               <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
                 <Image
                   src={post.heroImage}
@@ -146,6 +146,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                   className="object-cover"
                   sizes="(max-width: 896px) 100vw, 896px"
                 />
+              </div>
+            ) : (
+              <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gradient-to-br from-[#0050B3] to-[#1A2538] flex items-center justify-center">
+                <span className="text-white/20 text-8xl font-bold">CL</span>
               </div>
             )}
           </div>

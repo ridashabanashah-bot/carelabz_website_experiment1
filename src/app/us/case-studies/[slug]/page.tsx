@@ -32,19 +32,19 @@ export default async function CaseStudyPage({ params }: Props) {
       <StickyNavbar />
       <main id="main-content">
         {/* Hero Section */}
-        <section className="bg-navy pt-32 pb-20 px-4">
+        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
           <div className="mx-auto max-w-5xl">
             {/* Breadcrumb */}
-            <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-white/50">
-              <Link href="/us" className="hover:text-white transition-colors">
+            <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-[#374151]">
+              <Link href="/us" className="hover:text-[#1A2538] transition-colors">
                 Home
               </Link>
               <span>/</span>
-              <Link href="/us/case-studies" className="hover:text-white transition-colors">
+              <Link href="/us/case-studies" className="hover:text-[#1A2538] transition-colors">
                 Case Studies
               </Link>
               <span>/</span>
-              <span className="text-white/80">{study.title}</span>
+              <span className="text-[#1A2538]">{study.title}</span>
             </nav>
 
             {/* Industry Tag */}
@@ -55,15 +55,15 @@ export default async function CaseStudyPage({ params }: Props) {
             )}
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#1A2538] mb-4">
               {study.title}
             </h1>
 
             {/* Client */}
             {study.client && (
-              <p className="text-white/60 text-lg">
+              <p className="text-[#374151] text-lg">
                 Client:{" "}
-                <span className="text-white font-medium">{study.client}</span>
+                <span className="text-[#1A2538] font-medium">{study.client}</span>
               </p>
             )}
           </div>
