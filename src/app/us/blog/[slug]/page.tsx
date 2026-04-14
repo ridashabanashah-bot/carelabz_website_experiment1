@@ -21,16 +21,16 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Article Not Found | Carelabs USA",
+      title: "Article Not Found | CareLabs USA",
     };
   }
 
   return {
-    title: post.metaTitle ?? `${post.title} | Carelabs USA`,
+    title: post.metaTitle ?? `${post.title} | CareLabs USA`,
     description:
       post.metaDescription ??
       post.excerpt ??
-      "Expert electrical safety insights from the Carelabs engineering team.",
+      "Expert electrical safety insights from the CareLabs engineering team.",
     keywords: post.seoKeywords ?? undefined,
   };
 }
@@ -62,13 +62,13 @@ export default async function BlogPostPage({ params }: PageProps) {
     description: post.metaDescription ?? post.excerpt ?? "",
     author: {
       "@type": "Person",
-      name: post.author ?? "Carelabs Engineering Team",
+      name: post.author ?? "CareLabs Engineering Team",
     },
     datePublished: post.publishedDate ?? post.publishedAt,
     dateModified: post.updatedAt,
     publisher: {
       "@type": "Organization",
-      name: "Carelabs",
+      name: "CareLabs",
       url: "https://carelabz.com",
     },
     ...(post.heroImage
@@ -234,7 +234,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               Need Expert Electrical Safety Support?
             </h2>
             <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Carelabs provides arc flash studies, power system analysis, and
+              CareLabs provides arc flash studies, power system analysis, and
               full electrical safety compliance services across the United
               States.
             </p>
@@ -261,7 +261,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 md:grid-cols-4">
             <div className="md:col-span-2">
-              <p className="text-white font-bold text-lg mb-2">Carelabs</p>
+              <p className="text-white font-bold text-lg mb-2">CareLabs</p>
               <p className="text-sm leading-relaxed max-w-xs">
                 Professional electrical safety services for US facilities.
                 Arc flash studies, power system analysis, and compliance
@@ -328,7 +328,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           </div>
           <div className="border-t border-white/10 mt-10 pt-8 text-sm text-center">
-            &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
+            &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
           </div>
         </div>
       </footer>

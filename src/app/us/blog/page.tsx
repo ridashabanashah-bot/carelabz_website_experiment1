@@ -8,9 +8,9 @@ import { getBlogPosts } from "@/lib/strapi-blog";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Electrical Safety Blog | Carelabs USA",
+  title: "Electrical Safety Blog | CareLabs USA",
   description:
-    "Expert insights on electrical safety, arc flash studies, power system analysis, and compliance for US facilities. Stay informed with Carelabs.",
+    "Expert insights on electrical safety, arc flash studies, power system analysis, and compliance for US facilities. Stay informed with CareLabs.",
 };
 
 function formatDate(dateString: string | null): string {
@@ -45,7 +45,7 @@ export default async function BlogIndexPage() {
             </h1>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
               Stay ahead of electrical safety regulations, compliance standards,
-              and best practices. Expert knowledge from the Carelabs engineering
+              and best practices. Expert knowledge from the CareLabs engineering
               team to help US facilities stay safe and compliant.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default async function BlogIndexPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 md:grid-cols-4">
             <div className="md:col-span-2">
-              <p className="text-white font-bold text-lg mb-2">Carelabs</p>
+              <p className="text-white font-bold text-lg mb-2">CareLabs</p>
               <p className="text-sm leading-relaxed max-w-xs">
                 Professional electrical safety services for US facilities.
                 Arc flash studies, power system analysis, and compliance
@@ -235,7 +235,7 @@ export default async function BlogIndexPage() {
             </div>
           </div>
           <div className="border-t border-white/10 mt-10 pt-8 text-sm text-center">
-            &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
+            &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
           </div>
         </div>
       </footer>

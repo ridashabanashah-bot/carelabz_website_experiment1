@@ -35,7 +35,7 @@ export function StickyNavbar() {
           <Link href="/us/" className="flex items-center">
             <Image
               src="/images/logo/carelabs-logo.png"
-              alt="Carelabs"
+              alt="CareLabs"
               width={866}
               height={288}
               priority

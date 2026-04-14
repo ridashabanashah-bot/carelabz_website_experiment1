@@ -10,10 +10,10 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getContactPage("us");
   return {
-    title: page?.metaTitle ?? "Contact Carelabs | Get in Touch",
+    title: page?.metaTitle ?? "Contact CareLabs | Get in Touch",
     description:
       page?.metaDescription ??
-      "Contact the Carelabs team for electrical safety testing, calibration, and compliance services across the United States.",
+      "Contact the CareLabs team for electrical safety testing, calibration, and compliance services across the United States.",
   };
 }
 
@@ -170,7 +170,7 @@ export default async function ContactPage() {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Carelabs Office Location"
+                      title="CareLabs Office Location"
                     />
                   </div>
                 )}
@@ -204,7 +204,7 @@ export default async function ContactPage() {
           <div className="mx-auto max-w-7xl">
             <div className="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
               <div className="md:col-span-2">
-                <p className="text-white font-bold text-lg mb-2">Carelabs</p>
+                <p className="text-white font-bold text-lg mb-2">CareLabs</p>
                 <p className="text-white/60 text-sm leading-relaxed max-w-xs">
                   Professional electrical safety testing, calibration, inspection,
                   and certification services across the United States.
@@ -242,7 +242,7 @@ export default async function ContactPage() {
               </div>
             </div>
             <p className="text-white/40 text-sm text-center pt-8">
-              © {new Date().getFullYear()} Carelabs. All rights reserved.
+              © {new Date().getFullYear()} CareLabs. All rights reserved.
             </p>
           </div>
         </footer>

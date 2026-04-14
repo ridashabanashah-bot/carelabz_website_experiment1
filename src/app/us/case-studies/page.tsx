@@ -7,9 +7,9 @@ export const dynamic = "force-dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Case Studies | Carelabs US",
+    title: "Case Studies | CareLabs US",
     description:
-      "Explore how Carelabs has helped clients across the US achieve safety compliance and operational excellence.",
+      "Explore how CareLabs has helped clients across the US achieve safety compliance and operational excellence.",
   };
 }
 
@@ -27,7 +27,7 @@ export default async function CaseStudiesPage() {
               Case Studies
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-              Real-world results from our partnerships. See how Carelabs has
+              Real-world results from our partnerships. See how CareLabs has
               helped organizations across the US achieve safety compliance,
               reduce risk, and drive operational excellence.
             </p>
@@ -107,7 +107,7 @@ export default async function CaseStudiesPage() {
               Ready to write your success story?
             </h2>
             <p className="text-white/70 text-lg mb-8">
-              Contact our team to learn how Carelabs can help your organization
+              Contact our team to learn how CareLabs can help your organization
               achieve its safety and compliance goals.
             </p>
             <Link
@@ -124,7 +124,7 @@ export default async function CaseStudiesPage() {
           <div className="mx-auto max-w-7xl">
             <div className="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
               <div className="md:col-span-2">
-                <p className="text-white font-bold text-lg mb-2">Carelabs</p>
+                <p className="text-white font-bold text-lg mb-2">CareLabs</p>
                 <p className="text-white/60 text-sm leading-relaxed max-w-xs">
                   Professional electrical safety testing, calibration, inspection,
                   and certification services across the United States.
@@ -162,7 +162,7 @@ export default async function CaseStudiesPage() {
               </div>
             </div>
             <p className="text-white/40 text-sm text-center pt-8">
-              © {new Date().getFullYear()} Carelabs. All rights reserved.
+              © {new Date().getFullYear()} CareLabs. All rights reserved.
             </p>
           </div>
         </footer>

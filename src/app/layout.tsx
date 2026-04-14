@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carelabz.com"),
-  title: "Carelabs — Electrical Safety Services",
+  title: "CareLabs — Electrical Safety Services",
   description:
     "Professional electrical safety services including arc flash studies, power system analysis, and compliance solutions in Dubai, UAE.",
 };
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Carelabs",
+  name: "CareLabs",
   url: "https://carelabz.com",
   logo: "https://carelabz.com/icon.svg",
   sameAs: [

@@ -53,11 +53,11 @@ export async function generateMetadata({
   const service = await getServicePageBySlug(strapiSlug);
 
   if (!service) {
-    return { title: "Service Not Found | Carelabs USA" };
+    return { title: "Service Not Found | CareLabs USA" };
   }
 
   return {
-    title: service.metaTitle || `${service.title} | Carelabs USA`,
+    title: service.metaTitle || `${service.title} | CareLabs USA`,
     description: service.metaDescription || undefined,
     keywords: service.seoKeywords?.join(", "),
   };
@@ -710,7 +710,7 @@ export default async function ServiceDetailPage({
 
           {/* Bottom */}
           <div className="border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Carelabs. All rights
+            &copy; {new Date().getFullYear()} CareLabs. All rights
             reserved.
           </div>
         </div>

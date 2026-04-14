@@ -22,10 +22,10 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getAboutPage("us");
   return {
-    title: page?.metaTitle ?? "About Carelabs | Electrical Safety Experts",
+    title: page?.metaTitle ?? "About CareLabs | Electrical Safety Experts",
     description:
       page?.metaDescription ??
-      "Learn about Carelabs — our mission, values, and the team dedicated to electrical safety testing and compliance across the US.",
+      "Learn about CareLabs — our mission, values, and the team dedicated to electrical safety testing and compliance across the US.",
   };
 }
 
@@ -56,7 +56,7 @@ export default async function AboutPage() {
   const headline = page?.heroHeadline ?? "Who We Are";
   const subtext =
     page?.heroSubtext ??
-    "Carelabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across the United States.";
+    "CareLabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across the United States.";
 
   return (
     <>
@@ -210,7 +210,7 @@ export default async function AboutPage() {
         <section className="bg-navy py-20 px-4">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {page?.ctaBannerHeading ?? "Partner with Carelabs"}
+              {page?.ctaBannerHeading ?? "Partner with CareLabs"}
             </h2>
             {page?.ctaBannerSubtext && (
               <p className="text-white/70 text-lg mb-8">{page.ctaBannerSubtext}</p>
@@ -234,7 +234,7 @@ export default async function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <div className="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
               <div className="md:col-span-2">
-                <p className="text-white font-bold text-lg mb-2">Carelabs</p>
+                <p className="text-white font-bold text-lg mb-2">CareLabs</p>
                 <p className="text-white/60 text-sm leading-relaxed max-w-xs">
                   Professional electrical safety testing, calibration, inspection,
                   and certification services across the United States.
@@ -272,7 +272,7 @@ export default async function AboutPage() {
               </div>
             </div>
             <p className="text-white/40 text-sm text-center pt-8">
-              © {new Date().getFullYear()} Carelabs. All rights reserved.
+              © {new Date().getFullYear()} CareLabs. All rights reserved.
             </p>
           </div>
         </footer>

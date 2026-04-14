@@ -67,10 +67,10 @@ function WhyIcon({ name, ...props }: { name: string } & LucideProps) {
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getHomePage("us");
   return {
-    title: page?.metaTitle ?? "Carelabs — Electrical Safety & Power System Studies | USA",
+    title: page?.metaTitle ?? "CareLabs — Electrical Safety & Power System Studies | USA",
     description:
       page?.metaDescription ??
-      "Carelabs provides IEEE 1584 arc flash studies, NFPA 70E compliance, short circuit analysis, and power system engineering across the United States.",
+      "CareLabs provides IEEE 1584 arc flash studies, NFPA 70E compliance, short circuit analysis, and power system engineering across the United States.",
     keywords: page?.seoKeywords ?? undefined,
     openGraph: page?.ogImage
       ? { images: [page.ogImage] }
@@ -94,7 +94,7 @@ export default async function USHomePage() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Carelabs",
+    name: "CareLabs",
     description: page.metaDescription,
     url: "https://carelabz.com/us/",
     telephone: page.footerPhone,
@@ -273,7 +273,7 @@ export default async function USHomePage() {
         </section>
       )}
 
-      {/* ── Why Carelabs ─────────────────────────────────────────────────── */}
+      {/* ── Why CareLabs ─────────────────────────────────────────────────── */}
       {page.whyFeatures && page.whyFeatures.length > 0 && (
         <section className="bg-white py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -449,7 +449,7 @@ export default async function USHomePage() {
               <Link href="/us/" className="inline-block mb-4">
                 <Image
                   src="/images/logo/carelabs-logo.png"
-                  alt="Carelabs"
+                  alt="CareLabs"
                   width={866}
                   height={288}
                   className="h-8 w-auto"
@@ -544,7 +544,7 @@ export default async function USHomePage() {
           {/* Bottom row */}
           <div className="mt-12 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
-              &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
+              &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link

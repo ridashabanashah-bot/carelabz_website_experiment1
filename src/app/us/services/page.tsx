@@ -7,7 +7,7 @@ import { ServicePage } from "@/lib/strapi";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Electrical Safety Services | Carelabs USA",
+  title: "Electrical Safety Services | CareLabs USA",
   description:
     "Comprehensive electrical safety services in the USA including arc flash studies, power system analysis, relay coordination, harmonic studies, and electrical safety inspections.",
 };
@@ -93,7 +93,7 @@ export default async function ServicesIndexPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
-              <h3 className="text-lg font-bold mb-4">Carelabs USA</h3>
+              <h3 className="text-lg font-bold mb-4">CareLabs USA</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Professional electrical safety services for US facilities.
                 NEC, NFPA 70E, OSHA, and IEEE 1584 compliant.
@@ -124,14 +124,14 @@ export default async function ServicesIndexPage() {
                 </li>
                 <li>
                   <Link href="/us/about/" className="hover:text-orange-400 transition-colors">
-                    About Carelabs
+                    About CareLabs
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Carelabs. All rights reserved.
+            &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
           </div>
         </div>
       </footer>
