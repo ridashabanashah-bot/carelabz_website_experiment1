@@ -1,41 +1,92 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, Zap } from "lucide-react";
 
-interface MobileNavProps {
-  links: { label: string; href: string }[];
+interface ServiceLink {
+  label: string;
+  href: string;
 }
 
-export function MobileNav({ links }: MobileNavProps) {
+interface MobileNavProps {
+  services: ServiceLink[];
+}
+
+export function MobileNav({ services }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesExpanded, setServicesExpanded] = useState(false);
+
+  const close = () => {
+    setIsOpen(false);
+    setServicesExpanded(false);
+  };
+
+  const linkClass =
+    "font-['Montserrat'] text-[15px] font-semibold tracking-wide text-[#2575B6] py-3 border-b border-slate-100";
 
   return (
     <div className="md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-[#111827] p-2"
+        className="border-2 border-[#2575B6] rounded-lg p-1.5 text-[#2575B6]"
         aria-label="Toggle menu"
+        aria-expanded={isOpen}
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
       </button>
+
       {isOpen && (
-        <div className="absolute top-[74px] left-0 right-0 bg-white shadow-lg border-t border-slate-100 z-50">
-          <nav className="flex flex-col p-4 space-y-2">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-[15px] font-medium text-[#111827] hover:text-[#2474B5] transition-colors py-2 border-b border-slate-100"
-              >
-                {link.label}
-              </Link>
-            ))}
+        <div className="absolute top-[74px] left-0 right-0 bg-white shadow-lg border-t border-slate-100 z-50 max-h-[calc(100vh-74px)] overflow-y-auto">
+          <nav className="flex flex-col p-4">
+            <Link href="/us/about/" onClick={close} className={linkClass}>
+              About Us
+            </Link>
+
+            {/* Services accordion */}
+            <button
+              type="button"
+              onClick={() => setServicesExpanded(!servicesExpanded)}
+              className={`${linkClass} flex items-center justify-between w-full text-left`}
+              aria-expanded={servicesExpanded}
+            >
+              Services
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  servicesExpanded ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {servicesExpanded && (
+              <div className="bg-[#EEF4FF] rounded-xl my-2 p-2">
+                {services.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    onClick={close}
+                    className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-[#1A2538] hover:bg-white transition-colors"
+                  >
+                    <Zap className="w-4 h-4 text-[#F15C30] flex-shrink-0" />
+                    {s.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/us/services/"
+                  onClick={close}
+                  className="block px-3 py-2.5 text-sm font-semibold text-[#F15C30] hover:text-[#2575B6]"
+                >
+                  View All Services →
+                </Link>
+              </div>
+            )}
+
+            <Link href="/us/contact/" onClick={close} className={linkClass}>
+              Contact Us
+            </Link>
+
             <Link
               href="/us/contact/"
-              onClick={() => setIsOpen(false)}
-              className="inline-flex items-center justify-center rounded-[50px] bg-[#FF6633] px-5 py-2.5 text-sm font-semibold text-white hover:scale-105 transition-all mt-2"
+              onClick={close}
+              className="mt-4 inline-flex items-center justify-center rounded-[50px] bg-[#F15C30] px-5 py-3 text-sm font-semibold text-white hover:scale-105 transition-all"
             >
               Get a Quote
             </Link>
