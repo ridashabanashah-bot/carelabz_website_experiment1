@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StickyNavbar } from "@/components/sticky-navbar";
+import USFooter from "@/components/us-footer";
 import { getServicesByRegion, ServicePage } from "@/lib/strapi";
 
 export const dynamic = "force-dynamic";
@@ -128,53 +129,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-navy text-white py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-3">
-            <div>
-              <h3 className="text-lg font-bold mb-4">CareLabs USA</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                Professional electrical safety services for US facilities.
-                NEC, NFPA 70E, OSHA, and IEEE 1584 compliant.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li>
-                  <Link href="/us/services/study-analysis/" className="hover:text-orange-400 transition-colors">
-                    Study &amp; Analysis
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/us/services/inspection/" className="hover:text-orange-400 transition-colors">
-                    Inspection
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li>
-                  <Link href="/us/contact/" className="hover:text-orange-400 transition-colors">
-                    Get a Quote
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/us/about/" className="hover:text-orange-400 transition-colors">
-                    About CareLabs
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <USFooter />
     </>
   );
 }

@@ -7,9 +7,6 @@ import {
   FileText,
   CheckCircle,
   ChevronRight,
-  Phone,
-  Mail,
-  MapPin,
   Zap,
   Activity,
   BarChart2,
@@ -30,11 +27,9 @@ import {
   ShoppingBag,
   HardHat,
   Warehouse,
-  Linkedin,
-  Twitter,
-  Facebook,
 } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
+import USFooter from "@/components/us-footer";
 import { FloatingSidebar } from "@/components/service-page/floating-sidebar";
 import { FeatureTabs } from "@/components/service-page/feature-tabs";
 import { ServiceFaqAccordion } from "@/components/service-page/faq-accordion-new";
@@ -552,157 +547,7 @@ export default async function ServiceDetailPage({
         </div>
       </section>
 
-      {/* ============================================================ */}
-      {/*  FOOTER                                                      */}
-      {/* ============================================================ */}
-      <footer className="bg-[#23282D] pt-16 pb-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Newsletter */}
-          <div className="text-center mb-16">
-            <h3 className="text-xl font-bold text-white mb-2">
-              Subscribe to Our Newsletter
-            </h3>
-            <p className="text-slate-400 text-sm mb-6">
-              Get the latest electrical safety insights delivered to your
-              inbox.
-            </p>
-            <div className="flex max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 rounded-l-[50px] px-6 py-3 text-sm bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-[#FF6633]"
-              />
-              <button className="rounded-r-[50px] bg-[#FF6633] px-6 py-3 text-sm font-semibold text-white hover:bg-[#e55a2d] transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div>
-
-          {/* Links Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                Services
-              </h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/us/services/study-analysis/"
-                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                  >
-                    Study & Analysis
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/services/inspection/"
-                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                  >
-                    Inspection
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                Company
-              </h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/us/about/"
-                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/case-studies/"
-                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                  >
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/blog/"
-                    className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                Contact
-              </h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-[#FF6633]" />
-                  <a
-                    href={`tel:${data.footerPhone}`}
-                    className="hover:text-[#FF6633] transition-colors"
-                  >
-                    {data.footerPhone}
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-[#FF6633]" />
-                  <a
-                    href={`mailto:${data.footerEmail}`}
-                    className="hover:text-[#FF6633] transition-colors"
-                  >
-                    {data.footerEmail}
-                  </a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-[#FF6633] mt-0.5" />
-                  <span>{data.footerAddress}</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
-                Follow Us
-              </h4>
-              <div className="flex gap-3">
-                <a
-                  href="https://linkedin.com/company/carelabz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://twitter.com/carelabz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com/carelabz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-[#FF6633] transition-colors"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom */}
-          <div className="border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} CareLabs. All rights
-            reserved.
-          </div>
-        </div>
-      </footer>
+      <USFooter />
     </main>
   );
 }

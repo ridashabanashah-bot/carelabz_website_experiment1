@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
+import USFooter from "@/components/us-footer";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { JsonLd } from "@/components/JsonLd";
 import { marked } from "marked";
@@ -261,82 +262,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-slateCard text-white/60 py-12 px-4">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 md:grid-cols-4">
-            <div className="md:col-span-2">
-              <p className="text-white font-bold text-lg mb-2">CareLabs</p>
-              <p className="text-sm leading-relaxed max-w-xs">
-                Professional electrical safety services for US facilities.
-                Arc flash studies, power system analysis, and compliance
-                solutions.
-              </p>
-            </div>
-            <div>
-              <p className="text-white font-semibold mb-3">Services</p>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/us/services/study-analysis/arc-flash-study/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Arc Flash Study
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/services/study-analysis/short-circuit-analysis/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Short Circuit Analysis
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/services/study-analysis/load-flow-analysis/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Load Flow Analysis
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-white font-semibold mb-3">Company</p>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/us/about/"
-                    className="hover:text-white transition-colors"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/blog/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/us/contact/"
-                    className="hover:text-white transition-colors"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 mt-10 pt-8 text-sm text-center">
-            &copy; {new Date().getFullYear()} CareLabs. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <USFooter />
     </>
   );
 }

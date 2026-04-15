@@ -3,6 +3,7 @@ import Link from "next/link";
 import { headers } from "next/headers";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
+import USFooter from "@/components/us-footer";
 import { ContactForm } from "@/components/contact-form";
 import { getContactPage } from "@/lib/strapi-pages";
 import { getServicesByRegion } from "@/lib/strapi";
@@ -226,54 +227,8 @@ export default async function ContactPage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-slateCard py-12 px-4">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
-              <div className="md:col-span-2">
-                <p className="text-white font-bold text-lg mb-2">CareLabs</p>
-                <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-                  Professional electrical safety testing, calibration, inspection,
-                  and certification services across the United States.
-                </p>
-              </div>
-              <div>
-                <p className="text-white font-semibold mb-3">Services</p>
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/us/services" className="text-white/60 text-sm hover:text-white transition-colors">
-                      All Services
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-white font-semibold mb-3">Company</p>
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/us/about" className="text-white/60 text-sm hover:text-white transition-colors">
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/us/case-studies" className="text-white/60 text-sm hover:text-white transition-colors">
-                      Case Studies
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/us/contact" className="text-white/60 text-sm hover:text-white transition-colors">
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p className="text-white/40 text-sm text-center pt-8">
-              © {new Date().getFullYear()} CareLabs. All rights reserved.
-            </p>
-          </div>
-        </footer>
       </main>
+      <USFooter />
     </>
   );
 }
