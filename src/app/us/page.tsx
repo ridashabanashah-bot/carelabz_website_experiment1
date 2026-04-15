@@ -451,7 +451,7 @@ export default async function USHomePage() {
             <div>
               <Link href="/us/" className="inline-block mb-4">
                 <Image
-                  src="/images/logo/carelabs-logo.png"
+                  src="/images/logo/carelabs-logo.svg"
                   alt="CareLabs"
                   width={866}
                   height={288}

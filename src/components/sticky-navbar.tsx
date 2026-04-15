@@ -33,7 +33,7 @@ export function StickyNavbar() {
         <div className="flex h-[74px] items-center justify-between">
           <Link href="/us/" className="flex items-center">
             <Image
-              src="/images/logo/carelabs-logo.png"
+              src="/images/logo/carelabs-logo.svg"
               alt="CareLabs"
               width={866}
               height={288}
