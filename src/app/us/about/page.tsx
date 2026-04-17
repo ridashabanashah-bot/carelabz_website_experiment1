@@ -27,6 +27,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       page?.metaDescription ??
       "Learn about CareLabs — our mission, values, and the team dedicated to electrical safety testing and compliance across the US.",
+    alternates: {
+      canonical: "https://carelabz.com/us/about/",
+    },
   };
 }
 

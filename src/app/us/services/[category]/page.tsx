@@ -42,6 +42,9 @@ export async function generateMetadata({
   return {
     title: `${label} Services | CareLabs USA`,
     description: `Browse CareLabs USA ${label.toLowerCase()} electrical safety services for US facilities.`,
+    alternates: {
+      canonical: `https://carelabz.com/us/services/${params.category}/`,
+    },
   };
 }
 

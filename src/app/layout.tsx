@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: "CareLabs — Electrical Safety Services",
   description:
     "Professional electrical safety services including arc flash studies, power system analysis, and compliance solutions in Dubai, UAE.",
+  openGraph: {
+    type: "website",
+    siteName: "CareLabs",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@carelabz",
+  },
 };
 
 const organizationJsonLd = {

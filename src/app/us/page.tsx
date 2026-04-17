@@ -69,6 +69,9 @@ export async function generateMetadata(): Promise<Metadata> {
       page?.metaDescription ??
       "CareLabs provides IEEE 1584 arc flash studies, NFPA 70E compliance, short circuit analysis, and power system engineering across the United States.",
     keywords: page?.seoKeywords ?? undefined,
+    alternates: {
+      canonical: "https://carelabz.com/us/",
+    },
     openGraph: page?.ogImage
       ? { images: [page.ogImage] }
       : undefined,

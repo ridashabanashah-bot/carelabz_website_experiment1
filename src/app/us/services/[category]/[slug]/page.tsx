@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
 import USFooter from "@/components/us-footer";
+import { JsonLd } from "@/components/JsonLd";
 import { FloatingSidebar } from "@/components/service-page/floating-sidebar";
 import { FeatureTabs } from "@/components/service-page/feature-tabs";
 import { ServiceFaqAccordion } from "@/components/service-page/faq-accordion-new";
@@ -60,6 +61,24 @@ export async function generateMetadata({
     title: service.metaTitle || `${service.title} | CareLabs USA`,
     description: service.metaDescription || undefined,
     keywords: service.seoKeywords?.join(", "),
+    alternates: {
+      canonical: `https://carelabz.com/us/services/${params.category}/${params.slug}/`,
+      languages: {
+        "en-US": `https://carelabz.com/us/services/${params.category}/${params.slug}/`,
+        "x-default": `https://carelabz.com/us/services/${params.category}/${params.slug}/`,
+      },
+    },
+    openGraph: {
+      title: service.metaTitle || `${service.title} | CareLabs USA`,
+      description: service.metaDescription || undefined,
+      url: `https://carelabz.com/us/services/${params.category}/${params.slug}/`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: service.metaTitle || `${service.title} | CareLabs USA`,
+      description: service.metaDescription || undefined,
+    },
   };
 }
 
@@ -166,8 +185,88 @@ export default async function ServiceDetailPage({
 
   const data = buildPageData(service);
 
+  const pageUrl = `https://carelabz.com/us/services/${params.category}/${params.slug}/`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": pageUrl,
+        url: pageUrl,
+        name: service.metaTitle || `${service.title} | CareLabs USA`,
+        description: service.metaDescription || undefined,
+        inLanguage: "en-US",
+        isPartOf: { "@id": "https://carelabz.com/#website" },
+      },
+      {
+        "@type": "Service",
+        name: service.title,
+        description: service.metaDescription || undefined,
+        url: pageUrl,
+        provider: {
+          "@type": "Organization",
+          name: "CareLabs",
+          url: "https://carelabz.com",
+        },
+        areaServed: {
+          "@type": "Country",
+          name: "United States",
+        },
+      },
+      ...(data.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: data.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://carelabz.com/us/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://carelabz.com/us/services/",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name:
+              params.category === "study-analysis"
+                ? "Study & Analysis"
+                : "Inspection",
+            item: `https://carelabz.com/us/services/${params.category}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: service.title,
+            item: pageUrl,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <main className={`${montserrat.className} bg-[#EEF4FF]`}>
+      <JsonLd data={jsonLd} />
       <StickyNavbar />
       <FloatingSidebar />
 

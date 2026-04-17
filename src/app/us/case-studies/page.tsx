@@ -11,6 +11,9 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Case Studies | CareLabs US",
     description:
       "Explore how CareLabs helps clients across the US achieve electrical safety compliance and operational excellence.",
+    alternates: {
+      canonical: "https://carelabz.com/us/case-studies/",
+    },
   };
 }
 

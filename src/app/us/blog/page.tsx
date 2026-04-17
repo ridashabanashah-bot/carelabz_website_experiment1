@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Electrical Safety Blog | CareLabs USA",
   description:
     "Expert insights on electrical safety, arc flash studies, power system analysis, and compliance for US facilities. Stay informed with CareLabs.",
+  alternates: {
+    canonical: "https://carelabz.com/us/blog/",
+  },
 };
 
 function postDate(post: BlogPost): string {

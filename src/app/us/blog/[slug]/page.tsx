@@ -34,6 +34,9 @@ export async function generateMetadata({
       post.excerpt ??
       "Expert electrical safety insights from the CareLabs engineering team.",
     keywords: post.seoKeywords ?? undefined,
+    alternates: {
+      canonical: `https://carelabz.com/us/blog/${params.slug}/`,
+    },
   };
 }
 

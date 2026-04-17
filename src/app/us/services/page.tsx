@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Electrical Safety Services | CareLabs USA",
   description:
     "Comprehensive electrical safety services in the USA including arc flash studies, power system analysis, relay coordination, harmonic studies, and electrical safety inspections.",
+  alternates: {
+    canonical: "https://carelabz.com/us/services/",
+  },
 };
 
 // Map Strapi slug to URL path
