@@ -9,9 +9,9 @@ import { buildJsonLd, getOrganizationSchema, getWebPageSchema, getBreadcrumbSche
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Electrical Safety Services | CareLabs USA",
+  title: "Achieve Compliance with OSHA and IEEE Standards | CareLabs USA",
   description:
-    "Comprehensive electrical safety services in the USA including arc flash studies, power system analysis, relay coordination, harmonic studies, and electrical safety inspections.",
+    "Discover our comprehensive electrical safety services ensuring compliance with USA standards. Arc flash studies, short circuit analysis, and power system engineering.",
   alternates: {
     canonical: "https://carelabz.com/us/services/",
     languages: {
@@ -80,7 +80,7 @@ export default async function ServicesIndexPage() {
               USA Electrical Engineering
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-[#1A2538] sm:text-5xl lg:text-6xl mb-6">
-              Our Services
+              Power System Analysis for Your Specific Needs
             </h1>
             <p className="text-lg text-[#374151] leading-relaxed">
               Comprehensive electrical safety services designed to keep your

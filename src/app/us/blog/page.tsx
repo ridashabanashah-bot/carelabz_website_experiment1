@@ -90,10 +90,10 @@ export default async function BlogIndexPage() {
         <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-4">
-              Insights &amp; Resources
+              Power Systems Knowledge Hub
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] mb-6">
-              Insights &amp; Resources
+              Power up your Knowledge with our Blogs
             </h1>
             <p className="text-lg text-[#374151] max-w-2xl mx-auto">
               Stay ahead of electrical safety regulations, compliance standards,

@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "**.strapiapp.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
   },
   async redirects() {
