@@ -1,0 +1,89 @@
+{
+  "region": "ca",
+  "heroHeadline": "Committed to safe, reliable, and sustainable power system analysis solutions",
+  "heroSubtext": "Delivering innovative power system solutions by integrating advanced technology and strategic expertise.",
+  "heroImage": "/images/about/about-hero.jpg",
+  "heroImageAlt": "Carelabs engineering team reviewing power system studies at a US facility",
+  "missionHeading": "Our Mission",
+  "missionBody": "Helping you transform your power systems from a cost center into a competitive advantage. Since our inception in 2015, CareLabs has committed to fostering a safety culture within organizations. Over the years, we have successfully partnered with many industries in Canada to help them accomplish their safety goals. Our core values align with the requirements of our clients and the standards of the industry we serve. As we look ahead, we envisage pioneering electrical safety and compliance, empowe",
+  "valuesHeading": "Our Core Values",
+  "values": [
+    {
+      "icon": "shield",
+      "title": "Safety First",
+      "description": "Every decision we make — from how we scope a project to how we write a report — is evaluated against the question: does this make workers safer? Safety is not a department or a policy at Carelabs; it is the reason we exist."
+    },
+    {
+      "icon": "award",
+      "title": "Technical Excellence",
+      "description": "Electrical safety engineering is a discipline where errors have serious consequences. We hold ourselves to the highest standards of technical accuracy, using industry-leading ETAP software, current IEEE and NFPA standards, and peer review on every project."
+    },
+    {
+      "icon": "users",
+      "title": "Client Partnership",
+      "description": "We build long-term relationships with our clients, not transactional engagements. We invest in understanding your facility, your operations, and your compliance challenges so that our studies are actionable and our recommendations are practical."
+    },
+    {
+      "icon": "lightbulb",
+      "title": "Innovation",
+      "description": "The power systems and electrical safety landscape is constantly evolving. We stay ahead of changes in IEEE 1584, CSA Z462, CCOHS regulations, and protective relay technology to ensure our clients always benefit from the most current engineering knowledge."
+    }
+  ],
+  "teamHeading": "Our Leadership",
+  "team": [
+    {
+      "bio": "Dr. Mitchell is a licensed Professional Engineer with 25 years of power system engineering experience. He holds a PhD in Electrical Engineering from Ontario A&M University and is a member of the IEEE Power & Energy Society and the NFPA Technical Committee on Electrical Safety in the Workplace. He has led over 500 arc flash studies and power system projects across North America.",
+      "name": "Dr. James Mitchell, PE",
+      "role": "Chief Executive Officer & Principal Engineer",
+      "image": "/images/team/james-mitchell.jpg"
+    },
+    {
+      "bio": "Sarah Chen is a licensed Professional Engineer and Certified Fire and Explosion Investigator with 18 years of experience in electrical safety and power system analysis. She specializes in arc flash hazard mitigation and has developed electrical safety programs for clients ranging from community hospitals to Fortune 100 manufacturers. Sarah leads Carelabs' team of 15 engineers and project managers.",
+      "name": "Sarah Chen, PE, CFEI",
+      "role": "Director of Engineering",
+      "image": "/images/team/sarah-chen.jpg"
+    },
+    {
+      "bio": "Marcus Johnson is a licensed Professional Engineer specializing in protective relay coordination and power system protection with 20 years of experience. He holds certifications in multiple protective relay platforms and has extensive experience with modern digital relays, IEC 61850, and arc flash detection systems. Marcus leads Carelabs' relay coordination and protection practice.",
+      "name": "Marcus Johnson, PE",
+      "role": "Senior Principal Engineer — Protection & Control",
+      "image": "/images/team/marcus-johnson.jpg"
+    }
+  ],
+  "statsHeading": "Carelabs by the Numbers",
+  "stats": [
+    {
+      "label": "Projects Completed",
+      "metric": "500+",
+      "description": "Power system studies, arc flash analyses, and electrical safety programs delivered across Canada"
+    },
+    {
+      "label": "Years of Experience",
+      "metric": "15+",
+      "description": "Years serving US industrial and commercial facilities with expert electrical safety engineering"
+    },
+    {
+      "label": "Clients Served",
+      "metric": "200+",
+      "description": "Industrial manufacturers, healthcare systems, data centers, utilities, and government agencies"
+    },
+    {
+      "label": "Client Satisfaction",
+      "metric": "99.9%",
+      "description": "Client satisfaction rate based on post-project surveys and repeat engagement metrics"
+    }
+  ],
+  "certifications": [
+    "CSA Z462",
+    "IEEE 1584",
+    "CCOHS 10/30",
+    "CEC Certified",
+    "ETAP Certified"
+  ],
+  "ctaBannerHeading": "Partner with Carelabs for Your Electrical Safety Needs",
+  "ctaBannerSubtext": "Contact our team to discuss your facility's electrical safety requirements. We serve industrial and commercial facilities across Canada.",
+  "ctaBannerPrimaryText": "Contact Us Today",
+  "ctaBannerPrimaryHref": "/ca/contact/",
+  "metaTitle": "About Us: CareLabs' Journey to Excellence",
+  "metaDescription": "Uncover the story of CareLabs, a leader in power system analysis. Learn about our mission, team, and global presence."
+}

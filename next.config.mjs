@@ -90,6 +90,13 @@ const nextConfig = {
       ...pair("/us/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us", "/us/blog/power-system-study-load-flow-short-circuit-relay-coordination/"),
       ...pair("/us/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use", "/us/blog/audit-electric-motor-efficiency-reliability/"),
       ...pair("/us/guide-to-perform-power-quality-analysis-in-the-united-states", "/us/blog/guide-power-quality-analysis-united-states/"),
+
+      /* ============================================================ */
+      /*  CA — Legacy WP cruft + typo redirects                       */
+      /* ============================================================ */
+      ...pair("/ca/services-arch-flash-analysis", "/ca/services/arc-flash-study/"),
+      ...pair("/ca/services-old", "/ca/service/"),
+      ...pair("/ca/home", "/ca/"),
     ];
   },
 };

@@ -19,6 +19,25 @@ export function getOrganizationSchema() {
   };
 }
 
+export function getOrganizationSchemaCA() {
+  return {
+    "@type": "Organization",
+    "@id": "https://carelabz.com/#organization-ca",
+    name: "CareLabs",
+    url: "https://carelabz.com/ca/",
+    logo: "https://carelabz.com/images/logo/carelabs-logo.svg",
+    telephone: "+1-800-456-7890",
+    email: "info@carelabz.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Toronto",
+      addressRegion: "ON",
+      addressCountry: "CA",
+    },
+    sameAs: ["https://ae.linkedin.com/company/carelabs"],
+  };
+}
+
 export function getWebSiteSchema() {
   return {
     "@type": "WebSite",
@@ -32,7 +51,8 @@ export function getWebSiteSchema() {
 export function getWebPageSchema(
   url: string,
   name: string,
-  description: string
+  description: string,
+  lang: string = "en-US"
 ) {
   return {
     "@type": "WebPage",
@@ -40,7 +60,7 @@ export function getWebPageSchema(
     url,
     name,
     description,
-    inLanguage: "en-US",
+    inLanguage: lang,
     isPartOf: { "@id": "https://carelabz.com/#website" },
     publisher: { "@id": "https://carelabz.com/#organization" },
   };

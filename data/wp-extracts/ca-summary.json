@@ -1,0 +1,339 @@
+{
+  "totalPages": 27,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 4,
+    "blog": 20
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "home",
+      "file": "data/wp-extracts\\ca-home.json",
+      "title": "Advanced Power System Study & Analysis Solutions",
+      "wordCount": 857,
+      "h2Count": 11,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "NFPA",
+        "ETAP",
+        "CEC"
+      ]
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\ca-about-us.json",
+      "title": "About Us: CareLabs' Journey to Excellence",
+      "wordCount": 509,
+      "h2Count": 7,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "contact",
+      "slug": "contact",
+      "file": "data/wp-extracts\\ca-contact.json",
+      "title": "Contact Us - We're Here to Help",
+      "wordCount": 188,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\ca-arc-flash-study.json",
+      "title": "Expert Arc Flash Study and Analysis Services",
+      "wordCount": 995,
+      "h2Count": 5,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis",
+      "file": "data/wp-extracts\\ca-short-circuit-analysis.json",
+      "title": "Short Circuit Analysis: Secure Your Power System",
+      "wordCount": 922,
+      "h2Count": 6,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis",
+      "file": "data/wp-extracts\\ca-load-flow-analysis.json",
+      "title": "Optimize Power Systems with Load Flow Analysis",
+      "wordCount": 940,
+      "h2Count": 5,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study",
+      "file": "data/wp-extracts\\ca-relay-coordination-study.json",
+      "title": "Relay Coordination Study: Precision for Power Systems",
+      "wordCount": 899,
+      "h2Count": 6,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "IEEE",
+        "NFPA",
+        "OSHA",
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety",
+      "file": "data/wp-extracts\\ca-understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety.json",
+      "title": "Understanding the Importance of Arc Flash Boundaries, in Ens",
+      "wordCount": 709,
+      "h2Count": 8,
+      "faqCount": 0,
+      "standards": [
+        "NEC",
+        "CEC"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "etap-and-its-utilizations-on-arc-flash-study",
+      "file": "data/wp-extracts\\ca-etap-and-its-utilizations-on-arc-flash-study.json",
+      "title": "ETAP and its Utilizations on Arc Flash Study - CareLabs",
+      "wordCount": 621,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers",
+      "file": "data/wp-extracts\\ca-the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers.json",
+      "title": "The Importance of PPE Requirement for Electrical Workers - C",
+      "wordCount": 732,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "NFPA",
+        "OSHA"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions",
+      "file": "data/wp-extracts\\ca-prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions.json",
+      "title": "Prioritizing Safety and Efficiency: Carelabs' Comprehensive ",
+      "wordCount": 871,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada",
+      "file": "data/wp-extracts\\ca-understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada.json",
+      "title": "Understanding the Importance of Analysis of Arc Flash Hazard",
+      "wordCount": 876,
+      "h2Count": 11,
+      "faqCount": 0,
+      "standards": [
+        "NFPA"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "comprehensive-electrical-safety-inspections-in-canada",
+      "file": "data/wp-extracts\\ca-comprehensive-electrical-safety-inspections-in-canada.json",
+      "title": "Comprehensive Electrical Safety Inspections in Canada - Care",
+      "wordCount": 645,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "why-arc-flash-study-and-analysis-important-in-canada",
+      "file": "data/wp-extracts\\ca-why-arc-flash-study-and-analysis-important-in-canada.json",
+      "title": "Why Arc Flash Study and Analysis Important in Canada? - Care",
+      "wordCount": 967,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-safety-protocol-for-arc-flash-study-in-canada",
+      "file": "data/wp-extracts\\ca-electrical-safety-protocol-for-arc-flash-study-in-canada.json",
+      "title": "Electrical Safety Protocol for Arc Flash Study in Canada - C",
+      "wordCount": 611,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "effective-electrical-safety-program-development",
+      "file": "data/wp-extracts\\ca-effective-electrical-safety-program-development.json",
+      "title": "Effective Electrical Safety Program Development - CareLabs",
+      "wordCount": 511,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "customized-electrical-safety-management-plans-for-canada",
+      "file": "data/wp-extracts\\ca-customized-electrical-safety-management-plans-for-canada.json",
+      "title": "Customized Electrical Safety Management Plans for Canada - C",
+      "wordCount": 582,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "expert-electrical-safety-advisors-canada-carelabz",
+      "file": "data/wp-extracts\\ca-expert-electrical-safety-advisors-canada-carelabz.json",
+      "title": "Professional Electrical Safety Advisors in Canada - CareLabs",
+      "wordCount": 611,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-safety-measures-with-carelabs",
+      "file": "data/wp-extracts\\ca-arc-flash-safety-measures-with-carelabs.json",
+      "title": "Arc Flash Safety Measures with Carelabs Canada - CareLabs",
+      "wordCount": 613,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-incidents",
+      "file": "data/wp-extracts\\ca-arc-flash-incidents.json",
+      "title": "Arc Flash Incidents - CareLabs",
+      "wordCount": 514,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-hazard-analysis-proven-mitigation-strategies",
+      "file": "data/wp-extracts\\ca-arc-flash-hazard-analysis-proven-mitigation-strategies.json",
+      "title": "Arc Flash Hazard Analysis and Mitigation Strategies - CareLa",
+      "wordCount": 629,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": []
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-standards-for-arc-flash-study-and-analysis",
+      "file": "data/wp-extracts\\ca-electrical-standards-for-arc-flash-study-and-analysis.json",
+      "title": "Electrical Standards for Arc Flash study and Analysis - Care",
+      "wordCount": 653,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "NEC",
+        "IEEE",
+        "NFPA",
+        "OSHA",
+        "CEC"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "empowering-microgrids-in-canada-the-role-of-relay-coordination-study",
+      "file": "data/wp-extracts\\ca-empowering-microgrids-in-canada-the-role-of-relay-coordination-study.json",
+      "title": "Empowering Microgrids in Canada: The Role of Relay Coordinat",
+      "wordCount": 888,
+      "h2Count": 8,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "IEEE",
+        "NFPA",
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada",
+      "file": "data/wp-extracts\\ca-the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada.json",
+      "title": "The Importance of Load Flow Analysis to Enhance Grid Resilie",
+      "wordCount": 950,
+      "h2Count": 7,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety",
+      "file": "data/wp-extracts\\ca-the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety.json",
+      "title": "The Role of Short Circuit Analysis in Enhancing Workplace El",
+      "wordCount": 995,
+      "h2Count": 9,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "NFPA",
+        "OSHA",
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "safe-and-sustainable-hydropower-in-canada",
+      "file": "data/wp-extracts\\ca-safe-and-sustainable-hydropower-in-canada.json",
+      "title": "Safe and Sustainable Hydropower in Canada - CareLabs",
+      "wordCount": 1152,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "CSA",
+        "IEEE",
+        "ETAP"
+      ]
+    },
+    {
+      "kind": "blog",
+      "slug": "cost-effective-arc-flash-study-in-canada",
+      "file": "data/wp-extracts\\ca-cost-effective-arc-flash-study-in-canada.json",
+      "title": "Cost Effective Arc Flash Study in Canada - CareLabs",
+      "wordCount": 601,
+      "h2Count": 3,
+      "faqCount": 0,
+      "standards": [
+        "ETAP"
+      ]
+    }
+  ]
+}

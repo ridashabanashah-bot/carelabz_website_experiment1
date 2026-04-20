@@ -1,0 +1,168 @@
+{
+  "total": 27,
+  "ok": 27,
+  "results": [
+    {
+      "kind": "home",
+      "slug": "home",
+      "ok": true,
+      "id": 6
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "ok": true,
+      "id": 7
+    },
+    {
+      "kind": "contact",
+      "slug": "contact",
+      "ok": true,
+      "id": 7
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study-ca",
+      "ok": true,
+      "id": 107
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis-ca",
+      "ok": true,
+      "id": 109
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis-ca",
+      "ok": true,
+      "id": 111
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study-ca",
+      "ok": true,
+      "id": 113
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-hazard-analysis-proven-mitigation-strategies",
+      "ok": true,
+      "id": 27
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-incidents",
+      "ok": true,
+      "id": 29
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-safety-measures-with-carelabs",
+      "ok": true,
+      "id": 31
+    },
+    {
+      "kind": "blog",
+      "slug": "comprehensive-electrical-safety-inspections-in-canada",
+      "ok": true,
+      "id": 33
+    },
+    {
+      "kind": "blog",
+      "slug": "cost-effective-arc-flash-study-in-canada",
+      "ok": true,
+      "id": 35
+    },
+    {
+      "kind": "blog",
+      "slug": "customized-electrical-safety-management-plans-for-canada",
+      "ok": true,
+      "id": 37
+    },
+    {
+      "kind": "blog",
+      "slug": "effective-electrical-safety-program-development",
+      "ok": true,
+      "id": 39
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-safety-protocol-for-arc-flash-study-in-canada",
+      "ok": true,
+      "id": 41
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-standards-for-arc-flash-study-and-analysis",
+      "ok": true,
+      "id": 43
+    },
+    {
+      "kind": "blog",
+      "slug": "empowering-microgrids-in-canada-the-role-of-relay-coordination-study",
+      "ok": true,
+      "id": 45
+    },
+    {
+      "kind": "blog",
+      "slug": "etap-and-its-utilizations-on-arc-flash-study",
+      "ok": true,
+      "id": 47
+    },
+    {
+      "kind": "blog",
+      "slug": "expert-electrical-safety-advisors-canada-carelabz",
+      "ok": true,
+      "id": 49
+    },
+    {
+      "kind": "blog",
+      "slug": "prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions",
+      "ok": true,
+      "id": 51
+    },
+    {
+      "kind": "blog",
+      "slug": "safe-and-sustainable-hydropower-in-canada",
+      "ok": true,
+      "id": 53
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada",
+      "ok": true,
+      "id": 55
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers",
+      "ok": true,
+      "id": 57
+    },
+    {
+      "kind": "blog",
+      "slug": "the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety",
+      "ok": true,
+      "id": 59
+    },
+    {
+      "kind": "blog",
+      "slug": "understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety",
+      "ok": true,
+      "id": 61
+    },
+    {
+      "kind": "blog",
+      "slug": "understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada",
+      "ok": true,
+      "id": 63
+    },
+    {
+      "kind": "blog",
+      "slug": "why-arc-flash-study-and-analysis-important-in-canada",
+      "ok": true,
+      "id": 65
+    }
+  ]
+}
