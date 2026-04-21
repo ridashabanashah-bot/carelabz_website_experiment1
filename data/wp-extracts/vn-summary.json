@@ -1,0 +1,92 @@
+{
+  "cc": "vn",
+  "wpUrl": "https://carelabz.com/vn/",
+  "totalPages": 11,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 8
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "vn",
+      "file": "data/wp-extracts\\vn-vn.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\vn-about-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\vn-contact-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\vn-motor-start-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\vn-power-quality-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\vn-power-system-study-and-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\vn-harmonic-study-and-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study-in-vietnam",
+      "file": "data/wp-extracts\\vn-relay-coordination-study-in-vietnam.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis-in-vietnam",
+      "file": "data/wp-extracts\\vn-load-flow-analysis-in-vietnam.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis-in-vietnam",
+      "file": "data/wp-extracts\\vn-short-circuit-analysis-in-vietnam.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-analysis-in-vietnam",
+      "file": "data/wp-extracts\\vn-arc-flash-analysis-in-vietnam.json",
+      "wordCount": 39,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 31
+}

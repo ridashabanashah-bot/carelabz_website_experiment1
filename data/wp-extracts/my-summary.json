@@ -1,0 +1,92 @@
+{
+  "cc": "my",
+  "wpUrl": "https://carelabz.com/my/",
+  "totalPages": 11,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 8
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "my",
+      "file": "data/wp-extracts\\my-my.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\my-about-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\my-contact-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\my-harmonic-study-and-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\my-power-quality-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\my-power-system-study-and-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\my-motor-start-analysis.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-analysis-in-malaysia",
+      "file": "data/wp-extracts\\my-arc-flash-analysis-in-malaysia.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis-in-malaysia",
+      "file": "data/wp-extracts\\my-load-flow-analysis-in-malaysia.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis-in-malaysia",
+      "file": "data/wp-extracts\\my-short-circuit-analysis-in-malaysia.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study-in-malaysia",
+      "file": "data/wp-extracts\\my-relay-coordination-study-in-malaysia.json",
+      "wordCount": 39,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 46
+}

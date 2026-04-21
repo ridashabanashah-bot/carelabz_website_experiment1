@@ -1,0 +1,318 @@
+{
+  "cc": "au",
+  "wpUrl": "https://carelabz.com/au/",
+  "totalPages": 43,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "blog": 40
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "au",
+      "file": "data/wp-extracts\\au-au.json",
+      "wordCount": 1474,
+      "h2Count": 12
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\au-about-us.json",
+      "wordCount": 776,
+      "h2Count": 12
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\au-contact-us.json",
+      "wordCount": 402,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-guide-to-perform-power-quality-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-guide-to-perform-power-quality-analysis-in-australia.json",
+      "wordCount": 1181,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-checklist-for-electrical-safety-audit-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-checklist-for-electrical-safety-audit-in-australia.json",
+      "wordCount": 1055,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-harmonic-analysis-in-power-system-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-harmonic-analysis-in-power-system-in-australia.json",
+      "wordCount": 1070,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-australia.json",
+      "wordCount": 1156,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-how-to-perform-an-electrical-switchgear-risk-assessment-in-australia-2",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-how-to-perform-an-electrical-switchgear-risk-assessment-in-australia-2.json",
+      "wordCount": 1422,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-commercial-electrical-safety-inspection-checklist-for-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-commercial-electrical-safety-inspection-checklist-for-australia.json",
+      "wordCount": 1050,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-importance-of-electrical-safety-audit-for-companies-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-importance-of-electrical-safety-audit-for-companies-in-australia.json",
+      "wordCount": 1049,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-importance-of-electrical-installation-condition-report-ecir-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-importance-of-electrical-installation-condition-report-ecir-in-australia.json",
+      "wordCount": 1092,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-importance-of-electrical-safety-inspection-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-importance-of-electrical-safety-inspection-in-australia.json",
+      "wordCount": 1024,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-how-to-perform-an-electrical-switchgear-risk-assessment-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-how-to-perform-an-electrical-switchgear-risk-assessment-in-australia.json",
+      "wordCount": 1059,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards.json",
+      "wordCount": 1041,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-why-is-harmonic-study-and-analysis-important-for-companies-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-why-is-harmonic-study-and-analysis-important-for-companies-in-australia.json",
+      "wordCount": 1134,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-working-principles-of-power-quality-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-working-principles-of-power-quality-analysis-in-australia.json",
+      "wordCount": 1585,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-blog-electrical-condition-installation-report-by-third-party-company-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-blog-electrical-condition-installation-report-by-third-party-company-in-australia.json",
+      "wordCount": 953,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "factors-that-contribute-to-the-cost-of-an-arc-flash-study-in-your-facility",
+      "file": "data/wp-extracts\\au-factors-that-contribute-to-the-cost-of-an-arc-flash-study-in-your-facility.json",
+      "wordCount": 1444,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "test",
+      "file": "data/wp-extracts\\au-test.json",
+      "wordCount": 1,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "short-circuit-analysis",
+      "file": "data/wp-extracts\\au-short-circuit-analysis.json",
+      "wordCount": 1039,
+      "h2Count": 15
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-analysis",
+      "file": "data/wp-extracts\\au-load-flow-analysis.json",
+      "wordCount": 1092,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-risks",
+      "file": "data/wp-extracts\\au-arc-flash-risks.json",
+      "wordCount": 1060,
+      "h2Count": 19
+    },
+    {
+      "kind": "blog",
+      "slug": "update-billing-card",
+      "file": "data/wp-extracts\\au-update-billing-card.json",
+      "wordCount": 4,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "edit-your-profile",
+      "file": "data/wp-extracts\\au-edit-your-profile.json",
+      "wordCount": 4,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "register",
+      "file": "data/wp-extracts\\au-register.json",
+      "wordCount": 2,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-electrical-installation-condition-report-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-electrical-installation-condition-report-in-australia.json",
+      "wordCount": 1066,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-electrical-safety-audit-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-electrical-safety-audit-in-australia.json",
+      "wordCount": 1087,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-power-system-study-and-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-power-system-study-and-analysis-in-australia.json",
+      "wordCount": 1118,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-electrical-safety-inspection-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-electrical-safety-inspection-in-australia.json",
+      "wordCount": 1076,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-electrical-switchgear-risk-assessment-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-electrical-switchgear-risk-assessment-in-australia.json",
+      "wordCount": 1089,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-power-quality-study-and-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-power-quality-study-and-analysis-in-australia.json",
+      "wordCount": 1056,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-harmonic-study-and-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-harmonic-study-and-analysis-in-australia.json",
+      "wordCount": 1134,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "bangaloreflats-in-australia-services-motor-start-and-acceleration-analysis-in-australia",
+      "file": "data/wp-extracts\\au-bangaloreflats-in-australia-services-motor-start-and-acceleration-analysis-in-australia.json",
+      "wordCount": 1106,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "relay-coordination-study",
+      "file": "data/wp-extracts\\au-relay-coordination-study.json",
+      "wordCount": 1095,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "welcome",
+      "file": "data/wp-extracts\\au-welcome.json",
+      "wordCount": 15,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "your-membership",
+      "file": "data/wp-extracts\\au-your-membership.json",
+      "wordCount": 3,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "terms-and-conditions",
+      "file": "data/wp-extracts\\au-terms-and-conditions.json",
+      "wordCount": 1787,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "privacy-policy",
+      "file": "data/wp-extracts\\au-privacy-policy.json",
+      "wordCount": 1373,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "dynamic-content-megamenu-menuitem4239",
+      "file": "data/wp-extracts\\au-dynamic-content-megamenu-menuitem4239.json",
+      "wordCount": 110,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "dynamic-content-megamenu-menuitem4236",
+      "file": "data/wp-extracts\\au-dynamic-content-megamenu-menuitem4236.json",
+      "wordCount": 92,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "dynamic-content-megamenu-menuitem1975",
+      "file": "data/wp-extracts\\au-dynamic-content-megamenu-menuitem1975.json",
+      "wordCount": 404,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "dynamic-content-megamenu-menuitem1006",
+      "file": "data/wp-extracts\\au-dynamic-content-megamenu-menuitem1006.json",
+      "wordCount": 354,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "dynamic-content-megamenu-menuitem629",
+      "file": "data/wp-extracts\\au-dynamic-content-megamenu-menuitem629.json",
+      "wordCount": 198,
+      "h2Count": 1
+    }
+  ],
+  "skipped": {
+    "service-legacy": 9
+  },
+  "discovered": 78
+}

@@ -1,0 +1,74 @@
+{
+  "cc": "nz",
+  "wpUrl": "https://carelabz.com/nz/",
+  "totalPages": 8,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 4,
+    "case-study": 1
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "nz",
+      "file": "data/wp-extracts\\nz-nz.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\nz-about-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\nz-contact-us.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis-in-new-zealand",
+      "file": "data/wp-extracts\\nz-short-circuit-analysis-in-new-zealand.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis-in-new-zealand",
+      "file": "data/wp-extracts\\nz-load-flow-analysis-in-new-zealand.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study-in-new-zealand",
+      "file": "data/wp-extracts\\nz-relay-coordination-study-in-new-zealand.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-analysis-in-new-zealand",
+      "file": "data/wp-extracts\\nz-arc-flash-analysis-in-new-zealand.json",
+      "wordCount": 39,
+      "h2Count": 0
+    },
+    {
+      "kind": "case-study",
+      "slug": "case-study",
+      "file": "data/wp-extracts\\nz-case-study.json",
+      "wordCount": 39,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 1
+  },
+  "discovered": 64
+}

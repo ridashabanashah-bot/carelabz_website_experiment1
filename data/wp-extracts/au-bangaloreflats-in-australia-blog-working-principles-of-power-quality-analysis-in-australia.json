@@ -1,0 +1,184 @@
+{
+  "url": "https://carelabz.com/au/bangaloreflats-in-australia-blog-working-principles-of-power-quality-analysis-in-australia/",
+  "slug": "bangaloreflats-in-australia-blog-working-principles-of-power-quality-analysis-in-australia",
+  "pageType": "blog",
+  "metaTitle": "Principles of Power Quality Study and Analysis in Australia | Carelabs",
+  "metaDescription": "Power quality is determined by analysing a power supply system's voltage, frequency, and waveform. Study and analysis of power quality ensures safeguarding work environment.",
+  "canonicalSource": "https://carelabz.com/au/bangaloreflats-in-australia-blog-working-principles-of-power-quality-analysis-in-australia/",
+  "h1": "",
+  "h2": [
+    "Impact of Poor Power Quality:",
+    "Understanding the Cause of Poor Power Quality:",
+    "How to Reduce the Impact of Power Quality Issues?",
+    "Where Proactive Safety Meets Power Engineering",
+    "Knowledge",
+    "Short Links",
+    "Connect with Us!"
+  ],
+  "h3": [
+    "Leave a Reply Cancel reply"
+  ],
+  "paragraphs": [
+    "The quality of the power supply has a direct impact on the basic functioning and performance of the equipment connected to the distribution network. There is an assumption that equipment will function as intended and that the lifespan of equipment should be approximately equal to the specified value. Similarly, it is also believed that the network’s stability is good enough to avoid undesirable problems such as poor output or loss of functionality.",
+    "In reality, there are various power quality disturbances in the power system. These power quality disturbances, regardless of duration, can cause equipment damage. Thus, maintaining power quality is critical to avoid equipment failure.",
+    "In this blog, we will look at the studies required to measure power quality and its reliability. Subsequently, various power quality system are investigated, and methods for evaluating both the effect and the control are discussed.",
+    "In contrast to the reliability, which deals with prolonged power outages, the effect of power quality disturbances can’t be immediately observed.",
+    "Although in some cases, the effect of the power quality disturbance is instantly apparent due to equipment damage and/or process delay. It is particularly true for sags, interruptions, and transients.",
+    "In other cases, the effect of the power quality disturbance may not be apparent for a long time. The deterioration of equipment is one example of this. In this situation, degradation of the equipment goes unnoticed for many years. In other situations, power quality disturbances will result in additional losses, absorbed as part of the day-to-day costs of doing business, and thus mostly go unnoticed.",
+    "Power quality is determined by whether a power supply system’s voltage, frequency, and waveform meet the required specifications. However, various factors influence power quality. The following power quality disturbances are addressed in this blog:",
+    "Other phenomena, such as swells, transients, inter harmonics, and noise, have not been thoroughly discussed as these disturbances only occur rarely.",
+    "Steady-state voltage magnitude corresponds to long-term (minutes or hours) sustained voltage magnitudes.",
+    "According to AS 60038, the Australian LV voltage range is 230 V +10%/-6%. A further 5% voltage drop is permitted in the consumer premises, resulting in an average of 230 V +10% /-11%. The majority of equipment will be connected at low voltage (LV) and will be configured to operate efficiently within this defined steady-state voltage range.",
+    "The key impacts found for sustained high voltage levels (over-voltage) or low voltage levels (under-voltage) are equipment failure, additional equipment energy consumption, and potential system maloperation. According to LTNPQS, the most important economic effect associated with steady-state voltage for Australia is over-voltage, which leads to premature aging and equipment breakdown. For example – In an incandescent light bulb, a 5% over-voltage would approximately halve the lamp life.",
+    "The economic consequences of voltage unbalance are commonly correlated with additional losses, especially in induction motors and three-phase motors.",
+    "Almost all energy consumers produce harmonic currents, which are injected into the power grid. Harmonic currents are AC currents in multiples of the fundamental frequency of 50 hertz.",
+    "Non-linear electronic devices such as computers, variable speed drives (VSD), and discharge lights are the most prominent sources of harmonic currents. Harmonic currents can be very damaging to both the installation and the supplying network.",
+    "Damaged components, damage to installation parts, component loading, inefficient use of the installation’s current carrying capacity, reduced component lifespan, and inefficient operation of protection components are few impacts of harmonic.",
+    "Flicker is a voltage waveform envelope modulation. It causes rhythmic variations in the light intensity of incandescent lighting sources. For certain people, this rhythmic transition in light output can cause health issues ranging from irritation and decreased productivity to headaches and, in rare situations, seizures.",
+    "In voltage sags and interruptions mostly, no equipment is damaged; however, interruptions of some duration often result in loss of output due to equipment tripping.",
+    "One general observation is that the cost of a long interruption is not proportional to its duration; rather, it can be expressed as a logarithmic curve. The cost of a long interruption is said to be strongly influenced by the following factors:",
+    "AEMO’s value of customer reliability (VCR) estimates the economic effect of interruptions on all consumers. While these numbers essentially reflect customers’ willingness to pay to stop an interruption, it is expected that this willingness to pay is strongly related to the real expense.",
+    "According to these estimates, a one-second interruption costs about 20% of the cost of a one-hour outage.",
+    "Carelabs offers various power quality services to identify and evaluate power quality disturbances. Few of which are:",
+    "Carelabs performs power quality study and analysis using the ETAP – Electrical Transient Analysis Program software. It is the best software tool to carry out calculations and simulations for all components in an electrical system and thus, ensure the safety of the equipment.",
+    "Carelabs offer power quality analysis services in all the major cities of Queensland, New South Wales, South Australia, Victoria, Tasmania, and Western Australia.",
+    "At Carelabs, we are committed to providing the best possible service to improve the quality and reliability of your electrical installation. Book your power quality analysis today or get a quote by contacting us!",
+    "Your email address will not be published. Required fields are marked *",
+    "Save my name, email, and website in this browser for the next time I comment.",
+    "From fault analysis to electrical safety compliance, we have the right solution for you at Carelabs.",
+    "Stay updated with the latest news and offers. Subscribe now to receive exclusive content and updates directly to your inbox!",
+    "Please complete the form to schedule a FREE consultation.",
+    "Country * —Please choose an option— Select your Country United States Mexico Canada Brazil Argentina United Kingdom Ireland France Germany Italy Spain Portugal Poland Netherlands Norway Sweden Finland Denmark Belgium Hungary Switzerland Czech Republic Romania Slovakia Ukraine Turkey Russian Federation India China Japan Australia New Zealand Malaysia Indonesia Singapore Saudi Arabia South Africa"
+  ],
+  "bulletLists": [
+    [
+      "About Us",
+      "Services Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis",
+      "Blogs Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "About Us",
+      "Services Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis",
+      "Blogs Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "About Us",
+      "Services Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis",
+      "Blogs Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "About Us",
+      "Services Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis",
+      "Blogs Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Production loss",
+      "Additional costs of restarting a process",
+      "Equipment damage and repair costs",
+      "Increased downtime and delays",
+      "Human health and safety-related concerns",
+      "Financial costs incurred as a result of contract non-compliance",
+      "Financial penalties for environmental violations",
+      "Increased utility cost associated with the interruption"
+    ],
+    [
+      "The costs incurred by an organization as a result of postponed revenue/income.",
+      "The monetary cost of losing market share",
+      "The expense of reestablishing brand value"
+    ],
+    [
+      "Increase in building temperatures that can impair the performance, health, or safety",
+      "A personal injury or apprehension",
+      "Possibility of electrical hazard due to the failure in recognizing the power quality disturbance.",
+      "Possibility of electrical hazard due to the failure in recognizing the power quality disturbance."
+    ],
+    [
+      "This results in inverse torque and impacts bearings.",
+      "Additional heating in the stator and rotor",
+      "The current capacity of installation cables is reduced.",
+      "The neutral conductor suffers further losses.",
+      "Extra energy is lost in cables."
+    ],
+    [
+      "By industry, for example, for continuous manufacturing, the cost difference between a one-second, one-minute, and one-hour interruption is stated to be marginal."
+    ],
+    [
+      "The day, time of day, and the location at which it happens (weekday, weekend, day time, night time)"
+    ],
+    [
+      "Load Flow Analysis: This study is performed based on the operating conditions. It forecasts power flow magnitudes, voltage levels, pf and losses in system.",
+      "Harmonic Analysis: It involves the use of computer algorithms to identify and predict potential harmonic problems. Further, based on the result reduction techniques are suggested.",
+      "Analysis of Surges and Transients: The cause of transients and surges are identified in this study.",
+      "Analysis of Voltage Dips and Swells: This analysis would track the short-term decline and rise of voltage, as well as its value and path.",
+      "Reactive Power Analysis: This analysis will assess the preferred reactive power at the distribution and load ends.",
+      "Analysis of Captive Power: This study would quantify and synchronize captive power to meet demand while reducing energy surcharges and fuel consumption."
+    ],
+    [
+      "Services",
+      "About Us"
+    ],
+    [
+      "Arc Flash Study",
+      "Relay Coordination Study",
+      "Load Flow Analysis",
+      "Short Circuit Analysis"
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ]
+  ],
+  "wordCount": 1585,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T18:42:37Z"
+}

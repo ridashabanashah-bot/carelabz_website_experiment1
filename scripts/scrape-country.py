@@ -76,6 +76,11 @@ def discover_sitemap_urls(sitemap_url: str) -> list[str]:
         return []
     urls: list[str] = []
     for u in re.findall(r"<loc>(.*?)</loc>", text):
+        # Strip <![CDATA[...]]> wrapper used by some WP sitemap plugins (AU, NZ)
+        u = u.strip()
+        m = re.match(r"<!\[CDATA\[(.*?)\]\]>", u)
+        if m:
+            u = m.group(1).strip()
         if u.endswith(".xml"):
             urls.extend(discover_sitemap_urls(u))
         else:
@@ -264,10 +269,18 @@ def main():
         data = scrape_page(url, cc, kind)
         if not data:
             continue
-        # Drop empty/404-like pages (no h1 and very thin)
-        if not data.get("h1") and data.get("wordCount", 0) < 80:
-            print(f"  SKIP {kind:10s} {url} (no h1, thin content)")
-            continue
+        # Drop empty/404-like pages. For home/about/contact/service keep if we have
+        # at least metaTitle OR metaDescription (client-rendered WP pages often lack
+        # server-side H1). For blog posts, require more content.
+        has_meta = bool(data.get("metaTitle") or data.get("metaDescription"))
+        if kind == "blog":
+            if not data.get("h1") and data.get("wordCount", 0) < 80:
+                print(f"  SKIP {kind:10s} {url} (no h1, thin content)")
+                continue
+        else:
+            if not has_meta and not data.get("h1") and data.get("wordCount", 0) < 40:
+                print(f"  SKIP {kind:10s} {url} (no h1/meta, very thin)")
+                continue
         # Avoid duplicate slugs (first wins)
         slug = data["slug"]
         if slug in seen_slugs:

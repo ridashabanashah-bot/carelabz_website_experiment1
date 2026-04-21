@@ -1,0 +1,198 @@
+{
+  "region": "my",
+  "heroEyebrow": "ELECTRICAL SAFETY EXPERTS",
+  "heroHeadline": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Malaysia",
+  "heroSubtext": "Ensure safety and electrical continuity for your critical infrastructure with our extensive power system solutions in Malaysia. We guarantee seamless power optimization without disruptions.",
+  "heroImage": "/images/hero-arc-flash.jpg",
+  "heroImageAlt": "Carelabs electrical safety engineer conducting power system analysis at a US industrial facility",
+  "heroPrimaryCtaText": "Contact Us",
+  "heroPrimaryCtaHref": "/my/contact-us/",
+  "heroSecondaryCtaText": "About Us",
+  "heroSecondaryCtaHref": "/my/service/",
+  "trustBadges": [
+    {
+      "label": "MS IEC 60364"
+    },
+    {
+      "label": "IEEE 1584"
+    },
+    {
+      "label": "DOSH Compliant"
+    },
+    {
+      "label": "MS IEC 60364 Standards"
+    }
+  ],
+  "servicesHeading": "Comprehensive Electrical Safety Services",
+  "servicesSubtext": "From arc flash hazard analysis to power quality studies, Carelabs provides the full spectrum of electrical engineering services your facility needs to stay safe and compliant.",
+  "services": [
+    {
+      "href": "/my/arc-flash-study/",
+      "icon": "zap",
+      "title": "Arc Flash Study",
+      "description": "IEEE 1584 compliant incident energy calculations, PPE labeling, and hazard mitigation for MS IEC 60364 compliance."
+    },
+    {
+      "href": "/my/short-circuit-analysis/",
+      "icon": "search",
+      "title": "Short Circuit Analysis",
+      "description": "Calculate available fault currents to properly size protective devices and ensure equipment ratings are adequate."
+    },
+    {
+      "href": "/my/load-flow-analysis/",
+      "icon": "bar-chart",
+      "title": "Load Flow Analysis",
+      "description": "Verify voltage levels, power flows, and system capacity under normal and contingency operating conditions."
+    },
+    {
+      "href": "/my/relay-coordination-study/",
+      "icon": "settings",
+      "title": "Relay Coordination Study",
+      "description": "Optimize protective device settings to minimize outage duration and prevent nuisance tripping."
+    },
+    {
+      "href": "/my/power-quality-analysis/",
+      "icon": "thermometer",
+      "title": "Power Quality Analysis",
+      "description": "Identify harmonics, voltage sags, and power factor issues degrading your electrical system performance."
+    }
+  ],
+  "whyHeading": "Why Choose Carelabs",
+  "whySubtext": "Trusted by Fortune 500 companies, industrial manufacturers, and critical infrastructure operators across Malaysia.",
+  "whyFeatures": [
+    {
+      "icon": "shield",
+      "title": "MS IEC 60364 Expertise",
+      "description": "Our engineers specialize in MS IEC 60364 electrical safety standards with deep experience across industrial, healthcare, and data center environments."
+    },
+    {
+      "icon": "award",
+      "title": "ETAP Certified",
+      "description": "We use industry-leading ETAP software for all power system modeling, ensuring accurate and defensible engineering results."
+    },
+    {
+      "icon": "clock",
+      "title": "Fast Turnaround",
+      "description": "Typical project delivery in 2 to 6 weeks. Expedited timelines available for critical compliance deadlines and facility shutdowns."
+    }
+  ],
+  "industriesHeading": "Industries We Serve",
+  "industries": [
+    {
+      "alt": "Arc flash study for a US oil and gas refinery",
+      "name": "Oil & Gas",
+      "image": "/images/industries/oil-and-gas.jpg"
+    },
+    {
+      "alt": "Electrical safety analysis for a US hospital",
+      "name": "Healthcare",
+      "image": "/images/industries/healthcare.jpg"
+    },
+    {
+      "alt": "Power system study for a US data center",
+      "name": "Data Centers",
+      "image": "/images/industries/data-centers.jpg"
+    },
+    {
+      "alt": "MS IEC 60364 compliance for a US manufacturing plant",
+      "name": "Manufacturing",
+      "image": "/images/industries/manufacturing.jpg"
+    },
+    {
+      "alt": "IEEE 1584 arc flash study for a US electrical utility",
+      "name": "Utilities",
+      "image": "/images/industries/utilities.jpg"
+    },
+    {
+      "alt": "Electrical safety inspection for a US commercial building",
+      "name": "Commercial Real Estate",
+      "image": "/images/industries/commercial-real-estate.jpg"
+    },
+    {
+      "alt": "Power system analysis for a US university campus",
+      "name": "Education",
+      "image": "/images/industries/education.jpg"
+    },
+    {
+      "alt": "Arc flash study for a US government facility",
+      "name": "Government",
+      "image": "/images/industries/government.jpg"
+    }
+  ],
+  "insightsHeading": "Latest Insights",
+  "insights": [
+    {
+      "alt": "IEEE 1584-2018 standard updates",
+      "href": "/my/importance-arc-flash-hazard-analysis-mitigation-usa/",
+      "image": "/images/insights/understanding-ieee-1584-2018.jpg",
+      "title": "Understanding IEEE 1584-2018 Updates",
+      "category": "Safety Standards",
+      "description": "Key changes in the latest arc flash calculation standard and what they mean for your facility."
+    },
+    {
+      "alt": "DOSH electrical safety compliance",
+      "href": "/my/importance-of-electrical-safety-inspection-usa/",
+      "image": "/images/insights/dewa-requirements-for-arc-f.jpg",
+      "title": "DOSH Electrical Safety Requirements",
+      "category": "Compliance",
+      "description": "How DOSH requirements impact your facility's electrical safety program."
+    },
+    {
+      "alt": "Incident energy reduction strategies",
+      "href": "/my/key-insights-from-load-flow-analysis/",
+      "image": "/images/insights/reducing-incident-energy-in.jpg",
+      "title": "Reducing Incident Energy in Your Facility",
+      "category": "Best Practices",
+      "description": "Practical strategies for lowering arc flash hazard levels through system design changes."
+    }
+  ],
+  "ctaBannerHeading": "Ready to Protect Your Workforce?",
+  "ctaBannerSubtext": "Get a comprehensive electrical safety assessment for your facility. Our engineers are ready to help you achieve MS IEC 60364 compliance.",
+  "ctaBannerPrimaryText": "Schedule a Consultation",
+  "ctaBannerPrimaryHref": "/my/contact-us/",
+  "ctaBannerSecondaryText": "Call Us Now",
+  "ctaBannerSecondaryHref": "/my/service/",
+  "footerDescription": "Carelabs provides professional electrical safety services including arc flash studies, power system analysis, and compliance solutions for industrial and commercial facilities across Malaysia.",
+  "footerPhone": "+1 (800) 123-4567",
+  "footerEmail": "info@carelabz.com",
+  "footerAddress": "Malaysia",
+  "metaTitle": "Home - Carelabs Malaysia",
+  "metaDescription": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+  "seoKeywords": [
+    "arc flash study Malaysia",
+    "electrical safety services",
+    "MS IEC 60364 compliance",
+    "power system analysis",
+    "IEEE 1584 Malaysia",
+    "short circuit analysis",
+    "MS IEC 60364",
+    "Electricity Regulations 1994",
+    "IEEE 1584",
+    "IEC 60909",
+    "ETAP"
+  ],
+  "ogImage": "/og/arc-flash-study.jpg",
+  "faqsHeading": "Customer Queries",
+  "faqs": [
+    {
+      "answer": "Power system consulting involves expert analysis and optimization of electrical power systems to ensure safety, reliability, and compliance with industry standards like DOSH, MS IEC 60364, and IEEE 1584.",
+      "question": "What is power system consulting?"
+    },
+    {
+      "answer": "A power system study identifies potential hazards, ensures equipment is properly rated, validates protective device coordination, and helps your facility meet regulatory compliance requirements.",
+      "question": "Why do I need a power system study for my facility?"
+    },
+    {
+      "answer": "Carelabs serves a wide range of industries including manufacturing, healthcare, data centers, oil and gas, commercial real estate, education, government facilities, and more across Malaysia.",
+      "question": "What industries does Carelabs serve in Malaysia?"
+    },
+    {
+      "answer": "The timeline depends on the size and complexity of your facility. Most projects are completed within 2 to 6 weeks, from data collection through final report delivery.",
+      "question": "How long does a typical power system study take?"
+    },
+    {
+      "answer": "Simply contact us through our website or call us directly. Our team will schedule a free consultation to understand your needs and provide a detailed proposal for your facility.",
+      "question": "How do I get started with Carelabs?"
+    }
+  ]
+}
