@@ -1,0 +1,345 @@
+{
+  "cc": "mx",
+  "wpUrl": "https://carelabz.com/mx/",
+  "totalPages": 47,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 4,
+    "blog": 40
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "mx",
+      "file": "data/wp-extracts\\mx-mx.json",
+      "wordCount": 1300,
+      "h2Count": 11
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\mx-about-us.json",
+      "wordCount": 561,
+      "h2Count": 7
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\mx-contact-us.json",
+      "wordCount": 447,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis",
+      "file": "data/wp-extracts\\mx-load-flow-analysis.json",
+      "wordCount": 883,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis",
+      "file": "data/wp-extracts\\mx-short-circuit-analysis.json",
+      "wordCount": 972,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study",
+      "file": "data/wp-extracts\\mx-relay-coordination-study.json",
+      "wordCount": 1018,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\mx-arc-flash-study.json",
+      "wordCount": 1143,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "guide-to-perform-power-quality-analysis-in-the-mexico",
+      "file": "data/wp-extracts\\mx-guide-to-perform-power-quality-analysis-in-the-mexico.json",
+      "wordCount": 1099,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use",
+      "file": "data/wp-extracts\\mx-how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use.json",
+      "wordCount": 838,
+      "h2Count": 9
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us",
+      "file": "data/wp-extracts\\mx-how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us.json",
+      "wordCount": 974,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-mexico.json",
+      "wordCount": 1108,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-installation-condition-report-ecir-in-the-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-electrical-installation-condition-report-ecir-in-the-mexico.json",
+      "wordCount": 1002,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-safety-audit-for-companies-in-the-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-electrical-safety-audit-for-companies-in-the-mexico.json",
+      "wordCount": 1040,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-safety-inspection-in-the-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-electrical-safety-inspection-in-the-mexico.json",
+      "wordCount": 980,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "need-or-necessity-electrical-switchgear-risk-assessment-in-the-mexico",
+      "file": "data/wp-extracts\\mx-need-or-necessity-electrical-switchgear-risk-assessment-in-the-mexico.json",
+      "wordCount": 1108,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "why-is-harmonic-study-and-analysis-important-for-companies-in-the-mexico",
+      "file": "data/wp-extracts\\mx-why-is-harmonic-study-and-analysis-important-for-companies-in-the-mexico.json",
+      "wordCount": 1038,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "checklist-for-electrical-safety-audit-in-the-mexico",
+      "file": "data/wp-extracts\\mx-checklist-for-electrical-safety-audit-in-the-mexico.json",
+      "wordCount": 1121,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "commercial-electrical-safety-inspection-checklist-for-the-mexico",
+      "file": "data/wp-extracts\\mx-commercial-electrical-safety-inspection-checklist-for-the-mexico.json",
+      "wordCount": 1278,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-in-power-system-in-the-mexico",
+      "file": "data/wp-extracts\\mx-harmonic-analysis-in-power-system-in-the-mexico.json",
+      "wordCount": 1129,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-do-an-electrical-switchgear-risk-assessment-in-usa",
+      "file": "data/wp-extracts\\mx-how-to-do-an-electrical-switchgear-risk-assessment-in-usa.json",
+      "wordCount": 1157,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-condition-installation-report-by-third-party-company-in-the-usa",
+      "file": "data/wp-extracts\\mx-electrical-condition-installation-report-by-third-party-company-in-the-usa.json",
+      "wordCount": 1086,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico-2",
+      "file": "data/wp-extracts\\mx-importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico-2.json",
+      "wordCount": 1070,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards",
+      "file": "data/wp-extracts\\mx-test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards.json",
+      "wordCount": 899,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "working-principles-of-power-quality-analysis-in-the-mexico",
+      "file": "data/wp-extracts\\mx-working-principles-of-power-quality-analysis-in-the-mexico.json",
+      "wordCount": 875,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "step-by-step-guide-to-perform-arc-flash-analysis-in-the-mexico",
+      "file": "data/wp-extracts\\mx-step-by-step-guide-to-perform-arc-flash-analysis-in-the-mexico.json",
+      "wordCount": 1094,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "waukegan-plant-explosion-2019",
+      "file": "data/wp-extracts\\mx-waukegan-plant-explosion-2019.json",
+      "wordCount": 752,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-at-turkey-point-2017",
+      "file": "data/wp-extracts\\mx-arc-flash-at-turkey-point-2017.json",
+      "wordCount": 684,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "priest-rapids-dam-arc-flash-explosion-2014",
+      "file": "data/wp-extracts\\mx-priest-rapids-dam-arc-flash-explosion-2014.json",
+      "wordCount": 710,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-incident-at-republic-steel-2014",
+      "file": "data/wp-extracts\\mx-arc-flash-incident-at-republic-steel-2014.json",
+      "wordCount": 724,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "mgm-grand-hotel-fire-1980",
+      "file": "data/wp-extracts\\mx-mgm-grand-hotel-fire-1980.json",
+      "wordCount": 668,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "three-mile-island-blast-1979",
+      "file": "data/wp-extracts\\mx-three-mile-island-blast-1979.json",
+      "wordCount": 676,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "improving-reliability-through-electrical-safety-audit-at-a-retail-company",
+      "file": "data/wp-extracts\\mx-improving-reliability-through-electrical-safety-audit-at-a-retail-company.json",
+      "wordCount": 748,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-do-electrical-switchgear-risk-assessment-in-mexico",
+      "file": "data/wp-extracts\\mx-how-to-do-electrical-switchgear-risk-assessment-in-mexico.json",
+      "wordCount": 1021,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "prioritizing-a-safe-work-environment-at-a-multinational-technology-company",
+      "file": "data/wp-extracts\\mx-prioritizing-a-safe-work-environment-at-a-multinational-technology-company.json",
+      "wordCount": 695,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company",
+      "file": "data/wp-extracts\\mx-resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company.json",
+      "wordCount": 779,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "energy-conservation-by-auditing-power-quality",
+      "file": "data/wp-extracts\\mx-energy-conservation-by-auditing-power-quality.json",
+      "wordCount": 774,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-mexico",
+      "file": "data/wp-extracts\\mx-how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-mexico.json",
+      "wordCount": 1040,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-mexico",
+      "file": "data/wp-extracts\\mx-how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-mexico.json",
+      "wordCount": 967,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-arc-flash-hazard-analysis-and-mitigation-in-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-arc-flash-hazard-analysis-and-mitigation-in-mexico.json",
+      "wordCount": 1007,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-installation-condition-report-ecir-in-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-electrical-installation-condition-report-ecir-in-mexico.json",
+      "wordCount": 1015,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-electrical-safety-audit-for-companies-in-mexico",
+      "file": "data/wp-extracts\\mx-importance-electrical-safety-audit-for-companies-in-mexico.json",
+      "wordCount": 1058,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-safety-inspection-in-mexico",
+      "file": "data/wp-extracts\\mx-importance-of-electrical-safety-inspection-in-mexico.json",
+      "wordCount": 1021,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "need-or-necessity-electrical-switchgear-risk-assessment-in-mexico",
+      "file": "data/wp-extracts\\mx-need-or-necessity-electrical-switchgear-risk-assessment-in-mexico.json",
+      "wordCount": 1037,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "why-is-harmonic-study-and-analysis-important-for-companies-in-mexico",
+      "file": "data/wp-extracts\\mx-why-is-harmonic-study-and-analysis-important-for-companies-in-mexico.json",
+      "wordCount": 1050,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "checklist-for-electrical-safety-audit",
+      "file": "data/wp-extracts\\mx-checklist-for-electrical-safety-audit.json",
+      "wordCount": 1046,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-safety-inspection-checklist-for-mexico",
+      "file": "data/wp-extracts\\mx-electrical-safety-inspection-checklist-for-mexico.json",
+      "wordCount": 1019,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-for-power-system-in-mexico",
+      "file": "data/wp-extracts\\mx-harmonic-analysis-for-power-system-in-mexico.json",
+      "wordCount": 1065,
+      "h2Count": 12
+    }
+  ],
+  "skipped": {},
+  "discovered": 57
+}

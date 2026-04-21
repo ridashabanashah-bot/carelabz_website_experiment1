@@ -38,6 +38,35 @@ export function getOrganizationSchemaCA() {
   };
 }
 
+interface RegionOrgInput {
+  cc: string;
+  countryName: string;
+  countryIso2: string;
+  phone: string;
+  email: string;
+  addressLocality: string;
+  addressRegion?: string;
+}
+
+export function getRegionOrganizationSchema(input: RegionOrgInput) {
+  return {
+    "@type": "Organization",
+    "@id": `https://carelabz.com/#organization-${input.cc}`,
+    name: "Carelabs",
+    url: `https://carelabz.com/${input.cc}/`,
+    logo: "https://carelabz.com/images/logo/carelabs-logo.svg",
+    telephone: input.phone,
+    email: input.email,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: input.addressLocality,
+      ...(input.addressRegion ? { addressRegion: input.addressRegion } : {}),
+      addressCountry: input.countryIso2,
+    },
+    sameAs: ["https://ae.linkedin.com/company/carelabs"],
+  };
+}
+
 export function getWebSiteSchema() {
   return {
     "@type": "WebSite",

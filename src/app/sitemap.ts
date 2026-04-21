@@ -37,6 +37,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/ca/contact/`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${baseUrl}/ca/blogs/`, priority: 0.8, changeFrequency: "daily" },
     { url: `${baseUrl}/ca/case-study/`, priority: 0.7, changeFrequency: "weekly" },
+    { url: `${baseUrl}/mx/`, priority: 1.0, changeFrequency: "weekly" },
+    { url: `${baseUrl}/mx/service/`, priority: 0.9, changeFrequency: "weekly" },
+    { url: `${baseUrl}/mx/about-us/`, priority: 0.7, changeFrequency: "monthly" },
+    { url: `${baseUrl}/mx/contact-us/`, priority: 0.8, changeFrequency: "monthly" },
+    { url: `${baseUrl}/mx/blogs/`, priority: 0.8, changeFrequency: "daily" },
+    { url: `${baseUrl}/mx/arc-flash-study/`, priority: 0.9, changeFrequency: "monthly" },
+    { url: `${baseUrl}/mx/short-circuit-analysis/`, priority: 0.9, changeFrequency: "monthly" },
+    { url: `${baseUrl}/mx/load-flow-analysis/`, priority: 0.9, changeFrequency: "monthly" },
+    { url: `${baseUrl}/mx/relay-coordination-study/`, priority: 0.9, changeFrequency: "monthly" },
   ];
 
   const servicePages: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
