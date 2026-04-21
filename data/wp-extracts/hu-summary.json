@@ -1,0 +1,144 @@
+{
+  "cc": "hu",
+  "wpUrl": "https://carelabz.com/hu/",
+  "totalPages": 18,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 3,
+    "blog": 12
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "hu",
+      "file": "data/wp-extracts\\hu-hu.json",
+      "wordCount": 1031,
+      "h2Count": 6
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\hu-about-us.json",
+      "wordCount": 786,
+      "h2Count": 4
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\hu-contact-us.json",
+      "wordCount": 566,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\hu-arc-flash-study.json",
+      "wordCount": 1181,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\hu-motor-start-analysis.json",
+      "wordCount": 1165,
+      "h2Count": 8
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\hu-power-quality-analysis.json",
+      "wordCount": 1114,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "how-are-the-dependability-and-performance-of-commercial-motors-assessed",
+      "file": "data/wp-extracts\\hu-how-are-the-dependability-and-performance-of-commercial-motors-assessed.json",
+      "wordCount": 1481,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency",
+      "file": "data/wp-extracts\\hu-hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency.json",
+      "wordCount": 1327,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow",
+      "file": "data/wp-extracts\\hu-why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow.json",
+      "wordCount": 1773,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-operation-for-the-power-quality-in-hungary",
+      "file": "data/wp-extracts\\hu-principles-of-operation-for-the-power-quality-in-hungary.json",
+      "wordCount": 1861,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-analyze-the-power-quality-in-hungary",
+      "file": "data/wp-extracts\\hu-how-to-analyze-the-power-quality-in-hungary.json",
+      "wordCount": 1402,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-research-and-analysis-so-crucial-to-hungarian-businesses",
+      "file": "data/wp-extracts\\hu-why-are-harmonic-research-and-analysis-so-crucial-to-hungarian-businesses.json",
+      "wordCount": 1411,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-the-hungarian-power-systems-harmony",
+      "file": "data/wp-extracts\\hu-analysis-of-the-hungarian-power-systems-harmony.json",
+      "wordCount": 1478,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-arc-flash-hazards-and-mitigation-techniques",
+      "file": "data/wp-extracts\\hu-analysis-of-arc-flash-hazards-and-mitigation-techniques.json",
+      "wordCount": 1449,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "404-2",
+      "file": "data/wp-extracts\\hu-404-2.json",
+      "wordCount": 375,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\hu-harmonic-study-analysis.json",
+      "wordCount": 1194,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\hu-power-system-study-analysis.json",
+      "wordCount": 1207,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_hu",
+      "file": "data/wp-extracts\\hu-admin_hu.json",
+      "wordCount": 326,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 2
+  },
+  "discovered": 27
+}
