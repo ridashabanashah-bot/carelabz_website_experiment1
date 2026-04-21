@@ -78,10 +78,6 @@ export function CAMobileNav({ services }: CAMobileNavProps) {
               </div>
             )}
 
-            <Link href="/ca/blogs/" onClick={close} className={linkClass}>
-              Blog
-            </Link>
-
             <Link href="/ca/contact/" onClick={close} className={linkClass}>
               Contact Us
             </Link>

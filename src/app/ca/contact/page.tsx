@@ -7,10 +7,7 @@ import CAFooter from "@/components/ca-footer";
 import { ContactForm } from "@/components/contact-form";
 import { getContactPage } from "@/lib/strapi-pages";
 import { getServicesByRegion } from "@/lib/strapi";
-import {
-  getCountryFromHeaders,
-  getCountryName,
-} from "@/lib/detect-country";
+import { getCountryFromHeaders } from "@/lib/detect-country";
 import { buildJsonLd, getOrganizationSchemaCA, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
 
 export const dynamic = "force-dynamic";
@@ -48,8 +45,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function CAContactPage() {
   const headersList = headers();
-  const iso2 = getCountryFromHeaders(headersList);
-  const countryName = getCountryName(iso2);
+  const iso2 = getCountryFromHeaders(headersList, "CA");
+  // On the Canada contact page the banner must always say Canada
+  // regardless of the visitor's IP — the services ARE in Canada.
+  const countryName = "Canada";
 
   const [page, services] = await Promise.all([
     getContactPage("ca"),

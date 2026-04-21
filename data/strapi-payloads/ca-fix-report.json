@@ -1,0 +1,123 @@
+{
+  "updates": 13,
+  "failures": 0,
+  "changes": [
+    {
+      "collection": "blog-posts",
+      "slug": "comprehensive-electrical-safety-inspections-in-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Comprehensive Electrical Safety Inspections in Canada - Care' -> 'Comprehensive Electrical Safety Inspections in Canada - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "customized-electrical-safety-management-plans-for-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Customized Electrical Safety Management Plans for Canada - C' -> 'Customized Electrical Safety Management Plans for Canada - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "electrical-safety-protocol-for-arc-flash-study-in-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Electrical Safety Protocol for Arc Flash Study in Canada - C' -> 'Electrical Safety Protocol for Arc Flash Study in Canada - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "electrical-standards-for-arc-flash-study-and-analysis",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Electrical Standards for Arc Flash study and Analysis - Care' -> 'Electrical Standards for Arc Flash study and Analysis - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "arc-flash-hazard-analysis-proven-mitigation-strategies",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Arc Flash Hazard Analysis and Mitigation Strategies - CareLa' -> 'Arc Flash Hazard Analysis and Mitigation Strategies - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Prioritizing Safety and Efficiency: CareLabs' Comprehensive ' -> 'Prioritizing Safety and Efficiency: CareLabs' Comprehensive Electrical Engineering Solutions - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'The Importance of Load Flow Analysis to Enhance Grid Resilie' -> 'The Importance of Load Flow Analysis to Enhance Grid Resilience in Canada - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'The Role of Short Circuit Analysis in Enhancing Workplace El' -> 'The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "empowering-microgrids-in-canada-the-role-of-relay-coordination-study",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Empowering Microgrids in Canada: The Role of Relay Coordinat' -> 'Empowering Microgrids in Canada: The Role of Relay Coordination Study - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Understanding the Importance of Analysis of Arc Flash Hazard' -> 'Understanding the Importance of Analysis of Arc Flash Hazard in Canada - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'The Importance of PPE Requirement for Electrical Workers - C' -> 'The Importance of PPE Requirement for Electrical Workers - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Understanding the Importance of Arc Flash Boundaries, in Ens' -> 'Understanding the Importance of Arc Flash Boundaries, in Ensuring Workplace Safety - CareLabs'"
+      ],
+      "ok": true
+    },
+    {
+      "collection": "blog-posts",
+      "slug": "why-arc-flash-study-and-analysis-important-in-canada",
+      "spelling": false,
+      "parity": [
+        "metaTitle: 'Why Arc Flash Study and Analysis Important in Canada? - Care' -> 'Why Arc Flash Study and Analysis Important in Canada? - CareLabs'"
+      ],
+      "ok": true
+    }
+  ]
+}

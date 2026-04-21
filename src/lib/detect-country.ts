@@ -1,12 +1,13 @@
 import type { ReadonlyHeaders } from "next/dist/server/web/spec-extension/adapters/headers";
 
 export function getCountryFromHeaders(
-  headersList: ReadonlyHeaders | Headers
+  headersList: ReadonlyHeaders | Headers,
+  fallback: string = "US"
 ): string {
   try {
-    return headersList.get("x-vercel-ip-country") || "US";
+    return headersList.get("x-vercel-ip-country") || fallback;
   } catch {
-    return "US";
+    return fallback;
   }
 }
 

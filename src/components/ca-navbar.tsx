@@ -107,10 +107,6 @@ export function CAStickyNavbar() {
               )}
             </div>
 
-            <Link href="/ca/blogs/" className={linkClass}>
-              Blog
-            </Link>
-
             <Link href="/ca/contact/" className={linkClass}>
               Contact Us
             </Link>
