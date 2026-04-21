@@ -1,0 +1,158 @@
+{
+  "cc": "tr",
+  "wpUrl": "https://carelabz.com/tr/",
+  "totalPages": 20,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 3,
+    "blog": 14
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "tr",
+      "file": "data/wp-extracts\\tr-tr.json",
+      "wordCount": 437,
+      "h2Count": 15
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\tr-about-us.json",
+      "wordCount": 520,
+      "h2Count": 1
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\tr-contact-us.json",
+      "wordCount": 227,
+      "h2Count": 3
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\tr-motor-start-analysis.json",
+      "wordCount": 897,
+      "h2Count": 10
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\tr-power-quality-analysis.json",
+      "wordCount": 796,
+      "h2Count": 10
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\tr-arc-flash-study.json",
+      "wordCount": 890,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "verify-turkish-electrical-motor-performance-regulations-compliance",
+      "file": "data/wp-extracts\\tr-verify-turkish-electrical-motor-performance-regulations-compliance.json",
+      "wordCount": 822,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\tr-how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 952,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow",
+      "file": "data/wp-extracts\\tr-analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow.json",
+      "wordCount": 1258,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "why-does-turkish-business-need-short-circuit-and-load-flow-analysis",
+      "file": "data/wp-extracts\\tr-why-does-turkish-business-need-short-circuit-and-load-flow-analysis.json",
+      "wordCount": 807,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-analyze-saudi-arabian-power-quality",
+      "file": "data/wp-extracts\\tr-how-to-analyze-saudi-arabian-power-quality.json",
+      "wordCount": 722,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-work-on-turkish-power-quality",
+      "file": "data/wp-extracts\\tr-principles-of-work-on-turkish-power-quality.json",
+      "wordCount": 1377,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonics-analysis-of-the-turkish-electric-power-system",
+      "file": "data/wp-extracts\\tr-harmonics-analysis-of-the-turkish-electric-power-system.json",
+      "wordCount": 795,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "how-significant-is-harmonic-analysis-in-turkish-businesses",
+      "file": "data/wp-extracts\\tr-how-significant-is-harmonic-analysis-in-turkish-businesses.json",
+      "wordCount": 884,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-risk-must-be-assessed-and-decreased-right-away",
+      "file": "data/wp-extracts\\tr-arc-flash-risk-must-be-assessed-and-decreased-right-away.json",
+      "wordCount": 900,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\tr-harmonic-study-analysis.json",
+      "wordCount": 877,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\tr-power-system-study-analysis.json",
+      "wordCount": 896,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "404-2",
+      "file": "data/wp-extracts\\tr-404-2.json",
+      "wordCount": 175,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\tr-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_tr",
+      "file": "data/wp-extracts\\tr-admin_tr.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 1
+  },
+  "discovered": 23
+}

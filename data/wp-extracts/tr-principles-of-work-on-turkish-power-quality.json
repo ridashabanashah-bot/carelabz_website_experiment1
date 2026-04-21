@@ -1,0 +1,93 @@
+{
+  "url": "https://carelabz.com/tr/principles-of-work-on-turkish-power-quality/",
+  "slug": "principles-of-work-on-turkish-power-quality",
+  "pageType": "blog",
+  "metaTitle": "Power Quality Principles in Turkey | Carelabs Insights",
+  "metaDescription": "Understand the key power quality principles in Turkey with Carelabs. Improve energy efficiency, reduce electrical disturbances.",
+  "canonicalSource": "https://carelabz.com/tr/principles-of-work-on-turkish-power-quality/",
+  "h1": "",
+  "h2": [
+    "Power Quality Analysis",
+    "Principles of Work on Turkish Power Quality:",
+    "The Consequences of Low-Quality Electricity:",
+    "Direct financial effects include:",
+    "These are examples of indirect economic effects:",
+    "The following are among the social and economic effects:",
+    "Understanding the Sources of Substandard Electricity:",
+    "How Can Issues with Power Quality Be Mitigated?",
+    "OUR",
+    "Blogs"
+  ],
+  "h3": [],
+  "paragraphs": [
+    "The fundamental functionality and efficacy of devices connected to the distribution network are directly influenced by the quality of the power supply. It is believed that the equipment functions as intended and has a lifespan roughly equivalent to the specified value. Additionally, it is anticipated that the network will be stable enough to prevent problems such as subpar output and missing functionality. There are numerous issues with the power quality of the electricity system. Regardless of their duration, these power quality disruptions have the potential to cause harm to your device. Maintaining power quality is crucial for preventing equipment failure. This article will discuss the research required to assess the dependability and quality of electricity. Examining various power quality systems and methodologies for evaluating the effect and the control is the next step. In contrast to dependability, which is concerned with lengthy power disruptions, power quality disturbances have delayed effects. In other instances, however, an interruption in power quality has an immediate effect due to process delays or equipment damage. This is especially true for delays, pauses, and transitions. In certain instances, the effects of a disruption in power quality may not be immediately apparent . Equipment deterioration is one example. Consequently, equipment deterioration is left unfettered for years. In other instances, power quality issues result in additional losses that are deemed unavoidable and are therefore disregarded .",
+    "A power supply system’s voltage, frequency, and waveform are evaluated to determine its power quality. Nonetheless, power quality is affected by a number of factors. This blog discusses the following topics pertaining to the sanctity of power:",
+    "The magnitudes of stable-state voltage correspond to the magnitudes of sustained voltage over extended periods of time (minutes or hours). Equipment failure, an increase in energy consumption, and system malfunction are the primary effects of prolonged high voltage (overvoltage) or low voltage (undervoltage).",
+    "Frequently, unbalanced voltage is associated with increased losses, especially in induction and three-phase motors.",
+    "Every energy consumer generates and introduces harmonic currents into the power grid. Alternating currents with harmonic currents have intrinsic frequencies that are multiples of 50 hertz. The most common non-linear electrical equipment that emits harmonic currents are computers, variable speed drives (VSD), and discharge lighting. Harmonic currents are especially detrimental to the installation and power distribution system. Harmonics have several negative effects, including fractured components, damaged installation parts, component loading, inefficient use of the present carrying capacity of the installation, shortened component life, and ineffectual operation of protective components.",
+    "Flicker is a modulation of the envelope of voltage waveforms. Consequently, incandescent light sources display cyclical variations in light intensity. Some individuals may experience discomfort, decreased productivity, migraines, and, in rare cases, convulsions as a result of this irregular variation in light output.",
+    "Most of the equipment is unaffected by voltage dips and interruptions; however, longer interruptions frequently result in output loss due to equipment malfunction. On occasion, it is observed that the cost of a protracted interruption is logarithmic rather than proportional to its duration. The following variables have a significant impact on the cost of a protracted interruption, according to experts:",
+    "AEMO computes the value of customer dependability (VCR) in order to evaluate the monetary impact of outages on all customers. Even if the majority of these figures represent consumers’ willingness to pay to avoid a disruption, it is expected that this willingness to pay will correlate strongly with the actual cost. Based on these calculations, a one-second interruption costs roughly 20% less than an hour-long interruption .",
+    "Carelabs provides numerous identification and evaluation services for power quality issues. Included are the following:",
+    "Using ETAP (Electrical Transient Analysis Program) – Electrical Transient Analysis Program software, Carelabs analyzes and evaluates power quality. The finest software available for performing calculations and simulations for all electrical system components and ensuring equipment safety. In every significant city in Turkey , including Istanbul, Ankara, Izmir, and Bursa , we conduct power quality assessments. CareLab s provid es the highest quality of service to improve the dependability and quality of your electrical system. Contact us promptly to schedule an inspection of power quality or to receive a quote!",
+    "We are using cookies to give you the best experience on our website.",
+    "You can find out more about which cookies we are using or switch them off in settings .",
+    "This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.",
+    "Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.",
+    "If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again."
+  ],
+  "bulletLists": [
+    [
+      "Production deficiencies",
+      "There are expenses associated with restarting a procedure.",
+      "Equipment damage and repair expenses",
+      "More challenges and delays",
+      "Concerns for the safety and wellbeing of individuals",
+      "Financial penalties related to contract violations",
+      "Monetary sanctions for environmental infractions",
+      "The disruption increased utility prices."
+    ],
+    [
+      "The expenses incurred by a company due to a revenue or income delay.",
+      "The monetary consequences of losing market share",
+      "What it will cost to restore brand value"
+    ],
+    [
+      "The increase in temperature within a building may be detrimental to the health, safety, or Productivity of its occupants.",
+      "An individual injury or concern",
+      "If the change in power quality passes undetected, it may result in an electrical hazard."
+    ],
+    [
+      "The results are bearing deterioration and reverse torque.",
+      "Stator and rotor temperatures continue to increase",
+      "Current installation cable carrying capacities are decreasing.",
+      "The neutral conductor has experienced an increase in losses.",
+      "The use of wires increases energy waste."
+    ],
+    [
+      "In the manufacturing industry, the economic impact of a disruption lasting one second, one minute, or one hour is negligible.",
+      "The date, time, and location of the event (weekday, weekend, daytime, midnight)."
+    ],
+    [
+      "This analysis is conducted in accordance with the operating conditions. The function computes system losses, voltage levels, power factor, and flow rates.",
+      "This method employs computer algorithms to identify and anticipate future harmonic issues. On the premise of the results, there are also proposed reduction measures.",
+      "Analysis of Fluctuations and Spikes explains the causes of fluctuations and surges.",
+      "This study will track the short-term increase and decrease in voltage, as well as its value and direction.",
+      "This investigation will determine the optimal reactive power at the load and distribution ends.",
+      "This initiative would monitor and coordinate captive electricity in order to meet demand, reduce energy surcharges, and decrease fuel consumption."
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ],
+    [
+      "Privacy Overview",
+      "Strictly Necessary Cookies"
+    ]
+  ],
+  "wordCount": 1377,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T18:22:35Z"
+}

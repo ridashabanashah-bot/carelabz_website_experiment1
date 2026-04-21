@@ -1,0 +1,93 @@
+{
+  "url": "https://carelabz.com/tr/harmonic-study-analysis/",
+  "slug": "harmonic-study-analysis",
+  "pageType": "blog",
+  "metaTitle": "Harmonic Study & Analysis - Carelabs Turkey",
+  "metaDescription": "",
+  "canonicalSource": "https://carelabz.com/tr/harmonic-study-analysis/",
+  "h1": "",
+  "h2": [
+    "Harmonic Study & Analysis",
+    "Effects of Harmonic Distortion",
+    "Harmonic Analysis Workflow",
+    "Carelabs' Service Benefit",
+    "Related Services",
+    "The Effects of Harmonic Distortion:",
+    "Harmonic Analysis and Research Workflow at Carelabs:",
+    "Benefits of Harmonic Analysis Service Includes:",
+    "OUR",
+    "SERVICES"
+  ],
+  "h3": [],
+  "paragraphs": [
+    "Care Lab s offers electrical installation services that include electrical safety inspections, testing, calibration, and certification, in addition to a full examination and analysis of harmonics. Experts will review harmonic risks, training materials, documentation, and personal protective equipment (PPE) to ensure that your electrical safety program is up to date, compliant, and thorough . Care Lab s can identify harmonics early and take the necessary action to reduce their impact to safeguard the apparatus. When there are harmonic electric voltages and currents, electrical systems may become less efficient. They have the power to degrade electrical quality and produce unnecessary heat.",
+    "Harmonic voltage analysis predicts harmonic distortion and resonances mathematically. Harmonic voltage analysis calculates potential resonances and harmonic distortion levels using empirical data. Harmonic frequencies are added to the electrical system by nonlinear electrical switching components including AC variable frequency motors, DC actuators, fluorescent lights, and computers. High voltage/current harmonic levels considerably increase the risk of equipment failure. Making a rapid harmonic analysis and research is therefore essential. The current harmonic constraints for 415-volt systems are 5%, with 4% odd harmonics and 2% even harmonics .",
+    "Even though harmonic problems are exceedingly uncommon, when they do arise, they tend to lower the reliability, effectiveness, and quality of the power system. Therefore, harmonic investigation and analysis are crucial.",
+    "Harmonic research and analysis will help clarify the most probable cause and effect of power quality problems by minimizing harmonic-related concerns during the design process and reducing the possibility of unexpected consequences .",
+    "In the second phase, higher ratings are used if background harmonics have already been measured.",
+    "Care Lab s employs workers stationed in several locations to make sure that personnel is readily avai lab le in the event of a routine or urgent emergency. Care Lab s has swiftly made a name for itself as an ISO 9001:2008-accredited company with committed customers who have provided positive comments. In a few significant Turkish cities, including Istanbul, Ankara, Izmir, and Bursa , we do harmonic research and analysis. To set up your harmonic analysis and study in Turkish or to get a price, get in contact with us right now!",
+    "We are using cookies to give you the best experience on our website.",
+    "You can find out more about which cookies we are using or switch them off in settings .",
+    "This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.",
+    "Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.",
+    "If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again."
+  ],
+  "bulletLists": [
+    [
+      "click to scroll"
+    ],
+    [
+      "Responsible for both current flow and high voltage.",
+      "Due to significant voltage distortion, equipment failure and destruction",
+      "Because internal energy is increasing, component lifespan is decreasing, and component failure is increasing.",
+      "When an issue emerges, branch circuit breakers trip.",
+      "Measuring blunder",
+      "Electrical and distribution network fires and explosions"
+    ],
+    [
+      "Generator problems",
+      "Reduced system power factor",
+      "Installation and utility expenses that are high",
+      "Reduced productivity",
+      "Driving while being careless and distracted",
+      "Use of stronger motors"
+    ],
+    [
+      "Protections against harmonic voltage and current",
+      "Restricted variation in frequency",
+      "Variability of current and voltage",
+      "Boost power factor analysis and maintain a value close to one.",
+      "Regulates the voltage’s peaks and troughs"
+    ],
+    [
+      "Indicate any possible nonlinear loads, capacitor banks, and lengthy medium-voltage cables on the electrical single-line diagram.",
+      "Locate the PCC or point of common coupling.",
+      "Determine which system buses in the building are susceptible to harmonic distortions.",
+      "Gather harmonics data for each nonlinear load.",
+      "Obtain critical information on the highest and lowest short circuit fault levels for the voltage and current harmonics of the specified PCC.",
+      "Use ETAP (Electrical Transient Analysis Program) to analyze the harmonics of the electrical network.",
+      "Calculate the overall and individual current and voltage wave distortion values for the bus and PCC.",
+      "The harmonic frequency spectrum should be represented graphically.",
+      "If harmonic distortion levels are too high, a suitable mitigation strategy is suggested and implemented.",
+      "After the mitigation technique has been implemented, run the study again."
+    ],
+    [
+      "Stage 2 permits changing the converter size in accordance with the fault level and converter type if the background is less than 25%.",
+      "If the background is between 25% and 75%, the lower half of the converter grade is appropriate.",
+      "We study the harmonics of the upper background."
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ],
+    [
+      "Privacy Overview",
+      "Strictly Necessary Cookies"
+    ]
+  ],
+  "wordCount": 877,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T18:22:40Z"
+}
