@@ -1,0 +1,58 @@
+{
+  "url": "https://carelabz.com/jp/check-and-test-the-performance-of-electric-motors-according-to-japanese-rules/",
+  "slug": "check-and-test-the-performance-of-electric-motors-according-to-japanese-rules",
+  "pageType": "blog",
+  "metaTitle": "Check and Test the Performance of Electric Motors According to Japanese Rules - Carelabs Japan",
+  "metaDescription": "",
+  "canonicalSource": "https://carelabz.com/jp/check-and-test-the-performance-of-electric-motors-according-to-japanese-rules/",
+  "h1": "",
+  "h2": [
+    "Check and Test the Performance of Electric Motors According to Japanese Rules",
+    "RELATED NEWS",
+    "RELATED NEWS"
+  ],
+  "h3": [
+    "How to Begin a Motor Evaluation?",
+    "Techniques Globally Acknowledged for Measuring Performance:",
+    "Leave a Reply Cancel reply"
+  ],
+  "paragraphs": [
+    "In many different applications around the world, industrial electric motors are used. The automobile industry consumes up to 70% of all industrial energy, 35% of all commercial and service sector energy, and 45% of all worldwide power output, according to the International Energy Agency (IEA). Each hour of downtime caused by a motor failure costs thousands of dollars, illustrating the significance of electric motors in several industrial applications. They are the primary generator of greenhouse gases that influence the climate. They are also significantly responsible for the rapid increase in power usage in developing nations.",
+    "There is economic potential on a worldwide scale to enhance the energy efficiency of industrial motors by 20% to 30%, with most payback periods of less than three years. Electric motors are responsible for 15%, or 4.3 billion tons, of the world’s total yearly CO2 emissions of 26 billion tons. Increasing energy efficiency is one of the most cost-effective and low-risk techniques for lowering greenhouse gas emissions and limiting the rise in energy demand.",
+    "Electric motors typically do not convert all of the electrical energy they use into mechanical energy. Friction, windage, and losses in the stator, rotor, and magnetic core cause energy loss. These losses are decreasing the motor’s efficiency. Considering how much energy is lost and how electric motors are utilized in industry, it is simple to understand why and how crucial it is to analyze efficiency and establish minimum energy performance criteria. The precision with which motor efficiency and motor loss are determined depends on the testing method used. There is no one testing method utilized by every company in the world. Despite the simplicity of the underlying concept, testing and confirming the energy efficiency of a motor using many parameters may be difficult.",
+    "The following testing processes are extensively addressed in industrial contexts:",
+    "IEEE (Institute of Electrical and Electronics Engineers) 112-2004 is a test method standard for three-phase motors and generators. Publication 60034-2-1 of the International Electrotechnical Commission (IEC) in 2014. “”Methods for calculating the losses and efficiency of electrical spinning machinery.”” JEC 37 is the standard for induction devices developed by the Japanese Electrotechnical Committee. IEEE Standard 112-2004 Standard IEEE 112-2004",
+    "This method offers 10 evaluation techniques for energy efficiency. To emphasize what is most important:",
+    "There are three primary categories of IEC standard testing:",
+    "The Japan ese JEC standard 37 testing procedures completely exclude extra load losses. By reducing the energy use of their equipment and appliances, businesses may save money and aid the environment. This is only one of many significant economic and environmental advantages. We provide motor start analysis services in Tokyo, Yokohama, Osaka, and Kyoto , among other important cities."
+  ],
+  "bulletLists": [
+    [
+      "Reduced operational expenses",
+      "A more tranquil and cooler run",
+      "Motors with improved robustness and performance",
+      "The atmosphere receives fewer emissions of greenhouse gases."
+    ],
+    [
+      "There exist simple input and output checks.",
+      "Loss-separated input and output testing.",
+      "Testing of two networked computers in parallel.",
+      "The load losses are calculated using the smoothed residual losses.",
+      "The “Eh-star” technique"
+    ],
+    [
+      "Determining the input and output power of a machine.",
+      "Monitoring the electricity entering and exiting two linked devices.",
+      "One machine’s losses were tallied."
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ]
+  ],
+  "wordCount": 1386,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T17:19:22Z"
+}
