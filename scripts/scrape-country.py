@@ -61,10 +61,13 @@ def fix_brand(t: str) -> str:
 
 
 def slug_from_url(url: str, cc: str) -> str:
-    m = re.search(rf"/{cc}/(.*?)/?$", url)
-    if not m:
-        return url.rstrip("/").split("/")[-1]
-    return m.group(1).strip("/").split("/")[-1] or cc
+    # Strip query string before slugifying
+    clean = url.split("?")[0].split("#")[0]
+    m = re.search(rf"/{cc}/(.*?)/?$", clean)
+    raw = m.group(1).strip("/").split("/")[-1] if m else clean.rstrip("/").split("/")[-1]
+    # Sanitize: keep only filesystem-safe chars
+    raw = re.sub(r"[^a-zA-Z0-9\-_]", "", raw)
+    return raw or cc
 
 
 def discover_sitemap_urls(sitemap_url: str) -> list[str]:
