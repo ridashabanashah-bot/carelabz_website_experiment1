@@ -1,0 +1,95 @@
+{
+  "cc": "uk",
+  "wpUrl": "https://carelabz.com/uk/",
+  "totalPages": 11,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 3
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "uk",
+      "file": "data/wp-extracts\\uk-uk.json",
+      "wordCount": 540,
+      "h2Count": 14
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\uk-about-us.json",
+      "wordCount": 437,
+      "h2Count": 18
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\uk-contact-us.json",
+      "wordCount": 366,
+      "h2Count": 14
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\uk-motor-start-analysis.json",
+      "wordCount": 885,
+      "h2Count": 14
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\uk-power-system-study-and-analysis.json",
+      "wordCount": 942,
+      "h2Count": 14
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\uk-power-quality-analysis.json",
+      "wordCount": 851,
+      "h2Count": 14
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\uk-harmonic-study-and-analysis.json",
+      "wordCount": 918,
+      "h2Count": 14
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\uk-arc-flash-study.json",
+      "wordCount": 674,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "our-services",
+      "file": "data/wp-extracts\\uk-our-services.json",
+      "wordCount": 264,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "home-demo",
+      "file": "data/wp-extracts\\uk-home-demo.json",
+      "wordCount": 195,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "post",
+      "file": "data/wp-extracts\\uk-post.json",
+      "wordCount": 492,
+      "h2Count": 9
+    }
+  ],
+  "skipped": {
+    "service-legacy": 2
+  },
+  "discovered": 23
+}
