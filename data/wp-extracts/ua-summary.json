@@ -1,0 +1,156 @@
+{
+  "cc": "ua",
+  "wpUrl": "https://carelabz.com/ua/",
+  "totalPages": 20,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 3,
+    "blog": 14
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "ua",
+      "file": "data/wp-extracts\\ua-ua.json",
+      "wordCount": 1031,
+      "h2Count": 6
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\ua-about-us.json",
+      "wordCount": 786,
+      "h2Count": 4
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\ua-contact-us.json",
+      "wordCount": 566,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\ua-arc-flash-study.json",
+      "wordCount": 1180,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\ua-motor-start-analysis.json",
+      "wordCount": 1163,
+      "h2Count": 8
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\ua-power-quality-analysis.json",
+      "wordCount": 1113,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "how-are-the-dependability-and-performance-of-commercial-motors-assessed",
+      "file": "data/wp-extracts\\ua-how-are-the-dependability-and-performance-of-commercial-motors-assessed.json",
+      "wordCount": 1480,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "ukrainian-guidelines-for-testing-and-verifying-electrical-motor-efficiency",
+      "file": "data/wp-extracts\\ua-ukrainian-guidelines-for-testing-and-verifying-electrical-motor-efficiency.json",
+      "wordCount": 1327,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-load-flow-and-short-circuit-analysis-to-a-ukrainian-business",
+      "file": "data/wp-extracts\\ua-the-importance-of-load-flow-and-short-circuit-analysis-to-a-ukrainian-business.json",
+      "wordCount": 1332,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow",
+      "file": "data/wp-extracts\\ua-why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow.json",
+      "wordCount": 1773,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-research-and-analysis-so-crucial-to-ukrainian-businesses",
+      "file": "data/wp-extracts\\ua-why-are-harmonic-research-and-analysis-so-crucial-to-ukrainian-businesses.json",
+      "wordCount": 1411,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-operation-for-the-power-quality-in-ukraine",
+      "file": "data/wp-extracts\\ua-principles-of-operation-for-the-power-quality-in-ukraine.json",
+      "wordCount": 1861,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-analyze-the-power-quality-in-ukraine",
+      "file": "data/wp-extracts\\ua-how-to-analyze-the-power-quality-in-ukraine.json",
+      "wordCount": 1402,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-the-ukrainian-power-systems-harmony",
+      "file": "data/wp-extracts\\ua-analysis-of-the-ukrainian-power-systems-harmony.json",
+      "wordCount": 1478,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "ukrainian-arc-flash-analysis-a-complete-guide",
+      "file": "data/wp-extracts\\ua-ukrainian-arc-flash-analysis-a-complete-guide.json",
+      "wordCount": 1453,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-arc-flash-hazards-and-mitigation-techniques",
+      "file": "data/wp-extracts\\ua-analysis-of-arc-flash-hazards-and-mitigation-techniques.json",
+      "wordCount": 1444,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "404-2",
+      "file": "data/wp-extracts\\ua-404-2.json",
+      "wordCount": 375,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\ua-harmonic-study-analysis.json",
+      "wordCount": 1194,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\ua-power-system-study-analysis.json",
+      "wordCount": 1206,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_ua",
+      "file": "data/wp-extracts\\ua-admin_ua.json",
+      "wordCount": 326,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 27
+}
