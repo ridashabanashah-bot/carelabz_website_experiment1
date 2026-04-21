@@ -1,0 +1,163 @@
+{
+  "cc": "cn",
+  "wpUrl": "https://carelabz.com/cn/",
+  "totalPages": 21,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 13
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "cn",
+      "file": "data/wp-extracts\\cn-cn.json",
+      "wordCount": 1368,
+      "h2Count": 8
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\cn-about-us.json",
+      "wordCount": 893,
+      "h2Count": 7
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\cn-contact-us.json",
+      "wordCount": 349,
+      "h2Count": 3
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\cn-arc-flash-study.json",
+      "wordCount": 1182,
+      "h2Count": 18
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\cn-harmonic-study-and-analysis.json",
+      "wordCount": 1193,
+      "h2Count": 17
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\cn-motor-start-analysis.json",
+      "wordCount": 1175,
+      "h2Count": 17
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\cn-power-quality-analysis.json",
+      "wordCount": 1108,
+      "h2Count": 16
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\cn-power-system-study-and-analysis.json",
+      "wordCount": 1189,
+      "h2Count": 20
+    },
+    {
+      "kind": "blog",
+      "slug": "check-and-test-the-performance-of-electric-motors-according-to-chinese-rules",
+      "file": "data/wp-extracts\\cn-check-and-test-the-performance-of-electric-motors-according-to-chinese-rules.json",
+      "wordCount": 1364,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\cn-how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 1499,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-power-system-load-flow-short-circuit-and-relay-coordination",
+      "file": "data/wp-extracts\\cn-analysis-of-power-system-load-flow-short-circuit-and-relay-coordination.json",
+      "wordCount": 1775,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "why-load-flow-and-short-circuit-analysis-are-important-for-a-chinese-business",
+      "file": "data/wp-extracts\\cn-why-load-flow-and-short-circuit-analysis-are-important-for-a-chinese-business.json",
+      "wordCount": 1324,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "working-principles-for-power-quality-in-china",
+      "file": "data/wp-extracts\\cn-working-principles-for-power-quality-in-china.json",
+      "wordCount": 1880,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-conduct-a-power-quality-analysis-in-china",
+      "file": "data/wp-extracts\\cn-how-to-conduct-a-power-quality-analysis-in-china.json",
+      "wordCount": 1453,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-harmonics-in-the-chinese-power-system",
+      "file": "data/wp-extracts\\cn-analysis-of-harmonics-in-the-chinese-power-system.json",
+      "wordCount": 1512,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-analysis-and-research-crucial-for-chinese-businesses",
+      "file": "data/wp-extracts\\cn-why-are-harmonic-analysis-and-research-crucial-for-chinese-businesses.json",
+      "wordCount": 1424,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques",
+      "file": "data/wp-extracts\\cn-the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques.json",
+      "wordCount": 1448,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "chinese-arc-flash-analysis-a-comprehensive-guide",
+      "file": "data/wp-extracts\\cn-chinese-arc-flash-analysis-a-comprehensive-guide.json",
+      "wordCount": 1533,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "404-page",
+      "file": "data/wp-extracts\\cn-404-page.json",
+      "wordCount": 258,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\cn-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_cn",
+      "file": "data/wp-extracts\\cn-admin_cn.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 23
+}

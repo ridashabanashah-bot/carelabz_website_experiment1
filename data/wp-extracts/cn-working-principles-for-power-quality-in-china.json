@@ -1,0 +1,83 @@
+{
+  "url": "https://carelabz.com/cn/working-principles-for-power-quality-in-china/",
+  "slug": "working-principles-for-power-quality-in-china",
+  "pageType": "blog",
+  "metaTitle": "Working Principles for Power Quality in China - Carelabs China",
+  "metaDescription": "",
+  "canonicalSource": "https://carelabz.com/cn/working-principles-for-power-quality-in-china/",
+  "h1": "",
+  "h2": [
+    "Working Principles for Power Quality in China",
+    "RELATED NEWS",
+    "RELATED NEWS"
+  ],
+  "h3": [
+    "Consequences of Substandard Electricity:",
+    "Knowledge About the Sources of Poor Power Quality:",
+    "How May Electrical Quality Concerns Be Reduced?",
+    "Leave a Reply Cancel reply"
+  ],
+  "paragraphs": [
+    "Home / Blog / Working Principles for Power Quality in China",
+    "The quality of the power supply has a direct bearing on the fundamental operation and performance of the equipment linked to the distribution network. The equipment is believed to operate as intended and has a lifespan about equal to the stated value. In addition, it is hoped that the network would be sufficiently reliable to prevent issues such as substandard output and lost functionality. There are several power quality issues in the power system. Regardless of their duration, these power quality disturbances may cause damage to your device. To prevent equipment failure, it is essential to maintain power quality. This article will examine the research necessary to evaluate the dependability and quality of power. Several systems and methods for evaluating the impact and regulation of electricity quality are then examined.",
+    "In contrast to dependability, which is concerned with extended power outages, the effects of power quality disturbances are not immediately apparent. In some instances, however, a power quality interruption has an immediate impact owing to process delays or damaged equipment. This is particularly applicable to pauses, breaks, and transitions. In other instances, the effects of the power quality disturbance may not be immediately evident. The degradation of equipment is one example. As a result, equipment deterioration goes unchecked for years. In other instances, power quality concerns will result in additional losses that are viewed as unavoidable and are, thus, ignored.",
+    "The voltage, frequency, and waveform of a power supply system are evaluated to determine its power quality. Still, many variables impact electricity quality. This blog addresses the following topics surrounding the quality of power:",
+    "Other phenomena, such as swells, transients, inter harmonics , and noise, have gotten less attention due to their rarity.",
+    "Long-term sustained voltage magnitudes correlate to stable-state voltage magnitudes (minutes or hours). Sustained high voltage (overvoltage) or low voltage (under voltage) can result in equipment failure, an increase in energy consumption, and system malfunction (under voltage).",
+    "Unbalanced voltage is typically associated with increased losses, notably in induction and three-phase motors.",
+    "All energy consumers create and contribute harmonic currents into the power system. The fundamental frequencies of alternating currents with harmonic currents are multiples of 50 hertz. Computers, variable speed drives (VSD), and discharge lamps are the most prevalent non-linear electrical equipment that creates harmonic currents. Harmonic currents are particularly damaging to the installation and the power distribution system. Harmonics have a variety of undesirable impacts, including broken components, damaged installation parts, component loading, inefficient use of the installation’s current carrying capacity , a shorter lifespan for components, and ineffective functioning of protective components.",
+    "Flicker is an envelope modulation of voltage waveforms. As a result, incandescent light sources exhibit cyclical fluctuations in light intensity. This uneven change in light output may cause discomfort, decreased productivity, migraines, and, in extremely rare cases, seizures in certain individuals.",
+    "Most of the equipment is unaffected by voltage dips and interruptions, however lengthier disruptions typically result in output loss owing to equipment tripping. It is frequently noticed that the cost of a lengthy interruption follows a logarithmic curve rather than being proportional to its length. According to experts, the following variables strongly impact the cost of a prolonged interruption:",
+    "AEMO calculates the value of customer dependability to evaluate the fiscal impact of outages on all customers ( VCR ). Even though the bulk of these statistics indicate customers’ willingness to pay to avoid a disruption, it is anticipated that this desire to pay will be significantly correlated with the actual cost.",
+    "Carelabs offers many services to discover and evaluate power quality concerns. Included are:",
+    "Using the ETAP (Electrical Transient Analysis Program) – Electrical Transient Analysis Program software, Care Lab s analyse s and assesses the power quality. It is the finest software for doing calculations and simulations for every componen t of an e lectrical system, hence assuring the safety of the equipment. We perform power quality assessments in all major cities, including Beijing, Shanghai, Guangzhou, and Shenzhen. Care Lab s is committed to providin g the hig hest-quality service to enhance the dependability and quality of your electrical system. Contact us immediat ely to sche dule a power quality assessment or to receive an estimate!"
+  ],
+  "bulletLists": [
+    [
+      "Production loss Additional expenses of restarting a process Equipment damage and repair costs",
+      "More delays and downtime",
+      "Worries for the safety and health of people",
+      "Financial losses brought on the breach of contract.",
+      "Monetary fines as punishment for environmental offenses",
+      "Electricity bill increases because of the outage"
+    ],
+    [
+      "The costs a business incurs from delayed revenue or income.",
+      "The monetary price of losing market share",
+      "The price of reestablishing brand value"
+    ],
+    [
+      "A rise in interior temperature that might harm occupants’ health, safety, or performance.",
+      "A problem or harm to the individual",
+      "An electrical danger might arise if the power quality disruption is not recognized."
+    ],
+    [
+      "Bearing deterioration and reverse torque are the results.",
+      "Stator and rotor temperatures rise further",
+      "The current carrying capacity of installation cables is diminishing.",
+      "The neutral conductor’s losses grow.",
+      "More power is lost through cables."
+    ],
+    [
+      "In the industrial business, the cost difference between a disruption lasting one second, one minute, and one hour is considered small.",
+      "The date, time, and location of the event (weekday, weekend, daytime, nighttime)"
+    ],
+    [
+      "Load Flow Evaluation: This analysis is conducted in line with operational requirements. It calculates system losses, voltage levels, power factor, and flow rates.",
+      "This technique uses computer algorithms to identify and predict future harmonic issues. Based on the results, reducing methods are also proposed.",
+      "Analysis of Transients and Surges describes the causes of transients and surges.",
+      "This research would monitor the voltage’s short-term rise and decrease, as well as its value and direction.",
+      "This study will determine the optimal reactive power at the load and distribution ends.",
+      "This project would measure and synchronize captive electricity to fulfil demand while reducing energy surcharges and fuel use."
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ]
+  ],
+  "wordCount": 1880,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T17:15:57Z"
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://carelabz.com/cn/harmonic-study-and-analysis/",
+  "slug": "harmonic-study-and-analysis",
+  "pageType": "service",
+  "metaTitle": "Harmonic Study and Analysis - Carelabs China",
+  "metaDescription": "",
+  "canonicalSource": "https://carelabz.com/cn/harmonic-study-and-analysis/",
+  "h1": "",
+  "h2": [
+    "Harmonic Study and Analysis",
+    "Electrical Standards",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LRED",
+    "LETS DISCOVER MORE",
+    "Harmonic Distortion's Effects:",
+    "Harmonic Study and Analysis Workflow at Carelabs:",
+    "Carelabs Service Benefits:",
+    "RELATED SERVICES"
+  ],
+  "h3": [
+    "What is it?",
+    "Years of experience?",
+    "Terms of service?"
+  ],
+  "paragraphs": [
+    "Power quality analysis checks the power supply for safety and efficiency.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,",
+    "Carelabs offers electrical installation services, such as electrical safety inspections, testing, calibration, and certification, in addition to comprehensive research and analysis of harmonics. Experts will analyze harmonic threats, training programs, paperwork, and personal protective equipment to certify that your electrical safety program is current, compliant, and exhaustive (PPE (Personal Protective Equipment)). Carelabs is able to detect harmonics early on and take the necessary steps to mitigate their effect in order to guarantee the safety of the equipment. When there are harmonic electric voltages and currents, electrical systems can become inefficient. They produce inefficient heat and have the potential to diminish power quality.",
+    "Harmonic voltage analysis is a mathematical approach for estimating potential resonances and harmonic distortion levels. Harmonic voltage analysis is a mathematical approach for forecasting potential resonances and harmonic distortion levels using empirical data. Harmonic frequencies are introduced into the electrical system by nonlinear electrical switching equipment such as AC variable frequency motors, DC drives, fluorescent lights, and computers. High harmonic voltage/current levels pose a significant threat of equipment failure. Consequently, it is essential to do a rapid harmonic analysis and investigation. The current harmonic limitations for 415-volt systems are 5%, with 4% odd harmonics and 2% even harmonics.",
+    "Harmonic issues are exceedingly rare, but when they do arise, they tend to degrade the power system’s dependability, power quality, and efficiency. Consequently, harmonic study and analysis are needed.",
+    "Harmonic research and analysis will assist in shed light on the source and impact of power quality issues, hence minimizing harmonic-related difficulties during the design phase and reducing the danger of unintended consequences.",
+    "Care Lab s has personnel stationed in many areas to ensure that our specialists are avai lab le in case of a regular or urgent emergency. Care Lab s has created a rapid name for itself as an ISO 9001:2008-accredited company with loyal clients who have supplied outstanding feedback. We do harmonic research and analysis in a variety of prominent Chinese towns including Beijin g, Shanghai, Guangzhou, and Shenzhen Contact us immediately to schedule your harmonic analysis and study in Chin a or to receive a quotation!"
+  ],
+  "bulletLists": [
+    [
+      "Controlling circulating current and high voltage incurs expenses.",
+      "severe voltage distortion causes equipment failure and destruction",
+      "An increase in the internal energy of a component causes its failure and shortens its lifespan.",
+      "Dedicated circuit breakers journey due to a defect",
+      "Measurement flaw",
+      "Electrical and distribution network fires and explosions",
+      "The generator fails",
+      "Reduction in system power factor",
+      "Installation and electricity fees that are expensive",
+      "Losses in efficiency",
+      "Idle relaxation and unneeded travel",
+      "Employing bigger motors"
+    ],
+    [
+      "Harmonics protection in current and voltage frequency variation limitation",
+      "Unbalanced current and voltage",
+      "Enhance power factor analysis and maintain a value close to one.",
+      "Regulates voltage peaks and troughs"
+    ],
+    [
+      "Highlight any potential nonlinear loads, capacitor banks, and lengthy medium-voltage cables on the electrical single-line diagram.",
+      "The point of connection must be determined (PCC)",
+      "Determine which system buses in the facility are prone to harmonic distortions.",
+      "Gather harmonics data for every nonlinear load.",
+      "Determine vital information on the voltage and current harmonics at the selected PCC, such as the greatest and lowest short circuit fault levels and the maximum harmonic values permissible in Australia.",
+      "Analyze the harmonics of the electrical network using ETAP (Electrical Transient Analysis Program).",
+      "Calculate the total and individual current and voltage wave distortion values of the buses and PCC.",
+      "Create a graphic depicting the spectrum of harmonic frequencies.",
+      "If harmonic distortion levels are excessive, a suitable mitigation strategy is provided and implemented.",
+      "After implementing the mitigation strategy, rerun the study."
+    ],
+    [
+      "If background harmonics have previously been measured, higher ratings are applied in the second Stage 2 enables altering the converter size depending on the fault level and converter type if the backdrop is less than 25%.",
+      "If the backdrop occupies between 25 and 75 percent of the image, the lower half of the converter grade is suitable. The upper backdrop is given a detailed harmonic analysis."
+    ],
+    [
+      "Email Us",
+      "Chat with Us",
+      "Enquire Now"
+    ]
+  ],
+  "wordCount": 1193,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-21T17:15:42Z"
+}
