@@ -29,6 +29,10 @@ PAYLOAD_DIR = "data/strapi-payloads"
 
 STRIP_TOP = {"id", "documentId", "createdAt", "updatedAt", "publishedAt", "locale", "localizations"}
 
+# Runtime-set CTA slugs (from args). Default keeps compatibility with existing Mexico run.
+CONTACT_SLUG = "contact-us"
+SERVICES_INDEX_SLUG = "service"
+
 
 def load_token() -> str:
     with open(".env.local", encoding="utf-8") as f:
@@ -192,8 +196,8 @@ def build_service(base_slug: str, cc: str, localize, ext: dict, us_ref: dict, st
         payload["metaDescription"] = ext["metaDescription"]
     if ext.get("h1"):
         payload["title"] = ext["h1"]
-    payload["ctaPrimaryHref"] = f"/{cc}/contact-us/" if cc == "mx" else f"/{cc}/contact/"
-    payload["ctaSecondaryHref"] = f"/{cc}/service/"
+    payload["ctaPrimaryHref"] = f"/{cc}/{CONTACT_SLUG}/"
+    payload["ctaSecondaryHref"] = f"/{cc}/{SERVICES_INDEX_SLUG}/"
     payload["ctaBannerPrimaryHref"] = payload["ctaPrimaryHref"]
     payload["ctaBannerSecondaryHref"] = payload["ctaSecondaryHref"]
     payload["seoKeywords"] = list(dict.fromkeys(
@@ -213,7 +217,7 @@ def build_home(cc: str, localize, ext: dict, us_ref: dict, standards: list) -> d
         payload["metaDescription"] = ext["metaDescription"]
     if ext.get("h1"):
         payload["heroHeadline"] = ext["h1"]
-    contact = f"/{cc}/contact-us/" if cc == "mx" else f"/{cc}/contact/"
+    contact = f"/{cc}/{CONTACT_SLUG}/"
     payload["heroPrimaryCtaHref"] = contact
     payload["heroSecondaryCtaHref"] = f"/{cc}/service/"
     payload["ctaBannerPrimaryHref"] = contact
@@ -318,7 +322,17 @@ def run():
     ap.add_argument("--email", default="info@carelabz.com")
     ap.add_argument("--address", default="")
     ap.add_argument("--max-blogs", type=int, default=30)
+    ap.add_argument("--services", default="arc-flash-study,short-circuit-analysis,load-flow-analysis,relay-coordination-study",
+                    help="Comma-separated base service slugs this country has")
+    ap.add_argument("--contact-slug", default="contact-us",
+                    help="Contact URL slug for CTA hrefs (usually 'contact' or 'contact-us')")
+    ap.add_argument("--services-index-slug", default="service",
+                    help="Services index path slug")
     args = ap.parse_args()
+
+    global CONTACT_SLUG, SERVICES_INDEX_SLUG
+    CONTACT_SLUG = args.contact_slug
+    SERVICES_INDEX_SLUG = args.services_index_slug
 
     cc = args.cc.lower()
     country_name = args.country_name
@@ -365,11 +379,19 @@ def run():
         results.append(ok)
 
     # Services
-    for base in ["arc-flash-study", "short-circuit-analysis", "load-flow-analysis", "relay-coordination-study"]:
+    service_list = [s.strip() for s in args.services.split(",") if s.strip()]
+    for base in service_list:
         ext = load_extract(cc, base)
         if not ext:
+            print(f"  skip service {base} (no extract)")
             continue
+        # Prefer matching US ref; fall back to arc-flash-study-us as universal template
         us_ref = load_ref(f"{base}-us.json")
+        if not us_ref:
+            us_ref = load_ref("arc-flash-study-us.json")
+        if not us_ref:
+            print(f"  skip service {base} (no US ref template)")
+            continue
         p = build_service(base, cc, localize, ext, us_ref, standards)
         r = upsert("service-pages", cc, f"{base}-{cc}", p, token, singleton=False)
         ok = "error" not in r

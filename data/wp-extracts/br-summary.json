@@ -1,0 +1,144 @@
+{
+  "cc": "br",
+  "wpUrl": "https://carelabz.com/br/",
+  "totalPages": 18,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 10
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "br",
+      "file": "data/wp-extracts\\br-br.json",
+      "wordCount": 836,
+      "h2Count": 13
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\br-about-us.json",
+      "wordCount": 677,
+      "h2Count": 1
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\br-contact-us.json",
+      "wordCount": 439,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\br-arc-flash-study.json",
+      "wordCount": 1343,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\br-harmonic-study-and-analysis.json",
+      "wordCount": 1399,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\br-motor-start-analysis.json",
+      "wordCount": 1401,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\br-power-system-study-and-analysis.json",
+      "wordCount": 1545,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\br-power-quality-analysis.json",
+      "wordCount": 1453,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\br-how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 958,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis",
+      "file": "data/wp-extracts\\br-load-flow-short-circuit-and-relay-coordination-in-power-system-analysis.json",
+      "wordCount": 1261,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-a-power-quality-analysis-in-brazil",
+      "file": "data/wp-extracts\\br-how-to-perform-a-power-quality-analysis-in-brazil.json",
+      "wordCount": 928,
+      "h2Count": 14
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-power-quality-work-in-brazil",
+      "file": "data/wp-extracts\\br-principles-of-power-quality-work-in-brazil.json",
+      "wordCount": 1375,
+      "h2Count": 19
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-of-the-brazil-power-system",
+      "file": "data/wp-extracts\\br-harmonic-analysis-of-the-brazil-power-system.json",
+      "wordCount": 981,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil",
+      "file": "data/wp-extracts\\br-why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil.json",
+      "wordCount": 893,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial",
+      "file": "data/wp-extracts\\br-assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial.json",
+      "wordCount": 914,
+      "h2Count": 15
+    },
+    {
+      "kind": "blog",
+      "slug": "404-page",
+      "file": "data/wp-extracts\\br-404-page.json",
+      "wordCount": 264,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\br-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_br",
+      "file": "data/wp-extracts\\br-admin_br.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 2
+  },
+  "discovered": 22
+}
