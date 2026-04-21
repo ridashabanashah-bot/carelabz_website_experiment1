@@ -1,0 +1,170 @@
+{
+  "cc": "za",
+  "wpUrl": "https://carelabz.com/za/",
+  "totalPages": 22,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 3,
+    "blog": 16
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "za",
+      "file": "data/wp-extracts\\za-za.json",
+      "wordCount": 932,
+      "h2Count": 6
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\za-about-us.json",
+      "wordCount": 953,
+      "h2Count": 6
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\za-contact-us.json",
+      "wordCount": 319,
+      "h2Count": 4
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\za-arc-flash-study.json",
+      "wordCount": 1363,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\za-power-quality-analysis.json",
+      "wordCount": 1273,
+      "h2Count": 4
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\za-motor-start-analysis.json",
+      "wordCount": 1351,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-ppe-selection-for-data-center-personnel-what-south-african-standards-recommend",
+      "file": "data/wp-extracts\\za-arc-flash-ppe-selection-for-data-center-personnel-what-south-african-standards-recommend.json",
+      "wordCount": 1566,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "verify-south-african-electrical-motor-performance-regulations-compliance",
+      "file": "data/wp-extracts\\za-verify-south-african-electrical-motor-performance-regulations-compliance.json",
+      "wordCount": 1184,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\za-how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 1316,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow",
+      "file": "data/wp-extracts\\za-analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow.json",
+      "wordCount": 1626,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "why-does-south-african-business-need-short-circuit-and-load-flow-analysis",
+      "file": "data/wp-extracts\\za-why-does-south-african-business-need-short-circuit-and-load-flow-analysis.json",
+      "wordCount": 1166,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-analyze-south-african-power-quality",
+      "file": "data/wp-extracts\\za-how-to-analyze-south-african-power-quality.json",
+      "wordCount": 1293,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-work-on-south-african-power-quality",
+      "file": "data/wp-extracts\\za-principles-of-work-on-south-african-power-quality.json",
+      "wordCount": 1741,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonics-analysis-of-the-south-african-electric-power-system",
+      "file": "data/wp-extracts\\za-harmonics-analysis-of-the-south-african-electric-power-system.json",
+      "wordCount": 1307,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "how-significant-is-harmonic-analysis-in-south-african-firm",
+      "file": "data/wp-extracts\\za-how-significant-is-harmonic-analysis-in-south-african-firm.json",
+      "wordCount": 1246,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-risk-must-be-evaluated-and-reduced-immediately",
+      "file": "data/wp-extracts\\za-arc-flash-risk-must-be-evaluated-and-reduced-immediately.json",
+      "wordCount": 1283,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "a-comprehensive-guide-to-arc-flash-analysis-in-south-africa",
+      "file": "data/wp-extracts\\za-a-comprehensive-guide-to-arc-flash-analysis-in-south-africa.json",
+      "wordCount": 1377,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "404-2",
+      "file": "data/wp-extracts\\za-404-2.json",
+      "wordCount": 258,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\za-power-system-study-analysis.json",
+      "wordCount": 1381,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\za-harmonic-study-analysis.json",
+      "wordCount": 1358,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\za-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_za",
+      "file": "data/wp-extracts\\za-admin_za.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 25
+}
