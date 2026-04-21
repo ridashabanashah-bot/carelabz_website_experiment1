@@ -1,0 +1,187 @@
+{
+  "cc": "de",
+  "wpUrl": "https://carelabz.com/de/",
+  "totalPages": 24,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "case-study": 1,
+    "blog": 15
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "de",
+      "file": "data/wp-extracts\\de-de.json",
+      "wordCount": 794,
+      "h2Count": 0
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\de-about-us.json",
+      "wordCount": 923,
+      "h2Count": 0
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\de-contact-us.json",
+      "wordCount": 607,
+      "h2Count": 3
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\de-arc-flash-study.json",
+      "wordCount": 1218,
+      "h2Count": 6
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\de-harmonic-study-and-analysis.json",
+      "wordCount": 1211,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\de-motor-start-analysis.json",
+      "wordCount": 1193,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\de-power-quality-analysis.json",
+      "wordCount": 1160,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\de-power-system-study-and-analysis.json",
+      "wordCount": 1226,
+      "h2Count": 6
+    },
+    {
+      "kind": "case-study",
+      "slug": "case-study",
+      "file": "data/wp-extracts\\de-case-study.json",
+      "wordCount": 513,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis",
+      "file": "data/wp-extracts\\de-load-flow-short-circuit-and-relay-coordination-in-power-system-analysis.json",
+      "wordCount": 1528,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed",
+      "file": "data/wp-extracts\\de-how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed.json",
+      "wordCount": 1232,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses",
+      "file": "data/wp-extracts\\de-the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses.json",
+      "wordCount": 1096,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming",
+      "file": "data/wp-extracts\\de-verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming.json",
+      "wordCount": 1070,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-conduct-an-analysis-of-power-quality-in-germany",
+      "file": "data/wp-extracts\\de-how-to-conduct-an-analysis-of-power-quality-in-germany.json",
+      "wordCount": 1203,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "working-principles-for-power-quality-in-germany",
+      "file": "data/wp-extracts\\de-working-principles-for-power-quality-in-germany.json",
+      "wordCount": 1646,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "germanys-power-system-harmonic-analysis",
+      "file": "data/wp-extracts\\de-germanys-power-system-harmonic-analysis.json",
+      "wordCount": 1253,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "why-harmonic-analysis-and-study-crucial-for-german-businesses",
+      "file": "data/wp-extracts\\de-why-harmonic-analysis-and-study-crucial-for-german-businesses.json",
+      "wordCount": 1156,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques",
+      "file": "data/wp-extracts\\de-the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques.json",
+      "wordCount": 1181,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "blog",
+      "file": "data/wp-extracts\\de-blog.json",
+      "wordCount": 597,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study",
+      "file": "data/wp-extracts\\de-harmonic-study.json",
+      "wordCount": 1253,
+      "h2Count": 1
+    },
+    {
+      "kind": "blog",
+      "slug": "motor-start-study",
+      "file": "data/wp-extracts\\de-motor-start-study.json",
+      "wordCount": 139,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "power-quality-study",
+      "file": "data/wp-extracts\\de-power-quality-study.json",
+      "wordCount": 133,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study",
+      "file": "data/wp-extracts\\de-power-system-study.json",
+      "wordCount": 139,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_fr",
+      "file": "data/wp-extracts\\de-admin_fr.json",
+      "wordCount": 656,
+      "h2Count": 10
+    }
+  ],
+  "skipped": {
+    "service-legacy": 1
+  },
+  "discovered": 27
+}
