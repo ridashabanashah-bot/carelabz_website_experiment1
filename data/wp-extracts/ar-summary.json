@@ -1,0 +1,144 @@
+{
+  "cc": "ar",
+  "wpUrl": "https://carelabz.com/ar/",
+  "totalPages": 18,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 10
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "ar",
+      "file": "data/wp-extracts\\ar-ar.json",
+      "wordCount": 836,
+      "h2Count": 13
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\ar-about-us.json",
+      "wordCount": 699,
+      "h2Count": 1
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\ar-contact-us.json",
+      "wordCount": 439,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\ar-power-system-study-and-analysis.json",
+      "wordCount": 1558,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\ar-power-quality-analysis.json",
+      "wordCount": 1422,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\ar-motor-start-analysis.json",
+      "wordCount": 1447,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\ar-harmonic-study-and-analysis.json",
+      "wordCount": 1427,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\ar-arc-flash-study.json",
+      "wordCount": 1371,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\ar-how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 977,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "examine-and-confirm-electrical-motor-performance-in-compliance-with-argentine-regulations",
+      "file": "data/wp-extracts\\ar-examine-and-confirm-electrical-motor-performance-in-compliance-with-argentine-regulations.json",
+      "wordCount": 839,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis",
+      "file": "data/wp-extracts\\ar-load-flow-short-circuit-and-relay-coordination-in-power-system-analysis.json",
+      "wordCount": 1271,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-a-power-quality-analysis-in-argentina",
+      "file": "data/wp-extracts\\ar-how-to-perform-a-power-quality-analysis-in-argentina.json",
+      "wordCount": 937,
+      "h2Count": 14
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-power-quality-work-in-argentina",
+      "file": "data/wp-extracts\\ar-principles-of-power-quality-work-in-argentina.json",
+      "wordCount": 1372,
+      "h2Count": 19
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-of-the-argentine-power-system",
+      "file": "data/wp-extracts\\ar-harmonic-analysis-of-the-argentine-power-system.json",
+      "wordCount": 1004,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-analysis-and-study-important-for-businesses-in-argentina",
+      "file": "data/wp-extracts\\ar-why-are-harmonic-analysis-and-study-important-for-businesses-in-argentina.json",
+      "wordCount": 910,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "404-page",
+      "file": "data/wp-extracts\\ar-404-page.json",
+      "wordCount": 264,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\ar-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_ar",
+      "file": "data/wp-extracts\\ar-admin_ar.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 3
+  },
+  "discovered": 23
+}
