@@ -1,0 +1,165 @@
+{
+  "cc": "in",
+  "wpUrl": "https://carelabz.com/in/",
+  "totalPages": 21,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 1,
+    "blog": 17
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "in",
+      "file": "data/wp-extracts\\in-in.json",
+      "wordCount": 1196,
+      "h2Count": 16
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\in-about-us.json",
+      "wordCount": 774,
+      "h2Count": 6
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\in-contact-us.json",
+      "wordCount": 494,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\in-arc-flash-study.json",
+      "wordCount": 1103,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "why-is-harmonic-analysis-and-study-so-important-for-indian-businesses",
+      "file": "data/wp-extracts\\in-why-is-harmonic-analysis-and-study-so-important-for-indian-businesses.json",
+      "wordCount": 1241,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "significance-of-arc-flash-risk-evaluation-and-mitigation-techniques",
+      "file": "data/wp-extracts\\in-significance-of-arc-flash-risk-evaluation-and-mitigation-techniques.json",
+      "wordCount": 1257,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "short-circuit-analysis",
+      "file": "data/wp-extracts\\in-short-circuit-analysis.json",
+      "wordCount": 1068,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "power-quality-working-principles-in-india",
+      "file": "data/wp-extracts\\in-power-quality-working-principles-in-india.json",
+      "wordCount": 1692,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-analysis",
+      "file": "data/wp-extracts\\in-load-flow-analysis.json",
+      "wordCount": 1110,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "indian-power-system-harmonic-analysis",
+      "file": "data/wp-extracts\\in-indian-power-system-harmonic-analysis.json",
+      "wordCount": 1248,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-a-study-of-power-quality-in-india",
+      "file": "data/wp-extracts\\in-how-to-perform-a-study-of-power-quality-in-india.json",
+      "wordCount": 1228,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-the-performance-and-dependability-of-commercial-motors-be-assessed",
+      "file": "data/wp-extracts\\in-how-can-the-performance-and-dependability-of-commercial-motors-be-assessed.json",
+      "wordCount": 1285,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "analyze-and-assess-electric-motor-performance-in-compliance-with-indian-legislation",
+      "file": "data/wp-extracts\\in-analyze-and-assess-electric-motor-performance-in-compliance-with-indian-legislation.json",
+      "wordCount": 1140,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "our-services",
+      "file": "data/wp-extracts\\in-our-services.json",
+      "wordCount": 611,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "blog-post",
+      "file": "data/wp-extracts\\in-blog-post.json",
+      "wordCount": 567,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\in-harmonic-study-analysis.json",
+      "wordCount": 132,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\in-motor-start-analysis.json",
+      "wordCount": 138,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\in-power-quality-analysis.json",
+      "wordCount": 132,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\in-power-system-study-analysis.json",
+      "wordCount": 143,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_sg",
+      "file": "data/wp-extracts\\in-admin_sg.json",
+      "wordCount": 349,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "sajini_in",
+      "file": "data/wp-extracts\\in-sajini_in.json",
+      "wordCount": 1196,
+      "h2Count": 16
+    }
+  ],
+  "skipped": {
+    "service-legacy": 8
+  },
+  "discovered": 31
+}
