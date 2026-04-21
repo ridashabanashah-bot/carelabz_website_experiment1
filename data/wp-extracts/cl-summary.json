@@ -1,0 +1,163 @@
+{
+  "cc": "cl",
+  "wpUrl": "https://carelabz.com/cl/",
+  "totalPages": 21,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 13
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "cl",
+      "file": "data/wp-extracts\\cl-cl.json",
+      "wordCount": 836,
+      "h2Count": 13
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\cl-about-us.json",
+      "wordCount": 699,
+      "h2Count": 1
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\cl-contact-us.json",
+      "wordCount": 439,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\cl-arc-flash-study.json",
+      "wordCount": 1348,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\cl-harmonic-study-and-analysis.json",
+      "wordCount": 1428,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\cl-motor-start-analysis.json",
+      "wordCount": 1422,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\cl-power-quality-analysis.json",
+      "wordCount": 1409,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\cl-power-system-study-and-analysis.json",
+      "wordCount": 1543,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-of-the-chile-power-system",
+      "file": "data/wp-extracts\\cl-harmonic-analysis-of-the-chile-power-system.json",
+      "wordCount": 970,
+      "h2Count": 13
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\cl-how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 965,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations",
+      "file": "data/wp-extracts\\cl-examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations.json",
+      "wordCount": 826,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis",
+      "file": "data/wp-extracts\\cl-load-flow-short-circuit-and-relay-coordination-in-power-system-analysis.json",
+      "wordCount": 1242,
+      "h2Count": 12
+    },
+    {
+      "kind": "blog",
+      "slug": "why-load-flow-and-short-circuit-analysis-important-for-chilean-business",
+      "file": "data/wp-extracts\\cl-why-load-flow-and-short-circuit-analysis-important-for-chilean-business.json",
+      "wordCount": 819,
+      "h2Count": 10
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-a-power-quality-analysis-in-chile",
+      "file": "data/wp-extracts\\cl-how-to-perform-a-power-quality-analysis-in-chile.json",
+      "wordCount": 914,
+      "h2Count": 14
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-power-quality-work-in-chile",
+      "file": "data/wp-extracts\\cl-principles-of-power-quality-work-in-chile.json",
+      "wordCount": 1395,
+      "h2Count": 19
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-analysis-and-study-important-for-businesses-in-chile",
+      "file": "data/wp-extracts\\cl-why-are-harmonic-analysis-and-study-important-for-businesses-in-chile.json",
+      "wordCount": 919,
+      "h2Count": 11
+    },
+    {
+      "kind": "blog",
+      "slug": "assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial",
+      "file": "data/wp-extracts\\cl-assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial.json",
+      "wordCount": 908,
+      "h2Count": 15
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-analysis-in-chile-a-detailed-guide",
+      "file": "data/wp-extracts\\cl-arc-flash-analysis-in-chile-a-detailed-guide.json",
+      "wordCount": 950,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "404-page",
+      "file": "data/wp-extracts\\cl-404-page.json",
+      "wordCount": 264,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\cl-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_cl",
+      "file": "data/wp-extracts\\cl-admin_cl.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {},
+  "discovered": 23
+}
