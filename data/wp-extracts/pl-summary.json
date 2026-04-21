@@ -1,0 +1,151 @@
+{
+  "cc": "pl",
+  "wpUrl": "https://carelabz.com/pl/",
+  "totalPages": 19,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 3,
+    "blog": 13
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "pl",
+      "file": "data/wp-extracts\\pl-pl.json",
+      "wordCount": 1031,
+      "h2Count": 6
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\pl-about-us.json",
+      "wordCount": 786,
+      "h2Count": 4
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\pl-contact-us.json",
+      "wordCount": 566,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\pl-arc-flash-study.json",
+      "wordCount": 1181,
+      "h2Count": 9
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\pl-power-quality-analysis.json",
+      "wordCount": 1114,
+      "h2Count": 7
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\pl-motor-start-analysis.json",
+      "wordCount": 1166,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "how-are-the-dependability-and-performance-of-commercial-motors-assessed",
+      "file": "data/wp-extracts\\pl-how-are-the-dependability-and-performance-of-commercial-motors-assessed.json",
+      "wordCount": 1519,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency",
+      "file": "data/wp-extracts\\pl-polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency.json",
+      "wordCount": 1327,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business",
+      "file": "data/wp-extracts\\pl-the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business.json",
+      "wordCount": 1332,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow",
+      "file": "data/wp-extracts\\pl-why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow.json",
+      "wordCount": 1773,
+      "h2Count": 18
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-operation-for-the-power-quality-in-poland",
+      "file": "data/wp-extracts\\pl-principles-of-operation-for-the-power-quality-in-poland.json",
+      "wordCount": 1861,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-analyze-the-power-quality-in-poland",
+      "file": "data/wp-extracts\\pl-how-to-analyze-the-power-quality-in-poland.json",
+      "wordCount": 1402,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-research-and-analysis-so-crucial-to-polish-businesses",
+      "file": "data/wp-extracts\\pl-why-are-harmonic-research-and-analysis-so-crucial-to-polish-businesses.json",
+      "wordCount": 1411,
+      "h2Count": 17
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-the-polish-power-systems-harmony",
+      "file": "data/wp-extracts\\pl-analysis-of-the-polish-power-systems-harmony.json",
+      "wordCount": 1478,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "analysis-of-arc-flash-hazards-and-mitigation-techniques",
+      "file": "data/wp-extracts\\pl-analysis-of-arc-flash-hazards-and-mitigation-techniques.json",
+      "wordCount": 1444,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "404-2",
+      "file": "data/wp-extracts\\pl-404-2.json",
+      "wordCount": 375,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-analysis",
+      "file": "data/wp-extracts\\pl-power-system-study-analysis.json",
+      "wordCount": 1207,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-analysis",
+      "file": "data/wp-extracts\\pl-harmonic-study-analysis.json",
+      "wordCount": 1194,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_pl",
+      "file": "data/wp-extracts\\pl-admin_pl.json",
+      "wordCount": 326,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 1
+  },
+  "discovered": 27
+}
