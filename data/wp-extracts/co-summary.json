@@ -1,0 +1,144 @@
+{
+  "cc": "co",
+  "wpUrl": "https://carelabz.com/co/",
+  "totalPages": 18,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 5,
+    "blog": 10
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "co",
+      "file": "data/wp-extracts\\co-co.json",
+      "wordCount": 836,
+      "h2Count": 13
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\co-about-us.json",
+      "wordCount": 699,
+      "h2Count": 1
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\co-contact-us.json",
+      "wordCount": 439,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study",
+      "file": "data/wp-extracts\\co-arc-flash-study.json",
+      "wordCount": 1340,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "harmonic-study-and-analysis",
+      "file": "data/wp-extracts\\co-harmonic-study-and-analysis.json",
+      "wordCount": 1426,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "motor-start-analysis",
+      "file": "data/wp-extracts\\co-motor-start-analysis.json",
+      "wordCount": 1420,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-quality-analysis",
+      "file": "data/wp-extracts\\co-power-quality-analysis.json",
+      "wordCount": 1409,
+      "h2Count": 2
+    },
+    {
+      "kind": "service",
+      "slug": "power-system-study-and-analysis",
+      "file": "data/wp-extracts\\co-power-system-study-and-analysis.json",
+      "wordCount": 1541,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated",
+      "file": "data/wp-extracts\\co-how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated.json",
+      "wordCount": 927,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "examine-and-confirm-electrical-motor-performance-in-compliance-with-colombian-regulations",
+      "file": "data/wp-extracts\\co-examine-and-confirm-electrical-motor-performance-in-compliance-with-colombian-regulations.json",
+      "wordCount": 928,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-perform-a-power-quality-analysis-in-colombia",
+      "file": "data/wp-extracts\\co-how-to-perform-a-power-quality-analysis-in-colombia.json",
+      "wordCount": 926,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "principles-of-power-quality-work-in-colombia",
+      "file": "data/wp-extracts\\co-principles-of-power-quality-work-in-colombia.json",
+      "wordCount": 921,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-of-the-colombian-power-system",
+      "file": "data/wp-extracts\\co-harmonic-analysis-of-the-colombian-power-system.json",
+      "wordCount": 924,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "why-are-harmonic-analysis-and-study-important-for-businesses-in-colombia",
+      "file": "data/wp-extracts\\co-why-are-harmonic-analysis-and-study-important-for-businesses-in-colombia.json",
+      "wordCount": 925,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial",
+      "file": "data/wp-extracts\\co-assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial.json",
+      "wordCount": 925,
+      "h2Count": 16
+    },
+    {
+      "kind": "blog",
+      "slug": "404-page",
+      "file": "data/wp-extracts\\co-404-page.json",
+      "wordCount": 264,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "uncategorized",
+      "file": "data/wp-extracts\\co-uncategorized.json",
+      "wordCount": 300,
+      "h2Count": 0
+    },
+    {
+      "kind": "blog",
+      "slug": "admin_co",
+      "file": "data/wp-extracts\\co-admin_co.json",
+      "wordCount": 300,
+      "h2Count": 0
+    }
+  ],
+  "skipped": {
+    "service-legacy": 3
+  },
+  "discovered": 23
+}
