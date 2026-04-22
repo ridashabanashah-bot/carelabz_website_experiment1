@@ -136,6 +136,30 @@ const nextConfig = {
         "/nz/carelabz-com-nz-power-quality-analysis-in-new-zealand",
         "/nz/power-quality-analysis-in-new-zealand/"
       ),
+
+      /* ============================================================ */
+      /*  Flat-service countries — WP serves duplicate URLs at         */
+      /*  /xx/services/slug/ and /xx/services/ that don't map to our  */
+      /*  flat routes. Redirect them to the canonical flat location.  */
+      /* ============================================================ */
+      ...[
+        "at", "be", "ch", "nl", "au", "se", "no", "dk", "fi",
+        "es", "pt", "gr", "fr", "ru", "pl", "hu", "cz", "ro", "sk", "ua",
+        "cn", "jp", "kr", "hk", "tw", "my", "sg", "th", "vn", "id", "ph",
+        "nz", "sa", "tr", "za", "eg", "it",
+      ].flatMap((cc) => [
+        // /xx/services/ → /xx/our-services/ (for countries using our-services)
+        ...pair(`/${cc}/services`, `/${cc}/our-services/`),
+        // /xx/services/SLUG/ → /xx/SLUG/ (flat redirect)
+        { source: `/${cc}/services/:slug`, destination: `/${cc}/:slug/`, permanent: true },
+        { source: `/${cc}/services/:slug/`, destination: `/${cc}/:slug/`, permanent: true },
+        // /xx/case-study/ → /xx/ (countries without case-study page)
+        ...pair(`/${cc}/case-study`, `/${cc}/`),
+      ]),
+
+      // BR/CO/CL/AR/PE use /services/ plural as their real index, not redirect
+      // (handled separately — not in the list above).
+      // IN uses /our-services/ and /our-blogs/ — blog index already correct.
     ];
   },
 };

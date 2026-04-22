@@ -1,61 +1,320 @@
 {
   "country": "CA",
   "wp_base": "https://carelabz.com/ca/",
-  "total_pages": 9,
-  "pass": 1,
-  "fail": 8,
+  "total_pages": 30,
+  "pass": 8,
+  "fail": 22,
   "skip": 0,
-  "pass_rate": 11.1,
-  "skip_blogs": true,
+  "pass_rate": 26.7,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/ca/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/blogs/",
+      "status": "PASS",
+      "new_word_count": 460,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety/",
+      "status": "FAIL",
+      "new_word_count": 661,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/etap-and-its-utilizations-on-arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/etap-and-its-utilizations-on-arc-flash-study/",
+      "status": "FAIL",
+      "new_word_count": 590,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers/",
+      "status": "FAIL",
+      "new_word_count": 701,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions/",
+      "status": "FAIL",
+      "new_word_count": 820,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 790,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/comprehensive-electrical-safety-inspections-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/comprehensive-electrical-safety-inspections-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 612,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/why-arc-flash-study-and-analysis-important-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/why-arc-flash-study-and-analysis-important-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 617,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/electrical-safety-protocol-for-arc-flash-study-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/electrical-safety-protocol-for-arc-flash-study-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 581,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/effective-electrical-safety-program-development/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/effective-electrical-safety-program-development/",
+      "status": "FAIL",
+      "new_word_count": 477,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/customized-electrical-safety-management-plans-for-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/customized-electrical-safety-management-plans-for-canada/",
+      "status": "FAIL",
+      "new_word_count": 550,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/expert-electrical-safety-advisors-canada-carelabz/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/expert-electrical-safety-advisors-canada-carelabz/",
+      "status": "FAIL",
+      "new_word_count": 578,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/arc-flash-safety-measures-with-carelabs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/arc-flash-safety-measures-with-carelabs/",
+      "status": "FAIL",
+      "new_word_count": 354,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/arc-flash-incidents/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/arc-flash-incidents/",
+      "status": "FAIL",
+      "new_word_count": 478,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/arc-flash-hazard-analysis-proven-mitigation-strategies/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/arc-flash-hazard-analysis-proven-mitigation-strategies/",
+      "status": "FAIL",
+      "new_word_count": 258,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/electrical-standards-for-arc-flash-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/electrical-standards-for-arc-flash-study-and-analysis/",
+      "status": "FAIL",
+      "new_word_count": 625,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/empowering-microgrids-in-canada-the-role-of-relay-coordination-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/empowering-microgrids-in-canada-the-role-of-relay-coordination-study/",
+      "status": "FAIL",
+      "new_word_count": 650,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 647,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety/",
+      "status": "FAIL",
+      "new_word_count": 616,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/safe-and-sustainable-hydropower-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/safe-and-sustainable-hydropower-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 915,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/cost-effective-arc-flash-study-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/cost-effective-arc-flash-study-in-canada/",
+      "status": "FAIL",
+      "new_word_count": 546,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/ca/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/",
-      "status": "FAIL",
-      "wp_word_count": 555,
+      "status": "PASS",
       "new_word_count": 608,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Carelabs: Power System Analysis that Makes a Difference",
-            "Commitment to Quality and Electrical Safety Standards",
-            "Serving Diverse Industries with precision",
-            "Power System analysis services for modern electrical needs"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/case-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/case-study/",
       "status": "FAIL",
-      "wp_word_count": 357,
       "new_word_count": 90,
+      "new_status": 200,
       "issues": [
         {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Explore how Carelabs helps clients across Canada achieve electrical safety compliance and operational excellence.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Powering Electrical Safety with Expert Solutions",
-          "new_site": "Case Studies",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "357 words",
-          "new_site": "90 words (25% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 90 words - page may be empty or broken"
         }
       ]
     },
@@ -63,147 +322,63 @@
       "wp_url": "https://carelabz.com/ca/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/about-us/",
       "status": "PASS",
-      "wp_word_count": 508,
       "new_word_count": 314,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/contact/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/contact/",
-      "status": "FAIL",
-      "wp_word_count": 189,
+      "status": "PASS",
       "new_word_count": 638,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Sales enquiries",
-            "Client support",
-            "Discover Our Locations"
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/service/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/service/",
       "status": "FAIL",
-      "wp_word_count": 169,
       "new_word_count": 160,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
+          "field": "WORD_COUNT",
           "severity": "HIGH",
-          "wordpress": "Expert Electrical Safety Inspection Services",
-          "new_site": "Electrical Safety Services Canada | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Power your safety with our comprehensive electrical safety inspection services. Tailored solutions for all sectors in Canada.",
-          "new_site": "Discover Carelabs' Canadian electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with CSA Z462 and the Canadian Electrical Code.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Powering Electrical Safety with Expert Solutions",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
+          "detail": "Main content only 160 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/ca/services/short-circuit-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/services/short-circuit-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1364,
+      "status": "PASS",
       "new_word_count": 1050,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Short Circuit Analysis- Know how your power system behaves in faulty conditions",
-            "What is short circuit analysis?",
-            "What is the importance of short circuit analysis?",
-            "Success Story",
-            "How we conduct Short Circuit Analysis"
-          ],
-          "new_site": "6 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/services/load-flow-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/services/load-flow-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1389,
+      "status": "PASS",
       "new_word_count": 1054,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Measure the Performance of your Power System with Advanced Load Flow Analysis",
-            "What is Load Flow Analysis?",
-            "Why is Load Flow Analysis Important?",
-            "Success Story",
-            "How we conduct Load Flow Analysis"
-          ],
-          "new_site": "5 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/services/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/services/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 1447,
+      "status": "PASS",
       "new_word_count": 1069,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Study can mean the critical difference between a safe and vulnerable workplace.",
-            "What is Arc flash study",
-            "Why Arc flash study is important",
-            "How we conduct Arc Flash Analysis in Canada",
-            "Why Carelabs is the Right Fit?"
-          ],
-          "new_site": "5 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ca/services/relay-coordination-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/services/relay-coordination-study/",
-      "status": "FAIL",
-      "wp_word_count": 1344,
+      "status": "PASS",
       "new_word_count": 1052,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Ensure Integrity, Reliability, and Safety of Your Power System",
-            "What is a protective relay coordination study",
-            "Why Relay Coordination study is important",
-            "Success Story",
-            "Relay Coordination Study Planning and Analysis Phase"
-          ],
-          "new_site": "6 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

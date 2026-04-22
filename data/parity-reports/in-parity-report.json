@@ -1,223 +1,304 @@
 {
   "country": "IN",
   "wp_base": "https://carelabz.com/in/",
-  "total_pages": 9,
-  "pass": 0,
-  "fail": 9,
+  "total_pages": 23,
+  "pass": 5,
+  "fail": 18,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 21.7,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/in/why-is-harmonic-analysis-and-study-so-important-for-indian-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/why-is-harmonic-analysis-and-study-so-important-for-indian-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/the-importance-of-load-flow-and-short-circuit-analysis-for-indian-companies/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/the-importance-of-load-flow-and-short-circuit-analysis-for-indian-companies/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/short-circuit-analysis/",
+      "status": "FAIL",
+      "new_word_count": 165,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 165 words - page may be empty or broken"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/relay-coordination-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/relay-coordination-study/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/power-quality-working-principles-in-india/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/power-quality-working-principles-in-india/",
+      "status": "FAIL",
+      "new_word_count": 879,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/load-flow-analysis/",
+      "status": "FAIL",
+      "new_word_count": 174,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 174 words - page may be empty or broken"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/indian-power-system-harmonic-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/indian-power-system-harmonic-analysis/",
+      "status": "FAIL",
+      "new_word_count": 499,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/how-to-perform-a-study-of-power-quality-in-india/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/how-to-perform-a-study-of-power-quality-in-india/",
+      "status": "FAIL",
+      "new_word_count": 655,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
+      "status": "FAIL",
+      "new_word_count": 514,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/arc-flash-study/",
+      "status": "PASS",
+      "new_word_count": 452,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/in/arc-flash-analysis-step-by-step-instructions-for-india/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/arc-flash-analysis-step-by-step-instructions-for-india/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/in/analyze-and-assess-electric-motor-performance-in-compliance-with-indian-legislation/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/analyze-and-assess-electric-motor-performance-in-compliance-with-indian-legislation/",
+      "status": "FAIL",
+      "new_word_count": 599,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/in/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/",
-      "status": "FAIL",
-      "wp_word_count": 6102,
+      "status": "PASS",
       "new_word_count": 616,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Most Trusted Power System Analysis Experts",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "6102 words",
-          "new_site": "616 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/our-services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/our-services/",
       "status": "FAIL",
-      "wp_word_count": 4792,
       "new_word_count": 137,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Ensure Safety with Advanced Power System Analysis",
-          "new_site": "Electrical Safety Services India | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Carelabs India's innovative electrical solutions. Our services ensure compliance, risk mitigation, and optimized performance.",
-          "new_site": "Discover Carelabs' Indian electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with CEA Regulations 2010 and the CEA Regulations.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4792 words",
-          "new_site": "137 words (3% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 137 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/in/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 4530,
+      "status": "PASS",
       "new_word_count": 356,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Engineer Powerful Solutions For Electrical Safety",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4530 words",
-          "new_site": "356 words (8% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/our-blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/our-blogs/",
-      "status": "FAIL",
-      "wp_word_count": 3809,
+      "status": "PASS",
       "new_word_count": 384,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Safety Tips to Protect Your Infrastructure",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs India",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Electrical safety to uncover essential insights and practical tips for safeguarding your infrastructure against potential hazards.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and CEA Regulations 2010 compliance for India facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "ARC Flash Study",
-            "Relay Coordination Study",
-            "Load Flow Analysis",
-            "Short Circuit Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "3809 words",
-          "new_site": "384 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/arc-flash-study-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/arc-flash-study-in-india/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/in/relay-coordination-study-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/relay-coordination-study-in-india/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/in/short-circuit-analysis-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/short-circuit-analysis-in-india/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/in/load-flow-analysis-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/load-flow-analysis-in-india/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/in/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 4051,
+      "status": "PASS",
       "new_word_count": 638,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Connect With Our Experts",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4051 words",
-          "new_site": "638 words (16% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

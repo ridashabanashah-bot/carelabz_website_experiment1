@@ -1,266 +1,515 @@
 {
   "country": "US",
   "wp_base": "https://carelabz.com/us/",
-  "total_pages": 14,
-  "pass": 5,
-  "fail": 9,
+  "total_pages": 45,
+  "pass": 21,
+  "fail": 24,
   "skip": 0,
-  "pass_rate": 35.7,
-  "skip_blogs": true,
+  "pass_rate": 46.7,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/us/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/blog/",
+      "status": "PASS",
+      "new_word_count": 254,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/step-by-step-guide-to-perform-arc-flash-analysis-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/step-by-step-guide-to-perform-arc-flash-analysis-in-the-us/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/working-principles-of-power-quality-analysis-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/working-principles-of-power-quality-analysis-in-the-us/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/harmonic-analysis-in-power-system-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/harmonic-analysis-in-power-system-in-the-us/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/arc-flash-at-turkey-point-2017/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/arc-flash-at-turkey-point-2017/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/priest-rapids-dam-arc-flash-explosion-2014/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/priest-rapids-dam-arc-flash-explosion-2014/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/checklist-for-electrical-safety-audit-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/checklist-for-electrical-safety-audit-in-the-usa/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/mgm-grand-hotel-fire-1980/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/mgm-grand-hotel-fire-1980/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/which-of-these-facts-about-arc-flashes-are-true/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/which-of-these-facts-about-arc-flashes-are-true/",
+      "status": "PASS",
+      "new_word_count": 1177,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/the-importance-of-relay-coordination-in-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/the-importance-of-relay-coordination-in-power-system/",
+      "status": "PASS",
+      "new_word_count": 824,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/upgrading-your-power-system-dont-ignore-the-short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/upgrading-your-power-system-dont-ignore-the-short-circuit-analysis/",
+      "status": "PASS",
+      "new_word_count": 1203,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/what-are-the-key-insights-obtained-from-load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/what-are-the-key-insights-obtained-from-load-flow-analysis/",
+      "status": "PASS",
+      "new_word_count": 1174,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/commercial-electrical-safety-inspection-checklist-for-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/commercial-electrical-safety-inspection-checklist-for-the-united-states/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/energy-conservation-by-auditing-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/energy-conservation-by-auditing-power-quality/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/three-mile-island-blast-1979/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/three-mile-island-blast-1979/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/arc-flash-study-a-grandeur-or-mandate/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/arc-flash-study-a-grandeur-or-mandate/",
+      "status": "PASS",
+      "new_word_count": 1079,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-safety-inspection-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-safety-inspection-in-usa/",
+      "status": "PASS",
+      "new_word_count": 1203,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-safety-audit-for-companies-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-safety-audit-for-companies-in-the-usa/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-installation-condition-report-ecir-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-installation-condition-report-ecir-in-the-us/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states/",
+      "status": "PASS",
+      "new_word_count": 1177,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/",
-      "status": "FAIL",
-      "wp_word_count": 415,
+      "status": "PASS",
       "new_word_count": 645,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Carelabs- Intelligent Power System Analysis for Sustainable Progress",
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "5 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/case-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/case-study/",
       "status": "FAIL",
-      "wp_word_count": 288,
       "new_word_count": 91,
+      "new_status": 200,
       "issues": [
         {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Carelabs provide electric installation safety inspection for businesses across US. Get your electrical system inspected and fixed for any faults by Carelabs engineers today!",
-          "new_site": "Explore how Carelabs helps clients across the US achieve electrical safety compliance and operational excellence.",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "288 words",
-          "new_site": "91 words (32% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 91 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/us/harmonic-study-and-analysis-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/harmonic-study-and-analysis-in-usa/",
-      "status": "FAIL",
-      "wp_word_count": 288,
+      "status": "PASS",
       "new_word_count": 521,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/power-quality-analysis-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/power-quality-analysis-in-usa/",
-      "status": "FAIL",
-      "wp_word_count": 288,
+      "status": "PASS",
       "new_word_count": 543,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Carelabs offers professional power quality analysis for companies across the USA. Safeguard your employees & property by becoming NFPA and OSHA compliant.",
-          "new_site": "Carelabs offers professional power quality analysis for companies across the USA. Safeguard your employees and property by becoming NFPA and OSHA compliant.",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/motor-start-analysis-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/motor-start-analysis-in-usa/",
-      "status": "FAIL",
-      "wp_word_count": 288,
+      "status": "PASS",
       "new_word_count": 555,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/power-system-study-and-analysis-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/power-system-study-and-analysis-in-usa/",
-      "status": "FAIL",
-      "wp_word_count": 288,
+      "status": "PASS",
       "new_word_count": 551,
-      "issues": [
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/services/",
-      "status": "FAIL",
-      "wp_word_count": 157,
+      "status": "PASS",
       "new_word_count": 342,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Discover our comprehensive electrical system contingency plans, ensuring safety and compliance with USA standards. Optimize your power systems with expert analysis.",
-          "new_site": "Discover our comprehensive electrical safety services ensuring compliance with USA standards. Arc flash studies, short circuit analysis, and power system engineering.",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/contact-us/",
       "status": "PASS",
-      "wp_word_count": 171,
       "new_word_count": 694,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/electrical-safety-inspection-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/electrical-safety-inspection-in-usa/",
-      "status": "FAIL",
-      "wp_word_count": 288,
+      "status": "PASS",
       "new_word_count": 551,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Expert electrical safety inspection service providers near me in USA",
-          "new_site": "Expert Electrical Safety Inspection Service Providers Near You in USA",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Find expert electrical safety inspection service providers near you in the USA. We help you to maintain your facility as per NFPA & OSHA.",
-          "new_site": "Find expert electrical safety inspection service providers near you in the USA. We help you maintain your facility as per NFPA & OSHA standards.",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Consulting in the USA for Every Industry",
-            "Value-adding solutions for diverse industries",
-            "Comprehensive Project Reports Beyond Compliance",
-            "Actionable Power System Solutions Beyond Analysis"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/about-us/",
       "status": "PASS",
-      "wp_word_count": 281,
       "new_word_count": 353,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/service/arc-flash-study-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/arc-flash-study-in-usa/",
       "status": "PASS",
-      "wp_word_count": 543,
       "new_word_count": 567,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/service/relay-coordination-study-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/relay-coordination-study-in-usa/",
       "status": "PASS",
-      "wp_word_count": 541,
       "new_word_count": 549,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/service/load-flow-analysis-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/load-flow-analysis-us/",
-      "status": "FAIL",
-      "wp_word_count": 576,
+      "status": "PASS",
       "new_word_count": 549,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Achieve optimal power distribution and voltage stability with our load flow analysis Enhance your power systems with precision load flow analysis in the USA.",
-          "new_site": "Achieve optimal power distribution and voltage stability with our load flow analysis. Enhance your power systems with precision load flow analysis in the USA.",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/service/short-circuit-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/short-circuit-analysis/",
       "status": "PASS",
-      "wp_word_count": 765,
       "new_word_count": 727,
+      "new_status": 200,
       "issues": []
     }
   ]

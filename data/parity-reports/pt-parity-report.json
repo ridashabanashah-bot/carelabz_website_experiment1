@@ -1,296 +1,236 @@
 {
   "country": "PT",
   "wp_base": "https://carelabz.com/pt/",
-  "total_pages": 15,
-  "pass": 5,
-  "fail": 10,
+  "total_pages": 25,
+  "pass": 21,
+  "fail": 4,
   "skip": 0,
-  "pass_rate": 33.3,
-  "skip_blogs": true,
+  "pass_rate": 84.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/pt/how-to-conduct-a-power-quality-analysis-in-portugal/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/how-to-conduct-a-power-quality-analysis-in-portugal/",
+      "status": "PASS",
+      "new_word_count": 557,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/power-quality-working-principles-in-portugal/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/power-quality-working-principles-in-portugal/",
+      "status": "PASS",
+      "new_word_count": 701,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/importance-of-load-flow-and-short-circuit-analysis-for-a-portuguese-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/importance-of-load-flow-and-short-circuit-analysis-for-a-portuguese-business/",
+      "status": "PASS",
+      "new_word_count": 441,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/test-and-verifelectrical-motor-efficiency-in-accordance-with-portuguese-guidelines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/test-and-verifelectrical-motor-efficiency-in-accordance-with-portuguese-guidelines/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "status": "PASS",
+      "new_word_count": 405,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/arc-flash-analysis-in-portugal-a-step-by-step-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/arc-flash-analysis-in-portugal-a-step-by-step-guide/",
+      "status": "PASS",
+      "new_word_count": 283,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 643,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/why-is-harmonic-analysis-and-study-important-for-portuguese-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/why-is-harmonic-analysis-and-study-important-for-portuguese-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "status": "PASS",
+      "new_word_count": 462,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/harmonic-analysis-in-power-system-in-portugal/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/harmonic-analysis-in-power-system-in-portugal/",
+      "status": "PASS",
+      "new_word_count": 380,
+      "new_status": 200,
+      "issues": []
+    },
     {
       "wp_url": "https://carelabz.com/pt/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/",
-      "status": "FAIL",
-      "wp_word_count": 108,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Portugal: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/power-quality-analysis-in-portugal/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/power-quality-analysis-in-portugal/",
-      "status": "PASS",
-      "wp_word_count": 19,
-      "new_word_count": 405,
-      "issues": []
-    },
-    {
-      "wp_url": "https://carelabz.com/pt/about-us/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/about-us/",
       "status": "FAIL",
-      "wp_word_count": 0,
-      "new_word_count": 346,
+      "new_word_count": 405,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Portugal",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pt/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/about-us/",
+      "status": "PASS",
+      "new_word_count": 346,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/arc-flash-study-in-portugal/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/arc-flash-study-in-portugal/",
       "status": "PASS",
-      "wp_word_count": 19,
       "new_word_count": 466,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 205,
+      "status": "PASS",
       "new_word_count": 318,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Portugal Blog | Electrical Safety & Power Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Portugal",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs Portugal's blog for expert insights on arc flash studies, power system analysis, harmonic studies.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and RTIEBT compliance for Portugal facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/careers/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/careers/",
-      "status": "FAIL",
-      "wp_word_count": 71,
+      "status": "PASS",
       "new_word_count": 236,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Why work at Carelabs?",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 47,
+      "status": "PASS",
       "new_word_count": 615,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/harmonic-study-and-analysis-in-portugal/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/harmonic-study-and-analysis-in-portugal/",
       "status": "PASS",
-      "wp_word_count": 19,
       "new_word_count": 393,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/motor-start-analysis-in-portugal/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/motor-start-analysis-in-portugal/",
       "status": "PASS",
-      "wp_word_count": 19,
       "new_word_count": 511,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/power-system-study-and-analysis-in-portugal/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/power-system-study-and-analysis-in-portugal/",
       "status": "PASS",
-      "wp_word_count": 19,
       "new_word_count": 590,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/pt/?elementskit_template=elementskit-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/?elementskit_template=elementskit-header",
-      "status": "FAIL",
-      "wp_word_count": 2143,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "ElementsKit_Lite Template #1662960322 - Carelabs Portugal",
-          "new_site": "Power System Solutions in Portugal | Carelabs Experts",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs Portugal delivers expert power system solutions, arc flash studies, harmonic analysis, and electrical safety services to industries across Portugal.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "2143 words",
-          "new_site": "591 words (28% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/?oceanwp_library=custom-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/?oceanwp_library=custom-header",
-      "status": "FAIL",
-      "wp_word_count": 108,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Portugal: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/?oceanwp_library=custom-menu",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/?oceanwp_library=custom-menu",
-      "status": "FAIL",
-      "wp_word_count": 108,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Portugal: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pt/?oceanwp_library=footer",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pt/?oceanwp_library=footer",
-      "status": "FAIL",
-      "wp_word_count": 108,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Portugal: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

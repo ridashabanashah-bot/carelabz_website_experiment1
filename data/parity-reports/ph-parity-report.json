@@ -1,142 +1,211 @@
 {
   "country": "PH",
   "wp_base": "https://carelabz.com/ph/",
-  "total_pages": 6,
-  "pass": 1,
-  "fail": 5,
+  "total_pages": 16,
+  "pass": 5,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 16.7,
-  "skip_blogs": true,
+  "pass_rate": 31.2,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/ph/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/",
+      "wp_url": "https://carelabz.com/ph/the-importance-of-load-flow-and-short-circuit-analysis-for-philippine-companies/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/the-importance-of-load-flow-and-short-circuit-analysis-for-philippine-companies/",
       "status": "FAIL",
-      "wp_word_count": 1829,
-      "new_word_count": 602,
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/how-to-perform-a-study-of-power-quality-in-philippines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/how-to-perform-a-study-of-power-quality-in-philippines/",
+      "status": "FAIL",
+      "new_word_count": 587,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Most Reliable Power System Analysis Specialists",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1829 words",
-          "new_site": "602 words (33% of WP)",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/power-quality-working-principles-in-philippines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/power-quality-working-principles-in-philippines/",
+      "status": "FAIL",
+      "new_word_count": 782,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/philippine-power-system-harmonic-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/philippine-power-system-harmonic-analysis/",
+      "status": "FAIL",
+      "new_word_count": 389,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/why-is-harmonic-analysis-and-study-so-important-for-philippine-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/why-is-harmonic-analysis-and-study-so-important-for-philippine-businesses/",
+      "status": "FAIL",
+      "new_word_count": 403,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/arc-flash-analysis-step-by-step-instructions-for-philippines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/arc-flash-analysis-step-by-step-instructions-for-philippines/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/analyze-and-assess-electric-motor-performance-in-compliance-with-philippines-legislation/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/analyze-and-assess-electric-motor-performance-in-compliance-with-philippines-legislation/",
+      "status": "FAIL",
+      "new_word_count": 587,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
+      "status": "FAIL",
+      "new_word_count": 454,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 704,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 582,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/",
+      "status": "PASS",
+      "new_word_count": 602,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ph/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 23,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study and Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ph/help-center/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/help-center/",
-      "status": "PASS",
-      "wp_word_count": 2,
+      "status": "FAIL",
       "new_word_count": 51,
-      "issues": []
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 51 words - page may be empty or broken"
+        }
+      ]
     },
     {
       "wp_url": "https://carelabz.com/ph/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 23,
+      "status": "PASS",
       "new_word_count": 440,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Motor Start Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ph/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 23,
+      "status": "PASS",
       "new_word_count": 440,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Quality Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ph/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 23,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study & Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

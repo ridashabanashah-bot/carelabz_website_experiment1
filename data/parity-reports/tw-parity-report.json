@@ -1,238 +1,236 @@
 {
   "country": "TW",
   "wp_base": "https://carelabz.com/tw/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 9,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 45.0,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/tw/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/",
+      "wp_url": "https://carelabz.com/tw/check-and-test-the-performance-of-electric-motors-according-to-taiwanese-rules/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/check-and-test-the-performance-of-electric-motors-according-to-taiwanese-rules/",
       "status": "FAIL",
-      "wp_word_count": 630,
-      "new_word_count": 615,
+      "new_word_count": 667,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Taiwan",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated/",
+      "status": "FAIL",
+      "new_word_count": 421,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/analysis-of-power-system-load-flow-short-circuit-and-relay-coordination/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/analysis-of-power-system-load-flow-short-circuit-and-relay-coordination/",
+      "status": "FAIL",
+      "new_word_count": 656,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/why-load-flow-and-short-circuit-analysis-are-important-for-a-taiwanese-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/why-load-flow-and-short-circuit-analysis-are-important-for-a-taiwanese-business/",
+      "status": "FAIL",
+      "new_word_count": 465,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/working-principles-for-power-quality-in-taiwan/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/working-principles-for-power-quality-in-taiwan/",
+      "status": "FAIL",
+      "new_word_count": 755,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/how-to-conduct-a-power-quality-analysis-in-taiwan/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/how-to-conduct-a-power-quality-analysis-in-taiwan/",
+      "status": "FAIL",
+      "new_word_count": 555,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/analysis-of-harmonics-in-the-taiwanese-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/analysis-of-harmonics-in-the-taiwanese-power-system/",
+      "status": "FAIL",
+      "new_word_count": 410,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/why-are-harmonic-analysis-and-research-crucial-for-taiwanese-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/why-are-harmonic-analysis-and-research-crucial-for-taiwanese-businesses/",
+      "status": "FAIL",
+      "new_word_count": 392,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 498,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/taiwanese-arc-flash-analysis-a-comprehensive-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/taiwanese-arc-flash-analysis-a-comprehensive-guide/",
+      "status": "FAIL",
+      "new_word_count": 279,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tw/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/",
+      "status": "PASS",
+      "new_word_count": 615,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 688,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 594,
+      "status": "PASS",
       "new_word_count": 353,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Taiwan",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 692,
+      "status": "PASS",
       "new_word_count": 449,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 638,
+      "status": "PASS",
       "new_word_count": 328,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabs Taiwan",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Taiwan",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and User Electricity Supply Regulations compliance for Taiwan facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 645,
+      "status": "PASS",
       "new_word_count": 655,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 598,
+      "status": "PASS",
       "new_word_count": 450,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 682,
+      "status": "PASS",
       "new_word_count": 449,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 677,
+      "status": "PASS",
       "new_word_count": 449,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tw/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tw/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     }

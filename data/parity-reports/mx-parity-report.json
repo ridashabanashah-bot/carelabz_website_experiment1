@@ -1,301 +1,610 @@
 {
   "country": "MX",
   "wp_base": "https://carelabz.com/mx/",
-  "total_pages": 13,
-  "pass": 0,
-  "fail": 13,
+  "total_pages": 57,
+  "pass": 33,
+  "fail": 24,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 57.9,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/mx/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/",
-      "status": "FAIL",
-      "wp_word_count": 8635,
-      "new_word_count": 598,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Advanced Power System Analysis for Mexico's Safety Standards",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "8635 words",
-          "new_site": "598 words (7% of WP)",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/mx/guide-to-perform-power-quality-analysis-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/guide-to-perform-power-quality-analysis-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 597,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/mx/load-flow-analysis-in-mexico/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/load-flow-analysis-in-mexico/",
-      "status": "PAGE_MISSING",
+      "wp_url": "https://carelabz.com/mx/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "status": "PASS",
+      "new_word_count": 555,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "status": "PASS",
+      "new_word_count": 551,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 618,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-electrical-installation-condition-report-ecir-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-electrical-installation-condition-report-ecir-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 618,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-electrical-safety-audit-for-companies-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-electrical-safety-audit-for-companies-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 563,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-electrical-safety-inspection-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-electrical-safety-inspection-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 635,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/need-or-necessity-electrical-switchgear-risk-assessment-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/need-or-necessity-electrical-switchgear-risk-assessment-in-the-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/why-is-harmonic-study-and-analysis-important-for-companies-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/why-is-harmonic-study-and-analysis-important-for-companies-in-the-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/checklist-for-electrical-safety-audit-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/checklist-for-electrical-safety-audit-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 608,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/commercial-electrical-safety-inspection-checklist-for-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/commercial-electrical-safety-inspection-checklist-for-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 655,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/harmonic-analysis-in-power-system-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/harmonic-analysis-in-power-system-in-the-mexico/",
+      "status": "PASS",
+      "new_word_count": 688,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "status": "PASS",
+      "new_word_count": 463,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "status": "PASS",
+      "new_word_count": 582,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico-2/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/working-principles-of-power-quality-analysis-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/working-principles-of-power-quality-analysis-in-the-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/step-by-step-guide-to-perform-arc-flash-analysis-in-the-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/step-by-step-guide-to-perform-arc-flash-analysis-in-the-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/waukegan-plant-explosion-2019/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/waukegan-plant-explosion-2019/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/arc-flash-at-turkey-point-2017/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-at-turkey-point-2017/",
+      "status": "PASS",
+      "new_word_count": 447,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/priest-rapids-dam-arc-flash-explosion-2014/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/priest-rapids-dam-arc-flash-explosion-2014/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/arc-flash-incident-at-republic-steel-2014/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-incident-at-republic-steel-2014/",
+      "status": "PASS",
+      "new_word_count": 604,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/mgm-grand-hotel-fire-1980/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/mgm-grand-hotel-fire-1980/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/three-mile-island-blast-1979/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/three-mile-island-blast-1979/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-do-electrical-switchgear-risk-assessment-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-do-electrical-switchgear-risk-assessment-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 727,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/energy-conservation-by-auditing-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/energy-conservation-by-auditing-power-quality/",
+      "status": "PASS",
+      "new_word_count": 433,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-mexico/",
+      "status": "PASS",
+      "new_word_count": 579,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 604,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-arc-flash-hazard-analysis-and-mitigation-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-arc-flash-hazard-analysis-and-mitigation-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 832,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-electrical-installation-condition-report-ecir-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-electrical-installation-condition-report-ecir-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 709,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-electrical-safety-audit-for-companies-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-electrical-safety-audit-for-companies-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 583,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-electrical-safety-inspection-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-electrical-safety-inspection-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 511,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/need-or-necessity-electrical-switchgear-risk-assessment-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/need-or-necessity-electrical-switchgear-risk-assessment-in-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/why-is-harmonic-study-and-analysis-important-for-companies-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/why-is-harmonic-study-and-analysis-important-for-companies-in-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/checklist-for-electrical-safety-audit/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/checklist-for-electrical-safety-audit/",
+      "status": "PASS",
+      "new_word_count": 473,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/electrical-safety-inspection-checklist-for-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/electrical-safety-inspection-checklist-for-mexico/",
+      "status": "PASS",
+      "new_word_count": 614,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/harmonic-analysis-for-power-system-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/harmonic-analysis-for-power-system-in-mexico/",
+      "status": "PASS",
+      "new_word_count": 570,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/how-to-get-electrical-condition-report-by-third-party-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/how-to-get-electrical-condition-report-by-third-party-company/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/test-and-verify-motor-performance-as-per-national-international-standards/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/test-and-verify-motor-performance-as-per-national-international-standards/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/working-principles-of-power-quality-analysis-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/working-principles-of-power-quality-analysis-in-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/",
+      "status": "PASS",
+      "new_word_count": 598,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/load-flow-analysis-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/load-flow-analysis-in-mexico/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/mx/short-circuit-analysis-in-mexico/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/short-circuit-analysis-in-mexico/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/mx/relay-coordination-study-in-mexico/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/relay-coordination-study-in-mexico/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/mx/arc-flash-studies-in-mexico/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-studies-in-mexico/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/mx/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 5663,
+      "status": "PASS",
       "new_word_count": 649,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "5663 words",
-          "new_site": "649 words (11% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/load-flow-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/load-flow-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 5986,
+      "status": "PASS",
       "new_word_count": 430,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Optimization with Precision Load Flow Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "5986 words",
-          "new_site": "430 words (7% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/short-circuit-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/short-circuit-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 5877,
+      "status": "PASS",
       "new_word_count": 604,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Stop Faults in the System With Expert Short Circuit Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "5877 words",
-          "new_site": "604 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/relay-coordination-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/relay-coordination-study/",
-      "status": "FAIL",
-      "wp_word_count": 6077,
+      "status": "PASS",
       "new_word_count": 434,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Enhance System Integrity with Relay Coordination Study",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "6077 words",
-          "new_site": "434 words (7% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 5922,
+      "status": "PASS",
       "new_word_count": 446,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "5922 words",
-          "new_site": "446 words (8% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 8910,
+      "status": "PASS",
       "new_word_count": 345,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Mexico",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "8910 words",
-          "new_site": "345 words (4% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 7602,
+      "status": "PASS",
       "new_word_count": 552,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Top Benefits of Conducting an Arc Flash Study in Mexico",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Mexico",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Learn how Carelabs addresses challenges in electrical safety, compliance, and performance optimization for industries in Mexico.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and NOM-029-STPS-2011 compliance for Mexico facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "7602 words",
-          "new_site": "552 words (7% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/mx/service/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/service/",
       "status": "FAIL",
-      "wp_word_count": 6937,
       "new_word_count": 184,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Power System Services in Mexico | Expert Electrical Safety Solutions",
-          "new_site": "Electrical Safety Services Mexico | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs' power system services in Mexico, including Arc Flash Study, Relay Coordination, Load Flow Analysis, and Short Circuit Analysis. Optimize safety and efficiency.",
-          "new_site": "Discover Carelabs' Mexico electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with NOM-029-STPS-2011 and the Mexican Electrical Code (NOM-001-SEDE).",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "6937 words",
-          "new_site": "184 words (3% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 184 words - page may be empty or broken"
         }
       ]
     }

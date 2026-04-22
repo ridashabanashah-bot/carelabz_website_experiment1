@@ -1,61 +1,186 @@
 {
   "country": "DE",
   "wp_base": "https://carelabz.com/de/",
-  "total_pages": 11,
-  "pass": 0,
-  "fail": 11,
+  "total_pages": 21,
+  "pass": 8,
+  "fail": 13,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 38.1,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/de/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/",
+      "wp_url": "https://carelabz.com/de/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
       "status": "FAIL",
-      "wp_word_count": 971,
-      "new_word_count": 600,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "The Importance of Load Flow and Short Circuit Analysis for German Businesses:",
-          "new_site": "Our Services",
-          "match": false
-        }
-      ]
-    },
-    {
-      "wp_url": "https://carelabz.com/de/case-study/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/case-study/",
-      "status": "PAGE_MISSING",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/how-to-conduct-an-analysis-of-power-quality-in-germany/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/how-to-conduct-an-analysis-of-power-quality-in-germany/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/working-principles-for-power-quality-in-germany/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/working-principles-for-power-quality-in-germany/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/germanys-power-system-harmonic-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/germanys-power-system-harmonic-analysis/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/why-harmonic-analysis-and-study-crucial-for-german-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/why-harmonic-analysis-and-study-crucial-for-german-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/germanys-arc-flash-analysis-a-comprehensive-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/germanys-arc-flash-analysis-a-comprehensive-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/de/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/",
+      "status": "PASS",
+      "new_word_count": 600,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/de/case-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/case-study/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/de/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/blog/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
@@ -63,234 +188,71 @@
       "wp_url": "https://carelabz.com/de/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/",
       "status": "FAIL",
-      "wp_word_count": 895,
       "new_word_count": 171,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Services - Carelabz Germany",
-          "new_site": "Electrical Safety Services Germany | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover Carelabs' Germany electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with DIN VDE 0100 and the DIN VDE 0100.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "895 words",
-          "new_site": "171 words (19% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 171 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/de/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 873,
+      "status": "PASS",
       "new_word_count": 346,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Find Out About Us",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "873 words",
-          "new_site": "346 words (40% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 1080,
+      "status": "PASS",
       "new_word_count": 500,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1080 words",
-          "new_site": "500 words (46% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1080,
+      "status": "PASS",
       "new_word_count": 502,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Harmonic Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1080 words",
-          "new_site": "502 words (46% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1034,
+      "status": "PASS",
       "new_word_count": 500,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Motor Start Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1034 words",
-          "new_site": "500 words (48% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1065,
+      "status": "PASS",
       "new_word_count": 500,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Power Quality Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1065 words",
-          "new_site": "500 words (47% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/services/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1072,
+      "status": "PASS",
       "new_word_count": 504,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Power System Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1072 words",
-          "new_site": "504 words (47% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 971,
+      "status": "PASS",
       "new_word_count": 629,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Our Global Presence",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

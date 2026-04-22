@@ -1,289 +1,236 @@
 {
   "country": "ES",
   "wp_base": "https://carelabz.com/es/",
-  "total_pages": 15,
-  "pass": 5,
-  "fail": 10,
+  "total_pages": 25,
+  "pass": 21,
+  "fail": 4,
   "skip": 0,
-  "pass_rate": 33.3,
-  "skip_blogs": true,
+  "pass_rate": 84.0,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/es/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/",
+      "wp_url": "https://carelabz.com/es/how-to-conduct-power-quality-analysis-in-spain/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/how-to-conduct-power-quality-analysis-in-spain/",
+      "status": "PASS",
+      "new_word_count": 581,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/power-quality-working-principles-in-spain/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/power-quality-working-principles-in-spain/",
+      "status": "PASS",
+      "new_word_count": 810,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/importance-of-load-flow-and-short-circuit-analysis-for-a-spanish-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/importance-of-load-flow-and-short-circuit-analysis-for-a-spanish-business/",
       "status": "FAIL",
-      "wp_word_count": 107,
-      "new_word_count": 591,
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Spain: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
-      "wp_url": "https://carelabz.com/es/about-us/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/about-us/",
+      "wp_url": "https://carelabz.com/es/test-and-verify-electrical-motor-efficiency-in-accordance-with-spanish-guidelines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/test-and-verify-electrical-motor-efficiency-in-accordance-with-spanish-guidelines/",
       "status": "FAIL",
-      "wp_word_count": 0,
-      "new_word_count": 350,
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Spain",
-          "match": false
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/es/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "status": "PASS",
+      "new_word_count": 404,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/arc-flash-analysis-in-spain-a-step-by-step-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/arc-flash-analysis-in-spain-a-step-by-step-guide/",
+      "status": "PASS",
+      "new_word_count": 298,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 645,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/why-is-harmonic-analysis-and-study-important-for-spanish-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/why-is-harmonic-analysis-and-study-important-for-spanish-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/es/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "status": "PASS",
+      "new_word_count": 557,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/harmonic-analysis-in-power-system-in-spain/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/harmonic-analysis-in-power-system-in-spain/",
+      "status": "PASS",
+      "new_word_count": 399,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/",
+      "status": "PASS",
+      "new_word_count": 591,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/es/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/about-us/",
+      "status": "PASS",
+      "new_word_count": 350,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/arc-flash-study-in-spain/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/arc-flash-study-in-spain/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 435,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 204,
+      "status": "PASS",
       "new_word_count": 347,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Spain Blog | Electrical Safety & Power Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Spain",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs Spain's blog for expert articles on arc flash studies, power system analysis, electrical safety, and energy solutions.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and REBT compliance for Spain facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/careers/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/careers/",
-      "status": "FAIL",
-      "wp_word_count": 71,
+      "status": "PASS",
       "new_word_count": 236,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Why work at Carelabs?",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 47,
+      "status": "PASS",
       "new_word_count": 615,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/harmonic-study-analysis-in-spain/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/harmonic-study-analysis-in-spain/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 412,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/motor-start-analysis-in-spain/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/motor-start-analysis-in-spain/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 529,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/power-quality-analysis-in-spain/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/power-quality-analysis-in-spain/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 419,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/power-system-study-analysis-in-spain/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/power-system-study-analysis-in-spain/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 533,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/es/?elementskit_template=elementskit-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/?elementskit_template=elementskit-header",
-      "status": "FAIL",
-      "wp_word_count": 3822,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "ElementsKit_Lite Template #1662960322 - Carelabs Spain",
-          "new_site": "Power System Solutions in Spain | Carelabs Experts",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs Spain offers expert power system analysis, arc flash studies, and electrical safety solutions. Trusted by industries across Spain.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "3822 words",
-          "new_site": "591 words (15% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/?oceanwp_library=custom-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/?oceanwp_library=custom-header",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Spain: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/?oceanwp_library=footer",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/?oceanwp_library=footer",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Spain: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/es/?oceanwp_library=custom-menu",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/es/?oceanwp_library=custom-menu",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 591,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Spain: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

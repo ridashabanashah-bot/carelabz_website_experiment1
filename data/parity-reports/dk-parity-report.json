@@ -1,263 +1,238 @@
 {
   "country": "DK",
   "wp_base": "https://carelabz.com/dk/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 9,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 45.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/dk/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/load-flow-and-short-circuit-analysis-significance-for-danish-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/load-flow-and-short-circuit-analysis-significance-for-danish-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/how-can-the-electricity-quality-in-danish-be-analyzed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/how-can-the-electricity-quality-in-danish-be-analyzed/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/danish-power-quality-working-principles/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/danish-power-quality-working-principles/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/analyze-and-evaluate-the-performance-of-electric-motors-as-per-danish-regulations/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/analyze-and-evaluate-the-performance-of-electric-motors-as-per-danish-regulations/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/harmonic-analysis-of-danish-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/harmonic-analysis-of-danish-power-system/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/why-are-harmonic-analysis-and-studies-so-vital-for-danish-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/why-are-harmonic-analysis-and-studies-so-vital-for-danish-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/a-step-by-step-guide-to-arc-flash-analysis-in-denmark/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/a-step-by-step-guide-to-arc-flash-analysis-in-denmark/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/dk/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-denmark/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-denmark/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/dk/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/",
-      "status": "FAIL",
-      "wp_word_count": 1627,
+      "status": "PASS",
       "new_word_count": 607,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Denmark",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1627 words",
-          "new_site": "607 words (37% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1267,
+      "status": "PASS",
       "new_word_count": 438,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Motor Start Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1267 words",
-          "new_site": "438 words (35% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 1243,
+      "status": "PASS",
       "new_word_count": 352,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Denmark",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1243 words",
-          "new_site": "352 words (28% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 1206,
+      "status": "PASS",
       "new_word_count": 632,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1292,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1292 words",
-          "new_site": "442 words (34% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/our-services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/our-services/",
       "status": "FAIL",
-      "wp_word_count": 257,
       "new_word_count": 105,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering and Power System Services in Denmark",
-          "new_site": "Electrical Safety Services Denmark | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Kolejna witryna oparta na WordPressie",
-          "new_site": "Discover Carelabs' Denmark electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with DS/HD 60364 and the DS/HD 60364.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "257 words",
-          "new_site": "105 words (41% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 105 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/dk/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1283,
+      "status": "PASS",
       "new_word_count": 440,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Quality Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1283 words",
-          "new_site": "440 words (34% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1285,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1285 words",
-          "new_site": "442 words (34% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 1298,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Study",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1298 words",
-          "new_site": "442 words (34% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/dk/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/dk/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 1275,
+      "status": "PASS",
       "new_word_count": 204,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Denmark Blog",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Denmark",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Kolejna witryna oparta na WordPressie",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and DS/HD 60364 compliance for Denmark facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1275 words",
-          "new_site": "204 words (16% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

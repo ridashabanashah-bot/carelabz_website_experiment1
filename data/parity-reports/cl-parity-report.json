@@ -1,205 +1,176 @@
 {
   "country": "CL",
   "wp_base": "https://carelabz.com/cl/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 19,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 95.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/cl/harmonic-analysis-of-the-chile-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/harmonic-analysis-of-the-chile-power-system/",
+      "status": "PASS",
+      "new_word_count": 405,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "status": "PASS",
+      "new_word_count": 401,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations/",
+      "status": "PASS",
+      "new_word_count": 487,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 626,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/why-load-flow-and-short-circuit-analysis-important-for-chilean-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/why-load-flow-and-short-circuit-analysis-important-for-chilean-business/",
+      "status": "PASS",
+      "new_word_count": 425,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/how-to-perform-a-power-quality-analysis-in-chile/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/how-to-perform-a-power-quality-analysis-in-chile/",
+      "status": "PASS",
+      "new_word_count": 551,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/principles-of-power-quality-work-in-chile/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/principles-of-power-quality-work-in-chile/",
+      "status": "PASS",
+      "new_word_count": 779,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/why-are-harmonic-analysis-and-study-important-for-businesses-in-chile/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/why-are-harmonic-analysis-and-study-important-for-businesses-in-chile/",
+      "status": "PASS",
+      "new_word_count": 393,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "status": "PASS",
+      "new_word_count": 481,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/cl/arc-flash-analysis-in-chile-a-detailed-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/arc-flash-analysis-in-chile-a-detailed-guide/",
+      "status": "PASS",
+      "new_word_count": 273,
+      "new_status": 200,
+      "issues": []
+    },
     {
       "wp_url": "https://carelabz.com/cl/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/",
-      "status": "FAIL",
-      "wp_word_count": 505,
+      "status": "PASS",
       "new_word_count": 614,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Chile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 641,
+      "status": "PASS",
       "new_word_count": 355,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Chile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 558,
+      "status": "PASS",
       "new_word_count": 450,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 683,
+      "status": "PASS",
       "new_word_count": 416,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Chile Blog | Energy and Safety Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Chile",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Stay updated with Carelabs Chile's expert blogs on arc flash studies, motor analysis, harmonic studies, and power system solutions.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and NCh Elec. 4/2003 compliance for Chile facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 472,
+      "status": "PASS",
       "new_word_count": 656,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 572,
+      "status": "PASS",
       "new_word_count": 450,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 570,
+      "status": "PASS",
       "new_word_count": 449,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 571,
+      "status": "PASS",
       "new_word_count": 449,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 576,
+      "status": "PASS",
       "new_word_count": 450,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cl/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cl/services/",
       "status": "FAIL",
-      "wp_word_count": 505,
       "new_word_count": 196,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering Services Chile | Carelabs",
-          "new_site": "Electrical Safety Services Chile | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Chile provides expert services including arc flash studies, power system analysis, harmonic studies, motor start analysis, and energy audits.",
-          "new_site": "Discover Carelabs' Chile electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with NCh Elec. 4/2003 and the NCh Elec. 4/2003.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "505 words",
-          "new_site": "196 words (39% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 196 words - page may be empty or broken"
         }
       ]
     }

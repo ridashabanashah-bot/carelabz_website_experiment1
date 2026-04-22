@@ -1,270 +1,244 @@
 {
   "country": "FI",
   "wp_base": "https://carelabz.com/fi/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 8,
+  "fail": 12,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 40.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/fi/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/load-flow-and-short-circuit-analysis-significance-for-finnish-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/load-flow-and-short-circuit-analysis-significance-for-finnish-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/how-can-the-electricity-quality-in-finland-be-analyzed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/how-can-the-electricity-quality-in-finland-be-analyzed/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/finnish-power-quality-working-principles/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/finnish-power-quality-working-principles/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/analyze-and-evaluate-the-performance-of-electric-motors-as-per-finnish-regulations/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/analyze-and-evaluate-the-performance-of-electric-motors-as-per-finnish-regulations/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/harmonic-analysis-of-finnish-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/harmonic-analysis-of-finnish-power-system/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/why-are-harmonic-analysis-and-studies-so-vital-for-finnish-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/why-are-harmonic-analysis-and-studies-so-vital-for-finnish-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/a-step-by-step-guide-to-arc-flash-analysis-in-finland/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/a-step-by-step-guide-to-arc-flash-analysis-in-finland/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-finland/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-finland/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/fi/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/",
-      "status": "FAIL",
-      "wp_word_count": 5250,
+      "status": "PASS",
       "new_word_count": 609,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Finland",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "5250 words",
-          "new_site": "609 words (12% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 3944,
+      "status": "PASS",
       "new_word_count": 351,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Finland",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "3944 words",
-          "new_site": "351 words (9% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 4267,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Study",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4267 words",
-          "new_site": "442 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/blogs/",
       "status": "FAIL",
-      "wp_word_count": 1275,
       "new_word_count": 178,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Finland Blog | Energy Efficiency Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Finland",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Kolejna witryna oparta na WordPressie",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and SFS 6000 compliance for Finland facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1275 words",
-          "new_site": "178 words (14% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 178 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/fi/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 3948,
+      "status": "PASS",
       "new_word_count": 635,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "3948 words",
-          "new_site": "635 words (16% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 4261,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4261 words",
-          "new_site": "442 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 4264,
+      "status": "PASS",
       "new_word_count": 440,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Motor Start Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4264 words",
-          "new_site": "440 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/our-services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/our-services/",
       "status": "FAIL",
-      "wp_word_count": 257,
       "new_word_count": 105,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering and Power System Services in Finland",
-          "new_site": "Electrical Safety Services Finland | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Kolejna witryna oparta na WordPressie",
-          "new_site": "Discover Carelabs' Finland electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with SFS 6000 and the SFS 6000.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "257 words",
-          "new_site": "105 words (41% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 105 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/fi/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 4264,
+      "status": "PASS",
       "new_word_count": 440,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Quality Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4264 words",
-          "new_site": "440 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/fi/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 4270,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study and Analysis",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "4270 words",
-          "new_site": "444 words (10% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

@@ -1,366 +1,536 @@
 {
   "country": "NZ",
   "wp_base": "https://carelabz.com/nz/",
-  "total_pages": 18,
-  "pass": 0,
-  "fail": 18,
+  "total_pages": 41,
+  "pass": 8,
+  "fail": 33,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 19.5,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/nz/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/",
+      "wp_url": "https://carelabz.com/nz/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/blog/",
       "status": "FAIL",
-      "wp_word_count": 39,
-      "new_word_count": 616,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in New Zealand",
-          "match": false
-        }
-      ]
-    },
-    {
-      "wp_url": "https://carelabz.com/nz/electrical-switchgear-risk-assessment-in-new-zealand/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/electrical-switchgear-risk-assessment-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/step-by-step-guide-to-perform-arc-flash-analysis-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/step-by-step-guide-to-perform-arc-flash-analysis-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/common-myths-about-short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/common-myths-about-short-circuit-analysis/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/balancing-operational-efficiency-and-arc-flash-safety-a-delicate-trade-off/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/balancing-operational-efficiency-and-arc-flash-safety-a-delicate-trade-off/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/why-overloaded-equipment-is-a-problem-load-flow-analysis-to-the-rescue/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/why-overloaded-equipment-is-a-problem-load-flow-analysis-to-the-rescue/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/how-relay-coordination-supports-electrical-system-stability-in-industrial-facilities/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/how-relay-coordination-supports-electrical-system-stability-in-industrial-facilities/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/arc-flash-risks-in-new-zealand-causes-and-preventive-measures/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/arc-flash-risks-in-new-zealand-causes-and-preventive-measures/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/working-principles-of-power-quality-analysis-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/working-principles-of-power-quality-analysis-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/test-and-verify-efficiency-of-electric-motors-in-accordance-with-national-international-standards-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/test-and-verify-efficiency-of-electric-motors-in-accordance-with-national-international-standards-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/importance-of-load-flow-and-short-circuit-analysis-for-a-company-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/how-to-get-electrical-condition-report-by-third-party-company-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/how-to-get-electrical-condition-report-by-third-party-company-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/how-to-perform-power-system-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/how-to-perform-power-system-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/harmonic-analysis-in-power-system-for-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/harmonic-analysis-in-power-system-for-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/checklist-for-electrical-safety-audit-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/checklist-for-electrical-safety-audit-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/why-is-harmonic-study-and-analysis-important-for-companies-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/why-is-harmonic-study-and-analysis-important-for-companies-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/need-or-necessity-electrical-switchgear-assessment-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/need-or-necessity-electrical-switchgear-assessment-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/importance-of-electrical-safety-inspection-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/importance-of-electrical-safety-inspection-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/importance-electrical-safety-audit-for-companies-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/importance-electrical-safety-audit-for-companies-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/importance-of-electrical-installation-condition-report-eicr-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/importance-of-electrical-installation-condition-report-eicr-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/importance-of-arc-flash-hazard-analysis-and-mitigation-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/importance-of-arc-flash-hazard-analysis-and-mitigation-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/how-to-perform-power-system-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-new-zealand-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/how-to-perform-power-system-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-new-zealand-2/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/",
+      "status": "PASS",
+      "new_word_count": 616,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/nz/electrical-switchgear-risk-assessment-in-new-zealand/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/electrical-switchgear-risk-assessment-in-new-zealand/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/electrical-safety-audit-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/electrical-safety-audit-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 319,
+      "status": "PASS",
       "new_word_count": 655,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Expert Risk Assessment Solutions Within Reach",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Contact",
-            "Your Direct Line to Expertise",
-            "Global Accessibility"
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 536,
+      "status": "PASS",
       "new_word_count": 355,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Your Leader in Electrical Safety Across New Zealand",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in New Zealand",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Transforming the Facet of Industrial Electrical Safety",
-            "Unmatched Accuracy For Absolute Workplace Electrical Safety",
-            "Value-boosting Power System Consulting",
-            "Radical Electrical Solutions Worldwide"
-          ],
-          "new_site": "4 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/carelabz-com-nz-arc-flash-study-and-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/carelabz-com-nz-arc-flash-study-and-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "wp_word_count": 768,
+      "status": "PASS",
       "new_word_count": 452,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study in New Zealand",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Importance of Arc Flash Assessment:",
-            "Energy Released by the Arc Can Create:",
-            "Actions That Can Initiate an Arc Flash:",
-            "Consequences of Arcing Fault:",
-            "Arc Flash Study Methodology:"
-          ],
-          "new_site": "8 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/carelabz-com-nz-harmonic-study-and-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/carelabz-com-nz-harmonic-study-and-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "wp_word_count": 846,
+      "status": "PASS",
       "new_word_count": 448,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Harmonic Study & Analysis in New Zealand",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "What are Harmonics?",
-            "Effects of Harmonics:",
-            "Engineering Perspective",
-            "Business Perspective",
-            "Harmonic Analysis Study:"
-          ],
-          "new_site": "8 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/carelabz-com-nz-power-system-study-and-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/carelabz-com-nz-power-system-study-and-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "wp_word_count": 791,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "POWER SYSTEM STUDY AND ANALYSIS IN NEW ZEALAND",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Power System Analysis Helps To:",
-            "Power System Analysis Includes:",
-            "Process of Power System Analysis:",
-            "Our Services",
-            "Standard Guidelines"
-          ],
-          "new_site": "6 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/carelabz-com-nz-power-quality-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/carelabz-com-nz-power-quality-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "wp_word_count": 801,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "POWER QUALITY ANALYSIS IN NEW ZEALAND",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Key Benefits of Power Quality Analysis:",
-            "Need for Power Quality Analysis:",
-            "What Does Power Quality Analysis Include?",
-            "Process of Power Quality Analysis:",
-            "Electrical Safety Standards:"
-          ],
-          "new_site": "8 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/motor-start-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/motor-start-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "wp_word_count": 775,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Motor Start Analysis in New Zealand",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Why is Motor Starting Analysis Needed?",
-            "Benefits of Motor Starting Analysis by Carelabs:",
-            "Steps in Motor Staring Analysis by Carelabs:",
-            "Guidelines and Regulations:",
-            "Our Services"
-          ],
-          "new_site": "7 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/carelabz-com-nz-electrical-installation-condition-report-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/carelabz-com-nz-electrical-installation-condition-report-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/electrical-safety-inspection-in-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/electrical-safety-inspection-in-usa/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/case-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/case-study/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/service/short-circuit-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/service/short-circuit-analysis-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/service/load-flow-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/service/load-flow-analysis-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/service/relay-coordination-study-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/service/relay-coordination-study-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/nz/service/arc-flash-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/service/arc-flash-analysis-in-new-zealand/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     }

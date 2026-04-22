@@ -1,207 +1,182 @@
 {
   "country": "BR",
   "wp_base": "https://carelabz.com/br/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 19,
+  "pass": 16,
+  "fail": 3,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 84.2,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/br/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "status": "PASS",
+      "new_word_count": 400,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 648,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/why-load-flow-and-short-circuit-analysis-important-for-brazilian-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/why-load-flow-and-short-circuit-analysis-important-for-brazilian-business/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/br/how-to-perform-a-power-quality-analysis-in-brazil/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/how-to-perform-a-power-quality-analysis-in-brazil/",
+      "status": "PASS",
+      "new_word_count": 561,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/principles-of-power-quality-work-in-brazil/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/principles-of-power-quality-work-in-brazil/",
+      "status": "PASS",
+      "new_word_count": 770,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/harmonic-analysis-of-the-brazil-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/harmonic-analysis-of-the-brazil-power-system/",
+      "status": "PASS",
+      "new_word_count": 404,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil/",
+      "status": "PASS",
+      "new_word_count": 376,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "status": "PASS",
+      "new_word_count": 481,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/br/arc-flash-analysis-in-brazil-a-detailed-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/arc-flash-analysis-in-brazil-a-detailed-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/br/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/",
-      "status": "FAIL",
-      "wp_word_count": 504,
+      "status": "PASS",
       "new_word_count": 609,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Brazil",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 618,
+      "status": "PASS",
       "new_word_count": 354,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Brazil",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 559,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 683,
+      "status": "PASS",
       "new_word_count": 402,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Brazil Blog | Energy and Safety Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Brazil",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore the Carelabs Brazil blog for expert insights on power systems, energy audits, arc flash studies, and industrial safety.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and NR-10 compliance for Brazil facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 466,
+      "status": "PASS",
       "new_word_count": 657,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 573,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 567,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 577,
+      "status": "PASS",
       "new_word_count": 448,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/br/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/services/",
       "status": "FAIL",
-      "wp_word_count": 504,
       "new_word_count": 192,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering Services in Brazil | Carelabs",
-          "new_site": "Electrical Safety Services Brazil | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs Brazil's expert services, including arc flash studies, harmonic analysis, power quality, and system reliability solutions.",
-          "new_site": "Discover Carelabs' Brazil electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with NR-10 and the ABNT NBR 5410.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "504 words",
-          "new_site": "192 words (38% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 192 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/br/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/br/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 575,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

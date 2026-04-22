@@ -1,295 +1,242 @@
 {
   "country": "GR",
   "wp_base": "https://carelabz.com/gr/",
-  "total_pages": 15,
-  "pass": 4,
-  "fail": 11,
+  "total_pages": 25,
+  "pass": 20,
+  "fail": 5,
   "skip": 0,
-  "pass_rate": 26.7,
-  "skip_blogs": true,
+  "pass_rate": 80.0,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/gr/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/",
-      "status": "FAIL",
-      "wp_word_count": 107,
-      "new_word_count": 621,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Greece: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/gr/how-to-conduct-power-quality-analysis-in-greece-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/how-to-conduct-power-quality-analysis-in-greece-2/",
+      "status": "PASS",
+      "new_word_count": 368,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/gr/about-us/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 0,
-      "new_word_count": 364,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Greece",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/gr/power-quality-working-principles-in-greece/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/power-quality-working-principles-in-greece/",
+      "status": "PASS",
+      "new_word_count": 521,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/gr/arc-flash-study-in-greece/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/arc-flash-study-in-greece/",
-      "status": "PAGE_MISSING",
+      "wp_url": "https://carelabz.com/gr/importance-of-load-flow-and-short-circuit-analysis-for-a-greek-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/importance-of-load-flow-and-short-circuit-analysis-for-a-greek-business/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/test-and-verifelectrical-motor-efficiency-in-accordance-with-greek-guidelines/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/test-and-verifelectrical-motor-efficiency-in-accordance-with-greek-guidelines/",
+      "status": "PASS",
+      "new_word_count": 479,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors/",
+      "status": "PASS",
+      "new_word_count": 517,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/arc-flash-analysis-in-greece-a-step-by-step-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/arc-flash-analysis-in-greece-a-step-by-step-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/why-is-harmonic-analysis-and-study-important-for-greek-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/why-is-harmonic-analysis-and-study-important-for-greek-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/importance-of-arc-flash-hazard-analysis-and-mitigation-methods/",
+      "status": "PASS",
+      "new_word_count": 292,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 667,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/harmonic-analysis-in-power-system-in-greece/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/harmonic-analysis-in-power-system-in-greece/",
+      "status": "PASS",
+      "new_word_count": 426,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/",
+      "status": "PASS",
+      "new_word_count": 621,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/about-us/",
+      "status": "PASS",
+      "new_word_count": 364,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/gr/arc-flash-study-in-greece/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/arc-flash-study-in-greece/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/gr/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 204,
+      "status": "PASS",
       "new_word_count": 330,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Greece Blog | Electrical Safety & Power Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Greece",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs Greece's blog for expert articles on power system studies, arc flash safety, harmonic analysis, and energy optimization solutions.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and ELOT HD 384 compliance for Greece facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/careers/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/careers/",
-      "status": "FAIL",
-      "wp_word_count": 71,
+      "status": "PASS",
       "new_word_count": 238,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Why work at Carelabs?",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 47,
+      "status": "PASS",
       "new_word_count": 615,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/harmonic-study-and-analysis-in-greece/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/harmonic-study-and-analysis-in-greece/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 303,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/motor-start-analysis-in-greece/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/motor-start-analysis-in-greece/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 470,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/power-quality-analysis-in-greece/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/power-quality-analysis-in-greece/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 434,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/power-system-study-and-analysis-in-greece/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/power-system-study-and-analysis-in-greece/",
       "status": "PASS",
-      "wp_word_count": 18,
       "new_word_count": 497,
+      "new_status": 200,
       "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/gr/?elementskit_template=elementskit-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/?elementskit_template=elementskit-header",
-      "status": "FAIL",
-      "wp_word_count": 2254,
+      "status": "PASS",
       "new_word_count": 621,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "ElementsKit_Lite Template #1662960322 - Carelabs Greece",
-          "new_site": "Power System Solutions in Greece | Carelabs Experts",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs Greece offers expert solutions in power system analysis, arc flash studies, harmonic analysis, and electrical safety for industries across Greece.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "2254 words",
-          "new_site": "621 words (28% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/?oceanwp_library=custom-header",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/?oceanwp_library=custom-header",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 621,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Greece: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/?oceanwp_library=footer",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/?oceanwp_library=footer",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 621,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Greece: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/gr/?oceanwp_library=custom-menu",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/gr/?oceanwp_library=custom-menu",
-      "status": "FAIL",
-      "wp_word_count": 107,
+      "status": "PASS",
       "new_word_count": 621,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "Arc Flash Study",
-          "new_site": "Safety, efficiency, sustainability",
-          "match": false
-        },
-        {
-          "field": "H2_MISSING",
-          "severity": "MEDIUM",
-          "wordpress": [
-            "Arc Flash Analysis in Greece: A Step-by-Step Guide",
-            "Importance of Arc Flash Hazard Analysis and...",
-            "How to evaluate efficiency and dependability of..."
-          ],
-          "new_site": "3 H2s missing on new site",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

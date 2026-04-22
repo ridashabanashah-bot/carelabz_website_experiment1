@@ -1,240 +1,267 @@
 {
   "country": "CZ",
   "wp_base": "https://carelabz.com/cz/",
-  "total_pages": 11,
-  "pass": 0,
-  "fail": 11,
+  "total_pages": 21,
+  "pass": 7,
+  "fail": 14,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 33.3,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/cz/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/",
+      "wp_url": "https://carelabz.com/cz/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
       "status": "FAIL",
-      "wp_word_count": 397,
-      "new_word_count": 617,
+      "new_word_count": 649,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Czech Republic",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/czech-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/czech-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
+      "status": "FAIL",
+      "new_word_count": 739,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/the-importance-of-load-flow-and-short-circuit-analysis-to-a-czech-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/the-importance-of-load-flow-and-short-circuit-analysis-to-a-czech-business/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 850,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/principles-of-operation-for-the-power-quality-in-czech-republic/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/principles-of-operation-for-the-power-quality-in-czech-republic/",
+      "status": "FAIL",
+      "new_word_count": 905,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/how-to-analyze-the-power-quality-in-czech-republic/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/how-to-analyze-the-power-quality-in-czech-republic/",
+      "status": "FAIL",
+      "new_word_count": 695,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/why-are-harmonic-research-and-analysis-so-crucial-to-czech-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/why-are-harmonic-research-and-analysis-so-crucial-to-czech-businesses/",
+      "status": "FAIL",
+      "new_word_count": 639,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/analysis-of-the-czech-power-systems-harmony/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/analysis-of-the-czech-power-systems-harmony/",
+      "status": "FAIL",
+      "new_word_count": 633,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/czech-arc-flash-analysis-a-complete-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/czech-arc-flash-analysis-a-complete-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 754,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/cz/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/",
+      "status": "PASS",
+      "new_word_count": 617,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/404-2/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/404-2/",
       "status": "FAIL",
-      "wp_word_count": 28,
       "new_word_count": 56,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "404 - Carelabz Czech Republic",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 56 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/cz/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 679,
+      "status": "PASS",
       "new_word_count": 355,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Czech Republic",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 418,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 530,
+      "status": "PASS",
       "new_word_count": 273,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabz Czech Republic",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Czech Republic",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and ČSN 33 2000 compliance for Czech Republic facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 512,
+      "status": "PASS",
       "new_word_count": 643,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/harmonic-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 473,
       "new_word_count": 414,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study & Analysis - Carelabz Czech Republic",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/cz/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 396,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 395,
+      "status": "PASS",
       "new_word_count": 451,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/power-system-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 424,
       "new_word_count": 589,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study & Analysis - Carelabz Czech Republic",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/cz/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     }

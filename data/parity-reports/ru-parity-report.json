@@ -1,254 +1,267 @@
 {
   "country": "RU",
   "wp_base": "https://carelabz.com/ru/",
-  "total_pages": 11,
-  "pass": 0,
-  "fail": 11,
+  "total_pages": 21,
+  "pass": 7,
+  "fail": 14,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 33.3,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/ru/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/",
+      "wp_url": "https://carelabz.com/ru/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
       "status": "FAIL",
-      "wp_word_count": 391,
-      "new_word_count": 596,
+      "new_word_count": 646,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Russia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/russian-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/russian-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
+      "status": "FAIL",
+      "new_word_count": 735,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/the-importance-of-load-flow-and-short-circuit-analysis-to-a-russian-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/the-importance-of-load-flow-and-short-circuit-analysis-to-a-russian-business/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 845,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/principles-of-operation-for-the-power-quality-in-russia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/principles-of-operation-for-the-power-quality-in-russia/",
+      "status": "FAIL",
+      "new_word_count": 900,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/how-to-analyze-the-power-quality-in-russia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/how-to-analyze-the-power-quality-in-russia/",
+      "status": "FAIL",
+      "new_word_count": 689,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/why-are-harmonic-research-and-analysis-so-crucial-to-russian-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/why-are-harmonic-research-and-analysis-so-crucial-to-russian-businesses/",
+      "status": "FAIL",
+      "new_word_count": 635,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/analysis-of-the-russian-power-systems-harmony/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/analysis-of-the-russian-power-systems-harmony/",
+      "status": "FAIL",
+      "new_word_count": 628,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/russian-arc-flash-analysis-a-complete-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/russian-arc-flash-analysis-a-complete-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
+      "status": "FAIL",
+      "new_word_count": 750,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ru/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/",
+      "status": "PASS",
+      "new_word_count": 596,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/404-2/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/404-2/",
       "status": "FAIL",
-      "wp_word_count": 429,
       "new_word_count": 50,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "404 - Carelabz Russia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         },
         {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "429 words",
-          "new_site": "50 words (12% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 50 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/ru/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 673,
+      "status": "PASS",
       "new_word_count": 346,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Russia",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 412,
+      "status": "PASS",
       "new_word_count": 439,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 524,
+      "status": "PASS",
       "new_word_count": 238,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabz Russia",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Russia",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and PUE-7 compliance for Russia facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "524 words",
-          "new_site": "238 words (45% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 506,
+      "status": "PASS",
       "new_word_count": 639,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/harmonic-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 467,
       "new_word_count": 414,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study & Analysis - Carelabz Russia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/ru/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 412,
+      "status": "PASS",
       "new_word_count": 439,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 412,
+      "status": "PASS",
       "new_word_count": 439,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ru/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/power-system-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 418,
       "new_word_count": 596,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study & Analysis - Carelabz Russia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/ru/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ru/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     }

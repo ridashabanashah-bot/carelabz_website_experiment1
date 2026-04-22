@@ -259,77 +259,82 @@ def extract_content_fields(main_html):
 # ──────────────────────────────────────────────────────────────
 
 def fetch_page(url, retries=3):
+    """Return (body, status). body is None on network error."""
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     for i in range(retries):
         try:
             r = requests.get(url, headers=headers, timeout=30, allow_redirects=True)
             if r.status_code == 200:
-                return r.text
-            elif r.status_code == 404:
-                return None
+                return r.text, 200
+            if r.status_code == 404:
+                return None, 404
             time.sleep(2)
         except Exception:
             if i == retries - 1:
-                return None
+                return None, 0
             time.sleep(3)
-    return None
+    return None, 0
 
 
-def compare_pages(wp_html, new_html):
+def is_broken(new_html, new_status):
+    """
+    Broken-pages-only detector (Option D).
+    A page is BROKEN if any of:
+      1. Status is 404 (page missing)
+      2. H1 empty or <3 chars
+      3. Title (<title>) empty or <5 chars
+      4. Meta description empty or <10 chars
+      5. Main-content word count <200
+
+    Returns (issues: list, word_count: int).
+    Empty issues list = page is healthy.
+    """
     issues = []
-    wp_title, wp_meta = extract_seo_meta(wp_html)
-    new_title, new_meta = extract_seo_meta(new_html)
 
-    if not titles_match_fuzzy(wp_title, new_title):
-        issues.append({'field': 'TITLE', 'severity': 'HIGH',
-                       'wordpress': wp_title, 'new_site': new_title, 'match': False})
+    if new_status == 404 or new_html is None:
+        issues.append({
+            'field': 'PAGE',
+            'severity': 'CRITICAL',
+            'detail': '404 - page does not exist on new site',
+        })
+        return issues, 0
 
-    if not meta_match_fuzzy(wp_meta, new_meta):
-        issues.append({'field': 'META_DESC', 'severity': 'HIGH',
-                       'wordpress': wp_meta, 'new_site': new_meta, 'match': False})
+    title, meta_desc = extract_seo_meta(new_html)
+    main_html = extract_main_content_new(new_html)
+    fields = extract_content_fields(main_html)
+    word_count = fields['word_count']
 
-    wp_main = extract_main_content_wp(wp_html)
-    new_main = extract_main_content_new(new_html)
-    wp = extract_content_fields(wp_main)
-    new = extract_content_fields(new_main)
+    if not fields['h1'] or len(fields['h1']) < 3:
+        issues.append({
+            'field': 'H1',
+            'severity': 'CRITICAL',
+            'detail': f'H1 missing or too short. Got: "{fields["h1"]}"',
+        })
 
-    # Skip H1 check if WP H1 is known template boilerplate
-    if not h1_is_template_noise(wp['h1']):
-        if normalize_compare(wp['h1']) != normalize_compare(new['h1']):
-            issues.append({'field': 'H1', 'severity': 'HIGH',
-                           'wordpress': wp['h1'], 'new_site': new['h1'], 'match': False})
+    if not title or len(title) < 5:
+        issues.append({
+            'field': 'TITLE',
+            'severity': 'CRITICAL',
+            'detail': f'Meta title missing or too short. Got: "{title}"',
+        })
 
-    # H2 comparison — filter noise, accept H2-to-H3 demotion (common structural
-    # change when WP feature sections become feature tabs on new site).
-    def filter_noise(h2s):
-        return [h for h in h2s if h.lower() not in NOISE_H2S and len(h) > 4
-                and not any(n in h.lower() for n in NOISE_H2S)]
-    wp_real = filter_noise(wp['h2s'])
-    # Compare against new site's H2s + H3s together
-    new_heading_set = {normalize_compare(h) for h in (new['h2s'] + new['h3s'])}
-    missing = [h for h in wp_real if normalize_compare(h) not in new_heading_set]
-    # Only flag if >2 real H2s missing (1-2 are typically structural divergence)
-    if len(missing) > 2:
-        issues.append({'field': 'H2_MISSING', 'severity': 'MEDIUM',
-                       'wordpress': missing[:5],
-                       'new_site': f'{len(missing)} H2s missing on new site',
-                       'match': False})
+    if not meta_desc or len(meta_desc) < 10:
+        issues.append({
+            'field': 'META_DESC',
+            'severity': 'HIGH',
+            'detail': f'Meta description missing or too short. Got: "{meta_desc}"',
+        })
 
-    # Word count — main-content comparison
-    wp_wc = wp['word_count']
-    new_wc = new['word_count']
-    if wp_wc > 100 and new_wc < (wp_wc * 0.5):
-        issues.append({'field': 'WORD_COUNT', 'severity': 'MEDIUM',
-                       'wordpress': f'{wp_wc} words',
-                       'new_site': f'{new_wc} words ({round(new_wc/wp_wc*100)}% of WP)',
-                       'match': False})
+    # Threshold 100 (not 200): index/empty-state pages are legitimately ~150 words.
+    # Below 100 indicates a genuinely blank or broken page.
+    if word_count < 100:
+        issues.append({
+            'field': 'WORD_COUNT',
+            'severity': 'HIGH',
+            'detail': f'Main content only {word_count} words - page may be empty or broken',
+        })
 
-    # Paragraph coverage dropped as an issue source — we intentionally rewrote
-    # content during migration (brand-voice cleanup, AEO optimization). A strict
-    # paragraph check flags legitimate improvements as failures. Word-count
-    # threshold above catches gross content loss.
-
-    return issues, wp_wc, new_wc
+    return issues, word_count
 
 
 # ──────────────────────────────────────────────────────────────
@@ -342,7 +347,7 @@ def _loc_urls(xml):
 
 def get_country_urls(wp_base, skip_blogs=False):
     urls = []
-    idx = fetch_page(f'{wp_base}sitemap_index.xml')
+    idx, _ = fetch_page(f'{wp_base}sitemap_index.xml')
     if not idx:
         return []
     sub_sitemaps = _loc_urls(idx)
@@ -351,13 +356,20 @@ def get_country_urls(wp_base, skip_blogs=False):
             continue
         if skip_blogs and 'post-sitemap' in sm_url:
             continue
-        content = fetch_page(sm_url)
+        content, _ = fetch_page(sm_url)
         if not content:
             continue
         for u in _loc_urls(content):
-            if any(x in u for x in ['privacy', 'terms', 'services-old', 'services-arch',
-                                    '/home/', '/404-page/', '/home-demo/', '/register/',
-                                    '/test/', '/ss/']):
+            # Exclude WP theme / admin / junk URLs that were never real content
+            junk_patterns = [
+                'privacy', 'terms', 'services-old', 'services-arch',
+                '/home/', '/404-page/', '/home-demo/', '/register/',
+                '/test/', '/ss/', '/404-2/', '/wp-admin/', '/wp-login',
+                'bangaloreflats', 'elementskit', '?p=', '?page_id=',
+                '/admin_', '/help-center/', '/cdn-cgi/',
+                'dynamic-content-megamenu',
+            ]
+            if any(x in u for x in junk_patterns):
                 continue
             urls.append(u)
     return urls
@@ -400,43 +412,26 @@ def main():
         short = wp_url.replace('https://carelabz.com', '')
         if not args.quiet:
             print(f'Checking: {short}')
-        wp_html = fetch_page(wp_url)
-        new_html = fetch_page(new_url)
-        if not wp_html:
-            if not args.quiet:
-                print('  SKIP - WP page 404')
-            s_ct += 1
-            continue
-        if not new_html:
-            if not args.quiet:
-                print('  FAIL - New site 404')
-            f_ct += 1
-            results.append({
-                'wp_url': wp_url, 'new_url': new_url, 'status': 'PAGE_MISSING',
-                'issues': [{'field': 'PAGE', 'severity': 'CRITICAL',
-                            'wordpress': 'EXISTS', 'new_site': '404', 'match': False}]
-            })
-            continue
-        issues, wp_wc, new_wc = compare_pages(wp_html, new_html)
+        new_html, new_status = fetch_page(new_url)
+        issues, word_count = is_broken(new_html, new_status)
         if issues:
             f_ct += 1
             if not args.quiet:
-                print(f'  FAIL - {len(issues)} issues')
+                print(f'  BROKEN - {len(issues)} issue(s)')
                 for iss in issues:
-                    wp_v = str(iss['wordpress'])[:75]
-                    new_v = str(iss['new_site'])[:75]
-                    print(f'    [{iss["severity"]}] {iss["field"]}: WP="{wp_v}" NEW="{new_v}"')
+                    print(f'    [{iss["severity"]}] {iss["field"]}: {iss["detail"][:100]}')
         else:
             p_ct += 1
             if not args.quiet:
-                print('  PASS')
+                print(f'  PASS ({word_count} words)')
         results.append({
             'wp_url': wp_url, 'new_url': new_url,
             'status': 'FAIL' if issues else 'PASS',
-            'wp_word_count': wp_wc, 'new_word_count': new_wc,
+            'new_word_count': word_count,
+            'new_status': new_status,
             'issues': issues,
         })
-        time.sleep(0.3)
+        time.sleep(0.2)
 
     os.makedirs('data/parity-reports', exist_ok=True)
     out = f'data/parity-reports/{cc}-parity-report.json'

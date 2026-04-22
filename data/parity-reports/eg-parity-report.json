@@ -1,219 +1,230 @@
 {
   "country": "EG",
   "wp_base": "https://carelabz.com/eg/",
-  "total_pages": 12,
-  "pass": 0,
-  "fail": 12,
+  "total_pages": 23,
+  "pass": 17,
+  "fail": 6,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 73.9,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/eg/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/",
-      "status": "FAIL",
-      "wp_word_count": 464,
-      "new_word_count": 634,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Egypt",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/eg/verify-egyptian-electrical-motor-performance-regulations-compliance/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/verify-egyptian-electrical-motor-performance-regulations-compliance/",
+      "status": "PASS",
+      "new_word_count": 473,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/eg/about-us/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 545,
-      "new_word_count": 362,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Egypt",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/eg/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "status": "PASS",
+      "new_word_count": 424,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/eg/arc-flash-study/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 571,
-      "new_word_count": 458,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "wp_url": "https://carelabz.com/eg/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "status": "PASS",
+      "new_word_count": 663,
+      "new_status": 200,
+      "issues": []
     },
     {
-      "wp_url": "https://carelabz.com/eg/blogs/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/blogs/",
+      "wp_url": "https://carelabz.com/eg/why-does-egyptian-business-need-short-circuit-and-load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/why-does-egyptian-business-need-short-circuit-and-load-flow-analysis/",
       "status": "FAIL",
-      "wp_word_count": 561,
-      "new_word_count": 327,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering Insights and News | Carelabs Egypt Blog",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Egypt",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore insightful engineering blogs by Carelabs in Egypt. Stay updated on power system analysis, harmonic study, arc flash analysis & more. Read now!",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and Egyptian Code for Electrical Installations compliance for Egypt facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
-    },
-    {
-      "wp_url": "https://carelabz.com/eg/contact-us/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 550,
-      "new_word_count": 643,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
-    },
-    {
-      "wp_url": "https://carelabz.com/eg/services/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/services/",
-      "status": "PAGE_MISSING",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/how-to-analyze-egyptian-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/how-to-analyze-egyptian-power-quality/",
+      "status": "PASS",
+      "new_word_count": 564,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/https-carelabz-com-eg-principles-of-work-on-egypt-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/https-carelabz-com-eg-principles-of-work-on-egypt-power-quality/",
+      "status": "PASS",
+      "new_word_count": 796,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/harmonics-analysis-of-the-egypt-electric-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/harmonics-analysis-of-the-egypt-electric-power-system/",
+      "status": "PASS",
+      "new_word_count": 412,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/how-significant-is-harmonic-analysis-in-egyptian-firm/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/how-significant-is-harmonic-analysis-in-egyptian-firm/",
+      "status": "PASS",
+      "new_word_count": 407,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/arc-flash-risk-must-be-evaluated-and-reduced-immediately/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/arc-flash-risk-must-be-evaluated-and-reduced-immediately/",
+      "status": "PASS",
+      "new_word_count": 520,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/a-comprehensive-guide-to-arc-flash-analysis-in-egypt/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/a-comprehensive-guide-to-arc-flash-analysis-in-egypt/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/the-impact-of-egypts-climate-on-arc-flash-hazards-in-data-centers/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/the-impact-of-egypts-climate-on-arc-flash-hazards-in-data-centers/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/",
+      "status": "PASS",
+      "new_word_count": 634,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/about-us/",
+      "status": "PASS",
+      "new_word_count": 362,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/arc-flash-study/",
+      "status": "PASS",
+      "new_word_count": 458,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/blogs/",
+      "status": "PASS",
+      "new_word_count": 327,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/contact-us/",
+      "status": "PASS",
+      "new_word_count": 643,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/eg/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/services/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/eg/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/power-system-study-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 587,
+      "status": "PASS",
       "new_word_count": 629,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study and Analysis in Egypt | Carelabs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/eg/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 583,
+      "status": "PASS",
       "new_word_count": 457,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/eg/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 588,
+      "status": "PASS",
       "new_word_count": 458,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/eg/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/harmonic-study-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 597,
+      "status": "PASS",
       "new_word_count": 453,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study and Analysis in Egypt | Carelabs Experts",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/eg/404-2/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/404-2/",
       "status": "FAIL",
-      "wp_word_count": 468,
       "new_word_count": 61,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Oops! Page Not Found | Carelabs Egypt",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "468 words",
-          "new_site": "61 words (13% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 61 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/eg/elementor-hf/footer/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/eg/elementor-hf/footer/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     }

@@ -1,205 +1,194 @@
 {
   "country": "PE",
   "wp_base": "https://carelabz.com/pe/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 16,
+  "fail": 4,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 80.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/pe/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
+      "status": "FAIL",
+      "new_word_count": 412,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/examine-and-confirm-electrical-motor-performance-in-compliance-with-peruvian-regulations/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/examine-and-confirm-electrical-motor-performance-in-compliance-with-peruvian-regulations/",
+      "status": "PASS",
+      "new_word_count": 487,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
+      "status": "PASS",
+      "new_word_count": 652,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/why-load-flow-and-short-circuit-analysis-important-for-peruvian-business/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/why-load-flow-and-short-circuit-analysis-important-for-peruvian-business/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/how-to-perform-a-power-quality-analysis-in-peru/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/how-to-perform-a-power-quality-analysis-in-peru/",
+      "status": "PASS",
+      "new_word_count": 564,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/principles-of-power-quality-work-in-peru/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/principles-of-power-quality-work-in-peru/",
+      "status": "PASS",
+      "new_word_count": 772,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/harmonic-analysis-of-the-peru-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/harmonic-analysis-of-the-peru-power-system/",
+      "status": "PASS",
+      "new_word_count": 403,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/why-are-harmonic-analysis-and-study-important-for-businesses-in-peru/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/why-are-harmonic-analysis-and-study-important-for-businesses-in-peru/",
+      "status": "PASS",
+      "new_word_count": 381,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial/",
+      "status": "PASS",
+      "new_word_count": 483,
+      "new_status": 200,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/arc-flash-analysis-in-peru-a-detailed-guide/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/arc-flash-analysis-in-peru-a-detailed-guide/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/pe/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/",
-      "status": "FAIL",
-      "wp_word_count": 504,
+      "status": "PASS",
       "new_word_count": 605,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Peru",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 644,
+      "status": "PASS",
       "new_word_count": 351,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Peru",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 559,
+      "status": "PASS",
       "new_word_count": 445,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 685,
+      "status": "PASS",
       "new_word_count": 369,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Peru Blog | Power Systems, Safety, and Energy Insights",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Peru",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Explore Carelabs Peru's blog for expert articles on arc flash studies, motor efficiency, harmonic analysis, power quality.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and RM 111-2013-MEM compliance for Peru facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 471,
+      "status": "PASS",
       "new_word_count": 657,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 570,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 568,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 571,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 575,
+      "status": "PASS",
       "new_word_count": 445,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/services/",
       "status": "FAIL",
-      "wp_word_count": 504,
       "new_word_count": 183,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Electrical Engineering Services in Peru | Carelabs",
-          "new_site": "Electrical Safety Services Peru | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Carelabs Peru offers expert services including arc flash studies, power system studies, harmonic analysis, power quality audits.",
-          "new_site": "Discover Carelabs' Peru electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with RM 111-2013-MEM and the CNE.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
-        },
-        {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "504 words",
-          "new_site": "183 words (36% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 183 words - page may be empty or broken"
         }
       ]
     }

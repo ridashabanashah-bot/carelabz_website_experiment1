@@ -1,214 +1,238 @@
 {
   "country": "UK",
   "wp_base": "https://carelabz.com/uk/",
-  "total_pages": 10,
-  "pass": 0,
-  "fail": 10,
+  "total_pages": 20,
+  "pass": 9,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 45.0,
+  "skip_blogs": false,
   "results": [
+    {
+      "wp_url": "https://carelabz.com/uk/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/harmonic-analysis-of-the-uk-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/harmonic-analysis-of-the-uk-power-system/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/analyze-and-evaluate-the-performance-of-electric-motors-as-per-uk-regulations/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/analyze-and-evaluate-the-performance-of-electric-motors-as-per-uk-regulations/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/uk-power-quality-working-principles/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/uk-power-quality-working-principles/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/how-can-the-electricity-quality-in-the-uk-be-analyzed/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/how-can-the-electricity-quality-in-the-uk-be-analyzed/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/load-flow-and-short-circuit-analysis-significance-for-uk-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/load-flow-and-short-circuit-analysis-significance-for-uk-businesses/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/uk/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
     {
       "wp_url": "https://carelabz.com/uk/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/",
-      "status": "FAIL",
-      "wp_word_count": 1662,
+      "status": "PASS",
       "new_word_count": 599,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Standard Guidelines",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1662 words",
-          "new_site": "599 words (36% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 93,
+      "status": "PASS",
       "new_word_count": 637,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Up Your Electrical Safety - Request an Inspection Today!",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 137,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Motor Start Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/power-system-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/power-system-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 140,
+      "status": "PASS",
       "new_word_count": 446,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study and Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 122,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power Quality Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/harmonic-study-and-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/harmonic-study-and-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 142,
+      "status": "PASS",
       "new_word_count": 444,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study and Analysis",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 38,
+      "status": "PASS",
       "new_word_count": 442,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Study",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 84,
+      "status": "PASS",
       "new_word_count": 346,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Building Relationships with Our Clients",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/uk/our-services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/our-services/",
       "status": "FAIL",
-      "wp_word_count": 257,
       "new_word_count": 190,
+      "new_status": 200,
       "issues": [
         {
-          "field": "TITLE",
+          "field": "WORD_COUNT",
           "severity": "HIGH",
-          "wordpress": "Our Services - Carelabs UK",
-          "new_site": "Electrical Safety Services United Kingdom | Carelabs",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Elevate safety standards with our electrical safety inspection firm serving businesses across Liverpool. Contact us for reliable electrical safety services",
-          "new_site": "Discover Carelabs' United Kingdom electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with BS 7671 and the IET Wiring Regulations.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Analysis for Your Specific Needs",
-          "match": false
+          "detail": "Main content only 190 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/uk/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/uk/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 1285,
+      "status": "PASS",
       "new_word_count": 224,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabs UK",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs United Kingdom",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "Discover effective electrical safety inspection procedures in the UK. Our comprehensive approach ensures thorough inspections, hazard identification, and compliance.",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and BS 7671 compliance for United Kingdom facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1285 words",
-          "new_site": "224 words (17% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

@@ -1,263 +1,283 @@
 {
   "country": "SA",
   "wp_base": "https://carelabz.com/sa/",
-  "total_pages": 11,
-  "pass": 0,
-  "fail": 11,
+  "total_pages": 22,
+  "pass": 7,
+  "fail": 15,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 31.8,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/sa/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/",
+      "wp_url": "https://carelabz.com/sa/data-center-safety-arc-flash-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/data-center-safety-arc-flash-analysis/",
       "status": "FAIL",
-      "wp_word_count": 437,
-      "new_word_count": 610,
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/verify-saudi-arabian-electrical-motor-performance-regulations-compliance/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/verify-saudi-arabian-electrical-motor-performance-regulations-compliance/",
+      "status": "FAIL",
+      "new_word_count": 633,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Saudi Arabia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "status": "FAIL",
+      "new_word_count": 549,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 784,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/why-does-saudi-arabian-business-need-short-circuit-and-load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/why-does-saudi-arabian-business-need-short-circuit-and-load-flow-analysis/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/how-to-analyze-saudi-arabian-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/how-to-analyze-saudi-arabian-power-quality/",
+      "status": "FAIL",
+      "new_word_count": 508,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/principles-of-work-on-saudi-arabia-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/principles-of-work-on-saudi-arabia-power-quality/",
+      "status": "FAIL",
+      "new_word_count": 890,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/harmonics-analysis-of-the-saudi-arabian-electric-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/harmonics-analysis-of-the-saudi-arabian-electric-power-system/",
+      "status": "FAIL",
+      "new_word_count": 495,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/how-significant-is-harmonic-analysis-in-saudi-arabian-businesses/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/how-significant-is-harmonic-analysis-in-saudi-arabian-businesses/",
+      "status": "FAIL",
+      "new_word_count": 511,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/arc-flash-risk-must-be-assessed-and-decreased-right-away/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/arc-flash-risk-must-be-assessed-and-decreased-right-away/",
+      "status": "FAIL",
+      "new_word_count": 632,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/complete-instructions-for-arc-flash-analysis-in-saudi-arabia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/complete-instructions-for-arc-flash-analysis-in-saudi-arabia/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/",
+      "status": "PASS",
+      "new_word_count": 610,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/404-2/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/404-2/",
       "status": "FAIL",
-      "wp_word_count": 32,
       "new_word_count": 190,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "404 - Carelabs Saudi Arabia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 190 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/sa/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 517,
+      "status": "PASS",
       "new_word_count": 354,
-      "issues": [
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Saudi Arabia",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 1023,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1023 words",
-          "new_site": "447 words (44% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 1077,
+      "status": "PASS",
       "new_word_count": 366,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabs Saudi Arabia",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Saudi Arabia",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and SBC 401 compliance for Saudi Arabia facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1077 words",
-          "new_site": "366 words (34% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 1051,
+      "status": "PASS",
       "new_word_count": 643,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/harmonic-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 1026,
       "new_word_count": 556,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study & Analysis - Carelabs Saudi Arabia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/sa/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1023,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1023 words",
-          "new_site": "447 words (44% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sa/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/power-system-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 1029,
       "new_word_count": 722,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study & Analysis - Carelabs Saudi Arabia",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/sa/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/sa/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sa/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 1023,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        },
-        {
-          "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "1023 words",
-          "new_site": "447 words (44% of WP)",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }

@@ -19,7 +19,8 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const post = await getBlogPost("us", params.slug);
+  let post = await getBlogPost("us", params.slug);
+  if (!post) post = await getBlogPost("us", `${params.slug}-us`);
 
   if (!post) {
     return {
@@ -70,7 +71,10 @@ function formatDate(dateString: string | null): string {
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const post = await getBlogPost("us", params.slug);
+  // Some US blogs use raw slugs (original migration), some use `${slug}-us`
+  // (namespaced after unique-slug fix for cross-region collisions). Try both.
+  let post = await getBlogPost("us", params.slug);
+  if (!post) post = await getBlogPost("us", `${params.slug}-us`);
 
   if (!post) {
     notFound();

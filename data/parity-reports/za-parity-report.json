@@ -1,185 +1,256 @@
 {
   "country": "ZA",
   "wp_base": "https://carelabz.com/za/",
-  "total_pages": 11,
-  "pass": 0,
-  "fail": 11,
+  "total_pages": 22,
+  "pass": 7,
+  "fail": 15,
   "skip": 0,
-  "pass_rate": 0.0,
-  "skip_blogs": true,
+  "pass_rate": 31.8,
+  "skip_blogs": false,
   "results": [
     {
-      "wp_url": "https://carelabz.com/za/",
-      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/",
+      "wp_url": "https://carelabz.com/za/arc-flash-ppe-selection-for-data-center-personnel-what-south-african-standards-recommend/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/arc-flash-ppe-selection-for-data-center-personnel-what-south-african-standards-recommend/",
       "status": "FAIL",
-      "wp_word_count": 432,
-      "new_word_count": 610,
+      "new_word_count": 156,
+      "new_status": 200,
       "issues": [
         {
           "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         },
         {
-          "field": "H1",
+          "field": "WORD_COUNT",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in South Africa",
-          "match": false
+          "detail": "Main content only 156 words - page may be empty or broken"
         }
       ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/verify-south-african-electrical-motor-performance-regulations-compliance/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/verify-south-african-electrical-motor-performance-regulations-compliance/",
+      "status": "FAIL",
+      "new_word_count": 484,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
+      "status": "FAIL",
+      "new_word_count": 436,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow/",
+      "status": "FAIL",
+      "new_word_count": 676,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/why-does-south-african-business-need-short-circuit-and-load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/why-does-south-african-business-need-short-circuit-and-load-flow-analysis/",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "detail": "404 - page does not exist on new site"
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/how-to-analyze-south-african-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/how-to-analyze-south-african-power-quality/",
+      "status": "FAIL",
+      "new_word_count": 573,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/principles-of-work-on-south-african-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/principles-of-work-on-south-african-power-quality/",
+      "status": "FAIL",
+      "new_word_count": 802,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/harmonics-analysis-of-the-south-african-electric-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/harmonics-analysis-of-the-south-african-electric-power-system/",
+      "status": "FAIL",
+      "new_word_count": 412,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/how-significant-is-harmonic-analysis-in-south-african-firm/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/how-significant-is-harmonic-analysis-in-south-african-firm/",
+      "status": "FAIL",
+      "new_word_count": 413,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/arc-flash-risk-must-be-evaluated-and-reduced-immediately/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/arc-flash-risk-must-be-evaluated-and-reduced-immediately/",
+      "status": "FAIL",
+      "new_word_count": 538,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/a-comprehensive-guide-to-arc-flash-analysis-in-south-africa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/a-comprehensive-guide-to-arc-flash-analysis-in-south-africa/",
+      "status": "FAIL",
+      "new_word_count": 373,
+      "new_status": 200,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "detail": "Meta description missing or too short. Got: \"\""
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/",
+      "status": "PASS",
+      "new_word_count": 610,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/404-2/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/404-2/",
       "status": "FAIL",
-      "wp_word_count": 459,
       "new_word_count": 55,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "404 - Carelabs South Africa",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         },
         {
           "field": "WORD_COUNT",
-          "severity": "MEDIUM",
-          "wordpress": "459 words",
-          "new_site": "55 words (12% of WP)",
-          "match": false
+          "severity": "HIGH",
+          "detail": "Main content only 55 words - page may be empty or broken"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/za/services/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/services/",
-      "status": "PAGE_MISSING",
+      "status": "FAIL",
+      "new_word_count": 0,
+      "new_status": 404,
       "issues": [
         {
           "field": "PAGE",
           "severity": "CRITICAL",
-          "wordpress": "EXISTS",
-          "new_site": "404",
-          "match": false
+          "detail": "404 - page does not exist on new site"
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/za/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/blogs/",
-      "status": "FAIL",
-      "wp_word_count": 529,
+      "status": "PASS",
       "new_word_count": 372,
-      "issues": [
-        {
-          "field": "TITLE",
-          "severity": "HIGH",
-          "wordpress": "Blogs - Carelabs South Africa",
-          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs South Africa",
-          "match": false
-        },
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and SANS 10142 compliance for South Africa facilities. Stay informed with Carelabs.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power up your Knowledge with our Blogs",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/about-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/about-us/",
-      "status": "FAIL",
-      "wp_word_count": 516,
+      "status": "PASS",
       "new_word_count": 352,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in South Africa",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/arc-flash-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/arc-flash-study/",
-      "status": "FAIL",
-      "wp_word_count": 544,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/power-quality-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/power-quality-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 559,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/power-system-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 566,
       "new_word_count": 626,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Power System Study & Analysis - Carelabs South Africa",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
@@ -187,63 +258,31 @@
       "wp_url": "https://carelabz.com/za/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/harmonic-study-analysis/",
       "status": "FAIL",
-      "wp_word_count": 562,
       "new_word_count": 450,
+      "new_status": 200,
       "issues": [
         {
-          "field": "H1",
+          "field": "META_DESC",
           "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Harmonic Study & Analysis - Carelabs South Africa",
-          "match": false
+          "detail": "Meta description missing or too short. Got: \"\""
         }
       ]
     },
     {
       "wp_url": "https://carelabz.com/za/motor-start-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/motor-start-analysis/",
-      "status": "FAIL",
-      "wp_word_count": 563,
+      "status": "PASS",
       "new_word_count": 447,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/contact-us/",
-      "status": "FAIL",
-      "wp_word_count": 518,
+      "status": "PASS",
       "new_word_count": 643,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
-          "match": false
-        },
-        {
-          "field": "H1",
-          "severity": "HIGH",
-          "wordpress": "",
-          "new_site": "Let's Connect, We're Here to Help You",
-          "match": false
-        }
-      ]
+      "new_status": 200,
+      "issues": []
     }
   ]
 }
