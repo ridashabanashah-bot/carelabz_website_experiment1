@@ -1,0 +1,270 @@
+{
+  "country": "TR",
+  "wp_base": "https://carelabz.com/tr/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/tr/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/",
+      "status": "FAIL",
+      "wp_word_count": 434,
+      "new_word_count": 610,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Turkey",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 993,
+      "new_word_count": 352,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Turkey",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "993 words",
+          "new_site": "352 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 1023,
+      "new_word_count": 639,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/harmonic-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/harmonic-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 997,
+      "new_word_count": 549,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study & Analysis - Carelabs Turkey",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1032,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1032 words",
+          "new_site": "447 words (43% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 994,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "994 words",
+          "new_site": "447 words (45% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/power-system-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/power-system-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1000,
+      "new_word_count": 719,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study & Analysis - Carelabs Turkey",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/404-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/404-2/",
+      "status": "FAIL",
+      "wp_word_count": 55,
+      "new_word_count": 193,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Oops! Page Not Found | Carelabs Turkey",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 1020,
+      "new_word_count": 450,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1020 words",
+          "new_site": "450 words (44% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/tr/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 1080,
+      "new_word_count": 342,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Turkey Blog | Power System & Safety Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Turkey",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore the Carelabs Turkey Blog for expert insights on arc flash studies, power system analysis, motor performance, and electrical safety in Turkish industries.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and TS HD 60364 compliance for Turkey facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1080 words",
+          "new_site": "342 words (32% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

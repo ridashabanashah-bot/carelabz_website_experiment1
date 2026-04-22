@@ -1,0 +1,306 @@
+{
+  "country": "ID",
+  "wp_base": "https://carelabz.com/id/",
+  "total_pages": 14,
+  "pass": 1,
+  "fail": 13,
+  "skip": 0,
+  "pass_rate": 7.1,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/id/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/",
+      "status": "FAIL",
+      "wp_word_count": 1282,
+      "new_word_count": 607,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis That Turns Data Into Results",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1282 words",
+          "new_site": "607 words (47% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/help-center/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/help-center/",
+      "status": "PASS",
+      "wp_word_count": 2,
+      "new_word_count": 50,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/id/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study & Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1072,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1072 words",
+          "new_site": "445 words (42% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 987,
+      "new_word_count": 346,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Redefining Electrical Safety for Smooth Business Operations",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "987 words",
+          "new_site": "346 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 952,
+      "new_word_count": 184,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering Services in Indonesia | Carelabs",
+          "new_site": "Electrical Safety Services Indonesia | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore Carelabs Indonesia's extensive range of electrical engineering services, including Arc Flash Studies, Load Flow Analysis, Short Circuit Analysis, and more. Our expert solutions ensure safety, compliance, and efficiency for your power systems.",
+          "new_site": "Discover Carelabs' Indonesian electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with PUIL 2011 and the PUIL 2011.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "952 words",
+          "new_site": "184 words (19% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/our-blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/our-blogs/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 973,
+      "new_word_count": 643,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Tell Us About The Challenge, & We'll Solve It",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/arc-flash-study-in-indonesia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/arc-flash-study-in-indonesia/",
+      "status": "FAIL",
+      "wp_word_count": 1319,
+      "new_word_count": 253,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Shield Your Workplaces with Certified Flash Study.",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1319 words",
+          "new_site": "253 words (19% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/relay-coordination-study-in-indonesia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/relay-coordination-study-in-indonesia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/short-circuit-analysis-in-indonesia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/short-circuit-analysis-in-indonesia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/id/load-flow-analysis-in-indonesia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/load-flow-analysis-in-indonesia/",
+      "status": "FAIL",
+      "wp_word_count": 1138,
+      "new_word_count": 165,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Reliable Power With Advanced Load Flow Solutions",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1138 words",
+          "new_site": "165 words (14% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

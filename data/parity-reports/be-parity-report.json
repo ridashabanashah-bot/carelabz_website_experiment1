@@ -1,0 +1,209 @@
+{
+  "country": "BE",
+  "wp_base": "https://carelabz.com/be/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/be/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/",
+      "status": "FAIL",
+      "wp_word_count": 968,
+      "new_word_count": 590,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "The Importance of Load Flow and Short Circuit Analysis for Belgian Businesses:",
+          "new_site": "Our Services",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/case-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/case-study/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/blog/",
+      "status": "FAIL",
+      "wp_word_count": 1001,
+      "new_word_count": 180,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Blog Posts",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1001 words",
+          "new_site": "180 words (18% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/harmonic-study-and-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/motor-start-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/power-quality-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/arc-flash-study/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/services/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/services/power-system-study-and-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 878,
+      "new_word_count": 342,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Find Out About Us",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "878 words",
+          "new_site": "342 words (39% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/be/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/be/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 971,
+      "new_word_count": 630,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Our Global Presence",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

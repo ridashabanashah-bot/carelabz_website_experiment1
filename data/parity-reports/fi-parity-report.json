@@ -1,0 +1,270 @@
+{
+  "country": "FI",
+  "wp_base": "https://carelabz.com/fi/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/fi/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/",
+      "status": "FAIL",
+      "wp_word_count": 5250,
+      "new_word_count": 609,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Finland",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5250 words",
+          "new_site": "609 words (12% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 3944,
+      "new_word_count": 351,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Finland",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "3944 words",
+          "new_site": "351 words (9% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 4267,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Study",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4267 words",
+          "new_site": "442 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 1275,
+      "new_word_count": 178,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Finland Blog | Energy Efficiency Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Finland",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and SFS 6000 compliance for Finland facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1275 words",
+          "new_site": "178 words (14% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 3948,
+      "new_word_count": 635,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "3948 words",
+          "new_site": "635 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 4261,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4261 words",
+          "new_site": "442 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 4264,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4264 words",
+          "new_site": "440 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 257,
+      "new_word_count": 105,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering and Power System Services in Finland",
+          "new_site": "Electrical Safety Services Finland | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Discover Carelabs' Finland electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with SFS 6000 and the SFS 6000.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "257 words",
+          "new_site": "105 words (41% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 4264,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Quality Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4264 words",
+          "new_site": "440 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/fi/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/fi/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 4270,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4270 words",
+          "new_site": "444 words (10% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

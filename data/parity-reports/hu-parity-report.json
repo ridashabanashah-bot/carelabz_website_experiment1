@@ -1,0 +1,249 @@
+{
+  "country": "HU",
+  "wp_base": "https://carelabz.com/hu/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/hu/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/",
+      "status": "FAIL",
+      "wp_word_count": 391,
+      "new_word_count": 618,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Hungary",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/404-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/404-2/",
+      "status": "FAIL",
+      "wp_word_count": 311,
+      "new_word_count": 52,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "404 - Carelabz Hungary",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "311 words",
+          "new_site": "52 words (17% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 673,
+      "new_word_count": 356,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Hungary",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 412,
+      "new_word_count": 451,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 524,
+      "new_word_count": 266,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Blogs - Carelabz Hungary",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Hungary",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and MSZ HD 60364 compliance for Hungary facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 506,
+      "new_word_count": 639,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/harmonic-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/harmonic-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 467,
+      "new_word_count": 410,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study & Analysis - Carelabz Hungary",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 412,
+      "new_word_count": 451,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 412,
+      "new_word_count": 451,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/hu/power-system-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/power-system-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 418,
+      "new_word_count": 585,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study & Analysis - Carelabz Hungary",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

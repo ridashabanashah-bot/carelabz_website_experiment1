@@ -1,0 +1,306 @@
+{
+  "country": "VN",
+  "wp_base": "https://carelabz.com/vn/",
+  "total_pages": 16,
+  "pass": 0,
+  "fail": 16,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/vn/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/",
+      "status": "FAIL",
+      "wp_word_count": 38,
+      "new_word_count": 606,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Vietnam",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/help-center/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/help-center/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 75,
+      "new_word_count": 163,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Our Services - Carelabs Vietnam",
+          "new_site": "Electrical Safety Services Vietnam | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover Carelabs' Vietnam electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with TCVN 7447 and the TCVN 7447.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Our Services",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/our-blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/our-blogs/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/arc-flash-study-in-vietnam/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/arc-flash-study-in-vietnam/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 652,
+      "new_word_count": 443,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Motor Start Analysis",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 632,
+      "new_word_count": 443,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power Quality Analysis",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 809,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Study & Analysis",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 444,
+      "new_word_count": 349,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "We Architect The Best Electrical Safety Solutions",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Vietnam",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "From Reactive To Proactive- Excellence in Every Circuit",
+            "Power System Consulting- Our Trusted Framework",
+            "Our Safety and Compliance Promise",
+            "Powering The World With Innovative Electrical engineering solutions"
+          ],
+          "new_site": "4 H2s missing on new site",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 110,
+      "new_word_count": 650,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Let's Navigate Electrical Safety Together",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 696,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Harmonic Study and Analysis",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/service/relay-coordination-study-in-vietnam/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/service/relay-coordination-study-in-vietnam/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/service/load-flow-analysis-in-vietnam/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/service/load-flow-analysis-in-vietnam/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/service/short-circuit-analysis-in-vietnam/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/service/short-circuit-analysis-in-vietnam/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/vn/service/arc-flash-analysis-in-vietnam/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/service/arc-flash-analysis-in-vietnam/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "country": "KR",
+  "wp_base": "https://carelabz.com/kr/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/kr/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/",
+      "status": "FAIL",
+      "wp_word_count": 635,
+      "new_word_count": 603,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in South Korea",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 599,
+      "new_word_count": 349,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in South Korea",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 702,
+      "new_word_count": 443,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 643,
+      "new_word_count": 335,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Blogs - Carelabs South Korea",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs South Korea",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and KEC compliance for South Korea facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 650,
+      "new_word_count": 659,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 603,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 687,
+      "new_word_count": 443,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 687,
+      "new_word_count": 443,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 693,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/kr/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

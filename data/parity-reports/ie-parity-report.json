@@ -1,0 +1,263 @@
+{
+  "country": "IE",
+  "wp_base": "https://carelabz.com/ie/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/ie/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/",
+      "status": "FAIL",
+      "wp_word_count": 1629,
+      "new_word_count": 609,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Ireland",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1629 words",
+          "new_site": "609 words (37% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 1247,
+      "new_word_count": 353,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Ireland",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1247 words",
+          "new_site": "353 words (28% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 1289,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Study",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1289 words",
+          "new_site": "442 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 1275,
+      "new_word_count": 204,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Ireland Blog | Electrical Safety and Energy Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Ireland",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and I.S. 10101:2020 compliance for Ireland facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1275 words",
+          "new_site": "204 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 1217,
+      "new_word_count": 636,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1291,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1291 words",
+          "new_site": "442 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1289,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1289 words",
+          "new_site": "440 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 257,
+      "new_word_count": 105,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering and Power System Services in Ireland.",
+          "new_site": "Electrical Safety Services Ireland | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Discover Carelabs' Ireland electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with I.S. 10101:2020 and the I.S. 10101.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "257 words",
+          "new_site": "105 words (41% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1276,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Quality Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1276 words",
+          "new_site": "440 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ie/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ie/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1282,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1282 words",
+          "new_site": "444 words (35% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "country": "IT",
+  "wp_base": "https://carelabz.com/it/",
+  "total_pages": 15,
+  "pass": 4,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 26.7,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/it/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/",
+      "status": "FAIL",
+      "wp_word_count": 107,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study",
+          "new_site": "Safety, efficiency, sustainability",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Arc Flash Analysis in Italy: A Detailed Guide",
+            "Arc Flash Risk Evaluation and Mitigation Are...",
+            "How to evaluate efficiency and dependability of..."
+          ],
+          "new_site": "3 H2s missing on new site",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 0,
+      "new_word_count": 351,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Italy",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/arc-flash-study-in-italy/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/arc-flash-study-in-italy/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 203,
+      "new_word_count": 320,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Italy Blog | Electrical Safety & Power Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Italy",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore Carelabs Italy blogs on arc flash studies, power system analysis, electrical safety, and energy efficiency.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and CEI 64-8 compliance for Italy facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/careers/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/careers/",
+      "status": "FAIL",
+      "wp_word_count": 71,
+      "new_word_count": 237,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Why work at Carelabs?",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 47,
+      "new_word_count": 615,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/harmonic-study-and-analysis-in-italy/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/harmonic-study-and-analysis-in-italy/",
+      "status": "PASS",
+      "wp_word_count": 18,
+      "new_word_count": 410,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/it/motor-start-analysis-in-italy/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/motor-start-analysis-in-italy/",
+      "status": "PASS",
+      "wp_word_count": 18,
+      "new_word_count": 493,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/it/power-quality-analysis-in-italy/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/power-quality-analysis-in-italy/",
+      "status": "PASS",
+      "wp_word_count": 18,
+      "new_word_count": 418,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/it/power-system-study-and-analysis-in-italy/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/power-system-study-and-analysis-in-italy/",
+      "status": "PASS",
+      "wp_word_count": 18,
+      "new_word_count": 577,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/it/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/?elementskit_template=elementskit-header",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/?elementskit_template=elementskit-header",
+      "status": "FAIL",
+      "wp_word_count": 3822,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "ElementsKit_Lite Template #1662960322 - Carelabs Italy",
+          "new_site": "Power System Solutions in Italy | Carelabs Experts",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs Italy provides expert power system analysis, arc flash studies, and electrical safety services. Trusted by industries across Italy.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Safety, efficiency, sustainability",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "3822 words",
+          "new_site": "598 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/?oceanwp_library=custom-header",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/?oceanwp_library=custom-header",
+      "status": "FAIL",
+      "wp_word_count": 107,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study",
+          "new_site": "Safety, efficiency, sustainability",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Arc Flash Analysis in Italy: A Detailed Guide",
+            "Arc Flash Risk Evaluation and Mitigation Are...",
+            "How to evaluate efficiency and dependability of..."
+          ],
+          "new_site": "3 H2s missing on new site",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/?oceanwp_library=custom-menu",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/?oceanwp_library=custom-menu",
+      "status": "FAIL",
+      "wp_word_count": 107,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study",
+          "new_site": "Safety, efficiency, sustainability",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Arc Flash Analysis in Italy: A Detailed Guide",
+            "Arc Flash Risk Evaluation and Mitigation Are...",
+            "How to evaluate efficiency and dependability of..."
+          ],
+          "new_site": "3 H2s missing on new site",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/it/?oceanwp_library=footer",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/it/?oceanwp_library=footer",
+      "status": "FAIL",
+      "wp_word_count": 107,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study",
+          "new_site": "Safety, efficiency, sustainability",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Arc Flash Analysis in Italy: A Detailed Guide",
+            "Arc Flash Risk Evaluation and Mitigation Are...",
+            "How to evaluate efficiency and dependability of..."
+          ],
+          "new_site": "3 H2s missing on new site",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

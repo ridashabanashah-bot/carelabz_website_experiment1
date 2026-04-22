@@ -1,0 +1,263 @@
+{
+  "country": "NO",
+  "wp_base": "https://carelabz.com/no/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/no/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/",
+      "status": "FAIL",
+      "wp_word_count": 1598,
+      "new_word_count": 603,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Norway",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1598 words",
+          "new_site": "603 words (38% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 257,
+      "new_word_count": 105,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Our Services - Carelabs Norway",
+          "new_site": "Electrical Safety Services Norway | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Discover Carelabs' Norway electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with NEK 400 and the NEK 400.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "257 words",
+          "new_site": "105 words (41% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 1275,
+      "new_word_count": 201,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Blogs - Carelabs Norway",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Norway",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and NEK 400 compliance for Norway facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1275 words",
+          "new_site": "201 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 1220,
+      "new_word_count": 349,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Norway",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1220 words",
+          "new_site": "349 words (29% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 1261,
+      "new_word_count": 438,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Study",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1261 words",
+          "new_site": "438 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1267,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1267 words",
+          "new_site": "440 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1253,
+      "new_word_count": 438,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Quality Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1253 words",
+          "new_site": "438 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1259,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1259 words",
+          "new_site": "442 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1267,
+      "new_word_count": 438,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1267 words",
+          "new_site": "438 words (35% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/no/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/no/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 1188,
+      "new_word_count": 633,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

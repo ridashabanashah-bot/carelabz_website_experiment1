@@ -1,0 +1,207 @@
+{
+  "country": "CO",
+  "wp_base": "https://carelabz.com/co/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/co/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/",
+      "status": "FAIL",
+      "wp_word_count": 505,
+      "new_word_count": 616,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Colombia",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 639,
+      "new_word_count": 357,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Colombia",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 558,
+      "new_word_count": 450,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 680,
+      "new_word_count": 385,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Colombia Blog | Power System Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Colombia",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore expert articles from Carelabs Colombia on arc flash studies, power quality, harmonic analysis, and energy system optimization.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and RETIE compliance for Colombia facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 469,
+      "new_word_count": 656,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 569,
+      "new_word_count": 450,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 570,
+      "new_word_count": 449,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 567,
+      "new_word_count": 449,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 577,
+      "new_word_count": 450,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/co/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/co/services/",
+      "status": "FAIL",
+      "wp_word_count": 503,
+      "new_word_count": 188,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering Services Colombia | Carelabs",
+          "new_site": "Electrical Safety Services Colombia | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore Carelabs Colombia's expert services, including arc flash studies, harmonic analysis, motor start studies, and power system consulting.",
+          "new_site": "Discover Carelabs' Colombian electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with RETIE and the NTC 2050.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "503 words",
+          "new_site": "188 words (37% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

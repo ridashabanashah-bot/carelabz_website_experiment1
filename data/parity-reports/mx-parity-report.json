@@ -1,0 +1,303 @@
+{
+  "country": "MX",
+  "wp_base": "https://carelabz.com/mx/",
+  "total_pages": 13,
+  "pass": 0,
+  "fail": 13,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/mx/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/",
+      "status": "FAIL",
+      "wp_word_count": 8635,
+      "new_word_count": 598,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Advanced Power System Analysis for Mexico's Safety Standards",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "8635 words",
+          "new_site": "598 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/load-flow-analysis-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/load-flow-analysis-in-mexico/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/short-circuit-analysis-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/short-circuit-analysis-in-mexico/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/relay-coordination-study-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/relay-coordination-study-in-mexico/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/arc-flash-studies-in-mexico/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-studies-in-mexico/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 5663,
+      "new_word_count": 649,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5663 words",
+          "new_site": "649 words (11% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/load-flow-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 5986,
+      "new_word_count": 430,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Optimization with Precision Load Flow Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5986 words",
+          "new_site": "430 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/short-circuit-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 5877,
+      "new_word_count": 604,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Stop Faults in the System With Expert Short Circuit Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5877 words",
+          "new_site": "604 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/relay-coordination-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/relay-coordination-study/",
+      "status": "FAIL",
+      "wp_word_count": 6077,
+      "new_word_count": 434,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Enhance System Integrity with Relay Coordination Study",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "6077 words",
+          "new_site": "434 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 5922,
+      "new_word_count": 446,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5922 words",
+          "new_site": "446 words (8% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 8910,
+      "new_word_count": 345,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Mexico",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "8910 words",
+          "new_site": "345 words (4% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 7602,
+      "new_word_count": 552,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Top Benefits of Conducting an Arc Flash Study in Mexico",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Mexico",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Learn how Carelabs addresses challenges in electrical safety, compliance, and performance optimization for industries in Mexico.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and NOM-029-STPS-2011 compliance for Mexico facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7602 words",
+          "new_site": "552 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/mx/service/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/mx/service/",
+      "status": "FAIL",
+      "wp_word_count": 6937,
+      "new_word_count": 184,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Power System Services in Mexico | Expert Electrical Safety Solutions",
+          "new_site": "Electrical Safety Services Mexico | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore Carelabs' power system services in Mexico, including Arc Flash Study, Relay Coordination, Load Flow Analysis, and Short Circuit Analysis. Optimize safety and efficiency.",
+          "new_site": "Discover Carelabs' Mexico electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with NOM-029-STPS-2011 and the Mexican Electrical Code (NOM-001-SEDE).",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "6937 words",
+          "new_site": "184 words (3% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

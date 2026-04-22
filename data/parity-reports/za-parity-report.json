@@ -1,0 +1,249 @@
+{
+  "country": "ZA",
+  "wp_base": "https://carelabz.com/za/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/za/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/",
+      "status": "FAIL",
+      "wp_word_count": 432,
+      "new_word_count": 610,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in South Africa",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/404-2/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/404-2/",
+      "status": "FAIL",
+      "wp_word_count": 459,
+      "new_word_count": 55,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "404 - Carelabs South Africa",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "459 words",
+          "new_site": "55 words (12% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 529,
+      "new_word_count": 372,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Blogs - Carelabs South Africa",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs South Africa",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and SANS 10142 compliance for South Africa facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 516,
+      "new_word_count": 352,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in South Africa",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 544,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 559,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/power-system-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/power-system-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 566,
+      "new_word_count": 626,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study & Analysis - Carelabs South Africa",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/harmonic-study-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/harmonic-study-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 562,
+      "new_word_count": 450,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study & Analysis - Carelabs South Africa",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 563,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/za/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 518,
+      "new_word_count": 643,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

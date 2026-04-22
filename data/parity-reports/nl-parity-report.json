@@ -1,0 +1,209 @@
+{
+  "country": "NL",
+  "wp_base": "https://carelabz.com/nl/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/nl/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/",
+      "status": "FAIL",
+      "wp_word_count": 962,
+      "new_word_count": 593,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "The Importance of Load Flow and Short Circuit Analysis for Dutch Businesses:",
+          "new_site": "Our Services",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 878,
+      "new_word_count": 343,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs is dedicated to transforming electrical safety through innovative power system solutions, ensuring compliance, efficiency, and sustainability for all industries.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Find Out About Us",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "878 words",
+          "new_site": "343 words (39% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/blog/",
+      "status": "FAIL",
+      "wp_word_count": 995,
+      "new_word_count": 181,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Blog Posts",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "995 words",
+          "new_site": "181 words (18% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/case-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/case-study/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 971,
+      "new_word_count": 629,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let us assist you with power system studies and analysis. Carelabs is here to help you achieve your safety and compliance goals. Contact us today!",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Our Global Presence",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/arc-flash-study/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/harmonic-study-and-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/motor-start-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/power-quality-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/nl/services/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/services/power-system-study-and-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

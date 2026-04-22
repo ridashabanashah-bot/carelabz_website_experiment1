@@ -1,0 +1,308 @@
+{
+  "country": "SG",
+  "wp_base": "https://carelabz.com/sg/",
+  "total_pages": 11,
+  "pass": 0,
+  "fail": 11,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/sg/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/",
+      "status": "FAIL",
+      "wp_word_count": 5851,
+      "new_word_count": 595,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Electrical Engineering Consultancy That Delivers",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5851 words",
+          "new_site": "595 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 4288,
+      "new_word_count": 351,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Align Your Power Systems With Business Goals",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4288 words",
+          "new_site": "351 words (8% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/our-blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/our-blogs/",
+      "status": "FAIL",
+      "wp_word_count": 3583,
+      "new_word_count": 121,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Future-proofing Your Infrastructure",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Arc Flash Study",
+            "Relay Coordination Study",
+            "Load Flow Analysis",
+            "Short Circuit Analysis"
+          ],
+          "new_site": "4 H2s missing on new site",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "3583 words",
+          "new_site": "121 words (3% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 4591,
+      "new_word_count": 130,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Power System Experts in Singapore",
+          "new_site": "Electrical Safety Services Singapore | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs' power system analysis services in Singapore, including arc flash, relay coordination, and load flow analysis.",
+          "new_site": "Discover Carelabs' Singapore electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with SS 638 and the SS 638.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4591 words",
+          "new_site": "130 words (3% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/arc-flash-study-in-singapore/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/arc-flash-study-in-singapore/",
+      "status": "FAIL",
+      "wp_word_count": 5667,
+      "new_word_count": 355,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs' ETAP-powered arc flash study in Singapore, ensuring compliance with NFPA 70E, IEEE 1584, and SS 651:2019.",
+          "new_site": "Carelabs' ETAP-powered arc flash study in Singapore, ensuring compliance with SS 638, IEEE 1584, and SS 651:2019.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Advanced Arc Flash Study Powered By ETAP",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5667 words",
+          "new_site": "355 words (6% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/load-flow-analysis-in-singapore/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/load-flow-analysis-in-singapore/",
+      "status": "FAIL",
+      "wp_word_count": 5779,
+      "new_word_count": 180,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Load Flow Analysis For A Resilient Power System",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5779 words",
+          "new_site": "180 words (3% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/relay-coordination-study-in-singapore/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/relay-coordination-study-in-singapore/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/short-circuit-analysis-3/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/short-circuit-analysis-3/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 3878,
+      "new_word_count": 637,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Get In Touch With Carelabs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "3878 words",
+          "new_site": "637 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/?elementskit_template=footer",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/?elementskit_template=footer",
+      "status": "FAIL",
+      "wp_word_count": 2340,
+      "new_word_count": 595,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Footer - Carelabs Singapore",
+          "new_site": "Electrical Engineering Consultancy",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs provides expert power system analysis, ETAP simulations, and compliance-driven electrical safety solutions.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Electrical Engineering Consultancy That Delivers",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "2340 words",
+          "new_site": "595 words (25% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/sg/?elementskit_template=header",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/?elementskit_template=header",
+      "status": "FAIL",
+      "wp_word_count": 2357,
+      "new_word_count": 595,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Header - Carelabs Singapore",
+          "new_site": "Electrical Engineering Consultancy",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Carelabs provides expert power system analysis, ETAP simulations, and compliance-driven electrical safety solutions.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Electrical Engineering Consultancy That Delivers",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "2357 words",
+          "new_site": "595 words (25% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

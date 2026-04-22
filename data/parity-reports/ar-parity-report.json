@@ -1,0 +1,207 @@
+{
+  "country": "AR",
+  "wp_base": "https://carelabz.com/ar/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/ar/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/",
+      "status": "FAIL",
+      "wp_word_count": 509,
+      "new_word_count": 607,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Argentina",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/services/",
+      "status": "FAIL",
+      "wp_word_count": 505,
+      "new_word_count": 197,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering Services Argentina | Carelabs",
+          "new_site": "Electrical Safety Services Argentina | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Argentina offers expert services including arc flash studies, power quality analysis, harmonic studies, motor start analysis, and compliance audits.",
+          "new_site": "Discover Carelabs' Argentinan electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with AEA 90364 and the AEA 90364.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "505 words",
+          "new_site": "197 words (39% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 576,
+      "new_word_count": 446,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 570,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 571,
+      "new_word_count": 446,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 574,
+      "new_word_count": 446,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 471,
+      "new_word_count": 657,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 687,
+      "new_word_count": 351,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Argentina Blog | Expert Insights on Power Systems",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Argentina",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore the Carelabs Argentina blog for expert articles on arc flash analysis, motor efficiency, harmonic studies, power quality, and system optimization.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and AEA 90364 compliance for Argentina facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 562,
+      "new_word_count": 447,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ar/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ar/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 644,
+      "new_word_count": 352,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Argentina",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

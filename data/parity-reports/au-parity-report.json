@@ -1,0 +1,533 @@
+{
+  "country": "AU",
+  "wp_base": "https://carelabz.com/au/",
+  "total_pages": 28,
+  "pass": 0,
+  "fail": 28,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/au/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/",
+      "status": "FAIL",
+      "wp_word_count": 9013,
+      "new_word_count": 611,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Tailor-made solutions to meet the electrical safety practices of diverse industries",
+          "new_site": "Safety, Reliability, Resilience, Compliance & Sustainability for Critical Assets",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Banner Slider 3",
+            "Banner Slider 2",
+            "Banner Slider"
+          ],
+          "new_site": "3 H2s missing on new site",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "9013 words",
+          "new_site": "611 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/short-circuit-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/short-circuit-analysis-in-australia/",
+      "status": "FAIL",
+      "wp_word_count": 7636,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Proactive Protection With Short Circuit Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7636 words",
+          "new_site": "445 words (6% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/load-flow-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/load-flow-analysis-in-australia/",
+      "status": "FAIL",
+      "wp_word_count": 7684,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Load Flow Analysis For Powering Stability",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7684 words",
+          "new_site": "445 words (6% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/arc-flash-study-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/arc-flash-study-in-australia/",
+      "status": "FAIL",
+      "wp_word_count": 7625,
+      "new_word_count": 448,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Leading Arc Flash Study Services for Australian Industries",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7625 words",
+          "new_site": "448 words (6% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/relay-coordination-study-services-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/relay-coordination-study-services-in-australia/",
+      "status": "FAIL",
+      "wp_word_count": 7812,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Optimize Protection With Expert Relay Coordination",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7812 words",
+          "new_site": "445 words (6% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 5608,
+      "new_word_count": 646,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Connect With Us to solve your Power System Challenges.",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5608 words",
+          "new_site": "646 words (12% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 7252,
+      "new_word_count": 354,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Leading The Way in Electrical Safety Across Australia",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "7252 words",
+          "new_site": "354 words (5% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/blog/",
+      "status": "FAIL",
+      "wp_word_count": 5762,
+      "new_word_count": 405,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Workplace Electrical Safety Insights | Carelabs",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Australia",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Discover how Carelabs' power system analysis enhances workplace electrical safety, reducing risks and boosting resilience in Australian facilities.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and AS/NZS 3000 compliance for Australia facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "5762 words",
+          "new_site": "405 words (7% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/short-circuit-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/load-flow-analysis/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/arc-flash-risks/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/arc-flash-risks/",
+      "status": "FAIL",
+      "wp_word_count": 6038,
+      "new_word_count": 628,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Proactive Safety: Reducing Arc Flash Risks in Australia",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "6038 words",
+          "new_site": "628 words (10% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-electrical-installation-condition-report-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-electrical-installation-condition-report-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-electrical-safety-audit-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-electrical-safety-audit-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-power-system-study-and-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-power-system-study-and-analysis-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-electrical-safety-inspection-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-electrical-safety-inspection-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-electrical-switchgear-risk-assessment-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-electrical-switchgear-risk-assessment-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-power-quality-study-and-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-power-quality-study-and-analysis-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-harmonic-study-and-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-harmonic-study-and-analysis-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/bangaloreflats-in-australia-services-motor-start-and-acceleration-analysis-in-australia/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/bangaloreflats-in-australia-services-motor-start-and-acceleration-analysis-in-australia/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/services/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/relay-coordination-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/relay-coordination-study/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem4239/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem4239/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem4236/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem4236/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem1975/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem1975/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem1006/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem1006/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem629/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem629/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/elementskit-content/dynamic-content-megamenu-menuitem1692/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/elementskit-content/dynamic-content-megamenu-menuitem1692/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/au/?elementskit_template=header",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/au/?elementskit_template=header",
+      "status": "FAIL",
+      "wp_word_count": 4001,
+      "new_word_count": 611,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Header - Carelabs",
+          "new_site": "Power System & Safety Solutions | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Contact Us Contact Us",
+          "new_site": "Optimize Safety & Compliance with Carelabs' Power System Analysis in Australia: Arc Flash, Load Flow, Short Circuit & Relay Coordination.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Safety, Reliability, Resilience, Compliance & Sustainability for Critical Assets",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "4001 words",
+          "new_site": "611 words (15% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

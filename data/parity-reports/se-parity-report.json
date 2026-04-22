@@ -1,0 +1,263 @@
+{
+  "country": "SE",
+  "wp_base": "https://carelabz.com/se/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/se/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/",
+      "status": "FAIL",
+      "wp_word_count": 1634,
+      "new_word_count": 609,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Sweden",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1634 words",
+          "new_site": "609 words (37% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 1241,
+      "new_word_count": 352,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Sweden",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1241 words",
+          "new_site": "352 words (28% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 1291,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Study",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1291 words",
+          "new_site": "442 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 1275,
+      "new_word_count": 204,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Sweden Blog | Electrical Safety",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Sweden",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and EBR 18:2017 compliance for Sweden facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1275 words",
+          "new_site": "204 words (16% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 1210,
+      "new_word_count": 634,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1298,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1298 words",
+          "new_site": "442 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1291,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1291 words",
+          "new_site": "440 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/our-services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/our-services/",
+      "status": "FAIL",
+      "wp_word_count": 257,
+      "new_word_count": 105,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering and Power System Services in Sweden",
+          "new_site": "Electrical Safety Services Sweden | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Kolejna witryna oparta na WordPressie",
+          "new_site": "Discover Carelabs' Sweden electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with EBR 18:2017 and the SS-EN 60364.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "257 words",
+          "new_site": "105 words (41% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1277,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Quality Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1277 words",
+          "new_site": "440 words (34% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/se/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/se/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 1285,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study and Analysis",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1285 words",
+          "new_site": "444 words (35% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

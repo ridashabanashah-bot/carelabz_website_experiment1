@@ -1,0 +1,142 @@
+{
+  "country": "PH",
+  "wp_base": "https://carelabz.com/ph/",
+  "total_pages": 6,
+  "pass": 1,
+  "fail": 5,
+  "skip": 0,
+  "pass_rate": 16.7,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/ph/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/",
+      "status": "FAIL",
+      "wp_word_count": 1829,
+      "new_word_count": 602,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover expert power system consulting for energy management solutions. Ensure safety and continuity for your infrastructure with our seamless optimization services.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Most Reliable Power System Analysis Specialists",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1829 words",
+          "new_site": "602 words (33% of WP)",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 442,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Harmonic Study and Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/help-center/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/help-center/",
+      "status": "PASS",
+      "wp_word_count": 2,
+      "new_word_count": 51,
+      "issues": []
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Motor Start Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 440,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power Quality Analysis",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ph/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ph/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 23,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Experience unparalleled arc flash analysis designed to safeguard your operations. Trust our expertise for compliance and risk mitigation.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Study & Analysis",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "country": "PE",
+  "wp_base": "https://carelabz.com/pe/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "skip_blogs": true,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/pe/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/",
+      "status": "FAIL",
+      "wp_word_count": 504,
+      "new_word_count": 605,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in Peru",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 644,
+      "new_word_count": 351,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "We Bridge Electrical Safety Management with Innovative Solutions in Peru",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 559,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 685,
+      "new_word_count": 369,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Peru Blog | Power Systems, Safety, and Energy Insights",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Peru",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Explore Carelabs Peru's blog for expert articles on arc flash studies, motor efficiency, harmonic analysis, power quality.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and RM 111-2013-MEM compliance for Peru facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 471,
+      "new_word_count": 657,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/harmonic-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/harmonic-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 570,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/motor-start-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/motor-start-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 568,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/power-quality-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/power-quality-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 571,
+      "new_word_count": 444,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/power-system-study-and-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/power-system-study-and-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 575,
+      "new_word_count": 445,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Arc Flash Analysis That Goes The Extra Mile",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/pe/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/services/",
+      "status": "FAIL",
+      "wp_word_count": 504,
+      "new_word_count": 183,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Electrical Engineering Services in Peru | Carelabs",
+          "new_site": "Electrical Safety Services Peru | Carelabs",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs Peru offers expert services including arc flash studies, power system studies, harmonic analysis, power quality audits.",
+          "new_site": "Discover Carelabs' Peru electrical safety services - arc flash studies, short circuit analysis, load flow analysis, and relay coordination aligned with RM 111-2013-MEM and the CNE.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Power System Analysis for Your Specific Needs",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "504 words",
+          "new_site": "183 words (36% of WP)",
+          "match": false
+        }
+      ]
+    }
+  ]
+}
