@@ -2,25 +2,19 @@
   "country": "PE",
   "wp_base": "https://carelabz.com/pe/",
   "total_pages": 20,
-  "pass": 17,
-  "fail": 3,
+  "pass": 18,
+  "fail": 2,
   "skip": 0,
-  "pass_rate": 85.0,
+  "pass_rate": 90.0,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/pe/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 412,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pe/examine-and-confirm-electrical-motor-performance-in-compliance-with-peruvian-regulations/",
@@ -134,7 +128,7 @@
       "wp_url": "https://carelabz.com/pe/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pe/blogs/",
       "status": "PASS",
-      "new_word_count": 369,
+      "new_word_count": 382,
       "new_status": 200,
       "issues": []
     },

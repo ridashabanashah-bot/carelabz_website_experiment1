@@ -2,37 +2,31 @@
   "country": "MY",
   "wp_base": "https://carelabz.com/my/",
   "total_pages": 31,
-  "pass": 9,
-  "fail": 22,
+  "pass": 10,
+  "fail": 21,
   "skip": 0,
-  "pass_rate": 29.0,
+  "pass_rate": 32.3,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/my/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/blogs/",
-      "status": "FAIL",
-      "new_word_count": 95,
+      "status": "PASS",
+      "new_word_count": 369,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "WORD_COUNT",
-          "severity": "HIGH",
-          "detail": "Main content only 95 words - page may be empty or broken"
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/my/analyze-and-assess-electric-motor-performance-in-compliance-with-malaysian-legislation/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/analyze-and-assess-electric-motor-performance-in-compliance-with-malaysian-legislation/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 66,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 66 words - page may be empty or broken"
         }
       ]
     },
@@ -40,13 +34,13 @@
       "wp_url": "https://carelabz.com/my/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 67,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 67 words - page may be empty or broken"
         }
       ]
     },
@@ -54,13 +48,13 @@
       "wp_url": "https://carelabz.com/my/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 73,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 73 words - page may be empty or broken"
         }
       ]
     },
@@ -68,13 +62,13 @@
       "wp_url": "https://carelabz.com/my/the-importance-of-load-flow-and-short-circuit-analysis-for-malaysian-companies/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/the-importance-of-load-flow-and-short-circuit-analysis-for-malaysian-companies/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 71,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 71 words - page may be empty or broken"
         }
       ]
     },
@@ -82,13 +76,13 @@
       "wp_url": "https://carelabz.com/my/how-to-perform-a-study-of-power-quality-in-malaysia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/how-to-perform-a-study-of-power-quality-in-malaysia/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 69,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 69 words - page may be empty or broken"
         }
       ]
     },
@@ -96,13 +90,13 @@
       "wp_url": "https://carelabz.com/my/power-quality-working-principles-in-malaysia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/power-quality-working-principles-in-malaysia/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 62,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 62 words - page may be empty or broken"
         }
       ]
     },
@@ -110,13 +104,13 @@
       "wp_url": "https://carelabz.com/my/malaysian-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/malaysian-power-system-harmonic-analysis/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 60,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 60 words - page may be empty or broken"
         }
       ]
     },
@@ -124,13 +118,13 @@
       "wp_url": "https://carelabz.com/my/why-is-harmonic-analysis-and-study-so-important-for-malaysian-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/why-is-harmonic-analysis-and-study-so-important-for-malaysian-businesses/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 68,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 68 words - page may be empty or broken"
         }
       ]
     },
@@ -138,13 +132,13 @@
       "wp_url": "https://carelabz.com/my/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 66,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 66 words - page may be empty or broken"
         }
       ]
     },
@@ -152,13 +146,13 @@
       "wp_url": "https://carelabz.com/my/arc-flash-analysis-step-by-step-instructions-for-malaysia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/arc-flash-analysis-step-by-step-instructions-for-malaysia/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 63,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 63 words - page may be empty or broken"
         }
       ]
     },
@@ -166,13 +160,13 @@
       "wp_url": "https://carelabz.com/my/arc-flash-study-in-malaysia-evolving-methods-for-superior-electrical-safety/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/arc-flash-study-in-malaysia-evolving-methods-for-superior-electrical-safety/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 69,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 69 words - page may be empty or broken"
         }
       ]
     },
@@ -180,13 +174,13 @@
       "wp_url": "https://carelabz.com/my/power-system-protection-and-coordination-study-5-myths-that-could-compromise-your-electrical-safety-in-malaysia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/power-system-protection-and-coordination-study-5-myths-that-could-compromise-your-electrical-safety-in-malaysia/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 67,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 67 words - page may be empty or broken"
         }
       ]
     },
@@ -194,13 +188,13 @@
       "wp_url": "https://carelabz.com/my/why-do-we-need-load-flow-analysis-in-malaysia-expert-insights/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/why-do-we-need-load-flow-analysis-in-malaysia-expert-insights/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 70,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 70 words - page may be empty or broken"
         }
       ]
     },
@@ -208,13 +202,13 @@
       "wp_url": "https://carelabz.com/my/how-to-do-short-circuit-analysis-best-practices-for-protecting-your-power-systems/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/my/how-to-do-short-circuit-analysis-best-practices-for-protecting-your-power-systems/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 71,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 71 words - page may be empty or broken"
         }
       ]
     },

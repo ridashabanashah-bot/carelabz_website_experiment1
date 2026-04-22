@@ -1,0 +1,34 @@
+{
+  "url": "https://carelabz.com/us/priest-rapids-dam-arc-flash-explosion-2014/",
+  "slug": "priest-rapids-dam-arc-flash-explosion-2014",
+  "pageType": "blog",
+  "metaTitle": "Priest Rapids Dam Arc Flash Explosion (2014) - Carelabs US",
+  "metaDescription": "Carelabs has prepared a incident based case study on the devastating - Priest Rapids Dam Arc Flash Explosion (2014)",
+  "canonicalSource": "https://carelabz.com/us/priest-rapids-dam-arc-flash-explosion-2014/",
+  "h1": "Priest Rapids Dam Arc Flash Explosion (2014)",
+  "h2": [
+    "The Importance of Relay Coordination in Power System",
+    "Which of these Facts About Arc Flashes are True?"
+  ],
+  "h3": [
+    "Share this post"
+  ],
+  "paragraphs": [
+    "An arc flash explosion occurred at the Priest Rapids hydroelectric dam in Eastern Washington leaving six employees injured of which, two of them were critically injured.",
+    "The employees were attempting to troubleshoot the circuit breaker on P08, which was one of ten generators at the dam. The repair work to the generator was not on the regular work schedule, and as it was towards the end of the work day, certain safety precautions were bypassed. The assumption was made that the power was cut off to the circuit, but it was never verified.",
+    "The circuit breaker was manually slow closed while energized with generator unit P08 in a stopped position. This caused an arc within the breaker, resulting in an explosion.",
+    "What should be done to avoid such incidents in the future:",
+    "To ensure safety of your employees and electrical infrastructure it is advised to get the following tests done:",
+    "Further, only qualified personnel with the proper training should work on electrical equipment with appropriate electrical safety garments and tools.",
+    "https://www.ecmweb.com/safety/accidents-investigations/article/20901585/hydroelectric-dam-explosion-injures-utility-workers",
+    "https://www.powerstudies.com/blog/what-caused-priest-rapids-dam-arc-flash-explosion",
+    "https://columbiabasinherald.com/news/2015/nov/08/arc-flash-declared-cause-of-priest-rapids-2/",
+    "Introduction Relays are protective elements that help control faults in a power system. Proper relay coordination helps isolate the fault sections from healthier sections in a power system. Being a fundamental part of ensuring reliability and operational continuity, the strategic configuration of protective relays is imperative in the design of a power system. One way […]",
+    "Introduction In electric hazards, arc flashes are among the most dreadful threats. Despite their criticality, many myths surround arc flashes. Although IEEE and NFPA continuously strive to enhance awareness, five to ten arc flashes happen in the USA daily. We, at Carelabs understand the importance of maintaining a healthy electrical infrastructure. To help companies […]"
+  ],
+  "bulletLists": [],
+  "wordCount": 590,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-22T09:21:11Z"
+}

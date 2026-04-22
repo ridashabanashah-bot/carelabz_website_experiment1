@@ -2,10 +2,10 @@
   "country": "IN",
   "wp_base": "https://carelabz.com/in/",
   "total_pages": 23,
-  "pass": 8,
-  "fail": 15,
+  "pass": 12,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 34.8,
+  "pass_rate": 52.2,
   "skip_blogs": false,
   "results": [
     {
@@ -89,16 +89,10 @@
     {
       "wp_url": "https://carelabz.com/in/power-quality-working-principles-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/power-quality-working-principles-in-india/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 879,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/load-flow-analysis/",
@@ -111,44 +105,26 @@
     {
       "wp_url": "https://carelabz.com/in/indian-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/indian-power-system-harmonic-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 499,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/how-to-perform-a-study-of-power-quality-in-india/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/how-to-perform-a-study-of-power-quality-in-india/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 655,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 514,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/in/arc-flash-study/",
@@ -214,7 +190,7 @@
       "wp_url": "https://carelabz.com/in/our-blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/in/our-blogs/",
       "status": "PASS",
-      "new_word_count": 384,
+      "new_word_count": 361,
       "new_status": 200,
       "issues": []
     },

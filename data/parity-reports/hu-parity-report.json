@@ -2,39 +2,27 @@
   "country": "HU",
   "wp_base": "https://carelabz.com/hu/",
   "total_pages": 20,
-  "pass": 8,
-  "fail": 12,
+  "pass": 18,
+  "fail": 2,
   "skip": 0,
-  "pass_rate": 40.0,
+  "pass_rate": 90.0,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/hu/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 647,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 736,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/the-importance-of-load-flow-and-short-circuit-analysis-to-a-hungarian-business/",
@@ -53,72 +41,42 @@
     {
       "wp_url": "https://carelabz.com/hu/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 847,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/principles-of-operation-for-the-power-quality-in-hungary/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/principles-of-operation-for-the-power-quality-in-hungary/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 901,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/how-to-analyze-the-power-quality-in-hungary/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/how-to-analyze-the-power-quality-in-hungary/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 691,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/why-are-harmonic-research-and-analysis-so-crucial-to-hungarian-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/why-are-harmonic-research-and-analysis-so-crucial-to-hungarian-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 636,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/analysis-of-the-hungarian-power-systems-harmony/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/analysis-of-the-hungarian-power-systems-harmony/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 630,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/hungarian-arc-flash-analysis-a-complete-guide/",
@@ -137,16 +95,10 @@
     {
       "wp_url": "https://carelabz.com/hu/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 750,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/",
@@ -184,7 +136,7 @@
       "wp_url": "https://carelabz.com/hu/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/blogs/",
       "status": "PASS",
-      "new_word_count": 266,
+      "new_word_count": 254,
       "new_status": 200,
       "issues": []
     },
@@ -199,16 +151,10 @@
     {
       "wp_url": "https://carelabz.com/hu/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/harmonic-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 410,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/hu/motor-start-analysis/",
@@ -229,16 +175,10 @@
     {
       "wp_url": "https://carelabz.com/hu/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/hu/power-system-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 585,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     }
   ]
 }

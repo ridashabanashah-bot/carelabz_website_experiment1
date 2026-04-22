@@ -2,17 +2,17 @@
   "country": "US",
   "wp_base": "https://carelabz.com/us/",
   "total_pages": 45,
-  "pass": 23,
-  "fail": 22,
+  "pass": 29,
+  "fail": 16,
   "skip": 0,
-  "pass_rate": 51.1,
+  "pass_rate": 64.4,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/us/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/blog/",
       "status": "PASS",
-      "new_word_count": 254,
+      "new_word_count": 541,
       "new_status": 200,
       "issues": []
     },
@@ -33,30 +33,18 @@
     {
       "wp_url": "https://carelabz.com/us/working-principles-of-power-quality-analysis-in-the-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/working-principles-of-power-quality-analysis-in-the-us/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 614,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/harmonic-analysis-in-power-system-in-the-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/harmonic-analysis-in-power-system-in-the-us/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 793,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/arc-flash-at-turkey-point-2017/",
@@ -69,44 +57,26 @@
     {
       "wp_url": "https://carelabz.com/us/priest-rapids-dam-arc-flash-explosion-2014/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/priest-rapids-dam-arc-flash-explosion-2014/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 348,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/checklist-for-electrical-safety-audit-in-the-usa/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/checklist-for-electrical-safety-audit-in-the-usa/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 710,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/mgm-grand-hotel-fire-1980/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/mgm-grand-hotel-fire-1980/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 361,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
@@ -221,16 +191,10 @@
     {
       "wp_url": "https://carelabz.com/us/three-mile-island-blast-1979/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/three-mile-island-blast-1979/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 306,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/us/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",

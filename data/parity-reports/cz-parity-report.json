@@ -2,10 +2,10 @@
   "country": "CZ",
   "wp_base": "https://carelabz.com/cz/",
   "total_pages": 20,
-  "pass": 8,
-  "fail": 12,
+  "pass": 9,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 40.0,
+  "pass_rate": 45.0,
   "skip_blogs": false,
   "results": [
     {
@@ -137,16 +137,10 @@
     {
       "wp_url": "https://carelabz.com/cz/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 754,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/",
@@ -176,7 +170,7 @@
       "wp_url": "https://carelabz.com/cz/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/blogs/",
       "status": "PASS",
-      "new_word_count": 273,
+      "new_word_count": 331,
       "new_status": 200,
       "issues": []
     },

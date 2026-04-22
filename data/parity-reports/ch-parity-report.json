@@ -2,137 +2,83 @@
   "country": "CH",
   "wp_base": "https://carelabz.com/ch/",
   "total_pages": 21,
-  "pass": 10,
-  "fail": 11,
+  "pass": 20,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 47.6,
+  "pass_rate": 95.2,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/ch/the-importance-of-load-flow-and-short-circuit-analysis-for-swiss-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/the-importance-of-load-flow-and-short-circuit-analysis-for-swiss-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 474,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 691,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/verify-that-electrical-motor-performance-complies-with-swiss-regulations-by-inspecting-and-confirming/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/verify-that-electrical-motor-performance-complies-with-swiss-regulations-by-inspecting-and-confirming/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 534,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 450,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/how-to-conduct-an-analysis-of-power-quality-in-switzerland/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/how-to-conduct-an-analysis-of-power-quality-in-switzerland/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 603,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/working-principles-for-power-quality-in-switzerland/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/working-principles-for-power-quality-in-switzerland/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 844,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/power-system-harmonic-analysis-in-switzerland/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/power-system-harmonic-analysis-in-switzerland/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 461,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/why-harmonic-analysis-and-study-crucial-for-swiss-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/why-harmonic-analysis-and-study-crucial-for-swiss-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 409,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/switzerlands-arc-flash-analysis-a-comprehensive-guide/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/switzerlands-arc-flash-analysis-a-comprehensive-guide/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 332,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
@@ -167,16 +113,10 @@
     {
       "wp_url": "https://carelabz.com/ch/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ch/blog/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 182,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/ch/case-study/",

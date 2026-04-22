@@ -2,10 +2,10 @@
   "country": "SG",
   "wp_base": "https://carelabz.com/sg/",
   "total_pages": 23,
-  "pass": 9,
-  "fail": 14,
+  "pass": 13,
+  "fail": 10,
   "skip": 0,
-  "pass_rate": 39.1,
+  "pass_rate": 56.5,
   "skip_blogs": false,
   "results": [
     {
@@ -55,30 +55,18 @@
     {
       "wp_url": "https://carelabz.com/sg/analyze-and-assess-electric-motor-performance-in-compliance-with-singapore-legislation/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/analyze-and-assess-electric-motor-performance-in-compliance-with-singapore-legislation/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 641,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sg/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 499,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sg/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
@@ -111,16 +99,10 @@
     {
       "wp_url": "https://carelabz.com/sg/how-to-perform-a-study-of-power-quality-in-singapore/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/how-to-perform-a-study-of-power-quality-in-singapore/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 676,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sg/power-quality-working-principles-in-singapore/",
@@ -181,16 +163,10 @@
     {
       "wp_url": "https://carelabz.com/sg/arc-flash-analysis-step-by-step-instructions-for-singapore/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/sg/arc-flash-analysis-step-by-step-instructions-for-singapore/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 409,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/sg/",

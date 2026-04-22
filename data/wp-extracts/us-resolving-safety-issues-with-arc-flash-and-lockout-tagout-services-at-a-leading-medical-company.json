@@ -1,0 +1,46 @@
+{
+  "url": "https://carelabz.com/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+  "slug": "resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company",
+  "pageType": "blog",
+  "metaTitle": "Resolving Safety Issues with Arc Flash and Lockout/Tagout Services at a Leading Medical Company",
+  "metaDescription": "Resolving electrical safety issues with arc flash and lockout / tagout services at a leading Medical Company",
+  "canonicalSource": "https://carelabz.com/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+  "h1": "Resolving Safety Issues with Arc Flash and Lockout/Tagout Services at a Leading Medical Company",
+  "h2": [
+    "The Importance of Relay Coordination in Power System",
+    "Which of these Facts About Arc Flashes are True?"
+  ],
+  "h3": [
+    "Share this post"
+  ],
+  "paragraphs": [
+    "A UAE-based leading medical company, has a 320-acre site accommodating around 700 employees, who work across the biopharmaceutical business or in one of the business support functions (such as finance or HR).",
+    "The site also acts as a hub for some of the company’s commercial operations.",
+    "Carelabs received a query from the company’s facility management to carry out an arc flash risk assessment at their UAE business headquarters. The arc flash study was to be carried out in compliance with UAE Legislation using the benchmark IEEE 1584 and NFPA 70E and to assist them in meeting with the buildings insurers requirements.",
+    "Carelabs carried out a free-of-cost, on-scene pre-evaluation to understand the extent of the scope of works at the company’s commercial headquarters to assess the size of their network. We provided a fixed price quotation for an Arc Flash Risk Assessment Study with project milestones and a completion deadline agreed with the client, with an interim early draft provided in two months to assist the facilities management team.",
+    "Electronic copies of the electrical network one-line drawings were provided to the company to enlarge the electrical network on our tablet making use of the ETAP software preceding the site data collection visit.",
+    "We carried out the discovery phase of the work, collecting and verifying data on the electrical distribution system by comprehensively surveying the site’s electrical systems and differentiating and adjusting the electrical distribution system model wherever necessary on our tablet.",
+    "The details collected and verified during the site data collection process with our tablet andETAPsoftware were downloaded into our ETAP modeling software.",
+    "After the initial site data collection and verification visit, an early provisional draft of the arc flash study was provided in line with the arc flash study requirements.",
+    "Following verification and provision of outstanding data a full arc flash analysis was carried out in the company including:",
+    "Any situations where the 3-phase prospective short circuit current exceeded the tolerable capacity of protective devices were focused in the report. Protection device time v/s current characteristic curves showing any instances of miscoordination were provided. Incident energy levels and arc flash boundary distances were listed for all components included in the scope of the study.",
+    "Recent one-line diagrams for the electrical network were provided to the facilities management team that included Site Data, Fault Study, and Arc Flash Study Analysis.",
+    "Incident energy hazard mitigation analysis was then performed and suitable options and order of magnitude costs were given for the reduction of the incident energy where it was above 8 Cals/cm2.",
+    "Care labs presented the Arc Flash Report via video conferencing with the company.",
+    "Arc Flash labels to the UAE standard were issued for application to the electrical component switchgear and enclosures.",
+    "Introduction Relays are protective elements that help control faults in a power system. Proper relay coordination helps isolate the fault sections from healthier sections in a power system. Being a fundamental part of ensuring reliability and operational continuity, the strategic configuration of protective relays is imperative in the design of a power system. One way […]",
+    "Introduction In electric hazards, arc flashes are among the most dreadful threats. Despite their criticality, many myths surround arc flashes. Although IEEE and NFPA continuously strive to enhance awareness, five to ten arc flashes happen in the USA daily. We, at Carelabs understand the importance of maintaining a healthy electrical infrastructure. To help companies […]"
+  ],
+  "bulletLists": [
+    [
+      "Short circuit analysis",
+      "Protective device coordination",
+      "Arc flash incident energy",
+      "Arc flash boundary distance"
+    ]
+  ],
+  "wordCount": 659,
+  "phones": [],
+  "emails": [],
+  "scrapedAt": "2026-04-22T09:21:17Z"
+}

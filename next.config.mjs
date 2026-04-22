@@ -153,9 +153,22 @@ const nextConfig = {
         // /xx/services/SLUG/ → /xx/SLUG/ (flat redirect)
         { source: `/${cc}/services/:slug`, destination: `/${cc}/:slug/`, permanent: true },
         { source: `/${cc}/services/:slug/`, destination: `/${cc}/:slug/`, permanent: true },
+        // Some WP installs use singular /service/ — same flat target
+        { source: `/${cc}/service/:slug`, destination: `/${cc}/:slug/`, permanent: true },
+        { source: `/${cc}/service/:slug/`, destination: `/${cc}/:slug/`, permanent: true },
         // /xx/case-study/ → /xx/ (countries without case-study page)
         ...pair(`/${cc}/case-study`, `/${cc}/`),
+        // /xx/home-2/ → /xx/ (WP junk homepage duplicates)
+        ...pair(`/${cc}/home-2`, `/${cc}/`),
       ]),
+
+      /* ============================================================ */
+      /*  Blog-index slug variants across countries                    */
+      /* ============================================================ */
+      // MY, VN, TH, SG, ID, PH use /our-blogs/ on WP but our index is /blogs/
+      ...["my", "vn", "th", "sg", "id", "ph"].flatMap((cc) => pair(`/${cc}/our-blogs`, `/${cc}/blogs/`)),
+      // NZ uses /blog/ singular on WP but our index is /blogs/
+      ...pair("/nz/blog", "/nz/blogs/"),
 
       // BR/CO/CL/AR/PE use /services/ plural as their real index, not redirect
       // (handled separately — not in the list above).

@@ -1,0 +1,348 @@
+{
+  "cc": "us",
+  "wpUrl": "https://carelabz.com/us/",
+  "totalPages": 47,
+  "byKind": {
+    "home": 1,
+    "about": 1,
+    "contact": 1,
+    "service": 4,
+    "case-study": 1,
+    "blog": 39
+  },
+  "pages": [
+    {
+      "kind": "home",
+      "slug": "us",
+      "file": "data/wp-extracts\\us-us.json",
+      "wordCount": 889,
+      "h2Count": 9
+    },
+    {
+      "kind": "about",
+      "slug": "about-us",
+      "file": "data/wp-extracts\\us-about-us.json",
+      "wordCount": 283,
+      "h2Count": 0
+    },
+    {
+      "kind": "contact",
+      "slug": "contact-us",
+      "file": "data/wp-extracts\\us-contact-us.json",
+      "wordCount": 171,
+      "h2Count": 0
+    },
+    {
+      "kind": "service",
+      "slug": "arc-flash-study-in-usa",
+      "file": "data/wp-extracts\\us-arc-flash-study-in-usa.json",
+      "wordCount": 552,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "relay-coordination-study-in-usa",
+      "file": "data/wp-extracts\\us-relay-coordination-study-in-usa.json",
+      "wordCount": 547,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "load-flow-analysis-us",
+      "file": "data/wp-extracts\\us-load-flow-analysis-us.json",
+      "wordCount": 583,
+      "h2Count": 5
+    },
+    {
+      "kind": "service",
+      "slug": "short-circuit-analysis",
+      "file": "data/wp-extracts\\us-short-circuit-analysis.json",
+      "wordCount": 771,
+      "h2Count": 5
+    },
+    {
+      "kind": "case-study",
+      "slug": "case-study",
+      "file": "data/wp-extracts\\us-case-study.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "blog",
+      "file": "data/wp-extracts\\us-blog.json",
+      "wordCount": 452,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "working-principles-of-power-quality-analysis-in-the-us",
+      "file": "data/wp-extracts\\us-working-principles-of-power-quality-analysis-in-the-us.json",
+      "wordCount": 738,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-analysis-in-power-system-in-the-us",
+      "file": "data/wp-extracts\\us-harmonic-analysis-in-power-system-in-the-us.json",
+      "wordCount": 992,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-at-turkey-point-2017",
+      "file": "data/wp-extracts\\us-arc-flash-at-turkey-point-2017.json",
+      "wordCount": 564,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "priest-rapids-dam-arc-flash-explosion-2014",
+      "file": "data/wp-extracts\\us-priest-rapids-dam-arc-flash-explosion-2014.json",
+      "wordCount": 590,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "checklist-for-electrical-safety-audit-in-the-usa",
+      "file": "data/wp-extracts\\us-checklist-for-electrical-safety-audit-in-the-usa.json",
+      "wordCount": 984,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "mgm-grand-hotel-fire-1980",
+      "file": "data/wp-extracts\\us-mgm-grand-hotel-fire-1980.json",
+      "wordCount": 548,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards",
+      "file": "data/wp-extracts\\us-test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards.json",
+      "wordCount": 762,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company",
+      "file": "data/wp-extracts\\us-resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company.json",
+      "wordCount": 659,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "which-of-these-facts-about-arc-flashes-are-true",
+      "file": "data/wp-extracts\\us-which-of-these-facts-about-arc-flashes-are-true.json",
+      "wordCount": 1051,
+      "h2Count": 15
+    },
+    {
+      "kind": "blog",
+      "slug": "the-importance-of-relay-coordination-in-power-system",
+      "file": "data/wp-extracts\\us-the-importance-of-relay-coordination-in-power-system.json",
+      "wordCount": 943,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "upgrading-your-power-system-dont-ignore-the-short-circuit-analysis",
+      "file": "data/wp-extracts\\us-upgrading-your-power-system-dont-ignore-the-short-circuit-analysis.json",
+      "wordCount": 867,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "what-are-the-key-insights-obtained-from-load-flow-analysis",
+      "file": "data/wp-extracts\\us-what-are-the-key-insights-obtained-from-load-flow-analysis.json",
+      "wordCount": 859,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "improving-reliability-through-electrical-safety-audit-at-a-retail-company",
+      "file": "data/wp-extracts\\us-improving-reliability-through-electrical-safety-audit-at-a-retail-company.json",
+      "wordCount": 628,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "commercial-electrical-safety-inspection-checklist-for-the-united-states",
+      "file": "data/wp-extracts\\us-commercial-electrical-safety-inspection-checklist-for-the-united-states.json",
+      "wordCount": 1142,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "prioritizing-a-safe-work-environment-at-a-multinational-technology-company",
+      "file": "data/wp-extracts\\us-prioritizing-a-safe-work-environment-at-a-multinational-technology-company.json",
+      "wordCount": 575,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "energy-conservation-by-auditing-power-quality",
+      "file": "data/wp-extracts\\us-energy-conservation-by-auditing-power-quality.json",
+      "wordCount": 605,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "three-mile-island-blast-1979",
+      "file": "data/wp-extracts\\us-three-mile-island-blast-1979.json",
+      "wordCount": 556,
+      "h2Count": 2
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-do-an-electrical-switchgear-risk-assessment-in-usa",
+      "file": "data/wp-extracts\\us-how-to-do-an-electrical-switchgear-risk-assessment-in-usa.json",
+      "wordCount": 1024,
+      "h2Count": 6
+    },
+    {
+      "kind": "blog",
+      "slug": "arc-flash-study-a-grandeur-or-mandate",
+      "file": "data/wp-extracts\\us-arc-flash-study-a-grandeur-or-mandate.json",
+      "wordCount": 1707,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-condition-installation-report-by-third-party-company-in-the-usa",
+      "file": "data/wp-extracts\\us-electrical-condition-installation-report-by-third-party-company-in-the-usa.json",
+      "wordCount": 949,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states",
+      "file": "data/wp-extracts\\us-why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states.json",
+      "wordCount": 902,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa",
+      "file": "data/wp-extracts\\us-need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa.json",
+      "wordCount": 971,
+      "h2Count": 7
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-safety-inspection-in-usa",
+      "file": "data/wp-extracts\\us-importance-of-electrical-safety-inspection-in-usa.json",
+      "wordCount": 843,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-safety-audit-for-companies-in-the-usa",
+      "file": "data/wp-extracts\\us-importance-of-electrical-safety-audit-for-companies-in-the-usa.json",
+      "wordCount": 904,
+      "h2Count": 5
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-electrical-installation-condition-report-ecir-in-the-us",
+      "file": "data/wp-extracts\\us-importance-of-electrical-installation-condition-report-ecir-in-the-us.json",
+      "wordCount": 865,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states",
+      "file": "data/wp-extracts\\us-importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states.json",
+      "wordCount": 971,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use",
+      "file": "data/wp-extracts\\us-how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use.json",
+      "wordCount": 701,
+      "h2Count": 3
+    },
+    {
+      "kind": "blog",
+      "slug": "guide-to-perform-power-quality-analysis-in-the-united-states",
+      "file": "data/wp-extracts\\us-guide-to-perform-power-quality-analysis-in-the-united-states.json",
+      "wordCount": 969,
+      "h2Count": 4
+    },
+    {
+      "kind": "blog",
+      "slug": "privacy-policy",
+      "file": "data/wp-extracts\\us-privacy-policy.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "terms-and-conditions",
+      "file": "data/wp-extracts\\us-terms-and-conditions.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "harmonic-study-and-analysis-in-usa",
+      "file": "data/wp-extracts\\us-harmonic-study-and-analysis-in-usa.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "power-quality-analysis-in-usa",
+      "file": "data/wp-extracts\\us-power-quality-analysis-in-usa.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "motor-start-analysis-in-usa",
+      "file": "data/wp-extracts\\us-motor-start-analysis-in-usa.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "power-system-study-and-analysis-in-usa",
+      "file": "data/wp-extracts\\us-power-system-study-and-analysis-in-usa.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-safety-inspection-in-usa",
+      "file": "data/wp-extracts\\us-electrical-safety-inspection-in-usa.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "casestudy",
+      "file": "data/wp-extracts\\us-casestudy.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "electrical-safety",
+      "file": "data/wp-extracts\\us-electrical-safety.json",
+      "wordCount": 758,
+      "h2Count": 8
+    },
+    {
+      "kind": "blog",
+      "slug": "expert-insights",
+      "file": "data/wp-extracts\\us-expert-insights.json",
+      "wordCount": 758,
+      "h2Count": 8
+    }
+  ],
+  "skipped": {
+    "service-legacy": 2
+  },
+  "discovered": 75
+}

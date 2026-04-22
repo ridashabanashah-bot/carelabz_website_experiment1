@@ -2,67 +2,43 @@
   "country": "NL",
   "wp_base": "https://carelabz.com/nl/",
   "total_pages": 21,
-  "pass": 10,
-  "fail": 11,
+  "pass": 20,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 47.6,
+  "pass_rate": 95.2,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/nl/the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 472,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 676,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 524,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/how-can-the-reliability-and-performance-of-commercial-motors-be-evaluated/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/how-can-the-reliability-and-performance-of-commercial-motors-be-evaluated/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 578,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/working-principles-for-power-quality-in-netherlands/",
@@ -81,72 +57,42 @@
     {
       "wp_url": "https://carelabz.com/nl/how-to-conduct-an-analysis-of-power-quality-in-netherlands/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/how-to-conduct-an-analysis-of-power-quality-in-netherlands/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 597,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/netherlands-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/netherlands-power-system-harmonic-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 408,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/why-harmonic-analysis-and-study-crucial-for-dutch-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/why-harmonic-analysis-and-study-crucial-for-dutch-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 413,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/netherlands-arc-flash-analysis-a-comprehensive-guide/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/netherlands-arc-flash-analysis-a-comprehensive-guide/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 309,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/importance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/importance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 538,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/",
@@ -167,16 +113,10 @@
     {
       "wp_url": "https://carelabz.com/nl/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nl/blog/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 181,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nl/case-study/",

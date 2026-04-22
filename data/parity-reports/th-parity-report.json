@@ -2,53 +2,35 @@
   "country": "TH",
   "wp_base": "https://carelabz.com/th/",
   "total_pages": 24,
-  "pass": 5,
-  "fail": 19,
+  "pass": 19,
+  "fail": 5,
   "skip": 0,
-  "pass_rate": 20.8,
+  "pass_rate": 79.2,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/th/short-circuit-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/short-circuit-analysis/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 267,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/load-flow-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/load-flow-analysis/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 274,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/relay-coordination-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/relay-coordination-study/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 640,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/arc-flash-study/",
@@ -61,156 +43,90 @@
     {
       "wp_url": "https://carelabz.com/th/arc-flash-safety-thailand-data-centers-compliances-challenges/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/arc-flash-safety-thailand-data-centers-compliances-challenges/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 705,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/analyze-and-assess-electric-motor-performance-in-compliance-with-thailand-legislation/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/analyze-and-assess-electric-motor-performance-in-compliance-with-thailand-legislation/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 627,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 501,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 761,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/the-importance-of-load-flow-and-short-circuit-analysis-for-thailand-companies/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/the-importance-of-load-flow-and-short-circuit-analysis-for-thailand-companies/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 557,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/how-to-perform-a-study-of-power-quality-in-thailand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/how-to-perform-a-study-of-power-quality-in-thailand/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 677,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/power-quality-working-principles-in-thailand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/power-quality-working-principles-in-thailand/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 883,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/thailand-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/thailand-power-system-harmonic-analysis/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 490,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/why-is-harmonic-analysis-and-study-so-important-for-thai-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/why-is-harmonic-analysis-and-study-so-important-for-thai-businesses/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 474,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 546,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/arc-flash-analysis-step-by-step-instructions-for-thailand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/th/arc-flash-analysis-step-by-step-instructions-for-thailand/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 411,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/th/",

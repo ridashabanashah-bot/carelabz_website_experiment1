@@ -2,10 +2,10 @@
   "country": "ZA",
   "wp_base": "https://carelabz.com/za/",
   "total_pages": 21,
-  "pass": 8,
-  "fail": 13,
+  "pass": 9,
+  "fail": 12,
   "skip": 0,
-  "pass_rate": 38.1,
+  "pass_rate": 42.9,
   "skip_blogs": false,
   "results": [
     {
@@ -182,7 +182,7 @@
       "wp_url": "https://carelabz.com/za/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/blogs/",
       "status": "PASS",
-      "new_word_count": 372,
+      "new_word_count": 375,
       "new_status": 200,
       "issues": []
     },
@@ -227,16 +227,10 @@
     {
       "wp_url": "https://carelabz.com/za/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/harmonic-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 450,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/motor-start-analysis/",

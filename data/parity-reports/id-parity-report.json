@@ -2,53 +2,35 @@
   "country": "ID",
   "wp_base": "https://carelabz.com/id/",
   "total_pages": 28,
-  "pass": 11,
-  "fail": 17,
+  "pass": 17,
+  "fail": 11,
   "skip": 0,
-  "pass_rate": 39.3,
+  "pass_rate": 60.7,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/id/arc-flash-studies-a-key-to-ensuring-uptime-in-indonesian-data-centers/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/arc-flash-studies-a-key-to-ensuring-uptime-in-indonesian-data-centers/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 763,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/analyze-and-assess-electric-motor-performance-in-compliance-with-indonesian-legislation/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/analyze-and-assess-electric-motor-performance-in-compliance-with-indonesian-legislation/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 561,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 435,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/the-importance-of-load-flow-and-short-circuit-analysis-for-indonesian-companies/",
@@ -67,16 +49,10 @@
     {
       "wp_url": "https://carelabz.com/id/how-to-perform-a-study-of-power-quality-in-indonesia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/how-to-perform-a-study-of-power-quality-in-indonesia/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 615,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/power-quality-working-principles-in-indonesia/",
@@ -95,16 +71,10 @@
     {
       "wp_url": "https://carelabz.com/id/indonesian-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/indonesian-power-system-harmonic-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 427,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
@@ -137,16 +107,10 @@
     {
       "wp_url": "https://carelabz.com/id/arc-flash-analysis-step-by-step-instructions-for-indonesia/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/id/arc-flash-analysis-step-by-step-instructions-for-indonesia/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 345,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/id/why-is-harmonic-analysis-and-study-so-important-for-indonesian-businesses/",

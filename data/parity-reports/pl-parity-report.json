@@ -2,123 +2,75 @@
   "country": "PL",
   "wp_base": "https://carelabz.com/pl/",
   "total_pages": 20,
-  "pass": 8,
-  "fail": 12,
+  "pass": 19,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 40.0,
+  "pass_rate": 95.0,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/pl/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/how-are-the-dependability-and-performance-of-commercial-motors-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 672,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 735,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 678,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/why-analysis-of-the-power-system-considers-relay-coordination-short-circuits-and-load-flow/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 846,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/principles-of-operation-for-the-power-quality-in-poland/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/principles-of-operation-for-the-power-quality-in-poland/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 900,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/how-to-analyze-the-power-quality-in-poland/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/how-to-analyze-the-power-quality-in-poland/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 690,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/why-are-harmonic-research-and-analysis-so-crucial-to-polish-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/why-are-harmonic-research-and-analysis-so-crucial-to-polish-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 635,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/analysis-of-the-polish-power-systems-harmony/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/analysis-of-the-polish-power-systems-harmony/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 629,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/polish-arc-flash-analysis-a-complete-guide/",
@@ -137,16 +89,10 @@
     {
       "wp_url": "https://carelabz.com/pl/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/analysis-of-arc-flash-hazards-and-mitigation-techniques/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 750,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/",
@@ -199,16 +145,10 @@
     {
       "wp_url": "https://carelabz.com/pl/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/power-system-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 584,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/pl/power-quality-analysis/",
@@ -229,16 +169,10 @@
     {
       "wp_url": "https://carelabz.com/pl/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/pl/harmonic-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 409,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     }
   ]
 }

@@ -2,25 +2,19 @@
   "country": "AT",
   "wp_base": "https://carelabz.com/at/",
   "total_pages": 21,
-  "pass": 10,
-  "fail": 11,
+  "pass": 19,
+  "fail": 2,
   "skip": 0,
-  "pass_rate": 47.6,
+  "pass_rate": 90.5,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/at/the-importance-of-load-flow-and-short-circuit-analysis-for-austrian-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/the-importance-of-load-flow-and-short-circuit-analysis-for-austrian-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 487,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
@@ -39,100 +33,58 @@
     {
       "wp_url": "https://carelabz.com/at/verify-that-electrical-motor-performance-complies-with-austrian-regulations-by-inspecting-and-confirming/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/verify-that-electrical-motor-performance-complies-with-austrian-regulations-by-inspecting-and-confirming/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 545,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 586,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/how-to-conduct-an-analysis-of-power-quality-in-austria/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/how-to-conduct-an-analysis-of-power-quality-in-austria/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 630,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/working-principles-for-power-quality-in-austria/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/working-principles-for-power-quality-in-austria/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 621,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/austrian-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/austrian-power-system-harmonic-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 436,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/why-harmonic-analysis-and-study-crucial-for-austrian-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/why-harmonic-analysis-and-study-crucial-for-austrian-businesses/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 426,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/austrian-arc-flash-analysis-a-comprehensive-guide/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/austrian-arc-flash-analysis-a-comprehensive-guide/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 366,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
@@ -167,16 +119,10 @@
     {
       "wp_url": "https://carelabz.com/at/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/at/blog/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 182,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/at/case-study/",

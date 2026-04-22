@@ -2,10 +2,10 @@
   "country": "TR",
   "wp_base": "https://carelabz.com/tr/",
   "total_pages": 20,
-  "pass": 17,
-  "fail": 3,
+  "pass": 19,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 85.0,
+  "pass_rate": 95.0,
   "skip_blogs": false,
   "results": [
     {
@@ -121,16 +121,10 @@
     {
       "wp_url": "https://carelabz.com/tr/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/harmonic-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 549,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tr/motor-start-analysis/",
@@ -151,16 +145,10 @@
     {
       "wp_url": "https://carelabz.com/tr/power-system-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/power-system-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 719,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/tr/services/",
@@ -182,7 +170,7 @@
       "wp_url": "https://carelabz.com/tr/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/tr/blogs/",
       "status": "PASS",
-      "new_word_count": 342,
+      "new_word_count": 355,
       "new_status": 200,
       "issues": []
     }

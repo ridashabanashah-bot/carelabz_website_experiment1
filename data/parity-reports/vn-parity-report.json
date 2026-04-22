@@ -2,37 +2,31 @@
   "country": "VN",
   "wp_base": "https://carelabz.com/vn/",
   "total_pages": 30,
-  "pass": 9,
-  "fail": 21,
+  "pass": 10,
+  "fail": 20,
   "skip": 0,
-  "pass_rate": 30.0,
+  "pass_rate": 33.3,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/vn/blogs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/blogs/",
-      "status": "FAIL",
-      "new_word_count": 91,
+      "status": "PASS",
+      "new_word_count": 364,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "WORD_COUNT",
-          "severity": "HIGH",
-          "detail": "Main content only 91 words - page may be empty or broken"
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/vn/analyze-and-assess-electric-motor-performance-in-compliance-with-vietnam-legislation/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/analyze-and-assess-electric-motor-performance-in-compliance-with-vietnam-legislation/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 65,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 65 words - page may be empty or broken"
         }
       ]
     },
@@ -40,13 +34,13 @@
       "wp_url": "https://carelabz.com/vn/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 66,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 66 words - page may be empty or broken"
         }
       ]
     },
@@ -54,13 +48,13 @@
       "wp_url": "https://carelabz.com/vn/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 72,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 72 words - page may be empty or broken"
         }
       ]
     },
@@ -68,13 +62,13 @@
       "wp_url": "https://carelabz.com/vn/the-importance-of-load-flow-and-short-circuit-analysis-for-vietnamese-companies/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/the-importance-of-load-flow-and-short-circuit-analysis-for-vietnamese-companies/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 70,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 70 words - page may be empty or broken"
         }
       ]
     },
@@ -82,13 +76,13 @@
       "wp_url": "https://carelabz.com/vn/how-to-perform-a-study-of-power-quality-in-vietnam/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/how-to-perform-a-study-of-power-quality-in-vietnam/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 68,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 68 words - page may be empty or broken"
         }
       ]
     },
@@ -96,13 +90,13 @@
       "wp_url": "https://carelabz.com/vn/power-quality-working-principles-in-vietnam/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/power-quality-working-principles-in-vietnam/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 61,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 61 words - page may be empty or broken"
         }
       ]
     },
@@ -110,13 +104,13 @@
       "wp_url": "https://carelabz.com/vn/vietnam-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/vietnam-power-system-harmonic-analysis/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 59,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 59 words - page may be empty or broken"
         }
       ]
     },
@@ -124,13 +118,13 @@
       "wp_url": "https://carelabz.com/vn/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 65,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 65 words - page may be empty or broken"
         }
       ]
     },
@@ -138,13 +132,13 @@
       "wp_url": "https://carelabz.com/vn/arc-flash-analysis-step-by-step-instructions-for-vietnam/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/arc-flash-analysis-step-by-step-instructions-for-vietnam/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 63,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 63 words - page may be empty or broken"
         }
       ]
     },
@@ -152,13 +146,13 @@
       "wp_url": "https://carelabz.com/vn/why-is-harmonic-analysis-and-study-so-important-for-vietnam-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/why-is-harmonic-analysis-and-study-so-important-for-vietnam-businesses/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 67,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 67 words - page may be empty or broken"
         }
       ]
     },
@@ -166,13 +160,13 @@
       "wp_url": "https://carelabz.com/vn/ensuring-electrical-safety-in-vietnam-arc-flash-study-and-compliance-with-cr-mark-standards/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/ensuring-electrical-safety-in-vietnam-arc-flash-study-and-compliance-with-cr-mark-standards/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 70,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 70 words - page may be empty or broken"
         }
       ]
     },
@@ -180,13 +174,13 @@
       "wp_url": "https://carelabz.com/vn/relay-coordination-study-to-ensure-power-stability-in-vietnams-electronics-sector/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/relay-coordination-study-to-ensure-power-stability-in-vietnams-electronics-sector/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 66,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 66 words - page may be empty or broken"
         }
       ]
     },
@@ -194,13 +188,13 @@
       "wp_url": "https://carelabz.com/vn/load-flow-analysis-for-reliable-solar-wind-power-in-vietnam/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/load-flow-analysis-for-reliable-solar-wind-power-in-vietnam/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 69,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 69 words - page may be empty or broken"
         }
       ]
     },
@@ -208,13 +202,13 @@
       "wp_url": "https://carelabz.com/vn/etap-short-circuit-analysis-to-secure-vietnams-manufacturing-hubs/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/vn/etap-short-circuit-analysis-to-secure-vietnams-manufacturing-hubs/",
       "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
+      "new_word_count": 64,
+      "new_status": 200,
       "issues": [
         {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
+          "field": "WORD_COUNT",
+          "severity": "HIGH",
+          "detail": "Main content only 64 words - page may be empty or broken"
         }
       ]
     },
