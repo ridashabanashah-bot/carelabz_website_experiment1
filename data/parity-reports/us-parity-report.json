@@ -1,0 +1,1816 @@
+{
+  "country": "US",
+  "wp_base": "https://carelabz.com/us/",
+  "total_pages": 45,
+  "pass": 0,
+  "fail": 45,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/us/blog/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/blog/",
+      "status": "FAIL",
+      "wp_word_count": 573,
+      "new_word_count": 254,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Stay Updated: Your Guide to Power System Study and Analysis",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs USA",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Power up your knowledge with our comprehensive blogs. Explore the latest industry updates and learn about essential studies like arc flash and relay coordination.",
+          "new_site": "Expert insights on electrical safety, power system study and analysis, arc flash studies, and compliance for US facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "The Importance of Relay Coordination in Power System",
+            "Redefine Electrical Safety For a Safer Tomorrow."
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "573 words",
+          "new_site": "254 words (44% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Blog Power up your Knowledge with our ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "admin • December 31, 2024 Upgrading Your Power System? Don’t Ignore the Short Circuit analysis. Introduction A short circuit, especially in a large po...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Experience value-laden electrical safety inspections and arc flash study services tailored to your needs across multiple regions and industries in Can...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Please complete the form to schedule a FREE consultation....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Country * —Please choose an option— Select your Country United States Mexico Canada Brazil Argentina United Kingdom Ireland France Germany Italy Spain...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/step-by-step-guide-to-perform-arc-flash-analysis-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/step-by-step-guide-to-perform-arc-flash-analysis-in-the-us/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/working-principles-of-power-quality-analysis-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/working-principles-of-power-quality-analysis-in-the-us/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/harmonic-analysis-in-power-system-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/harmonic-analysis-in-power-system-in-the-us/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/arc-flash-at-turkey-point-2017/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/arc-flash-at-turkey-point-2017/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/priest-rapids-dam-arc-flash-explosion-2014/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/priest-rapids-dam-arc-flash-explosion-2014/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/checklist-for-electrical-safety-audit-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/checklist-for-electrical-safety-audit-in-the-usa/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/mgm-grand-hotel-fire-1980/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/mgm-grand-hotel-fire-1980/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/test-and-verify-efficiency-of-electrical-motor-as-per-national-international-standards/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/which-of-these-facts-about-arc-flashes-are-true/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/which-of-these-facts-about-arc-flashes-are-true/",
+      "status": "FAIL",
+      "wp_word_count": 1169,
+      "new_word_count": 1177,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Uncover the realities of arc flashes. Carelabs provides essential arc flash analysis in the USA to ensure workplace safety across industries.",
+          "new_site": "Test your knowledge about arc flash facts. Learn which beliefs about arc flash hazards and arc flash analysis in the USA are true, which are myths, and why it matters for workplace safety.",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Introduction",
+            "The Importance of Relay Coordination in Power System",
+            "Fact 2: Arc Flash happens only in High Voltage Systems",
+            "Fact 5: Arc flash PPE can save lives",
+            "Fact 8: Arc Flash Training is only for electricians",
+            "What is an Arc flash?",
+            "Fact 6: Arc Flash Boundaries help workers protect them from getting injured",
+            "Sign up for our Newsletter",
+            "Fact 10: The biggest misconception- An arc flash study or analysis is only needed when there are any previous incidents.",
+            "The Carelabs’ role in Arc flash Analysis in the USA",
+            "Fact 3: Arc Flash hazard can be completely prevented",
+            "Fact 1: Arc flash is an explosive release of energy",
+            "Fact 7: Regular maintenance reduces the risks of arc flashes",
+            "Connect with Us!",
+            "Fact 9: The Biggest Cause for Arc Flashes is Human Errors",
+            "Fact 4: Arc Flash Labels are optional"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts Electrical Safety , Exp...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "We, at Carelabs understand the importance of maintaining a healthy electrical infrastructure. To help companies accomplish their workplace safety goal...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Let us first understand what arc flashes are and debunk the myths one after one....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "An electric arc is formed when a current takes a nonprescribed path through the air between two conductors. When the electric arc persists, arc flashe...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "The common characteristics of arc flashes are:...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/the-importance-of-relay-coordination-in-power-system/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/the-importance-of-relay-coordination-in-power-system/",
+      "status": "FAIL",
+      "wp_word_count": 1058,
+      "new_word_count": 824,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Which of these Facts About Arc Flashes are True?",
+            "Early Signs of Relay Coordination Changes in the System",
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Carelabs, USA",
+            "Introduction"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts blog , Electrical Safet...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Being a fundamental part of ensuring reliability and operational continuity, the strategic configuration of protective relays is imperative in the des...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "One way to ensure that the relays are working properly is to conduct a relay coordination study at different stages of the power system’s lifecycle....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "The importance of relay coordination study in a power system can be summarized as:...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "If the relays in a power system don’t work in coordination, the chances of disruptions in the system escalate. On the other hand, proper coordination ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/upgrading-your-power-system-dont-ignore-the-short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/upgrading-your-power-system-dont-ignore-the-short-circuit-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 984,
+      "new_word_count": 1203,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Don’t overlook short circuit analysis when upgrading your power system in the USA. Our services help identify risks and ensure compliance and safety.",
+          "new_site": "Don't overlook short circuit analysis when upgrading your power system in the USA. Our services help identify risks and ensure compliance and safety.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Upgrading Your Power System? Don’t Ignore the Short Circuit analysis.",
+          "new_site": "Short Circuit Analysis: Key to Upgrading Your Power System",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Why prioritize a short circuit analysis in the USA?",
+            "The Importance of Relay Coordination in Power System",
+            "Which of these Facts About Arc Flashes are True?",
+            "What are the risks of skipping short circuit analysis during system Upgrades?",
+            "Sign up for our Newsletter",
+            "Why is a short circuit study important for upgrading a power system?",
+            "What exactly is a short circuit analysis?",
+            "What are the steps in short circuit analysis during system upgrades?",
+            "Connect with Us!",
+            "Introduction"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts blog , Electrical Safet...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Short circuit analysis is a study performed on a power system to measure how it withstands faults. The study reveals potential vulnerabilities in the ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Carelabs offers specialized Short circuit analysis for industries in the USA. These services intend to help industries ensure the safety and peak perf...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Upgrading a power system equates to adding more system components which might affect the existing protection schemes. Changes in fault current levels ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a short circuit analysis, the above concerns can be effectively addressed along with the following benefits:...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/what-are-the-key-insights-obtained-from-load-flow-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/what-are-the-key-insights-obtained-from-load-flow-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 979,
+      "new_word_count": 1174,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "",
+          "new_site": "Discover the critical insights from load flow analysis for power system optimization in the USA.",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Carelabs’ advantage in load flow analysis in the USA",
+            "How can we use this information from Load Flow Analysis in the USA?",
+            "The Importance of Relay Coordination in Power System",
+            "Importance of Load Flow Analysis in the USA",
+            "Which of these Facts About Arc Flashes are True?",
+            "What is Load Flow Analysis",
+            "Sign up for our Newsletter",
+            "Information Obtained from Load Flow Analysis",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts Electrical Safety , Exp...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Carelabs is a power system consultant company. We offer a range of studies and analyses for power systems across the USA, one among them being the loa...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "A load flow analysis ensures that the current and voltage in the system are well within the prescribed limits. The main outcomes of the power flow stu...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "This information helps identify where the voltage levels are fluctuating. This is an important date that helps in regulating voltage and maintaining p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Load Flow analysis gives us the direction of the flow of power in transmission lines. This information tells us where power optimization is needed to ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/improving-reliability-through-electrical-safety-audit-at-a-retail-company/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/commercial-electrical-safety-inspection-checklist-for-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/commercial-electrical-safety-inspection-checklist-for-the-united-states/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/prioritizing-a-safe-work-environment-at-a-multinational-technology-company/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/energy-conservation-by-auditing-power-quality/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/energy-conservation-by-auditing-power-quality/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/three-mile-island-blast-1979/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/three-mile-island-blast-1979/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-do-an-electrical-switchgear-risk-assessment-in-usa/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/arc-flash-study-a-grandeur-or-mandate/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/arc-flash-study-a-grandeur-or-mandate/",
+      "status": "FAIL",
+      "wp_word_count": 1815,
+      "new_word_count": 1079,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study- a grandeur or mandate?",
+          "new_site": "Arc Flash Study - a grandeur or mandate?",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Final word",
+            "Standards for Arc Flash Study and Analysis",
+            "The Importance of Relay Coordination in Power System",
+            "What exactly is an Arc Flash?",
+            "Some of the arguments why facilities think they don’t need an Arc Flash Study and Analysis",
+            "The Partnership for Electrical Safety invigorates a guidance report from OSHA on comfortable arc-rated clothing in agreement with NFPA 70E standards.",
+            "Which of these Facts About Arc Flashes are True?",
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Who can perform the Arc Flash Study?"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1815 words",
+          "new_site": "1079 words (59% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts blog 8 min read August ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "The PES is an organization in the USA focusing on educating employees on safety standards working near electrical equipment. The organization works to...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Facility owners often argue about why they needn’t conduct an Arc Flash Study and Analysis every five years. The whys and wherefores include the fact ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Every year the EFSI( Electrical Safety Foundation International) celebrates May month as the electrical safety month of the year. This initiative is u...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/electrical-condition-installation-report-by-third-party-company-in-the-usa/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/why-is-harmonic-study-and-analysis-important-for-companies-in-the-united-states/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/need-or-necessity-electrical-switchgear-risk-assessment-in-the-usa/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-safety-inspection-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-safety-inspection-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 958,
+      "new_word_count": 1203,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Importance of Electrical Safety Inspection in USA | Carelabs",
+          "new_site": "Short Circuit Analysis: Key to Upgrading Your Power System",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "With an electrical safety inspection in the US, you can prevent serious and potentially dangerous damage to your property. In addition, you can safeguard your personnel from the risks of an electrical hazard.",
+          "new_site": "Don't overlook short circuit analysis when upgrading your power system in the USA. Our services help identify risks and ensure compliance and safety.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Importance of Electrical Safety Inspection in the USA",
+          "new_site": "Short Circuit Analysis: Key to Upgrading Your Power System",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Four Stages of Electrical Safety Inspection:",
+            "Which of these Facts About Arc Flashes are True?",
+            "Importance of periodic electrical safety inspection for a company in the USA:",
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Electrical Safety Standard Code:"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts blog 4 min read May 29,...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "A faulty electrical infrastructure not only causes a monetary loss but may also cause manpower loss for a company. Fatal and non-fatal accidents due t...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "All such unprecedented electrical failures can be avoided by conducting a periodic electrical safety inspection. Carelabs offers a detailed electrical...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "According to an OSHA report, 40% of building fire accidents in America occur due to electricity, more than 60% of electricians got shocked while on th...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "All these unfortunate events can be minimized by performing an electrical safety audit....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-safety-audit-for-companies-in-the-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-safety-audit-for-companies-in-the-usa/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-electrical-installation-condition-report-ecir-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-electrical-installation-condition-report-ecir-in-the-us/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/importance-of-arc-flash-hazard-analysis-and-mitigation-in-the-united-states/",
+      "status": "FAIL",
+      "wp_word_count": 1087,
+      "new_word_count": 1177,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Importance of Arc Flash Hazard Analysis and Mitigation in the US",
+          "new_site": "Which of these Facts About Arc Flashes are True? - Carelabs US",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "The primary reason to perform an arc flash hazard analysis is to increase the safety of workers and reduce arc flash incidents. Carelabs performs Arc Flash Hazard Analysis and Mitigation using the ETAP software.",
+          "new_site": "Test your knowledge about arc flash facts. Learn which beliefs about arc flash hazards and arc flash analysis in the USA are true, which are myths, and why it matters for workplace safety.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Importance of Arc Flash Hazard Analysis and Mitigation in the US",
+          "new_site": "Which of these Facts About Arc Flashes are True?",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Understanding Arc Flash Mitigation",
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Understanding Arc Flash Hazard:"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC View all posts blog 4 min read May 28,...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Commercial and industrial electrical systems are widely prone to arc flash hazards. In the United States, it was found that on an average 5-10 arc fla...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "The arc flash temperature ranges between 2,800 to 19,000 °C. This temperature is greater than the surface temperature of the sun (5,505°C) and can cau...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "The objective and services provided by Carelabs to perform arc flash hazard analysis and mitigation are:...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc flash victims’ injuries are not limited to burns from the intense heat but can be a consequence of other non-thermal characteristics, such as the ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-perform-power-system-study-and-analysis-for-load-flow-short-circuit-and-relay-coordination-for-a-company-in-the-us/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/guide-to-perform-power-quality-analysis-in-the-united-states/",
+      "status": "PAGE_MISSING",
+      "issues": [
+        {
+          "field": "PAGE",
+          "severity": "CRITICAL",
+          "wordpress": "EXISTS",
+          "new_site": "404",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/",
+      "status": "FAIL",
+      "wp_word_count": 999,
+      "new_word_count": 645,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Which of these Facts About Arc Flashes are True?",
+            "Carelabs- Intelligent Power System Analysis for Sustainable Progress",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "999 words",
+          "new_site": "645 words (65% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Timely actions result in a minimal reaction. Carelabs’ intelligent power system analysis and optimization can help you save costly repairs and exponen...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/case-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/case-study/",
+      "status": "FAIL",
+      "wp_word_count": 867,
+      "new_word_count": 91,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Case Study - Carelabs US",
+          "new_site": "Case Studies | Carelabs US",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs provide electric installation safety inspection for businesses across US. Get your electrical system inspected and fixed for any faults by Carelabs engineers today!",
+          "new_site": "Explore how Carelabs helps clients across the US achieve electrical safety compliance and operational excellence.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Case Studies",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "867 words",
+          "new_site": "91 words (10% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/harmonic-study-and-analysis-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/harmonic-study-and-analysis-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 873,
+      "new_word_count": 521,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Harmonic Study and Analysis for Companies in USA - Carelabs US",
+          "new_site": "Harmonic Study and Analysis for Companies in USA - Carelabs",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Harmonic Study & Analysis Services in the USA",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "873 words",
+          "new_site": "521 words (60% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/power-quality-analysis-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/power-quality-analysis-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 872,
+      "new_word_count": 543,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Carelabs offers professional power quality analysis for companies across the USA. Safeguard your employees & property by becoming NFPA and OSHA compliant.",
+          "new_site": "Carelabs offers professional power quality analysis for companies across the USA. Safeguard your employees and property by becoming NFPA and OSHA compliant.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Power Quality Analysis Services in the USA",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "872 words",
+          "new_site": "543 words (62% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/motor-start-analysis-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/motor-start-analysis-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 871,
+      "new_word_count": 555,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Motor Start Analysis Services in the USA",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "871 words",
+          "new_site": "555 words (64% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/power-system-study-and-analysis-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/power-system-study-and-analysis-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 872,
+      "new_word_count": 551,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Power System Study & Analysis in the USA",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "872 words",
+          "new_site": "551 words (63% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/services/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/services/",
+      "status": "FAIL",
+      "wp_word_count": 275,
+      "new_word_count": 342,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Achieve Compliance with OSHA and IEEE Standards",
+          "new_site": "Achieve Compliance with OSHA and IEEE Standards | Carelabs USA",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Discover our comprehensive electrical system contingency plans, ensuring safety and compliance with USA standards. Optimize your power systems with expert analysis.",
+          "new_site": "Discover our comprehensive electrical safety services ensuring compliance with USA standards. Arc flash studies, short circuit analysis, and power system engineering.",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Comprehensive Electrical System Contingency Plan"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC What do we provide? Comprehensive Elec...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Leverage our professional expertise in power system analysis to shield your critical structure. Adopt proactive methods to perfect your power systems ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Load Flow Analysis US View service details Relay Coordination Study In USA View service details Arc Flash Study in USA View service details Don’t wast...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Please complete the form to schedule a FREE consultation....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Country * —Please choose an option— Select your Country United States Mexico Canada Brazil Argentina United Kingdom Ireland France Germany Italy Spain...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/contact-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/contact-us/",
+      "status": "FAIL",
+      "wp_word_count": 292,
+      "new_word_count": 694,
+      "issues": [
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Let’s Connect, We’re Here to Help You",
+          "new_site": "Let's Connect, We're Here to Help You",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Sign up for our Newsletter",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Let’s chat Let’s Connect, We’re Here t...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Sales enquiries Contact our sales team to learn more about our electrical Safety solutions....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Client support Let us know how we can support you....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Our solutions are not limited to one region or country. We have a global digital presence on 6 continents. Locate us and connect with us for innovativ...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "We offer power system study and analysis services in the USA that include: Arc flash analysis Short Circuit Analysis Relay Coordination Study Load flo...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/electrical-safety-inspection-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/electrical-safety-inspection-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 872,
+      "new_word_count": 551,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "Expert electrical safety inspection service providers near me in USA",
+          "new_site": "Expert Electrical Safety Inspection Service Providers Near You in USA",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Find expert electrical safety inspection service providers near you in the USA. We help you to maintain your facility as per NFPA & OSHA.",
+          "new_site": "Find expert electrical safety inspection service providers near you in the USA. We help you maintain your facility as per NFPA & OSHA standards.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Power System Consultants: Your Strategic Ally for Energy Management Solutions in the USA",
+          "new_site": "Electrical Safety Inspection Services in the USA",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Relay Coordination in Power System",
+            "Customer Queries",
+            "Which of these Facts About Arc Flashes are True?",
+            "Value-adding solutions for diverse industries",
+            "Sign up for our Newsletter",
+            "Trusted by Industry Leaders",
+            "Comprehensive Project Reports Beyond Compliance",
+            "Actionable Power System Solutions Beyond Analysis",
+            "Power System Consulting in the USA for Every Industry",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "872 words",
+          "new_site": "551 words (63% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Power System Consultants: Your Strateg...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "With a mission to change the outlook of proactive power system management in the USA, we helped countless clients accomplish scalable results. Some of...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "compliance with NFPA, OSHA, and IEEE standards...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Your safety is our commitment. With this as our key focus, we bring customized solutions that align with the industry specifications. Our innovative p...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/about-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/about-us/",
+      "status": "FAIL",
+      "wp_word_count": 400,
+      "new_word_count": 353,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Sign up for our Newsletter",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Who are we? We Bridge Electrical Safet...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Carelabs started with the vision to redefine electrical safety through proactive power system solutions. Time and again, our innovative solutions tran...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "100% Guaranteed Engineering Excellence...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "3+ registered offices across UAE, India, and North America....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "50+ Countries have our digital presence...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/service/arc-flash-study-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/arc-flash-study-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 665,
+      "new_word_count": 567,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Industries we Empower",
+            "Sign up for our Newsletter",
+            "Workplace Safety",
+            "Key Insights into Care Lab's Arc Flash Analysis in the USA",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC Safety...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Workspace safety Regulatory Compliance Equipment Damage Costly Downtime Proper PPE selection Safety Assured with our support...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/service/relay-coordination-study-in-usa/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/relay-coordination-study-in-usa/",
+      "status": "FAIL",
+      "wp_word_count": 662,
+      "new_word_count": 549,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Industries we Empower",
+            "Key Insights into Care Lab’s Relay Coordination Study in the USA",
+            "Sign up for our Newsletter",
+            "Connect with Us!",
+            "Safety of personnel"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC System...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Safety of personnel Our relay coordination study in the USA ensures that fault is isolated at the right location, thereby enhancing safety by mitigati...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Safety of personnel Efficiency Compliance Cost-reduction Predictive system behavior Safety Assured with our support...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/service/load-flow-analysis-us/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/load-flow-analysis-us/",
+      "status": "FAIL",
+      "wp_word_count": 698,
+      "new_word_count": 549,
+      "issues": [
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Achieve optimal power distribution and voltage stability with our load flow analysis Enhance your power systems with precision load flow analysis in the USA.",
+          "new_site": "Achieve optimal power distribution and voltage stability with our load flow analysis. Enhance your power systems with precision load flow analysis in the USA.",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Industries we Empower",
+            "Sign up for our Newsletter",
+            "Voltage Stability",
+            "Key Insights into Care Lab's Arc Flash Analysis in the USA",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC System...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/us/service/short-circuit-analysis/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/us/service/short-circuit-analysis/",
+      "status": "FAIL",
+      "wp_word_count": 884,
+      "new_word_count": 727,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Industries we Empower",
+            "Precise fault current calculations",
+            "Sign up for our Newsletter",
+            "Key Insights into Care Lab's Arc Flash Analysis in the USA",
+            "Connect with Us!"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Short Circuit Analysis Load Flow Analysis Relay Coordination Study About Us Blog Contact Us ESC System...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_4_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Precise fault current calculations It must provide details of the magnitudes of fault currents at various modes....",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Precise fault current calculations Precise fault current calculations Identify vulnerable points in the system Protective Device Coordination Complian...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    }
+  ]
+}

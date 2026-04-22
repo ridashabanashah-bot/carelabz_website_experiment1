@@ -1,0 +1,355 @@
+{
+  "country": "CA",
+  "wp_base": "https://carelabz.com/ca/",
+  "total_pages": 10,
+  "pass": 0,
+  "fail": 10,
+  "skip": 0,
+  "pass_rate": 0.0,
+  "results": [
+    {
+      "wp_url": "https://carelabz.com/ca/blogs/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/blogs/",
+      "status": "FAIL",
+      "wp_word_count": 644,
+      "new_word_count": 460,
+      "issues": [
+        {
+          "field": "TITLE",
+          "severity": "HIGH",
+          "wordpress": "electrical inspection services for commercial buildings in USA",
+          "new_site": "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Canada",
+          "match": false
+        },
+        {
+          "field": "META_DESC",
+          "severity": "HIGH",
+          "wordpress": "Ensure safety and compliance with our electrical inspection services for commercial buildings in the USA. Our expert team conducts thorough inspections to identify and address potential hazards.",
+          "new_site": "Expert insights on electrical safety, power system studies, arc flash analysis, and CSA Z462 compliance for Canadian facilities. Stay informed with Carelabs.",
+          "match": false
+        },
+        {
+          "field": "H1",
+          "severity": "HIGH",
+          "wordpress": "Insights to Empower Your Business",
+          "new_site": "Power up your Knowledge with our Blogs",
+          "match": false
+        },
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "The Importance of Load Flow Analysis to Enhance Grid Resilience in Canada",
+            "Connect with Us!",
+            "Empowering Microgrids in Canada: The Role of Relay Coordination Study",
+            "Safe and Sustainable Hydropower in Canada",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC > Blog Insights to Empower Your Business Explore o...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_2_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Hydropower in Canada- Past, present, and future! Imagine a world where 60% of the power demands are met by renewable energy sources. Wonder not, becau...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_3_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Featured article admin • December 9, 2024 Safe and Sustainable Hydropower in Canada Hydropower in Canada- Past, present, and future! Imagine a world w...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_5_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Introduction Canada has one of the world’s most robust workplace electrical safety regulations. The Occupational Health and Safety (OHS) summarizes em...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/understanding-arc-flash-boundaries-crucial-insights-for-workplace-safety/",
+      "status": "FAIL",
+      "wp_word_count": 825,
+      "new_word_count": 661,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Promoting Safety Awareness",
+            "Connect with Us!",
+            "Safe and Sustainable Hydropower in Canada",
+            "Compliance with Safety Standards",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada",
+            "Preventing Accidents and Injuries",
+            "Importance of Arc Flash Boundaries",
+            "Enhancing Risk Management Strategies"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 3 min read March 5,...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/etap-and-its-utilizations-on-arc-flash-study/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/etap-and-its-utilizations-on-arc-flash-study/",
+      "status": "FAIL",
+      "wp_word_count": 734,
+      "new_word_count": 590,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 2 min read March 4,...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/the-importance-of-personal-protective-equipment-ppe-requirement-for-electrical-workers/",
+      "status": "FAIL",
+      "wp_word_count": 845,
+      "new_word_count": 701,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 3 min read March 4,...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/prioritizing-safety-and-efficiency-carelabs-comprehensive-electrical-engineering-solutions/",
+      "status": "FAIL",
+      "wp_word_count": 985,
+      "new_word_count": 820,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 4 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/understanding-the-importance-of-analysis-of-arc-flash-hazard-in-canada/",
+      "status": "FAIL",
+      "wp_word_count": 992,
+      "new_word_count": 790,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Best practices for arc flash safety",
+            "Connect with Us!",
+            "Safe and Sustainable Hydropower in Canada",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Implications of Arc Flash Hazard Analysis",
+            "Cost Effective Arc Flash Study in Canada",
+            "Follow the NFPA 70E compliance standard for the Arc Flash",
+            "The Type of Arc Flash PPE Selection",
+            "Electrical Safety Training – for workplaces",
+            "Arc Flash Prevention: What to Do and What to Avoid",
+            "Strangulation the Energy Incidence in Electrical Systems",
+            "Establishing the Arc Flash Labeling Regulations"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 4 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/comprehensive-electrical-safety-inspections-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/comprehensive-electrical-safety-inspections-in-canada/",
+      "status": "FAIL",
+      "wp_word_count": 756,
+      "new_word_count": 612,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 2 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/why-arc-flash-study-and-analysis-important-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/why-arc-flash-study-and-analysis-important-in-canada/",
+      "status": "FAIL",
+      "wp_word_count": 1081,
+      "new_word_count": 617,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "WORD_COUNT",
+          "severity": "MEDIUM",
+          "wordpress": "1081 words",
+          "new_site": "617 words (57% of WP)",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 4 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/electrical-safety-protocol-for-arc-flash-study-in-canada/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/electrical-safety-protocol-for-arc-flash-study-in-canada/",
+      "status": "FAIL",
+      "wp_word_count": 725,
+      "new_word_count": 581,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 2 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    },
+    {
+      "wp_url": "https://carelabz.com/ca/effective-electrical-safety-program-development/",
+      "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/ca/effective-electrical-safety-program-development/",
+      "status": "FAIL",
+      "wp_word_count": 621,
+      "new_word_count": 477,
+      "issues": [
+        {
+          "field": "H2_MISSING",
+          "severity": "MEDIUM",
+          "wordpress": [
+            "Safe and Sustainable Hydropower in Canada",
+            "Connect with Us!",
+            "The Role of Short Circuit Analysis in Enhancing Workplace Electrical Safety",
+            "Cost Effective Arc Flash Study in Canada"
+          ],
+          "new_site": "MISSING",
+          "match": false
+        },
+        {
+          "field": "PARAGRAPH_1_MISSING",
+          "severity": "HIGH",
+          "wordpress": "Arc Flash Study Relay Coordination Study Load Flow Analysis Short Circuit Analysis Blog Contact ESC View all posts Archives , blog 2 min read February...",
+          "new_site": "NOT FOUND IN PAGE",
+          "match": false
+        }
+      ]
+    }
+  ]
+}
