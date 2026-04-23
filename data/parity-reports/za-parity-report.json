@@ -2,10 +2,10 @@
   "country": "ZA",
   "wp_base": "https://carelabz.com/za/",
   "total_pages": 21,
-  "pass": 12,
-  "fail": 9,
+  "pass": 14,
+  "fail": 7,
   "skip": 0,
-  "pass_rate": 57.1,
+  "pass_rate": 66.7,
   "skip_blogs": false,
   "results": [
     {
@@ -25,16 +25,10 @@
     {
       "wp_url": "https://carelabz.com/za/verify-south-african-electrical-motor-performance-regulations-compliance/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/verify-south-african-electrical-motor-performance-regulations-compliance/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 484,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated/",
@@ -75,16 +69,10 @@
     {
       "wp_url": "https://carelabz.com/za/how-to-analyze-south-african-power-quality/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/za/how-to-analyze-south-african-power-quality/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 573,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/za/principles-of-work-on-south-african-power-quality/",

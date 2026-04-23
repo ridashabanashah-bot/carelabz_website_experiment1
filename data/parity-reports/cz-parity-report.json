@@ -2,10 +2,10 @@
   "country": "CZ",
   "wp_base": "https://carelabz.com/cz/",
   "total_pages": 20,
-  "pass": 18,
-  "fail": 2,
+  "pass": 20,
+  "fail": 0,
   "skip": 0,
-  "pass_rate": 90.0,
+  "pass_rate": 100.0,
   "skip_blogs": false,
   "results": [
     {
@@ -51,16 +51,10 @@
     {
       "wp_url": "https://carelabz.com/cz/how-to-analyze-the-power-quality-in-czech-republic/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/how-to-analyze-the-power-quality-in-czech-republic/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 695,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/why-are-harmonic-research-and-analysis-so-crucial-to-czech-businesses/",
@@ -137,16 +131,10 @@
     {
       "wp_url": "https://carelabz.com/cz/harmonic-study-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/cz/harmonic-study-analysis/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 414,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/cz/motor-start-analysis/",

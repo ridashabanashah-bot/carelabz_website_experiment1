@@ -2,10 +2,10 @@
   "country": "NZ",
   "wp_base": "https://carelabz.com/nz/",
   "total_pages": 41,
-  "pass": 11,
-  "fail": 30,
+  "pass": 12,
+  "fail": 29,
   "skip": 0,
-  "pass_rate": 26.8,
+  "pass_rate": 29.3,
   "skip_blogs": false,
   "results": [
     {
@@ -372,7 +372,7 @@
       "wp_url": "https://carelabz.com/nz/contact-us/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/contact-us/",
       "status": "PASS",
-      "new_word_count": 655,
+      "new_word_count": 679,
       "new_status": 200,
       "issues": []
     },
@@ -463,16 +463,10 @@
     {
       "wp_url": "https://carelabz.com/nz/service/short-circuit-analysis-in-new-zealand/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/nz/service/short-circuit-analysis-in-new-zealand/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 620,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/nz/service/load-flow-analysis-in-new-zealand/",

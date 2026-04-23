@@ -2,151 +2,91 @@
   "country": "DE",
   "wp_base": "https://carelabz.com/de/",
   "total_pages": 21,
-  "pass": 9,
-  "fail": 12,
+  "pass": 21,
+  "fail": 0,
   "skip": 0,
-  "pass_rate": 42.9,
+  "pass_rate": 100.0,
   "skip_blogs": false,
   "results": [
     {
       "wp_url": "https://carelabz.com/de/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 701,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/how-are-the-effectiveness-and-dependability-of-commercial-motors-assessed/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 449,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 484,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 526,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/how-to-conduct-an-analysis-of-power-quality-in-germany/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/how-to-conduct-an-analysis-of-power-quality-in-germany/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 622,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/working-principles-for-power-quality-in-germany/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/working-principles-for-power-quality-in-germany/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 819,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/germanys-power-system-harmonic-analysis/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/germanys-power-system-harmonic-analysis/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 436,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/why-harmonic-analysis-and-study-crucial-for-german-businesses/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/why-harmonic-analysis-and-study-crucial-for-german-businesses/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 422,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/germanys-arc-flash-analysis-a-comprehensive-guide/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/germanys-arc-flash-analysis-a-comprehensive-guide/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 292,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/the-importance-of-arc-flash-hazard-analysis-and-mitigation-techniques/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 545,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/",
@@ -159,30 +99,18 @@
     {
       "wp_url": "https://carelabz.com/de/case-study/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/case-study/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 600,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/blog/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/de/blog/",
-      "status": "FAIL",
-      "new_word_count": 0,
-      "new_status": 404,
-      "issues": [
-        {
-          "field": "PAGE",
-          "severity": "CRITICAL",
-          "detail": "404 - page does not exist on new site"
-        }
-      ]
+      "status": "PASS",
+      "new_word_count": 404,
+      "new_status": 200,
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/de/services/",

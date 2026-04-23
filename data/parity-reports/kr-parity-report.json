@@ -2,10 +2,10 @@
   "country": "KR",
   "wp_base": "https://carelabz.com/kr/",
   "total_pages": 20,
-  "pass": 18,
-  "fail": 2,
+  "pass": 19,
+  "fail": 1,
   "skip": 0,
-  "pass_rate": 90.0,
+  "pass_rate": 95.0,
   "skip_blogs": false,
   "results": [
     {
@@ -57,16 +57,10 @@
     {
       "wp_url": "https://carelabz.com/kr/how-to-conduct-a-power-quality-analysis-in-korea/",
       "new_url": "https://carelabz-website-experiment1-ivory.vercel.app/kr/how-to-conduct-a-power-quality-analysis-in-korea/",
-      "status": "FAIL",
+      "status": "PASS",
       "new_word_count": 568,
       "new_status": 200,
-      "issues": [
-        {
-          "field": "META_DESC",
-          "severity": "HIGH",
-          "detail": "Meta description missing or too short. Got: \"\""
-        }
-      ]
+      "issues": []
     },
     {
       "wp_url": "https://carelabz.com/kr/analysis-of-harmonics-in-the-korean-power-system/",
