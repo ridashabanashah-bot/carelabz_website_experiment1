@@ -21,7 +21,8 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const post = await getBlogPost("de", params.slug);
+  let post = await getBlogPost("de", params.slug);
+  if (!post) post = await getBlogPost("de", `${params.slug}-de`);
 
   if (!post) {
     return {
@@ -72,7 +73,8 @@ function formatDate(dateString: string | null): string {
 }
 
 export default async function DEBlogPostPage({ params }: PageProps) {
-  const post = await getBlogPost("de", params.slug);
+  let post = await getBlogPost("de", params.slug);
+  if (!post) post = await getBlogPost("de", `${params.slug}-de`);
 
   if (!post) {
     notFound();

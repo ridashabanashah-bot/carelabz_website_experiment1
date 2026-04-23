@@ -138,6 +138,16 @@ const nextConfig = {
       ),
 
       /* ============================================================ */
+      /*  DE — nested-service country not in the flat batch.          */
+      /*  WP serves /de/blog/ (we use /de/blogs/), /de/case-study/    */
+      /*  (we don't have one), /de/service/:slug/ (we use /services/).*/
+      /* ============================================================ */
+      ...pair("/de/blog", "/de/blogs/"),
+      ...pair("/de/case-study", "/de/"),
+      { source: "/de/service/:slug", destination: "/de/services/:slug/", permanent: true },
+      { source: "/de/service/:slug/", destination: "/de/services/:slug/", permanent: true },
+
+      /* ============================================================ */
       /*  MY + VN — WP uses "-in-malaysia" / "-in-vietnam" suffix AND */
       /*  swaps "arc-flash-analysis" where our slug is "arc-flash-    */
       /*  study". Must come BEFORE the generic /xx/service/:slug/     */
