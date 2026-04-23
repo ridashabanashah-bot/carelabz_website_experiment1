@@ -227,26 +227,6 @@ export default async function USHomePage() {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-[#0050B3] py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-5xl font-bold text-white mb-2">25%</p>
-              <p className="text-blue-100">Reduction in Project Timelines</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-white mb-2">99%</p>
-              <p className="text-blue-100">System Reliability</p>
-            </div>
-            <div>
-              <p className="text-5xl font-bold text-white mb-2">100%</p>
-              <p className="text-blue-100">Compliance with NFPA, OSHA, and IEEE</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Intro */}
       <section className="bg-[#EEF4FF] py-16 px-4">
         <div className="mx-auto max-w-4xl text-center">
@@ -468,20 +448,6 @@ export default async function USHomePage() {
                 {page.ctaBannerSecondaryText}
               </Link>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* Standards */}
-      <section className="bg-white py-12 px-4">
-        <div className="mx-auto max-w-5xl">
-          <div className="flex flex-wrap justify-center gap-4">
-            {["NFPA 70E", "IEEE 1584", "OSHA 10/30", "NEC Certified", "ETAP Certified"].map((cert) => (
-              <span key={cert} className="border border-slate-200 rounded-full px-6 py-3 text-sm font-semibold text-[#0050B3] inline-flex items-center gap-2">
-                <Award className="w-4 h-4" />
-                {cert}
-              </span>
-            ))}
           </div>
         </div>
       </section>
