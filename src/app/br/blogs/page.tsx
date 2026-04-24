@@ -72,10 +72,9 @@ export default async function BRBlogIndexPage() {
   const sorted = [...allPosts].sort(
     (a, b) => new Date(postDate(b)).getTime() - new Date(postDate(a)).getTime()
   );
-  const featured = sorted.slice(0, 3);
+  const featuredPost = sorted[0];
+  const sideFeatured = sorted.slice(1, 3);
   const older = sorted.slice(3);
-  const featuredPost = featured[0];
-  const sideFeatured = featured.slice(1, 3);
 
   const jsonLd = buildJsonLd([
     getRegionOrganizationSchema({
@@ -99,238 +98,215 @@ export default async function BRBlogIndexPage() {
   ]);
 
   return (
-    <main className="bg-white font-sans">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SAAnnouncementTicker
-        countryName={COUNTRY_NAME}
-        standards={config.standards}
-      />
-      <SANavbar config={config} />
 
-      {/* HERO */}
-      <section
-        className="relative overflow-hidden py-24 lg:py-28"
-        style={{
-          background: "linear-gradient(135deg, #094d76 0%, #2575B6 100%)",
-        }}
-      >
-        <div
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-          aria-hidden="true"
+      {/* Fixed header */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SAAnnouncementTicker
+          countryName={COUNTRY_NAME}
+          standards={config.standards}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#F15C30] text-sm uppercase tracking-widest font-semibold font-serif">
-            Power Systems Knowledge Hub
-          </span>
-          <h1 className="mt-6 mx-auto max-w-3xl font-serif font-black text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.05]">
-            Power up your Knowledge
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/75 leading-relaxed font-sans">
-            Stay ahead of {config.primaryStandard}, IEEE 1584, and international
-            compliance requirements. Expert knowledge from the Carelabs
-            engineering team.
-          </p>
-        </div>
-      </section>
+        <SANavbar config={config} />
+      </div>
 
-      {/* FEATURED + SIDE */}
-      {featuredPost && (
-        <section className="py-16 lg:py-24 bg-white">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
-              <div>
-                <span className="text-[#F15C30] text-sm uppercase tracking-widest font-semibold font-serif">
-                  Latest Articles
-                </span>
-                <h2 className="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-[#094d76] mt-4 tracking-tight">
-                  Featured Insights
-                </h2>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Featured dark card */}
-              <Link
-                href={slugPath(featuredPost)}
-                className="group bg-[#094d76] rounded-3xl p-10 lg:p-14 flex flex-col justify-end min-h-[500px] relative overflow-hidden"
-              >
-                {featuredPost.heroImage &&
-                featuredPost.heroImage.startsWith("http") ? (
-                  <Image
-                    src={featuredPost.heroImage}
-                    alt={featuredPost.heroImageAlt ?? featuredPost.title}
-                    fill
-                    className="object-cover opacity-30 group-hover:opacity-40 transition-opacity"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                ) : (
-                  <div
-                    className="absolute inset-0 opacity-10"
-                    style={{
-                      backgroundImage:
-                        "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-                      backgroundSize: "32px 32px",
-                    }}
-                    aria-hidden="true"
-                  />
-                )}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, rgba(241,92,48,0.08) 0%, transparent 60%)",
-                  }}
-                  aria-hidden="true"
-                />
-                <div className="relative">
-                  {featuredPost.category && (
-                    <span className="text-[#F15C30] text-sm font-semibold uppercase tracking-wider font-serif">
-                      {featuredPost.category}
-                    </span>
-                  )}
-                  <h3 className="font-serif font-bold text-3xl lg:text-4xl text-white mt-4 mb-6 group-hover:text-[#F15C30] transition-colors">
-                    {featuredPost.title}
-                  </h3>
-                  {featuredPost.excerpt && (
-                    <p className="text-white/75 leading-relaxed mb-6 font-sans">
-                      {featuredPost.excerpt.length > 160
-                        ? featuredPost.excerpt.slice(0, 157) + "…"
-                        : featuredPost.excerpt}
-                    </p>
-                  )}
-                  <div className="flex items-center justify-between">
-                    <span className="text-white/60 text-sm font-sans">
-                      {formatDate(postDate(featuredPost))}
-                    </span>
-                    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform" />
-                  </div>
-                </div>
-              </Link>
-
-              {/* Side cards */}
-              <div className="space-y-6">
-                {sideFeatured.map((post) => (
-                  <Link
-                    key={post.id}
-                    href={slugPath(post)}
-                    className="group block p-8 lg:p-10 border border-[#094d76]/10 rounded-3xl hover:border-[#094d76]/30 transition-colors"
-                  >
-                    {post.category && (
-                      <span className="text-[#F15C30] text-sm font-semibold uppercase tracking-wider font-serif">
-                        {post.category}
-                      </span>
-                    )}
-                    <h3 className="font-serif font-bold text-2xl text-[#094d76] mt-3 mb-4 group-hover:text-[#2575B6] transition-colors">
-                      {post.title}
-                    </h3>
-                    {post.excerpt && (
-                      <p className="text-[#9c9b9a] leading-relaxed mb-4 font-sans">
-                        {post.excerpt.length > 140
-                          ? post.excerpt.slice(0, 137) + "…"
-                          : post.excerpt}
-                      </p>
-                    )}
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#9c9b9a] text-sm font-sans">
-                        {formatDate(postDate(post))}
-                      </span>
-                      <ArrowRight className="w-5 h-5 text-[#094d76] group-hover:translate-x-2 transition-transform" />
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
+      <main className="pt-[112px]">
+        {/* HERO */}
+        <section className="relative bg-[#0B1A2F] py-20 lg:py-28 overflow-hidden">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+              backgroundSize: "48px 48px",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+            <p className="font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-4">
+              Power Systems Knowledge Hub
+            </p>
+            <h1 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-tight tracking-tight">
+              From the{" "}
+              <span className="font-accent italic font-normal normal-case text-orange-500">
+                Blog
+              </span>
+            </h1>
+            <p className="font-body text-lg text-white/70 mt-6 max-w-2xl mx-auto">
+              Stay ahead of {config.primaryStandard}, IEEE 1584, and
+              international compliance requirements. Expert knowledge from the
+              Carelabs engineering team.
+            </p>
           </div>
         </section>
-      )}
 
-      {/* MORE ARTICLES */}
-      {older.length > 0 && (
-        <section className="py-16 lg:py-24 bg-[#f2f2f4]">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <h2 className="font-serif font-black text-3xl lg:text-4xl text-[#094d76] mb-10 tracking-tight">
-              More Articles
-            </h2>
-            <div className="bg-white rounded-3xl overflow-hidden">
-              <ul className="divide-y divide-[#094d76]/10">
+        {/* FEATURED + SIDE */}
+        {featuredPost && (
+          <section className="bg-[#F8FAFC] py-16">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                {/* Featured */}
+                <Link
+                  href={slugPath(featuredPost)}
+                  className="lg:col-span-3 group rounded-2xl rounded-tr-none overflow-hidden bg-[#0B1A2F] p-8 text-white flex flex-col min-h-[400px] relative"
+                >
+                  {featuredPost.heroImage &&
+                  featuredPost.heroImage.startsWith("http") ? (
+                    <Image
+                      src={featuredPost.heroImage}
+                      alt={featuredPost.heroImageAlt ?? featuredPost.title}
+                      fill
+                      className="object-cover opacity-30 group-hover:opacity-40 transition-opacity"
+                      sizes="(max-width: 1024px) 100vw, 60vw"
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0 opacity-10"
+                      style={{
+                        backgroundImage:
+                          "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+                        backgroundSize: "32px 32px",
+                      }}
+                      aria-hidden="true"
+                    />
+                  )}
+                  <div className="relative mt-auto">
+                    {featuredPost.category && (
+                      <span className="font-condensed text-xs uppercase tracking-[0.15em] bg-orange-500 text-white px-3 py-1 rounded-full inline-block mb-4">
+                        {featuredPost.category}
+                      </span>
+                    )}
+                    <h2 className="font-condensed font-bold text-2xl md:text-3xl text-white uppercase group-hover:text-orange-500 transition-colors">
+                      {featuredPost.title}
+                    </h2>
+                    {featuredPost.excerpt && (
+                      <p className="font-body text-sm text-white/75 mt-4 leading-relaxed">
+                        {featuredPost.excerpt.length > 180
+                          ? featuredPost.excerpt.slice(0, 177) + "…"
+                          : featuredPost.excerpt}
+                      </p>
+                    )}
+                    <div className="mt-6 flex items-center justify-between">
+                      <span className="font-body text-xs text-white/60">
+                        {formatDate(postDate(featuredPost))}
+                      </span>
+                      <span className="font-condensed font-semibold uppercase tracking-wider text-orange-500 inline-flex items-center gap-2">
+                        Read More <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Side */}
+                <div className="lg:col-span-2 space-y-4">
+                  {sideFeatured.map((post) => (
+                    <Link
+                      key={post.id}
+                      href={slugPath(post)}
+                      className="group block rounded-2xl rounded-tr-none bg-white p-6 border border-gray-100 hover:shadow-lg transition-shadow"
+                    >
+                      {post.category && (
+                        <span className="font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 font-semibold">
+                          {post.category}
+                        </span>
+                      )}
+                      <h3 className="font-condensed font-bold text-lg text-[#0B1A2F] uppercase mt-2 group-hover:text-orange-500 transition-colors">
+                        {post.title}
+                      </h3>
+                      {post.excerpt && (
+                        <p className="font-body text-sm text-gray-600 mt-2 line-clamp-2">
+                          {post.excerpt}
+                        </p>
+                      )}
+                      <div className="mt-4 flex items-center justify-between">
+                        <span className="font-body text-xs text-gray-500">
+                          {formatDate(postDate(post))}
+                        </span>
+                        <ArrowRight className="w-4 h-4 text-orange-500 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* MORE ARTICLES */}
+        {older.length > 0 && (
+          <section className="bg-white py-16">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <h2 className="font-condensed font-extrabold text-2xl md:text-3xl text-[#0B1A2F] uppercase mb-8">
+                More Articles
+              </h2>
+              <ul>
                 {older.map((post) => (
                   <li key={post.id}>
                     <Link
                       href={slugPath(post)}
-                      className="group block px-8 lg:px-10 py-6 hover:bg-[#e8f4fd] transition-colors border-l-4 border-transparent hover:border-[#F15C30]"
+                      className="group flex items-start gap-6 py-6 border-b border-gray-100 hover:bg-[#F8FAFC] transition-colors px-4 rounded-lg"
                     >
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                        <div className="flex-1 min-w-0">
-                          {post.category && (
-                            <span className="text-[#F15C30] text-xs uppercase tracking-widest font-serif font-semibold">
-                              {post.category}
-                            </span>
-                          )}
-                          <h3 className="font-serif font-bold text-lg lg:text-xl text-[#094d76] group-hover:text-[#2575B6] transition-colors mt-1 line-clamp-1">
-                            {post.title}
-                          </h3>
-                        </div>
-                        <div className="flex items-center gap-6 shrink-0">
-                          <span className="text-[#9c9b9a] text-sm font-sans">
-                            {formatDate(postDate(post))}
+                      <span className="font-condensed text-sm text-orange-500 shrink-0 w-24 uppercase tracking-wider">
+                        {formatDate(postDate(post))}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        {post.category && (
+                          <span className="font-condensed text-xs uppercase tracking-widest text-gray-500">
+                            {post.category}
                           </span>
-                          <ArrowRight className="w-5 h-5 text-[#094d76] group-hover:translate-x-1 transition-transform" />
-                        </div>
+                        )}
+                        <h3 className="font-condensed font-bold text-lg text-[#0B1A2F] group-hover:text-orange-500 transition-colors mt-1">
+                          {post.title}
+                        </h3>
+                        {post.excerpt && (
+                          <p className="font-body text-sm text-gray-600 mt-1 line-clamp-2">
+                            {post.excerpt}
+                          </p>
+                        )}
                       </div>
+                      <ArrowRight className="w-5 h-5 text-orange-500 mt-1 shrink-0 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {sorted.length === 0 && (
-        <section className="py-32 bg-[#f2f2f4]">
-          <div className="max-w-2xl mx-auto px-6 text-center">
-            <BookOpen className="w-12 h-12 text-[#094d76]/30 mx-auto mb-6" />
-            <p className="text-[#9c9b9a] font-sans text-lg">
+        {sorted.length === 0 && (
+          <section className="bg-[#F8FAFC] py-32 text-center">
+            <BookOpen className="w-12 h-12 text-gray-400 mx-auto mb-6" />
+            <p className="font-body text-lg text-gray-500">
               No articles yet. Check back soon.
             </p>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* CTA SPLIT */}
-      <section className="relative">
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-1 bg-[#F15C30] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-end">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-right lg:pr-8">
-              Ready to
+        {/* CTA */}
+        <section className="bg-gradient-to-r from-orange-500 to-[#0B1A2F] py-20 lg:py-24 text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-condensed font-extrabold text-3xl md:text-5xl text-white uppercase leading-tight">
+              Ready to Improve Your Electrical Safety?
             </h2>
-          </div>
-          <div className="flex-1 bg-[#094d76] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-start">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-left lg:pl-8">
-              Get Started?
-            </h2>
-          </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <p className="font-body text-lg text-white/80 mt-6 max-w-2xl mx-auto">
+              Our expert engineers are ready to help your {COUNTRY_NAME}{" "}
+              facility meet {config.primaryStandard} requirements.
+            </p>
             <Link
               href={config.contactPath}
-              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform text-lg"
+              className="mt-8 inline-flex items-center gap-3 bg-white text-[#0B1A2F] font-condensed font-bold uppercase px-10 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base tracking-wide"
             >
-              Contact Us
+              Get a Free Quote
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <SAFooter config={config} />
-    </main>
+    </div>
   );
 }

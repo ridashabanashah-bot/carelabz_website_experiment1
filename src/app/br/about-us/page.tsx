@@ -94,10 +94,21 @@ function resolveIcon(iconName: string | null | undefined): React.ElementType {
   return ICON_MAP[key] ?? Star;
 }
 
+function splitAccent(headline: string): { lead: string; accent: string } {
+  const words = headline.trim().split(/\s+/);
+  if (words.length <= 1) return { lead: "", accent: headline };
+  return {
+    lead: words.slice(0, -1).join(" "),
+    accent: words[words.length - 1],
+  };
+}
+
 export default async function BRAboutPage() {
   const page = await getAboutPage(CC);
 
-  const headline = page?.heroHeadline ?? "Who We Are";
+  const headline = page?.heroHeadline ?? "About Carelabs";
+  const { lead: headlineLead, accent: headlineAccent } = splitAccent(headline);
+
   const subtext =
     page?.heroSubtext ??
     `Carelabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across ${COUNTRY_NAME}.`;
@@ -126,151 +137,149 @@ export default async function BRAboutPage() {
   ]);
 
   return (
-    <main className="bg-white font-sans">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SAAnnouncementTicker
-        countryName={COUNTRY_NAME}
-        standards={config.standards}
-      />
-      <SANavbar config={config} />
 
-      {/* HERO */}
-      <section
-        className="relative overflow-hidden py-24 lg:py-32"
-        style={{
-          background: "linear-gradient(135deg, #094d76 0%, #2575B6 100%)",
-        }}
-      >
-        <div
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-          aria-hidden="true"
+      {/* Fixed header */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SAAnnouncementTicker
+          countryName={COUNTRY_NAME}
+          standards={config.standards}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <h1 className="mx-auto max-w-4xl font-serif font-black text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.05]">
-            {headline}
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80 leading-relaxed font-sans">
-            {subtext}
-          </p>
-        </div>
-      </section>
+        <SANavbar config={config} />
+      </div>
 
-      {/* MISSION */}
-      {(page?.missionHeading || page?.missionBody) && (
-        <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
-            <div className="w-1 h-16 bg-[#F15C30] mx-auto mb-8" />
-            {page?.missionHeading && (
-              <h2 className="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-[#094d76] mb-8 tracking-tight">
-                {page.missionHeading}
-              </h2>
-            )}
-            {page?.missionBody && (
-              <p className="text-lg text-[#9c9b9a] leading-relaxed font-sans">
-                {page.missionBody}
-              </p>
-            )}
+      <main className="pt-[112px]">
+        {/* HERO */}
+        <section className="relative bg-[#0B1A2F] py-20 lg:py-28 overflow-hidden">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+              backgroundSize: "48px 48px",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+            <h1 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-tight tracking-tight">
+              {headlineLead && <>{headlineLead} </>}
+              <span className="font-accent italic font-normal normal-case text-orange-500">
+                {headlineAccent}
+              </span>
+            </h1>
+            <p className="font-body text-lg text-white/70 max-w-2xl mx-auto mt-6">
+              {subtext}
+            </p>
           </div>
         </section>
-      )}
 
-      {/* VALUES */}
-      {page?.values && page.values.length > 0 && (
-        <section className="py-20 lg:py-28 bg-[#f2f2f4]">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="mb-16 text-center">
-              <span className="text-[#F15C30] text-sm uppercase tracking-widest font-semibold font-serif">
-                Our Values
-              </span>
-              {page?.valuesHeading && (
-                <h2 className="font-serif font-black text-3xl sm:text-4xl lg:text-5xl text-[#094d76] mt-4 tracking-tight">
-                  {page.valuesHeading}
+        {/* MISSION */}
+        {(page?.missionHeading || page?.missionBody) && (
+          <section className="bg-[#F8FAFC] py-16 lg:py-24">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <p className="font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-4">
+                Our Mission
+              </p>
+              {page?.missionHeading && (
+                <h2 className="font-condensed font-extrabold text-3xl md:text-4xl text-[#0B1A2F] uppercase max-w-3xl leading-tight">
+                  {page.missionHeading}
                 </h2>
               )}
+              {page?.missionBody && (
+                <p className="font-body text-lg text-gray-600 leading-relaxed max-w-3xl mt-8">
+                  {page.missionBody}
+                </p>
+              )}
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {page.values.map((value, idx) => {
-                const Icon = resolveIcon(value.icon);
-                return (
-                  <div
-                    key={idx}
-                    className="bg-white rounded-3xl p-8 hover:shadow-2xl transition-shadow"
-                  >
-                    <div className="w-14 h-14 bg-[#e8f4fd] rounded-2xl flex items-center justify-center mb-6">
-                      <Icon className="w-7 h-7 text-[#2575B6]" />
+          </section>
+        )}
+
+        {/* VALUES */}
+        {page?.values && page.values.length > 0 && (
+          <section className="bg-white py-16 lg:py-24">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="mb-12">
+                <p className="font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-4">
+                  What Drives Us
+                </p>
+                <h2 className="font-condensed font-extrabold text-3xl md:text-4xl text-[#0B1A2F] uppercase">
+                  {page.valuesHeading ?? "Our Values"}
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {page.values.map((value, idx) => {
+                  const Icon = resolveIcon(value.icon);
+                  return (
+                    <div
+                      key={idx}
+                      className="rounded-2xl rounded-tr-none bg-[#F8FAFC] p-8 border border-gray-100"
+                    >
+                      <Icon className="text-orange-500 w-8 h-8 mb-4" />
+                      <h3 className="font-condensed font-bold text-lg uppercase text-[#0B1A2F] mt-2">
+                        {value.title}
+                      </h3>
+                      <p className="font-body text-sm text-gray-600 mt-3 leading-relaxed">
+                        {value.description}
+                      </p>
                     </div>
-                    <h3 className="font-serif font-bold text-xl text-[#094d76] mb-3">
-                      {value.title}
-                    </h3>
-                    <p className="text-[#9c9b9a] text-sm leading-relaxed font-sans">
-                      {value.description}
-                    </p>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* CERTIFICATIONS */}
-      {page?.certifications && page.certifications.length > 0 && (
-        <section className="py-20 bg-white">
-          <div className="max-w-5xl mx-auto px-6 lg:px-12">
-            <h2 className="font-serif font-black text-3xl sm:text-4xl text-[#094d76] mb-10 text-center tracking-tight">
-              Standards We Follow
-            </h2>
-            <div className="flex flex-wrap justify-center gap-3">
-              {page.certifications.map((cert, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-2 bg-[#e8f4fd] border border-[#2575B6]/20 rounded-full px-5 py-3"
-                >
-                  <Award className="w-4 h-4 text-[#F15C30] shrink-0" />
-                  <span className="text-sm font-medium text-[#094d76] font-sans">
-                    {cert}
+        {/* CERTIFICATIONS */}
+        {page?.certifications && page.certifications.length > 0 && (
+          <section className="bg-[#0B1A2F] py-16">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <h2 className="font-condensed font-extrabold text-2xl md:text-3xl text-white uppercase text-center mb-8">
+                Standards We Follow
+              </h2>
+              <div className="flex flex-wrap justify-center gap-4">
+                {page.certifications.map((cert, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-5 py-2.5 hover:bg-white/15 transition-colors"
+                  >
+                    <Award className="w-4 h-4 text-orange-500 shrink-0" />
+                    <span className="font-body text-sm text-white">
+                      {cert}
+                    </span>
                   </span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* CTA SPLIT */}
-      <section className="relative">
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-1 bg-[#F15C30] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-end">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-right lg:pr-8">
-              {page?.ctaBannerHeading ?? "Partner"}
+        {/* CTA */}
+        <section className="bg-gradient-to-r from-orange-500 to-[#0B1A2F] py-20 lg:py-24 text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-condensed font-extrabold text-3xl md:text-5xl text-white uppercase leading-tight">
+              {page?.ctaBannerHeading ?? "Partner with Carelabs"}
             </h2>
-          </div>
-          <div className="flex-1 bg-[#094d76] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-start">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-left lg:pl-8">
-              with Carelabs
-            </h2>
-          </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            {page?.ctaBannerSubtext && (
+              <p className="font-body text-lg text-white/80 mt-6 max-w-2xl mx-auto">
+                {page.ctaBannerSubtext}
+              </p>
+            )}
             <Link
               href={page?.ctaBannerPrimaryHref ?? config.contactPath}
-              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform text-lg"
+              className="mt-8 inline-flex items-center gap-3 bg-white text-[#0B1A2F] font-condensed font-bold uppercase px-10 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base tracking-wide"
             >
               {page?.ctaBannerPrimaryText ?? "Get in Touch"}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <SAFooter config={config} />
-    </main>
+    </div>
   );
 }

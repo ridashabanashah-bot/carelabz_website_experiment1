@@ -76,120 +76,113 @@ export default async function BRServicesIndexPage() {
   ]);
 
   return (
-    <main className="bg-white font-sans">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <SAAnnouncementTicker
-        countryName={COUNTRY_NAME}
-        standards={config.standards}
-      />
-      <SANavbar config={config} />
-
-      {/* HERO */}
-      <section
-        className="relative overflow-hidden py-24 lg:py-32"
-        style={{
-          background: "linear-gradient(135deg, #094d76 0%, #2575B6 100%)",
-        }}
-      >
-        <div
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-          aria-hidden="true"
+      {/* Fixed header */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SAAnnouncementTicker
+          countryName={COUNTRY_NAME}
+          standards={config.standards}
         />
-        <div className="absolute top-12 right-[8%] w-56 h-56 border-[3px] border-white/10 rounded-full pointer-events-none" />
-        <div className="absolute top-24 right-[14%] w-36 h-36 bg-[#F15C30]/15 rounded-full pointer-events-none" />
+        <SANavbar config={config} />
+      </div>
 
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#F15C30] text-sm uppercase tracking-widest font-semibold font-serif">
-            {COUNTRY_NAME} Electrical Engineering
-          </span>
-          <h1 className="mt-6 mx-auto max-w-4xl font-serif font-black text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.05]">
-            Power System Analysis for Your Specific Needs
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/75 leading-relaxed font-sans">
-            Comprehensive electrical safety services designed to keep your
-            facilities compliant with {config.primaryStandard}, your workers
-            protected, and your operations running smoothly — delivered by
-            certified engineers across {COUNTRY_NAME}.
-          </p>
-        </div>
-      </section>
-
-      {/* SERVICES GRID */}
-      <section className="py-20 lg:py-28 bg-[#f2f2f4]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          {services.length === 0 ? (
-            <p className="text-center py-12 text-[#9c9b9a] font-sans">
-              Services are currently being loaded. Please check back shortly.
+      <main className="pt-[112px]">
+        {/* HERO */}
+        <section className="relative bg-[#0B1A2F] py-20 lg:py-28 overflow-hidden">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+              backgroundSize: "48px 48px",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+            <p className="font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-4">
+              {COUNTRY_NAME} Electrical Engineering
             </p>
-          ) : (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service, index) => (
-                <article
-                  key={service.id}
-                  className="bg-white rounded-3xl p-8 lg:p-10 hover:shadow-2xl transition-shadow group"
-                >
-                  <span className="font-serif font-black text-5xl text-[#f2f2f4] group-hover:text-[#e8f4fd] transition-colors block mb-6">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h2 className="font-serif font-bold text-2xl text-[#094d76] mb-4">
-                    {service.title}
-                  </h2>
-                  {service.metaDescription && (
-                    <p className="text-[#9c9b9a] leading-relaxed font-sans line-clamp-4 mb-8">
-                      {service.metaDescription.length > 200
-                        ? service.metaDescription.slice(0, 197) + "…"
-                        : service.metaDescription}
-                    </p>
-                  )}
-                  <Link
-                    href={getServiceHref(service)}
-                    className="inline-flex items-center gap-2 text-[#F15C30] font-serif font-semibold text-sm hover:text-[#2575B6] transition-colors"
-                  >
-                    Learn more
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </article>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
+            <h1 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-tight tracking-tight">
+              Our{" "}
+              <span className="font-accent italic font-normal normal-case text-orange-500">
+                Services
+              </span>
+            </h1>
+            <p className="font-body text-lg text-white/70 mt-6 max-w-2xl mx-auto">
+              Comprehensive electrical safety services designed to keep your
+              facilities compliant with {config.primaryStandard}, your workers
+              protected, and your operations running smoothly.
+            </p>
+          </div>
+        </section>
 
-      {/* CTA SPLIT */}
-      <section className="relative">
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-1 bg-[#F15C30] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-end">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-right lg:pr-8">
-              Ready to
-            </h2>
+        {/* SERVICES GRID */}
+        <section className="bg-[#F8FAFC] py-16 lg:py-24">
+          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+            {services.length === 0 ? (
+              <p className="font-body text-center py-12 text-gray-500">
+                Services are currently being loaded. Please check back shortly.
+              </p>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {services.map((service, i) => (
+                  <Link
+                    key={service.id}
+                    href={getServiceHref(service)}
+                    className="relative rounded-2xl rounded-tr-none overflow-hidden bg-white border border-gray-100 hover:shadow-lg transition-shadow p-6 pt-4 block group"
+                  >
+                    <span
+                      className="font-condensed font-extrabold text-5xl text-orange-500/15 absolute top-4 right-4 leading-none"
+                      aria-hidden="true"
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h2 className="font-condensed font-bold text-xl text-[#0B1A2F] uppercase mt-2 pr-12">
+                      {service.title}
+                    </h2>
+                    {service.metaDescription && (
+                      <p className="font-body text-sm text-gray-600 mt-3 leading-relaxed line-clamp-3">
+                        {service.metaDescription.length > 200
+                          ? service.metaDescription.slice(0, 197) + "…"
+                          : service.metaDescription}
+                      </p>
+                    )}
+                    <span className="font-condensed font-semibold text-orange-500 group-hover:text-orange-600 mt-4 inline-flex items-center gap-1 uppercase tracking-wider text-sm">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
-          <div className="flex-1 bg-[#094d76] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-start">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-left lg:pl-8">
-              Get Started?
+        </section>
+
+        {/* CTA */}
+        <section className="bg-gradient-to-r from-orange-500 to-[#0B1A2F] py-20 lg:py-24 text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-condensed font-extrabold text-3xl md:text-5xl text-white uppercase leading-tight">
+              Ready to Get Started?
             </h2>
-          </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <p className="font-body text-lg text-white/80 mt-6 max-w-2xl mx-auto">
+              Schedule a free consultation with our certified engineers.
+            </p>
             <Link
               href={config.contactPath}
-              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform text-lg"
+              className="mt-8 inline-flex items-center gap-3 bg-white text-[#0B1A2F] font-condensed font-bold uppercase px-10 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base tracking-wide"
             >
               Contact Us
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <SAFooter config={config} />
-    </main>
+    </div>
   );
 }

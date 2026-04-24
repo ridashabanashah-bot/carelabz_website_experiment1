@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 import { SAAnnouncementTicker } from "@/components/sa-announcement-ticker";
 import { SANavbar } from "@/components/sa-navbar";
 import { SAFooter } from "@/components/sa-footer";
@@ -64,7 +64,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function BRContactPage() {
   const headersList = headers();
   const iso2 = getCountryFromHeaders(headersList, CC.toUpperCase());
-  const countryName = COUNTRY_NAME;
 
   const [page, services] = await Promise.all([
     getContactPage(CC),
@@ -104,182 +103,182 @@ export default async function BRContactPage() {
     ]),
   ]);
 
-  const contactRow = (
-    Icon: React.ElementType,
-    label: string,
-    value: React.ReactNode
-  ) => (
-    <div className="flex items-start gap-5">
-      <div className="w-12 h-12 bg-[#F15C30] rounded-xl flex items-center justify-center shrink-0">
-        <Icon className="w-5 h-5 text-white" />
-      </div>
+  const resolvedPhone = page?.phone ?? config.phone;
+  const resolvedEmail = page?.email ?? config.email;
+  const resolvedAddress = page?.address ?? config.address;
+  const resolvedHours = page?.officeHours ?? "Monday – Friday, 9 AM – 5 PM";
+
+  const ContactItem = ({
+    icon: Icon,
+    label,
+    value,
+  }: {
+    icon: React.ElementType;
+    label: string;
+    value: React.ReactNode;
+  }) => (
+    <div className="flex gap-4">
+      <Icon className="text-orange-500 w-5 h-5 mt-1 shrink-0" />
       <div>
-        <p className="font-serif font-bold text-[#094d76] uppercase tracking-widest text-xs mb-1">
+        <p className="font-condensed text-xs uppercase tracking-wider text-white/50">
           {label}
         </p>
-        <div className="text-[#5a5d66] font-sans">{value}</div>
+        <div className="font-body text-base text-white mt-1">{value}</div>
       </div>
     </div>
   );
 
   return (
-    <main className="bg-white font-sans">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SAAnnouncementTicker
-        countryName={COUNTRY_NAME}
-        standards={config.standards}
-      />
-      <SANavbar config={config} />
 
-      {/* HERO */}
-      <section
-        className="relative overflow-hidden py-24 lg:py-28"
-        style={{
-          background: "linear-gradient(135deg, #094d76 0%, #2575B6 100%)",
-        }}
-      >
-        <div
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-          aria-hidden="true"
+      {/* Fixed header */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SAAnnouncementTicker
+          countryName={COUNTRY_NAME}
+          standards={config.standards}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <h1 className="mx-auto max-w-4xl font-serif font-black text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.05]">
-            {headline}
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-white/80 leading-relaxed font-sans">
-            {subtext}
-          </p>
-          <span className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-full bg-white/10 border border-white/25 text-white text-sm font-sans backdrop-blur-sm">
-            <MapPin className="w-4 h-4" />
-            Showing services available in {countryName}
-          </span>
-        </div>
-      </section>
+        <SANavbar config={config} />
+      </div>
 
-      {/* FORM + CONTACT */}
-      <section className="py-20 lg:py-28 bg-[#f2f2f4]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl">
-              <h2 className="font-serif font-black text-3xl text-[#094d76] mb-3">
+      <main className="pt-[112px]">
+        {/* HERO */}
+        <section className="relative bg-[#0B1A2F] py-16 lg:py-24 overflow-hidden">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+              backgroundSize: "48px 48px",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+            <h1 className="font-condensed font-extrabold text-4xl md:text-5xl uppercase text-white tracking-tight leading-tight">
+              {headline}
+            </h1>
+            <p className="font-body text-lg text-white/70 mt-4 max-w-2xl mx-auto">
+              {subtext}
+            </p>
+            <span className="inline-flex items-center gap-2 mt-6 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/90 font-body text-sm">
+              <MapPin className="w-4 h-4" />
+              Showing services available in {COUNTRY_NAME}
+            </span>
+          </div>
+        </section>
+
+        {/* FORM + CONTACT INFO */}
+        <section className="bg-[#F8FAFC] py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-[1400px] mx-auto px-6 lg:px-12">
+            {/* Form */}
+            <div className="bg-white rounded-2xl rounded-tr-none p-8 shadow-lg border border-gray-100">
+              <h2 className="font-condensed font-bold text-2xl text-[#0B1A2F] uppercase mb-2">
                 {page?.formHeading ?? "Send Us a Message"}
               </h2>
-              <p className="text-[#9c9b9a] mb-8 font-sans">
+              <p className="font-body text-sm text-gray-600 mb-6">
                 {page?.formSubtext ??
                   "Fill in the form below and we will get back to you within one business day."}
               </p>
               <ContactForm
                 services={serviceOptions}
                 defaultIso2={iso2}
-                countryName={countryName}
+                countryName={COUNTRY_NAME}
               />
             </div>
 
-            <div className="space-y-8">
-              {page?.phone &&
-                contactRow(
-                  Phone,
-                  "Phone",
+            {/* Contact details */}
+            <div className="bg-[#0B1A2F] rounded-2xl rounded-tr-none p-8 text-white space-y-8">
+              <h2 className="font-condensed font-bold text-2xl uppercase">
+                Contact Details
+              </h2>
+              <ContactItem
+                icon={Phone}
+                label="Phone"
+                value={
                   <a
-                    href={`tel:${page.phone.replace(/\s/g, "")}`}
-                    className="hover:text-[#F15C30] transition-colors"
+                    href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
+                    className="hover:text-orange-500 transition-colors"
                   >
-                    {page.phone}
+                    {resolvedPhone}
                   </a>
-                )}
-              {page?.email &&
-                contactRow(
-                  Mail,
-                  "Email",
+                }
+              />
+              <ContactItem
+                icon={Mail}
+                label="Email"
+                value={
                   <a
-                    href={`mailto:${page.email}`}
-                    className="hover:text-[#F15C30] transition-colors"
+                    href={`mailto:${resolvedEmail}`}
+                    className="hover:text-orange-500 transition-colors"
                   >
-                    {page.email}
+                    {resolvedEmail}
                   </a>
-                )}
-              {page?.address &&
-                contactRow(
-                  MapPin,
-                  "Address",
-                  <p className="whitespace-pre-line">{page.address}</p>
-                )}
-              {page?.officeHours &&
-                contactRow(
-                  Clock,
-                  "Office Hours",
-                  <p className="whitespace-pre-line">{page.officeHours}</p>
-                )}
-
-              {!page?.phone &&
-                !page?.email &&
-                !page?.address &&
-                !page?.officeHours && (
-                  <>
-                    {contactRow(Phone, "Phone", <p>{config.phone}</p>)}
-                    {contactRow(Mail, "Email", <p>{config.email}</p>)}
-                    {contactRow(MapPin, "Address", <p>{config.address}</p>)}
-                    {contactRow(
-                      Clock,
-                      "Office Hours",
-                      <p>Monday – Friday, 9 AM – 5 PM</p>
-                    )}
-                  </>
-                )}
-
-              {page?.mapEmbedUrl && (
-                <div className="rounded-3xl overflow-hidden border border-[#094d76]/10">
-                  <iframe
-                    src={page.mapEmbedUrl}
-                    width="100%"
-                    height="280"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title={`Carelabs ${COUNTRY_NAME} Office Location`}
-                  />
-                </div>
-              )}
+                }
+              />
+              <ContactItem
+                icon={MapPin}
+                label="Address"
+                value={
+                  <span className="whitespace-pre-line">
+                    {resolvedAddress}
+                  </span>
+                }
+              />
+              <ContactItem
+                icon={Clock}
+                label="Office Hours"
+                value={
+                  <span className="whitespace-pre-line">{resolvedHours}</span>
+                }
+              />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* CTA SPLIT */}
-      <section className="relative">
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-1 bg-[#F15C30] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-end">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-right lg:pr-8">
-              Need
+          {/* Map */}
+          {page?.mapEmbedUrl && (
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mt-12">
+              <div className="rounded-2xl overflow-hidden border border-gray-200">
+                <iframe
+                  src={page.mapEmbedUrl}
+                  width="100%"
+                  height="360"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Carelabs ${COUNTRY_NAME} Office Location`}
+                />
+              </div>
+            </div>
+          )}
+        </section>
+
+        {/* CTA */}
+        <section className="bg-gradient-to-r from-orange-500 to-[#0B1A2F] py-20 lg:py-24 text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-condensed font-extrabold text-3xl md:text-5xl text-white uppercase leading-tight">
+              Need urgent assistance?
             </h2>
-          </div>
-          <div className="flex-1 bg-[#094d76] py-24 lg:py-32 px-6 lg:px-12 flex items-center justify-center lg:justify-start">
-            <h2 className="font-serif font-black text-5xl lg:text-6xl text-white text-center lg:text-left lg:pl-8">
-              urgent help?
-            </h2>
-          </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <p className="font-body text-lg text-white/80 mt-6 max-w-2xl mx-auto">
+              Our {COUNTRY_NAME} team is available to respond to emergency
+              compliance and safety testing requests.
+            </p>
             <Link
-              href={`tel:${config.phone.replace(/\s/g, "")}`}
-              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform text-lg"
+              href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
+              className="mt-8 inline-flex items-center gap-3 bg-white text-[#0B1A2F] font-condensed font-bold uppercase px-10 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base tracking-wide"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-4 h-4" />
               Call Now
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <SAFooter config={config} />
-    </main>
+    </div>
   );
 }
