@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { SouthAmericaFooter } from "@/components/south-america-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 const config = COUNTRY_CONFIGS["ar"];
 import { ContactForm } from "@/components/contact-form";
 import { getContactPage } from "@/lib/strapi-pages";
 import { getServicesByRegion } from "@/lib/strapi";
 import { getCountryFromHeaders } from "@/lib/detect-country";
-import { buildJsonLd, getRegionOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
+import {
+  buildJsonLd,
+  getRegionOrganizationSchema,
+  getWebPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/jsonld";
 
 export const dynamic = "force-dynamic";
 
@@ -29,18 +34,22 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: page?.metaTitle ?? "Contact Carelabs — Get a Free Consultation Argentina",
+      title:
+        page?.metaTitle ?? "Contact Carelabs — Get a Free Consultation Argentina",
       description:
-        page?.metaDescription ?? "Get in touch for a free consultation on electrical safety services in Argentina.",
+        page?.metaDescription ??
+        "Get in touch for a free consultation on electrical safety services in Argentina.",
       url: "https://carelabz.com/ar/contact-us/",
       siteName: "Carelabs",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: page?.metaTitle ?? "Contact Carelabs — Get a Free Consultation Argentina",
+      title:
+        page?.metaTitle ?? "Contact Carelabs — Get a Free Consultation Argentina",
       description:
-        page?.metaDescription ?? "Get in touch for a free consultation on electrical safety services in Argentina.",
+        page?.metaDescription ??
+        "Get in touch for a free consultation on electrical safety services in Argentina.",
     },
   };
 }
@@ -48,8 +57,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function ARContactPage() {
   const headersList = headers();
   const iso2 = getCountryFromHeaders(headersList, "AR");
-  // On the Argentina contact page the banner must always say Argentina
-  // regardless of the visitor's IP — the services ARE in Argentina.
   const countryName = "Argentina";
 
   const [page, services] = await Promise.all([
@@ -65,14 +72,22 @@ export default async function ARContactPage() {
   const headline = page?.heroHeadline ?? "Get in Touch";
   const subtext =
     page?.heroSubtext ??
-    "Have a question or ready to start a project? Our Argentinan team is here to help.";
+    "Have a question or ready to start a project? Our Argentina team is here to help.";
 
   const jsonLd = buildJsonLd([
-    getRegionOrganizationSchema({ cc: "ar", countryName: "Argentina", countryIso2: "AR", phone: config.phone, email: config.email, addressLocality: config.address }),
+    getRegionOrganizationSchema({
+      cc: "ar",
+      countryName: "Argentina",
+      countryIso2: "AR",
+      phone: config.phone,
+      email: config.email,
+      addressLocality: config.address,
+    }),
     getWebPageSchema(
       "https://carelabz.com/ar/contact-us/",
       page?.metaTitle ?? "Contact Carelabs — Get a Free Consultation Argentina",
-      page?.metaDescription ?? "Get in touch for a free consultation on electrical safety services in Argentina.",
+      page?.metaDescription ??
+        "Get in touch for a free consultation on electrical safety services in Argentina.",
       "en-AR"
     ),
     getBreadcrumbSchema([
@@ -81,37 +96,129 @@ export default async function ARContactPage() {
     ]),
   ]);
 
+  const contactRow = (
+    Icon: React.ElementType,
+    label: string,
+    value: React.ReactNode
+  ) => (
+    <div className="flex gap-4 items-start">
+      <div
+        className="shrink-0 inline-flex items-center justify-center rounded-full"
+        style={{
+          width: "3rem",
+          height: "3rem",
+          backgroundColor: "#F15C30",
+        }}
+      >
+        <Icon className="w-5 h-5 text-white" />
+      </div>
+      <div>
+        <p
+          className="uppercase tracking-wide mb-1"
+          style={{
+            fontFamily: "var(--sa-font-heading)",
+            fontWeight: 700,
+            fontSize: "0.75rem",
+            color: "#094d76",
+          }}
+        >
+          {label}
+        </p>
+        <div
+          style={{
+            fontFamily: "var(--sa-font-body)",
+            color: "#5a5d66",
+          }}
+        >
+          {value}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
-    <>
+    <div className="sa-root">
       <RegionNavbar config={config} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main id="main-content">
-        <section className="bg-[#0050B3] pt-32 pb-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        {/* HERO */}
+        <section
+          className="sa-hero-bg relative overflow-hidden"
+          style={{ paddingTop: "8rem", paddingBottom: "5rem" }}
+        >
+          <div className="sa-hero-shape" aria-hidden="true" />
+          <div className="relative mx-auto max-w-4xl px-4 sm:px-8 text-center">
+            <h1
+              className="text-white mb-6"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2.5rem, 5vw, 3.75rem)",
+                lineHeight: 1.1,
+              }}
+            >
               {headline}
             </h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+            <p
+              className="mx-auto mb-6"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.85)",
+                fontSize: "1.125rem",
+                lineHeight: 1.65,
+                maxWidth: "42rem",
+              }}
+            >
               {subtext}
             </p>
-            <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm text-white mt-6 border border-white/30">
+            <span
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm"
+              style={{
+                backgroundColor: "rgba(255,255,255,0.12)",
+                border: "1px solid rgba(255,255,255,0.22)",
+                backdropFilter: "blur(8px)",
+                color: "#ffffff",
+                fontFamily: "var(--sa-font-body)",
+              }}
+            >
               <MapPin className="w-4 h-4" />
               Showing services available in {countryName}
             </span>
           </div>
         </section>
 
-        <section className="bg-[#EEF4FF] py-20 px-4">
+        {/* FORM + CONTACT */}
+        <section style={{ backgroundColor: "#f2f2f4" }} className="py-20 px-4">
           <div className="mx-auto max-w-7xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div className="bg-white rounded-2xl shadow-sm p-8 lg:p-10">
-                <h2 className="text-2xl font-bold text-[#1A2538] mb-2">
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <div
+                className="rounded-3xl p-8 lg:p-10"
+                style={{
+                  backgroundColor: "#ffffff",
+                  boxShadow: "0 4px 24px rgba(37,117,182,0.10)",
+                }}
+              >
+                <h2
+                  className="mb-2"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "1.5rem",
+                    color: "#094d76",
+                  }}
+                >
                   {page?.formHeading ?? "Send Us a Message"}
                 </h2>
-                <p className="text-[#374151] mb-6">
+                <p
+                  className="mb-6"
+                  style={{
+                    fontFamily: "var(--sa-font-body)",
+                    color: "#5a5d66",
+                  }}
+                >
                   {page?.formSubtext ??
                     "Fill in the form below and we will get back to you within one business day."}
                 </p>
@@ -123,108 +230,64 @@ export default async function ARContactPage() {
               </div>
 
               <div className="space-y-8">
-                {page?.phone && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Phone
-                      </p>
-                      <a
-                        href={`tel:${page.phone.replace(/\s/g, "")}`}
-                        className="text-gray-700 hover:text-orange-500 transition-colors"
-                      >
-                        {page.phone}
-                      </a>
-                    </div>
-                  </div>
-                )}
+                {page?.phone &&
+                  contactRow(
+                    Phone,
+                    "Phone",
+                    <a
+                      href={`tel:${page.phone.replace(/\s/g, "")}`}
+                      className="hover:text-[#F15C30] transition-colors"
+                    >
+                      {page.phone}
+                    </a>
+                  )}
 
-                {page?.email && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Email
-                      </p>
-                      <a
-                        href={`mailto:${page.email}`}
-                        className="text-gray-700 hover:text-orange-500 transition-colors"
-                      >
-                        {page.email}
-                      </a>
-                    </div>
-                  </div>
-                )}
+                {page?.email &&
+                  contactRow(
+                    Mail,
+                    "Email",
+                    <a
+                      href={`mailto:${page.email}`}
+                      className="hover:text-[#F15C30] transition-colors"
+                    >
+                      {page.email}
+                    </a>
+                  )}
 
-                {page?.address && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Address
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">{page.address}</p>
-                    </div>
-                  </div>
-                )}
+                {page?.address &&
+                  contactRow(
+                    MapPin,
+                    "Address",
+                    <p className="whitespace-pre-line">{page.address}</p>
+                  )}
 
-                {page?.officeHours && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Office Hours
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">
-                        {page.officeHours}
-                      </p>
-                    </div>
-                  </div>
-                )}
+                {page?.officeHours &&
+                  contactRow(
+                    Clock,
+                    "Office Hours",
+                    <p className="whitespace-pre-line">{page.officeHours}</p>
+                  )}
 
                 {!page?.phone && !page?.email && !page?.address && !page?.officeHours && (
-                  <div className="space-y-6">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Phone</p>
-                        <p className="text-gray-700">+1 (800) 456-7890</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Email</p>
-                        <p className="text-gray-700">info@carelabz.com</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Office Hours</p>
-                        <p className="text-gray-700">Monday – Friday, 9 AM – 5 PM ET</p>
-                      </div>
-                    </div>
-                  </div>
+                  <>
+                    {contactRow(Phone, "Phone", <p>{config.phone}</p>)}
+                    {contactRow(Mail, "Email", <p>{config.email}</p>)}
+                    {contactRow(MapPin, "Address", <p>{config.address}</p>)}
+                    {contactRow(
+                      Clock,
+                      "Office Hours",
+                      <p>Monday – Friday, 9 AM – 5 PM</p>
+                    )}
+                  </>
                 )}
 
                 {page?.mapEmbedUrl && (
-                  <div className="rounded-xl overflow-hidden border border-gray-200 mt-4">
+                  <div
+                    className="rounded-2xl overflow-hidden mt-4"
+                    style={{
+                      border: "1px solid #f2f2f4",
+                    }}
+                  >
                     <iframe
                       src={page.mapEmbedUrl}
                       width="100%"
@@ -242,26 +305,54 @@ export default async function ARContactPage() {
           </div>
         </section>
 
-        <section className="bg-[#0050B3] py-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        {/* URGENT CTA */}
+        <section
+          className="relative py-24 px-4 overflow-hidden"
+          style={{
+            background: "linear-gradient(90deg, #F15C30 0%, #c44a1f 100%)",
+          }}
+        >
+          <div className="relative mx-auto max-w-4xl text-center">
+            <h2
+              className="text-white mb-4"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2rem, 4vw, 2.75rem)",
+              }}
+            >
               Need urgent assistance?
             </h2>
-            <p className="text-white/70 text-lg mb-8">
-              Our Argentinan team is available to respond to emergency compliance and
-              safety testing requests.
+            <p
+              className="mb-10 mx-auto max-w-2xl"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.92)",
+                fontSize: "1.075rem",
+                lineHeight: 1.65,
+              }}
+            >
+              Our Argentina team is available to respond to emergency compliance
+              and safety testing requests.
             </p>
             <Link
-              href="tel:+18004567890"
-              className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-orange-600"
+              href={`tel:${config.phone.replace(/\s/g, "")}`}
+              className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 transition-all hover:scale-[1.02]"
+              style={{
+                backgroundColor: "#ffffff",
+                color: "#c44a1f",
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 600,
+              }}
             >
               <Phone className="w-4 h-4" />
               Call Now
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>
       </main>
-      <RegionFooter config={config} />
-    </>
+      <SouthAmericaFooter config={config} />
+    </div>
   );
 }

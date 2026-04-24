@@ -17,7 +17,7 @@ import {
   Phone,
 } from "lucide-react";
 import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { SouthAmericaFooter } from "@/components/south-america-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 const config = COUNTRY_CONFIGS["pe"];
 import { JsonLd } from "@/components/JsonLd";
@@ -26,10 +26,7 @@ import { getHomePage } from "@/lib/strapi-home";
 
 type LucideProps = React.ComponentProps<typeof Zap>;
 
-function ServiceIcon({
-  name,
-  ...props
-}: { name: string } & LucideProps) {
+function ServiceIcon({ name, ...props }: { name: string } & LucideProps) {
   switch (name) {
     case "zap":
       return <Zap {...props} />;
@@ -62,7 +59,9 @@ function WhyIcon({ name, ...props }: { name: string } & LucideProps) {
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getHomePage("pe");
   return {
-    title: page?.metaTitle ?? "Carelabs — Electrical Safety & Power System Studies | Peru",
+    title:
+      page?.metaTitle ??
+      "Carelabs — Electrical Safety & Power System Studies | Peru",
     description:
       page?.metaDescription ??
       "Carelabs provides IEEE 1584 arc flash studies, RM 111-2013-MEM compliance, short circuit analysis, and power system engineering across Peru.",
@@ -75,9 +74,12 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: page?.metaTitle ?? "Carelabs Peru — Electrical Safety & Power System Studies",
+      title:
+        page?.metaTitle ??
+        "Carelabs Peru — Electrical Safety & Power System Studies",
       description:
-        page?.metaDescription ?? "IEEE 1584 arc flash studies, RM 111-2013-MEM compliance, and power system engineering across Peru.",
+        page?.metaDescription ??
+        "IEEE 1584 arc flash studies, RM 111-2013-MEM compliance, and power system engineering across Peru.",
       url: "https://carelabz.com/pe/",
       siteName: "Carelabs",
       type: "website",
@@ -85,9 +87,12 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: page?.metaTitle ?? "Carelabs Peru — Electrical Safety & Power System Studies",
+      title:
+        page?.metaTitle ??
+        "Carelabs Peru — Electrical Safety & Power System Studies",
       description:
-        page?.metaDescription ?? "IEEE 1584 arc flash studies, RM 111-2013-MEM compliance, and power system engineering across Peru.",
+        page?.metaDescription ??
+        "IEEE 1584 arc flash studies, RM 111-2013-MEM compliance, and power system engineering across Peru.",
     },
   };
 }
@@ -97,7 +102,7 @@ export default async function PEHomePage() {
 
   if (!page) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-[#EEF4FF] text-[#1A2538]">
+      <main className="sa-root flex min-h-screen items-center justify-center bg-white text-[#094d76]">
         <p className="text-lg">Page content unavailable</p>
       </main>
     );
@@ -109,76 +114,75 @@ export default async function PEHomePage() {
     name: "Carelabs",
     description: page.metaDescription,
     url: "https://carelabz.com/pe/",
-    telephone: page.footerPhone ?? "+1-800-456-7890",
-    email: page.footerEmail ?? "info@carelabz.com",
+    telephone: page.footerPhone ?? config.phone,
+    email: page.footerEmail ?? config.email,
     address: {
       "@type": "PostalAddress",
-      addressLocality: page.footerAddress ?? "Toronto, ON, Peru",
+      addressLocality: page.footerAddress ?? config.address,
     },
   };
 
   return (
-    <>
+    <div className="sa-root">
       <JsonLd data={jsonLdData} />
       <RegionNavbar config={config} />
 
-      <section className="relative min-h-screen bg-[#EEF4FF] overflow-hidden flex items-center">
-        <div className="absolute inset-0 opacity-10" aria-hidden="true">
-          <svg
-            className="w-full h-full"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 800 600"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <defs>
-              <pattern
-                id="circuit"
-                x="0"
-                y="0"
-                width="80"
-                height="80"
-                patternUnits="userSpaceOnUse"
-              >
-                <path
-                  d="M10 10 h20 v20 h20 v-20 h20 M50 10 v60 M10 50 h60"
-                  stroke="#F97316"
-                  strokeWidth="1"
-                  fill="none"
-                />
-                <circle cx="10" cy="10" r="2" fill="#F97316" />
-                <circle cx="50" cy="50" r="2" fill="#F97316" />
-                <circle cx="70" cy="10" r="2" fill="#F97316" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#circuit)" />
-          </svg>
-        </div>
+      {/* HERO */}
+      <section
+        className="sa-hero-bg relative overflow-hidden flex items-center"
+        style={{ minHeight: "85vh" }}
+      >
+        <div className="sa-hero-shape" aria-hidden="true" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 pt-32">
+        <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-8 lg:px-16 py-24 pt-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               {page.heroEyebrow && (
-                <span className="text-xs font-semibold uppercase tracking-widest text-orange-400 mb-4 block">
+                <span
+                  className="inline-block mb-5 px-4 py-1.5 rounded-full text-xs uppercase tracking-widest"
+                  style={{
+                    backgroundColor: "rgba(241,92,48,0.18)",
+                    color: "#F15C30",
+                    fontFamily: "var(--sa-font-body)",
+                    fontWeight: 600,
+                  }}
+                >
                   {page.heroEyebrow}
                 </span>
               )}
               {page.heroHeadline && (
-                <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] leading-tight mb-6">
+                <h1
+                  className="text-white mb-6"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2.8rem, 5vw, 4.2rem)",
+                    lineHeight: 1.05,
+                    letterSpacing: "-0.02em",
+                    maxWidth: "32rem",
+                  }}
+                >
                   {page.heroHeadline}
                 </h1>
               )}
               {page.heroSubtext && (
-                <p className="text-lg text-[#374151] mb-8 leading-relaxed">
+                <p
+                  className="mb-10"
+                  style={{
+                    fontFamily: "var(--sa-font-body)",
+                    color: "rgba(255,255,255,0.82)",
+                    fontSize: "1.125rem",
+                    lineHeight: 1.6,
+                    maxWidth: "34rem",
+                  }}
+                >
                   {page.heroSubtext}
                 </p>
               )}
 
-              <div className="flex flex-wrap gap-4 mb-10">
+              <div className="flex flex-wrap gap-4 mb-12">
                 {page.heroPrimaryCtaText && page.heroPrimaryCtaHref && (
-                  <Link
-                    href={page.heroPrimaryCtaHref}
-                    className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
-                  >
+                  <Link href={page.heroPrimaryCtaHref} className="sa-btn-primary">
                     {page.heroPrimaryCtaText}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -186,7 +190,7 @@ export default async function PEHomePage() {
                 {page.heroSecondaryCtaText && page.heroSecondaryCtaHref && (
                   <Link
                     href={page.heroSecondaryCtaHref}
-                    className="inline-flex items-center gap-2 rounded-lg border-2 border-[#1A2538]/30 px-6 py-3 text-sm font-semibold text-[#1A2538] transition-colors hover:border-[#1A2538]/60 hover:bg-[#1A2538]/5"
+                    className="sa-btn-ghost"
                   >
                     {page.heroSecondaryCtaText}
                   </Link>
@@ -194,14 +198,28 @@ export default async function PEHomePage() {
               </div>
 
               {page.trustBadges && page.trustBadges.length > 0 && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-lg">
                   {page.trustBadges.map((badge, i) => (
                     <div
                       key={i}
-                      className="rounded-lg bg-white border border-blue-100 p-4 flex items-center gap-2"
+                      className="rounded-xl p-3 flex items-center gap-2"
+                      style={{
+                        backgroundColor: "rgba(255,255,255,0.08)",
+                        border: "1px solid rgba(255,255,255,0.15)",
+                        backdropFilter: "blur(8px)",
+                      }}
                     >
-                      <CheckCircle className="w-4 h-4 text-orange-400 shrink-0" />
-                      <span className="text-xs text-[#0050B3] font-medium">
+                      <CheckCircle
+                        className="w-4 h-4 shrink-0"
+                        style={{ color: "#F15C30" }}
+                      />
+                      <span
+                        className="text-xs text-white/95"
+                        style={{
+                          fontFamily: "var(--sa-font-body)",
+                          fontWeight: 500,
+                        }}
+                      >
                         {badge.label}
                       </span>
                     </div>
@@ -210,71 +228,167 @@ export default async function PEHomePage() {
               )}
             </div>
 
-            {page.heroImage && (
-              <div className="relative">
-                <div
-                  className="absolute inset-0 rounded-2xl bg-orange-500/20 blur-3xl"
-                  aria-hidden="true"
-                />
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                  <Image
-                    src={page.heroImage}
-                    alt={page.heroImageAlt ?? "Hero image"}
-                    fill
-                    priority
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+            <div className="relative hidden lg:block">
+              {page.heroImage ? (
+                <div className="relative">
+                  <div
+                    className="absolute -inset-6 rounded-[32px]"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 30% 30%, rgba(241,92,48,0.3), transparent 65%)",
+                      filter: "blur(40px)",
+                    }}
+                    aria-hidden="true"
+                  />
+                  <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl">
+                    <Image
+                      src={page.heroImage}
+                      alt={page.heroImageAlt ?? "Power system engineering"}
+                      fill
+                      priority
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="relative aspect-[4/3]">
+                  <div
+                    className="absolute inset-0 rounded-full"
+                    style={{
+                      background:
+                        "radial-gradient(circle, rgba(61,143,212,0.4) 0%, transparent 70%)",
+                    }}
+                  />
+                  <div
+                    className="absolute top-10 right-10 w-64 h-64 rounded-full"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(241,92,48,0.3), rgba(241,92,48,0.05))",
+                      border: "1px solid rgba(255,255,255,0.15)",
+                    }}
+                  />
+                  <div
+                    className="absolute bottom-16 left-16 w-48 h-48 rounded-full"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(61,143,212,0.45), rgba(37,117,182,0.15))",
+                      border: "1px solid rgba(255,255,255,0.15)",
+                    }}
                   />
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#EEF4FF] py-16 px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-[#1A2538] mb-6">Proactive Risk Assessment Solutions Tailored to Your Needs</h2>
-          <p className="text-lg text-[#374151] max-w-3xl mx-auto">
-            At Carelabs, we understand the importance of identifying risks and mitigating them to enhance the performance and safety of your power system and your people. We are committed to ensuring that your power system is compliant with Peru standards of electrical safety by integrating technical expertise with high-end tools like ETAP.
+      {/* INTRO */}
+      <section style={{ backgroundColor: "#ffffff" }} className="py-20 px-4">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="sa-accent-rule" aria-hidden="true" />
+          <h2
+            className="mb-6"
+            style={{
+              fontFamily: "var(--sa-font-heading)",
+              fontWeight: 800,
+              fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+              color: "#094d76",
+            }}
+          >
+            Proactive Risk Assessment Tailored to Your Facility
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--sa-font-body)",
+              color: "#5a5d66",
+              fontSize: "1.075rem",
+              lineHeight: 1.7,
+            }}
+          >
+            Carelabs identifies and mitigates electrical risk to keep your
+            Peru facility compliant with RM 111-2013-MEM and CNE. Our
+            engineers pair deep technical expertise with industry tools like
+            ETAP to deliver reports you and your regulators can act on.
           </p>
         </div>
       </section>
 
+      {/* SERVICES */}
       {page.services && page.services.length > 0 && (
-        <section className="bg-offWhite py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
+        <section style={{ backgroundColor: "#f2f2f4" }} className="py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
+            <div className="text-center mb-14 max-w-2xl mx-auto">
               {page.servicesHeading && (
-                <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-4">
+                <h2
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                    color: "#094d76",
+                    marginBottom: "1rem",
+                  }}
+                >
                   {page.servicesHeading}
                 </h2>
               )}
               {page.servicesSubtext && (
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                <p
+                  style={{
+                    fontFamily: "var(--sa-font-body)",
+                    color: "#9c9b9a",
+                    fontSize: "1.075rem",
+                    lineHeight: 1.65,
+                  }}
+                >
                   {page.servicesSubtext}
                 </p>
               )}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {page.services.map((service, i) => (
-                <div
-                  key={i}
-                  className="group rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-200 hover:shadow-lg hover:border-orange-500/50 hover:-translate-y-1"
-                >
-                  <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-orange-50 text-orange-500">
+                <div key={i} className="sa-card sa-card-accent p-8">
+                  <div
+                    className="mb-5 inline-flex items-center justify-center rounded-xl"
+                    style={{
+                      width: "3rem",
+                      height: "3rem",
+                      backgroundColor: "#e8f4fd",
+                      color: "#2575B6",
+                    }}
+                  >
                     <ServiceIcon name={service.icon} className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-navy mb-3">
+                  <h3
+                    className="mb-3"
+                    style={{
+                      fontFamily: "var(--sa-font-heading)",
+                      fontWeight: 700,
+                      fontSize: "1.25rem",
+                      color: "#094d76",
+                    }}
+                  >
                     {service.title}
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p
+                    className="mb-6"
+                    style={{
+                      fontFamily: "var(--sa-font-body)",
+                      color: "#5a5d66",
+                      lineHeight: 1.65,
+                    }}
+                  >
                     {service.description}
                   </p>
                   <Link
                     href={service.href}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-orange-500 transition-colors hover:text-orange-600"
+                    className="inline-flex items-center gap-2 text-sm transition-colors"
+                    style={{
+                      fontFamily: "var(--sa-font-body)",
+                      fontWeight: 600,
+                      color: "#F15C30",
+                    }}
                   >
                     Learn more
                     <ArrowRight className="w-4 h-4" />
@@ -286,35 +400,71 @@ export default async function PEHomePage() {
         </section>
       )}
 
+      {/* WHY CARELABS */}
       {page.whyFeatures && page.whyFeatures.length > 0 && (
-        <section className="bg-white py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
+        <section style={{ backgroundColor: "#ffffff" }} className="py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
+            <div className="text-center mb-14 max-w-2xl mx-auto">
+              <span className="sa-accent-rule" aria-hidden="true" />
               {page.whyHeading && (
-                <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-4">
+                <h2
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                    color: "#094d76",
+                    marginBottom: "1rem",
+                  }}
+                >
                   {page.whyHeading}
                 </h2>
               )}
               {page.whySubtext && (
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                <p
+                  style={{
+                    fontFamily: "var(--sa-font-body)",
+                    color: "#9c9b9a",
+                    fontSize: "1.075rem",
+                    lineHeight: 1.65,
+                  }}
+                >
                   {page.whySubtext}
                 </p>
               )}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {page.whyFeatures.map((feature, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-200 hover:shadow-lg hover:border-orange-500/50 hover:-translate-y-1"
-                >
-                  <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-orange-50 text-orange-500">
-                    <WhyIcon name={feature.icon} className="w-6 h-6" />
+                <div key={i} className="text-center">
+                  <div
+                    className="mx-auto mb-5 inline-flex items-center justify-center rounded-full"
+                    style={{
+                      width: "4rem",
+                      height: "4rem",
+                      backgroundColor: "#e8f4fd",
+                      color: "#2575B6",
+                    }}
+                  >
+                    <WhyIcon name={feature.icon} className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-semibold text-navy mb-3">
+                  <h3
+                    className="mb-3"
+                    style={{
+                      fontFamily: "var(--sa-font-heading)",
+                      fontWeight: 700,
+                      fontSize: "1.25rem",
+                      color: "#094d76",
+                    }}
+                  >
                     {feature.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p
+                    style={{
+                      fontFamily: "var(--sa-font-body)",
+                      color: "#9c9b9a",
+                      lineHeight: 1.65,
+                    }}
+                  >
                     {feature.description}
                   </p>
                 </div>
@@ -324,24 +474,59 @@ export default async function PEHomePage() {
         </section>
       )}
 
+      {/* INDUSTRIES */}
       {page.industries && page.industries.length > 0 && (
-        <section className="bg-[#EEF4FF] py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
+        <section
+          className="py-20 relative overflow-hidden"
+          style={{
+            background:
+              "linear-gradient(135deg, #094d76 0%, #2575B6 100%)",
+          }}
+        >
+          <div
+            className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(241,92,48,0.15), transparent 70%)",
+              transform: "translate(30%,-30%)",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
+            <div className="text-center mb-14 max-w-2xl mx-auto">
               {page.industriesHeading && (
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2538] mb-4">
+                <h2
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                    color: "#ffffff",
+                  }}
+                >
                   {page.industriesHeading}
                 </h2>
               )}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {page.industries.map((industry, i) => (
                 <div
                   key={i}
-                  className="bg-white border-l-4 border-[#0050B3] rounded-r-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+                  className="rounded-2xl p-6 transition-all hover:scale-[1.02]"
+                  style={{
+                    backgroundColor: "rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.15)",
+                    backdropFilter: "blur(10px)",
+                  }}
                 >
-                  <p className="text-[#1A2538] font-semibold text-sm">
+                  <p
+                    className="text-white"
+                    style={{
+                      fontFamily: "var(--sa-font-heading)",
+                      fontWeight: 600,
+                      fontSize: "0.95rem",
+                    }}
+                  >
                     {industry.name}
                   </p>
                 </div>
@@ -351,23 +536,31 @@ export default async function PEHomePage() {
         </section>
       )}
 
+      {/* INSIGHTS */}
       {page.insights && page.insights.length > 0 && (
-        <section className="bg-offWhite py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section style={{ backgroundColor: "#f7f5f3" }} className="py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
             <div className="text-center mb-14">
               {page.insightsHeading && (
-                <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-4">
+                <h2
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                    color: "#094d76",
+                  }}
+                >
                   {page.insightsHeading}
                 </h2>
               )}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {page.insights.map((insight, i) => (
                 <Link
                   key={i}
                   href={insight.href}
-                  className="group rounded-xl bg-white shadow-sm overflow-hidden transition-all duration-200 hover:shadow-lg"
+                  className="sa-card overflow-hidden group block"
                 >
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <Image
@@ -379,16 +572,47 @@ export default async function PEHomePage() {
                     />
                   </div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-orange-500">
+                    <span
+                      className="inline-block mb-3 px-3 py-1 rounded-full text-xs uppercase tracking-wider"
+                      style={{
+                        backgroundColor: "#fde8e2",
+                        color: "#F15C30",
+                        fontFamily: "var(--sa-font-body)",
+                        fontWeight: 600,
+                      }}
+                    >
                       {insight.category}
                     </span>
-                    <h3 className="text-lg font-semibold text-navy mt-2 mb-3">
+                    <h3
+                      className="mb-3"
+                      style={{
+                        fontFamily: "var(--sa-font-heading)",
+                        fontWeight: 700,
+                        fontSize: "1.125rem",
+                        color: "#094d76",
+                        lineHeight: 1.35,
+                      }}
+                    >
                       {insight.title}
                     </h3>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    <p
+                      className="mb-4 text-sm"
+                      style={{
+                        fontFamily: "var(--sa-font-body)",
+                        color: "#9c9b9a",
+                        lineHeight: 1.6,
+                      }}
+                    >
                       {insight.description}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-orange-500 group-hover:text-orange-600 transition-colors">
+                    <span
+                      className="inline-flex items-center gap-2 text-sm"
+                      style={{
+                        fontFamily: "var(--sa-font-body)",
+                        fontWeight: 600,
+                        color: "#F15C30",
+                      }}
+                    >
                       Read more
                       <ArrowRight className="w-4 h-4" />
                     </span>
@@ -400,30 +624,61 @@ export default async function PEHomePage() {
         </section>
       )}
 
+      {/* FAQ */}
       {page.faqs && page.faqs.length > 0 && (
-        <section className="bg-[#EEF4FF] py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#1A2538] text-center mb-12">
-              {page.faqsHeading ?? "Customer Queries"}
-            </h2>
+        <section style={{ backgroundColor: "#ffffff" }} className="py-24">
+          <div className="mx-auto max-w-4xl px-4 sm:px-8 lg:px-16">
+            <div className="text-center mb-12">
+              <span className="sa-accent-rule" aria-hidden="true" />
+              <h2
+                style={{
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 800,
+                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  color: "#094d76",
+                }}
+              >
+                {page.faqsHeading ?? "Frequently Asked Questions"}
+              </h2>
+            </div>
             <ServiceFaqAccordion faqs={page.faqs} />
           </div>
         </section>
       )}
 
-      <section id="contact" className="relative py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-gradient-to-r from-orange-500 to-navy"
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      {/* CTA BANNER */}
+      <section
+        id="contact"
+        className="relative py-24 overflow-hidden"
+        style={{
+          background: "linear-gradient(90deg, #F15C30 0%, #c44a1f 100%)",
+        }}
+      >
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-8 text-center">
           {page.ctaBannerHeading && (
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2
+              className="text-white mb-5"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2rem, 4vw, 3rem)",
+                lineHeight: 1.15,
+              }}
+            >
               {page.ctaBannerHeading}
             </h2>
           )}
           {page.ctaBannerSubtext && (
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
+            <p
+              className="mx-auto mb-10"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.92)",
+                fontSize: "1.125rem",
+                lineHeight: 1.65,
+                maxWidth: "42rem",
+              }}
+            >
               {page.ctaBannerSubtext}
             </p>
           )}
@@ -431,7 +686,13 @@ export default async function PEHomePage() {
             {page.ctaBannerPrimaryText && page.ctaBannerPrimaryHref && (
               <Link
                 href={page.ctaBannerPrimaryHref}
-                className="inline-flex items-center gap-2 rounded-lg bg-white text-navy px-6 py-3 text-sm font-semibold transition-colors hover:bg-white/90"
+                className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 transition-all hover:scale-[1.02]"
+                style={{
+                  backgroundColor: "#ffffff",
+                  color: "#c44a1f",
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 600,
+                }}
               >
                 {page.ctaBannerPrimaryText}
                 <ArrowRight className="w-4 h-4" />
@@ -440,7 +701,11 @@ export default async function PEHomePage() {
             {page.ctaBannerSecondaryText && page.ctaBannerSecondaryHref && (
               <Link
                 href={page.ctaBannerSecondaryHref}
-                className="inline-flex items-center gap-2 rounded-lg border-2 border-white/50 text-white px-6 py-3 text-sm font-semibold transition-colors hover:border-white hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 border-2 border-white text-white hover:bg-white/10 transition-colors"
+                style={{
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 600,
+                }}
               >
                 <Phone className="w-4 h-4" />
                 {page.ctaBannerSecondaryText}
@@ -450,7 +715,7 @@ export default async function PEHomePage() {
         </div>
       </section>
 
-      <RegionFooter config={config} />
-    </>
+      <SouthAmericaFooter config={config} />
+    </div>
   );
 }

@@ -13,20 +13,27 @@ import {
   BarChart2,
   Clock,
   Lightbulb,
+  ArrowRight,
 } from "lucide-react";
 import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { SouthAmericaFooter } from "@/components/south-america-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 const config = COUNTRY_CONFIGS["br"];
 import { getAboutPage } from "@/lib/strapi-pages";
-import { buildJsonLd, getRegionOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
+import {
+  buildJsonLd,
+  getRegionOrganizationSchema,
+  getWebPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/jsonld";
 
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getAboutPage("br");
   return {
-    title: page?.metaTitle ?? "About Carelabs | Brazil Electrical Safety Experts",
+    title:
+      page?.metaTitle ?? "About Carelabs | Brazil Electrical Safety Experts",
     description:
       page?.metaDescription ??
       "Learn about Carelabs — our mission, values, and the team dedicated to electrical safety testing and NR-10 compliance across Brazil.",
@@ -40,7 +47,8 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: page?.metaTitle ?? "About Carelabs — Power System Consultants Brazil",
       description:
-        page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Brazil.",
+        page?.metaDescription ??
+        "Carelabs is a leading electrical safety engineering firm in Brazil.",
       url: "https://carelabz.com/br/about-us/",
       siteName: "Carelabs",
       type: "website",
@@ -49,7 +57,8 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: page?.metaTitle ?? "About Carelabs — Power System Consultants Brazil",
       description:
-        page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Brazil.",
+        page?.metaDescription ??
+        "Carelabs is a leading electrical safety engineering firm in Brazil.",
     },
   };
 }
@@ -84,11 +93,19 @@ export default async function BRAboutPage() {
     "Carelabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across Brazil.";
 
   const jsonLd = buildJsonLd([
-    getRegionOrganizationSchema({ cc: "br", countryName: "Brazil", countryIso2: "BR", phone: config.phone, email: config.email, addressLocality: config.address }),
+    getRegionOrganizationSchema({
+      cc: "br",
+      countryName: "Brazil",
+      countryIso2: "BR",
+      phone: config.phone,
+      email: config.email,
+      addressLocality: config.address,
+    }),
     getWebPageSchema(
       "https://carelabz.com/br/about-us/",
       page?.metaTitle ?? "About Carelabs — Power System Consultants Brazil",
-      page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Brazil.",
+      page?.metaDescription ??
+        "Carelabs is a leading electrical safety engineering firm in Brazil.",
       "en-BR"
     ),
     getBreadcrumbSchema([
@@ -98,34 +115,73 @@ export default async function BRAboutPage() {
   ]);
 
   return (
-    <>
+    <div className="sa-root">
       <RegionNavbar config={config} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main id="main-content">
-        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A2538] mb-6">
+        {/* HERO */}
+        <section
+          className="sa-hero-bg relative overflow-hidden"
+          style={{ paddingTop: "8rem", paddingBottom: "5rem" }}
+        >
+          <div className="sa-hero-shape" aria-hidden="true" />
+          <div className="relative mx-auto max-w-4xl px-4 sm:px-8 text-center">
+            <h1
+              className="text-white mb-6"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2.5rem, 5vw, 3.75rem)",
+                lineHeight: 1.1,
+              }}
+            >
               {headline}
             </h1>
-            <p className="text-lg md:text-xl text-[#374151] max-w-2xl mx-auto">
+            <p
+              className="mx-auto"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.85)",
+                fontSize: "1.125rem",
+                lineHeight: 1.65,
+                maxWidth: "42rem",
+              }}
+            >
               {subtext}
             </p>
           </div>
         </section>
 
+        {/* MISSION */}
         {(page?.missionHeading || page?.missionBody) && (
-          <section className="bg-white py-20 px-4">
+          <section style={{ backgroundColor: "#ffffff" }} className="py-20 px-4">
             <div className="mx-auto max-w-3xl text-center">
+              <span className="sa-accent-rule" aria-hidden="true" />
               {page?.missionHeading && (
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+                <h2
+                  className="mb-6"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+                    color: "#094d76",
+                  }}
+                >
                   {page.missionHeading}
                 </h2>
               )}
               {page?.missionBody && (
-                <p className="text-gray-600 text-xl leading-relaxed">
+                <p
+                  style={{
+                    fontFamily: "var(--sa-font-body)",
+                    color: "#5a5d66",
+                    fontSize: "1.125rem",
+                    lineHeight: 1.7,
+                  }}
+                >
                   {page.missionBody}
                 </p>
               )}
@@ -133,11 +189,20 @@ export default async function BRAboutPage() {
           </section>
         )}
 
+        {/* VALUES */}
         {page?.values && page.values.length > 0 && (
-          <section className="bg-offWhite py-20 px-4">
+          <section style={{ backgroundColor: "#f2f2f4" }} className="py-20 px-4">
             <div className="mx-auto max-w-7xl">
               {page?.valuesHeading && (
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
+                <h2
+                  className="mb-12 text-center"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(2rem, 3.5vw, 2.5rem)",
+                    color: "#094d76",
+                  }}
+                >
                   {page.valuesHeading}
                 </h2>
               )}
@@ -145,17 +210,37 @@ export default async function BRAboutPage() {
                 {page.values.map((value, idx) => {
                   const Icon = resolveIcon(value.icon);
                   return (
-                    <div
-                      key={idx}
-                      className="rounded-xl border border-gray-100 bg-white p-8"
-                    >
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center mb-4">
-                        <Icon className="w-6 h-6 text-orange-500" />
+                    <div key={idx} className="sa-card sa-card-accent p-8">
+                      <div
+                        className="mb-5 inline-flex items-center justify-center rounded-xl"
+                        style={{
+                          width: "3rem",
+                          height: "3rem",
+                          backgroundColor: "#e8f4fd",
+                          color: "#2575B6",
+                        }}
+                      >
+                        <Icon className="w-6 h-6" />
                       </div>
-                      <h3 className="text-lg font-bold text-navy mb-2">
+                      <h3
+                        className="mb-3"
+                        style={{
+                          fontFamily: "var(--sa-font-heading)",
+                          fontWeight: 700,
+                          fontSize: "1.125rem",
+                          color: "#094d76",
+                        }}
+                      >
                         {value.title}
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p
+                        className="text-sm"
+                        style={{
+                          fontFamily: "var(--sa-font-body)",
+                          color: "#5a5d66",
+                          lineHeight: 1.65,
+                        }}
+                      >
                         {value.description}
                       </p>
                     </div>
@@ -166,20 +251,45 @@ export default async function BRAboutPage() {
           </section>
         )}
 
+        {/* CERTIFICATIONS */}
         {page?.certifications && page.certifications.length > 0 && (
-          <section className="bg-offWhite py-16 px-4">
+          <section style={{ backgroundColor: "#ffffff" }} className="py-16 px-4">
             <div className="mx-auto max-w-5xl">
-              <h2 className="text-2xl font-bold text-navy mb-8 text-center">
+              <h2
+                className="mb-8 text-center"
+                style={{
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 800,
+                  fontSize: "1.5rem",
+                  color: "#094d76",
+                }}
+              >
                 Standards We Follow
               </h2>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
                 {page.certifications.map((cert, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-5 py-3 shadow-sm"
+                    className="flex items-center gap-2 px-5 py-3 rounded-full"
+                    style={{
+                      backgroundColor: "#e8f4fd",
+                      border: "1px solid rgba(37,117,182,0.2)",
+                    }}
                   >
-                    <Award className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                    <span className="text-sm font-medium text-navy">{cert}</span>
+                    <Award
+                      className="w-4 h-4 flex-shrink-0"
+                      style={{ color: "#F15C30" }}
+                    />
+                    <span
+                      className="text-sm"
+                      style={{
+                        fontFamily: "var(--sa-font-body)",
+                        fontWeight: 500,
+                        color: "#094d76",
+                      }}
+                    >
+                      {cert}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -187,28 +297,53 @@ export default async function BRAboutPage() {
           </section>
         )}
 
-        <section className="bg-[#0050B3] py-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        {/* CTA */}
+        <section
+          className="py-24 px-4 relative overflow-hidden"
+          style={{
+            background: "linear-gradient(90deg, #F15C30 0%, #c44a1f 100%)",
+          }}
+        >
+          <div className="relative mx-auto max-w-4xl text-center">
+            <h2
+              className="text-white mb-4"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2rem, 4vw, 2.75rem)",
+              }}
+            >
               {page?.ctaBannerHeading ?? "Partner with Carelabs Brazil"}
             </h2>
-            {page?.ctaBannerSubtext ? (
-              <p className="text-white/70 text-lg mb-8">{page.ctaBannerSubtext}</p>
-            ) : (
-              <p className="text-white/70 text-lg mb-8">
-                Ready to elevate your safety standards? Talk to our Brazil experts today.
-              </p>
-            )}
+            <p
+              className="mb-10 mx-auto max-w-2xl"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.92)",
+                fontSize: "1.075rem",
+                lineHeight: 1.65,
+              }}
+            >
+              {page?.ctaBannerSubtext ??
+                "Ready to elevate your safety standards? Talk to our Brazil experts today."}
+            </p>
             <Link
               href={page?.ctaBannerPrimaryHref ?? "/br/contact-us/"}
-              className="inline-flex items-center rounded-lg bg-orange-500 px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-orange-600"
+              className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 transition-all hover:scale-[1.02]"
+              style={{
+                backgroundColor: "#ffffff",
+                color: "#c44a1f",
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 600,
+              }}
             >
               {page?.ctaBannerPrimaryText ?? "Get in Touch"}
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </section>
       </main>
-      <RegionFooter config={config} />
-    </>
+      <SouthAmericaFooter config={config} />
+    </div>
   );
 }

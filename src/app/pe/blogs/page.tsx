@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { BookOpen, ChevronRight } from "lucide-react";
+import { BookOpen, ChevronRight, ArrowRight } from "lucide-react";
 import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { SouthAmericaFooter } from "@/components/south-america-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 const config = COUNTRY_CONFIGS["pe"];
 import { getBlogPosts, type BlogPost } from "@/lib/strapi-blog";
-import { buildJsonLd, getRegionOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
+import {
+  buildJsonLd,
+  getRegionOrganizationSchema,
+  getWebPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/jsonld";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Peru",
+  title:
+    "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Peru",
   description:
     "Expert insights on electrical safety, power system studies, arc flash analysis, and RM 111-2013-MEM compliance for Peru facilities. Stay informed with Carelabs.",
   alternates: {
@@ -59,15 +65,21 @@ export default async function PEBlogIndexPage() {
   const allPosts = await getBlogPosts("pe");
 
   const sorted = [...allPosts].sort(
-    (a, b) =>
-      new Date(postDate(b)).getTime() - new Date(postDate(a)).getTime()
+    (a, b) => new Date(postDate(b)).getTime() - new Date(postDate(a)).getTime()
   );
 
   const featured = sorted.slice(0, 3);
   const older = sorted.slice(3);
 
   const jsonLd = buildJsonLd([
-    getRegionOrganizationSchema({ cc: "pe", countryName: "Peru", countryIso2: "PE", phone: config.phone, email: config.email, addressLocality: config.address }),
+    getRegionOrganizationSchema({
+      cc: "pe",
+      countryName: "Peru",
+      countryIso2: "PE",
+      phone: config.phone,
+      email: config.email,
+      addressLocality: config.address,
+    }),
     getWebPageSchema(
       "https://carelabz.com/pe/blogs/",
       "Electrical Safety Blog & Industry Insights | Carelabs Peru",
@@ -81,7 +93,7 @@ export default async function PEBlogIndexPage() {
   ]);
 
   return (
-    <>
+    <div className="sa-root">
       <RegionNavbar config={config} />
       <script
         type="application/ld+json"
@@ -89,42 +101,87 @@ export default async function PEBlogIndexPage() {
       />
 
       <main id="main-content">
-        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-4">
+        {/* HERO */}
+        <section
+          className="sa-hero-bg relative overflow-hidden"
+          style={{ paddingTop: "8rem", paddingBottom: "5rem" }}
+        >
+          <div className="sa-hero-shape" aria-hidden="true" />
+          <div className="relative mx-auto max-w-4xl px-4 sm:px-8 text-center">
+            <span
+              className="inline-block mb-5 px-4 py-1.5 rounded-full text-xs uppercase tracking-widest"
+              style={{
+                backgroundColor: "rgba(241,92,48,0.18)",
+                color: "#F15C30",
+                fontFamily: "var(--sa-font-body)",
+                fontWeight: 600,
+              }}
+            >
               Power Systems Knowledge Hub
-            </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] mb-6">
+            </span>
+            <h1
+              className="text-white mb-6"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2.5rem, 5vw, 3.75rem)",
+                lineHeight: 1.1,
+              }}
+            >
               Power up your Knowledge with our Blogs
             </h1>
-            <p className="text-lg text-[#374151] max-w-2xl mx-auto">
+            <p
+              className="mx-auto"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.82)",
+                fontSize: "1.125rem",
+                lineHeight: 1.65,
+                maxWidth: "44rem",
+              }}
+            >
               Stay ahead of RM 111-2013-MEM, CNE, and IEEE 1584 requirements.
-              Expert knowledge from the Carelabs engineering team to help Peru
-              facilities stay safe and compliant.
+              Expert knowledge from the Carelabs engineering team to help
+              Peru facilities stay safe and compliant.
             </p>
           </div>
         </section>
 
-        <section className="bg-offWhite py-20 px-4">
+        {/* POSTS */}
+        <section style={{ backgroundColor: "#f7f5f3" }} className="py-20 px-4">
           <div className="mx-auto max-w-7xl">
             {sorted.length === 0 && (
-              <p className="text-center text-slate-500 py-20">
+              <p
+                className="text-center py-20"
+                style={{
+                  fontFamily: "var(--sa-font-body)",
+                  color: "#9c9b9a",
+                }}
+              >
                 No articles yet. Check back soon.
               </p>
             )}
 
             {featured.length > 0 && (
               <>
-                <h2 className="text-3xl font-bold text-[#1A2538] mb-8">
+                <h2
+                  className="mb-10"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+                    color: "#094d76",
+                  }}
+                >
                   Latest Articles
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {featured.map((post) => {
                     const date = postDate(post);
                     return (
                       <article
                         key={post.id}
-                        className="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-100 bg-white flex flex-col"
+                        className="sa-card overflow-hidden flex flex-col"
                       >
                         <Link
                           href={`/pe/${post.slug}/`}
@@ -132,8 +189,7 @@ export default async function PEBlogIndexPage() {
                           tabIndex={-1}
                           className="block relative aspect-[16/9] overflow-hidden"
                         >
-                          {post.heroImage &&
-                          post.heroImage.startsWith("http") ? (
+                          {post.heroImage && post.heroImage.startsWith("http") ? (
                             <Image
                               src={post.heroImage}
                               alt={post.heroImageAlt ?? post.title}
@@ -142,46 +198,89 @@ export default async function PEBlogIndexPage() {
                               sizes="(max-width: 768px) 100vw, 33vw"
                             />
                           ) : (
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#EEF4FF] to-[#0050B3]/20 flex items-center justify-center">
-                              <BookOpen className="w-12 h-12 text-[#0050B3]/40" />
+                            <div
+                              className="absolute inset-0 flex items-center justify-center"
+                              style={{
+                                background:
+                                  "linear-gradient(135deg, #e8f4fd 0%, rgba(37,117,182,0.3) 100%)",
+                              }}
+                            >
+                              <BookOpen
+                                className="w-12 h-12"
+                                style={{ color: "rgba(37,117,182,0.5)" }}
+                              />
                             </div>
                           )}
                         </Link>
 
                         <div className="p-6 flex flex-col flex-1">
                           {post.category && (
-                            <span className="text-xs font-bold text-[#FF6633] uppercase tracking-wider mb-2">
+                            <span
+                              className="inline-block mb-3 self-start px-3 py-1 rounded-full text-xs uppercase tracking-wider"
+                              style={{
+                                backgroundColor: "#fde8e2",
+                                color: "#F15C30",
+                                fontFamily: "var(--sa-font-body)",
+                                fontWeight: 600,
+                              }}
+                            >
                               {post.category}
                             </span>
                           )}
-                          <h3 className="text-lg font-bold text-[#1A2538] mb-2 line-clamp-2">
+                          <h3
+                            className="mb-3 line-clamp-2"
+                            style={{
+                              fontFamily: "var(--sa-font-heading)",
+                              fontWeight: 700,
+                              fontSize: "1.125rem",
+                              color: "#094d76",
+                              lineHeight: 1.35,
+                            }}
+                          >
                             <Link
                               href={`/pe/${post.slug}/`}
-                              className="hover:text-[#0050B3] transition-colors"
+                              className="transition-colors hover:text-[#2575B6]"
                             >
                               {post.title}
                             </Link>
                           </h3>
                           {post.excerpt && (
-                            <p className="text-sm text-[#374151] line-clamp-3 mb-4">
+                            <p
+                              className="line-clamp-3 mb-4 text-sm"
+                              style={{
+                                fontFamily: "var(--sa-font-body)",
+                                color: "#9c9b9a",
+                                lineHeight: 1.6,
+                              }}
+                            >
                               {post.excerpt}
                             </p>
                           )}
-                          <div className="flex items-center justify-between mt-auto pt-2">
+                          <div className="flex items-center justify-between mt-auto pt-3">
                             {date && (
                               <time
                                 dateTime={date}
-                                className="text-xs text-[#64748B]"
+                                className="text-xs"
+                                style={{
+                                  fontFamily: "var(--sa-font-body)",
+                                  color: "#9c9b9a",
+                                }}
                               >
                                 {formatDateShort(date)}
                               </time>
                             )}
                             <Link
                               href={`/pe/${post.slug}/`}
-                              className="text-sm font-semibold text-[#FF6633] hover:text-[#0050B3] transition-colors ml-auto"
+                              className="inline-flex items-center gap-1 text-sm ml-auto"
+                              style={{
+                                fontFamily: "var(--sa-font-body)",
+                                fontWeight: 600,
+                                color: "#F15C30",
+                              }}
                               aria-label={`Read more about ${post.title}`}
                             >
-                              Read More →
+                              Read more
+                              <ArrowRight className="w-4 h-4" />
                             </Link>
                           </div>
                         </div>
@@ -194,61 +293,134 @@ export default async function PEBlogIndexPage() {
 
             {older.length > 0 && (
               <>
-                <h2 className="text-2xl font-bold text-[#1A2538] mb-6 mt-16">
+                <h2
+                  className="mt-16 mb-6"
+                  style={{
+                    fontFamily: "var(--sa-font-heading)",
+                    fontWeight: 800,
+                    fontSize: "1.5rem",
+                    color: "#094d76",
+                  }}
+                >
                   More Articles
                 </h2>
-                <div className="border-t border-slate-200 mb-8" />
-                <ul>
-                  {older.map((post) => (
-                    <li key={post.id}>
-                      <Link
-                        href={`/pe/${post.slug}/`}
-                        className="border-b border-slate-100 py-4 flex items-center justify-between gap-4 hover:bg-[#EEF4FF]/50 transition-colors px-2 rounded-lg group"
+                <div
+                  className="rounded-2xl overflow-hidden"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 1px 3px rgba(15,23,42,0.04)",
+                  }}
+                >
+                  <ul>
+                    {older.map((post, idx) => (
+                      <li
+                        key={post.id}
+                        style={{
+                          borderTop:
+                            idx === 0 ? "none" : "1px solid #f2f2f4",
+                        }}
                       >
-                        <div className="flex flex-col gap-1 min-w-0">
-                          {post.category && (
-                            <span className="text-xs font-semibold text-[#FF6633] uppercase">
-                              {post.category}
+                        <Link
+                          href={`/pe/${post.slug}/`}
+                          className="py-4 px-6 flex items-center justify-between gap-4 transition-colors hover:bg-[#e8f4fd]/40 group"
+                        >
+                          <div className="flex flex-col gap-1 min-w-0">
+                            {post.category && (
+                              <span
+                                className="text-xs uppercase"
+                                style={{
+                                  fontFamily: "var(--sa-font-body)",
+                                  fontWeight: 600,
+                                  color: "#F15C30",
+                                }}
+                              >
+                                {post.category}
+                              </span>
+                            )}
+                            <span
+                              className="line-clamp-1 transition-colors group-hover:text-[#2575B6]"
+                              style={{
+                                fontFamily: "var(--sa-font-heading)",
+                                fontWeight: 600,
+                                color: "#094d76",
+                              }}
+                            >
+                              {post.title}
                             </span>
-                          )}
-                          <span className="text-base font-semibold text-[#1A2538] group-hover:text-[#0050B3] transition-colors line-clamp-1">
-                            {post.title}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-4 flex-shrink-0">
-                          <span className="text-sm font-medium text-[#0050B3] group-hover:text-[#FF6633] transition-colors inline-flex items-center gap-1">
+                          </div>
+                          <span
+                            className="flex-shrink-0 inline-flex items-center gap-1 text-sm transition-colors"
+                            style={{
+                              fontFamily: "var(--sa-font-body)",
+                              fontWeight: 600,
+                              color: "#2575B6",
+                            }}
+                          >
                             Read
                             <ChevronRight className="w-4 h-4" />
                           </span>
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </>
             )}
           </div>
         </section>
 
-        <section className="bg-[#0050B3] py-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+        {/* CTA BANNER */}
+        <section
+          className="relative py-24 px-4 overflow-hidden"
+          style={{
+            background: "linear-gradient(90deg, #F15C30 0%, #c44a1f 100%)",
+          }}
+        >
+          <div className="relative mx-auto max-w-4xl text-center">
+            <h2
+              className="text-white mb-4"
+              style={{
+                fontFamily: "var(--sa-font-heading)",
+                fontWeight: 800,
+                fontSize: "clamp(2rem, 4vw, 2.75rem)",
+              }}
+            >
               Ready to Improve Your Electrical Safety?
             </h2>
-            <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
+            <p
+              className="mb-10 mx-auto max-w-2xl"
+              style={{
+                fontFamily: "var(--sa-font-body)",
+                color: "rgba(255,255,255,0.92)",
+                fontSize: "1.075rem",
+                lineHeight: 1.65,
+              }}
+            >
               Our expert engineers are ready to help your Peru facility meet
-              RM 111-2013-MEM and CNE requirements. Get a free consultation today.
+              RM 111-2013-MEM and CNE requirements. Get a free consultation
+              today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/pe/contact-us/"
-                className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-8 py-3 text-base font-semibold text-white hover:bg-orange-600 transition-colors"
+                className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-3.5 transition-all hover:scale-[1.02]"
+                style={{
+                  backgroundColor: "#ffffff",
+                  color: "#c44a1f",
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 600,
+                }}
               >
                 Get a Free Quote
+                <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/pe/services/arc-flash-study/"
-                className="inline-flex items-center justify-center rounded-lg border border-white/30 px-8 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors"
+                href="/pe/services/"
+                className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-3.5 border-2 border-white text-white hover:bg-white/10 transition-colors"
+                style={{
+                  fontFamily: "var(--sa-font-heading)",
+                  fontWeight: 600,
+                }}
               >
                 Our Services
               </Link>
@@ -257,7 +429,7 @@ export default async function PEBlogIndexPage() {
         </section>
       </main>
 
-      <RegionFooter config={config} />
-    </>
+      <SouthAmericaFooter config={config} />
+    </div>
   );
 }

@@ -1,0 +1,189 @@
+/* South America design tokens — BR, CO, CL, AR, PE */
+:root {
+  --sa-blue-dark: #094d76;
+  --sa-blue-primary: #2575B6;
+  --sa-blue-mid: #1a5fa0;
+  --sa-blue-light: #3d8fd4;
+  --sa-blue-pale: #e8f4fd;
+  --sa-orange-deep: #c44a1f;
+  --sa-orange-primary: #F15C30;
+  --sa-orange-warm: #f47d5a;
+  --sa-orange-pale: #fde8e2;
+  --sa-white: #ffffff;
+  --sa-warm-gray: #f7f5f3;
+  --sa-gray: #f2f2f4;
+  --sa-gray-mid: #9c9b9a;
+  --sa-font-heading: var(--font-montserrat), 'Montserrat', system-ui, sans-serif;
+  --sa-font-body: var(--font-poppins), 'Poppins', system-ui, sans-serif;
+  --sa-radius-sm: 12px;
+  --sa-radius-md: 16px;
+  --sa-radius-lg: 24px;
+  --sa-radius-pill: 50px;
+  --sa-shadow-warm: 0 4px 24px rgba(241, 92, 48, 0.10);
+  --sa-shadow-blue: 0 4px 24px rgba(37, 117, 182, 0.10);
+  --sa-shadow-lg: 0 8px 40px rgba(37, 117, 182, 0.15);
+}
+
+.sa-root {
+  font-family: var(--sa-font-body);
+  color: var(--sa-blue-dark);
+  background: var(--sa-white);
+}
+
+.sa-root h1,
+.sa-root h2,
+.sa-root h3,
+.sa-root h4,
+.sa-root h5,
+.sa-root h6 {
+  font-family: var(--sa-font-heading);
+  font-weight: 800;
+  color: var(--sa-blue-dark);
+  letter-spacing: -0.01em;
+}
+
+.sa-root p,
+.sa-root li,
+.sa-root span,
+.sa-root a,
+.sa-root input,
+.sa-root textarea,
+.sa-root button {
+  font-family: var(--sa-font-body);
+}
+
+.sa-hero-bg {
+  background: linear-gradient(135deg, var(--sa-blue-dark) 0%, var(--sa-blue-primary) 100%);
+  position: relative;
+}
+
+.sa-hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 85% 85%,
+    rgba(241, 92, 48, 0.25) 0%,
+    rgba(241, 92, 48, 0) 55%
+  );
+  pointer-events: none;
+}
+
+.sa-hero-shape {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sa-hero-shape::before,
+.sa-hero-shape::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.sa-hero-shape::before {
+  width: 520px;
+  height: 520px;
+  right: -160px;
+  top: -100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.10), transparent 70%);
+}
+
+.sa-hero-shape::after {
+  width: 360px;
+  height: 360px;
+  right: 120px;
+  bottom: -120px;
+  background: radial-gradient(circle, rgba(241, 92, 48, 0.25), transparent 65%);
+}
+
+.sa-card {
+  background: var(--sa-white);
+  border-radius: var(--sa-radius-lg);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.sa-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sa-shadow-lg);
+}
+
+.sa-card-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.sa-card-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--sa-orange-primary);
+}
+
+.sa-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--sa-orange-primary);
+  color: var(--sa-white);
+  font-family: var(--sa-font-heading);
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: var(--sa-radius-pill);
+  transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: var(--sa-shadow-warm);
+}
+
+.sa-btn-primary:hover {
+  background: var(--sa-orange-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(196, 74, 31, 0.25);
+}
+
+.sa-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: var(--sa-white);
+  font-family: var(--sa-font-heading);
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: var(--sa-radius-pill);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.sa-btn-ghost:hover {
+  background: var(--sa-white);
+  color: var(--sa-blue-dark);
+}
+
+.sa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--sa-orange-pale);
+  color: var(--sa-orange-deep);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--sa-radius-pill);
+  font-family: var(--sa-font-body);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sa-accent-rule {
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--sa-orange-primary);
+  border-radius: var(--sa-radius-pill);
+  margin: 0 auto 1.5rem;
+}
