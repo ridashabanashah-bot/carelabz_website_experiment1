@@ -33,12 +33,6 @@ const FALLBACK_INDUSTRIES = [
   "Energy",
 ];
 
-const STATS = [
-  { number: "15+", label: "Anos de Experiência" },
-  { number: "200+", label: "Projetos Concluídos" },
-  { number: "100%", label: `Conformidade ${config.primaryStandard}` },
-];
-
 const FALLBACK_PROCESS_STEPS = [
   {
     title: "Diagnóstico",
@@ -313,24 +307,11 @@ export default async function BRHomePage() {
           </div>
         </section>
 
-        {/* 2. TRUST BAR / STATS */}
-        <section className="bg-[#1E293B] py-20 lg:py-24">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {STATS.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="font-condensed font-extrabold text-7xl md:text-8xl text-orange-500 leading-none">
-                    {stat.number}
-                  </div>
-                  <div className="font-body text-base text-white/60 mt-3">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {trustBadgesForHero.length > 0 && (
-              <div className="mt-12 flex flex-wrap lg:flex-nowrap justify-center gap-4">
+        {/* 2. TRUST BAR — certification pills only */}
+        {trustBadgesForHero.length > 0 && (
+          <section className="bg-[#1E293B] py-12">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-4">
                 {trustBadgesForHero.map((badge, i) => (
                   <span
                     key={i}
@@ -343,9 +324,9 @@ export default async function BRHomePage() {
                   </span>
                 ))}
               </div>
-            )}
-          </div>
-        </section>
+            </div>
+          </section>
+        )}
 
         {/* 3. SERVICES — folder-tab horizontal scroll */}
         {servicesToShow.length > 0 && (
@@ -447,9 +428,9 @@ export default async function BRHomePage() {
           </div>
         </section>
 
-        {/* 5. INDUSTRIES — big marquee + small grid */}
-        <section id="industries" className="bg-[#0B1A2F] py-20 lg:py-28">
-          <p className="text-center font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-8">
+        {/* 5. INDUSTRIES — marquee only */}
+        <section id="industries" className="bg-[#0B1A2F] py-12">
+          <p className="text-center font-condensed text-xs uppercase tracking-[0.15em] text-orange-500 mb-6">
             Indústrias Que Atendemos
           </p>
           <div className="overflow-hidden">
@@ -465,19 +446,6 @@ export default async function BRHomePage() {
                     </span>
                   ))}
                 </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="max-w-5xl mx-auto mt-10 px-6">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {industriesForMarquee.slice(0, 10).map((industry, i) => (
-                <div
-                  key={i}
-                  className="text-center font-body text-sm text-white/70"
-                >
-                  {industry}
-                </div>
               ))}
             </div>
           </div>

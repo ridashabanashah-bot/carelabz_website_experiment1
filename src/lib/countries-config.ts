@@ -1058,7 +1058,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     blogDetailPattern: "/br/{slug}/",
     aboutPath: "/br/about-us/",
     contactPath: "/br/contact-us/",
-    caseStudyPath: null,
+    caseStudyPath: "/br/case-studies/",
     address: "São Paulo, Brazil",
     phone: "+55 (11) 0000-0000",
     email: "info@carelabz.com",

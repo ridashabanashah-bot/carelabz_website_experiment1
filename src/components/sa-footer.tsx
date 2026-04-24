@@ -24,7 +24,10 @@ export function SAFooter({
   const navLinks = [
     { label: "Services", href: config.servicesIndexPath },
     { label: "About", href: config.aboutPath },
-    { label: "Industries", href: `/${config.cc}/#industries` },
+    {
+      label: "Case Studies",
+      href: config.caseStudyPath ?? `/${config.cc}/case-studies/`,
+    },
     { label: "Insights", href: config.blogIndexPath },
     { label: "Contact", href: config.contactPath },
   ];

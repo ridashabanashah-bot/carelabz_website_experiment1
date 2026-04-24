@@ -23,9 +23,8 @@ export function SANavbar({ config }: SANavbarProps) {
   }, []);
 
   const navLinks = [
-    { name: "About", href: config.aboutPath },
-    { name: "Industries", href: `/${config.cc}/#industries` },
-    { name: "Insights", href: config.blogIndexPath },
+    { name: "About Us", href: config.aboutPath },
+    { name: "Contact Us", href: config.contactPath },
   ];
 
   const navBg = isScrolled || mobileMenuOpen
