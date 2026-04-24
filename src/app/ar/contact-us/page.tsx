@@ -197,27 +197,29 @@ export default async function ARContactPage() {
               <h2 className="font-condensed font-bold text-2xl uppercase">
                 Contact Details
               </h2>
+              {/* Email first — it's the authoritative contact method while
+                  per-country phone numbers remain placeholder values. */}
+              <ContactItem
+                icon={Mail}
+                label="Email (primary)"
+                value={
+                  <a
+                    href={`mailto:${resolvedEmail}`}
+                    className="hover:text-orange-500 transition-colors font-semibold"
+                  >
+                    {resolvedEmail}
+                  </a>
+                }
+              />
               <ContactItem
                 icon={Phone}
                 label="Phone"
                 value={
                   <a
                     href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
-                    className="hover:text-orange-500 transition-colors"
+                    className="hover:text-orange-500 transition-colors text-white/80"
                   >
                     {resolvedPhone}
-                  </a>
-                }
-              />
-              <ContactItem
-                icon={Mail}
-                label="Email"
-                value={
-                  <a
-                    href={`mailto:${resolvedEmail}`}
-                    className="hover:text-orange-500 transition-colors"
-                  >
-                    {resolvedEmail}
                   </a>
                 }
               />
@@ -266,15 +268,15 @@ export default async function ARContactPage() {
               Need urgent assistance?
             </h2>
             <p className="font-body text-lg text-white/80 mt-6 max-w-2xl mx-auto">
-              Our {COUNTRY_NAME} team is available to respond to emergency
-              compliance and safety testing requests.
+              Our {COUNTRY_NAME} team responds to emergency compliance and
+              safety testing requests within one business day.
             </p>
             <Link
-              href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
+              href={`mailto:${resolvedEmail}`}
               className="mt-8 inline-flex items-center gap-3 bg-white text-[#0B1A2F] font-condensed font-bold uppercase px-10 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base tracking-wide"
             >
-              <Phone className="w-4 h-4" />
-              Call Now
+              <Mail className="w-4 h-4" />
+              Email Us
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

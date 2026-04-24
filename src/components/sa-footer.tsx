@@ -21,13 +21,12 @@ export function SAFooter({
   const resolvedEmail = email ?? config.email;
   const resolvedAddress = address ?? config.address;
 
+  // Case Studies intentionally omitted until real content exists — the
+  // placeholder pages still ship under /{cc}/case-studies/ but we don't
+  // advertise them in the footer to avoid pointing users at empty shells.
   const navLinks = [
     { label: "Services", href: config.servicesIndexPath },
     { label: "About", href: config.aboutPath },
-    {
-      label: "Case Studies",
-      href: config.caseStudyPath ?? `/${config.cc}/case-studies/`,
-    },
     { label: "Blog", href: config.blogIndexPath },
     { label: "Contact", href: config.contactPath },
   ];
