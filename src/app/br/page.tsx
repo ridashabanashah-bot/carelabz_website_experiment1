@@ -333,16 +333,8 @@ export default async function BRHomePage() {
 
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 py-24 lg:py-40">
           <div className="max-w-4xl">
-            <h1 className="font-serif font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#094d76] leading-[0.9] tracking-tight">
-              {lead && (
-                <>
-                  {lead.split(/\s+/).map((word, i) => (
-                    <span key={i} className="block">
-                      {word}
-                    </span>
-                  ))}
-                </>
-              )}
+            <h1 className="font-serif font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#094d76] leading-tight tracking-tight">
+              {lead && <>{lead} </>}
               <span className="text-[#2575B6] block">{accent}</span>
             </h1>
             <p className="mt-10 text-lg text-[#9c9b9a] max-w-md leading-relaxed font-sans">
@@ -370,14 +362,14 @@ export default async function BRHomePage() {
                 <p className="text-[#094d76]/60 text-xs uppercase tracking-widest font-serif font-semibold mb-4">
                   Standards We Follow
                 </p>
-                <div className="flex flex-wrap gap-3 max-w-2xl">
+                <div className="flex flex-wrap lg:flex-nowrap gap-3">
                   {trustBadgesForHero.map((badge, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center gap-2 rounded-full bg-white border border-[#094d76]/10 px-4 py-2 shadow-sm hover:shadow-md hover:border-[#F15C30]/40 transition-all"
+                      className="inline-flex items-center gap-2 rounded-full bg-white border border-[#094d76]/10 px-5 py-2.5 shadow-sm hover:shadow-md hover:border-[#F15C30]/40 hover:scale-[1.02] transition-all"
                     >
                       <CheckCircle2 className="w-4 h-4 text-[#F15C30] shrink-0" />
-                      <span className="text-xs font-semibold text-[#094d76] font-sans">
+                      <span className="text-sm font-semibold text-[#094d76] font-sans whitespace-nowrap">
                         {badge}
                       </span>
                     </span>
@@ -739,19 +731,19 @@ export default async function BRHomePage() {
       <section id="contact" className="relative">
         <div className="flex flex-col lg:flex-row">
           <div className="flex-1 bg-[#F15C30] py-24 lg:py-40 px-6 lg:px-12 flex items-center justify-center lg:justify-end">
-            <h2 className="font-serif font-black text-5xl lg:text-7xl text-white text-center lg:text-right lg:pr-8">
+            <h2 className="font-serif font-black text-5xl lg:text-7xl text-white text-center lg:text-right lg:pr-8 lg:mr-20">
               {ctaLeadText}
             </h2>
           </div>
           <div className="flex-1 bg-[#094d76] py-24 lg:py-40 px-6 lg:px-12 flex items-center justify-center lg:justify-start">
-            <h2 className="font-serif font-black text-5xl lg:text-7xl text-white text-center lg:text-left lg:pl-8">
+            <h2 className="font-serif font-black text-5xl lg:text-7xl text-white text-center lg:text-left lg:pl-8 lg:ml-20">
               {ctaTailText}
             </h2>
           </div>
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Link
               href={ctaButtonHref}
-              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform text-lg"
+              className="inline-flex items-center gap-3 bg-white text-[#094d76] font-serif font-bold px-8 py-4 rounded-full shadow-2xl hover:scale-105 transition-transform text-base"
             >
               {ctaButtonText}
               <ArrowRight className="w-5 h-5" />
