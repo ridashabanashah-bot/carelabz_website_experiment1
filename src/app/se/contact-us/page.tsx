@@ -3,7 +3,7 @@ export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Phone, Mail, ArrowRight } from "lucide-react";
 import { NENavbar } from "@/components/ne-navbar";
 import { NEFooter } from "@/components/ne-footer";
 import { NEAnnouncementTicker } from "@/components/ne-announcement-ticker";
@@ -78,10 +78,7 @@ export default async function ContactPage() {
   const subtext =
     page?.heroSubtext ??
     `Have a question or ready to start a project? Our ${config.countryName} team is here to help.`;
-
-  const resolvedPhone = page?.phone ?? config.phone;
   const resolvedEmail = page?.email ?? config.email;
-  const resolvedAddress = page?.address ?? config.address;
 
   const jsonLd = buildJsonLd([
     getRegionOrganizationSchema({
@@ -160,44 +157,15 @@ export default async function ContactPage() {
               <div className="space-y-10">
                 <div>
                   <span className="inline-flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-2">
-                    <Phone className="w-3.5 h-3.5" /> Phone
-                  </span>
-                  <a
-                    href={`tel:${resolvedPhone.replace(/[^\d+]/g, "")}`}
-                    className="block font-ne-display font-bold text-xl text-[#1A3650] uppercase hover:text-[#F97316] transition-colors"
-                  >
-                    {resolvedPhone}
-                  </a>
-                </div>
-                <div>
-                  <span className="inline-flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-2">
                     <Mail className="w-3.5 h-3.5" /> Email
                   </span>
                   <a
                     href={`mailto:${resolvedEmail}`}
-                    className="block font-ne-display font-bold text-xl text-[#1A3650] uppercase hover:text-[#F97316] transition-colors break-all"
+                    className="block font-ne-body font-medium text-base text-[#1A3650] hover:text-[#F97316] transition-colors break-all"
                   >
                     {resolvedEmail}
                   </a>
                 </div>
-                <div>
-                  <span className="inline-flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-2">
-                    <MapPin className="w-3.5 h-3.5" /> Address
-                  </span>
-                  <p className="font-ne-display font-bold text-xl text-[#1A3650] uppercase whitespace-pre-line">
-                    {resolvedAddress}
-                  </p>
-                </div>
-                {page?.officeHours && (
-                  <div>
-                    <span className="inline-flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-2">
-                      <Clock className="w-3.5 h-3.5" /> Office Hours
-                    </span>
-                    <p className="font-ne-display font-bold text-xl text-[#1A3650] uppercase whitespace-pre-line">
-                      {page.officeHours}
-                    </p>
-                  </div>
-                )}
               </div>
             </div>
 
@@ -246,7 +214,7 @@ export default async function ContactPage() {
               Need urgent assistance?
             </p>
             <Link
-              href={`tel:${resolvedPhone.replace(/[^\d+]/g, "")}`}
+              href={`mailto:${resolvedEmail}`}
               className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#243E54] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors shrink-0"
             >
               <Phone className="w-4 h-4" />

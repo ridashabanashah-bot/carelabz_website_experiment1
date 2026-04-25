@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { RegionNavbar } from "@/components/region-navbar";
 import { RegionFooter } from "@/components/region-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
@@ -123,24 +123,6 @@ export default async function TRContactPage() {
               </div>
 
               <div className="space-y-8">
-                {page?.phone && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Phone
-                      </p>
-                      <a
-                        href={`tel:${page.phone.replace(/\s/g, "")}`}
-                        className="text-gray-700 hover:text-orange-500 transition-colors"
-                      >
-                        {page.phone}
-                      </a>
-                    </div>
-                  </div>
-                )}
 
                 {page?.email && (
                   <div className="flex gap-4 items-start">
@@ -161,67 +143,8 @@ export default async function TRContactPage() {
                   </div>
                 )}
 
-                {page?.address && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Address
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">{page.address}</p>
-                    </div>
-                  </div>
-                )}
 
-                {page?.officeHours && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Office Hours
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">
-                        {page.officeHours}
-                      </p>
-                    </div>
-                  </div>
-                )}
 
-                {!page?.phone && !page?.email && !page?.address && !page?.officeHours && (
-                  <div className="space-y-6">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Phone</p>
-                        <p className="text-gray-700">+1 (800) 456-7890</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Email</p>
-                        <p className="text-gray-700">info@carelabz.com</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Office Hours</p>
-                        <p className="text-gray-700">Monday – Friday, 9 AM – 5 PM ET</p>
-                      </div>
-                    </div>
-                  </div>
-                )}
 
                 {page?.mapEmbedUrl && (
                   <div className="rounded-xl overflow-hidden border border-gray-200 mt-4">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 import { SAAnnouncementTicker } from "@/components/sa-announcement-ticker";
 import { SANavbar } from "@/components/sa-navbar";
 import { SAFooter } from "@/components/sa-footer";
@@ -105,11 +105,7 @@ export default async function CLContactPage() {
       { name: "Contact", url: `https://carelabz.com/${CC}/contact-us/` },
     ]),
   ]);
-
-  const resolvedPhone = page?.phone ?? config.phone;
   const resolvedEmail = page?.email ?? config.email;
-  const resolvedAddress = page?.address ?? config.address;
-  const resolvedHours = page?.officeHours ?? "Monday – Friday, 9 AM – 5 PM";
 
   const ContactItem = ({
     icon: Icon,
@@ -209,34 +205,6 @@ export default async function CLContactPage() {
                   >
                     {resolvedEmail}
                   </a>
-                }
-              />
-              <ContactItem
-                icon={Phone}
-                label="Phone"
-                value={
-                  <a
-                    href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
-                    className="hover:text-orange-500 transition-colors text-white/80"
-                  >
-                    {resolvedPhone}
-                  </a>
-                }
-              />
-              <ContactItem
-                icon={MapPin}
-                label="Address"
-                value={
-                  <span className="whitespace-pre-line">
-                    {resolvedAddress}
-                  </span>
-                }
-              />
-              <ContactItem
-                icon={Clock}
-                label="Office Hours"
-                value={
-                  <span className="whitespace-pre-line">{resolvedHours}</span>
                 }
               />
             </div>

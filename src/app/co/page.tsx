@@ -594,13 +594,7 @@ export default async function COHomePage() {
       </main>
 
       {/* 9. FOOTER */}
-      <SAFooter
-        config={config}
-        phone={page.footerPhone}
-        email={page.footerEmail}
-        address={page.footerAddress}
-        description={page.footerDescription}
-      />
+      <SAFooter config={config} email={page.footerEmail} />
     </div>
   );
 }

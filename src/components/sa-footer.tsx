@@ -1,25 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import type { CountryConfig } from "@/lib/countries-config";
 
 interface SAFooterProps {
   config: CountryConfig;
-  phone?: string | null;
   email?: string | null;
-  address?: string | null;
-  description?: string | null;
 }
 
-export function SAFooter({
-  config,
-  phone,
-  email,
-  address,
-}: SAFooterProps) {
-  const resolvedPhone = phone ?? config.phone;
+export function SAFooter({ config, email }: SAFooterProps) {
   const resolvedEmail = email ?? config.email;
-  const resolvedAddress = address ?? config.address;
 
   // Case Studies intentionally omitted until real content exists — the
   // placeholder pages still ship under /{cc}/case-studies/ but we don't
@@ -32,7 +22,6 @@ export function SAFooter({
   ];
 
   const certLine = config.standards.slice(0, 3).join(" · ");
-  const whatsappNumber = resolvedPhone.replace(/[^\d+]/g, "");
 
   return (
     <footer aria-label="Site footer">
@@ -58,9 +47,13 @@ export function SAFooter({
             <p className="font-condensed uppercase tracking-widest text-xs text-white/90 mb-4">
               Test | Calibrate | Inspect | Certify
             </p>
-            <p className="font-body text-sm text-white/85 leading-relaxed whitespace-pre-line">
-              {resolvedAddress}
-            </p>
+            <a
+              href={`mailto:${resolvedEmail}`}
+              className="font-body text-sm text-white/85 hover:text-white transition-colors inline-flex items-center gap-2"
+            >
+              <Mail className="w-4 h-4" />
+              {resolvedEmail}
+            </a>
           </div>
 
           {/* Column 2 — nav */}
@@ -122,15 +115,6 @@ export function SAFooter({
               className="text-white/60 hover:text-white transition-colors"
             >
               <Linkedin className="w-4 h-4" />
-            </a>
-            <a
-              href={`https://wa.me/${whatsappNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              className="text-white/60 hover:text-white transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${resolvedEmail}`}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Linkedin, Twitter, Facebook } from "lucide-react";
 import type { CountryConfig } from "@/lib/countries-config";
 
 interface RegionFooterProps {
@@ -75,19 +75,6 @@ export function RegionFooter({ config }: RegionFooterProps) {
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-white/70">{config.address}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-orange-400 shrink-0" />
-                <a
-                  href={`tel:${config.phone.replace(/\s/g, "")}`}
-                  className="text-sm text-white/70 hover:text-orange-400 transition-colors"
-                >
-                  {config.phone}
-                </a>
-              </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-400 shrink-0" />
                 <a

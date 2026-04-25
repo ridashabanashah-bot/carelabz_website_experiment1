@@ -1,25 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import type { CountryConfig } from "@/lib/countries-config";
 
 interface NEFooterProps {
   config: CountryConfig;
-  phone?: string | null;
   email?: string | null;
-  address?: string | null;
-  description?: string | null;
 }
 
-export function NEFooter({
-  config,
-  phone,
-  email,
-  address,
-}: NEFooterProps) {
-  const resolvedPhone = phone ?? config.phone;
+export function NEFooter({ config, email }: NEFooterProps) {
   const resolvedEmail = email ?? config.email;
-  const resolvedAddress = address ?? config.address;
 
   const navigateLinks = [
     { label: "Home", href: `/${config.cc}/` },
@@ -84,15 +74,6 @@ export function NEFooter({
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
-                <a
-                  href={`tel:${resolvedPhone.replace(/[^\d+]/g, "")}`}
-                  className="font-ne-body text-sm text-white/60 hover:text-white transition-colors"
-                >
-                  {resolvedPhone}
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
                 <a
                   href={`mailto:${resolvedEmail}`}
@@ -100,12 +81,6 @@ export function NEFooter({
                 >
                   {resolvedEmail}
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
-                <span className="font-ne-body text-sm text-white/60">
-                  {resolvedAddress}
-                </span>
               </li>
             </ul>
           </div>

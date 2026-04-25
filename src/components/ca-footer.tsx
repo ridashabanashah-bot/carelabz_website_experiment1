@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Linkedin, Twitter, Facebook } from "lucide-react";
 
 const SERVICES = [
   { label: "Arc Flash Study", href: "/ca/services/arc-flash-study/" },
@@ -19,8 +19,6 @@ const COMPANY = [
 const FOOTER_DESCRIPTION =
   "Carelabs delivers CSA Z462 arc flash studies, Canadian Electrical Code compliance, and full power system engineering services across Canada.";
 
-const ADDRESS = "Toronto, ON, Canada";
-const PHONE = "+1 (800) 456-7890";
 const EMAIL = "info@carelabz.com";
 
 export default function CAFooter() {
@@ -84,19 +82,6 @@ export default function CAFooter() {
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-white/70">{ADDRESS}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-orange-400 shrink-0" />
-                <a
-                  href={`tel:${PHONE.replace(/\s/g, "")}`}
-                  className="text-sm text-white/70 hover:text-orange-400 transition-colors"
-                >
-                  {PHONE}
-                </a>
-              </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-400 shrink-0" />
                 <a

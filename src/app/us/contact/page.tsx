@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { StickyNavbar } from "@/components/sticky-navbar";
 import USFooter from "@/components/us-footer";
 import { ContactForm } from "@/components/contact-form";
@@ -125,24 +125,6 @@ export default async function ContactPage() {
 
               {/* Right: Contact Details */}
               <div className="space-y-8">
-                {page?.phone && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Phone
-                      </p>
-                      <a
-                        href={`tel:${page.phone.replace(/\s/g, "")}`}
-                        className="text-gray-700 hover:text-orange-500 transition-colors"
-                      >
-                        {page.phone}
-                      </a>
-                    </div>
-                  </div>
-                )}
 
                 {page?.email && (
                   <div className="flex gap-4 items-start">
@@ -163,68 +145,9 @@ export default async function ContactPage() {
                   </div>
                 )}
 
-                {page?.address && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Address
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">{page.address}</p>
-                    </div>
-                  </div>
-                )}
 
-                {page?.officeHours && (
-                  <div className="flex gap-4 items-start">
-                    <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">
-                        Office Hours
-                      </p>
-                      <p className="text-gray-700 whitespace-pre-line">
-                        {page.officeHours}
-                      </p>
-                    </div>
-                  </div>
-                )}
 
                 {/* Fallback contact details when no Strapi data */}
-                {!page?.phone && !page?.email && !page?.address && !page?.officeHours && (
-                  <div className="space-y-6">
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Phone</p>
-                        <p className="text-gray-700">+1 (800) 000-0000</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Mail className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Email</p>
-                        <p className="text-gray-700">info@carelabz.com</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4 items-start">
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-5 h-5 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy uppercase tracking-wide mb-1">Office Hours</p>
-                        <p className="text-gray-700">Monday – Friday, 8 AM – 6 PM EST</p>
-                      </div>
-                    </div>
-                  </div>
-                )}
 
                 {/* Map Embed */}
                 {page?.mapEmbedUrl && (
