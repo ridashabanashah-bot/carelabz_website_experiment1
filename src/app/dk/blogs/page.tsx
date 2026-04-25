@@ -1,40 +1,45 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { BookOpen, ChevronRight } from "lucide-react";
-import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { BookOpen, ArrowRight } from "lucide-react";
+import { NENavbar } from "@/components/ne-navbar";
+import { NEFooter } from "@/components/ne-footer";
+import { NEAnnouncementTicker } from "@/components/ne-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
-const config = COUNTRY_CONFIGS["dk"];
 import { getBlogPosts, type BlogPost } from "@/lib/strapi-blog";
-import { buildJsonLd, getRegionOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
+import {
+  buildJsonLd,
+  getRegionOrganizationSchema,
+  getWebPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/jsonld";
 
-export const dynamic = "force-dynamic";
+const CC = "dk";
+const config = COUNTRY_CONFIGS[CC];
 
 export const metadata: Metadata = {
-  title: "Electrical Safety Blog: Power System Studies & Analysis | Carelabs Denmark",
-  description:
-    "Expert insights on electrical safety, power system studies, arc flash analysis, and DS/HD 60364 compliance for Denmark facilities. Stay informed with Carelabs.",
+  title: `Electrical Safety Blog: Power System Studies & Analysis | Carelabs ${config.countryName}`,
+  description: `Expert insights on electrical safety, power system studies, arc flash analysis, and ${config.primaryStandard} compliance for ${config.countryName} facilities.`,
   alternates: {
-    canonical: "https://carelabz.com/dk/blogs/",
+    canonical: `https://carelabz.com${config.blogIndexPath}`,
     languages: {
-      "en-DK": "https://carelabz.com/dk/blogs/",
-      "x-default": "https://carelabz.com/dk/blogs/",
+      [config.hreflang]: `https://carelabz.com${config.blogIndexPath}`,
+      "x-default": `https://carelabz.com${config.blogIndexPath}`,
     },
   },
   openGraph: {
-    title: "Electrical Safety Blog & Industry Insights | Carelabs Denmark",
-    description:
-      "Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in Denmark.",
-    url: "https://carelabz.com/dk/blogs/",
+    title: `Electrical Safety Blog & Industry Insights | Carelabs ${config.countryName}`,
+    description: `Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in ${config.countryName}.`,
+    url: `https://carelabz.com${config.blogIndexPath}`,
     siteName: "Carelabs",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Electrical Safety Blog & Industry Insights | Carelabs Denmark",
-    description:
-      "Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in Denmark.",
+    title: `Electrical Safety Blog & Industry Insights | Carelabs ${config.countryName}`,
+    description: `Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in ${config.countryName}.`,
   },
 };
 
@@ -45,7 +50,7 @@ function postDate(post: BlogPost): string {
 function formatDateShort(dateString: string | null): string {
   if (!dateString) return "";
   try {
-    return new Date(dateString).toLocaleDateString("en-DK", {
+    return new Date(dateString).toLocaleDateString("en-GB", {
       day: "numeric",
       month: "short",
       year: "numeric",
@@ -55,8 +60,18 @@ function formatDateShort(dateString: string | null): string {
   }
 }
 
-export default async function DKBlogIndexPage() {
-  const allPosts = await getBlogPosts("dk");
+function getPostHref(slug: string): string {
+  const suffix = `-${CC}`;
+  const clean = slug.endsWith(suffix) ? slug.slice(0, -suffix.length) : slug;
+  return config.blogDetailPattern.replace("{slug}", clean);
+}
+
+function cleanTitle(title: string): string {
+  return title.replace(/\s+in\s+(the\s+)?(United Kingdom|UK|Ireland|Sweden|Norway|Denmark|Finland)\s*$/i, "").trim();
+}
+
+export default async function BlogIndexPage() {
+  const allPosts = await getBlogPosts(CC);
 
   const sorted = [...allPosts].sort(
     (a, b) =>
@@ -67,188 +82,223 @@ export default async function DKBlogIndexPage() {
   const older = sorted.slice(3);
 
   const jsonLd = buildJsonLd([
-    getRegionOrganizationSchema({ cc: "dk", countryName: "Denmark", countryIso2: "DK", phone: config.phone, email: config.email, addressLocality: config.address }),
+    getRegionOrganizationSchema({
+      cc: CC,
+      countryName: config.countryName,
+      countryIso2: config.dialCodeCountryIso2,
+      phone: config.phone,
+      email: config.email,
+      addressLocality: config.address,
+    }),
     getWebPageSchema(
-      "https://carelabz.com/dk/blogs/",
-      "Electrical Safety Blog & Industry Insights | Carelabs Denmark",
-      "Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in Denmark.",
-      "en-DK"
+      `https://carelabz.com${config.blogIndexPath}`,
+      `Electrical Safety Blog & Industry Insights | Carelabs ${config.countryName}`,
+      `Expert insights on arc flash analysis, power system engineering, and electrical safety compliance in ${config.countryName}.`,
+      config.hreflang
     ),
     getBreadcrumbSchema([
-      { name: "Home", url: "https://carelabz.com/dk/" },
-      { name: "Blog", url: "https://carelabz.com/dk/blogs/" },
+      { name: "Home", url: `https://carelabz.com/${CC}/` },
+      { name: "Blog", url: `https://carelabz.com${config.blogIndexPath}` },
     ]),
   ]);
 
   return (
     <>
-      <RegionNavbar config={config} />
+      <NEAnnouncementTicker
+        countryName={config.countryName}
+        standards={config.standards}
+      />
+      <NENavbar config={config} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       <main id="main-content">
-        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-orange-500 text-sm font-bold uppercase tracking-widest mb-4">
-              Power Systems Knowledge Hub
-            </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2538] mb-6">
-              Power up your Knowledge with our Blogs
+        {/* ---------------- HERO ---------------- */}
+        <section className="relative bg-[#0B1A2F] pt-36 pb-24 px-6 overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.04]"
+            aria-hidden="true"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+              backgroundSize: "24px 24px",
+            }}
+          />
+          <div className="relative max-w-4xl mx-auto text-center">
+            <span className="font-condensed text-xs uppercase tracking-[0.3em] text-orange-500 font-semibold mb-6 block">
+              Knowledge Hub
+            </span>
+            <h1 className="font-condensed font-extrabold text-5xl md:text-6xl lg:text-7xl uppercase text-white leading-[0.95] tracking-tight">
+              From the
+              <span className="block font-accent italic font-normal normal-case text-orange-500 mt-3">
+                Blog.
+              </span>
             </h1>
-            <p className="text-lg text-[#374151] max-w-2xl mx-auto">
-              Stay ahead of DS/HD 60364, DS/HD 60364, and IEEE 1584 requirements.
-              Expert knowledge from the Carelabs engineering team to help Denmark
-              facilities stay safe and compliant.
+            <p className="font-body text-lg md:text-xl text-white/60 mt-8 max-w-2xl mx-auto leading-relaxed">
+              Expert knowledge on {config.primaryStandard}, IEEE 1584, and
+              power system engineering from the Carelabs {config.countryName} team.
             </p>
           </div>
         </section>
 
-        <section className="bg-offWhite py-20 px-4">
-          <div className="mx-auto max-w-7xl">
+        {/* ---------------- FEATURED ---------------- */}
+        <section className="bg-[#F8FAFC] py-20 px-6">
+          <div className="max-w-[1400px] mx-auto">
             {sorted.length === 0 && (
-              <p className="text-center text-slate-500 py-20">
+              <p className="text-center font-body text-gray-500 py-20">
                 No articles yet. Check back soon.
               </p>
             )}
 
             {featured.length > 0 && (
               <>
-                <h2 className="text-3xl font-bold text-[#1A2538] mb-8">
-                  Latest Articles
-                </h2>
+                <div className="mb-12">
+                  <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold mb-3 block">
+                    Latest
+                  </span>
+                  <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
+                    Latest Articles
+                  </h2>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {featured.map((post) => {
                     const date = postDate(post);
+                    const href = getPostHref(post.slug);
                     return (
-                      <article
+                      <Link
                         key={post.id}
-                        className="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-100 bg-white flex flex-col"
+                        href={href}
+                        className="group rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
                       >
-                        <Link
-                          href={`/dk/${post.slug}/`}
-                          aria-hidden="true"
-                          tabIndex={-1}
-                          className="block relative aspect-[16/9] overflow-hidden"
-                        >
-                          {post.heroImage &&
-                          post.heroImage.startsWith("http") ? (
+                        <div className="relative aspect-[16/9] overflow-hidden bg-[#1E293B]">
+                          {post.heroImage && post.heroImage.startsWith("http") ? (
                             <Image
                               src={post.heroImage}
                               alt={post.heroImageAlt ?? post.title}
                               fill
-                              className="object-cover transition-transform duration-500 hover:scale-105"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
                               sizes="(max-width: 768px) 100vw, 33vw"
                             />
                           ) : (
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#EEF4FF] to-[#0050B3]/20 flex items-center justify-center">
-                              <BookOpen className="w-12 h-12 text-[#0050B3]/40" />
+                            <div
+                              className="absolute inset-0 opacity-10"
+                              style={{
+                                backgroundImage:
+                                  "radial-gradient(circle, #F97316 1.5px, transparent 1.5px)",
+                                backgroundSize: "20px 20px",
+                              }}
+                              aria-hidden="true"
+                            >
+                              <BookOpen className="absolute inset-0 m-auto w-10 h-10 text-white/30" />
                             </div>
                           )}
-                        </Link>
-
+                        </div>
                         <div className="p-6 flex flex-col flex-1">
                           {post.category && (
-                            <span className="text-xs font-bold text-[#FF6633] uppercase tracking-wider mb-2">
+                            <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold">
                               {post.category}
                             </span>
                           )}
-                          <h3 className="text-lg font-bold text-[#1A2538] mb-2 line-clamp-2">
-                            <Link
-                              href={`/dk/${post.slug}/`}
-                              className="hover:text-[#0050B3] transition-colors"
-                            >
-                              {post.title}
-                            </Link>
+                          <h3 className="font-condensed font-bold text-lg uppercase text-[#0B1A2F] mt-2 group-hover:text-orange-500 transition-colors line-clamp-2 tracking-tight">
+                            {cleanTitle(post.title)}
                           </h3>
                           {post.excerpt && (
-                            <p className="text-sm text-[#374151] line-clamp-3 mb-4">
+                            <p className="font-body text-sm text-gray-600 mt-3 line-clamp-3 leading-relaxed">
                               {post.excerpt}
                             </p>
                           )}
-                          <div className="flex items-center justify-between mt-auto pt-2">
+                          <div className="flex items-center justify-between mt-auto pt-4">
                             {date && (
                               <time
                                 dateTime={date}
-                                className="text-xs text-[#64748B]"
+                                className="font-condensed text-xs uppercase tracking-[0.15em] text-[#0B1A2F]/40"
                               >
                                 {formatDateShort(date)}
                               </time>
                             )}
-                            <Link
-                              href={`/dk/${post.slug}/`}
-                              className="text-sm font-semibold text-[#FF6633] hover:text-[#0050B3] transition-colors ml-auto"
-                              aria-label={`Read more about ${post.title}`}
-                            >
-                              Read More →
-                            </Link>
+                            <span className="font-condensed text-sm uppercase tracking-[0.15em] text-orange-500 inline-flex items-center gap-1">
+                              Read <ArrowRight className="w-3.5 h-3.5" />
+                            </span>
                           </div>
                         </div>
-                      </article>
+                      </Link>
                     );
                   })}
                 </div>
               </>
             )}
-
-            {older.length > 0 && (
-              <>
-                <h2 className="text-2xl font-bold text-[#1A2538] mb-6 mt-16">
-                  More Articles
-                </h2>
-                <div className="border-t border-slate-200 mb-8" />
-                <ul>
-                  {older.map((post) => (
-                    <li key={post.id}>
-                      <Link
-                        href={`/dk/${post.slug}/`}
-                        className="border-b border-slate-100 py-4 flex items-center justify-between gap-4 hover:bg-[#EEF4FF]/50 transition-colors px-2 rounded-lg group"
-                      >
-                        <div className="flex flex-col gap-1 min-w-0">
-                          {post.category && (
-                            <span className="text-xs font-semibold text-[#FF6633] uppercase">
-                              {post.category}
-                            </span>
-                          )}
-                          <span className="text-base font-semibold text-[#1A2538] group-hover:text-[#0050B3] transition-colors line-clamp-1">
-                            {post.title}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-4 flex-shrink-0">
-                          <span className="text-sm font-medium text-[#0050B3] group-hover:text-[#FF6633] transition-colors inline-flex items-center gap-1">
-                            Read
-                            <ChevronRight className="w-4 h-4" />
-                          </span>
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
           </div>
         </section>
 
-        <section className="bg-[#0050B3] py-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Ready to Improve Your Electrical Safety?
+        {/* ---------------- OLDER ---------------- */}
+        {older.length > 0 && (
+          <section className="bg-white py-20 px-6">
+            <div className="max-w-[1400px] mx-auto">
+              <div className="mb-10">
+                <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold mb-3 block">
+                  Archive
+                </span>
+                <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-[#0B1A2F] leading-[0.95]">
+                  More Articles
+                </h2>
+              </div>
+              <ul className="border-t border-[#0B1A2F]/10">
+                {older.map((post) => {
+                  const href = getPostHref(post.slug);
+                  return (
+                    <li key={post.id}>
+                      <Link
+                        href={href}
+                        className="border-b border-[#0B1A2F]/10 py-5 flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors px-2 -mx-2 rounded-lg group"
+                      >
+                        <div className="flex flex-col gap-1 min-w-0">
+                          {post.category && (
+                            <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold">
+                              {post.category}
+                            </span>
+                          )}
+                          <span className="font-condensed text-base md:text-lg uppercase font-bold text-[#0B1A2F] group-hover:text-orange-500 transition-colors line-clamp-1 tracking-tight">
+                            {cleanTitle(post.title)}
+                          </span>
+                        </div>
+                        <span className="font-condensed text-sm uppercase tracking-[0.15em] text-orange-500 inline-flex items-center gap-1 shrink-0">
+                          Read <ArrowRight className="w-3.5 h-3.5" />
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+        )}
+
+        {/* ---------------- CTA ---------------- */}
+        <section className="bg-[#0B1A2F] py-24 lg:py-32 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-[0.95]">
+              Ready to Improve Your
+              <span className="block font-accent italic font-normal normal-case text-orange-500 mt-3">
+                Electrical Safety?
+              </span>
             </h2>
-            <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-              Our expert engineers are ready to help your Denmark facility meet
-              DS/HD 60364 and DS/HD 60364 requirements. Get a free consultation today.
+            <p className="font-body text-lg text-white/60 mt-8 max-w-2xl mx-auto leading-relaxed">
+              Our expert engineers are ready to help your {config.countryName}{" "}
+              facility meet {config.primaryStandard} requirements.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/dk/contact-us/"
-                className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-8 py-3 text-base font-semibold text-white hover:bg-orange-600 transition-colors"
+                href={config.contactPath}
+                className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-8 py-3.5 rounded-full transition-colors"
               >
                 Get a Free Quote
+                <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/dk/services/arc-flash-study/"
-                className="inline-flex items-center justify-center rounded-lg border border-white/30 px-8 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors"
+                href={config.servicesIndexPath}
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white hover:bg-white hover:text-[#0B1A2F] font-condensed font-bold text-sm uppercase tracking-[0.15em] px-8 py-3.5 rounded-full transition-colors"
               >
                 Our Services
               </Link>
@@ -257,7 +307,7 @@ export default async function DKBlogIndexPage() {
         </section>
       </main>
 
-      <RegionFooter config={config} />
+      <NEFooter config={config} />
     </>
   );
 }

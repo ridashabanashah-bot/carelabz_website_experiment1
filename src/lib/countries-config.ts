@@ -791,7 +791,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     hreflang: "en-FI", dialCodeCountryIso2: "FI",
     servicesIndexPath: "/fi/our-services/", serviceDetailPattern: "/fi/{slug}/",
     blogIndexPath: "/fi/blogs/", blogDetailPattern: "/fi/{slug}/",
-    aboutPath: "/fi/about-us/", contactPath: "/fi/contact-us/", caseStudyPath: null,
+    aboutPath: "/fi/about-us/", contactPath: "/fi/contact-us/", caseStudyPath: "/fi/case-studies/",
     address: "Helsinki, Finland", phone: "+358 00 000 0000", email: "info@carelabz.com",
     footerDescription: "Carelabs delivers SFS 6000 arc flash studies, Tukes-aligned compliance, and full power system engineering services across Finland.",
     services: [
@@ -811,7 +811,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     hreflang: "en-DK", dialCodeCountryIso2: "DK",
     servicesIndexPath: "/dk/our-services/", serviceDetailPattern: "/dk/{slug}/",
     blogIndexPath: "/dk/blogs/", blogDetailPattern: "/dk/{slug}/",
-    aboutPath: "/dk/about-us/", contactPath: "/dk/contact-us/", caseStudyPath: null,
+    aboutPath: "/dk/about-us/", contactPath: "/dk/contact-us/", caseStudyPath: "/dk/case-studies/",
     address: "Copenhagen, Denmark", phone: "+45 00 00 00 00", email: "info@carelabz.com",
     footerDescription: "Carelabs delivers DS/HD 60364 arc flash studies, Sikkerhedsstyrelsen compliance, and full power system engineering services across Denmark.",
     services: [
@@ -831,7 +831,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     hreflang: "en-NO", dialCodeCountryIso2: "NO",
     servicesIndexPath: "/no/our-services/", serviceDetailPattern: "/no/{slug}/",
     blogIndexPath: "/no/blogs/", blogDetailPattern: "/no/{slug}/",
-    aboutPath: "/no/about-us/", contactPath: "/no/contact-us/", caseStudyPath: null,
+    aboutPath: "/no/about-us/", contactPath: "/no/contact-us/", caseStudyPath: "/no/case-studies/",
     address: "Oslo, Norway", phone: "+47 000 00 000", email: "info@carelabz.com",
     footerDescription: "Carelabs delivers NEK 400 arc flash studies, DSB-aligned compliance, and full power system engineering services across Norway.",
     services: [
@@ -851,7 +851,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     hreflang: "en-SE", dialCodeCountryIso2: "SE",
     servicesIndexPath: "/se/our-services/", serviceDetailPattern: "/se/{slug}/",
     blogIndexPath: "/se/blogs/", blogDetailPattern: "/se/{slug}/",
-    aboutPath: "/se/about-us/", contactPath: "/se/contact-us/", caseStudyPath: null,
+    aboutPath: "/se/about-us/", contactPath: "/se/contact-us/", caseStudyPath: "/se/case-studies/",
     address: "Stockholm, Sweden", phone: "+46 (8) 000-0000", email: "info@carelabz.com",
     footerDescription: "Carelabs delivers EBR-aligned arc flash studies, Elsäkerhetsverket-compliant power system engineering across Sweden.",
     services: [
@@ -878,7 +878,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     blogDetailPattern: "/ie/{slug}/",
     aboutPath: "/ie/about-us/",
     contactPath: "/ie/contact-us/",
-    caseStudyPath: null,
+    caseStudyPath: "/ie/case-studies/",
     address: "Dublin, Ireland",
     phone: "+353 (1) 000-0000",
     email: "info@carelabz.com",
@@ -908,7 +908,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     blogDetailPattern: "/uk/{slug}/",
     aboutPath: "/uk/about-us/",
     contactPath: "/uk/contact-us/",
-    caseStudyPath: null,
+    caseStudyPath: "/uk/case-studies/",
     address: "London, United Kingdom",
     phone: "+44 (20) 0000-0000",
     email: "info@carelabz.com",

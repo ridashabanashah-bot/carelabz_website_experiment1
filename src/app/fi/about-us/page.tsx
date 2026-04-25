@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -13,43 +15,58 @@ import {
   BarChart2,
   Clock,
   Lightbulb,
+  ArrowRight,
 } from "lucide-react";
-import { RegionNavbar } from "@/components/region-navbar";
-import { RegionFooter } from "@/components/region-footer";
+import { NENavbar } from "@/components/ne-navbar";
+import { NEFooter } from "@/components/ne-footer";
+import { NEAnnouncementTicker } from "@/components/ne-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
-const config = COUNTRY_CONFIGS["fi"];
 import { getAboutPage } from "@/lib/strapi-pages";
-import { buildJsonLd, getRegionOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from "@/lib/jsonld";
+import {
+  buildJsonLd,
+  getRegionOrganizationSchema,
+  getWebPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/jsonld";
 
-export const dynamic = "force-dynamic";
+const CC = "fi";
+const config = COUNTRY_CONFIGS[CC];
 
 export async function generateMetadata(): Promise<Metadata> {
-  const page = await getAboutPage("fi");
+  const page = await getAboutPage(CC);
   return {
-    title: page?.metaTitle ?? "About Carelabs | Finland Electrical Safety Experts",
+    title:
+      page?.metaTitle ??
+      `About Carelabs | ${config.countryName} Electrical Safety Experts`,
     description:
       page?.metaDescription ??
-      "Learn about Carelabs — our mission, values, and the team dedicated to electrical safety testing and SFS 6000 compliance across Finland.",
+      `Learn about Carelabs — our mission, values, and the team dedicated to electrical safety testing and ${config.primaryStandard} compliance across ${config.countryName}.`,
     alternates: {
-      canonical: "https://carelabz.com/fi/about-us/",
+      canonical: `https://carelabz.com/${CC}/about-us/`,
       languages: {
-        "en-FI": "https://carelabz.com/fi/about-us/",
-        "x-default": "https://carelabz.com/fi/about-us/",
+        [config.hreflang]: `https://carelabz.com/${CC}/about-us/`,
+        "x-default": `https://carelabz.com/${CC}/about-us/`,
       },
     },
     openGraph: {
-      title: page?.metaTitle ?? "About Carelabs — Power System Consultants Finland",
+      title:
+        page?.metaTitle ??
+        `About Carelabs — Power System Consultants ${config.countryName}`,
       description:
-        page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Finland.",
-      url: "https://carelabz.com/fi/about-us/",
+        page?.metaDescription ??
+        `Carelabs is a leading electrical safety engineering firm in ${config.countryName}.`,
+      url: `https://carelabz.com/${CC}/about-us/`,
       siteName: "Carelabs",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: page?.metaTitle ?? "About Carelabs — Power System Consultants Finland",
+      title:
+        page?.metaTitle ??
+        `About Carelabs — Power System Consultants ${config.countryName}`,
       description:
-        page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Finland.",
+        page?.metaDescription ??
+        `Carelabs is a leading electrical safety engineering firm in ${config.countryName}.`,
     },
   };
 }
@@ -75,57 +92,90 @@ function resolveIcon(iconName: string | null | undefined): React.ElementType {
   return ICON_MAP[key] ?? Star;
 }
 
-export default async function FIAboutPage() {
-  const page = await getAboutPage("fi");
+export default async function AboutPage() {
+  const page = await getAboutPage(CC);
 
   const headline = page?.heroHeadline ?? "Who We Are";
   const subtext =
     page?.heroSubtext ??
-    "Carelabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across Finland.";
+    `Carelabs is a trusted partner for electrical safety testing, calibration, inspection, and certification services across ${config.countryName}.`;
 
   const jsonLd = buildJsonLd([
-    getRegionOrganizationSchema({ cc: "fi", countryName: "Finland", countryIso2: "FI", phone: config.phone, email: config.email, addressLocality: config.address }),
+    getRegionOrganizationSchema({
+      cc: CC,
+      countryName: config.countryName,
+      countryIso2: config.dialCodeCountryIso2,
+      phone: config.phone,
+      email: config.email,
+      addressLocality: config.address,
+    }),
     getWebPageSchema(
-      "https://carelabz.com/fi/about-us/",
-      page?.metaTitle ?? "About Carelabs — Power System Consultants Finland",
-      page?.metaDescription ?? "Carelabs is a leading electrical safety engineering firm in Finland.",
-      "en-FI"
+      `https://carelabz.com/${CC}/about-us/`,
+      page?.metaTitle ??
+        `About Carelabs — Power System Consultants ${config.countryName}`,
+      page?.metaDescription ??
+        `Carelabs is a leading electrical safety engineering firm in ${config.countryName}.`,
+      config.hreflang
     ),
     getBreadcrumbSchema([
-      { name: "Home", url: "https://carelabz.com/fi/" },
-      { name: "About", url: "https://carelabz.com/fi/about-us/" },
+      { name: "Home", url: `https://carelabz.com/${CC}/` },
+      { name: "About", url: `https://carelabz.com/${CC}/about-us/` },
     ]),
   ]);
 
   return (
     <>
-      <RegionNavbar config={config} />
+      <NEAnnouncementTicker
+        countryName={config.countryName}
+        standards={config.standards}
+      />
+      <NENavbar config={config} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main id="main-content">
-        <section className="bg-[#EEF4FF] pt-32 pb-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A2538] mb-6">
+        {/* ---------------- HERO ---------------- */}
+        <section className="relative bg-[#0B1A2F] pt-36 pb-24 px-6 overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.04]"
+            aria-hidden="true"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+              backgroundSize: "24px 24px",
+            }}
+          />
+          <div className="relative max-w-4xl mx-auto text-center">
+            <span className="font-condensed text-xs uppercase tracking-[0.3em] text-orange-500 font-semibold mb-6 block">
+              About
+            </span>
+            <h1 className="font-condensed font-extrabold text-5xl md:text-6xl lg:text-7xl uppercase text-white leading-[0.95] tracking-tight">
               {headline}
+              <span className="block font-accent italic font-normal normal-case text-orange-500 mt-3">
+                Carelabs.
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-[#374151] max-w-2xl mx-auto">
+            <p className="font-body text-lg md:text-xl text-white/60 mt-8 max-w-2xl mx-auto leading-relaxed">
               {subtext}
             </p>
           </div>
         </section>
 
+        {/* ---------------- MISSION ---------------- */}
         {(page?.missionHeading || page?.missionBody) && (
-          <section className="bg-white py-20 px-4">
-            <div className="mx-auto max-w-3xl text-center">
+          <section className="bg-[#F8FAFC] py-20 lg:py-28 px-6">
+            <div className="max-w-3xl mx-auto text-center">
+              <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold mb-4 block">
+                Our Mission
+              </span>
               {page?.missionHeading && (
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+                <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
                   {page.missionHeading}
                 </h2>
               )}
               {page?.missionBody && (
-                <p className="text-gray-600 text-xl leading-relaxed">
+                <p className="font-body text-lg text-gray-600 mt-6 leading-relaxed">
                   {page.missionBody}
                 </p>
               )}
@@ -133,29 +183,35 @@ export default async function FIAboutPage() {
           </section>
         )}
 
+        {/* ---------------- VALUES ---------------- */}
         {page?.values && page.values.length > 0 && (
-          <section className="bg-offWhite py-20 px-4">
-            <div className="mx-auto max-w-7xl">
-              {page?.valuesHeading && (
-                <h2 className="text-3xl md:text-4xl font-bold text-navy mb-12 text-center">
-                  {page.valuesHeading}
-                </h2>
-              )}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <section className="bg-white py-20 lg:py-28 px-6">
+            <div className="max-w-[1400px] mx-auto">
+              <div className="text-center mb-14 max-w-3xl mx-auto">
+                <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold mb-4 block">
+                  Our Values
+                </span>
+                {page?.valuesHeading && (
+                  <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
+                    {page.valuesHeading}
+                  </h2>
+                )}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {page.values.map((value, idx) => {
                   const Icon = resolveIcon(value.icon);
                   return (
                     <div
                       key={idx}
-                      className="rounded-xl border border-gray-100 bg-white p-8"
+                      className="rounded-2xl bg-[#F8FAFC] p-8 hover:shadow-lg transition-shadow"
                     >
-                      <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center mb-4">
+                      <div className="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-5">
                         <Icon className="w-6 h-6 text-orange-500" />
                       </div>
-                      <h3 className="text-lg font-bold text-navy mb-2">
+                      <h3 className="font-condensed font-bold text-lg uppercase text-[#0B1A2F] tracking-tight">
                         {value.title}
                       </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="font-body text-sm text-gray-600 mt-3 leading-relaxed">
                         {value.description}
                       </p>
                     </div>
@@ -166,49 +222,58 @@ export default async function FIAboutPage() {
           </section>
         )}
 
+        {/* ---------------- CERTIFICATIONS ---------------- */}
         {page?.certifications && page.certifications.length > 0 && (
-          <section className="bg-offWhite py-16 px-4">
-            <div className="mx-auto max-w-5xl">
-              <h2 className="text-2xl font-bold text-navy mb-8 text-center">
+          <section className="bg-[#0B1A2F] py-16 px-6">
+            <div className="max-w-5xl mx-auto text-center">
+              <span className="font-condensed text-xs uppercase tracking-[0.2em] text-orange-500 font-semibold mb-4 block">
+                Standards
+              </span>
+              <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-white leading-[0.95] mb-10">
                 Standards We Follow
               </h2>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
                 {page.certifications.map((cert, idx) => (
-                  <div
+                  <span
                     key={idx}
-                    className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-5 py-3 shadow-sm"
+                    className="inline-flex items-center gap-2 font-condensed text-xs uppercase tracking-[0.15em] text-white/70 border border-white/10 px-4 py-2 rounded-full"
                   >
-                    <Award className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                    <span className="text-sm font-medium text-navy">{cert}</span>
-                  </div>
+                    <Award className="w-3.5 h-3.5 text-orange-500" />
+                    {cert}
+                  </span>
                 ))}
               </div>
             </div>
           </section>
         )}
 
-        <section className="bg-[#0050B3] py-20 px-4">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {page?.ctaBannerHeading ?? "Partner with Carelabs Finland"}
+        {/* ---------------- CTA ---------------- */}
+        <section className="bg-[#F8FAFC] py-24 lg:py-32 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-[#0B1A2F] leading-[0.95]">
+              {page?.ctaBannerHeading ?? "Partner with Carelabs"}
+              <span className="block font-accent italic font-normal normal-case text-orange-500 mt-3">
+                {config.countryName}.
+              </span>
             </h2>
-            {page?.ctaBannerSubtext ? (
-              <p className="text-white/70 text-lg mb-8">{page.ctaBannerSubtext}</p>
-            ) : (
-              <p className="text-white/70 text-lg mb-8">
-                Ready to elevate your safety standards? Talk to our Finland experts today.
+            {page?.ctaBannerSubtext && (
+              <p className="font-body text-lg text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed">
+                {page.ctaBannerSubtext}
               </p>
             )}
-            <Link
-              href={page?.ctaBannerPrimaryHref ?? "/fi/contact-us/"}
-              className="inline-flex items-center rounded-lg bg-orange-500 px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-orange-600"
-            >
-              {page?.ctaBannerPrimaryText ?? "Get in Touch"}
-            </Link>
+            <div className="mt-10 flex justify-center">
+              <Link
+                href={page?.ctaBannerPrimaryHref ?? config.contactPath}
+                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-8 py-3.5 rounded-full transition-colors"
+              >
+                {page?.ctaBannerPrimaryText ?? "Get in Touch"}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </section>
       </main>
-      <RegionFooter config={config} />
+      <NEFooter config={config} />
     </>
   );
 }

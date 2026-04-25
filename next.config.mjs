@@ -169,8 +169,12 @@ const nextConfig = {
       /*  /xx/services/slug/ and /xx/services/ that don't map to our  */
       /*  flat routes. Redirect them to the canonical flat location.  */
       /* ============================================================ */
+      // Note: se/no/dk/fi/uk/ie removed from the generic /xx/case-study → /xx/
+      // redirect below because they now have real /case-studies/ placeholder
+      // pages. Those 4 country-specific case-study redirects are handled
+      // separately below the main list.
       ...[
-        "at", "be", "ch", "nl", "au", "se", "no", "dk", "fi",
+        "at", "be", "ch", "nl", "au",
         "es", "pt", "gr", "fr", "ru", "pl", "hu", "cz", "ro", "sk", "ua",
         "cn", "jp", "kr", "hk", "tw", "my", "sg", "th", "vn", "id", "ph",
         "nz", "sa", "tr", "za", "eg", "it",
@@ -200,6 +204,14 @@ const nextConfig = {
       // BR/CO/CL/AR/PE use /services/ plural as their real index, not redirect
       // (handled separately — not in the list above).
       // IN uses /our-services/ and /our-blogs/ — blog index already correct.
+
+      /* ============================================================ */
+      /*  NE case-study → case-studies (UK/IE/SE/NO/DK/FI now have    */
+      /*  real placeholder pages, so /case-study/ redirects to those) */
+      /* ============================================================ */
+      ...["uk", "ie", "se", "no", "dk", "fi"].flatMap((cc) => [
+        ...pair(`/${cc}/case-study`, `/${cc}/case-studies/`),
+      ]),
     ];
   },
 };
