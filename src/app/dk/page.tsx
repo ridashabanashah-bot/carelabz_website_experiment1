@@ -25,6 +25,30 @@ function cleanTitle(raw: string): string {
     .trim();
 }
 
+function splitCountrySuffix(
+  headline: string,
+  countryName: string
+): { lead: string; connector: string; tail: string } | null {
+  const escaped = countryName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const inPattern = new RegExp(
+    `\\s+(?:in|across|for|throughout)\\s+(?:the\\s+)?${escaped}\\.?\\s*$`,
+    "i"
+  );
+  const inMatch = headline.match(inPattern);
+  if (inMatch && inMatch.index !== undefined) {
+    const lead = headline.slice(0, inMatch.index).replace(/[\s.,;:]+$/, "");
+    const connector = inMatch[0].trim().split(/\s+/)[0].toLowerCase();
+    return { lead, connector: ` ${connector} `, tail: countryName };
+  }
+  const tailPattern = new RegExp(`\\s+${escaped}\\.?\\s*$`, "i");
+  const tailMatch = headline.match(tailPattern);
+  if (tailMatch && tailMatch.index !== undefined) {
+    const lead = headline.slice(0, tailMatch.index).replace(/[\s.,;:]+$/, "");
+    return { lead, connector: " ", tail: countryName };
+  }
+  return null;
+}
+
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getHomePage(CC);
   return {
@@ -128,12 +152,33 @@ export default async function HomePage() {
       {/* ═══════ 1 · HERO — Nobl: centered statement, full viewport ═══════ */}
       <section className="min-h-screen flex items-center justify-center bg-[#1A3650] px-6">
         <div className="text-center max-w-5xl py-24">
-          <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] text-white leading-[0.92]">
-            {page.heroHeadline ?? "Electrical Safety Demands Certainty."}
-          </h1>
-          <p className="font-ne-accent italic text-3xl md:text-4xl lg:text-5xl text-[#F97316] mt-6">
-            {config.countryName}.
-          </p>
+          {(() => {
+            const headlineRaw =
+              page.heroHeadline ?? "Electrical Safety Demands Certainty.";
+            const split = splitCountrySuffix(headlineRaw, config.countryName);
+            return (
+              <>
+                <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] text-white leading-[0.92]">
+                  {split ? (
+                    <>
+                      {split.lead}
+                      {split.connector}
+                      <span className="font-ne-accent italic font-normal text-[#F97316]">
+                        {split.tail}.
+                      </span>
+                    </>
+                  ) : (
+                    headlineRaw
+                  )}
+                </h1>
+                {!split && (
+                  <p className="font-ne-accent italic text-3xl md:text-4xl lg:text-5xl text-[#F97316] mt-6">
+                    {config.countryName}.
+                  </p>
+                )}
+              </>
+            );
+          })()}
           {page.heroSubtext && (
             <p className="font-ne-body text-base md:text-lg text-white/35 mt-10 max-w-2xl mx-auto leading-relaxed">
               {page.heroSubtext}
