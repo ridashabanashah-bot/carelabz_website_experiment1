@@ -197,40 +197,6 @@ export default async function AboutPage() {
           </>
         )}
 
-        {/* ---------------- TEAM — simple text list ---------------- */}
-        {page?.team && page.team.length > 0 && (
-          <section className="bg-[#243E54] py-20 lg:py-28 px-6">
-            <div className="max-w-[1200px] mx-auto lg:px-12">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
-                {page?.teamHeading ?? "The Team"}
-              </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-5xl text-white uppercase leading-[0.95] mb-12">
-                Engineers · Auditors · Consultants
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
-                {page.team.map((member, i) => (
-                  <div
-                    key={i}
-                    className="py-6 border-b border-[#4A7C9B]/20"
-                  >
-                    <h3 className="font-ne-display font-bold text-xl text-white uppercase">
-                      {member.name}
-                    </h3>
-                    <p className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mt-1">
-                      {member.role}
-                    </p>
-                    {member.bio && (
-                      <p className="font-ne-body text-sm text-white/50 mt-3 leading-relaxed">
-                        {member.bio}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
         {/* ---------------- CERTIFICATIONS — single line on sand ---------------- */}
         {page?.certifications && page.certifications.length > 0 && (
           <section className="bg-[#F0EBE1] py-16 px-6">
