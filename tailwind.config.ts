@@ -30,6 +30,19 @@ const config: Config = {
         sandLight: "#F0EBE1",
         warmWhite: "#F9F7F3",
         nordicSlate: "#243E54",
+        // United Arab Emirates palette
+        aeDeep: "#0A1628",
+        aeNavy: "#0F2847",
+        aeInk: "#163560",
+        aeMid: "#1E5A8A",
+        aeSky: "#2D7AB8",
+        aeSteel: "#5A8FB4",
+        aePale: "#D4E3F0",
+        aeIce: "#EBF2F8",
+        aeStone: "#F2EDE6",
+        aeWarm: "#F8F5F0",
+        aeWhite: "#FAFBFC",
+        aeOrange: "#F97316",
       },
       fontFamily: {
         serif: ["var(--font-montserrat)", "system-ui", "sans-serif"],
@@ -46,6 +59,10 @@ const config: Config = {
         "ne-accent": ["var(--font-fraunces)", "Georgia", "serif"],
         "ne-body": ["var(--font-syne)", "system-ui", "sans-serif"],
         "ne-nav": ["var(--font-syne)", "system-ui", "sans-serif"],
+        // AE fonts (DM Serif Display + Inter)
+        "ae-display": ["var(--font-dm-serif)", "Georgia", "serif"],
+        "ae-body": ["var(--font-inter)", "system-ui", "sans-serif"],
+        "ae-nav": ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       animation: {
         marquee: "marquee 30s linear infinite",

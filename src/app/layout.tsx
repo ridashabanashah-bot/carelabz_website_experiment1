@@ -7,6 +7,8 @@ import {
   Playfair_Display,
   Fraunces,
   Syne,
+  DM_Serif_Display,
+  Inter,
 } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
@@ -66,6 +68,19 @@ const syne = Syne({
   display: "swap",
 });
 
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-dm-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://carelabz.com"),
   title: "Carelabs — Electrical Safety Services",
@@ -104,7 +119,7 @@ export default function RootLayout({
   return (
     <html lang="en-AE">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} ${dmSerif.variable} ${inter.variable} antialiased bg-white text-gray-900`}
       >
         <a
           href="#main-content"
