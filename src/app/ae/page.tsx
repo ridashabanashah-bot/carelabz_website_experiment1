@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ArrowRight, Plus, Shield } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
-import { AEAnnouncementTicker } from "@/components/ae-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { JsonLd } from "@/components/JsonLd";
 import { getHomePage } from "@/lib/strapi-home";
@@ -104,10 +103,6 @@ export default async function HomePage() {
   return (
     <>
       <JsonLd data={jsonLdData} />
-      <AEAnnouncementTicker
-        countryName={config.countryName}
-        standards={config.standards}
-      />
       <AENavbar config={config} />
 
       {/* 1 · HERO */}
@@ -212,10 +207,10 @@ export default async function HomePage() {
       <section className="bg-[#0F2847] flex items-center justify-center px-6 py-28 lg:py-40">
         <div className="text-center max-w-4xl">
           <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            We don&apos;t deliver reports.
+            Your Safety.
           </h2>
           <p className="font-ae-display text-3xl md:text-4xl lg:text-5xl text-[#2D7AB8] mt-5 leading-[0.95]">
-            We deliver certainty.
+            Engineered.
           </p>
         </div>
       </section>

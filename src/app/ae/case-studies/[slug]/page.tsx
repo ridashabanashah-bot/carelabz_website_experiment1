@@ -7,7 +7,6 @@ import { marked } from "marked";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
-import { AEAnnouncementTicker } from "@/components/ae-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getCaseStudy, type CaseStudy } from "@/lib/strapi-pages";
 import { JsonLd } from "@/components/JsonLd";
@@ -69,10 +68,6 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
   return (
     <>
-      <AEAnnouncementTicker
-        countryName={config.countryName}
-        standards={config.standards}
-      />
       <AENavbar config={config} />
       <JsonLd data={jsonLd} />
 

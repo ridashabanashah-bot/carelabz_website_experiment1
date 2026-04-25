@@ -5,7 +5,6 @@ import { headers } from "next/headers";
 import { Mail } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
-import { AEAnnouncementTicker } from "@/components/ae-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { ContactForm } from "@/components/contact-form";
 import { getContactPage } from "@/lib/strapi-pages";
@@ -57,10 +56,6 @@ export default async function ContactPage() {
 
   return (
     <>
-      <AEAnnouncementTicker
-        countryName={config.countryName}
-        standards={config.standards}
-      />
       <AENavbar config={config} />
 
       {/* HERO */}

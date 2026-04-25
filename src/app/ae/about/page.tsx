@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ArrowRight, Shield, Target, Users, RefreshCw, Award } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
-import { AEAnnouncementTicker } from "@/components/ae-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getAboutPage } from "@/lib/strapi-pages";
 
@@ -55,10 +54,6 @@ export default async function AboutPage() {
 
   return (
     <>
-      <AEAnnouncementTicker
-        countryName={config.countryName}
-        standards={config.standards}
-      />
       <AENavbar config={config} />
 
       {/* HERO */}

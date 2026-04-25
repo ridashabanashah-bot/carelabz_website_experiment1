@@ -8,7 +8,6 @@ import { marked } from "marked";
 import { ArrowRight, ChevronRight, Plus } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
-import { AEAnnouncementTicker } from "@/components/ae-announcement-ticker";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getBlogPost, type BlogPost } from "@/lib/strapi-blog";
 import { JsonLd } from "@/components/JsonLd";
@@ -104,10 +103,6 @@ export default async function BlogDetailPage({ params }: PageProps) {
 
   return (
     <>
-      <AEAnnouncementTicker
-        countryName={config.countryName}
-        standards={config.standards}
-      />
       <AENavbar config={config} />
       <JsonLd data={articleJsonLd} />
 
