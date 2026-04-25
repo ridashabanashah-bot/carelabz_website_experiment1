@@ -66,13 +66,35 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const FALLBACK_PROCESS = [
+  {
+    title: "Discovery",
+    description:
+      "Deep-dive into your electrical infrastructure and compliance posture.",
+  },
+  {
+    title: "Analysis",
+    description:
+      "Arc flash, short circuit, load flow — the full IEEE 1584 study suite.",
+  },
+  {
+    title: "Reporting",
+    description:
+      "Actionable documentation with risk scores, labels, and remediation steps.",
+  },
+  {
+    title: "Compliance",
+    description: `Full alignment with ${config.primaryStandard} and international standards.`,
+  },
+];
+
 export default async function HomePage() {
   const page = await getHomePage(CC);
 
   if (!page) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-[#1A3650] text-white">
-        <p className="font-ne-display uppercase tracking-[0.2em] text-sm">
+        <p className="font-ne-nav uppercase tracking-[0.18em] text-sm">
           Content unavailable — please try again shortly
         </p>
       </main>
@@ -102,152 +124,148 @@ export default async function HomePage() {
       />
       <NENavbar config={config} />
 
-      {/* ---------------- HERO — split layout ---------------- */}
-      <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      {/* ---------------- 1 · STATEMENT HERO (Nobl) ---------------- */}
+      <section className="relative min-h-[85vh] flex items-center bg-[#1A3650] overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.03]"
           aria-hidden="true"
           style={{
             backgroundImage:
               "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
+            backgroundSize: "80px 80px",
           }}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-            <div className="lg:col-span-3">
-              {page.heroEyebrow && (
-                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500 font-semibold mb-6 block">
-                  {page.heroEyebrow}
-                </span>
-              )}
-              <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-6xl uppercase text-white leading-[0.95]">
-                {page.heroHeadline ?? "Electrical Safety"}
-                <br />
-                <span className="font-ne-accent italic font-normal normal-case text-orange-500">
-                  Demands Precision.
-                </span>
-              </h1>
-              {page.heroSubtext && (
-                <p className="font-ne-body text-lg text-white/50 mt-8 max-w-xl leading-relaxed">
-                  {page.heroSubtext}
-                </p>
-              )}
-              <div className="mt-10">
-                <Link
-                  href={page.heroPrimaryCtaHref ?? config.contactPath}
-                  className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors"
-                >
-                  {page.heroPrimaryCtaText ?? "Request a Study"}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-            <div
-              className="hidden lg:block lg:col-span-2 relative h-80"
-              aria-hidden="true"
+        <div className="relative max-w-[1200px] mx-auto px-6 lg:px-12 py-32">
+          {page.heroEyebrow && (
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold mb-8 block">
+              {page.heroEyebrow}
+            </span>
+          )}
+          <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white leading-[0.95]">
+            {page.heroHeadline ?? "Electrical Safety Demands"}
+            <br />
+            <span className="font-ne-accent italic font-normal text-[#F97316]">
+              {config.countryName}.
+            </span>
+          </h1>
+          {page.heroSubtext && (
+            <p className="font-ne-body text-base text-white/40 mt-10 max-w-lg leading-relaxed">
+              {page.heroSubtext}
+            </p>
+          )}
+          <div className="mt-12">
+            <Link
+              href={page.heroPrimaryCtaHref ?? config.contactPath}
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-4 transition-colors"
             >
-              <div className="absolute top-0 right-0 w-64 h-64 border border-orange-500/20 rounded-full" />
-              <div className="absolute top-12 right-12 w-48 h-48 border border-[#4A7C9B]/30 rounded-full" />
-              <div className="absolute bottom-0 right-8 w-32 h-32 bg-orange-500/10 rounded-full" />
-              <div className="absolute top-1/2 right-1/2 w-2 h-2 bg-orange-500 rounded-full" />
-            </div>
+              {page.heroPrimaryCtaText ?? "Request a Study"}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ---------------- TRUST BAR — inline text, no pills ---------------- */}
-      <div className="bg-[#F9F7F3] py-6 px-6 border-b border-[#1A3650]/5">
-        <p className="text-center font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/40">
-          {config.standards.slice(0, 5).join("  ·  ")}
-        </p>
-      </div>
+      {/* ---------------- 2 · STATEMENT BAND (Aleia) ---------------- */}
+      <section className="bg-[#F97316] py-8 lg:py-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <p className="font-ne-display font-black text-xl md:text-2xl lg:text-3xl text-white uppercase leading-tight tracking-tight">
+            {config.primaryStandard} · IEEE 1584 · Arc Flash Studies · Power System Engineering · {config.countryName}
+          </p>
+        </div>
+      </section>
 
-      {/* ---------------- SERVICES — editorial numbered list ---------------- */}
+      {/* ---------------- 3 · SERVICES — full-width alternating rows ---------------- */}
       {page.services && page.services.length > 0 && (
-        <section className="bg-[#F9F7F3] py-20 lg:py-28">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-6">
-              <div>
-                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500 font-semibold mb-4 block">
-                  What We Do
-                </span>
-                <h2 className="font-ne-display font-black text-4xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
-                  Our Services
-                </h2>
-              </div>
-              <Link
-                href={config.servicesIndexPath}
-                className="font-ne-nav text-sm uppercase tracking-[0.18em] text-orange-500 hover:text-orange-600 inline-flex items-center gap-2 transition-colors"
-              >
-                View All <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-              {page.services.slice(0, 6).map((service, i) => (
-                <Link
-                  key={service.href}
-                  href={service.href}
-                  className="group flex items-start gap-6 py-8 px-4 border-b border-[#1A3650]/10 hover:bg-[#F0EBE1] transition-colors"
-                >
-                  <span className="font-ne-display font-black text-3xl text-[#1A3650]/10 leading-none shrink-0 w-12">
+        <section>
+          {page.services.slice(0, 6).map((service, i) => (
+            <Link
+              key={service.href}
+              href={service.href}
+              className={`group block ${
+                i % 2 === 0 ? "bg-[#F9F7F3]" : "bg-[#F0EBE1]"
+              }`}
+            >
+              <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="flex items-start gap-8 flex-1 min-w-0">
+                  <span className="font-ne-display font-black text-5xl lg:text-6xl text-[#1A3650]/[0.08] leading-none shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-ne-display font-bold text-lg uppercase text-[#1A3650] group-hover:text-orange-500 transition-colors">
+                  <div>
+                    <h2 className="font-ne-display font-black text-2xl lg:text-3xl text-[#1A3650] uppercase leading-tight group-hover:text-[#F97316] transition-colors">
                       {service.title}
-                    </h3>
+                    </h2>
                     {service.description && (
-                      <p className="font-ne-body text-sm text-gray-500 mt-2 leading-relaxed line-clamp-2">
+                      <p className="font-ne-body text-sm text-[#1A3650]/50 mt-3 max-w-xl leading-relaxed">
                         {service.description}
                       </p>
                     )}
                   </div>
-                  <ArrowRight className="w-5 h-5 text-[#1A3650]/20 group-hover:text-orange-500 transition-colors shrink-0 mt-1" />
-                </Link>
-              ))}
-            </div>
-          </div>
+                </div>
+                <div className="flex items-center gap-3 shrink-0">
+                  <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316] opacity-0 group-hover:opacity-100 transition-opacity">
+                    Explore
+                  </span>
+                  <ArrowRight className="w-5 h-5 text-[#1A3650]/20 group-hover:text-[#F97316] transition-colors" />
+                </div>
+              </div>
+            </Link>
+          ))}
         </section>
       )}
 
-      {/* ---------------- MANIFESTO — asymmetric left-aligned ---------------- */}
-      <section className="bg-[#1A3650] py-20 lg:py-28 px-6">
-        <div className="max-w-[1400px] mx-auto lg:px-12">
-          <div className="max-w-3xl">
-            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
-              Our Promise
-            </span>
-            <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-[0.95]">
-              We don&apos;t deliver reports.
-            </h2>
-            <p className="font-ne-accent italic text-3xl md:text-4xl text-orange-500 mt-4">
-              We deliver safety.
-            </p>
+      {/* ---------------- 4 · SINGLE-SENTENCE VIEWPORT (Nobl) ---------------- */}
+      <section className="bg-[#1A3650] min-h-[60vh] flex items-center px-6">
+        <div className="max-w-[1000px] mx-auto py-20 lg:py-0">
+          <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.95]">
+            We don&apos;t deliver reports.
+          </h2>
+          <p className="font-ne-accent italic text-3xl md:text-4xl lg:text-5xl text-[#F97316] mt-4 leading-[1.05]">
+            We deliver safety.
+          </p>
+        </div>
+      </section>
+
+      {/* ---------------- 5 · PROCESS PANELS (Nobl methodology) ---------------- */}
+      <section className="bg-[#243E54] py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-8 block">
+            How We Work
+          </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-[#4A7C9B]/20">
+            {FALLBACK_PROCESS.map((step, i) => (
+              <div
+                key={i}
+                className="py-8 lg:py-0 lg:px-8 first:lg:pl-0 last:lg:pr-0"
+              >
+                <span className="font-ne-display font-black text-4xl text-[#F97316]/20">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-ne-display font-black text-xl text-white uppercase mt-4">
+                  {step.title}
+                </h3>
+                <p className="font-ne-body text-sm text-white/40 mt-3 leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ---------------- INDUSTRIES — marquee only ---------------- */}
+      {/* ---------------- 6 · INDUSTRIES MARQUEE (Pilates Collective) ---------------- */}
       {page.industries && page.industries.length > 0 && (
-        <section className="bg-[#F0EBE1] py-16 overflow-hidden">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-8">
-            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500 font-semibold">
-              Industries We Serve
-            </span>
-          </div>
-          <div className="relative overflow-hidden">
+        <section className="bg-[#F0EBE1] py-10 overflow-hidden">
+          <div className="relative">
             <div className="animate-marquee whitespace-nowrap">
               {[...Array(2)].map((_, dupe) => (
                 <span key={dupe} className="inline-block">
                   {page.industries!.map((industry, i) => (
                     <span
                       key={`${dupe}-${i}`}
-                      className="inline-block mx-6 font-ne-display font-black text-5xl md:text-7xl uppercase text-[#1A3650]/[0.08]"
+                      className="inline-block mx-6 font-ne-display font-black text-5xl md:text-7xl uppercase text-[#1A3650]/[0.07] tracking-tight"
                     >
                       {industry.name}
-                      <span className="text-orange-500/40 mx-6">·</span>
+                      <span className="text-[#F97316]/30 mx-6">·</span>
                     </span>
                   ))}
                 </span>
@@ -257,45 +275,37 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* ---------------- INSIGHTS — editorial rows ---------------- */}
+      {/* ---------------- 7 · INSIGHTS — editorial line list ---------------- */}
       {page.insights && page.insights.length > 0 && (
         <section className="bg-[#1A3650] py-20 lg:py-28">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 gap-6">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
               <div>
-                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
-                  Latest
+                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
+                  From the Blog
                 </span>
-                <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-white leading-[0.95]">
-                  Insights &amp; Field Notes
+                <h2 className="font-ne-display font-black text-3xl md:text-4xl text-white uppercase">
+                  Latest Insights
                 </h2>
               </div>
               <Link
                 href={config.blogIndexPath}
-                className="font-ne-nav text-sm uppercase tracking-[0.18em] text-orange-500 hover:text-orange-400 inline-flex items-center gap-2 transition-colors"
+                className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316] hover:text-[#F97316]/70 inline-flex items-center gap-2 transition-colors"
               >
-                View All <ArrowRight className="w-4 h-4" />
+                View All <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
-
             <div className="divide-y divide-[#4A7C9B]/20">
               {page.insights.slice(0, 5).map((insight, i) => (
                 <Link
                   key={i}
                   href={insight.href}
-                  className="group flex flex-col md:flex-row md:items-center justify-between py-6 gap-4 hover:pl-2 transition-all"
+                  className="group flex items-center justify-between py-6 gap-6"
                 >
-                  <h3 className="font-ne-display font-bold text-lg uppercase text-white group-hover:text-orange-500 transition-colors">
+                  <h3 className="font-ne-display font-bold text-lg md:text-xl text-white uppercase group-hover:text-[#F97316] transition-colors">
                     {cleanTitle(insight.title)}
                   </h3>
-                  <div className="flex items-center gap-6 shrink-0">
-                    {insight.category && (
-                      <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-white/30">
-                        {insight.category}
-                      </span>
-                    )}
-                    <ArrowRight className="w-4 h-4 text-white/20 group-hover:text-orange-500 transition-colors" />
-                  </div>
+                  <ArrowRight className="w-5 h-5 text-white/20 group-hover:text-[#F97316] transition-colors shrink-0" />
                 </Link>
               ))}
             </div>
@@ -303,48 +313,47 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* ---------------- FAQ — navy left-aligned ---------------- */}
+      {/* ---------------- 8 · FAQ ---------------- */}
       {page.faqs && page.faqs.length > 0 && (
-        <section className="bg-[#1A3650] py-16 lg:py-24 border-t border-white/5">
-          <div className="max-w-3xl mx-auto px-6">
-            <div className="mb-10">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
-                FAQ
-              </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95]">
-                Common Questions
-              </h2>
-            </div>
-            <div>
-              {page.faqs.map((faq, i) => (
-                <details
-                  key={i}
-                  className="group border-b border-white/10 py-5"
-                >
-                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ne-display font-bold text-base md:text-lg uppercase text-white/90">
-                    <span>{faq.question}</span>
-                    <Plus className="w-5 h-5 text-orange-500 shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
-                  </summary>
-                  <p className="font-ne-body text-base text-white/60 mt-3 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+        <section className="bg-[#F0EBE1] py-16 lg:py-24">
+          <div className="max-w-3xl mx-auto px-6 lg:px-12">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-3 block">
+              FAQ
+            </span>
+            <h2 className="font-ne-display font-black text-3xl md:text-4xl text-[#1A3650] uppercase mb-10">
+              Common Questions
+            </h2>
+            {page.faqs.map((faq, i) => (
+              <details
+                key={i}
+                className="group border-b border-[#1A3650]/10 py-5"
+              >
+                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ne-display font-bold text-base md:text-lg text-[#1A3650] uppercase">
+                  <span>{faq.question}</span>
+                  <Plus className="w-5 h-5 text-[#F97316] shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
+                </summary>
+                <p className="font-ne-body text-base text-[#1A3650]/60 mt-3 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </section>
       )}
 
-      {/* ---------------- FINAL CTA — single-line understated ---------------- */}
-      <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
-        <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-          <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
-            {page.ctaBannerHeading ?? "Ready to protect your facility?"}
+      {/* ---------------- 9 · FINAL CTA (Nobl) ---------------- */}
+      <section className="bg-[#1A3650] py-24 lg:py-32 px-6">
+        <div className="max-w-[1000px] mx-auto">
+          <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
+            {page.ctaBannerHeading ?? "Let\u2019s talk about"}
           </h2>
-          <div className="mt-8">
+          <p className="font-ne-accent italic text-3xl md:text-4xl text-[#F97316] mt-3">
+            your facility.
+          </p>
+          <div className="mt-12">
             <Link
               href={page.ctaBannerPrimaryHref ?? config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
             >
               {page.ctaBannerPrimaryText ?? "Get in Touch"}
               <ArrowRight className="w-4 h-4" />

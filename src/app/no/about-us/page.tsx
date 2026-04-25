@@ -2,21 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ShieldCheck,
-  Zap,
-  Users,
-  Star,
-  Heart,
-  Globe,
-  Award,
-  CheckCircle,
-  Wrench,
-  BarChart2,
-  Clock,
-  Lightbulb,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { NENavbar } from "@/components/ne-navbar";
 import { NEFooter } from "@/components/ne-footer";
 import { NEAnnouncementTicker } from "@/components/ne-announcement-ticker";
@@ -71,27 +57,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const ICON_MAP: Record<string, React.ElementType> = {
-  shield: ShieldCheck,
-  zap: Zap,
-  users: Users,
-  star: Star,
-  heart: Heart,
-  globe: Globe,
-  award: Award,
-  check: CheckCircle,
-  wrench: Wrench,
-  bar: BarChart2,
-  clock: Clock,
-  lightbulb: Lightbulb,
-};
-
-function resolveIcon(iconName: string | null | undefined): React.ElementType {
-  if (!iconName) return Star;
-  const key = iconName.toLowerCase().replace(/[^a-z]/g, "");
-  return ICON_MAP[key] ?? Star;
-}
-
 export default async function AboutPage() {
   const page = await getAboutPage(CC);
 
@@ -135,126 +100,169 @@ export default async function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main id="main-content">
-        {/* ---------------- HERO — left-aligned ---------------- */}
-        <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        {/* ---------------- STATEMENT HERO ---------------- */}
+        <section className="relative min-h-[60vh] flex items-center bg-[#1A3650] overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03]"
             aria-hidden="true"
             style={{
               backgroundImage:
                 "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-              backgroundSize: "60px 60px",
+              backgroundSize: "80px 80px",
             }}
           />
-          <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="max-w-3xl">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
-                About
+          <div className="relative max-w-[1200px] mx-auto px-6 lg:px-12 py-32">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold mb-8 block">
+              About
+            </span>
+            <h1 className="font-ne-display font-black text-5xl md:text-6xl lg:text-7xl text-white leading-[0.95]">
+              {headline}<br />
+              <span className="font-ne-accent italic font-normal text-[#F97316]">
+                Carelabs.
               </span>
-              <h1 className="font-ne-display font-black text-5xl md:text-6xl lg:text-6xl uppercase text-white leading-[0.95]">
-                {headline}<br />
-                <span className="font-ne-accent italic font-normal normal-case text-orange-500">
-                  Carelabs.
-                </span>
-              </h1>
-              <p className="font-ne-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
-                {subtext}
-              </p>
-            </div>
+            </h1>
+            <p className="font-ne-body text-base text-white/40 mt-10 max-w-2xl leading-relaxed">
+              {subtext}
+            </p>
           </div>
         </section>
 
-        {/* ---------------- MISSION — white ---------------- */}
+        {/* ---------------- STATEMENT BAND ---------------- */}
+        <section className="bg-[#F97316] py-8 lg:py-10">
+          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <p className="font-ne-display font-black text-xl md:text-2xl lg:text-3xl text-white uppercase leading-tight tracking-tight">
+              Test · Calibrate · Inspect · Certify · {config.countryName}
+            </p>
+          </div>
+        </section>
+
+        {/* ---------------- MISSION — sand band ---------------- */}
         {(page?.missionHeading || page?.missionBody) && (
-          <section className="bg-[#F9F7F3] py-20 lg:py-28 px-6 border-b border-[#1A3650]/5">
-            <div className="max-w-[1400px] mx-auto lg:px-12">
-              <div className="max-w-3xl">
-                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
-                  Our Mission
-                </span>
-                {page?.missionHeading && (
-                  <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
-                    {page.missionHeading}
-                  </h2>
-                )}
-                {page?.missionBody && (
-                  <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
-                    {page.missionBody}
-                  </p>
-                )}
-              </div>
+          <section className="bg-[#F0EBE1] py-20 lg:py-28 px-6">
+            <div className="max-w-[1200px] mx-auto lg:px-12">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-4 block">
+                Our Mission
+              </span>
+              {page?.missionHeading && (
+                <h2 className="font-ne-display font-black text-3xl md:text-5xl text-[#1A3650] uppercase leading-[0.95] max-w-3xl">
+                  {page.missionHeading}
+                </h2>
+              )}
+              {page?.missionBody && (
+                <p className="font-ne-body text-lg text-[#1A3650]/60 mt-8 max-w-3xl leading-relaxed">
+                  {page.missionBody}
+                </p>
+              )}
             </div>
           </section>
         )}
 
-        {/* ---------------- VALUES — navy editorial list ---------------- */}
+        {/* ---------------- VALUES — full-width alternating rows ---------------- */}
         {page?.values && page.values.length > 0 && (
-          <section className="bg-[#1A3650] py-20 lg:py-28 px-6">
-            <div className="max-w-[1400px] mx-auto lg:px-12">
-              <div className="mb-14 max-w-3xl">
-                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
+          <>
+            <section className="bg-[#1A3650] py-16 lg:py-20 px-6">
+              <div className="max-w-[1200px] mx-auto lg:px-12">
+                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
                   Our Values
                 </span>
                 {page?.valuesHeading && (
-                  <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-white leading-[0.95]">
+                  <h2 className="font-ne-display font-black text-3xl md:text-5xl text-white uppercase leading-[0.95]">
                     {page.valuesHeading}
                   </h2>
                 )}
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                {page.values.map((value, idx) => {
-                  const Icon = resolveIcon(value.icon);
-                  return (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-6 py-8 px-4 border-b border-white/10"
-                    >
-                      <Icon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-ne-display font-bold text-lg uppercase text-white">
-                          {value.title}
-                        </h3>
-                        <p className="font-ne-body text-sm text-white/60 mt-2 leading-relaxed">
-                          {value.description}
-                        </p>
-                      </div>
+            </section>
+            <section>
+              {page.values.map((value, idx) => (
+                <div
+                  key={idx}
+                  className={`${idx % 2 === 0 ? "bg-[#F9F7F3]" : "bg-[#F0EBE1]"}`}
+                >
+                  <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col md:flex-row gap-8 md:items-baseline">
+                    <span className="font-ne-display font-black text-5xl lg:text-6xl text-[#1A3650]/[0.08] leading-none shrink-0 md:w-32">
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-ne-display font-black text-2xl lg:text-3xl text-[#1A3650] uppercase leading-tight">
+                        {value.title}
+                      </h3>
+                      <p className="font-ne-body text-base text-[#1A3650]/60 mt-3 max-w-2xl leading-relaxed">
+                        {value.description}
+                      </p>
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+              ))}
+            </section>
+          </>
+        )}
+
+        {/* ---------------- TEAM — simple text list ---------------- */}
+        {page?.team && page.team.length > 0 && (
+          <section className="bg-[#243E54] py-20 lg:py-28 px-6">
+            <div className="max-w-[1200px] mx-auto lg:px-12">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
+                {page?.teamHeading ?? "The Team"}
+              </span>
+              <h2 className="font-ne-display font-black text-3xl md:text-5xl text-white uppercase leading-[0.95] mb-12">
+                Engineers · Auditors · Consultants
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
+                {page.team.map((member, i) => (
+                  <div
+                    key={i}
+                    className="py-6 border-b border-[#4A7C9B]/20"
+                  >
+                    <h3 className="font-ne-display font-bold text-xl text-white uppercase">
+                      {member.name}
+                    </h3>
+                    <p className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mt-1">
+                      {member.role}
+                    </p>
+                    {member.bio && (
+                      <p className="font-ne-body text-sm text-white/50 mt-3 leading-relaxed">
+                        {member.bio}
+                      </p>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </section>
         )}
 
-        {/* ---------------- CERTIFICATIONS — white inline ---------------- */}
+        {/* ---------------- CERTIFICATIONS — single line on sand ---------------- */}
         {page?.certifications && page.certifications.length > 0 && (
-          <section className="bg-[#F9F7F3] py-16 px-6 border-b border-[#1A3650]/5">
-            <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
-                Standards
+          <section className="bg-[#F0EBE1] py-16 px-6">
+            <div className="max-w-[1400px] mx-auto lg:px-12">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-4 block">
+                Standards We Follow
               </span>
-              <p className="font-ne-nav text-sm uppercase tracking-[0.18em] text-[#1A3650]/60">
-                {page.certifications.join("  ·  ")}
+              <p className="font-ne-display font-black text-lg md:text-2xl text-[#1A3650]/70 uppercase leading-tight">
+                {page.certifications.join(" · ")}
               </p>
             </div>
           </section>
         )}
 
-        {/* ---------------- FINAL CTA — single-line ---------------- */}
-        <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
-          <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-            <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
-              {page?.ctaBannerHeading ?? `Partner with Carelabs ${config.countryName}.`}
+        {/* ---------------- FINAL CTA ---------------- */}
+        <section className="bg-[#1A3650] py-24 lg:py-32 px-6">
+          <div className="max-w-[1000px] mx-auto">
+            <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
+              {page?.ctaBannerHeading ?? "Partner with Carelabs"}
             </h2>
+            <p className="font-ne-accent italic text-3xl md:text-4xl text-[#F97316] mt-3">
+              {config.countryName}.
+            </p>
             {page?.ctaBannerSubtext && (
-              <p className="font-ne-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+              <p className="font-ne-body text-base text-white/40 mt-8 max-w-xl leading-relaxed">
                 {page.ctaBannerSubtext}
               </p>
             )}
-            <div className="mt-8">
+            <div className="mt-12">
               <Link
                 href={page?.ctaBannerPrimaryHref ?? config.contactPath}
-                className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+                className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 {page?.ctaBannerPrimaryText ?? "Get in Touch"}
                 <ArrowRight className="w-4 h-4" />

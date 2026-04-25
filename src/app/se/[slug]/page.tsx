@@ -5,12 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
-import {
-  CheckCircle,
-  ChevronRight,
-  ArrowRight,
-  Plus,
-} from "lucide-react";
+import { CheckCircle, ChevronRight, ArrowRight, Plus } from "lucide-react";
 import { NENavbar } from "@/components/ne-navbar";
 import { NEFooter } from "@/components/ne-footer";
 import { NEAnnouncementTicker } from "@/components/ne-announcement-ticker";
@@ -88,7 +83,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = await fetchBlogWithFallback(params.slug);
   if (post) {
     return {
-      title: post.metaTitle ?? `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
+      title:
+        post.metaTitle ?? `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
       description:
         post.metaDescription ??
         (post.excerpt ? cleanExcerpt(post.excerpt) : undefined),
@@ -98,7 +94,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         languages: { [HREFLANG]: pageUrl, "x-default": pageUrl },
       },
       openGraph: {
-        title: post.metaTitle ?? `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
+        title:
+          post.metaTitle ??
+          `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
         description:
           post.metaDescription ??
           (post.excerpt ? cleanExcerpt(post.excerpt) : undefined),
@@ -108,7 +106,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
       twitter: {
         card: "summary_large_image",
-        title: post.metaTitle ?? `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
+        title:
+          post.metaTitle ??
+          `${cleanTitle(post.title)} | Carelabs ${COUNTRY_NAME}`,
         description:
           post.metaDescription ??
           (post.excerpt ? cleanExcerpt(post.excerpt) : undefined),
@@ -126,7 +126,7 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
   const processSteps = service.processSteps || [];
   const faqs = service.faqs || [];
   const safetyBullets = service.safetyBullets || [];
-  const ctaHeading = service.ctaBannerHeading || "Ready to schedule your study?";
+  const ctaHeading = service.ctaBannerHeading || "Ready to schedule";
   const ctaPrimary = service.ctaBannerPrimaryText || "Get a Free Quote";
   const ctaPrimaryHref = service.ctaBannerPrimaryHref || config.contactPath;
 
@@ -176,9 +176,24 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: `https://carelabz.com/${CC}/` },
-          { "@type": "ListItem", position: 2, name: "Services", item: `https://carelabz.com${config.servicesIndexPath}` },
-          { "@type": "ListItem", position: 3, name: service.title, item: pageUrl },
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `https://carelabz.com/${CC}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: `https://carelabz.com${config.servicesIndexPath}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: service.title,
+            item: pageUrl,
+          },
         ],
       },
     ],
@@ -193,24 +208,24 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
       <NENavbar config={config} />
       <JsonLd data={jsonLd} />
 
-      {/* ---------------- HERO — left-aligned ---------------- */}
-      <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      {/* ---------------- STATEMENT HERO ---------------- */}
+      <section className="relative bg-[#1A3650] overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.03]"
           aria-hidden="true"
           style={{
             backgroundImage:
               "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
+            backgroundSize: "80px 80px",
           }}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <nav aria-label="Breadcrumb" className="mb-8">
+        <div className="relative max-w-[1200px] mx-auto px-6 lg:px-12 pt-32 pb-20 lg:pt-40 lg:pb-28">
+          <nav aria-label="Breadcrumb" className="mb-10">
             <ol className="flex flex-wrap items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-white/40">
               <li>
                 <Link
                   href={`/${CC}/`}
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#F97316] transition-colors"
                 >
                   Home
                 </Link>
@@ -219,7 +234,7 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
               <li>
                 <Link
                   href={config.servicesIndexPath}
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#F97316] transition-colors"
                 >
                   Services
                 </Link>
@@ -229,110 +244,108 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
-              {eyebrow}
-            </span>
-            <h1 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-[0.95]">
-              {service.title}
-            </h1>
-            {lede && (
-              <p className="font-ne-body text-lg text-white/50 mt-8 leading-relaxed">
-                {lede}
-              </p>
-            )}
-            <div className="mt-10">
-              <Link
-                href={ctaPrimaryHref}
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors"
-              >
-                Free Consultation
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+          <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold mb-6 block">
+            {eyebrow}
+          </span>
+          <h1 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95] max-w-4xl">
+            {service.title}
+          </h1>
+          {lede && (
+            <p className="font-ne-body text-base md:text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
+              {lede}
+            </p>
+          )}
+          <div className="mt-12">
+            <Link
+              href={ctaPrimaryHref}
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-4 transition-colors"
+            >
+              Free Consultation
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ---------------- TRUST BAR ---------------- */}
-      <div className="bg-[#F9F7F3] py-6 px-6 border-b border-[#1A3650]/5">
-        <p className="text-center font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/40">
-          {config.standards.slice(0, 5).join("  ·  ")}
-        </p>
-      </div>
+      {/* ---------------- STATEMENT BAND ---------------- */}
+      <section className="bg-[#F97316] py-8 lg:py-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <p className="font-ne-display font-black text-xl md:text-2xl lg:text-3xl text-white uppercase leading-tight tracking-tight">
+            {config.standards.slice(0, 5).join(" · ")}
+          </p>
+        </div>
+      </section>
 
-      {/* ---------------- FEATURES — numbered editorial list ---------------- */}
+      {/* ---------------- FEATURES — alternating full-width rows ---------------- */}
       {features.length > 0 && (
-        <section className="bg-[#F9F7F3] py-20 lg:py-28">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="mb-14 max-w-3xl">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
+        <>
+          <section className="bg-[#F0EBE1] py-16 lg:py-20 px-6">
+            <div className="max-w-[1200px] mx-auto lg:px-12">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 mb-4 block">
                 What We Deliver
               </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
+              <h2 className="font-ne-display font-black text-3xl md:text-5xl text-[#1A3650] uppercase leading-[0.95]">
                 {service.featuresHeading || "Key Challenges We Solve"}
               </h2>
               {service.featuresSubtext && (
-                <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
+                <p className="font-ne-body text-base text-[#1A3650]/60 mt-6 max-w-2xl leading-relaxed">
                   {service.featuresSubtext}
                 </p>
               )}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-              {features.map((feature, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-6 py-8 px-4 border-b border-[#1A3650]/10"
-                >
-                  <span className="font-ne-display font-black text-3xl text-[#1A3650]/10 leading-none shrink-0 w-12">
+          </section>
+          <section>
+            {features.map((feature, i) => (
+              <div
+                key={i}
+                className={`${i % 2 === 0 ? "bg-[#F9F7F3]" : "bg-[#F0EBE1]"}`}
+              >
+                <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-10 lg:py-12 flex flex-col md:flex-row gap-8">
+                  <span className="font-ne-display font-black text-5xl text-[#1A3650]/[0.08] leading-none shrink-0 md:w-24">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-ne-display font-bold text-lg uppercase text-[#1A3650]">
+                    <h3 className="font-ne-display font-black text-xl lg:text-2xl text-[#1A3650] uppercase">
                       {feature.title}
                     </h3>
-                    <p className="font-ne-body text-sm text-gray-500 mt-2 leading-relaxed">
+                    <p className="font-ne-body text-sm md:text-base text-[#1A3650]/60 mt-3 max-w-3xl leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+              </div>
+            ))}
+          </section>
+        </>
       )}
 
-      {/* ---------------- PROCESS — navy editorial ---------------- */}
+      {/* ---------------- PROCESS — dark methodology panels ---------------- */}
       {processSteps.length > 0 && (
-        <section className="bg-[#1A3650] py-20 lg:py-28">
+        <section className="bg-[#243E54] py-20 lg:py-28">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="mb-14 max-w-3xl">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
-                Our Process
-              </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-white leading-[0.95]">
-                {service.processHeading || "How We Work"}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
+              Our Process
+            </span>
+            <h2 className="font-ne-display font-black text-3xl md:text-5xl text-white uppercase leading-[0.95] mb-12">
+              {service.processHeading || "How We Work"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-[#4A7C9B]/20">
               {processSteps.map((step, index) => {
                 const stepNum = step.number ?? index + 1;
                 return (
                   <div
                     key={stepNum}
-                    className="flex items-start gap-6 py-8 px-4 border-b border-white/10"
+                    className="py-8 lg:py-0 lg:px-8 first:lg:pl-0 last:lg:pr-0"
                   >
-                    <span className="font-ne-display font-black text-3xl text-white/10 leading-none shrink-0 w-12">
+                    <span className="font-ne-display font-black text-4xl text-[#F97316]/20">
                       {String(stepNum).padStart(2, "0")}
                     </span>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-ne-display font-bold text-lg uppercase text-white">
-                        {step.title}
-                      </h3>
-                      <p className="font-ne-body text-sm text-white/50 mt-2 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
+                    <h3 className="font-ne-display font-black text-xl text-white uppercase mt-4">
+                      {step.title}
+                    </h3>
+                    <p className="font-ne-body text-sm text-white/40 mt-3 leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 );
               })}
@@ -341,79 +354,76 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
         </section>
       )}
 
-      {/* ---------------- SAFETY ---------------- */}
+      {/* ---------------- SAFETY — single-sentence-ish dark band ---------------- */}
       {(service.safetyHeading || service.safetyBody) && (
-        <section className="bg-[#F9F7F3] py-20 lg:py-28 px-6">
-          <div className="max-w-[1400px] mx-auto lg:px-12">
-            <div className="max-w-3xl">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
-                {service.safetyEyebrow || "Worker Safety"}
-              </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-4xl lg:text-5xl uppercase text-[#1A3650] leading-[0.95]">
-                {service.safetyHeading || "Protecting Your Team"}
-              </h2>
-              {service.safetyBody && (
-                <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
-                  {service.safetyBody}
-                </p>
-              )}
-              {safetyBullets.length > 0 && (
-                <ul className="mt-8 space-y-3">
-                  {safetyBullets.map((bullet, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
-                      <span className="font-ne-body text-[#1A3650]/80">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+        <section className="bg-[#1A3650] py-20 lg:py-28 px-6">
+          <div className="max-w-[1000px] mx-auto">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-4 block">
+              {service.safetyEyebrow || "Worker Safety"}
+            </span>
+            <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
+              {service.safetyHeading || "Protecting Your Team"}
+            </h2>
+            {service.safetyBody && (
+              <p className="font-ne-body text-base md:text-lg text-white/50 mt-8 leading-relaxed">
+                {service.safetyBody}
+              </p>
+            )}
+            {safetyBullets.length > 0 && (
+              <ul className="mt-10 space-y-3">
+                {safetyBullets.map((bullet, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#F97316] mt-0.5 shrink-0" />
+                    <span className="font-ne-body text-white/80">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </section>
       )}
 
-      {/* ---------------- FAQ — navy ---------------- */}
+      {/* ---------------- FAQ — sand bg ---------------- */}
       {faqs.length > 0 && (
-        <section className="bg-[#1A3650] py-16 lg:py-24 border-t border-white/5">
-          <div className="max-w-3xl mx-auto px-6">
-            <div className="mb-10">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
-                FAQ
-              </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95]">
-                {service.faqSectionHeading || "Common Questions"}
-              </h2>
-            </div>
-            <div>
-              {faqs.map((faq, i) => (
-                <details
-                  key={i}
-                  className="group border-b border-white/10 py-5"
-                >
-                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ne-display font-bold text-base md:text-lg uppercase text-white/90">
-                    <span>{faq.question}</span>
-                    <Plus className="w-5 h-5 text-orange-500 shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
-                  </summary>
-                  <p className="font-ne-body text-base text-white/60 mt-3 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+        <section className="bg-[#F0EBE1] py-16 lg:py-24">
+          <div className="max-w-3xl mx-auto px-6 lg:px-12">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-3 block">
+              FAQ
+            </span>
+            <h2 className="font-ne-display font-black text-3xl md:text-4xl text-[#1A3650] uppercase mb-10">
+              {service.faqSectionHeading || "Common Questions"}
+            </h2>
+            {faqs.map((faq, i) => (
+              <details
+                key={i}
+                className="group border-b border-[#1A3650]/10 py-5"
+              >
+                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ne-display font-bold text-base md:text-lg text-[#1A3650] uppercase">
+                  <span>{faq.question}</span>
+                  <Plus className="w-5 h-5 text-[#F97316] shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
+                </summary>
+                <p className="font-ne-body text-base text-[#1A3650]/60 mt-3 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </section>
       )}
 
-      {/* ---------------- FINAL CTA — single-line ---------------- */}
-      <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
-        <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-          <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
+      {/* ---------------- FINAL CTA ---------------- */}
+      <section className="bg-[#1A3650] py-24 lg:py-32 px-6">
+        <div className="max-w-[1000px] mx-auto">
+          <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
             {ctaHeading}
           </h2>
-          <div className="mt-8">
+          <p className="font-ne-accent italic text-3xl md:text-4xl text-[#F97316] mt-3">
+            your study?
+          </p>
+          <div className="mt-12">
             <Link
               href={ctaPrimaryHref}
-              className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
             >
               {ctaPrimary}
               <ArrowRight className="w-4 h-4" />
@@ -473,42 +483,42 @@ function BlogView({ post }: { post: BlogPost }) {
       <JsonLd data={articleJsonLd} />
 
       <main id="main-content">
-        {/* ---------------- HERO — left-aligned ---------------- */}
-        <section className="relative bg-[#1A3650] pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
+        {/* ---------------- STATEMENT HERO ---------------- */}
+        <section className="relative bg-[#1A3650] overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03]"
             aria-hidden="true"
             style={{
               backgroundImage:
                 "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-              backgroundSize: "60px 60px",
+              backgroundSize: "80px 80px",
             }}
           />
-          <div className="relative max-w-3xl mx-auto px-6 lg:px-12">
+          <div className="relative max-w-3xl mx-auto px-6 lg:px-12 pt-32 pb-16 lg:pt-40 lg:pb-20">
             <nav
               aria-label="Breadcrumb"
               className="flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-white/40 mb-6 flex-wrap"
             >
               <Link
                 href={`/${CC}/`}
-                className="hover:text-orange-500 transition-colors"
+                className="hover:text-[#F97316] transition-colors"
               >
                 Home
               </Link>
               <span aria-hidden="true">/</span>
               <Link
                 href={config.blogIndexPath}
-                className="hover:text-orange-500 transition-colors"
+                className="hover:text-[#F97316] transition-colors"
               >
                 Blog
               </Link>
             </nav>
             {post.category && (
-              <span className="inline-block font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/70 font-semibold mb-4">
+              <span className="inline-block font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold mb-4">
                 {post.category}
               </span>
             )}
-            <h1 className="font-ne-display font-black text-3xl md:text-4xl lg:text-5xl uppercase text-white leading-[0.95]">
+            <h1 className="font-ne-display font-black text-3xl md:text-4xl lg:text-5xl text-white uppercase leading-[0.95]">
               {cleanTitle(post.title)}
             </h1>
             <div className="flex flex-wrap items-center gap-4 font-ne-body text-sm text-white/40 mt-8">
@@ -545,7 +555,7 @@ function BlogView({ post }: { post: BlogPost }) {
         <section className="bg-[#F9F7F3] py-20 px-6">
           <div className="max-w-3xl mx-auto">
             <div
-              className="prose prose-lg max-w-none prose-headings:font-ne-display prose-headings:uppercase prose-headings:prose-headings:text-[#1A3650] prose-headings:font-bold prose-p:text-gray-700 prose-p:font-ne-body prose-li:text-gray-700 prose-li:font-ne-body prose-strong:text-[#1A3650] prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline"
+              className="prose prose-lg max-w-none prose-headings:font-ne-display prose-headings:uppercase prose-headings:text-[#1A3650] prose-headings:font-black prose-p:text-[#1A3650]/70 prose-p:font-ne-body prose-li:text-[#1A3650]/70 prose-li:font-ne-body prose-strong:text-[#1A3650] prose-a:text-[#F97316] prose-a:no-underline hover:prose-a:underline"
               dangerouslySetInnerHTML={{
                 __html: marked(post.body || "") as string,
               }}
@@ -565,14 +575,14 @@ function BlogView({ post }: { post: BlogPost }) {
           </div>
         </section>
 
-        {/* ---------------- FAQ — navy ---------------- */}
+        {/* ---------------- FAQ — dark ---------------- */}
         {post.faqs && post.faqs.length > 0 && (
           <section className="bg-[#1A3650] py-16 px-6">
             <div className="max-w-3xl mx-auto">
-              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/60 mb-3 block">
                 FAQ
               </span>
-              <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95] mb-8">
+              <h2 className="font-ne-display font-black text-3xl md:text-4xl text-white uppercase mb-8">
                 Common Questions
               </h2>
               <FaqAccordion faqs={post.faqs} />
@@ -581,26 +591,29 @@ function BlogView({ post }: { post: BlogPost }) {
         )}
 
         {/* ---------------- FINAL CTA ---------------- */}
-        <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
-          <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-            <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
-              Need expert support?
+        <section className="bg-[#1A3650] py-24 lg:py-32 px-6 border-t border-[#4A7C9B]/20">
+          <div className="max-w-[1000px] mx-auto">
+            <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
+              Need expert
             </h2>
-            <p className="font-ne-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-ne-accent italic text-3xl md:text-4xl text-[#F97316] mt-3">
+              support?
+            </p>
+            <p className="font-ne-body text-base text-white/40 mt-8 max-w-2xl leading-relaxed">
               Carelabs provides arc flash studies, power system analysis, and{" "}
               {config.primaryStandard} compliance services across {COUNTRY_NAME}.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="mt-12 flex flex-col sm:flex-row gap-3">
               <Link
                 href={config.contactPath}
-                className="inline-flex items-center justify-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 Get a Free Quote
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href={config.blogIndexPath}
-                className="inline-flex items-center justify-center gap-2 border-2 border-[#1A3650]/20 text-[#1A3650] hover:bg-[#1A3650] hover:text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white hover:bg-white hover:text-[#1A3650] font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 More Articles
               </Link>

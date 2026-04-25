@@ -91,95 +91,109 @@ export default async function ServicesIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ---------------- HERO — left-aligned ---------------- */}
-      <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      {/* ---------------- STATEMENT HERO ---------------- */}
+      <section className="relative min-h-[60vh] flex items-center bg-[#1A3650] overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.03]"
           aria-hidden="true"
           style={{
             backgroundImage:
               "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
+            backgroundSize: "80px 80px",
           }}
         />
-        <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
-              {config.countryName} · Engineering
+        <div className="relative max-w-[1200px] mx-auto px-6 lg:px-12 py-32">
+          <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold mb-8 block">
+            {config.countryName} · Engineering
+          </span>
+          <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-6xl lg:text-7xl text-white leading-[0.95]">
+            Our<br />
+            <span className="font-ne-accent italic font-normal text-[#F97316]">
+              Services.
             </span>
-            <h1 className="font-ne-display font-black text-5xl sm:text-6xl md:text-6xl uppercase text-white leading-[0.95]">
-              Our<br />
-              <span className="font-ne-accent italic font-normal normal-case text-orange-500">
-                Services.
-              </span>
-            </h1>
-            <p className="font-ne-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
-              Comprehensive electrical safety services designed to keep your
-              facilities compliant with {config.primaryStandard}, your workers
-              protected, and your operations running smoothly.
-            </p>
-          </div>
+          </h1>
+          <p className="font-ne-body text-base text-white/40 mt-10 max-w-xl leading-relaxed">
+            Comprehensive electrical safety services designed to keep your
+            facilities compliant with {config.primaryStandard}, your workers
+            protected, and your operations running smoothly.
+          </p>
         </div>
       </section>
 
-      {/* ---------------- TRUST BAR ---------------- */}
-      <div className="bg-[#F9F7F3] py-6 px-6 border-b border-[#1A3650]/5">
-        <p className="text-center font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/40">
-          {config.standards.slice(0, 5).join("  ·  ")}
-        </p>
-      </div>
-
-      {/* ---------------- SERVICES — editorial numbered list ---------------- */}
-      <main id="main-content" className="bg-[#F9F7F3] py-20 lg:py-28">
+      {/* ---------------- STATEMENT BAND ---------------- */}
+      <section className="bg-[#F97316] py-8 lg:py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          {services.length === 0 ? (
-            <p className="text-center font-ne-body text-gray-500 py-12">
+          <p className="font-ne-display font-black text-xl md:text-2xl lg:text-3xl text-white uppercase leading-tight tracking-tight">
+            {config.standards.slice(0, 5).join(" · ")}
+          </p>
+        </div>
+      </section>
+
+      {/* ---------------- SERVICES — full-width alternating rows ---------------- */}
+      <main id="main-content">
+        {services.length === 0 ? (
+          <section className="bg-[#F9F7F3] py-32 px-6 text-center">
+            <p className="font-ne-body text-base text-[#1A3650]/50">
               Services are currently being loaded. Please check back shortly.
             </p>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-              {services.map((service, i) => (
-                <Link
-                  key={service.id}
-                  href={getServiceHref(service)}
-                  className="group flex items-start gap-6 py-8 px-4 border-b border-[#1A3650]/10 hover:bg-[#F0EBE1] transition-colors"
-                >
-                  <span className="font-ne-display font-black text-3xl text-[#1A3650]/10 leading-none shrink-0 w-12">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 font-semibold">
-                      IEEE 1584 · {config.primaryStandard}
+          </section>
+        ) : (
+          <section>
+            {services.map((service, i) => (
+              <Link
+                key={service.id}
+                href={getServiceHref(service)}
+                className={`group block ${
+                  i % 2 === 0 ? "bg-[#F9F7F3]" : "bg-[#F0EBE1]"
+                }`}
+              >
+                <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                  <div className="flex items-start gap-8 flex-1 min-w-0">
+                    <span className="font-ne-display font-black text-5xl lg:text-6xl text-[#1A3650]/[0.08] leading-none shrink-0">
+                      {String(i + 1).padStart(2, "0")}
                     </span>
-                    <h2 className="font-ne-display font-bold text-lg uppercase text-[#1A3650] mt-2 group-hover:text-orange-500 transition-colors">
-                      {service.title}
-                    </h2>
-                    {service.metaDescription && (
-                      <p className="font-ne-body text-sm text-gray-500 mt-2 line-clamp-2 leading-relaxed">
-                        {service.metaDescription.length > 160
-                          ? service.metaDescription.slice(0, 157) + "…"
-                          : service.metaDescription}
-                      </p>
-                    )}
+                    <div>
+                      <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316]/70 font-semibold">
+                        IEEE 1584 · {config.primaryStandard}
+                      </span>
+                      <h2 className="font-ne-display font-black text-2xl lg:text-3xl text-[#1A3650] uppercase leading-tight mt-2 group-hover:text-[#F97316] transition-colors">
+                        {service.title}
+                      </h2>
+                      {service.metaDescription && (
+                        <p className="font-ne-body text-sm text-[#1A3650]/50 mt-3 max-w-xl leading-relaxed">
+                          {service.metaDescription.length > 160
+                            ? service.metaDescription.slice(0, 157) + "…"
+                            : service.metaDescription}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-[#1A3650]/20 group-hover:text-orange-500 transition-colors shrink-0 mt-1" />
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
+                  <div className="flex items-center gap-3 shrink-0">
+                    <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#F97316] opacity-0 group-hover:opacity-100 transition-opacity">
+                      Explore
+                    </span>
+                    <ArrowRight className="w-5 h-5 text-[#1A3650]/20 group-hover:text-[#F97316] transition-colors" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </section>
+        )}
       </main>
 
       {/* ---------------- FINAL CTA ---------------- */}
-      <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6 border-t border-[#1A3650]/5">
-        <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-          <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
-            Ready to schedule a study?
+      <section className="bg-[#1A3650] py-24 lg:py-32 px-6">
+        <div className="max-w-[1000px] mx-auto">
+          <h2 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-[0.95]">
+            Ready to schedule
           </h2>
-          <div className="mt-8">
+          <p className="font-ne-accent italic text-3xl md:text-4xl text-[#F97316] mt-3">
+            a study?
+          </p>
+          <div className="mt-12">
             <Link
               href={config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
             >
               Request a Quote
               <ArrowRight className="w-4 h-4" />
