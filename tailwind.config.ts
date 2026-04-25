@@ -23,6 +23,13 @@ const config: Config = {
         carelabsBg: "#EEF4FF",
         carelabsTextSecondary: "#374151",
         carelabsFooter: "#23282D",
+        // Northern Europe palette
+        nordicBlue: "#1A3650",
+        nordicMid: "#4A7C9B",
+        sand: "#DDD5C5",
+        sandLight: "#F0EBE1",
+        warmWhite: "#F9F7F3",
+        nordicSlate: "#243E54",
       },
       fontFamily: {
         serif: ["var(--font-montserrat)", "system-ui", "sans-serif"],
@@ -34,6 +41,11 @@ const config: Config = {
           "sans-serif",
         ],
         accent: ["var(--font-playfair)", "Georgia", "serif"],
+        // NE fonts (Fraunces + Syne)
+        "ne-display": ["var(--font-fraunces)", "Georgia", "serif"],
+        "ne-accent": ["var(--font-fraunces)", "Georgia", "serif"],
+        "ne-body": ["var(--font-syne)", "system-ui", "sans-serif"],
+        "ne-nav": ["var(--font-syne)", "system-ui", "sans-serif"],
       },
       animation: {
         marquee: "marquee 30s linear infinite",

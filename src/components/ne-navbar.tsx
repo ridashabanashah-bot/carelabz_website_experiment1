@@ -26,7 +26,7 @@ export function NENavbar({ config }: NENavbarProps) {
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className="h-[2px] bg-orange-500" aria-hidden="true" />
       <nav
-        className={`bg-[#0B1A2F] border-b border-white/10 transition-shadow duration-300 ${
+        className={`bg-[#1A3650] border-b border-white/10 transition-shadow duration-300 ${
           isScrolled ? "shadow-md" : ""
         }`}
         aria-label="Primary"
@@ -57,7 +57,7 @@ export function NENavbar({ config }: NENavbarProps) {
             >
               <button
                 type="button"
-                className="font-condensed text-[12px] uppercase tracking-[0.2em] text-white/90 hover:text-orange-500 transition-colors inline-flex items-center gap-1"
+                className="font-ne-nav text-[12px] uppercase tracking-[0.18em] text-white/90 hover:text-orange-500 transition-colors inline-flex items-center gap-1"
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
               >
@@ -71,13 +71,13 @@ export function NENavbar({ config }: NENavbarProps) {
 
               {servicesOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
-                  <div className="bg-[#0B1A2F] border border-white/10 shadow-2xl p-4 min-w-[320px]">
+                  <div className="bg-[#1A3650] border border-[#4A7C9B]/20 shadow-2xl p-4 min-w-[320px]">
                     <ul className="grid gap-1">
                       {config.services.map((s) => (
                         <li key={s.href}>
                           <Link
                             href={s.href}
-                            className="block px-3 py-2.5 font-condensed text-[12px] uppercase tracking-[0.15em] text-white/90 hover:bg-white/5 hover:text-orange-500 transition-colors"
+                            className="block px-3 py-2.5 font-ne-nav text-[12px] uppercase tracking-[0.18em] text-white/90 hover:bg-[#4A7C9B]/10 hover:text-orange-500 transition-colors"
                           >
                             {s.label}
                           </Link>
@@ -87,7 +87,7 @@ export function NENavbar({ config }: NENavbarProps) {
                     <div className="border-t border-white/10 mt-3 pt-3">
                       <Link
                         href={config.servicesIndexPath}
-                        className="flex items-center justify-between px-3 py-2 font-condensed text-[12px] uppercase tracking-[0.2em] text-orange-500 hover:text-orange-400 transition-colors"
+                        className="flex items-center justify-between px-3 py-2 font-ne-nav text-[12px] uppercase tracking-[0.18em] text-orange-500 hover:text-orange-400 transition-colors"
                       >
                         View All Services →
                       </Link>
@@ -99,13 +99,13 @@ export function NENavbar({ config }: NENavbarProps) {
 
             <Link
               href={config.aboutPath}
-              className="font-condensed text-[12px] uppercase tracking-[0.2em] text-white/90 hover:text-orange-500 transition-colors"
+              className="font-ne-nav text-[12px] uppercase tracking-[0.18em] text-white/90 hover:text-orange-500 transition-colors"
             >
               About
             </Link>
             <Link
               href={config.contactPath}
-              className="font-condensed text-[12px] uppercase tracking-[0.2em] text-white/90 hover:text-orange-500 transition-colors"
+              className="font-ne-nav text-[12px] uppercase tracking-[0.18em] text-white/90 hover:text-orange-500 transition-colors"
             >
               Contact
             </Link>
@@ -114,7 +114,7 @@ export function NENavbar({ config }: NENavbarProps) {
           <div className="hidden lg:block">
             <Link
               href={config.contactPath}
-              className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-condensed font-bold text-xs uppercase tracking-[0.15em] px-6 py-2.5 transition-colors"
+              className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-ne-nav font-semibold text-xs uppercase tracking-[0.1em] px-6 py-2.5 transition-colors"
             >
               Request a Quote
             </Link>
@@ -137,10 +137,10 @@ export function NENavbar({ config }: NENavbarProps) {
       </div>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0B1A2F] border-t border-white/10 py-8">
+        <div className="lg:hidden bg-[#1A3650] border-t border-white/10 py-8">
           <div className="max-w-[1400px] mx-auto px-6 space-y-4 text-center">
             <div className="py-2">
-              <p className="text-white/40 font-condensed text-xs uppercase tracking-[0.2em] mb-3">
+              <p className="text-white/40 font-ne-nav text-xs uppercase tracking-[0.18em] mb-3">
                 Services
               </p>
               <ul className="space-y-2">
@@ -148,7 +148,7 @@ export function NENavbar({ config }: NENavbarProps) {
                   <li key={s.href}>
                     <Link
                       href={s.href}
-                      className="block text-white/80 font-condensed uppercase tracking-[0.15em] text-sm py-1.5 hover:text-orange-500"
+                      className="block text-white/80 font-ne-display uppercase tracking-[0.15em] text-sm py-1.5 hover:text-orange-500"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {s.label}
@@ -158,7 +158,7 @@ export function NENavbar({ config }: NENavbarProps) {
                 <li>
                   <Link
                     href={config.servicesIndexPath}
-                    className="block text-orange-500 font-condensed font-semibold uppercase tracking-[0.2em] text-sm py-1.5"
+                    className="block text-orange-500 font-ne-display font-semibold uppercase tracking-[0.2em] text-sm py-1.5"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     View All Services →
@@ -168,21 +168,21 @@ export function NENavbar({ config }: NENavbarProps) {
             </div>
             <Link
               href={config.aboutPath}
-              className="block font-condensed uppercase tracking-[0.2em] text-sm text-white/80 hover:text-orange-500 py-2"
+              className="block font-ne-display uppercase tracking-[0.2em] text-sm text-white/80 hover:text-orange-500 py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href={config.contactPath}
-              className="block font-condensed uppercase tracking-[0.2em] text-sm text-white/80 hover:text-orange-500 py-2"
+              className="block font-ne-display uppercase tracking-[0.2em] text-sm text-white/80 hover:text-orange-500 py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
             <Link
               href={config.contactPath}
-              className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-condensed font-bold text-xs uppercase tracking-[0.15em] px-6 py-3 w-full justify-center mt-4"
+              className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-ne-nav font-semibold text-xs uppercase tracking-[0.1em] px-6 py-3 w-full justify-center mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
               Request a Quote

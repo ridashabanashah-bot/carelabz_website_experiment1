@@ -5,6 +5,8 @@ import {
   Poppins,
   Barlow_Condensed,
   Playfair_Display,
+  Fraunces,
+  Syne,
 } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
@@ -49,6 +51,21 @@ const playfairDisplay = Playfair_Display({
   display: "swap",
 });
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://carelabz.com"),
   title: "Carelabs — Electrical Safety Services",
@@ -87,7 +104,7 @@ export default function RootLayout({
   return (
     <html lang="en-AE">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} antialiased bg-white text-gray-900`}
       >
         <a
           href="#main-content"

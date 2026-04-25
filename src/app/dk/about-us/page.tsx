@@ -136,7 +136,7 @@ export default async function AboutPage() {
       />
       <main id="main-content">
         {/* ---------------- HERO — left-aligned ---------------- */}
-        <section className="relative bg-[#0B1A2F] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03]"
             aria-hidden="true"
@@ -148,16 +148,16 @@ export default async function AboutPage() {
           />
           <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="max-w-3xl">
-              <span className="font-condensed text-xs uppercase tracking-[0.3em] text-orange-500/60 mb-6 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
                 About
               </span>
-              <h1 className="font-condensed font-extrabold text-5xl md:text-6xl lg:text-7xl uppercase text-white leading-[0.95] tracking-tight">
+              <h1 className="font-ne-display font-black text-5xl md:text-6xl lg:text-6xl uppercase text-white leading-[0.95]">
                 {headline}<br />
-                <span className="font-accent italic font-normal normal-case text-orange-500">
+                <span className="font-ne-accent italic font-normal normal-case text-orange-500">
                   Carelabs.
                 </span>
               </h1>
-              <p className="font-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
+              <p className="font-ne-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
                 {subtext}
               </p>
             </div>
@@ -166,19 +166,19 @@ export default async function AboutPage() {
 
         {/* ---------------- MISSION — white ---------------- */}
         {(page?.missionHeading || page?.missionBody) && (
-          <section className="bg-white py-20 lg:py-28 px-6 border-b border-[#0B1A2F]/5">
+          <section className="bg-[#F9F7F3] py-20 lg:py-28 px-6 border-b border-[#1A3650]/5">
             <div className="max-w-[1400px] mx-auto lg:px-12">
               <div className="max-w-3xl">
-                <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                   Our Mission
                 </span>
                 {page?.missionHeading && (
-                  <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
+                  <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
                     {page.missionHeading}
                   </h2>
                 )}
                 {page?.missionBody && (
-                  <p className="font-body text-lg text-gray-600 mt-6 leading-relaxed">
+                  <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
                     {page.missionBody}
                   </p>
                 )}
@@ -189,14 +189,14 @@ export default async function AboutPage() {
 
         {/* ---------------- VALUES — navy editorial list ---------------- */}
         {page?.values && page.values.length > 0 && (
-          <section className="bg-[#0B1A2F] py-20 lg:py-28 px-6">
+          <section className="bg-[#1A3650] py-20 lg:py-28 px-6">
             <div className="max-w-[1400px] mx-auto lg:px-12">
               <div className="mb-14 max-w-3xl">
-                <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                   Our Values
                 </span>
                 {page?.valuesHeading && (
-                  <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-white leading-[0.95]">
+                  <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-white leading-[0.95]">
                     {page.valuesHeading}
                   </h2>
                 )}
@@ -211,10 +211,10 @@ export default async function AboutPage() {
                     >
                       <Icon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-condensed font-bold text-lg uppercase text-white tracking-tight">
+                        <h3 className="font-ne-display font-bold text-lg uppercase text-white">
                           {value.title}
                         </h3>
-                        <p className="font-body text-sm text-white/60 mt-2 leading-relaxed">
+                        <p className="font-ne-body text-sm text-white/60 mt-2 leading-relaxed">
                           {value.description}
                         </p>
                       </div>
@@ -228,12 +228,12 @@ export default async function AboutPage() {
 
         {/* ---------------- CERTIFICATIONS — white inline ---------------- */}
         {page?.certifications && page.certifications.length > 0 && (
-          <section className="bg-white py-16 px-6 border-b border-[#0B1A2F]/5">
+          <section className="bg-[#F9F7F3] py-16 px-6 border-b border-[#1A3650]/5">
             <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                 Standards
               </span>
-              <p className="font-condensed text-sm uppercase tracking-[0.2em] text-[#0B1A2F]/60">
+              <p className="font-ne-nav text-sm uppercase tracking-[0.18em] text-[#1A3650]/60">
                 {page.certifications.join("  ·  ")}
               </p>
             </div>
@@ -241,20 +241,20 @@ export default async function AboutPage() {
         )}
 
         {/* ---------------- FINAL CTA — single-line ---------------- */}
-        <section className="bg-white py-20 lg:py-24 px-6">
+        <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
           <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-            <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-[#0B1A2F] leading-tight">
+            <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
               {page?.ctaBannerHeading ?? `Partner with Carelabs ${config.countryName}.`}
             </h2>
             {page?.ctaBannerSubtext && (
-              <p className="font-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+              <p className="font-ne-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
                 {page.ctaBannerSubtext}
               </p>
             )}
             <div className="mt-8">
               <Link
                 href={page?.ctaBannerPrimaryHref ?? config.contactPath}
-                className="inline-flex items-center gap-2 bg-[#0B1A2F] hover:bg-[#162a47] text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-10 py-4 transition-colors"
+                className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 {page?.ctaBannerPrimaryText ?? "Get in Touch"}
                 <ArrowRight className="w-4 h-4" />

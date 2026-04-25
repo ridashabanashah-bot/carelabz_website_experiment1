@@ -194,7 +194,7 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
       <JsonLd data={jsonLd} />
 
       {/* ---------------- HERO — left-aligned ---------------- */}
-      <section className="relative bg-[#0B1A2F] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.03]"
           aria-hidden="true"
@@ -206,7 +206,7 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
         />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-2 font-condensed text-xs uppercase tracking-[0.2em] text-white/40">
+            <ol className="flex flex-wrap items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-white/40">
               <li>
                 <Link
                   href={`/${CC}/`}
@@ -230,21 +230,21 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
           </nav>
 
           <div className="max-w-3xl">
-            <span className="font-condensed text-xs uppercase tracking-[0.3em] text-orange-500/60 mb-6 block">
+            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
               {eyebrow}
             </span>
-            <h1 className="font-condensed font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-[0.95] tracking-tight">
+            <h1 className="font-ne-display font-black text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-[0.95]">
               {service.title}
             </h1>
             {lede && (
-              <p className="font-body text-lg text-white/50 mt-8 leading-relaxed">
+              <p className="font-ne-body text-lg text-white/50 mt-8 leading-relaxed">
                 {lede}
               </p>
             )}
             <div className="mt-10">
               <Link
                 href={ctaPrimaryHref}
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-8 py-3.5 transition-colors"
+                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors"
               >
                 Free Consultation
                 <ArrowRight className="w-4 h-4" />
@@ -255,25 +255,25 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
       </section>
 
       {/* ---------------- TRUST BAR ---------------- */}
-      <div className="bg-white py-6 px-6 border-b border-[#0B1A2F]/5">
-        <p className="text-center font-condensed text-xs uppercase tracking-[0.25em] text-[#0B1A2F]/40">
+      <div className="bg-[#F9F7F3] py-6 px-6 border-b border-[#1A3650]/5">
+        <p className="text-center font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/40">
           {config.standards.slice(0, 5).join("  ·  ")}
         </p>
       </div>
 
       {/* ---------------- FEATURES — numbered editorial list ---------------- */}
       {features.length > 0 && (
-        <section className="bg-white py-20 lg:py-28">
+        <section className="bg-[#F9F7F3] py-20 lg:py-28">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="mb-14 max-w-3xl">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                 What We Deliver
               </span>
-              <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
+              <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
                 {service.featuresHeading || "Key Challenges We Solve"}
               </h2>
               {service.featuresSubtext && (
-                <p className="font-body text-lg text-gray-600 mt-6 leading-relaxed">
+                <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
                   {service.featuresSubtext}
                 </p>
               )}
@@ -282,16 +282,16 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
               {features.map((feature, i) => (
                 <div
                   key={i}
-                  className="flex items-start gap-6 py-8 px-4 border-b border-[#0B1A2F]/10"
+                  className="flex items-start gap-6 py-8 px-4 border-b border-[#1A3650]/10"
                 >
-                  <span className="font-condensed font-extrabold text-3xl text-[#0B1A2F]/10 leading-none shrink-0 w-12">
+                  <span className="font-ne-display font-black text-3xl text-[#1A3650]/10 leading-none shrink-0 w-12">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-condensed font-bold text-lg uppercase text-[#0B1A2F] tracking-tight">
+                    <h3 className="font-ne-display font-bold text-lg uppercase text-[#1A3650]">
                       {feature.title}
                     </h3>
-                    <p className="font-body text-sm text-gray-500 mt-2 leading-relaxed">
+                    <p className="font-ne-body text-sm text-gray-500 mt-2 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -304,13 +304,13 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
 
       {/* ---------------- PROCESS — navy editorial ---------------- */}
       {processSteps.length > 0 && (
-        <section className="bg-[#0B1A2F] py-20 lg:py-28">
+        <section className="bg-[#1A3650] py-20 lg:py-28">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="mb-14 max-w-3xl">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                 Our Process
               </span>
-              <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-white leading-[0.95]">
+              <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-white leading-[0.95]">
                 {service.processHeading || "How We Work"}
               </h2>
             </div>
@@ -322,14 +322,14 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
                     key={stepNum}
                     className="flex items-start gap-6 py-8 px-4 border-b border-white/10"
                   >
-                    <span className="font-condensed font-extrabold text-3xl text-white/10 leading-none shrink-0 w-12">
+                    <span className="font-ne-display font-black text-3xl text-white/10 leading-none shrink-0 w-12">
                       {String(stepNum).padStart(2, "0")}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-condensed font-bold text-lg uppercase text-white tracking-tight">
+                      <h3 className="font-ne-display font-bold text-lg uppercase text-white">
                         {step.title}
                       </h3>
-                      <p className="font-body text-sm text-white/50 mt-2 leading-relaxed">
+                      <p className="font-ne-body text-sm text-white/50 mt-2 leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -343,17 +343,17 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
 
       {/* ---------------- SAFETY ---------------- */}
       {(service.safetyHeading || service.safetyBody) && (
-        <section className="bg-white py-20 lg:py-28 px-6">
+        <section className="bg-[#F9F7F3] py-20 lg:py-28 px-6">
           <div className="max-w-[1400px] mx-auto lg:px-12">
             <div className="max-w-3xl">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-4 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-4 block">
                 {service.safetyEyebrow || "Worker Safety"}
               </span>
-              <h2 className="font-condensed font-extrabold text-3xl md:text-4xl lg:text-5xl uppercase text-[#0B1A2F] leading-[0.95] tracking-tight">
+              <h2 className="font-ne-display font-black text-3xl md:text-4xl lg:text-5xl uppercase text-[#1A3650] leading-[0.95]">
                 {service.safetyHeading || "Protecting Your Team"}
               </h2>
               {service.safetyBody && (
-                <p className="font-body text-lg text-gray-600 mt-6 leading-relaxed">
+                <p className="font-ne-body text-lg text-gray-600 mt-6 leading-relaxed">
                   {service.safetyBody}
                 </p>
               )}
@@ -362,7 +362,7 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
                   {safetyBullets.map((bullet, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
-                      <span className="font-body text-[#0B1A2F]/80">{bullet}</span>
+                      <span className="font-ne-body text-[#1A3650]/80">{bullet}</span>
                     </li>
                   ))}
                 </ul>
@@ -374,13 +374,13 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
 
       {/* ---------------- FAQ — navy ---------------- */}
       {faqs.length > 0 && (
-        <section className="bg-[#0B1A2F] py-16 lg:py-24 border-t border-white/5">
+        <section className="bg-[#1A3650] py-16 lg:py-24 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-6">
             <div className="mb-10">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-3 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
                 FAQ
               </span>
-              <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-white leading-[0.95]">
+              <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95]">
                 {service.faqSectionHeading || "Common Questions"}
               </h2>
             </div>
@@ -390,11 +390,11 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
                   key={i}
                   className="group border-b border-white/10 py-5"
                 >
-                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-condensed font-bold text-base md:text-lg uppercase text-white/90 tracking-tight">
+                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ne-display font-bold text-base md:text-lg uppercase text-white/90">
                     <span>{faq.question}</span>
                     <Plus className="w-5 h-5 text-orange-500 shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
                   </summary>
-                  <p className="font-body text-base text-white/60 mt-3 leading-relaxed">
+                  <p className="font-ne-body text-base text-white/60 mt-3 leading-relaxed">
                     {faq.answer}
                   </p>
                 </details>
@@ -405,15 +405,15 @@ function ServiceView({ service, slug }: { service: ServicePage; slug: string }) 
       )}
 
       {/* ---------------- FINAL CTA — single-line ---------------- */}
-      <section className="bg-white py-20 lg:py-24 px-6">
+      <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
         <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-          <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-[#0B1A2F] leading-tight">
+          <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
             {ctaHeading}
           </h2>
           <div className="mt-8">
             <Link
               href={ctaPrimaryHref}
-              className="inline-flex items-center gap-2 bg-[#0B1A2F] hover:bg-[#162a47] text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-10 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
             >
               {ctaPrimary}
               <ArrowRight className="w-4 h-4" />
@@ -474,7 +474,7 @@ function BlogView({ post }: { post: BlogPost }) {
 
       <main id="main-content">
         {/* ---------------- HERO — left-aligned ---------------- */}
-        <section className="relative bg-[#0B1A2F] pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
+        <section className="relative bg-[#1A3650] pt-32 pb-16 lg:pt-40 lg:pb-20 overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03]"
             aria-hidden="true"
@@ -487,7 +487,7 @@ function BlogView({ post }: { post: BlogPost }) {
           <div className="relative max-w-3xl mx-auto px-6 lg:px-12">
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-2 font-condensed text-xs uppercase tracking-[0.2em] text-white/40 mb-6 flex-wrap"
+              className="flex items-center gap-2 font-ne-nav text-xs uppercase tracking-[0.18em] text-white/40 mb-6 flex-wrap"
             >
               <Link
                 href={`/${CC}/`}
@@ -504,14 +504,14 @@ function BlogView({ post }: { post: BlogPost }) {
               </Link>
             </nav>
             {post.category && (
-              <span className="inline-block font-condensed text-xs uppercase tracking-[0.3em] text-orange-500/70 font-semibold mb-4">
+              <span className="inline-block font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/70 font-semibold mb-4">
                 {post.category}
               </span>
             )}
-            <h1 className="font-condensed font-extrabold text-3xl md:text-4xl lg:text-5xl uppercase text-white leading-[0.95] tracking-tight">
+            <h1 className="font-ne-display font-black text-3xl md:text-4xl lg:text-5xl uppercase text-white leading-[0.95]">
               {cleanTitle(post.title)}
             </h1>
-            <div className="flex flex-wrap items-center gap-4 font-body text-sm text-white/40 mt-8">
+            <div className="flex flex-wrap items-center gap-4 font-ne-body text-sm text-white/40 mt-8">
               {post.author && (
                 <span>
                   By{" "}
@@ -542,10 +542,10 @@ function BlogView({ post }: { post: BlogPost }) {
         </section>
 
         {/* ---------------- ARTICLE BODY ---------------- */}
-        <section className="bg-white py-20 px-6">
+        <section className="bg-[#F9F7F3] py-20 px-6">
           <div className="max-w-3xl mx-auto">
             <div
-              className="prose prose-lg max-w-none prose-headings:font-condensed prose-headings:uppercase prose-headings:tracking-tight prose-headings:text-[#0B1A2F] prose-headings:font-bold prose-p:text-gray-700 prose-p:font-body prose-li:text-gray-700 prose-li:font-body prose-strong:text-[#0B1A2F] prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline"
+              className="prose prose-lg max-w-none prose-headings:font-ne-display prose-headings:uppercase prose-headings:prose-headings:text-[#1A3650] prose-headings:font-bold prose-p:text-gray-700 prose-p:font-ne-body prose-li:text-gray-700 prose-li:font-ne-body prose-strong:text-[#1A3650] prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline"
               dangerouslySetInnerHTML={{
                 __html: marked(post.body || "") as string,
               }}
@@ -555,7 +555,7 @@ function BlogView({ post }: { post: BlogPost }) {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-4 py-1.5 font-condensed text-xs uppercase tracking-[0.2em] text-[#0B1A2F]/60 border border-[#0B1A2F]/10"
+                    className="px-4 py-1.5 font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/60 border border-[#1A3650]/10"
                   >
                     {tag}
                   </span>
@@ -567,12 +567,12 @@ function BlogView({ post }: { post: BlogPost }) {
 
         {/* ---------------- FAQ — navy ---------------- */}
         {post.faqs && post.faqs.length > 0 && (
-          <section className="bg-[#0B1A2F] py-16 px-6">
+          <section className="bg-[#1A3650] py-16 px-6">
             <div className="max-w-3xl mx-auto">
-              <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-3 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
                 FAQ
               </span>
-              <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-white leading-[0.95] mb-8">
+              <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95] mb-8">
                 Common Questions
               </h2>
               <FaqAccordion faqs={post.faqs} />
@@ -581,26 +581,26 @@ function BlogView({ post }: { post: BlogPost }) {
         )}
 
         {/* ---------------- FINAL CTA ---------------- */}
-        <section className="bg-white py-20 lg:py-24 px-6">
+        <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6">
           <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-            <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-[#0B1A2F] leading-tight">
+            <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
               Need expert support?
             </h2>
-            <p className="font-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-ne-body text-base text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
               Carelabs provides arc flash studies, power system analysis, and{" "}
               {config.primaryStandard} compliance services across {COUNTRY_NAME}.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href={config.contactPath}
-                className="inline-flex items-center justify-center gap-2 bg-[#0B1A2F] hover:bg-[#162a47] text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-10 py-4 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 Get a Free Quote
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href={config.blogIndexPath}
-                className="inline-flex items-center justify-center gap-2 border-2 border-[#0B1A2F]/20 text-[#0B1A2F] hover:bg-[#0B1A2F] hover:text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-10 py-4 transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-[#1A3650]/20 text-[#1A3650] hover:bg-[#1A3650] hover:text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 More Articles
               </Link>

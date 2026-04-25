@@ -35,13 +35,13 @@ export function NEFooter({
   const certLine = config.standards.slice(0, 3).join(" · ");
 
   return (
-    <footer aria-label="Site footer" className="relative overflow-hidden bg-[#0B1A2F]">
+    <footer aria-label="Site footer" className="relative overflow-hidden bg-[#1A3650]">
       <div className="h-[2px] bg-orange-500" aria-hidden="true" />
       <div className="relative py-16 lg:py-20 px-6 lg:px-12">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 — Navigate */}
           <div>
-            <h4 className="font-condensed text-sm uppercase tracking-[0.2em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
+            <h4 className="font-ne-nav text-sm uppercase tracking-[0.18em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
               Navigate
             </h4>
             <ul className="space-y-3">
@@ -49,7 +49,7 @@ export function NEFooter({
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-body text-sm text-white/50 hover:underline hover:text-white transition-colors"
+                    className="font-ne-body text-sm text-white/50 hover:underline hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -60,7 +60,7 @@ export function NEFooter({
 
           {/* Column 2 — Services */}
           <div>
-            <h4 className="font-condensed text-sm uppercase tracking-[0.2em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
+            <h4 className="font-ne-nav text-sm uppercase tracking-[0.18em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
               Services
             </h4>
             <ul className="space-y-3">
@@ -68,7 +68,7 @@ export function NEFooter({
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="font-body text-sm text-white/50 hover:underline hover:text-white transition-colors"
+                    className="font-ne-body text-sm text-white/50 hover:underline hover:text-white transition-colors"
                   >
                     {s.label}
                   </Link>
@@ -79,7 +79,7 @@ export function NEFooter({
 
           {/* Column 3 — Contact */}
           <div>
-            <h4 className="font-condensed text-sm uppercase tracking-[0.2em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
+            <h4 className="font-ne-nav text-sm uppercase tracking-[0.18em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
               Contact
             </h4>
             <ul className="space-y-4">
@@ -87,7 +87,7 @@ export function NEFooter({
                 <Phone className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
                 <a
                   href={`tel:${resolvedPhone.replace(/[^\d+]/g, "")}`}
-                  className="font-body text-sm text-white/60 hover:text-white transition-colors"
+                  className="font-ne-body text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {resolvedPhone}
                 </a>
@@ -96,14 +96,14 @@ export function NEFooter({
                 <Mail className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
                 <a
                   href={`mailto:${resolvedEmail}`}
-                  className="font-body text-sm text-white/60 hover:text-white transition-colors"
+                  className="font-ne-body text-sm text-white/60 hover:text-white transition-colors"
                 >
                   {resolvedEmail}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
-                <span className="font-body text-sm text-white/60">
+                <span className="font-ne-body text-sm text-white/60">
                   {resolvedAddress}
                 </span>
               </li>
@@ -112,10 +112,10 @@ export function NEFooter({
 
           {/* Column 4 — Stay connected */}
           <div>
-            <h4 className="font-condensed text-sm uppercase tracking-[0.2em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
+            <h4 className="font-ne-nav text-sm uppercase tracking-[0.18em] text-white font-semibold mb-6 border-b border-white/10 pb-3">
               Stay Connected
             </h4>
-            <p className="font-body text-sm text-white/50 mb-4 leading-relaxed">
+            <p className="font-ne-body text-sm text-white/50 mb-4 leading-relaxed">
               Insights from our {config.countryName} power system engineering team — delivered quarterly.
             </p>
             <form className="flex gap-2">
@@ -123,11 +123,11 @@ export function NEFooter({
                 type="email"
                 aria-label="Email address"
                 placeholder="Email address"
-                className="bg-transparent border border-white/20 px-4 py-2 text-white text-sm font-body placeholder:text-white/30 focus:border-orange-500 outline-none flex-1 min-w-0"
+                className="bg-transparent border border-white/20 px-4 py-2 text-white text-sm font-ne-body placeholder:text-white/30 focus:border-orange-500 outline-none flex-1 min-w-0"
               />
               <button
                 type="submit"
-                className="bg-orange-500 text-white font-condensed font-bold text-xs uppercase tracking-[0.15em] px-5 py-2 hover:bg-orange-600 transition-colors shrink-0"
+                className="bg-orange-500 text-white font-ne-nav font-semibold text-xs uppercase tracking-[0.1em] px-5 py-2 hover:bg-orange-600 transition-colors shrink-0"
               >
                 Join
               </button>
@@ -149,11 +149,11 @@ export function NEFooter({
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-14 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between max-w-[1400px] mx-auto gap-4">
-            <p className="font-body text-xs text-white/30 order-3 md:order-1">
+            <p className="font-ne-body text-xs text-white/30 order-3 md:order-1">
               © {new Date().getFullYear()} Carelabs. All rights reserved.
             </p>
             {certLine && (
-              <p className="font-condensed text-xs uppercase tracking-[0.2em] text-white/20 order-1 md:order-2">
+              <p className="font-ne-nav text-xs uppercase tracking-[0.18em] text-white/20 order-1 md:order-2">
                 {certLine}
               </p>
             )}
@@ -177,7 +177,7 @@ export function NEFooter({
 
       {/* Watermark — huge CARELABS at 3% opacity across bottom */}
       <div
-        className="pointer-events-none absolute bottom-[-20px] left-0 right-0 text-center font-condensed font-extrabold uppercase text-white/[0.03] select-none"
+        className="pointer-events-none absolute bottom-[-20px] left-0 right-0 text-center font-ne-display font-black uppercase text-white/[0.03] select-none"
         style={{ fontSize: "clamp(80px, 18vw, 260px)", lineHeight: "1" }}
         aria-hidden="true"
       >

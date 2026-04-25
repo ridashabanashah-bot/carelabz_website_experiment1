@@ -124,7 +124,7 @@ export default async function BlogIndexPage() {
 
       <main id="main-content">
         {/* ---------------- HERO — left-aligned ---------------- */}
-        <section className="relative bg-[#0B1A2F] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <section className="relative bg-[#1A3650] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.03]"
             aria-hidden="true"
@@ -136,16 +136,16 @@ export default async function BlogIndexPage() {
           />
           <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="max-w-3xl">
-              <span className="font-condensed text-xs uppercase tracking-[0.3em] text-orange-500/60 mb-6 block">
+              <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-6 block">
                 Knowledge Hub
               </span>
-              <h1 className="font-condensed font-extrabold text-5xl md:text-6xl lg:text-7xl uppercase text-white leading-[0.95] tracking-tight">
+              <h1 className="font-ne-display font-black text-5xl md:text-6xl lg:text-6xl uppercase text-white leading-[0.95]">
                 From the<br />
-                <span className="font-accent italic font-normal normal-case text-orange-500">
+                <span className="font-ne-accent italic font-normal normal-case text-orange-500">
                   Blog.
                 </span>
               </h1>
-              <p className="font-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
+              <p className="font-ne-body text-lg text-white/50 mt-8 max-w-2xl leading-relaxed">
                 Expert knowledge on {config.primaryStandard}, IEEE 1584, and
                 power system engineering from the Carelabs {config.countryName} team.
               </p>
@@ -154,10 +154,10 @@ export default async function BlogIndexPage() {
         </section>
 
         {/* ---------------- FEATURED — editorial rows ---------------- */}
-        <section className="bg-white py-20 lg:py-28 px-6">
+        <section className="bg-[#F9F7F3] py-20 lg:py-28 px-6">
           <div className="max-w-[1400px] mx-auto lg:px-12">
             {sorted.length === 0 && (
-              <p className="text-center font-body text-gray-500 py-20">
+              <p className="text-center font-ne-body text-gray-500 py-20">
                 No articles yet. Check back soon.
               </p>
             )}
@@ -165,15 +165,15 @@ export default async function BlogIndexPage() {
             {featured.length > 0 && (
               <>
                 <div className="mb-12">
-                  <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-3 block">
+                  <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
                     Latest
                   </span>
-                  <h2 className="font-condensed font-extrabold text-3xl md:text-5xl uppercase text-[#0B1A2F] leading-[0.95]">
+                  <h2 className="font-ne-display font-black text-3xl md:text-5xl uppercase text-[#1A3650] leading-[0.95]">
                     Latest Articles
                   </h2>
                 </div>
 
-                <div className="divide-y divide-[#0B1A2F]/10 border-t border-[#0B1A2F]/10">
+                <div className="divide-y divide-[#1A3650]/10 border-t border-[#1A3650]/10">
                   {featured.map((post) => {
                     const date = postDate(post);
                     const href = getPostHref(post.slug);
@@ -185,11 +185,11 @@ export default async function BlogIndexPage() {
                       >
                         <div className="min-w-0 flex-1">
                           {post.category && (
-                            <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 font-semibold mb-2 block">
+                            <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 font-semibold mb-2 block">
                               {post.category}
                             </span>
                           )}
-                          <h3 className="font-condensed font-bold text-xl md:text-2xl uppercase text-[#0B1A2F] tracking-tight group-hover:text-orange-500 transition-colors">
+                          <h3 className="font-ne-display font-bold text-xl md:text-2xl uppercase text-[#1A3650] group-hover:text-orange-500 transition-colors">
                             {cleanTitle(post.title)}
                           </h3>
                         </div>
@@ -197,12 +197,12 @@ export default async function BlogIndexPage() {
                           {date && (
                             <time
                               dateTime={date}
-                              className="font-condensed text-xs uppercase tracking-[0.2em] text-[#0B1A2F]/40"
+                              className="font-ne-nav text-xs uppercase tracking-[0.18em] text-[#1A3650]/40"
                             >
                               {formatDateShort(date)}
                             </time>
                           )}
-                          <ArrowRight className="w-5 h-5 text-[#0B1A2F]/20 group-hover:text-orange-500 transition-colors" />
+                          <ArrowRight className="w-5 h-5 text-[#1A3650]/20 group-hover:text-orange-500 transition-colors" />
                         </div>
                       </Link>
                     );
@@ -215,17 +215,17 @@ export default async function BlogIndexPage() {
 
         {/* ---------------- OLDER — navy editorial rows ---------------- */}
         {older.length > 0 && (
-          <section className="bg-[#0B1A2F] py-20 px-6">
+          <section className="bg-[#1A3650] py-20 px-6">
             <div className="max-w-[1400px] mx-auto lg:px-12">
               <div className="mb-10">
-                <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 mb-3 block">
+                <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 mb-3 block">
                   Archive
                 </span>
-                <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-white leading-[0.95]">
+                <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-white leading-[0.95]">
                   More Articles
                 </h2>
               </div>
-              <div className="divide-y divide-white/10 border-t border-white/10">
+              <div className="divide-y divide-[#4A7C9B]/20 border-t border-white/10">
                 {older.map((post) => {
                   const href = getPostHref(post.slug);
                   return (
@@ -236,11 +236,11 @@ export default async function BlogIndexPage() {
                     >
                       <div className="min-w-0 flex-1">
                         {post.category && (
-                          <span className="font-condensed text-xs uppercase tracking-[0.25em] text-orange-500/60 font-semibold mb-1 block">
+                          <span className="font-ne-nav text-xs uppercase tracking-[0.18em] text-orange-500/60 font-semibold mb-1 block">
                             {post.category}
                           </span>
                         )}
-                        <h3 className="font-condensed font-bold text-base md:text-lg uppercase text-white/90 tracking-tight group-hover:text-orange-500 transition-colors line-clamp-1">
+                        <h3 className="font-ne-display font-bold text-base md:text-lg uppercase text-white/90 group-hover:text-orange-500 transition-colors line-clamp-1">
                           {cleanTitle(post.title)}
                         </h3>
                       </div>
@@ -254,15 +254,15 @@ export default async function BlogIndexPage() {
         )}
 
         {/* ---------------- FINAL CTA ---------------- */}
-        <section className="bg-white py-20 lg:py-24 px-6 border-t border-[#0B1A2F]/5">
+        <section className="bg-[#F9F7F3] py-20 lg:py-24 px-6 border-t border-[#1A3650]/5">
           <div className="max-w-[1400px] mx-auto lg:px-12 text-center">
-            <h2 className="font-condensed font-extrabold text-3xl md:text-4xl uppercase text-[#0B1A2F] leading-tight">
+            <h2 className="font-ne-display font-black text-3xl md:text-4xl uppercase text-[#1A3650] leading-tight">
               Ready to improve your electrical safety?
             </h2>
             <div className="mt-8">
               <Link
                 href={config.contactPath}
-                className="inline-flex items-center gap-2 bg-[#0B1A2F] hover:bg-[#162a47] text-white font-condensed font-bold text-sm uppercase tracking-[0.15em] px-10 py-4 transition-colors"
+                className="inline-flex items-center gap-2 bg-[#1A3650] hover:bg-[#162a47] text-white font-ne-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
               >
                 Get a Free Quote
                 <ArrowRight className="w-4 h-4" />
