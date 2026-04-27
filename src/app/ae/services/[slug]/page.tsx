@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 import { ArrowRight, ChevronRight, Plus, CheckCircle } from "lucide-react";
@@ -121,42 +122,57 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       <AENavbar config={config} />
       <JsonLd data={jsonLd} />
 
-      {/* HERO */}
+      {/* HERO — split layout with image */}
       <section className="relative overflow-hidden bg-[#094D76] px-6 pb-24 pt-36 lg:pb-32 lg:pt-44">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
         />
-        <div className="relative z-10 mx-auto max-w-[1100px]">
-          <nav aria-label="Breadcrumb" className="animate-fade-in-up animation-delay-100 mb-8">
-            <ol className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.15em] text-white/40">
-              <li><Link href={`/${CC}/`} className="transition-colors duration-300 hover:text-white">Home</Link></li>
-              <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-              <li><Link href={config.servicesIndexPath} className="transition-colors duration-300 hover:text-white">Services</Link></li>
-              <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-              <li className="line-clamp-1 text-white/70">{service.title}</li>
-            </ol>
-          </nav>
-          <p className="animate-fade-in-up animation-delay-200 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
-            {service.eyebrow ?? `IEEE 1584 · ${config.primaryStandard}`}
-          </p>
-          <h1 className="animate-fade-in-up animation-delay-300 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
-            {service.title}
-          </h1>
-          {service.definitionalLede && (
-            <p className="animate-fade-in-up animation-delay-400 mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
-              {service.definitionalLede}
+        <div className="relative z-10 mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
+          <div>
+            <nav aria-label="Breadcrumb" className="animate-fade-in-up animation-delay-100 mb-8">
+              <ol className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.15em] text-white/40">
+                <li><Link href={`/${CC}/`} className="transition-colors duration-300 hover:text-white">Home</Link></li>
+                <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
+                <li><Link href={config.servicesIndexPath} className="transition-colors duration-300 hover:text-white">Services</Link></li>
+                <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
+                <li className="line-clamp-1 text-white/70">{service.title}</li>
+              </ol>
+            </nav>
+            <p className="animate-fade-in-up animation-delay-200 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
+              {service.eyebrow ?? `IEEE 1584 · ${config.primaryStandard}`}
             </p>
-          )}
-          <div className="animate-fade-in-up animation-delay-500 mt-10">
-            <Link
-              href={service.ctaBannerPrimaryHref ?? config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F15C30] px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
-            >
-              Free Consultation
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            <h1 className="animate-fade-in-up animation-delay-300 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
+              {service.title}
+            </h1>
+            {service.definitionalLede && (
+              <p className="animate-fade-in-up animation-delay-400 mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
+                {service.definitionalLede}
+              </p>
+            )}
+            <div className="animate-fade-in-up animation-delay-500 mt-10">
+              <Link
+                href={service.ctaBannerPrimaryHref ?? config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                Free Consultation
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
+          {service.heroImagePath && service.heroImagePath.startsWith("http") && (
+            <div className="animate-fade-in-up animation-delay-400 relative hidden aspect-[4/3] overflow-hidden lg:block">
+              <Image
+                src={service.heroImagePath}
+                alt={service.heroImageAlt ?? service.title}
+                fill
+                priority
+                sizes="50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#094D76]/40 via-transparent to-transparent" />
+            </div>
+          )}
         </div>
       </section>
 
@@ -232,37 +248,106 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* SAFETY */}
+      {/* SAFETY — 2-column with image */}
       {(service.safetyHeading || service.safetyBody) && (
         <section className="bg-[#094D76] px-6 py-24 lg:py-32">
-          <div className="mx-auto max-w-[1000px]">
-            <ScrollReveal>
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
-                {service.safetyEyebrow ?? "Safety"}
-              </p>
-            </ScrollReveal>
-            <ScrollReveal delay={100}>
-              <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
-                {service.safetyHeading ?? "Protecting Your Team"}
-              </h2>
-            </ScrollReveal>
-            {service.safetyBody && (
-              <ScrollReveal delay={200}>
-                <p className="mt-6 text-lg leading-relaxed text-white/70">
-                  {service.safetyBody}
+          <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
+            {service.safetyImage && service.safetyImage.startsWith("http") ? (
+              <ScrollReveal>
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={service.safetyImage}
+                    alt={service.safetyImageAlt ?? "Electrical safety assessment"}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              </ScrollReveal>
+            ) : (
+              <div className="hidden lg:block" />
+            )}
+            <div>
+              <ScrollReveal>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
+                  {service.safetyEyebrow ?? "Safety"}
                 </p>
               </ScrollReveal>
-            )}
-            {safetyBullets.length > 0 && (
-              <ScrollReveal delay={300}>
-                <ul className="mt-8 space-y-3">
-                  {safetyBullets.map((bullet, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#F15C30]" />
-                      <span className="text-white/80">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+              <ScrollReveal delay={100}>
+                <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+                  {service.safetyHeading ?? "Protecting Your Team"}
+                </h2>
+              </ScrollReveal>
+              {service.safetyBody && (
+                <ScrollReveal delay={200}>
+                  <p className="mt-6 text-lg leading-relaxed text-white/70">
+                    {service.safetyBody}
+                  </p>
+                </ScrollReveal>
+              )}
+              {safetyBullets.length > 0 && (
+                <ScrollReveal delay={300}>
+                  <ul className="mt-8 space-y-3">
+                    {safetyBullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#F15C30]" />
+                        <span className="text-white/80">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* REPORTS */}
+      {(service.reportsHeading || service.reportsBody) && (
+        <section className="bg-[#F2F2F4] px-6 py-24 lg:py-32">
+          <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
+            <div>
+              <ScrollReveal>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                  {service.reportsEyebrow ?? "Deliverables"}
+                </p>
+              </ScrollReveal>
+              <ScrollReveal delay={100}>
+                <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-gray-900">
+                  {service.reportsHeading ?? "What You Receive"}
+                </h2>
+              </ScrollReveal>
+              {service.reportsBody && (
+                <ScrollReveal delay={200}>
+                  <p className="mt-6 text-lg leading-relaxed text-gray-600">
+                    {service.reportsBody}
+                  </p>
+                </ScrollReveal>
+              )}
+              {service.reportsBullets && service.reportsBullets.length > 0 && (
+                <ScrollReveal delay={300}>
+                  <ul className="mt-8 space-y-3">
+                    {service.reportsBullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#2575B6]" />
+                        <span className="text-gray-700">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+            </div>
+            {service.reportsImage && service.reportsImage.startsWith("http") && (
+              <ScrollReveal delay={100}>
+                <div className="relative aspect-[4/3] overflow-hidden border-l-2 border-[#2575B6]">
+                  <Image
+                    src={service.reportsImage}
+                    alt={service.reportsImageAlt ?? "Engineering report sample"}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
               </ScrollReveal>
             )}
           </div>

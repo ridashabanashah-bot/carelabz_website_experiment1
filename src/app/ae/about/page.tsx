@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
@@ -45,23 +46,38 @@ export default async function AboutPage() {
     <>
       <AENavbar config={config} />
 
-      {/* HERO */}
+      {/* HERO — split with image */}
       <section className="relative overflow-hidden bg-[#094D76] px-6 pb-24 pt-36 lg:pb-32 lg:pt-44">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
         />
-        <div className="relative z-10 mx-auto max-w-[1100px] text-center">
-          <p className="animate-fade-in-up animation-delay-100 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
-            About
-          </p>
-          <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
-            {page?.heroHeadline ?? "Built for the UAE."}
-          </h1>
-          <p className="animate-fade-in-up animation-delay-300 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
-            {page?.heroSubtext ??
-              "Carelabs is a specialised electrical safety and power system engineering firm serving the UAE and the wider Middle East."}
-          </p>
+        <div className="relative z-10 mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p className="animate-fade-in-up animation-delay-100 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
+              About
+            </p>
+            <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
+              {page?.heroHeadline ?? "Built for the UAE."}
+            </h1>
+            <p className="animate-fade-in-up animation-delay-300 mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
+              {page?.heroSubtext ??
+                "Carelabs is a specialised electrical safety and power system engineering firm serving the UAE and the wider Middle East."}
+            </p>
+          </div>
+          {page?.heroImage && page.heroImage.startsWith("http") && (
+            <div className="animate-fade-in-up animation-delay-400 relative hidden aspect-[4/3] overflow-hidden lg:block">
+              <Image
+                src={page.heroImage}
+                alt={page.heroImageAlt ?? "Carelabs UAE engineering team"}
+                fill
+                priority
+                sizes="50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#094D76]/40 via-transparent to-transparent" />
+            </div>
+          )}
         </div>
       </section>
 
