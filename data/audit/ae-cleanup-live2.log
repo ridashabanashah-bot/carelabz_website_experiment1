@@ -1,0 +1,77 @@
+============================================================
+LIVE MODE — changes will be saved to Strapi
+============================================================
+
+============================================================
+Processing: service-pages
+============================================================
+  Found 84 entries
+
+  [biomedical-equipment-safety-testing-services-ae] — 2 fixes:
+    - Collapsed multiple spaces
+    - faqs[2].answer: Collapsed multiple spaces
+    [OK] Updated
+
+  [electric-switchgear-testing-services-ae] — 3 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    - faqs[2].answer: Removed empty bold markers (**** or ** **)
+    [OK] Updated
+
+  [electrical-calibration-ae] — 3 fixes:
+    - Collapsed multiple spaces
+    - faqs[0].answer: Removed orphaned ** in: ***Do you need your equipment calibra…
+    - faqs[0].answer: Collapsed multiple spaces
+    [OK] Updated
+
+  [frequency-stability-analysis-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - faqs[2].answer: Removed empty bold markers (**** or ** **)
+    [OK] Updated
+
+  [load-flow-analysis-ae] — 6 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Removed orphaned ** in: **Each system nod…
+    - Collapsed multiple spaces
+    - faqs[0].answer: Removed orphaned ** in: **Power flow studie…
+    - faqs[1].answer: Collapsed multiple spaces
+    ... +1 more
+    [OK] Updated
+
+  [primary-current-injection-test-ae] — 4 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    - faqs[0].question: Removed empty bold markers (**** or ** **)
+    - faqs[0].answer: Collapsed multiple spaces
+    [OK] Updated
+
+============================================================
+Processing: blog-posts
+============================================================
+  Found 38 entries
+
+============================================================
+Processing: about-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: contact-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: home-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: case-studies
+============================================================
+  Found 1 entries
+
+============================================================
+DONE
+============================================================
+Entries with fixes: 6
+Total individual fixes: 20

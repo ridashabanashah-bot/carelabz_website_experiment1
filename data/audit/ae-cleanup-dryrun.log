@@ -1,0 +1,408 @@
+============================================================
+DRY RUN — no changes will be saved
+============================================================
+
+============================================================
+Processing: service-pages
+============================================================
+  Found 84 entries
+
+  [arc-flash-study-analysis-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [battery-testing-services-dubai-uae-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [bain-marie-calibration-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [biomedical-equipment-safety-inspection-services-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [biomedical-equipment-safety-testing-services-ae] — 2 fixes:
+    - Collapsed multiple spaces
+    - faqs[2].answer: Collapsed multiple spaces
+    [DRY RUN] Would update 2 fields
+
+  [blast-freezer-calibration-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [building-envelope-infrared-thermography-inspection-service-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [calibrator-calibration-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [commercial-electrical-testing-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [digital-thermometer-calibration-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [earth-fault-loop-impedence-test-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [continuity-testing-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [earth-ground-testing-service-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [electric-switchgear-testing-services-ae] — 3 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    - faqs[2].answer: Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 2 fields
+
+  [electrical-calibration-ae] — 3 fixes:
+    - Collapsed multiple spaces
+    - faqs[0].answer: Removed orphaned ** in: ***Do you need your equipment calibra…
+    - faqs[0].answer: Collapsed multiple spaces
+    [DRY RUN] Would update 2 fields
+
+  [electrical-installations-certification-service-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [electrical-compliance-inspection-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [electrical-safety-audit-service-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [electrical-safety-auditing-inspection-service-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [electrical-switchgear-risk-assessment-study-hazard-analysis-service-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [electrical-safety-testing-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [electrical-switchgear-safety-inspection-services-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [fixed-wire-testing-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [factory-acceptance-testing-services-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [generator-load-bank-testing-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [frequency-stability-analysis-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - faqs[2].answer: Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 2 fields
+
+  [gfci-standard-inspection-service-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [insulation-resistance-test-service-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [lightning-arrester-testing-service-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [leakage-current-measurement-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [lightning-arrester-testing-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [live-testing-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [load-flow-analysis-ae] — 6 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Removed orphaned ** in: **Each system nod…
+    - Collapsed multiple spaces
+    - faqs[0].answer: Removed orphaned ** in: **Power flow studie…
+    - faqs[1].answer: Collapsed multiple spaces
+    ... +1 more
+    [DRY RUN] Would update 2 fields
+
+  [pfc-psc-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [polarity-test-service-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [portable-appliance-testing-dubai-uae-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [power-system-study-analysis-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [primary-current-injection-test-ae] — 4 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    - faqs[0].question: Removed empty bold markers (**** or ** **)
+    - faqs[0].answer: Collapsed multiple spaces
+    [DRY RUN] Would update 2 fields
+
+  [protection-relay-testing-services-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [prospective-short-circuit-test-prospective-fault-current-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [protective-devices-testing-services-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [residual-current-device-testing-safety-2-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [residual-current-device-testing-safety-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [soil-resistivity-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [third-party-electrical-inspection-company-uae-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+  [short-circuit-study-analysis-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [third-party-electrical-certification-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [third-party-inspection-electrical-installation-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [torque-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [vibration-study-and-analysis-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+============================================================
+Processing: blog-posts
+============================================================
+  Found 38 entries
+
+  [about-earth-fault-loop-impedence-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [learn-about-residual-current-device-testing-safety-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [learn-continuity-testing-what-how-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [electrical-infrared-thermography-inspection-important-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [how-what-why-generator-load-bank-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [learn-how-insulation-resistance-test-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [protecting-electrical-systems-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [learn-what-is-earth-ground-test-why-and-how-is-it-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [need-conduct-electrical-safety-testing-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [purpose-lightning-arrester-testing-necessary-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-cable-testing-how-cable-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-circuit-breaker-testing-how-circuit-breaker-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-earth-grounding-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-capacitor-bank-testing-why-capacitor-bank-testing-done-ae] — 1 fixes:
+    - Removed orphaned ** in: ### **Record…
+    [DRY RUN] Would update 1 fields
+
+  [what-contact-resistance-test-why-contact-resistance-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-is-electric-motor-testing-and-why-is-it-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-factory-acceptance-testing-how-fat-done-ae] — 2 fixes:
+    - Collapsed multiple spaces
+    - faqs[0].answer: Collapsed multiple spaces
+    [DRY RUN] Would update 2 fields
+
+  [what-how-grounding-design-planning-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-how-harmonic-study-analysis-done-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-is-torque-testing-how-is-torque-testing-done-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-polarity-test-why-conduct-polarity-test-ae] — 2 fixes:
+    - Removed empty bold markers (**** or ** **)
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-short-circuit-analysis-done-why-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-pat-test-why-pat-test-done-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-voltage-drop-study-analysis-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-you-need-to-know-about-arc-flash-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [megger-test-performed-ae] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+  [what-protective-device-testing-how-done-ae] — 1 fixes:
+    - Removed empty bold markers (**** or ** **)
+    [DRY RUN] Would update 1 fields
+
+============================================================
+Processing: about-pages
+============================================================
+  Found 1 entries
+
+  [fppql7adci5e1twi085gdqui] — 1 fixes:
+    - Collapsed multiple spaces
+    [DRY RUN] Would update 1 fields
+
+============================================================
+Processing: contact-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: home-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: case-studies
+============================================================
+  Found 1 entries
+
+============================================================
+DONE
+============================================================
+Entries with fixes: 80
+Total individual fixes: 127
+
+Re-run without --dry-run to apply.

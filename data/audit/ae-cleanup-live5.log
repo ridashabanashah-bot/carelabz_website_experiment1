@@ -1,0 +1,374 @@
+============================================================
+LIVE MODE — changes will be saved to Strapi
+============================================================
+
+============================================================
+Processing: service-pages
+============================================================
+  Found 84 entries
+
+  [electrical-calibration-ae] — 1 fixes:
+    - Demoted ***triple-star*** to **bold**
+    [OK] Updated
+
+  [electric-switchgear-testing-services-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [automatic-transfer-switch-testing-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [commercial-electrical-inspection-services-dubai-uae-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [primary-current-injection-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electric-motor-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [contact-resistance-testing-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-thermography-inspection-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [secondary-current-injection-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [arc-flash-study-analysis-ae] — 1 fixes:
+    - Demoted ***triple-star*** to **bold**
+    [OK] Updated
+
+  [megger-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [power-restoration-optimization-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [unbalanced-load-flow-study-analysis-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [gfci-standard-inspection-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [lightning-arrester-testing-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [biomedical-equipment-safety-inspection-services-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [bain-marie-calibration-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [blast-freezer-calibration-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [building-envelope-infrared-thermography-inspection-service-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [commercial-electrical-testing-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [continuity-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [earth-fault-loop-impedence-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [earth-ground-testing-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-installations-certification-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-safety-audit-service-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-safety-auditing-inspection-service-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-switchgear-risk-assessment-study-hazard-analysis-service-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-switchgear-safety-inspection-services-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [factory-acceptance-testing-services-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-safety-testing-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [generator-load-bank-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [insulation-resistance-test-service-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [leakage-current-measurement-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [live-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [polarity-test-service-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [power-system-study-analysis-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [lightning-arrester-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [pfc-psc-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [portable-appliance-testing-dubai-uae-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [protection-relay-testing-services-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [prospective-short-circuit-test-prospective-fault-current-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [residual-current-device-testing-safety-2-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [soil-resistivity-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [short-circuit-study-analysis-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [protective-devices-testing-services-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [residual-current-device-testing-safety-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [third-party-electrical-inspection-company-uae-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [third-party-electrical-certification-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [third-party-inspection-electrical-installation-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [vibration-study-and-analysis-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [torque-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+============================================================
+Processing: blog-posts
+============================================================
+  Found 38 entries
+
+  [electrical-infrared-thermography-inspection-important-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [learn-how-insulation-resistance-test-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [about-earth-fault-loop-impedence-test-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [learn-about-residual-current-device-testing-safety-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [learn-continuity-testing-what-how-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [how-what-why-generator-load-bank-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [need-conduct-electrical-safety-testing-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-circuit-breaker-testing-how-circuit-breaker-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [purpose-lightning-arrester-testing-necessary-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-earth-grounding-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-contact-resistance-test-why-contact-resistance-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-you-need-to-know-about-arc-flash-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-is-electric-motor-testing-and-why-is-it-done-ae] — 2 fixes:
+    - Reduced stray *** to **
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-how-grounding-design-planning-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-polarity-test-why-conduct-polarity-test-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-voltage-drop-study-analysis-ae] — 2 fixes:
+    - Demoted ***triple-star*** to **bold**
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [megger-test-performed-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-is-torque-testing-how-is-torque-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-short-circuit-analysis-done-why-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-pat-test-why-pat-test-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [thermography-testing-of-electrical-equipment-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-you-need-to-know-about-arc-flash-hazard-study-and-analysis-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [why-how-what-automatic-transfer-switch-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+  [what-capacitor-bank-testing-why-capacitor-bank-testing-done-ae] — 1 fixes:
+    - Normalized \xa0 (nbsp) to space
+    [OK] Updated
+
+============================================================
+Processing: about-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: contact-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: home-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: case-studies
+============================================================
+  Found 1 entries
+
+============================================================
+DONE
+============================================================
+Entries with fixes: 77
+Total individual fixes: 104

@@ -1,0 +1,170 @@
+============================================================
+LIVE MODE — changes will be saved to Strapi
+============================================================
+
+============================================================
+Processing: service-pages
+============================================================
+  Found 84 entries
+
+  [biomedical-equipment-safety-testing-services-ae] — 2 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [electric-switchgear-testing-services-ae] — 1 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [automatic-transfer-switch-testing-service-ae] — 1 fixes:
+    - faqs[1].answer: Stripped # heading markers
+    [OK] Updated
+
+  [frequency-stability-analysis-ae] — 2 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [load-flow-analysis-ae] — 2 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [primary-current-injection-test-ae] — 1 fixes:
+    - faqs[0].question: Stripped **bold** markdown
+    [OK] Updated
+
+  [cable-testing-ae] — 1 fixes:
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [capacitor-bank-test-ae] — 3 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[1].answer: Stripped # heading markers
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [contact-resistance-testing-service-ae] — 2 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [electric-motor-testing-ae] — 2 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [energy-auditing-service-ae] — 1 fixes:
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [fixed-electrical-testing-ae] — 2 fixes:
+    - faqs[2].answer: Stripped # heading markers
+    - faqs[3].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [ground-fault-testing-ae] — 3 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[1].answer: Stripped # heading markers
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [grounding-grid-study-analysis-ae] — 2 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [grounding-system-design-and-planning-ae] — 1 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [mcc-panel-operation-testing-ae] — 1 fixes:
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [power-quality-study-analysis-ae] — 1 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [relay-coordination-study-and-analysis-ae] — 2 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [voltage-drop-study-analysis-ae] — 2 fixes:
+    - faqs[0].answer: Stripped # heading markers
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [secondary-current-injection-test-ae] — 1 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [arc-flash-study-analysis-ae] — 3 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[2].answer: Stripped # heading markers
+    [OK] Updated
+
+  [battery-testing-services-dubai-uae-ae] — 1 fixes:
+    - faqs[0].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [electrical-compliance-inspection-ae] — 1 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    [OK] Updated
+
+============================================================
+Processing: blog-posts
+============================================================
+  Found 38 entries
+
+  [thermography-testing-of-electrical-equipment-ae] — 1 fixes:
+    - faqs[1].answer: Stripped *italic* markdown
+    [OK] Updated
+
+  [what-you-need-to-know-about-arc-flash-hazard-study-and-analysis-ae] — 4 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    - faqs[3].answer: Stripped **bold** markdown
+    - faqs[4].answer: Stripped **bold** markdown
+    - faqs[4].answer: Stripped # heading markers
+    [OK] Updated
+
+  [why-how-what-automatic-transfer-switch-testing-done-ae] — 1 fixes:
+    - faqs[2].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done-ae] — 1 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    [OK] Updated
+
+  [what-capacitor-bank-testing-why-capacitor-bank-testing-done-ae] — 2 fixes:
+    - faqs[1].answer: Stripped **bold** markdown
+    - faqs[1].answer: Stripped # heading markers
+    [OK] Updated
+
+============================================================
+Processing: about-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: contact-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: home-pages
+============================================================
+  Found 1 entries
+
+============================================================
+Processing: case-studies
+============================================================
+  Found 1 entries
+
+============================================================
+DONE
+============================================================
+Entries with fixes: 28
+Total individual fixes: 47
