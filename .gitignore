@@ -50,3 +50,9 @@ carelabs-vault/
 # design research — keep scripts + analysis, exclude deps + local screenshots
 design-research/node_modules/
 design-research/screenshots/
+
+# playwright artifacts
+/playwright-report/
+/tests/results/
+/tests/qa-report/
+/screenshots/
