@@ -1104,12 +1104,12 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     footerDescription:
       "Carelabs delivers DEWA-compliant arc flash studies, power system engineering, and electrical safety solutions across the United Arab Emirates.",
     services: [
-      { label: "Arc Flash Study", href: "/ae/services/arc-flash-study/" },
-      { label: "Short Circuit Analysis", href: "/ae/services/short-circuit-analysis/" },
-      { label: "Load Flow Analysis", href: "/ae/services/load-flow-analysis/" },
-      { label: "Relay Coordination Study", href: "/ae/services/relay-coordination-study/" },
-      { label: "Power System Protection", href: "/ae/services/power-system-protection-coordination-study/" },
-      { label: "Cable Testing", href: "/ae/services/cable-testing-services/" },
+      { label: "Arc Flash Study", href: "/ae/services/arc-flash-study-analysis-ae/" },
+      { label: "Short Circuit Analysis", href: "/ae/services/short-circuit-study-analysis-ae/" },
+      { label: "Load Flow Analysis", href: "/ae/services/load-flow-analysis-ae/" },
+      { label: "Relay Coordination Study", href: "/ae/services/relay-coordination-study-and-analysis-ae/" },
+      { label: "Power System Protection", href: "/ae/services/protection-coordination-study-ae/" },
+      { label: "Cable Testing", href: "/ae/services/cable-testing-ae/" },
     ],
     standards: ["DEWA", "IEEE 1584", "NFPA 70E", "IEC 61482", "IEC 60364"],
     primaryStandard: "DEWA",
