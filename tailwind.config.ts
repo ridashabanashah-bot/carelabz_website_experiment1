@@ -43,10 +43,17 @@ const config: Config = {
         aeWarm: "#F8F5F0",
         aeWhite: "#FAFBFC",
         aeOrange: "#F97316",
+        // AE v0 brand palette (from Carelabs Brand Guidelines)
+        brand: {
+          blue: "#2575B6",
+          orange: "#F15C30",
+          "dark-blue": "#094D76",
+          gray: "#9C9B9A",
+          "light-gray": "#F2F2F4",
+        },
       },
       fontFamily: {
         serif: ["var(--font-montserrat)", "system-ui", "sans-serif"],
-        display: ["var(--font-montserrat)", "system-ui", "sans-serif"],
         body: ["var(--font-poppins)", "system-ui", "sans-serif"],
         condensed: [
           "var(--font-barlow-condensed)",
@@ -59,10 +66,13 @@ const config: Config = {
         "ne-accent": ["var(--font-fraunces)", "Georgia", "serif"],
         "ne-body": ["var(--font-syne)", "system-ui", "sans-serif"],
         "ne-nav": ["var(--font-syne)", "system-ui", "sans-serif"],
-        // AE fonts (DM Serif Display + Inter)
-        "ae-display": ["var(--font-dm-serif)", "Georgia", "serif"],
-        "ae-body": ["var(--font-inter)", "system-ui", "sans-serif"],
-        "ae-nav": ["var(--font-inter)", "system-ui", "sans-serif"],
+        // AE v0 fonts (Anton + Inter) — replaces DM Serif Display
+        "ae-display": ["var(--font-anton)", "Anton", "sans-serif"],
+        "ae-body": ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        "ae-nav": ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        // Generic v0 aliases
+        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        display: ["var(--font-anton)", "Anton", "sans-serif"],
       },
       animation: {
         marquee: "marquee 30s linear infinite",

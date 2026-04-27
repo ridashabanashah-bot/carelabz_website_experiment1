@@ -8,6 +8,7 @@ import { AEFooter } from "@/components/ae-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getServicesByRegion, type ServicePage } from "@/lib/strapi";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 const CC = "ae";
 const config = COUNTRY_CONFIGS[CC];
@@ -54,51 +55,55 @@ export default async function ServicesIndexPage() {
       />
 
       {/* HERO */}
-      <section className="bg-[#0A1628] pt-36 pb-24 lg:pt-44 lg:pb-32 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#163560_0%,_transparent_70%)] opacity-30" />
-        <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <p className="font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-6">
+      <section className="relative overflow-hidden bg-[#094D76] px-6 pb-24 pt-36 lg:pb-32 lg:pt-44">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
+        />
+        <div className="relative z-10 mx-auto max-w-[1280px] text-center">
+          <p className="animate-fade-in-up animation-delay-100 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
             United Arab Emirates · Engineering
           </p>
-          <h1 className="font-ae-display text-5xl md:text-6xl lg:text-7xl text-white leading-[0.95] tracking-tight">
+          <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
             Our Services
           </h1>
-          <p className="font-ae-body text-base md:text-lg text-[#5A8FB4] mt-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="animate-fade-in-up animation-delay-300 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
             DEWA-compliant studies, power system analysis, and electrical safety engineering — all delivered to {config.primaryStandard} and IEC standards.
           </p>
         </div>
       </section>
 
-      {/* SERVICES GRID */}
-      <main id="main-content" className="bg-[#EBF2F8] py-20 lg:py-28">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+      {/* SERVICES — horizontal list */}
+      <main id="main-content" className="bg-[#F2F2F4] py-24 lg:py-32">
+        <div className="mx-auto max-w-[1280px] px-6">
           {services.length === 0 ? (
-            <p className="text-center font-ae-body text-base text-[#0F2847]/50 py-12">
+            <p className="py-12 text-center text-base text-gray-500">
               Services are currently being loaded. Please check back shortly.
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => (
-                <Link
-                  key={service.id}
-                  href={getServiceHref(service)}
-                  className="group block bg-white border border-[#D4E3F0] p-8 hover:border-[#2D7AB8] transition-colors"
-                >
-                  <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.15em] text-[#2D7AB8]">
-                    IEEE 1584 · {config.primaryStandard}
-                  </span>
-                  <h2 className="font-ae-display text-2xl text-[#0F2847] mt-3 leading-tight group-hover:text-[#1E5A8A] transition-colors">
-                    {service.title}
-                  </h2>
-                  {service.metaDescription && (
-                    <p className="font-ae-body text-sm text-[#0F2847]/60 mt-4 leading-relaxed line-clamp-3">
-                      {service.metaDescription}
-                    </p>
-                  )}
-                  <span className="font-ae-nav font-medium text-sm uppercase tracking-[0.12em] text-[#2D7AB8] mt-6 inline-flex items-center gap-2">
-                    Learn More <ArrowRight className="w-4 h-4" />
-                  </span>
-                </Link>
+            <div className="border-t border-gray-300">
+              {services.map((service, i) => (
+                <ScrollReveal key={service.id} delay={i * 50}>
+                  <Link
+                    href={getServiceHref(service)}
+                    className="group flex items-center gap-6 border-b border-gray-300 py-8 md:gap-10"
+                  >
+                    <span className="w-12 shrink-0 font-display text-2xl text-[#F15C30] md:text-3xl">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div className="flex-1">
+                      <h2 className="font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6] md:text-2xl">
+                        {service.title}
+                      </h2>
+                      {service.metaDescription && (
+                        <p className="mt-2 hidden max-w-2xl text-sm leading-relaxed text-gray-600 md:block">
+                          {service.metaDescription}
+                        </p>
+                      )}
+                    </div>
+                    <ArrowRight className="h-5 w-5 shrink-0 text-[#2575B6] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100" />
+                  </Link>
+                </ScrollReveal>
               ))}
             </div>
           )}
@@ -106,23 +111,34 @@ export default async function ServicesIndexPage() {
       </main>
 
       {/* CTA */}
-      <section className="bg-[#0F2847] py-24 lg:py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            Ready to schedule a study?
-          </h2>
-          <p className="font-ae-body text-lg text-[#5A8FB4] mt-6">
-            Tell us about your facility and compliance requirements.
-          </p>
-          <div className="mt-10">
-            <Link
-              href={config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              Request a Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+      <section className="bg-[#094D76] py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <ScrollReveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+              Get Started
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+              Ready to schedule a study?
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <p className="mt-6 text-lg leading-relaxed text-white/70">
+              Tell us about your facility and compliance requirements.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
+            <div className="mt-10">
+              <Link
+                href={config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-10 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                Request a Quote
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

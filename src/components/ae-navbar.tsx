@@ -17,98 +17,139 @@ export function AENavbar({ config }: AENavbarProps) {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <>
-      <div className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#1E5A8A] via-[#2D7AB8] to-[#1E5A8A] z-[60]" />
+  const linkColor = scrolled
+    ? "text-gray-700 hover:text-gray-900"
+    : "text-white/80 hover:text-white";
 
-      <header
-        className={`fixed top-[3px] left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-[#0F2847]/95 backdrop-blur-md shadow-lg"
-            : "bg-[#0F2847]"
-        }`}
-      >
-        <nav className="max-w-[1280px] mx-auto flex items-center justify-between h-16 px-6 lg:px-10">
-          <Link href={`/${config.cc}/`} className="shrink-0">
-            <Image
-              src="/images/logo/carelabs-logo.svg"
-              alt="Carelabs"
-              width={950}
-              height={177}
-              className="h-12 w-auto"
-              priority
-            />
+  const iconColor = scrolled ? "text-gray-700" : "text-white";
+
+  return (
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 shadow-sm backdrop-blur"
+          : "bg-transparent"
+      }`}
+    >
+      <nav className="mx-auto flex h-20 max-w-[1280px] items-center justify-between px-6 lg:px-10">
+        <Link href={`/${config.cc}/`} className="shrink-0">
+          <Image
+            src="/images/logo/carelabs-logo.svg"
+            alt="Carelabs"
+            width={950}
+            height={177}
+            className="h-12 w-auto"
+            priority
+          />
+        </Link>
+
+        <div className="hidden items-center gap-8 lg:flex">
+          <Link
+            href={config.aboutPath}
+            className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
+          >
+            About
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
-            <Link
-              href={config.aboutPath}
-              className="font-ae-nav font-medium text-[13px] tracking-[0.08em] text-white/70 hover:text-white transition-colors uppercase"
-            >
-              About Us
-            </Link>
-
-            <div
-              className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button className="font-ae-nav font-medium text-[13px] tracking-[0.08em] text-white/70 hover:text-white transition-colors uppercase flex items-center gap-1">
-                Services
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
-              </button>
-              {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-[#0F2847] border border-[#1E5A8A]/30 shadow-2xl py-2">
-                  {config.services.map((s) => (
-                    <Link
-                      key={s.href}
-                      href={s.href}
-                      className="block px-5 py-2.5 font-ae-body text-sm text-white/60 hover:text-white hover:bg-[#163560]/50 transition-colors"
-                    >
-                      {s.label}
-                    </Link>
-                  ))}
-                  <div className="border-t border-[#1E5A8A]/20 mt-2 pt-2 px-5 pb-2">
-                    <Link
-                      href={config.servicesIndexPath}
-                      className="font-ae-nav text-xs uppercase tracking-[0.12em] text-[#F97316] hover:text-orange-400 inline-flex items-center gap-1.5 transition-colors"
-                    >
-                      All Services <ArrowRight className="w-3 h-3" />
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link
-              href={config.contactPath}
-              className="font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] text-white bg-[#F97316] hover:bg-orange-600 px-6 py-2.5 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
-
-          <button
-            className="lg:hidden text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+          <div
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
           >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </nav>
-
-        {menuOpen && (
-          <div className="lg:hidden bg-[#0F2847] border-t border-[#1E5A8A]/20 px-6 py-6 space-y-4">
-            <Link href={config.aboutPath} className="block font-ae-nav text-sm uppercase tracking-[0.1em] text-white/70 hover:text-white" onClick={() => setMenuOpen(false)}>About Us</Link>
-            <Link href={config.servicesIndexPath} className="block font-ae-nav text-sm uppercase tracking-[0.1em] text-white/70 hover:text-white" onClick={() => setMenuOpen(false)}>Services</Link>
-            <Link href={config.contactPath} className="block font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] text-white bg-[#F97316] hover:bg-orange-600 px-6 py-3 text-center mt-4" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+            <button
+              className={`flex items-center gap-1 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
+            >
+              Services
+              <ChevronDown
+                className={`h-3.5 w-3.5 transition-transform duration-300 ${
+                  servicesOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {servicesOpen && (
+              <div className="absolute left-0 top-full mt-2 w-72 border border-gray-200 bg-white py-2 shadow-2xl">
+                {config.services.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="block px-5 py-2.5 text-sm text-gray-700 transition-colors duration-200 hover:bg-[#F2F2F4] hover:text-[#2575B6]"
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+                <div className="mt-2 border-t border-gray-200 px-5 pb-2 pt-2">
+                  <Link
+                    href={config.servicesIndexPath}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30] transition-colors duration-300 hover:text-[#d44a22]"
+                  >
+                    All Services <ArrowRight className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
-        )}
-      </header>
-    </>
+
+          <Link
+            href={config.blogIndexPath}
+            className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
+          >
+            Insights
+          </Link>
+
+          <Link
+            href={config.contactPath}
+            className="inline-flex items-center gap-2 bg-[#F15C30] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        <button
+          className={`lg:hidden ${iconColor}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+        >
+          {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </nav>
+
+      {menuOpen && (
+        <div className="space-y-4 border-t border-gray-200 bg-white px-6 py-6 lg:hidden">
+          <Link
+            href={config.aboutPath}
+            className="block text-sm font-medium uppercase tracking-[0.1em] text-gray-700 hover:text-[#2575B6]"
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            href={config.servicesIndexPath}
+            className="block text-sm font-medium uppercase tracking-[0.1em] text-gray-700 hover:text-[#2575B6]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            href={config.blogIndexPath}
+            className="block text-sm font-medium uppercase tracking-[0.1em] text-gray-700 hover:text-[#2575B6]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Insights
+          </Link>
+          <Link
+            href={config.contactPath}
+            className="mt-4 block bg-[#F15C30] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-300 hover:bg-[#d44a22]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact Us
+          </Link>
+        </div>
+      )}
+    </header>
   );
 }

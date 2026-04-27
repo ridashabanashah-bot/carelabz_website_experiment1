@@ -10,6 +10,8 @@ import { AEFooter } from "@/components/ae-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getServicePageBySlug, type ServicePage } from "@/lib/strapi";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { SectionHeading } from "@/components/section-heading";
 
 const CC = "ae";
 const COUNTRY_NAME = "United Arab Emirates";
@@ -109,37 +111,39 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       <JsonLd data={jsonLd} />
 
       {/* HERO */}
-      <section className="bg-[#0A1628] pt-36 pb-24 lg:pt-44 lg:pb-32 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#163560_0%,_transparent_70%)] opacity-30" />
-        <div className="max-w-[1100px] mx-auto relative z-10">
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-2 font-ae-nav text-xs uppercase tracking-[0.15em] text-white/40">
-              <li><Link href={`/${CC}/`} className="hover:text-[#2D7AB8] transition-colors">Home</Link></li>
-              <li aria-hidden="true"><ChevronRight className="w-3 h-3" /></li>
-              <li><Link href={config.servicesIndexPath} className="hover:text-[#2D7AB8] transition-colors">Services</Link></li>
-              <li aria-hidden="true"><ChevronRight className="w-3 h-3" /></li>
-              <li className="text-white/70 line-clamp-1">{service.title}</li>
+      <section className="relative overflow-hidden bg-[#094D76] px-6 pb-24 pt-36 lg:pb-32 lg:pt-44">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
+        />
+        <div className="relative z-10 mx-auto max-w-[1100px]">
+          <nav aria-label="Breadcrumb" className="animate-fade-in-up animation-delay-100 mb-8">
+            <ol className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.15em] text-white/40">
+              <li><Link href={`/${CC}/`} className="transition-colors duration-300 hover:text-white">Home</Link></li>
+              <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
+              <li><Link href={config.servicesIndexPath} className="transition-colors duration-300 hover:text-white">Services</Link></li>
+              <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
+              <li className="line-clamp-1 text-white/70">{service.title}</li>
             </ol>
           </nav>
-
-          <p className="font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-6">
+          <p className="animate-fade-in-up animation-delay-200 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
             {service.eyebrow ?? `IEEE 1584 · ${config.primaryStandard}`}
           </p>
-          <h1 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
+          <h1 className="animate-fade-in-up animation-delay-300 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
             {service.title}
           </h1>
           {service.definitionalLede && (
-            <p className="font-ae-body text-base md:text-lg text-[#5A8FB4] mt-8 max-w-2xl leading-relaxed">
+            <p className="animate-fade-in-up animation-delay-400 mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
               {service.definitionalLede}
             </p>
           )}
-          <div className="mt-10">
+          <div className="animate-fade-in-up animation-delay-500 mt-10">
             <Link
               href={service.ctaBannerPrimaryHref ?? config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#F15C30] px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
             >
               Free Consultation
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -147,72 +151,70 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       {/* BODY PROSE */}
       {service.body && (
-        <section className="bg-[#FAFBFC] py-20 px-6">
-          <div className="max-w-3xl mx-auto">
-            <div
-              className="prose prose-lg max-w-none prose-headings:font-ae-display prose-headings:text-[#0F2847] prose-headings:font-normal prose-p:text-[#0F2847]/70 prose-p:font-ae-body prose-li:text-[#0F2847]/70 prose-li:font-ae-body prose-strong:text-[#0F2847] prose-a:text-[#2D7AB8] prose-a:no-underline hover:prose-a:underline"
-              dangerouslySetInnerHTML={{ __html: marked(service.body) as string }}
-            />
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-3xl">
+            <ScrollReveal>
+              <div
+                className="prose prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-headings:text-gray-900 prose-headings:font-normal prose-p:text-gray-600 prose-li:text-gray-600 prose-strong:text-gray-900 prose-a:text-[#2575B6] prose-a:no-underline hover:prose-a:underline"
+                dangerouslySetInnerHTML={{ __html: marked(service.body) as string }}
+              />
+            </ScrollReveal>
           </div>
         </section>
       )}
 
-      {/* FEATURES */}
+      {/* FEATURES — border-l accent cards */}
       {features.length > 0 && (
-        <section className="bg-[#EBF2F8] py-20 lg:py-28 px-6">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-14">
-              <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8] mb-4 block">
-                What We Deliver
-              </span>
-              <h2 className="font-ae-display text-3xl md:text-5xl text-[#0F2847]">
-                {service.featuresHeading ?? "Key Outcomes"}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="bg-[#F2F2F4] px-6 py-24 lg:py-32">
+          <div className="mx-auto max-w-[1280px]">
+            <SectionHeading
+              eyebrow="What We Deliver"
+              title={service.featuresHeading ?? "Key Outcomes"}
+            />
+            <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               {features.map((feature, i) => (
-                <div key={i} className="bg-white border border-[#D4E3F0] p-6">
-                  <span className="font-ae-display text-3xl text-[#2D7AB8]/50">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-ae-body font-semibold text-lg text-[#0F2847] mt-3">
-                    {feature.title}
-                  </h3>
-                  <p className="font-ae-body text-sm text-[#0F2847]/60 mt-3 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
+                <ScrollReveal key={i} delay={i * 100}>
+                  <div className="group h-full border-l-2 border-[#2575B6] bg-white p-8 transition-colors duration-300 hover:border-[#F15C30]">
+                    <span className="font-display text-3xl text-[#F15C30]/30">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="mt-3 font-display text-lg uppercase tracking-tight text-gray-900">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                      {feature.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* PROCESS */}
+      {/* PROCESS — gap-px grid */}
       {processSteps.length > 0 && (
-        <section className="bg-[#163560] py-20 lg:py-28">
-          <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-            <div className="text-center mb-14">
-              <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8]/60 mb-4 block">
-                Our Process
-              </span>
-              <h2 className="font-ae-display text-3xl md:text-5xl text-white">
-                {service.processHeading ?? "How We Work"}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1E5A8A]/20">
+        <section className="bg-white py-24 lg:py-32">
+          <div className="mx-auto max-w-[1280px] px-6">
+            <SectionHeading
+              eyebrow="Our Process"
+              title={service.processHeading ?? "How We Work"}
+            />
+            <div className="mt-16 grid grid-cols-1 gap-px bg-gray-200 md:grid-cols-2 lg:grid-cols-4">
               {processSteps.map((step, i) => (
-                <div key={step.number ?? i} className="bg-[#163560] p-8">
-                  <span className="font-ae-display text-5xl text-[#2D7AB8]/40 block">
-                    {String(step.number ?? i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-ae-body font-semibold text-lg text-white uppercase mt-6 tracking-wide">
-                    {step.title}
-                  </h3>
-                  <p className="font-ae-body text-sm text-white/35 mt-4 leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
+                <ScrollReveal key={step.number ?? i} delay={i * 100}>
+                  <div className="h-full bg-white p-8">
+                    <span className="block font-display text-6xl text-[#F15C30]/20">
+                      {String(step.number ?? i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="mt-6 font-display text-lg uppercase tracking-tight text-gray-900">
+                      {step.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                      {step.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -221,28 +223,36 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       {/* SAFETY */}
       {(service.safetyHeading || service.safetyBody) && (
-        <section className="bg-[#0F2847] py-20 lg:py-28 px-6">
-          <div className="max-w-[1000px] mx-auto">
-            <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8]/70 mb-4 block">
-              {service.safetyEyebrow ?? "Safety"}
-            </span>
-            <h2 className="font-ae-display text-3xl md:text-5xl text-white leading-[0.95]">
-              {service.safetyHeading ?? "Protecting Your Team"}
-            </h2>
-            {service.safetyBody && (
-              <p className="font-ae-body text-base md:text-lg text-[#5A8FB4] mt-6 leading-relaxed">
-                {service.safetyBody}
+        <section className="bg-[#094D76] px-6 py-24 lg:py-32">
+          <div className="mx-auto max-w-[1000px]">
+            <ScrollReveal>
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
+                {service.safetyEyebrow ?? "Safety"}
               </p>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+                {service.safetyHeading ?? "Protecting Your Team"}
+              </h2>
+            </ScrollReveal>
+            {service.safetyBody && (
+              <ScrollReveal delay={200}>
+                <p className="mt-6 text-lg leading-relaxed text-white/70">
+                  {service.safetyBody}
+                </p>
+              </ScrollReveal>
             )}
             {safetyBullets.length > 0 && (
-              <ul className="mt-8 space-y-3">
-                {safetyBullets.map((bullet, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#2D7AB8] mt-0.5 shrink-0" />
-                    <span className="font-ae-body text-white/80">{bullet}</span>
-                  </li>
-                ))}
-              </ul>
+              <ScrollReveal delay={300}>
+                <ul className="mt-8 space-y-3">
+                  {safetyBullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#F15C30]" />
+                      <span className="text-white/80">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </ScrollReveal>
             )}
           </div>
         </section>
@@ -250,51 +260,64 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       {/* FAQ */}
       {faqs.length > 0 && (
-        <section className="bg-[#F8F5F0] py-16 lg:py-24">
-          <div className="max-w-3xl mx-auto px-6 lg:px-12">
-            <div className="text-center mb-12">
-              <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8] mb-4 block">
-                FAQ
-              </span>
-              <h2 className="font-ae-display text-3xl md:text-4xl text-[#0F2847]">
-                {service.faqSectionHeading ?? "Common Questions"}
-              </h2>
+        <section className="bg-[#F2F2F4] py-24 lg:py-32">
+          <div className="mx-auto max-w-3xl px-6">
+            <SectionHeading
+              eyebrow="FAQ"
+              title={service.faqSectionHeading ?? "Common Questions"}
+            />
+            <div className="mt-12 space-y-4">
+              {faqs.map((faq, i) => (
+                <ScrollReveal key={i} delay={i * 50}>
+                  <details className="group bg-white px-8 py-6 [&[open]_h3]:text-[#2575B6]">
+                    <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
+                      <h3 className="font-display text-base uppercase tracking-tight text-gray-900 transition-colors duration-300 md:text-lg">
+                        {faq.question}
+                      </h3>
+                      <Plus className="h-5 w-5 shrink-0 text-[#F15C30] transition-transform duration-300 group-open:rotate-45" />
+                    </summary>
+                    <p className="mt-4 text-base leading-relaxed text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </details>
+                </ScrollReveal>
+              ))}
             </div>
-            {faqs.map((faq, i) => (
-              <details key={i} className="group border-b border-[#0F2847]/10 py-5">
-                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ae-body font-semibold text-base md:text-lg text-[#0F2847]">
-                  <span>{faq.question}</span>
-                  <Plus className="w-5 h-5 text-[#2D7AB8] shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
-                </summary>
-                <p className="font-ae-body text-base text-[#0F2847]/60 mt-3 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
           </div>
         </section>
       )}
 
       {/* CTA */}
-      <section className="bg-[#0F2847] py-24 lg:py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            {service.ctaBannerHeading ?? "Ready to schedule a study?"}
-          </h2>
-          {service.ctaBannerBody && (
-            <p className="font-ae-body text-lg text-[#5A8FB4] mt-6 max-w-xl mx-auto">
-              {service.ctaBannerBody}
+      <section className="bg-[#094D76] py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <ScrollReveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+              Get Started
             </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+              {service.ctaBannerHeading ?? "Ready to schedule a study?"}
+            </h2>
+          </ScrollReveal>
+          {service.ctaBannerBody && (
+            <ScrollReveal delay={200}>
+              <p className="mt-6 text-lg leading-relaxed text-white/70">
+                {service.ctaBannerBody}
+              </p>
+            </ScrollReveal>
           )}
-          <div className="mt-10">
-            <Link
-              href={service.ctaBannerPrimaryHref ?? config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              {service.ctaBannerPrimaryText ?? "Get a Quote"}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <ScrollReveal delay={300}>
+            <div className="mt-10">
+              <Link
+                href={service.ctaBannerPrimaryHref ?? config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-10 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                {service.ctaBannerPrimaryText ?? "Get a Quote"}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

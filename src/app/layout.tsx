@@ -9,6 +9,7 @@ import {
   Syne,
   DM_Serif_Display,
   Inter,
+  Anton,
 } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
@@ -81,6 +82,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-anton",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://carelabz.com"),
   title: "Carelabs — Electrical Safety Services",
@@ -119,7 +127,7 @@ export default function RootLayout({
   return (
     <html lang="en-AE">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} ${dmSerif.variable} ${inter.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} ${dmSerif.variable} ${inter.variable} ${anton.variable} antialiased bg-white text-gray-900`}
       >
         <a
           href="#main-content"

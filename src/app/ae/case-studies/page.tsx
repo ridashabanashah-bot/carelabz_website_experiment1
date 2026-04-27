@@ -7,6 +7,7 @@ import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getCaseStudies } from "@/lib/strapi-pages";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 const CC = "ae";
 const config = COUNTRY_CONFIGS[CC];
@@ -39,89 +40,106 @@ export default async function CaseStudiesPage() {
       <AENavbar config={config} />
 
       {/* HERO */}
-      <section className="bg-[#0A1628] pt-36 pb-24 lg:pt-44 lg:pb-32 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#163560_0%,_transparent_70%)] opacity-30" />
-        <div className="max-w-[1100px] mx-auto text-center relative z-10">
-          <p className="font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-6">
+      <section className="relative overflow-hidden bg-[#094D76] px-6 pb-24 pt-36 lg:pb-32 lg:pt-44">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
+        />
+        <div className="relative z-10 mx-auto max-w-[1100px] text-center">
+          <p className="animate-fade-in-up animation-delay-100 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
             Portfolio
           </p>
-          <h1 className="font-ae-display text-5xl md:text-6xl lg:text-7xl text-white leading-[0.95]">
+          <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
             Case Studies
           </h1>
-          <p className="font-ae-body text-base md:text-lg text-[#5A8FB4] mt-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="animate-fade-in-up animation-delay-300 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
             Selected UAE projects from the Carelabs power system engineering team.
           </p>
         </div>
       </section>
 
-      <main id="main-content" className="bg-[#EBF2F8] py-20 lg:py-28 px-6">
-        <div className="max-w-[1200px] mx-auto">
+      <main id="main-content" className="bg-[#F2F2F4] px-6 py-24 lg:py-32">
+        <div className="mx-auto max-w-[1280px]">
           {studies.length === 0 ? (
-            <div className="bg-white border border-[#D4E3F0] p-12 lg:p-16 max-w-3xl mx-auto">
-              <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-4 block">
-                Coming Soon
-              </span>
-              <h2 className="font-ae-display text-3xl md:text-4xl text-[#0F2847] leading-[0.95]">
-                Case studies are being compiled.
-              </h2>
-              <p className="font-ae-body text-base text-[#0F2847]/60 mt-6 leading-relaxed">
-                Our UAE engagement portfolio will be published shortly — arc flash studies, power system analysis, and {config.primaryStandard} compliance projects. In the meantime, reach out to discuss your specific requirements.
-              </p>
-              <div className="mt-8">
-                <Link
-                  href={config.contactPath}
-                  className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-8 py-3.5 transition-colors"
-                >
-                  Discuss Your Project
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+            <ScrollReveal>
+              <div className="mx-auto max-w-3xl border-l-2 border-[#2575B6] bg-white p-12 lg:p-16">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                  Coming Soon
+                </p>
+                <h2 className="mt-3 font-display text-display-md uppercase tracking-tight text-gray-900">
+                  Case studies are being compiled.
+                </h2>
+                <p className="mt-6 text-base leading-relaxed text-gray-600">
+                  Our UAE engagement portfolio will be published shortly — arc flash studies, power system analysis, and {config.primaryStandard} compliance projects. In the meantime, reach out to discuss your specific requirements.
+                </p>
+                <div className="mt-8">
+                  <Link
+                    href={config.contactPath}
+                    className="inline-flex items-center gap-2 bg-[#F15C30] px-8 py-3.5 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+                  >
+                    Discuss Your Project
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {studies.map((study) => (
-                <Link
-                  key={study.id}
-                  href={`/${CC}/case-studies/${study.slug.replace(/-ae$/, "")}/`}
-                  className="group bg-white border border-[#D4E3F0] p-8 hover:border-[#2D7AB8] transition-colors"
-                >
-                  {study.industry && (
-                    <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.15em] text-[#2D7AB8]">
-                      {study.industry}
+            <div className="grid grid-cols-1 gap-px bg-gray-300 md:grid-cols-2 lg:grid-cols-3">
+              {studies.map((study, i) => (
+                <ScrollReveal key={study.id} delay={(i % 6) * 80}>
+                  <Link
+                    href={`/${CC}/case-studies/${study.slug.replace(/-ae$/, "")}/`}
+                    className="group flex h-full flex-col bg-white p-8 transition-colors duration-300 hover:bg-[#F2F2F4]"
+                  >
+                    {study.industry && (
+                      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
+                        {study.industry}
+                      </span>
+                    )}
+                    <h2 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
+                      {study.title}
+                    </h2>
+                    {study.excerpt && (
+                      <p className="mt-4 line-clamp-3 text-sm leading-relaxed text-gray-600">
+                        {study.excerpt}
+                      </p>
+                    )}
+                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
+                      Read Case Study
+                      <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
-                  )}
-                  <h2 className="font-ae-display text-2xl text-[#0F2847] mt-3 leading-tight group-hover:text-[#1E5A8A] transition-colors">
-                    {study.title}
-                  </h2>
-                  {study.excerpt && (
-                    <p className="font-ae-body text-sm text-[#0F2847]/60 mt-4 leading-relaxed line-clamp-3">
-                      {study.excerpt}
-                    </p>
-                  )}
-                  <span className="font-ae-nav font-medium text-sm uppercase tracking-[0.12em] text-[#2D7AB8] mt-6 inline-flex items-center gap-2">
-                    Read Case Study <ArrowRight className="w-4 h-4" />
-                  </span>
-                </Link>
+                  </Link>
+                </ScrollReveal>
               ))}
             </div>
           )}
         </div>
       </main>
 
-      <section className="bg-[#0F2847] py-24 lg:py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            Ready to start a project?
-          </h2>
-          <div className="mt-10">
-            <Link
-              href={config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              Contact Us
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+      {/* CTA */}
+      <section className="bg-[#094D76] py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <ScrollReveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+              Get Started
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+              Ready to start a project?
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <div className="mt-10">
+              <Link
+                href={config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-10 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                Contact Us
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

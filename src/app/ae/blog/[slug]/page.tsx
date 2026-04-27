@@ -11,6 +11,8 @@ import { AEFooter } from "@/components/ae-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getBlogPost, type BlogPost } from "@/lib/strapi-blog";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { SectionHeading } from "@/components/section-heading";
 
 const CC = "ae";
 const COUNTRY_NAME = "United Arab Emirates";
@@ -107,26 +109,32 @@ export default async function BlogDetailPage({ params }: PageProps) {
       <JsonLd data={articleJsonLd} />
 
       {/* HERO */}
-      <section className="bg-[#0A1628] pt-32 pb-16 lg:pt-40 lg:pb-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#163560_0%,_transparent_70%)] opacity-30" />
-        <div className="max-w-3xl mx-auto relative z-10">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-ae-nav text-xs uppercase tracking-[0.15em] text-white/40 mb-6 flex-wrap">
-            <Link href={`/${CC}/`} className="hover:text-[#2D7AB8] transition-colors">Home</Link>
-            <ChevronRight className="w-3 h-3" />
-            <Link href={config.blogIndexPath} className="hover:text-[#2D7AB8] transition-colors">Insights</Link>
+      <section className="relative overflow-hidden bg-[#094D76] px-6 pb-20 pt-36 lg:pb-24 lg:pt-44">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
+        />
+        <div className="relative z-10 mx-auto max-w-3xl">
+          <nav
+            aria-label="Breadcrumb"
+            className="animate-fade-in-up animation-delay-100 mb-6 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.15em] text-white/40"
+          >
+            <Link href={`/${CC}/`} className="transition-colors duration-300 hover:text-white">Home</Link>
+            <ChevronRight className="h-3 w-3" />
+            <Link href={config.blogIndexPath} className="transition-colors duration-300 hover:text-white">Insights</Link>
           </nav>
           {post.category && (
-            <span className="inline-block font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-4">
+            <span className="animate-fade-in-up animation-delay-200 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
               {post.category}
             </span>
           )}
-          <h1 className="font-ae-display text-3xl md:text-4xl lg:text-5xl text-white leading-[0.95]">
+          <h1 className="animate-fade-in-up animation-delay-300 mt-4 font-display text-display-hero uppercase tracking-tight text-white">
             {cleanTitle(post.title)}
           </h1>
-          <div className="flex flex-wrap items-center gap-4 font-ae-body text-sm text-white/40 mt-8">
+          <div className="animate-fade-in-up animation-delay-400 mt-8 flex flex-wrap items-center gap-4 text-sm text-white/40">
             {post.author && (
               <span>
-                By <span className="text-white/70 font-medium">{post.author}</span>
+                By <span className="font-medium text-white/70">{post.author}</span>
               </span>
             )}
             {post.publishedDate && (
@@ -136,7 +144,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
             )}
           </div>
           {post.heroImage && post.heroImage.startsWith("http") && (
-            <div className="relative aspect-[16/9] overflow-hidden mt-10">
+            <div className="animate-fade-in-up animation-delay-500 relative mt-10 aspect-[16/9] overflow-hidden">
               <Image
                 src={post.heroImage}
                 alt={post.heroImageAlt ?? cleanTitle(post.title)}
@@ -151,73 +159,92 @@ export default async function BlogDetailPage({ params }: PageProps) {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="bg-[#FAFBFC] py-20 px-6">
-        <div className="max-w-3xl mx-auto">
-          <div
-            className="prose prose-lg max-w-none prose-headings:font-ae-display prose-headings:text-[#0F2847] prose-headings:font-normal prose-p:text-[#0F2847]/70 prose-p:font-ae-body prose-li:text-[#0F2847]/70 prose-li:font-ae-body prose-strong:text-[#0F2847] prose-a:text-[#2D7AB8] prose-a:no-underline hover:prose-a:underline"
-            dangerouslySetInnerHTML={{ __html: marked(post.body || "") as string }}
-          />
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-3xl">
+          <ScrollReveal>
+            <div
+              className="prose prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-headings:text-gray-900 prose-headings:font-normal prose-p:text-gray-600 prose-li:text-gray-600 prose-strong:text-gray-900 prose-a:text-[#2575B6] prose-a:no-underline hover:prose-a:underline"
+              dangerouslySetInnerHTML={{ __html: marked(post.body || "") as string }}
+            />
+          </ScrollReveal>
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-10 flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
-                <span key={tag} className="px-4 py-1.5 font-ae-nav text-xs uppercase tracking-[0.15em] text-[#0F2847]/60 border border-[#D4E3F0]">
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <ScrollReveal>
+              <div className="mt-10 flex flex-wrap gap-2">
+                {post.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-gray-300 px-4 py-1.5 text-xs uppercase tracking-[0.15em] text-gray-600"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </ScrollReveal>
           )}
         </div>
       </section>
 
       {/* FAQ */}
       {post.faqs && post.faqs.length > 0 && (
-        <section className="bg-[#EBF2F8] py-16 px-6">
-          <div className="max-w-3xl mx-auto">
-            <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8] mb-4 block">
-              FAQ
-            </span>
-            <h2 className="font-ae-display text-3xl md:text-4xl text-[#0F2847] mb-8">
-              Common Questions
-            </h2>
-            {post.faqs.map((faq, i) => (
-              <details key={i} className="group border-b border-[#0F2847]/10 py-5">
-                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-ae-body font-semibold text-base md:text-lg text-[#0F2847]">
-                  <span>{faq.question}</span>
-                  <Plus className="w-5 h-5 text-[#2D7AB8] shrink-0 mt-0.5 transition-transform group-open:rotate-45" />
-                </summary>
-                <p className="font-ae-body text-base text-[#0F2847]/60 mt-3 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
+        <section className="bg-[#F2F2F4] py-24 lg:py-32">
+          <div className="mx-auto max-w-3xl px-6">
+            <SectionHeading eyebrow="FAQ" title="Common Questions" />
+            <div className="mt-12 space-y-4">
+              {post.faqs.map((faq, i) => (
+                <ScrollReveal key={i} delay={i * 50}>
+                  <details className="group bg-white px-8 py-6 [&[open]_h3]:text-[#2575B6]">
+                    <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
+                      <h3 className="font-display text-base uppercase tracking-tight text-gray-900 transition-colors duration-300 md:text-lg">
+                        {faq.question}
+                      </h3>
+                      <Plus className="h-5 w-5 shrink-0 text-[#F15C30] transition-transform duration-300 group-open:rotate-45" />
+                    </summary>
+                    <p className="mt-4 text-base leading-relaxed text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </details>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </section>
       )}
 
       {/* CTA */}
-      <section className="bg-[#0F2847] py-24 lg:py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            Need expert support?
-          </h2>
-          <p className="font-ae-body text-lg text-[#5A8FB4] mt-6 max-w-2xl mx-auto">
-            Carelabs delivers arc flash studies, power system analysis, and {config.primaryStandard} compliance services across the UAE.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href={config.contactPath}
-              className="inline-flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              Get a Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href={config.blogIndexPath}
-              className="inline-flex items-center justify-center gap-2 border border-[#1E5A8A] hover:border-[#2D7AB8] text-white/70 hover:text-white font-ae-nav font-medium text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              More Articles
-            </Link>
-          </div>
+      <section className="bg-[#094D76] py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <ScrollReveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+              Get Started
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+              Need expert support?
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <p className="mt-6 text-lg leading-relaxed text-white/70">
+              Carelabs delivers arc flash studies, power system analysis, and {config.primaryStandard} compliance services across the UAE.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link
+                href={config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-10 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                Get a Quote
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href={config.blogIndexPath}
+                className="inline-flex items-center gap-2 border border-white/20 px-10 py-4 text-sm font-medium uppercase tracking-[0.1em] text-white/80 transition-all duration-300 hover:border-white/60 hover:text-white"
+              >
+                More Articles
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

@@ -10,6 +10,7 @@ import { AEFooter } from "@/components/ae-footer";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getCaseStudy, type CaseStudy } from "@/lib/strapi-pages";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 const CC = "ae";
 const COUNTRY_NAME = "United Arab Emirates";
@@ -72,102 +73,140 @@ export default async function CaseStudyPage({ params }: PageProps) {
       <JsonLd data={jsonLd} />
 
       {/* HERO */}
-      <section className="bg-[#0A1628] pt-36 pb-20 lg:pt-44 lg:pb-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#163560_0%,_transparent_70%)] opacity-30" />
-        <div className="max-w-3xl mx-auto relative z-10">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-ae-nav text-xs uppercase tracking-[0.15em] text-white/40 mb-6 flex-wrap">
-            <Link href={`/${CC}/`} className="hover:text-[#2D7AB8] transition-colors">Home</Link>
-            <ChevronRight className="w-3 h-3" />
-            <Link href={config.caseStudyPath ?? "/ae/case-studies/"} className="hover:text-[#2D7AB8] transition-colors">Case Studies</Link>
+      <section className="relative overflow-hidden bg-[#094D76] px-6 pb-20 pt-36 lg:pb-24 lg:pt-44">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
+        />
+        <div className="relative z-10 mx-auto max-w-3xl">
+          <nav
+            aria-label="Breadcrumb"
+            className="animate-fade-in-up animation-delay-100 mb-6 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.15em] text-white/40"
+          >
+            <Link href={`/${CC}/`} className="transition-colors duration-300 hover:text-white">
+              Home
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <Link
+              href={config.caseStudyPath ?? "/ae/case-studies/"}
+              className="transition-colors duration-300 hover:text-white"
+            >
+              Case Studies
+            </Link>
           </nav>
           {study.industry && (
-            <span className="inline-block font-ae-nav font-medium text-xs uppercase tracking-[0.2em] text-[#2D7AB8] mb-4">
+            <span className="animate-fade-in-up animation-delay-200 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
               {study.industry}
             </span>
           )}
-          <h1 className="font-ae-display text-3xl md:text-4xl lg:text-5xl text-white leading-[0.95]">
+          <h1 className="animate-fade-in-up animation-delay-300 mt-4 font-display text-display-hero uppercase tracking-tight text-white">
             {study.title}
           </h1>
           {study.client && (
-            <p className="font-ae-body text-base text-white/40 mt-6">Client: <span className="text-white/70">{study.client}</span></p>
+            <p className="animate-fade-in-up animation-delay-400 mt-6 text-base text-white/40">
+              Client: <span className="text-white/70">{study.client}</span>
+            </p>
           )}
         </div>
       </section>
 
       {/* RESULTS BAND */}
       {study.results && study.results.length > 0 && (
-        <section className="bg-[#163560] py-12 px-6">
-          <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-[#1E5A8A]/20">
-            {study.results.map((r, i) => (
-              <div key={i} className="bg-[#163560] p-6 text-center">
-                <p className="font-ae-display text-3xl md:text-4xl text-white">{r.value}</p>
-                <p className="font-ae-nav text-xs uppercase tracking-[0.15em] text-[#2D7AB8] mt-2">
-                  {r.metric}
-                </p>
-              </div>
-            ))}
+        <section className="bg-white py-12">
+          <div className="mx-auto max-w-[1280px] px-6">
+            <div className="grid grid-cols-2 gap-px bg-gray-200 md:grid-cols-3 lg:grid-cols-6">
+              {study.results.map((r, i) => (
+                <ScrollReveal key={i} delay={i * 80}>
+                  <div className="h-full bg-white p-6 text-center">
+                    <p className="font-display text-3xl text-[#2575B6] md:text-4xl">
+                      {r.value}
+                    </p>
+                    <p className="mt-2 text-xs uppercase tracking-[0.2em] text-gray-500">
+                      {r.metric}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </section>
       )}
 
       {/* BODY */}
       {study.body && (
-        <section className="bg-[#FAFBFC] py-20 px-6">
-          <div className="max-w-3xl mx-auto">
-            <div
-              className="prose prose-lg max-w-none prose-headings:font-ae-display prose-headings:text-[#0F2847] prose-headings:font-normal prose-p:text-[#0F2847]/70 prose-p:font-ae-body prose-strong:text-[#0F2847] prose-a:text-[#2D7AB8] prose-a:no-underline hover:prose-a:underline"
-              dangerouslySetInnerHTML={{ __html: marked(study.body) as string }}
-            />
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-3xl">
+            <ScrollReveal>
+              <div
+                className="prose prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-headings:text-gray-900 prose-headings:font-normal prose-p:text-gray-600 prose-strong:text-gray-900 prose-a:text-[#2575B6] prose-a:no-underline hover:prose-a:underline"
+                dangerouslySetInnerHTML={{ __html: marked(study.body) as string }}
+              />
+            </ScrollReveal>
           </div>
         </section>
       )}
 
       {/* CHALLENGE / SOLUTION */}
       {(study.challenge || study.solution) && (
-        <section className="bg-[#EBF2F8] py-20 lg:py-28 px-6">
-          <div className="max-w-[1100px] mx-auto grid lg:grid-cols-2 gap-10">
+        <section className="bg-[#F2F2F4] px-6 py-24 lg:py-32">
+          <div className="mx-auto grid max-w-[1100px] gap-4 lg:grid-cols-2">
             {study.challenge && (
-              <div>
-                <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8] mb-4 block">
-                  Challenge
-                </span>
-                <p className="font-ae-body text-base text-[#0F2847]/70 leading-relaxed">
-                  {study.challenge}
-                </p>
-              </div>
+              <ScrollReveal>
+                <div className="h-full border-l-2 border-[#2575B6] bg-white p-8 transition-colors duration-300 hover:border-[#F15C30]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                    Challenge
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-gray-600">
+                    {study.challenge}
+                  </p>
+                </div>
+              </ScrollReveal>
             )}
             {study.solution && (
-              <div>
-                <span className="font-ae-nav font-medium text-xs uppercase tracking-[0.18em] text-[#2D7AB8] mb-4 block">
-                  Solution
-                </span>
-                <p className="font-ae-body text-base text-[#0F2847]/70 leading-relaxed">
-                  {study.solution}
-                </p>
-              </div>
+              <ScrollReveal delay={100}>
+                <div className="h-full border-l-2 border-[#2575B6] bg-white p-8 transition-colors duration-300 hover:border-[#F15C30]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                    Solution
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-gray-600">
+                    {study.solution}
+                  </p>
+                </div>
+              </ScrollReveal>
             )}
           </div>
         </section>
       )}
 
       {/* CTA */}
-      <section className="bg-[#0F2847] py-24 lg:py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-ae-display text-4xl md:text-5xl lg:text-6xl text-white leading-[0.95]">
-            {study.ctaText ?? "Have a similar challenge?"}
-          </h2>
-          <p className="font-ae-body text-lg text-[#5A8FB4] mt-6">
-            Tell us about your facility — we&apos;ll respond within one business day.
-          </p>
-          <div className="mt-10">
-            <Link
-              href={study.ctaHref ?? config.contactPath}
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-ae-nav font-semibold text-sm uppercase tracking-[0.1em] px-10 py-4 transition-colors"
-            >
-              Discuss Your Project
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+      <section className="bg-[#094D76] py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <ScrollReveal>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+              Get Started
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-white">
+              {study.ctaText ?? "Have a similar challenge?"}
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={200}>
+            <p className="mt-6 text-lg leading-relaxed text-white/70">
+              Tell us about your facility — we&apos;ll respond within one business day.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
+            <div className="mt-10">
+              <Link
+                href={study.ctaHref ?? config.contactPath}
+                className="inline-flex items-center gap-2 bg-[#F15C30] px-10 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+              >
+                Discuss Your Project
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
