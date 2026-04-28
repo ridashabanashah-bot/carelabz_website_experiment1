@@ -74,12 +74,6 @@ const FALLBACK_VALUES = [
   { title: "Partnership", description: "Engineers stay engaged through commissioning and beyond." },
 ];
 
-const FALLBACK_STATS = [
-  { value: "50+", metric: "Countries" },
-  { value: "1000+", metric: "Projects" },
-  { value: "15+", metric: "Years" },
-];
-
 const FALLBACK_STANDARDS = [
   { label: "DEWA", description: "Approved" },
   { label: "IEEE 1584", description: "Certified" },
@@ -125,7 +119,6 @@ export default async function HomePage() {
   const services = page.services ?? [];
   const insights = page.insights ?? [];
   const faqs = page.faqs ?? [];
-  const stats = FALLBACK_STATS;
   const values = FALLBACK_VALUES;
   const process = FALLBACK_PROCESS;
 
@@ -175,17 +168,6 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          {/* Stats row */}
-          <div className="animate-fade-in-up animation-delay-600 mx-auto mt-16 grid max-w-2xl grid-cols-3 gap-8 border-t border-white/10 pt-10">
-            {stats.map((s) => (
-              <div key={s.metric} className="text-center">
-                <p className="font-display text-3xl text-white sm:text-4xl">{s.value}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.2em] text-white/50">
-                  {s.metric}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Scroll indicator */}
@@ -287,20 +269,6 @@ export default async function HomePage() {
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
                   Every study aligns to IEEE 1584, NFPA 70E, and IEC 60364 — backed by 15+ years of field-tested engineering across more than 1,000 projects.
                 </p>
-              </ScrollReveal>
-              <ScrollReveal delay={400}>
-                <div className="mt-10 grid grid-cols-3 gap-8 border-t border-gray-200 pt-10">
-                  {stats.map((s) => (
-                    <div key={s.metric}>
-                      <p className="font-display text-3xl text-[#2575B6] sm:text-4xl">
-                        {s.value}
-                      </p>
-                      <p className="mt-2 text-xs uppercase tracking-[0.2em] text-gray-500">
-                        {s.metric}
-                      </p>
-                    </div>
-                  ))}
-                </div>
               </ScrollReveal>
             </div>
 

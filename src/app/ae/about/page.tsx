@@ -118,33 +118,6 @@ export default async function AboutPage() {
         </section>
       )}
 
-      {/* STATS */}
-      {page?.stats && page.stats.length > 0 && (
-        <section className="bg-[#094D76] px-6 py-24 lg:py-32">
-          <div className="mx-auto max-w-[1280px]">
-            <ScrollReveal>
-              <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
-                {page.statsHeading ?? "By the Numbers"}
-              </p>
-            </ScrollReveal>
-            <div className="mt-12 grid grid-cols-2 gap-px bg-white/10 lg:grid-cols-4">
-              {page.stats.map((stat, i) => (
-                <ScrollReveal key={i} delay={i * 100}>
-                  <div className="h-full bg-[#094D76] p-8 text-center">
-                    <p className="font-display text-5xl text-white md:text-6xl">
-                      {stat.value}
-                    </p>
-                    <p className="mt-3 text-xs uppercase tracking-[0.2em] text-white/60">
-                      {stat.metric}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* CERTIFICATIONS */}
       {page?.certifications && page.certifications.length > 0 && (
         <section className="bg-white px-6 py-16">
