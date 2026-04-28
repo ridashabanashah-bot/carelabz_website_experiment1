@@ -36,8 +36,9 @@ export function AENavbar({ config }: AENavbarProps) {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-[1280px] items-center justify-between px-6 lg:px-10">
-        <Link href={`/${config.cc}/`} className="shrink-0">
+      <nav className="mx-auto grid h-20 max-w-[1280px] grid-cols-[auto_1fr_auto] items-center px-6 lg:px-10">
+        {/* Left: logo */}
+        <Link href={`/${config.cc}/`} className="shrink-0 justify-self-start">
           <Image
             src="/images/logo/carelabs-logo.svg"
             alt="Carelabs"
@@ -48,12 +49,13 @@ export function AENavbar({ config }: AENavbarProps) {
           />
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        {/* Center: nav links */}
+        <div className="hidden items-center justify-center gap-10 lg:flex">
           <Link
             href={config.aboutPath}
-            className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
+            className={`text-sm font-medium uppercase tracking-[0.12em] transition-colors duration-300 ${linkColor}`}
           >
-            About
+            About Us
           </Link>
 
           <div
@@ -62,17 +64,17 @@ export function AENavbar({ config }: AENavbarProps) {
             onMouseLeave={() => setServicesOpen(false)}
           >
             <button
-              className={`flex items-center gap-1 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
+              className={`flex items-center gap-1 text-sm font-medium uppercase tracking-[0.12em] transition-colors duration-300 ${linkColor}`}
             >
               Services
               <ChevronDown
-                className={`h-3.5 w-3.5 transition-transform duration-300 ${
+                className={`h-4 w-4 transition-transform duration-300 ${
                   servicesOpen ? "rotate-180" : ""
                 }`}
               />
             </button>
             {servicesOpen && (
-              <div className="absolute left-0 top-full mt-2 w-72 border border-gray-200 bg-white py-2 shadow-2xl">
+              <div className="absolute left-1/2 top-full mt-2 w-72 -translate-x-1/2 border border-gray-200 bg-white py-2 shadow-2xl">
                 {config.services.map((s) => (
                   <Link
                     key={s.href}
@@ -95,22 +97,23 @@ export function AENavbar({ config }: AENavbarProps) {
           </div>
 
           <Link
-            href={config.blogIndexPath}
-            className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-300 ${linkColor}`}
-          >
-            Insights
-          </Link>
-
-          <Link
             href={config.contactPath}
-            className="inline-flex items-center gap-2 bg-[#F15C30] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22]"
+            className={`text-sm font-medium uppercase tracking-[0.12em] transition-colors duration-300 ${linkColor}`}
           >
             Contact Us
           </Link>
         </div>
 
+        {/* Right: orange CTA */}
+        <Link
+          href={config.contactPath}
+          className="hidden items-center gap-2 bg-[#F15C30] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:scale-[1.02] hover:bg-[#d44a22] lg:inline-flex"
+        >
+          Get a Quote
+        </Link>
+
         <button
-          className={`lg:hidden ${iconColor}`}
+          className={`justify-self-end lg:hidden ${iconColor}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
@@ -125,7 +128,7 @@ export function AENavbar({ config }: AENavbarProps) {
             className="block text-sm font-medium uppercase tracking-[0.1em] text-gray-700 hover:text-[#2575B6]"
             onClick={() => setMenuOpen(false)}
           >
-            About
+            About Us
           </Link>
           <Link
             href={config.servicesIndexPath}
@@ -135,18 +138,18 @@ export function AENavbar({ config }: AENavbarProps) {
             Services
           </Link>
           <Link
-            href={config.blogIndexPath}
+            href={config.contactPath}
             className="block text-sm font-medium uppercase tracking-[0.1em] text-gray-700 hover:text-[#2575B6]"
             onClick={() => setMenuOpen(false)}
           >
-            Insights
+            Contact Us
           </Link>
           <Link
             href={config.contactPath}
             className="mt-4 block bg-[#F15C30] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-300 hover:bg-[#d44a22]"
             onClick={() => setMenuOpen(false)}
           >
-            Contact Us
+            Get a Quote
           </Link>
         </div>
       )}
