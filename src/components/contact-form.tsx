@@ -40,8 +40,7 @@ export function ContactForm({
           Message Sent Successfully!
         </h3>
         <p className="text-[#374151]">
-          Thank you for reaching out. Our team will contact you within 24
-          hours.
+          Thank you for reaching out. Our team will be in touch.
         </p>
       </div>
     );

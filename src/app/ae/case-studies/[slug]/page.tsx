@@ -206,7 +206,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className="mt-6 text-lg leading-relaxed text-white/70">
-              Tell us about your facility — we&apos;ll respond within one business day.
+              Tell us about your project.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>

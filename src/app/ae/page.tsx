@@ -137,6 +137,25 @@ export default async function HomePage() {
 
       {/* 1 · HERO */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#094D76] px-6 pt-32 pb-24">
+        {/* Background image (Strapi-driven, swappable from CMS) */}
+        {page.heroImage && page.heroImage.startsWith("http") && (
+          <div aria-hidden className="absolute inset-0">
+            <Image
+              src={page.heroImage}
+              alt={page.heroImageAlt ?? ""}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+        )}
+        {/* Dark blue overlay */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-[#094D76]/85"
+        />
+        {/* Grid pattern on top */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:40px_40px]"
@@ -190,9 +209,6 @@ export default async function HomePage() {
                 >
                   <p className="font-display text-3xl uppercase tracking-tight text-[#094D76] sm:text-4xl">
                     {s.label}
-                  </p>
-                  <p className="mt-2 text-xs uppercase tracking-[0.2em] text-gray-500">
-                    {s.description}
                   </p>
                 </div>
               ))}
@@ -321,44 +337,30 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 5b · INDUSTRIES */}
+      {/* 5b · INDUSTRIES — marquee */}
       {industries.length > 0 && (
-        <section className="bg-white py-24 lg:py-32">
+        <section className="overflow-hidden bg-white py-20 lg:py-28">
           <div className="mx-auto max-w-[1280px] px-6">
             <SectionHeading
               eyebrow="Industries"
               title="Sectors We Serve"
               description="From hyperscale data centers to oil & gas terminals — every industry in the UAE has a different risk profile."
             />
-            <div className="mt-16 grid grid-cols-2 gap-px bg-gray-200 md:grid-cols-3 lg:grid-cols-4">
-              {industries.map((ind, i) => (
-                <ScrollReveal key={ind.name ?? i} delay={(i % 4) * 80}>
-                  <div className="group relative h-full overflow-hidden bg-white">
-                    {ind.image && ind.image.startsWith("http") ? (
-                      <div className="relative h-48 overflow-hidden">
-                        <Image
-                          src={ind.image}
-                          alt={ind.alt ?? ind.name}
-                          fill
-                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                        <div className="absolute inset-x-0 bottom-0 p-5">
-                          <h3 className="font-display text-lg uppercase tracking-tight text-white">
-                            {ind.name}
-                          </h3>
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6] p-5">
-                        <h3 className="absolute inset-x-0 bottom-0 p-5 font-display text-lg uppercase tracking-tight text-white">
-                          {ind.name}
-                        </h3>
-                      </div>
-                    )}
-                  </div>
-                </ScrollReveal>
+          </div>
+          <div className="relative mt-12">
+            <div className="animate-marquee whitespace-nowrap">
+              {[...Array(2)].map((_, dupe) => (
+                <span key={dupe} className="inline-block">
+                  {industries.map((ind, i) => (
+                    <span
+                      key={`${dupe}-${i}`}
+                      className="mx-8 inline-block font-display text-6xl uppercase tracking-tight text-[#094D76]/25 md:text-8xl"
+                    >
+                      {ind.name}
+                      <span className="mx-8 text-[#F15C30]/60">·</span>
+                    </span>
+                  ))}
+                </span>
               ))}
             </div>
           </div>
@@ -475,7 +477,7 @@ export default async function HomePage() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className="mt-6 text-lg leading-relaxed text-white/70">
-              Tell us about your facility and compliance requirements. Our UAE engineering team responds within one business day.
+              Tell us about your project.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>

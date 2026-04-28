@@ -53,7 +53,7 @@ export default async function ContactPage() {
 
   const subtext =
     page?.heroSubtext ??
-    `Tell us about your facility and compliance requirements. Our UAE engineering team responds within one business day.`;
+    `Tell us about your project.`;
 
   return (
     <>
@@ -157,7 +157,7 @@ export default async function ContactPage() {
 
             <ScrollReveal delay={500}>
               <p className="mt-8 text-sm leading-relaxed text-gray-600">
-                Our UAE team responds within one business day. For urgent compliance questions, mention &quot;urgent&quot; in your subject line.
+                Tell us about your project.
               </p>
             </ScrollReveal>
           </div>
@@ -177,7 +177,7 @@ export default async function ContactPage() {
             <ScrollReveal delay={200}>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
                 {page?.formSubtext ??
-                  "Fill out the form and we'll get back to you within one business day."}
+                  "Tell us about your project."}
               </p>
             </ScrollReveal>
             <ScrollReveal delay={300}>
