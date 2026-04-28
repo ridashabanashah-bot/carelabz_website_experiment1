@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ChevronDown, Plus } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
@@ -118,6 +119,7 @@ export default async function HomePage() {
 
   const services = page.services ?? [];
   const insights = page.insights ?? [];
+  const industries = page.industries ?? [];
   const faqs = page.faqs ?? [];
   const values = FALLBACK_VALUES;
   const process = FALLBACK_PROCESS;
@@ -319,6 +321,50 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* 5b · INDUSTRIES */}
+      {industries.length > 0 && (
+        <section className="bg-white py-24 lg:py-32">
+          <div className="mx-auto max-w-[1280px] px-6">
+            <SectionHeading
+              eyebrow="Industries"
+              title="Sectors We Serve"
+              description="From hyperscale data centers to oil & gas terminals — every industry in the UAE has a different risk profile."
+            />
+            <div className="mt-16 grid grid-cols-2 gap-px bg-gray-200 md:grid-cols-3 lg:grid-cols-4">
+              {industries.map((ind, i) => (
+                <ScrollReveal key={ind.name ?? i} delay={(i % 4) * 80}>
+                  <div className="group relative h-full overflow-hidden bg-white">
+                    {ind.image && ind.image.startsWith("http") ? (
+                      <div className="relative h-48 overflow-hidden">
+                        <Image
+                          src={ind.image}
+                          alt={ind.alt ?? ind.name}
+                          fill
+                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                        <div className="absolute inset-x-0 bottom-0 p-5">
+                          <h3 className="font-display text-lg uppercase tracking-tight text-white">
+                            {ind.name}
+                          </h3>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6] p-5">
+                        <h3 className="absolute inset-x-0 bottom-0 p-5 font-display text-lg uppercase tracking-tight text-white">
+                          {ind.name}
+                        </h3>
+                      </div>
+                    )}
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* 6 · INSIGHTS / BLOG */}
       {insights.length > 0 && (
         <section className="bg-white py-24 lg:py-32">
@@ -350,18 +396,33 @@ export default async function HomePage() {
                 <ScrollReveal key={insight.href ?? i} delay={i * 100}>
                   <Link
                     href={insight.href}
-                    className="group block h-full bg-white p-8 transition-colors duration-300 hover:bg-[#F2F2F4]"
+                    className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
                   >
-                    <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#2575B6]">
-                      <span>Article</span>
+                    {insight.image && insight.image.startsWith("http") ? (
+                      <div className="relative h-48 overflow-hidden">
+                        <Image
+                          src={insight.image}
+                          alt={insight.alt ?? cleanTitle(insight.title)}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
+                    )}
+                    <div className="flex flex-1 flex-col p-8">
+                      <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#2575B6]">
+                        {insight.category ?? "Article"}
+                      </span>
+                      <h3 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
+                        {cleanTitle(insight.title)}
+                      </h3>
+                      <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
+                        Read More
+                        <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
+                      </span>
                     </div>
-                    <h3 className="mt-4 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
-                      {cleanTitle(insight.title)}
-                    </h3>
-                    <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
-                      Read More
-                      <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                    </span>
                   </Link>
                 </ScrollReveal>
               ))}

@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 import { ArrowRight, ChevronRight } from "lucide-react";
@@ -106,6 +107,18 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <p className="animate-fade-in-up animation-delay-400 mt-6 text-base text-white/40">
               Client: <span className="text-white/70">{study.client}</span>
             </p>
+          )}
+          {study.heroImage && study.heroImage.startsWith("http") && (
+            <div className="animate-fade-in-up animation-delay-500 relative mt-10 aspect-[16/9] overflow-hidden">
+              <Image
+                src={study.heroImage}
+                alt={study.heroImageAlt ?? study.title}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover"
+              />
+            </div>
           )}
         </div>
       </section>

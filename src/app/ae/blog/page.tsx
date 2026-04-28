@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
@@ -107,29 +108,44 @@ export default async function BlogIndexPage() {
                   <ScrollReveal key={post.id} delay={(i % 6) * 80}>
                     <Link
                       href={getPostHref(post.slug)}
-                      className="group flex h-full flex-col bg-white p-8 transition-colors duration-300 hover:bg-[#F2F2F4]"
+                      className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
                     >
-                      {post.category && (
-                        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
-                          {post.category}
-                        </span>
+                      {post.heroImage && post.heroImage.startsWith("http") ? (
+                        <div className="relative h-48 overflow-hidden">
+                          <Image
+                            src={post.heroImage}
+                            alt={post.heroImageAlt ?? cleanTitle(post.title)}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      ) : (
+                        <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
                       )}
-                      <h2 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
-                        {cleanTitle(post.title)}
-                      </h2>
-                      <div className="mt-6 flex items-center justify-between">
-                        {date && (
-                          <time
-                            dateTime={date}
-                            className="text-xs uppercase tracking-[0.15em] text-gray-500"
-                          >
-                            {formatDate(date)}
-                          </time>
+                      <div className="flex flex-1 flex-col p-8">
+                        {post.category && (
+                          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
+                            {post.category}
+                          </span>
                         )}
-                        <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
-                          Read More
-                          <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                        </span>
+                        <h2 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
+                          {cleanTitle(post.title)}
+                        </h2>
+                        <div className="mt-6 flex items-center justify-between">
+                          {date && (
+                            <time
+                              dateTime={date}
+                              className="text-xs uppercase tracking-[0.15em] text-gray-500"
+                            >
+                              {formatDate(date)}
+                            </time>
+                          )}
+                          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
+                            Read More
+                            <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
+                          </span>
+                        </div>
                       </div>
                     </Link>
                   </ScrollReveal>
