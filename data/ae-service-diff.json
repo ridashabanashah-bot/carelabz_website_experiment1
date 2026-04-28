@@ -1,0 +1,172 @@
+{
+  "canonical_count": 57,
+  "strapi_count": 106,
+  "common": [
+    "arc-flash-study",
+    "automatic-transfer-switch-testing-service",
+    "bain-marie-calibration",
+    "battery-test",
+    "biomedical-equipment-safety-inspection",
+    "blast-chiller-calibration",
+    "blast-freezer-calibration",
+    "calibrator-calibration",
+    "capacitor-bank-test",
+    "chiller-calibration",
+    "commercial-electrical-inspection",
+    "commercial-electrical-test",
+    "contact-resistance-test",
+    "continuity-test",
+    "digital-thermometer-calibration",
+    "earth-ground-test",
+    "electrical-installations-certification",
+    "electrical-safety-audit",
+    "electrical-safety-test",
+    "electrical-switchgear-risk-assessment",
+    "electrical-switchgear-safety-inspection",
+    "energy-auditing-service",
+    "factory-acceptance-test",
+    "frequency-stability-analysis",
+    "generator-load-bank-test",
+    "gfci-standard-inspection",
+    "harmonic-study-analysis",
+    "insulation-resistance-test",
+    "lightning-arrester-test",
+    "live-test",
+    "megger-test",
+    "motor-acceleration-study-analysis",
+    "portable-appliance-test",
+    "power-system-study-analysis",
+    "protection-relay-test",
+    "protective-devices-test",
+    "short-circuit-study-analysis",
+    "thermography-test-of-electrical-panels",
+    "thermography-testing-of-electrical-equipment",
+    "third-party-electrical-certification",
+    "unbalanced-load-flow-study-analysis",
+    "voltage-drop-study-analysis",
+    "voltage-imbalance-study"
+  ],
+  "missing": [
+    {
+      "slug": "3rd-party-inspection-of-electrical-installation",
+      "url": "https://carelabz.com/3rd-party-inspection-of-electrical-installation"
+    },
+    {
+      "slug": "building-envelope-thermography-inspection",
+      "url": "https://carelabz.com/building-envelope-thermography-inspection"
+    },
+    {
+      "slug": "earth-fault-loop-impedance-test",
+      "url": "https://carelabz.com/earth-fault-loop-impedance-test"
+    },
+    {
+      "slug": "electrical-inspection",
+      "url": "https://carelabz.com/electrical-inspection"
+    },
+    {
+      "slug": "electrical-installation-inspection-to-procure-ofc",
+      "url": "https://carelabz.com/electrical-installation-inspection-to-procure-ofc"
+    },
+    {
+      "slug": "electrical-thermography-inspection-services",
+      "url": "https://carelabz.com/electrical-thermography-inspection-services"
+    },
+    {
+      "slug": "load-flow-study-analysis",
+      "url": "https://carelabz.com/load-flow-study-analysis"
+    },
+    {
+      "slug": "power-quality-analysis",
+      "url": "https://carelabz.com/power-quality-analysis"
+    },
+    {
+      "slug": "psc-test-pfc-test",
+      "url": "https://carelabz.com/psc-test-pfc-test"
+    },
+    {
+      "slug": "rcd-test-safety",
+      "url": "https://carelabz.com/rcd-test-safety"
+    },
+    {
+      "slug": "relay-coordination-study-analysis",
+      "url": "https://carelabz.com/relay-coordination-study-analysis"
+    },
+    {
+      "slug": "switchgear-test",
+      "url": "https://carelabz.com/switchgear-test"
+    },
+    {
+      "slug": "temperature-humidity-calibration",
+      "url": "https://carelabz.com/temperature-humidity-calibration"
+    },
+    {
+      "slug": "vibration-study-analysis",
+      "url": "https://carelabz.com/vibration-study-analysis"
+    }
+  ],
+  "extras": [
+    "arc-flash-study-analysis",
+    "battery-testing-services-dubai-uae",
+    "biomedical-equipment-safety-inspection-services",
+    "biomedical-equipment-safety-testing-services",
+    "building-envelope-infrared-thermography-inspection-service",
+    "cable-testing",
+    "circuit-breaker-testing",
+    "commercial-electrical-inspection-services-dubai-uae",
+    "commercial-electrical-testing",
+    "compliance-as-a-service",
+    "contact-resistance-testing-service",
+    "continuity-testing",
+    "earth-fault-loop-impedence-test",
+    "earth-ground-testing-service",
+    "electric-motor-testing",
+    "electric-switchgear-testing-services",
+    "electrical-calibration",
+    "electrical-compliance-inspection",
+    "electrical-installations-certification-service",
+    "electrical-safety-audit-service",
+    "electrical-safety-auditing-inspection-service",
+    "electrical-safety-testing",
+    "electrical-switchgear-risk-assessment-study-hazard-analysis-service",
+    "electrical-switchgear-safety-inspection-services",
+    "electrical-thermography-inspection",
+    "factory-acceptance-testing-services",
+    "fixed-electrical-testing",
+    "fixed-wire-testing",
+    "generator-load-bank-testing",
+    "gfci-standard-inspection-service",
+    "ground-fault-testing",
+    "grounding-grid-study-analysis",
+    "grounding-system-design-and-planning",
+    "insulation-resistance-test-service",
+    "leakage-current-measurement",
+    "lightning-arrester-testing",
+    "lightning-arrester-testing-service",
+    "live-testing",
+    "load-flow-analysis",
+    "lv-panel-inspection",
+    "mcc-panel-operation-testing",
+    "mcc-switchgear-assessment",
+    "pfc-psc-test",
+    "polarity-test-service",
+    "portable-appliance-testing-dubai-uae",
+    "power-quality-study",
+    "power-quality-study-analysis",
+    "power-restoration-optimization",
+    "primary-current-injection-test",
+    "prospective-short-circuit-test-prospective-fault-current-test",
+    "protection-coordination-study",
+    "protection-relay-testing-services",
+    "protective-devices-testing-services",
+    "relay-coordination-study-and-analysis",
+    "residual-current-device-testing-safety",
+    "residual-current-device-testing-safety-2",
+    "secondary-current-injection-test",
+    "soil-resistivity-test",
+    "thermographic-inspection",
+    "third-party-electrical-inspection-company-uae",
+    "third-party-inspection-electrical-installation",
+    "torque-test",
+    "vibration-study-and-analysis"
+  ]
+}

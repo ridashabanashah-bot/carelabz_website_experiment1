@@ -1,0 +1,84 @@
+{
+  "shaped": [
+    "battery-test",
+    "biomedical-equipment-safety-inspection",
+    "commercial-electrical-inspection",
+    "commercial-electrical-test",
+    "contact-resistance-test",
+    "continuity-test",
+    "earth-ground-test",
+    "electrical-installations-certification",
+    "electrical-safety-test",
+    "electrical-switchgear-risk-assessment",
+    "electrical-switchgear-safety-inspection",
+    "factory-acceptance-test",
+    "generator-load-bank-test",
+    "gfci-standard-inspection",
+    "insulation-resistance-test",
+    "lightning-arrester-test",
+    "live-test",
+    "portable-appliance-test",
+    "protection-relay-test",
+    "protective-devices-test",
+    "thermography-test-of-electrical-panels",
+    "thermography-testing-of-electrical-equipment"
+  ],
+  "skipped": [
+    {
+      "slug": "3rd-party-inspection-of-electrical-installation",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "building-envelope-thermography-inspection",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "earth-fault-loop-impedance-test",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "electrical-inspection",
+      "reason": "status 200 / body 60 chars"
+    },
+    {
+      "slug": "electrical-installation-inspection-to-procure-ofc",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "electrical-thermography-inspection-services",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "load-flow-study-analysis",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "power-quality-analysis",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "psc-test-pfc-test",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "rcd-test-safety",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "relay-coordination-study-analysis",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "switchgear-test",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "temperature-humidity-calibration",
+      "reason": "status 404 / body 0 chars"
+    },
+    {
+      "slug": "vibration-study-analysis",
+      "reason": "status 404 / body 0 chars"
+    }
+  ]
+}
