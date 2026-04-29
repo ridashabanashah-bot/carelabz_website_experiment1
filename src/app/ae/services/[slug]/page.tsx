@@ -13,6 +13,7 @@ import { getServicePageBySlug, type ServicePage } from "@/lib/strapi";
 import { JsonLd } from "@/components/JsonLd";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { cleanServiceTitle } from "@/lib/clean-service-title";
 
 const CC = "ae";
 const COUNTRY_NAME = "United Arab Emirates";
@@ -136,14 +137,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
                 <li><Link href={config.servicesIndexPath} className="transition-colors duration-300 hover:text-white">Services</Link></li>
                 <li aria-hidden="true"><ChevronRight className="h-3 w-3" /></li>
-                <li className="line-clamp-1 text-white/70">{service.title}</li>
+                <li className="line-clamp-1 text-white/70">{cleanServiceTitle(service.title)}</li>
               </ol>
             </nav>
             <p className="animate-fade-in-up animation-delay-200 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
               {service.eyebrow ?? `IEEE 1584 · ${config.primaryStandard}`}
             </p>
             <h1 className="animate-fade-in-up animation-delay-300 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
-              {service.title}
+              {cleanServiceTitle(service.title)}
             </h1>
             {service.definitionalLede && (
               <p className="animate-fade-in-up animation-delay-400 mt-8 max-w-2xl text-lg leading-relaxed text-white/70">

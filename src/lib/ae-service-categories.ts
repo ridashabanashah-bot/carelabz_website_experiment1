@@ -164,3 +164,48 @@ export const AE_CATEGORIES_ORDER: AEServiceCategory[] = [
   "Inspection",
   "Study & Analysis",
 ];
+
+export const CATEGORY_TO_SLUG: Record<AEServiceCategory, string> = {
+  "Testing": "testing",
+  "Calibration": "calibration",
+  "Inspection": "inspection",
+  "Study & Analysis": "study-and-analysis",
+};
+
+export const SLUG_TO_CATEGORY: Record<string, AEServiceCategory> = {
+  "testing": "Testing",
+  "calibration": "Calibration",
+  "inspection": "Inspection",
+  "study-and-analysis": "Study & Analysis",
+};
+
+export const CATEGORY_TAGLINES: Record<AEServiceCategory, string> = {
+  "Testing": "Browse Testing services.",
+  "Calibration": "Browse Calibration services.",
+  "Inspection": "Browse Inspection services.",
+  "Study & Analysis": "Browse Study & Analysis services.",
+};
+
+export interface CategorizedService {
+  slug: string;
+  cleanSlug: string;
+  title: string;
+}
+
+export function groupServicesByCategory<T extends { slug: string; title: string }>(
+  services: T[]
+): Record<AEServiceCategory, T[]> {
+  const grouped: Record<AEServiceCategory, T[]> = {
+    "Testing": [],
+    "Calibration": [],
+    "Inspection": [],
+    "Study & Analysis": [],
+  };
+  for (const svc of services) {
+    grouped[categorizeAEService(svc.slug)].push(svc);
+  }
+  for (const cat of AE_CATEGORIES_ORDER) {
+    grouped[cat].sort((a, b) => a.title.localeCompare(b.title));
+  }
+  return grouped;
+}

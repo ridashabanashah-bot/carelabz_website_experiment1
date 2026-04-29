@@ -5,10 +5,17 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { AENavbar } from "@/components/ae-navbar";
 import { AEFooter } from "@/components/ae-footer";
+import { AECategoryTile } from "@/components/ae-category-tile";
 import { COUNTRY_CONFIGS } from "@/lib/countries-config";
 import { getServicesByRegion, type ServicePage } from "@/lib/strapi";
 import { JsonLd } from "@/components/JsonLd";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import {
+  AE_CATEGORIES_ORDER,
+  CATEGORY_TO_SLUG,
+  groupServicesByCategory,
+} from "@/lib/ae-service-categories";
+import { shortServiceLabel } from "@/lib/clean-service-title";
 
 const CC = "ae";
 const config = COUNTRY_CONFIGS[CC];
@@ -33,14 +40,21 @@ export const metadata: Metadata = {
   },
 };
 
-function getServiceHref(svc: ServicePage): string {
+function cleanSlug(svc: ServicePage): string {
   const suffix = `-${CC}`;
-  const slug = svc.slug.endsWith(suffix) ? svc.slug.slice(0, -suffix.length) : svc.slug;
-  return config.serviceDetailPattern.replace("{slug}", slug);
+  return svc.slug.endsWith(suffix) ? svc.slug.slice(0, -suffix.length) : svc.slug;
 }
 
 export default async function ServicesIndexPage() {
   const services = await getServicesByRegion(CC);
+
+  // Map to the lightweight shape the tile expects (clean slug + display label)
+  const mapped = services.map((s) => ({
+    slug: cleanSlug(s),
+    title: shortServiceLabel(s.title),
+    rawSlug: s.slug,
+  }));
+  const grouped = groupServicesByCategory(mapped);
 
   return (
     <>
@@ -73,7 +87,7 @@ export default async function ServicesIndexPage() {
         </div>
       </section>
 
-      {/* SERVICES — horizontal list */}
+      {/* CATEGORIES — 2x2 tiles with hover dropdowns */}
       <main id="main-content" className="bg-[#F2F2F4] py-24 lg:py-32">
         <div className="mx-auto max-w-[1280px] px-6">
           {services.length === 0 ? (
@@ -81,30 +95,21 @@ export default async function ServicesIndexPage() {
               Services are currently being loaded. Please check back shortly.
             </p>
           ) : (
-            <div className="border-t border-gray-300">
-              {services.map((service, i) => (
-                <ScrollReveal key={service.id} delay={i * 50}>
-                  <Link
-                    href={getServiceHref(service)}
-                    className="group flex items-center gap-6 border-b border-gray-300 py-8 md:gap-10"
-                  >
-                    <span className="w-12 shrink-0 font-display text-2xl text-[#F15C30] md:text-3xl">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div className="flex-1">
-                      <h2 className="font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6] md:text-2xl">
-                        {service.title}
-                      </h2>
-                      {service.metaDescription && (
-                        <p className="mt-2 hidden max-w-2xl text-sm leading-relaxed text-gray-600 md:block">
-                          {service.metaDescription}
-                        </p>
-                      )}
-                    </div>
-                    <ArrowRight className="h-5 w-5 shrink-0 text-[#2575B6] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100" />
-                  </Link>
-                </ScrollReveal>
-              ))}
+            <div className="grid grid-cols-1 gap-px bg-gray-200 sm:grid-cols-2">
+              {AE_CATEGORIES_ORDER.map((cat, i) => {
+                const list = grouped[cat] ?? [];
+                if (list.length === 0) return null;
+                return (
+                  <ScrollReveal key={cat} delay={i * 80}>
+                    <AECategoryTile
+                      categoryName={cat}
+                      categoryHref={`/${CC}/services/category/${CATEGORY_TO_SLUG[cat]}/`}
+                      services={list.map((s) => ({ slug: s.slug, title: s.title }))}
+                      serviceHrefBase={`/${CC}/services`}
+                    />
+                  </ScrollReveal>
+                );
+              })}
             </div>
           )}
         </div>
@@ -125,7 +130,7 @@ export default async function ServicesIndexPage() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className="mt-6 text-lg leading-relaxed text-white/70">
-              Tell us about your facility and compliance requirements.
+              Tell us about your project.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
