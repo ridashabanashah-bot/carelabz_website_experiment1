@@ -36,23 +36,26 @@ interface StrapiResponse<T> {
 }
 
 export async function getBlogPosts(region: string): Promise<BlogPost[]> {
-  const res = await fetch(
-    `${STRAPI_URL}/api/blog-posts?filters[region][$eq]=${region}&populate=*&sort=publishedDate:desc`,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-      },
-      next: { revalidate: 60 },
-    }
-  );
-
-  if (!res.ok) return [];
-
-  const json: StrapiResponse<BlogPost[]> = await res.json();
-
-  if (!json.data || json.data.length === 0) return [];
-
-  return json.data;
+  const all: BlogPost[] = [];
+  let page = 1;
+  while (true) {
+    const res = await fetch(
+      `${STRAPI_URL}/api/blog-posts?filters[region][$eq]=${region}&populate=*&sort=publishedDate:desc&pagination[page]=${page}&pagination[pageSize]=100`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+        },
+        next: { revalidate: 60 },
+      }
+    );
+    if (!res.ok) break;
+    const json: StrapiResponse<BlogPost[]> = await res.json();
+    const batch = json.data ?? [];
+    all.push(...batch);
+    if (batch.length < 100) break;
+    page += 1;
+  }
+  return all;
 }
 
 export async function getBlogPost(
