@@ -78,8 +78,13 @@ const FALLBACK_VALUES = [
 const FALLBACK_STANDARDS = [
   { label: "DEWA", description: "Approved" },
   { label: "IEEE 1584", description: "Certified" },
+  { label: "IEEE 242", description: "Aligned" },
+  { label: "IEEE 1547", description: "Aligned" },
   { label: "NFPA 70E", description: "Compliant" },
   { label: "IEC 61482", description: "Aligned" },
+  { label: "IEC 61936", description: "Aligned" },
+  { label: "IEC 60479", description: "Aligned" },
+  { label: "Abu Dhabi DoE", description: "Wiring Regs" },
 ];
 
 const HERO_ROTATING = ["Safety", "Precision", "Compliance", "Excellence"];
@@ -198,16 +203,16 @@ export default async function HomePage() {
       </section>
 
       {/* 2 · TRUST BAR */}
-      <section className="border-b border-gray-200 bg-white py-12">
+      <section className="border-b border-gray-200 bg-white py-10">
         <div className="mx-auto max-w-[1280px] px-6">
           <ScrollReveal>
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 lg:gap-x-3">
               {standards.map((s) => (
                 <div
                   key={s.label}
                   className="text-center transition-transform duration-300 hover:-translate-y-1"
                 >
-                  <p className="font-display text-3xl uppercase tracking-tight text-[#094D76] sm:text-4xl">
+                  <p className="font-display whitespace-nowrap text-lg uppercase tracking-tight text-[#094D76] sm:text-xl md:text-xl lg:text-base xl:text-lg">
                     {s.label}
                   </p>
                 </div>
