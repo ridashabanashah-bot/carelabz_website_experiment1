@@ -85,49 +85,94 @@ export default async function CaseStudiesPage() {
               </div>
             </ScrollReveal>
           ) : (
-            <div className="grid grid-cols-1 gap-px bg-gray-300 md:grid-cols-2 lg:grid-cols-3">
-              {studies.map((study, i) => (
-                <ScrollReveal key={study.id} delay={(i % 6) * 80}>
-                  <Link
-                    href={`/${CC}/case-studies/${study.slug.replace(/-ae$/, "")}/`}
-                    className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
-                  >
-                    {study.heroImage && study.heroImage.startsWith("http") ? (
-                      <div className="relative h-48 overflow-hidden">
-                        <Image
-                          src={study.heroImage}
-                          alt={study.heroImageAlt ?? study.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                      </div>
-                    ) : (
-                      <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
-                    )}
-                    <div className="flex flex-1 flex-col p-8">
-                      {study.industry && (
-                        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
-                          {study.industry}
+            <>
+              {/* Latest 3 — featured */}
+              <ScrollReveal>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                  Latest
+                </p>
+                <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-gray-900">
+                  Featured Projects
+                </h2>
+              </ScrollReveal>
+              <div className="mt-12 grid grid-cols-1 gap-px bg-gray-300 md:grid-cols-2 lg:grid-cols-3">
+                {studies.slice(0, 3).map((study, i) => (
+                  <ScrollReveal key={study.id} delay={i * 80}>
+                    <Link
+                      href={`/${CC}/case-studies/${study.slug.replace(/-ae$/, "")}/`}
+                      className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
+                    >
+                      {study.heroImage && study.heroImage.startsWith("http") ? (
+                        <div className="relative h-48 overflow-hidden">
+                          <Image
+                            src={study.heroImage}
+                            alt={study.heroImageAlt ?? study.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      ) : (
+                        <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
+                      )}
+                      <div className="flex flex-1 flex-col p-8">
+                        {study.industry && (
+                          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
+                            {study.industry}
+                          </span>
+                        )}
+                        <h3 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
+                          {study.title}
+                        </h3>
+                        {study.excerpt && (
+                          <p className="mt-4 line-clamp-3 text-sm leading-relaxed text-gray-600">
+                            {study.excerpt}
+                          </p>
+                        )}
+                        <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
+                          Read Case Study
+                          <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
                         </span>
-                      )}
-                      <h2 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
-                        {study.title}
-                      </h2>
-                      {study.excerpt && (
-                        <p className="mt-4 line-clamp-3 text-sm leading-relaxed text-gray-600">
-                          {study.excerpt}
-                        </p>
-                      )}
-                      <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
-                        Read Case Study
-                        <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                      </span>
-                    </div>
-                  </Link>
-                </ScrollReveal>
-              ))}
-            </div>
+                      </div>
+                    </Link>
+                  </ScrollReveal>
+                ))}
+              </div>
+
+              {/* Archive — compact list */}
+              {studies.length > 3 && (
+                <div className="mt-20">
+                  <ScrollReveal>
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                      Archive
+                    </p>
+                    <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-gray-900">
+                      All Case Studies
+                    </h2>
+                  </ScrollReveal>
+                  <div className="mt-10 border-t border-gray-300 bg-white">
+                    {studies.slice(3).map((study, i) => (
+                      <ScrollReveal key={study.id} delay={(i % 8) * 30}>
+                        <Link
+                          href={`/${CC}/case-studies/${study.slug.replace(/-ae$/, "")}/`}
+                          className="group flex items-center gap-6 border-b border-gray-200 px-6 py-5 transition-colors duration-300 hover:bg-[#F2F2F4]"
+                        >
+                          {study.industry && (
+                            <span className="hidden w-32 shrink-0 text-xs font-semibold uppercase tracking-[0.15em] text-[#2575B6] md:block">
+                              {study.industry}
+                            </span>
+                          )}
+                          <h3 className="flex-1 font-display text-base uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6] md:text-lg">
+                            {study.title}
+                          </h3>
+                          <ArrowRight className="h-4 w-4 shrink-0 text-[#2575B6] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" />
+                        </Link>
+                      </ScrollReveal>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </main>

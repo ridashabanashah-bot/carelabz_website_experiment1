@@ -93,7 +93,7 @@ export default async function BlogIndexPage() {
         </div>
       </section>
 
-      {/* ARTICLES — gap-px grid */}
+      {/* ARTICLES */}
       <main id="main-content" className="bg-[#F2F2F4] py-24 lg:py-32">
         <div className="mx-auto max-w-[1280px] px-6">
           {posts.length === 0 ? (
@@ -101,57 +101,102 @@ export default async function BlogIndexPage() {
               No articles yet. Check back soon.
             </p>
           ) : (
-            <div className="grid grid-cols-1 gap-px bg-gray-300 md:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post, i) => {
-                const date = postDate(post);
-                return (
-                  <ScrollReveal key={post.id} delay={(i % 6) * 80}>
-                    <Link
-                      href={getPostHref(post.slug)}
-                      className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
-                    >
-                      {post.heroImage && post.heroImage.startsWith("http") ? (
-                        <div className="relative h-48 overflow-hidden">
-                          <Image
-                            src={post.heroImage}
-                            alt={post.heroImageAlt ?? cleanTitle(post.title)}
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                        </div>
-                      ) : (
-                        <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
-                      )}
-                      <div className="flex flex-1 flex-col p-8">
-                        {post.category && (
-                          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
-                            {post.category}
-                          </span>
+            <>
+              {/* Latest 3 — featured cards */}
+              <ScrollReveal>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                  Latest
+                </p>
+                <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-gray-900">
+                  Featured Articles
+                </h2>
+              </ScrollReveal>
+              <div className="mt-12 grid grid-cols-1 gap-px bg-gray-300 md:grid-cols-2 lg:grid-cols-3">
+                {posts.slice(0, 3).map((post, i) => {
+                  const date = postDate(post);
+                  return (
+                    <ScrollReveal key={post.id} delay={i * 80}>
+                      <Link
+                        href={getPostHref(post.slug)}
+                        className="group flex h-full flex-col overflow-hidden bg-white transition-colors duration-300 hover:bg-[#F2F2F4]"
+                      >
+                        {post.heroImage && post.heroImage.startsWith("http") ? (
+                          <div className="relative h-48 overflow-hidden">
+                            <Image
+                              src={post.heroImage}
+                              alt={post.heroImageAlt ?? cleanTitle(post.title)}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                          </div>
+                        ) : (
+                          <div className="relative h-48 bg-gradient-to-br from-[#094D76] to-[#2575B6]" />
                         )}
-                        <h2 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
-                          {cleanTitle(post.title)}
-                        </h2>
-                        <div className="mt-6 flex items-center justify-between">
-                          {date && (
-                            <time
-                              dateTime={date}
-                              className="text-xs uppercase tracking-[0.15em] text-gray-500"
-                            >
-                              {formatDate(date)}
-                            </time>
+                        <div className="flex flex-1 flex-col p-8">
+                          {post.category && (
+                            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2575B6]">
+                              {post.category}
+                            </span>
                           )}
-                          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
-                            Read More
-                            <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                          </span>
+                          <h3 className="mt-4 flex-1 font-display text-xl uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6]">
+                            {cleanTitle(post.title)}
+                          </h3>
+                          <div className="mt-6 flex items-center justify-between">
+                            {date && (
+                              <time
+                                dateTime={date}
+                                className="text-xs uppercase tracking-[0.15em] text-gray-500"
+                              >
+                                {formatDate(date)}
+                              </time>
+                            )}
+                            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30]">
+                              Read More
+                              <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    </ScrollReveal>
+                  );
+                })}
+              </div>
+
+              {/* All others — compact title list, no date */}
+              {posts.length > 3 && (
+                <div className="mt-20">
+                  <ScrollReveal>
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                      Archive
+                    </p>
+                    <h2 className="mt-3 font-display text-display-lg uppercase tracking-tight text-gray-900">
+                      All Articles
+                    </h2>
                   </ScrollReveal>
-                );
-              })}
-            </div>
+                  <div className="mt-10 border-t border-gray-300 bg-white">
+                    {posts.slice(3).map((post, i) => (
+                      <ScrollReveal key={post.id} delay={(i % 8) * 30}>
+                        <Link
+                          href={getPostHref(post.slug)}
+                          className="group flex items-center gap-6 border-b border-gray-200 px-6 py-5 transition-colors duration-300 hover:bg-[#F2F2F4]"
+                        >
+                          {post.category && (
+                            <span className="hidden w-32 shrink-0 text-xs font-semibold uppercase tracking-[0.15em] text-[#2575B6] md:block">
+                              {post.category}
+                            </span>
+                          )}
+                          <h3 className="flex-1 font-display text-base uppercase tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-[#2575B6] md:text-lg">
+                            {cleanTitle(post.title)}
+                          </h3>
+                          <ArrowRight className="h-4 w-4 shrink-0 text-[#2575B6] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100" />
+                        </Link>
+                      </ScrollReveal>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </main>
