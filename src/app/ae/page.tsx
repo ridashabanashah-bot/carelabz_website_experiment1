@@ -71,7 +71,7 @@ const FALLBACK_PROCESS = [
 const FALLBACK_VALUES = [
   { title: "Precision", description: "Every calculation reviewed twice. Every drawing red-lined." },
   { title: "Compliance", description: "DEWA, IEEE 1584, NFPA 70E — every report aligns to spec." },
-  { title: "Speed", description: "First draft inside two weeks. Final inside four." },
+  { title: "Delivery", description: "Predictable timelines, agreed up front." },
   { title: "Partnership", description: "Engineers stay engaged through commissioning and beyond." },
 ];
 

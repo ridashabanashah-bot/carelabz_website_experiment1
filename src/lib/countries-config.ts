@@ -43,6 +43,18 @@ export interface CountryConfig {
   primaryStandard: string;          // "NOM-029-STPS-2011"
   localCodeName: string;            // "Mexican Electrical Code (NOM-001-SEDE)"
   localAuthority: string;           // "STPS"
+
+  // Optional regional extensions (currently AE-only).
+  // TODO: migrate to dedicated Strapi fields once schema admin access is available.
+  googleMapsUrl?: string;           // share link, e.g. https://maps.app.goo.gl/...
+  googleMapsEmbed?: string;         // iframe src
+  whatsappNumber?: string;          // E.164 digits-only, e.g. "971500000000"
+  socials?: {
+    linkedin?: string;
+    facebook?: string;
+    instagram?: string;
+    twitter?: string;
+  };
 }
 
 // Helper to build standard service list from slugs
@@ -1098,7 +1110,7 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     aboutPath: "/ae/about/",
     contactPath: "/ae/contact/",
     caseStudyPath: "/ae/case-studies/",
-    address: "Dubai, United Arab Emirates",
+    address: "PO Box 232126 Dubai United Arab Emirates",
     phone: "+971 4 000 0000",
     email: "info@carelabz.com",
     footerDescription:
@@ -1115,5 +1127,17 @@ export const COUNTRY_CONFIGS: Record<string, CountryConfig> = {
     primaryStandard: "DEWA",
     localCodeName: "DEWA Regulations & IEC Standards",
     localAuthority: "DEWA",
+    googleMapsUrl: "https://maps.app.goo.gl/oUpSpMHGoZb5wiBi6",
+    // Embed URL: legacy ?output=embed pattern, no API key required.
+    // Coords resolved from the share link above (Care Labs HQ, Dubai).
+    googleMapsEmbed:
+      "https://maps.google.com/maps?q=Care+Labs+Power+Systems+Engineering+%26+Consultancy&ll=25.2879068,55.4064871&z=16&output=embed",
+    whatsappNumber: "971500000000", // TODO: replace with real WhatsApp number
+    socials: {
+      linkedin: "https://ae.linkedin.com/company/carelabs",
+      facebook: "https://www.facebook.com/carelabz/",
+      instagram: "https://www.instagram.com/carelabsdxb/",
+      twitter: "https://x.com/CareLabz",
+    },
   },
 };

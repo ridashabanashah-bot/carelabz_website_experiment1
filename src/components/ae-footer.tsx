@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Linkedin, ArrowRight } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Facebook,
+  Instagram,
+  Twitter,
+  ArrowRight,
+} from "lucide-react";
 import type { CountryConfig } from "@/lib/countries-config";
 import {
   AE_CATEGORIES_ORDER,
@@ -32,15 +41,52 @@ export function AEFooter({ config }: AEFooterProps) {
             <p className="text-sm leading-relaxed text-white/60">
               {config.footerDescription}
             </p>
-            <a
-              href="https://ae.linkedin.com/company/carelabs"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Carelabs on LinkedIn"
-              className="mt-6 inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/60 transition-colors duration-300 hover:border-[#F15C30] hover:text-[#F15C30]"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
+            <div className="mt-6 flex gap-3">
+              {config.socials?.linkedin && (
+                <a
+                  href={config.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Carelabs on LinkedIn"
+                  className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/60 transition-colors duration-300 hover:border-[#F15C30] hover:text-[#F15C30]"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              )}
+              {config.socials?.facebook && (
+                <a
+                  href={config.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Carelabs on Facebook"
+                  className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/60 transition-colors duration-300 hover:border-[#F15C30] hover:text-[#F15C30]"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+              )}
+              {config.socials?.instagram && (
+                <a
+                  href={config.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Carelabs on Instagram"
+                  className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/60 transition-colors duration-300 hover:border-[#F15C30] hover:text-[#F15C30]"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+              )}
+              {config.socials?.twitter && (
+                <a
+                  href={config.socials.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Carelabs on X"
+                  className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/60 transition-colors duration-300 hover:border-[#F15C30] hover:text-[#F15C30]"
+                >
+                  <Twitter className="h-4 w-4" />
+                </a>
+              )}
+            </div>
           </div>
 
           <div>
@@ -120,9 +166,23 @@ export function AEFooter({ config }: AEFooterProps) {
                 </li>
               )}
               {config.address && (
-                <li className={`inline-flex items-start gap-2 ${linkClass}`}>
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#2575B6]" />
-                  <span>{config.address}</span>
+                <li>
+                  {config.googleMapsUrl ? (
+                    <a
+                      href={config.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-start gap-2 ${linkClass}`}
+                    >
+                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#2575B6]" />
+                      <span>{config.address}</span>
+                    </a>
+                  ) : (
+                    <span className={`inline-flex items-start gap-2 ${linkClass}`}>
+                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#2575B6]" />
+                      <span>{config.address}</span>
+                    </span>
+                  )}
                 </li>
               )}
             </ul>

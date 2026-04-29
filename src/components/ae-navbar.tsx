@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import type { CountryConfig } from "@/lib/countries-config";
+import { AEContactWidget } from "@/components/ae-contact-widget";
 
 interface AENavbarProps {
   config: CountryConfig;
@@ -29,6 +30,8 @@ export function AENavbar({ config }: AENavbarProps) {
   const iconColor = scrolled ? "text-gray-700" : "text-white";
 
   return (
+    <>
+    <AEContactWidget whatsappNumber={config.whatsappNumber} />
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
@@ -154,5 +157,6 @@ export function AENavbar({ config }: AENavbarProps) {
         </div>
       )}
     </header>
+    </>
   );
 }

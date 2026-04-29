@@ -193,6 +193,50 @@ export default async function ContactPage() {
         </div>
       </main>
 
+      {/* GOOGLE MAP */}
+      {config.googleMapsEmbed && (
+        <section className="bg-white">
+          <div className="mx-auto max-w-[1280px] px-6 py-16 lg:py-20">
+            <ScrollReveal>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#F15C30]">
+                Find Us
+              </p>
+              <h2 className="mt-3 font-display text-display-md uppercase tracking-tight text-gray-900">
+                Visit the office
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                {config.address}
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <div className="mt-8 overflow-hidden border-l-2 border-[#2575B6] shadow-sm">
+                <iframe
+                  src={config.googleMapsEmbed}
+                  title="Carelabs UAE office on Google Maps"
+                  width="100%"
+                  height="450"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="block"
+                />
+              </div>
+            </ScrollReveal>
+            {config.googleMapsUrl && (
+              <ScrollReveal delay={200}>
+                <a
+                  href={config.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#F15C30] transition-colors duration-300 hover:text-[#d44a22]"
+                >
+                  Open in Google Maps →
+                </a>
+              </ScrollReveal>
+            )}
+          </div>
+        </section>
+      )}
+
       <AEFooter config={config} />
     </>
   );
