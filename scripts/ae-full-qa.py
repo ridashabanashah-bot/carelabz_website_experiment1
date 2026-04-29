@@ -36,6 +36,10 @@ def get_all_ae_urls():
     urls.add("/ae/blog/")
     urls.add("/ae/case-studies/")
 
+    # Service category landing pages
+    for cat in ("testing", "calibration", "inspection", "study-and-analysis"):
+        urls.add(f"/ae/services/category/{cat}/")
+
     # Service pages — strip -ae suffix to match the dynamic route slug
     r = requests.get(
         f"{STRAPI_BASE}/service-pages?filters[region][$eq]={REGION}&pagination[pageSize]=100&fields[0]=slug",

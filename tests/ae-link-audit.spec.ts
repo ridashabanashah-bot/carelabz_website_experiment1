@@ -2,6 +2,9 @@ import { test, expect } from "@playwright/test";
 
 const BASE = "https://carelabz-website-experiment1-ivory.vercel.app";
 
+// Spot-check a handful of service slugs that should always resolve.
+// (Footer used to list these directly; now footer is category-only, but
+// the URLs themselves still need to work.)
 const FOOTER_LINKS = [
   "/ae/services/arc-flash-study-analysis-ae/",
   "/ae/services/short-circuit-study-analysis-ae/",
@@ -9,6 +12,13 @@ const FOOTER_LINKS = [
   "/ae/services/relay-coordination-study-and-analysis-ae/",
   "/ae/services/protection-coordination-study-ae/",
   "/ae/services/cable-testing-ae/",
+];
+
+const FOOTER_CATEGORY_LINKS = [
+  "/ae/services/category/testing/",
+  "/ae/services/category/calibration/",
+  "/ae/services/category/inspection/",
+  "/ae/services/category/study-and-analysis/",
 ];
 
 test.describe("AE Broken Link Fixes", () => {
@@ -52,10 +62,10 @@ test.describe("AE Broken Link Fixes", () => {
     expect(await page.locator('a[href*="carelabs.me"]').count()).toBe(0);
   });
 
-  test("Footer renders correct service hrefs on /ae/", async ({ page }) => {
+  test("Footer renders 4 category hrefs on /ae/", async ({ page }) => {
     await page.goto(`${BASE}/ae/`, { waitUntil: "domcontentloaded" });
     const footer = page.locator("footer");
-    for (const path of FOOTER_LINKS) {
+    for (const path of FOOTER_CATEGORY_LINKS) {
       await expect(footer.locator(`a[href="${path}"]`)).toBeVisible();
     }
   });
