@@ -17,7 +17,7 @@ import {
   CATEGORY_TAGLINES,
   groupServicesByCategory,
 } from "@/lib/ae-service-categories";
-import { cleanServiceTitle, shortServiceLabel } from "@/lib/clean-service-title";
+import { cleanServiceTitle, shortServiceLabel, cleanDisplayDescription } from "@/lib/clean-service-title";
 
 const CC = "ae";
 const config = COUNTRY_CONFIGS[CC];
@@ -146,7 +146,7 @@ export default async function ServiceCategoryPage({ params }: PageProps) {
                       </h2>
                       {s.metaDescription && (
                         <p className="mt-2 hidden max-w-2xl text-sm leading-relaxed text-gray-600 md:block">
-                          {s.metaDescription}
+                          {cleanDisplayDescription(s.metaDescription)}
                         </p>
                       )}
                     </div>

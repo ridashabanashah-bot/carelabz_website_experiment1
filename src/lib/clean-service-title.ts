@@ -113,3 +113,28 @@ export function shortServiceLabel(raw: string | null | undefined): string {
     .replace(/\s*Service$/i, "")
     .trim() || cleaned;
 }
+
+// Clean a description for visible rendering only. Strips trailing ellipsis, decodes
+// common HTML entities. Does NOT mutate the underlying Strapi field — call this where
+// the value is rendered to the page, never where it goes into <meta> or JSON-LD.
+export function cleanDisplayDescription(raw: string | null | undefined): string {
+  if (!raw) return "";
+  let t = raw.trim();
+  // Remove trailing ellipsis variants
+  t = t.replace(/\s*(?:\.{3,}|…)+\s*$/g, "");
+  // Replace mid-text ellipses with em dash for readability
+  t = t.replace(/\s*(?:\.{3,}|…)+\s*/g, " — ");
+  // Decode common entities
+  for (const [ent, rep] of [
+    ["&amp;", "&"], ["&nbsp;", " "], ["&rsquo;", "'"], ["&lsquo;", "'"],
+    ["&rdquo;", '"'], ["&ldquo;", '"'], ["&mdash;", "—"], ["&ndash;", "–"],
+    ["&#8217;", "'"], ["&#8220;", '"'], ["&#8221;", '"'],
+  ] as const) {
+    t = t.split(ent).join(rep);
+  }
+  // Collapse internal whitespace
+  t = t.replace(/\s{2,}/g, " ");
+  // If sentence ends without punctuation now, add a period
+  if (t && !/[.!?]$/.test(t)) t = t + ".";
+  return t.trim();
+}
