@@ -81,10 +81,17 @@ def crawl_paginated(start_url: str, cc: str, max_pages: int = 30) -> list[str]:
                     if clean not in visited:
                         queue.append(clean)
                     continue
-                # Depth check: only direct children of /{cc}/ (one segment)
+                # Depth check: direct children of /{cc}/, or one-level-deeper
+                # under known content prefixes (service/, services/, blog/, ...)
                 rel = clean[len(f"{WP}/{cc}/"):]
-                if rel.count("/") == 1 and len(rel) > 1:
+                seg_count = rel.count("/")
+                if seg_count == 1 and len(rel) > 1:
                     found.add(clean)
+                elif seg_count == 2:
+                    first = rel.split("/", 1)[0]
+                    if first in {"service", "services", "our-services",
+                                 "blog", "blogs", "our-blogs", "insights"}:
+                        found.add(clean)
         except Exception as e:
             print(f"  WARN crawl {url}: {e}")
         time.sleep(0.3)
