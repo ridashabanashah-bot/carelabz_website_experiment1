@@ -1,0 +1,29 @@
+
+Running 11 tests using 1 worker
+
+  [200] uk/blog/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom body=6133c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom (35.7s)
+  [200] uk/blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-uk-regulations body=5030c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: analyze-and-evaluate-the-performance-of-electric-motors-as-per-uk-regulations (33.0s)
+  [200] uk/blog/harmonic-analysis-of-the-uk-power-system body=6399c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: harmonic-analysis-of-the-uk-power-system (34.2s)
+  [200] uk/blog/how-can-the-electricity-quality-in-the-uk-be-analyzed body=6005c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: how-can-the-electricity-quality-in-the-uk-be-analyzed (33.4s)
+  [200] uk/blog/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors body=5975c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors (33.3s)
+  [200] uk/blog/load-flow-and-short-circuit-analysis-significance-for-uk-businesses body=5231c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: load-flow-and-short-circuit-analysis-significance-for-uk-businesses (33.2s)
+  [200] uk/blog/power-system-study-and-analysis body=5398c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: power-system-study-and-analysis (1.6m)
+  [200] uk/blog/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination body=8213c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination (33.5s)
+  [200] uk/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk body=6227c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk (33.8s)
+  [200] uk/blog/uk-power-quality-working-principles body=9218c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: uk-power-quality-working-principles (33.4s)
+  [200] uk/blog/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses body=5846c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — uk blog › scrape uk/blog: why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses (33.7s)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (7.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  11 passed (7.2m)
