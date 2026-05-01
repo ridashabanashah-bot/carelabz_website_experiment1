@@ -10,6 +10,7 @@ import {
   DM_Serif_Display,
   Inter,
   Anton,
+  Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
@@ -89,6 +90,13 @@ const anton = Anton({
   display: "swap",
 });
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://carelabz.com"),
   title: "Carelabs — Electrical Safety Services",
@@ -127,7 +135,7 @@ export default function RootLayout({
   return (
     <html lang="en-AE">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} ${dmSerif.variable} ${inter.variable} ${anton.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${poppins.variable} ${barlowCondensed.variable} ${playfairDisplay.variable} ${fraunces.variable} ${syne.variable} ${dmSerif.variable} ${inter.variable} ${anton.variable} ${spaceGrotesk.variable} antialiased bg-white text-gray-900`}
       >
         <a
           href="#main-content"

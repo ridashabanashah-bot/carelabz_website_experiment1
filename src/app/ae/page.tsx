@@ -169,10 +169,10 @@ export default async function HomePage() {
           <p className="animate-fade-in-up animation-delay-100 text-xs font-semibold uppercase tracking-[0.25em] text-[#F15C30]">
             {heroEyebrow}
           </p>
-          <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-display text-display-hero uppercase tracking-tight text-white">
+          <h1 className="animate-fade-in-up animation-delay-200 mt-6 font-hero text-display-hero uppercase tracking-tight text-white">
             {heroHeadline}
           </h1>
-          <p className="animate-fade-in-up animation-delay-300 mt-2 font-display text-display-hero uppercase tracking-tight text-[#F15C30]">
+          <p className="animate-fade-in-up animation-delay-300 mt-2 font-hero text-display-hero uppercase tracking-tight text-[#F15C30]">
             <RotatingWord words={HERO_ROTATING} />
           </p>
           <p className="animate-fade-in-up animation-delay-400 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/70">

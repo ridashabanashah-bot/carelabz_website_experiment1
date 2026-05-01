@@ -66,13 +66,15 @@ const config: Config = {
         "ne-accent": ["var(--font-fraunces)", "Georgia", "serif"],
         "ne-body": ["var(--font-syne)", "system-ui", "sans-serif"],
         "ne-nav": ["var(--font-syne)", "system-ui", "sans-serif"],
-        // AE v0 fonts (Anton + Inter) — replaces DM Serif Display
-        "ae-display": ["var(--font-anton)", "Anton", "sans-serif"],
-        "ae-body": ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        "ae-nav": ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        // AE v0 fonts: Space Grotesk for everything, Anton kept only for hero
+        "ae-display": ["var(--font-space-grotesk)", "Space Grotesk", "system-ui", "sans-serif"],
+        "ae-body": ["var(--font-space-grotesk)", "Space Grotesk", "system-ui", "sans-serif"],
+        "ae-nav": ["var(--font-space-grotesk)", "Space Grotesk", "system-ui", "sans-serif"],
+        // Anton is reserved for the AE hero headline + rotating word only
+        hero: ["var(--font-anton)", "Anton", "sans-serif"],
         // Generic v0 aliases
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        display: ["var(--font-anton)", "Anton", "sans-serif"],
+        sans: ["var(--font-space-grotesk)", "Space Grotesk", "system-ui", "sans-serif"],
+        display: ["var(--font-space-grotesk)", "Space Grotesk", "system-ui", "sans-serif"],
       },
       animation: {
         marquee: "marquee 30s linear infinite",
