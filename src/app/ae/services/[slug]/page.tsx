@@ -249,8 +249,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* SAFETY — 2-column with image */}
-      {(service.safetyHeading || service.safetyBody) && (
+      {/* SAFETY — 2-column with image. Hidden when there's nothing to show. */}
+      {(service.safetyBody || safetyBullets.length > 0) && (
         <section className="bg-[#094D76] px-6 py-24 lg:py-32">
           <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
             {service.safetyImage && service.safetyImage.startsWith("http") ? (
@@ -303,8 +303,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* REPORTS — 2-column with image */}
-      {(service.reportsHeading || service.reportsBody) && (
+      {/* REPORTS — 2-column with image. Hidden when there's nothing to show. */}
+      {(service.reportsBody || (service.reportsBullets && service.reportsBullets.length > 0)) && (
         <section className="bg-[#F2F2F4] px-6 py-24 lg:py-32">
           <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2">
             <div>
