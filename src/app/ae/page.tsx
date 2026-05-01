@@ -142,24 +142,6 @@ export default async function HomePage() {
 
       {/* 1 · HERO */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#094D76] px-6 pt-32 pb-24">
-        {/* Background image (Strapi-driven, swappable from CMS) */}
-        {page.heroImage && page.heroImage.startsWith("http") && (
-          <div aria-hidden className="absolute inset-0">
-            <Image
-              src={page.heroImage}
-              alt={page.heroImageAlt ?? ""}
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-          </div>
-        )}
-        {/* Dark blue overlay */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-[#094D76]/85"
-        />
         {/* Grid pattern on top */}
         <div
           aria-hidden
