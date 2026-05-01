@@ -91,16 +91,21 @@ def upload(filepath: Path) -> str | None:
         return f"[dry-run] {filepath.name}"
     ext = filepath.suffix.lower()
     mime = "image/jpeg" if ext in (".jpg", ".jpeg") else "image/png" if ext == ".png" else "image/webp"
-    with open(filepath, "rb") as f:
-        files = {"files": (filepath.name, f, mime)}
-        r = requests.post(f"{STRAPI}/api/upload", headers=H, files=files, timeout=60)
-    if r.status_code in (200, 201):
-        data = r.json()
-        if isinstance(data, list) and data:
-            url = data[0].get("url", "")
-            if url.startswith("/"):
-                url = f"{STRAPI}{url}"
-            return url
+    for attempt in range(3):
+        try:
+            with open(filepath, "rb") as f:
+                files = {"files": (filepath.name, f, mime)}
+                r = requests.post(f"{STRAPI}/api/upload", headers=H, files=files, timeout=180)
+            if r.status_code in (200, 201):
+                data = r.json()
+                if isinstance(data, list) and data:
+                    url = data[0].get("url", "")
+                    if url.startswith("/"):
+                        url = f"{STRAPI}{url}"
+                    return url
+            return None
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+            time.sleep(3 + attempt * 4)
     return None
 
 

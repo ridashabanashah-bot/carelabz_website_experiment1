@@ -40,11 +40,27 @@ def endpoint(kind: str) -> str:
     return "blog-posts" if kind == "blog" else "service-pages"
 
 
+def _retry_request(method: str, url: str, **kw):
+    """Wrap requests with 3 retries on connection/timeout errors."""
+    last = None
+    for attempt in range(3):
+        try:
+            r = requests.request(method, url, **kw)
+            return r, None
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            last = e
+            time.sleep(2 + attempt * 3)
+    return None, last
+
+
 def fetch_existing(kind: str, slug: str, cc: str) -> dict | None:
-    r = requests.get(
+    r, err = _retry_request(
+        "GET",
         f"{STRAPI}/{endpoint(kind)}?filters[slug][$eq]={slug}&filters[region][$eq]={cc}&publicationState=preview",
-        headers=H, timeout=15,
+        headers=H, timeout=60,
     )
+    if r is None:
+        return None
     data = r.json().get("data", [])
     return data[0] if data else None
 
@@ -52,7 +68,9 @@ def fetch_existing(kind: str, slug: str, cc: str) -> dict | None:
 def post_new(kind: str, payload: dict) -> tuple[bool, str]:
     if DRY_RUN:
         return True, "dry-run"
-    r = requests.post(f"{STRAPI}/{endpoint(kind)}", headers=HP, json=payload, timeout=30)
+    r, err = _retry_request("POST", f"{STRAPI}/{endpoint(kind)}", headers=HP, json=payload, timeout=120)
+    if r is None:
+        return False, f"network: {err}"
     if r.status_code in (200, 201):
         try:
             return True, r.json()["data"]["documentId"]
@@ -64,7 +82,10 @@ def post_new(kind: str, payload: dict) -> tuple[bool, str]:
 def put_update(kind: str, doc_id: str, data: dict) -> tuple[bool, str]:
     if DRY_RUN:
         return True, f"dry-run keys={list(data.keys())}"
-    r = requests.put(f"{STRAPI}/{endpoint(kind)}/{doc_id}", headers=HP, json={"data": data}, timeout=30)
+    r, err = _retry_request("PUT", f"{STRAPI}/{endpoint(kind)}/{doc_id}",
+                            headers=HP, json={"data": data}, timeout=120)
+    if r is None:
+        return False, f"network: {err}"
     if r.status_code in (200, 201):
         return True, "OK"
     return False, f"{r.status_code}: {r.text[:240]}"
@@ -73,13 +94,15 @@ def put_update(kind: str, doc_id: str, data: dict) -> tuple[bool, str]:
 def publish(kind: str, doc_id: str) -> bool:
     if DRY_RUN:
         return True
-    r = requests.post(f"{STRAPI}/{endpoint(kind)}/{doc_id}/actions/publish", headers=HP, timeout=30)
-    if r.status_code in (200, 201):
+    r, err = _retry_request("POST", f"{STRAPI}/{endpoint(kind)}/{doc_id}/actions/publish",
+                            headers=HP, timeout=60)
+    if r is not None and r.status_code in (200, 201):
         return True
     from datetime import datetime, timezone
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    r2 = requests.put(f"{STRAPI}/{endpoint(kind)}/{doc_id}", headers=HP, json={"data": {"publishedAt": now}}, timeout=30)
-    return r2.status_code in (200, 201)
+    r2, _ = _retry_request("PUT", f"{STRAPI}/{endpoint(kind)}/{doc_id}",
+                           headers=HP, json={"data": {"publishedAt": now}}, timeout=60)
+    return r2 is not None and r2.status_code in (200, 201)
 
 
 def main():
