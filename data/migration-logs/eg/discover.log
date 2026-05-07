@@ -1,0 +1,9 @@
+Country: eg
+  Blog:    /eg/blogs/
+  Service: /eg/services/
+
+Crawling blog index...
+  Blog posts found: 22
+
+Crawling services index...
+  Service pages found: 5

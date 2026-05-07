@@ -1,0 +1,9 @@
+  SKIP  examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations-nl (3150c vs 3726c)
+  ENR   load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-nl (4003c -> 6566c)
+  SKIP  the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses-nl (2545c vs 3243c)
+
+=== DONE nl/blog ===
+Created:  0
+Enriched: 1
+Skipped:  2
+Failed:   0

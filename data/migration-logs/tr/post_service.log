@@ -1,0 +1,11 @@
+  ENR   arc-flash-study-tr (242c -> 4865c)
+  NEW   harmonic-study-analysis-tr (published)
+  ENR   motor-start-analysis-tr (242c -> 4497c)
+  ENR   power-quality-analysis-tr (242c -> 4204c)
+  NEW   power-system-study-analysis-tr (published)
+
+=== DONE tr/service ===
+Created:  2
+Enriched: 3
+Skipped:  0
+Failed:   0

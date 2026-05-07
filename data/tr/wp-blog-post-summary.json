@@ -1,0 +1,25 @@
+{
+  "created": [
+    "complete-instructions-for-arc-flash-analysis-in-saudi-arabia-tr",
+    "harmonics-analysis-of-the-saudi-arabian-electric-power-system-tr",
+    "how-significant-is-harmonic-analysis-in-saudi-arabian-businesses-tr",
+    "principles-of-work-on-saudi-arabia-power-quality-tr",
+    "verify-saudi-arabian-electrical-motor-performance-regulations-compliance-tr",
+    "why-does-saudi-arabian-business-need-short-circuit-and-load-flow-analysis-tr"
+  ],
+  "updated": [
+    "analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow-tr",
+    "how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated-tr"
+  ],
+  "skipped": [
+    [
+      "arc-flash-risk-must-be-assessed-and-decreased-right-away-tr",
+      "existing 3614c >= new 4398c"
+    ],
+    [
+      "how-to-analyze-saudi-arabian-power-quality-tr",
+      "existing 2877c >= new 3128c"
+    ]
+  ],
+  "failed": []
+}

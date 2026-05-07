@@ -1,0 +1,10 @@
+Fetching existing Strapi media (prefix 'eg-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/eg_service_arc_flash_study_8fc9bcc7ea.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/eg_service_harmonic_study_analysis_f6f5c19147.png
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/eg_service_motor_start_analysis_d47f1ef001.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/eg_service_power_quality_analysis_735f5ea548.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/eg_service_power_system_study_analysis_2a12714f4e.png
+
+Uploaded/reused: 5, skipped: 0, failed: 0

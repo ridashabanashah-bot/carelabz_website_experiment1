@@ -17,7 +17,7 @@
       "label": "IEEE 1584"
     },
     {
-      "label": "SEC (Superintendencia de Electricidad y Combustibles) Compliant"
+      "label": "SEC Compliant"
     },
     {
       "label": "NSEG 5 En. 71 Standards"
@@ -130,12 +130,12 @@
       "description": "Key changes in the latest arc flash calculation standard and what they mean for your facility."
     },
     {
-      "alt": "SEC (Superintendencia de Electricidad y Combustibles) electrical safety compliance",
+      "alt": "SEC electrical safety compliance",
       "href": "/cl/importance-of-electrical-safety-inspection-usa/",
       "image": "/images/insights/dewa-requirements-for-arc-f.jpg",
-      "title": "SEC (Superintendencia de Electricidad y Combustibles) Electrical Safety Requirements",
+      "title": "SEC Electrical Safety Requirements",
       "category": "Compliance",
-      "description": "How SEC (Superintendencia de Electricidad y Combustibles) requirements impact your facility's electrical safety program."
+      "description": "How SEC requirements impact your facility's electrical safety program."
     },
     {
       "alt": "Incident energy reduction strategies",
@@ -175,7 +175,7 @@
   "faqsHeading": "Customer Queries",
   "faqs": [
     {
-      "answer": "Power system consulting involves expert analysis and optimization of electrical power systems to ensure safety, reliability, and compliance with industry standards like SEC (Superintendencia de Electricidad y Combustibles), NCh Elec. 4/2003, and IEEE 1584.",
+      "answer": "Power system consulting involves expert analysis and optimization of electrical power systems to ensure safety, reliability, and compliance with industry standards like SEC, NCh Elec. 4/2003, and IEEE 1584.",
       "question": "What is power system consulting?"
     },
     {

@@ -1,0 +1,17 @@
+
+Running 5 tests using 1 worker
+
+  [200] ca/blog/cost-effective-arc-flash-study-in-canada body=4518c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ca blog › scrape ca/blog: cost-effective-arc-flash-study-in-canada (1.0m)
+  [200] ca/blog/empowering-microgrids-in-canada-the-role-of-relay-coordination-study body=6573c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ca blog › scrape ca/blog: empowering-microgrids-in-canada-the-role-of-relay-coordination-study (1.0m)
+  [200] ca/blog/safe-and-sustainable-hydropower-in-canada body=7874c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ca blog › scrape ca/blog: safe-and-sustainable-hydropower-in-canada (1.0m)
+  [200] ca/blog/the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada body=6820c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ca blog › scrape ca/blog: the-importance-of-load-flow-analysis-to-enhance-grid-resilience-in-canada (1.0m)
+  [200] ca/blog/the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety body=7175c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ca blog › scrape ca/blog: the-role-of-short-circuit-analysis-in-enhancing-workplace-electrical-safety (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (5.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  5 passed (5.2m)

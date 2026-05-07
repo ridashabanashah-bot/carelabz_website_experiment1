@@ -1,0 +1,16 @@
+{
+  "created": [
+    "arc-flash-study-ro",
+    "motor-start-analysis-ro",
+    "power-quality-analysis-ro"
+  ],
+  "updated": [
+    "harmonic-study-analysis-ro",
+    "how-are-the-dependability-and-performance-of-commercial-motors-assessed-ro",
+    "power-system-study-analysis-ro",
+    "romanian-guidelines-for-testing-and-verifying-electrical-motor-efficiency-ro",
+    "the-importance-of-load-flow-and-short-circuit-analysis-to-a-romanian-business-ro"
+  ],
+  "skipped": [],
+  "failed": []
+}

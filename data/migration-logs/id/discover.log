@@ -1,0 +1,9 @@
+Country: id
+  Blog:    /id/our-blogs/
+  Service: /id/our-services/
+
+Crawling blog index...
+  Blog posts found: 9
+
+Crawling services index...
+  Service pages found: 5

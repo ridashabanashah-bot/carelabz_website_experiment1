@@ -1,0 +1,135 @@
+============================================================
+UPLOADING TO STRAPI — UAE (ae) REGION
+============================================================
+
+[HOMEPAGE]
+  [OK]  home-pages      homepage
+
+[ABOUT PAGE]
+  [OK]  about-pages     about
+
+[CONTACT PAGE]
+  [OK]  contact-pages   contact
+
+[SERVICE PAGES]
+  [OK]  service-pages   arc-flash-study-analysis-ae
+  [skip] service-pages exists: arc-flash-study-ae
+  [OK]  service-pages   automatic-transfer-switch-testing-service-ae
+  [OK]  service-pages   bain-marie-calibration-ae
+  [OK]  service-pages   battery-testing-services-dubai-uae-ae
+  [OK]  service-pages   biomedical-equipment-safety-inspection-services-ae
+  [OK]  service-pages   biomedical-equipment-safety-testing-services-ae
+  [OK]  service-pages   blast-chiller-calibration-ae
+  [OK]  service-pages   blast-freezer-calibration-ae
+  [OK]  service-pages   building-envelope-infrared-thermography-inspection-service-ae
+  [OK]  service-pages   cable-testing-ae
+  [OK]  service-pages   calibrator-calibration-ae
+  [OK]  service-pages   capacitor-bank-test-ae
+  [OK]  service-pages   chiller-calibration-ae
+  [OK]  service-pages   circuit-breaker-testing-ae
+  [OK]  service-pages   commercial-electrical-inspection-services-dubai-uae-ae
+  [OK]  service-pages   commercial-electrical-testing-ae
+  [OK]  service-pages   contact-resistance-testing-service-ae
+  [OK]  service-pages   continuity-testing-ae
+  [OK]  service-pages   digital-thermometer-calibration-ae
+  [OK]  service-pages   earth-fault-loop-impedence-test-ae
+  [OK]  service-pages   earth-ground-testing-service-ae
+  [OK]  service-pages   electric-motor-testing-ae
+  [OK]  service-pages   electric-switchgear-testing-services-ae
+  [OK]  service-pages   electrical-calibration-ae
+  [OK]  service-pages   electrical-compliance-inspection-ae
+  [OK]  service-pages   electrical-installations-certification-service-ae
+  [OK]  service-pages   electrical-safety-audit-service-ae
+  [OK]  service-pages   electrical-safety-auditing-inspection-service-ae
+  [OK]  service-pages   electrical-safety-testing-ae
+  [OK]  service-pages   electrical-switchgear-risk-assessment-study-hazard-analysis-service-ae
+  [OK]  service-pages   electrical-switchgear-safety-inspection-services-ae
+  [OK]  service-pages   electrical-thermography-inspection-ae
+  [OK]  service-pages   energy-auditing-service-ae
+  [OK]  service-pages   factory-acceptance-testing-services-ae
+  [OK]  service-pages   fixed-electrical-testing-ae
+  [OK]  service-pages   fixed-wire-testing-ae
+  [OK]  service-pages   frequency-stability-analysis-ae
+  [OK]  service-pages   generator-load-bank-testing-ae
+  [OK]  service-pages   gfci-standard-inspection-service-ae
+  [OK]  service-pages   ground-fault-testing-ae
+  [OK]  service-pages   grounding-grid-study-analysis-ae
+  [OK]  service-pages   grounding-system-design-and-planning-ae
+  [OK]  service-pages   harmonic-study-analysis-ae
+  [OK]  service-pages   insulation-resistance-test-service-ae
+  [OK]  service-pages   leakage-current-measurement-ae
+  [OK]  service-pages   lightning-arrester-testing-service-ae
+  [OK]  service-pages   lightning-arrester-testing-ae
+  [OK]  service-pages   live-testing-ae
+  [OK]  service-pages   load-flow-analysis-ae
+  [OK]  service-pages   mcc-panel-operation-testing-ae
+  [OK]  service-pages   megger-test-ae
+  [OK]  service-pages   motor-acceleration-study-analysis-ae
+  [OK]  service-pages   pfc-psc-test-ae
+  [OK]  service-pages   polarity-test-service-ae
+  [OK]  service-pages   portable-appliance-testing-dubai-uae-ae
+  [OK]  service-pages   power-quality-study-analysis-ae
+  [OK]  service-pages   power-restoration-optimization-ae
+  [OK]  service-pages   power-system-study-analysis-ae
+  [OK]  service-pages   primary-current-injection-test-ae
+  [OK]  service-pages   prospective-short-circuit-test-prospective-fault-current-test-ae
+  [OK]  service-pages   protection-relay-testing-services-ae
+  [OK]  service-pages   protective-devices-testing-services-ae
+  [OK]  service-pages   relay-coordination-study-and-analysis-ae
+  [OK]  service-pages   residual-current-device-testing-safety-2-ae
+  [OK]  service-pages   residual-current-device-testing-safety-ae
+  [OK]  service-pages   secondary-current-injection-test-ae
+  [OK]  service-pages   short-circuit-study-analysis-ae
+  [OK]  service-pages   soil-resistivity-test-ae
+  [OK]  service-pages   third-party-electrical-certification-ae
+  [OK]  service-pages   third-party-electrical-inspection-company-uae-ae
+  [OK]  service-pages   third-party-inspection-electrical-installation-ae
+  [OK]  service-pages   torque-test-ae
+  [OK]  service-pages   unbalanced-load-flow-study-analysis-ae
+  [OK]  service-pages   vibration-study-and-analysis-ae
+  [OK]  service-pages   voltage-drop-study-analysis-ae
+  [OK]  service-pages   voltage-imbalance-study-ae
+
+[BLOG POSTS]
+  [OK]  blog-posts      about-earth-fault-loop-impedence-test-ae
+  [OK]  blog-posts      electrical-infrared-thermography-inspection-important-ae
+  [OK]  blog-posts      electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc-ae
+  [OK]  blog-posts      how-what-why-generator-load-bank-testing-done-ae
+  [OK]  blog-posts      learn-about-residual-current-device-testing-safety-ae
+  [OK]  blog-posts      learn-continuity-testing-what-how-ae
+  [OK]  blog-posts      learn-how-insulation-resistance-test-done-ae
+  [OK]  blog-posts      learn-what-is-earth-ground-test-why-and-how-is-it-done-ae
+  [OK]  blog-posts      megger-test-performed-ae
+  [OK]  blog-posts      need-conduct-electrical-safety-testing-ae
+  [OK]  blog-posts      protecting-electrical-systems-ae
+  [OK]  blog-posts      purpose-lightning-arrester-testing-necessary-ae
+  [OK]  blog-posts      thermography-test-of-electrical-panels-ae
+  [OK]  blog-posts      thermography-testing-of-electrical-equipment-ae
+  [OK]  blog-posts      what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done-ae
+  [OK]  blog-posts      what-cable-testing-how-cable-testing-done-ae
+  [OK]  blog-posts      what-capacitor-bank-testing-why-capacitor-bank-testing-done-ae
+  [OK]  blog-posts      what-circuit-breaker-testing-how-circuit-breaker-testing-done-ae
+  [OK]  blog-posts      what-contact-resistance-test-why-contact-resistance-testing-done-ae
+  [OK]  blog-posts      what-earth-grounding-ae
+  [OK]  blog-posts      what-factory-acceptance-testing-how-fat-done-ae
+  [OK]  blog-posts      what-ground-fault-testing-why-ground-fault-testing-important-ae
+  [OK]  blog-posts      what-how-grounding-design-planning-ae
+  [OK]  blog-posts      what-how-harmonic-study-analysis-done-ae
+  [OK]  blog-posts      what-is-electric-motor-testing-and-why-is-it-done-ae
+  [OK]  blog-posts      what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done-ae
+  [OK]  blog-posts      what-is-torque-testing-how-is-torque-testing-done-ae
+  [OK]  blog-posts      what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done-ae
+  [OK]  blog-posts      what-motor-acceleration-study-analysis-ae
+  [OK]  blog-posts      what-pat-test-why-pat-test-done-ae
+  [OK]  blog-posts      what-polarity-test-why-conduct-polarity-test-ae
+  [OK]  blog-posts      what-protective-device-testing-how-done-ae
+  [OK]  blog-posts      what-short-circuit-analysis-done-why-ae
+  [OK]  blog-posts      what-voltage-drop-study-analysis-ae
+  [OK]  blog-posts      what-why-load-flow-analysis-power-flow-analysis-done-ae
+  [OK]  blog-posts      what-you-need-to-know-about-arc-flash-hazard-study-and-analysis-ae
+  [OK]  blog-posts      what-you-need-to-know-about-arc-flash-ae
+  [OK]  blog-posts      why-how-what-automatic-transfer-switch-testing-done-ae
+
+============================================================
+MIGRATION COMPLETE
+============================================================

@@ -1,0 +1,10 @@
+Fetching existing Strapi media (prefix 'gr-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-ineece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/gr_service_arc_flash_study_ineece_2674105cb0.jpg
+  OK    harmonic-study-and-analysis-ineece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/gr_service_harmonic_study_and_analysis_ineece_a428bae6d8.jpg
+  OK    motor-start-analysis-ineece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/gr_service_motor_start_analysis_ineece_7453c84eec.jpg
+  OK    power-quality-analysis-ineece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/gr_service_power_quality_analysis_ineece_346379a2e7.jpg
+  OK    power-system-study-and-analysis-ineece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/gr_service_power_system_study_and_analysis_ineece_605bcce1bc.jpg
+
+Uploaded/reused: 5, skipped: 0, failed: 0

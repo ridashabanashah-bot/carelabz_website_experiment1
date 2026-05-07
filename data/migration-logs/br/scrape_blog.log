@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] br/blog/arc-flash-analysis-in-brazil-a-detailed-guide body=5488c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: arc-flash-analysis-in-brazil-a-detailed-guide (1.1m)
+  [200] br/blog/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial body=5405c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial (1.0m)
+  [200] br/blog/examine-and-confirm-electrical-motor-performance-in-compliance-with-brazilian-regulations body=4778c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: examine-and-confirm-electrical-motor-performance-in-compliance-with-brazilian-regulations (1.0m)
+  [200] br/blog/harmonic-analysis-of-the-brazil-power-system body=5827c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: harmonic-analysis-of-the-brazil-power-system (1.0m)
+  [200] br/blog/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated body=5588c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated (1.1m)
+  [200] br/blog/how-to-perform-a-power-quality-analysis-in-brazil body=5452c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: how-to-perform-a-power-quality-analysis-in-brazil (1.0m)
+  [200] br/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7699c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.0m)
+  [200] br/blog/principles-of-power-quality-work-in-brazil body=8592c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: principles-of-power-quality-work-in-brazil (1.0m)
+  [200] br/blog/why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil body=5246c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: why-are-harmonic-analysis-and-study-important-for-businesses-in-brazil (1.0m)
+  [200] br/blog/why-load-flow-and-short-circuit-analysis-important-for-brazilian-business body=4620c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — br blog › scrape br/blog: why-load-flow-and-short-circuit-analysis-important-for-brazilian-business (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (10.5m)

@@ -1,0 +1,820 @@
+Loaded 134 issues from QA report
+
+
+============================================================
+Page: /ae/about/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/about-earth-fault-loop-impedence-test/ (6 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/j3hsa35ypv3yu9ukoo2wef2d
+
+============================================================
+Page: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ (1 issues)
+============================================================
+  Issue types: {'CLOUDFLARE_ARTIFACT'}
+  Fixes (3):
+    - excerpt: Cleaned ellipses
+    - metaTitle: Cleaned ellipses
+    - metaDescription: Cleaned ellipses
+    OK PUT blog-posts/soc60yllqvl27b5hw7peh0ej
+
+============================================================
+Page: /ae/blog/learn-about-residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/cpulybr2m08abxq836s70kig
+
+============================================================
+Page: /ae/blog/learn-continuity-testing-what-how/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/pl2897npin4d1bg2f37fboza
+
+============================================================
+Page: /ae/blog/learn-how-insulation-resistance-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/qz1pjsol2hlfh9etqfmpgqow
+
+============================================================
+Page: /ae/blog/megger-test-performed/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/need-conduct-electrical-safety-testing/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/em9nav0jgo01v3kr76vvk8yb
+
+============================================================
+Page: /ae/blog/purpose-lightning-arrester-testing-necessary/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/yrntfon5frula86tuec84kkq
+
+============================================================
+Page: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/mlfsztu5g3t1nepqhdqoxyvf
+
+============================================================
+Page: /ae/blog/what-cable-testing-how-cable-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/crxwiq0a7psbtbjlilzvbs00
+
+============================================================
+Page: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/dmxr3ac1zraoa5dhh0xb1sbu
+
+============================================================
+Page: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/bfyd0rb8t6f09z6fzp7lnhtu
+
+============================================================
+Page: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/hqqr6q1cukrph64ecqzl0l9j
+
+============================================================
+Page: /ae/blog/what-factory-acceptance-testing-how-fat-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (5):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/gsm1t31igatkccrglzuhg76i
+
+============================================================
+Page: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/awmoaz15qh4df4yffxlca6yy
+
+============================================================
+Page: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/ovj901qs2r2ixbtyerx2uk5i
+
+============================================================
+Page: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/xhpncw3paxjmxe3sb8vc3nb6
+
+============================================================
+Page: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/ekxjv107m1dfsibgjct5ul0a
+
+============================================================
+Page: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/cskmea0vo02xhwoxewcutyg4
+
+============================================================
+Page: /ae/blog/what-pat-test-why-pat-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/j4547yd5o8egj8m07a5ac920
+
+============================================================
+Page: /ae/blog/what-polarity-test-why-conduct-polarity-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/rlvpxu9vhs4wbx4qfsoyzojw
+
+============================================================
+Page: /ae/blog/what-protective-device-testing-how-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/i9wykhre3pdfs8gla3l52035
+
+============================================================
+Page: /ae/blog/what-short-circuit-analysis-done-why/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/cpayzse3crp1myr7pgq4cr1p
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/nqo7cvm9qx32ofyv3ugprdoq
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT blog-posts/gewua6zf6etijbecvhimrbto
+
+============================================================
+Page: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT blog-posts/b5puxlk5b8ysaqpjbe4zm906
+
+============================================================
+Page: /ae/contact/ (4 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/ (9 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT home-pages/kmqlh4ngf6hli6akrdiaoe50
+
+============================================================
+Page: /ae/services/arc-flash-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (5):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/xjjuolekebbrpszj3bxz4mtm
+
+============================================================
+Page: /ae/services/automatic-transfer-switch-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/g03j86j9l334fb1x1ymvt0m4
+
+============================================================
+Page: /ae/services/battery-testing-services-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/tfw25gj2sl7jqmpygwhgudvs
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/lzaw1yplaf14johh3n6yrhva
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/kd00qtyi4gavbucefyyqz56y
+
+============================================================
+Page: /ae/services/building-envelope-infrared-thermography-inspection-service/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/xq5gk19tdtmztv8gihdxeowh
+
+============================================================
+Page: /ae/services/cable-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/h5isrsm8v61twcwb5pzwej0k
+
+============================================================
+Page: /ae/services/capacitor-bank-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/optwsjpfdn85qyn5d04akdlj
+
+============================================================
+Page: /ae/services/chiller-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/circuit-breaker-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/x00ia3jphtpaauihjji2ocxx
+
+============================================================
+Page: /ae/services/commercial-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/ikgwvnqbyh2r9lu6dntxzkk8
+
+============================================================
+Page: /ae/services/contact-resistance-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/qro0ysrnb6lev9biegjdejry
+
+============================================================
+Page: /ae/services/continuity-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/digital-thermometer-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - metaDescription: Cleaned ellipses
+    OK PUT service-pages/tupms6cry8m8fkaldv22rt69
+
+============================================================
+Page: /ae/services/earth-fault-loop-impedence-test/ (5 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/earth-ground-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/d5ik2qcok803j97se3fb215c
+
+============================================================
+Page: /ae/services/electric-motor-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/npjnh7xicgiobtx4xiuhd99q
+
+============================================================
+Page: /ae/services/electric-switchgear-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/ueertxdywi7jocopttv6yt58
+
+============================================================
+Page: /ae/services/electrical-calibration/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/qkssag48siyaedlhobs0wzqo
+
+============================================================
+Page: /ae/services/electrical-compliance-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/km6yd22318ss5nwj0mbcwlh8
+
+============================================================
+Page: /ae/services/electrical-installations-certification-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/dzn3gdgu71umz1lej0jkyblr
+
+============================================================
+Page: /ae/services/electrical-safety-audit-service/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/uvq7td170pr9zb6dqyhfhk96
+
+============================================================
+Page: /ae/services/electrical-safety-auditing-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-safety-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/mx6rh9s95h3qgi6znctcxj1k
+
+============================================================
+Page: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/ay4vve7chsv5jjom2ytwmnmz
+
+============================================================
+Page: /ae/services/electrical-switchgear-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/i9ot846cov0zaycy7z0uv3mb
+
+============================================================
+Page: /ae/services/electrical-thermography-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/xhtx7g0bkmogu8vmyy37iid6
+
+============================================================
+Page: /ae/services/factory-acceptance-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/hrafbnmzyztacp8us6u3ord1
+
+============================================================
+Page: /ae/services/fixed-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/ws9l8ia4unnlo7cpnxbw82lx
+
+============================================================
+Page: /ae/services/fixed-wire-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/lcza2wlwpz8tgf9c0cdofybn
+
+============================================================
+Page: /ae/services/frequency-stability-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/vw7pkg1ka07hljxq8aaulctm
+
+============================================================
+Page: /ae/services/generator-load-bank-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/gfci-standard-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/p157paijpg87ic3x3fgi7er1
+
+============================================================
+Page: /ae/services/ground-fault-testing/ (4 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/jfnx1nvvseayl87gs9xpsins
+
+============================================================
+Page: /ae/services/grounding-grid-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/xg1wr5b3uwjiardn5lvnih2x
+
+============================================================
+Page: /ae/services/grounding-system-design-and-planning/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/yeiwmva19vghcy6e7e9cboqr
+
+============================================================
+Page: /ae/services/harmonic-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/z7p7de9bl71mfgteq8pwlalw
+
+============================================================
+Page: /ae/services/insulation-resistance-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/leakage-current-measurement/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/p4jvwhwkz8fbcdy5d1jls1ej
+
+============================================================
+Page: /ae/services/lightning-arrester-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/nlyoy6rld500i6qe4p7s7s6j
+
+============================================================
+Page: /ae/services/lightning-arrester-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/live-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/load-flow-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/srn95smhcnnzrz5ulf50936q
+
+============================================================
+Page: /ae/services/mcc-panel-operation-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/pc79nax86xpw7eml1yzg2ewd
+
+============================================================
+Page: /ae/services/megger-test/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/motor-acceleration-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (4):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/mr4agrm6kk9zh8nfjtqn8dst
+
+============================================================
+Page: /ae/services/pfc-psc-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/polarity-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/portable-appliance-testing-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (2):
+    - body: Cleaned ellipses
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/rpf70ax3oh0x474e0gdo24bo
+
+============================================================
+Page: /ae/services/power-quality-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/pdhq37icxjjfnbzzgfg63qvv
+
+============================================================
+Page: /ae/services/power-system-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/primary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/qhpu53ye44npav7y1qeeqsi7
+
+============================================================
+Page: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/onw6092tk8x5kyfkl6ouj155
+
+============================================================
+Page: /ae/services/protection-relay-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/qfcekhejq9lavmfr996lryeh
+
+============================================================
+Page: /ae/services/relay-coordination-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/fz025dy4msnj9xdrefgl89gr
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety-2/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/secondary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/ncafvp1ktjmtal49oohzciev
+
+============================================================
+Page: /ae/services/short-circuit-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-certification/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-inspection-company-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/lwolrilkexu9zdkw2nhmz0a8
+
+============================================================
+Page: /ae/services/third-party-inspection-electrical-installation/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/ok9f1bkmmzqr03nxo2c0wgvf
+
+============================================================
+Page: /ae/services/torque-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/unbalanced-load-flow-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - metaTitle: Cleaned ellipses
+    OK PUT service-pages/qz7m8boghziy65t5n61hsqfk
+
+============================================================
+Page: /ae/services/vibration-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/voltage-drop-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  Fixes (3):
+    - metaTitle: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/mlobailiz0hho205sajbq2uv
+
+============================================================
+Page: /ae/services/voltage-imbalance-study/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    - faqs[].answer: Cleaned ellipses
+    OK PUT service-pages/mrvbyqn7l4r03r73evukwanv
+
+============================================================
+DONE — fixes applied: 158, skipped: 32

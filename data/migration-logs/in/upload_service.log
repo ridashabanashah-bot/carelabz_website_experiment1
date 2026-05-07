@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'in-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-studydia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/in_service_arc_flash_studydia_77139834f2.png
+  OK    load-flow-analysisdia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/in_service_load_flow_analysisdia_22048b1719.png
+  OK    relay-coordination-studydia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/in_service_relay_coordination_studydia_9e25fe50c4.png
+  OK    short-circuit-analysisdia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/in_service_short_circuit_analysisdia_192620cdd6.png
+
+Uploaded/reused: 4, skipped: 0, failed: 0

@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] es/service/arc-flash-study-in-greece body=774c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: arc-flash-study-in-greece (2.0m)
+  [200] es/service/arc-flash-study-in-spain body=774c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: arc-flash-study-in-spain (1.7m)
+  [200] es/service/harmonic-study-analysis-in-spain body=771c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: harmonic-study-analysis-in-spain (1.6m)
+  [200] es/service/harmonic-study-and-analysis-in-greece body=771c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: harmonic-study-and-analysis-in-greece (1.6m)
+  [200] es/service/motor-start-analysis-in-greece body=766c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: motor-start-analysis-in-greece (1.6m)
+  [200] es/service/motor-start-analysis-in-spain body=766c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: motor-start-analysis-in-spain (1.6m)
+  [200] es/service/power-quality-analysis-in-greece body=768c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: power-quality-analysis-in-greece (1.7m)
+  [200] es/service/power-quality-analysis-in-spain body=768c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: power-quality-analysis-in-spain (1.8m)
+  [200] es/service/power-system-study-analysis-in-spain body=775c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: power-system-study-analysis-in-spain (1.7m)
+  [200] es/service/power-system-study-and-analysis-in-greece body=775c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es service › scrape es/service: power-system-study-and-analysis-in-greece (1.6m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (17.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (17.1m)

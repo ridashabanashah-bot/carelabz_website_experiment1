@@ -1,0 +1,11 @@
+Fetching existing Strapi media (prefix 'ro-service-')...
+  0 matching files in Strapi
+
+  OK    404-2 -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_404_2_79fe72e265.png
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_arc_flash_study_1504ffb0a4.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_harmonic_study_analysis_acf553b785.png
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_motor_start_analysis_bae6a50f46.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_power_quality_analysis_65b5cc85d8.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ro_service_power_system_study_analysis_2b70a596b4.png
+
+Uploaded/reused: 6, skipped: 0, failed: 0

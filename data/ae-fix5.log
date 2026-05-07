@@ -1,0 +1,591 @@
+Loaded 134 issues from QA report
+
+
+============================================================
+Page: /ae/about/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/about-earth-fault-loop-impedence-test/ (6 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ (1 issues)
+============================================================
+  Issue types: {'CLOUDFLARE_ARTIFACT'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-about-residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-continuity-testing-what-how/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-how-insulation-resistance-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Stripped ** from table rows
+    OK PUT blog-posts/uyvpoj75cm8q6ntvql3wi7lm
+
+============================================================
+Page: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/megger-test-performed/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/need-conduct-electrical-safety-testing/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/purpose-lightning-arrester-testing-necessary/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-cable-testing-how-cable-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-factory-acceptance-testing-how-fat-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Stripped ** from table rows
+    OK PUT blog-posts/xhpncw3paxjmxe3sb8vc3nb6
+
+============================================================
+Page: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-pat-test-why-pat-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-polarity-test-why-conduct-polarity-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-protective-device-testing-how-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-short-circuit-analysis-done-why/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/contact/ (4 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/ (9 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/arc-flash-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/automatic-transfer-switch-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/battery-testing-services-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/building-envelope-infrared-thermography-inspection-service/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/cable-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/capacitor-bank-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/chiller-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/circuit-breaker-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/commercial-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/contact-resistance-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/continuity-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/digital-thermometer-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/earth-fault-loop-impedence-test/ (5 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/earth-ground-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electric-motor-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electric-switchgear-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-calibration/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-compliance-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-installations-certification-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-safety-audit-service/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-safety-auditing-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-safety-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-switchgear-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-thermography-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/factory-acceptance-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/fixed-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/fixed-wire-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/frequency-stability-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/generator-load-bank-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/gfci-standard-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/ground-fault-testing/ (4 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/grounding-grid-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/grounding-system-design-and-planning/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/harmonic-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/insulation-resistance-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/leakage-current-measurement/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/lightning-arrester-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/lightning-arrester-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/live-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/load-flow-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/mcc-panel-operation-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/megger-test/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/motor-acceleration-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/pfc-psc-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/polarity-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/portable-appliance-testing-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/power-quality-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/power-system-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/primary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ (2 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/protection-relay-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/relay-coordination-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety-2/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/secondary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/short-circuit-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-certification/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-inspection-company-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-inspection-electrical-installation/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/torque-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/unbalanced-load-flow-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/vibration-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/voltage-drop-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ELLIPSIS', 'ASTERISK'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/voltage-imbalance-study/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+DONE — fixes applied: 2, skipped: 132

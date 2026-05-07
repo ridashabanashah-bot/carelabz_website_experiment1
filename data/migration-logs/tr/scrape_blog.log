@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] tr/blog/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow body=7211c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow (1.1m)
+  [200] tr/blog/arc-flash-risk-must-be-assessed-and-decreased-right-away body=4859c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: arc-flash-risk-must-be-assessed-and-decreased-right-away (1.0m)
+  [200] tr/blog/complete-instructions-for-arc-flash-analysis-in-saudi-arabia body=5272c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: complete-instructions-for-arc-flash-analysis-in-saudi-arabia (1.1m)
+  [200] tr/blog/harmonics-analysis-of-the-saudi-arabian-electric-power-system body=4169c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: harmonics-analysis-of-the-saudi-arabian-electric-power-system (1.1m)
+  [200] tr/blog/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated body=5139c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated (1.0m)
+  [200] tr/blog/how-significant-is-harmonic-analysis-in-saudi-arabian-businesses body=4804c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: how-significant-is-harmonic-analysis-in-saudi-arabian-businesses (1.1m)
+  [200] tr/blog/how-to-analyze-saudi-arabian-power-quality body=3592c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: how-to-analyze-saudi-arabian-power-quality (1.0m)
+  [200] tr/blog/principles-of-work-on-saudi-arabia-power-quality body=8213c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: principles-of-work-on-saudi-arabia-power-quality (1.1m)
+  [200] tr/blog/verify-saudi-arabian-electrical-motor-performance-regulations-compliance body=4292c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: verify-saudi-arabian-electrical-motor-performance-regulations-compliance (1.1m)
+  [200] tr/blog/why-does-saudi-arabian-business-need-short-circuit-and-load-flow-analysis body=4010c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tr blog › scrape tr/blog: why-does-saudi-arabian-business-need-short-circuit-and-load-flow-analysis (1.1m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (10.5m)

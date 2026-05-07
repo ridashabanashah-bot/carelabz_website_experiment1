@@ -1,0 +1,10 @@
+{
+  "shaped": [
+    "case-study",
+    "arc-flash-study-in-usa",
+    "load-flow-analysis-us",
+    "relay-coordination-study-in-usa",
+    "short-circuit-analysis"
+  ],
+  "skipped": []
+}

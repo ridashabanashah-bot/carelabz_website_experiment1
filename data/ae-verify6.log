@@ -1,0 +1,199 @@
+
+Running 129 tests using 1 worker
+
+  ok   1 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/ (4.0s)
+  ok   2 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/about/ (821ms)
+  ok   3 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/ (661ms)
+  ok   4 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/about-earth-fault-loop-impedence-test/ (885ms)
+  ok   5 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-infrared-thermography-inspection-important/ (793ms)
+  ok   6 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ (763ms)
+  ok   7 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/how-what-why-generator-load-bank-testing-done/ (777ms)
+  ok   8 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-about-residual-current-device-testing-safety/ (715ms)
+  ok   9 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-continuity-testing-what-how/ (677ms)
+  x   10 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ (708ms)
+  ok  11 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ (1.1s)
+  ok  12 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/megger-test-performed/ (872ms)
+  ok  13 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/need-conduct-electrical-safety-testing/ (686ms)
+  ok  14 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/protecting-electrical-systems/ (699ms)
+  ok  15 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/purpose-lightning-arrester-testing-necessary/ (692ms)
+  ok  16 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/thermography-test-of-electrical-panels/ (686ms)
+  ok  17 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/thermography-testing-of-electrical-equipment/ (681ms)
+  ok  18 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ (1.1s)
+  ok  19 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-cable-testing-how-cable-testing-done/ (771ms)
+  ok  20 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ (715ms)
+  ok  21 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ (917ms)
+  ok  22 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ (702ms)
+  ok  23 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-earth-grounding/ (715ms)
+  ok  24 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-factory-acceptance-testing-how-fat-done/ (690ms)
+  ok  25 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ (674ms)
+  ok  26 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-how-grounding-design-planning/ (666ms)
+  ok  27 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-how-harmonic-study-analysis-done/ (727ms)
+  ok  28 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ (694ms)
+  x   29 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ (841ms)
+  ok  30 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ (892ms)
+  ok  31 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ (720ms)
+  ok  32 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-motor-acceleration-study-analysis/ (639ms)
+  ok  33 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-pat-test-why-pat-test-done/ (699ms)
+  ok  34 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-polarity-test-why-conduct-polarity-test/ (688ms)
+  ok  35 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-protective-device-testing-how-done/ (689ms)
+  x   36 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ (710ms)
+  ok  37 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-voltage-drop-study-analysis/ (921ms)
+  ok  38 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-why-load-flow-analysis-power-flow-analysis-done/ (734ms)
+  ok  39 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ (690ms)
+  ok  40 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash/ (702ms)
+  ok  41 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ (729ms)
+  ok  42 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/case-studies/ (639ms)
+  ok  43 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/case-studies/coca-cola-abu-dhabi-arc-flash-study/ (907ms)
+  ok  44 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/contact/ (1.1s)
+  ok  45 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ (679ms)
+  ok  46 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study-analysis/ (712ms)
+  ok  47 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study/ (777ms)
+  ok  48 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/automatic-transfer-switch-testing-service/ (800ms)
+  ok  49 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/bain-marie-calibration/ (1.1s)
+  ok  50 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/battery-testing-services-dubai-uae/ (797ms)
+  ok  51 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-inspection-services/ (667ms)
+  ok  52 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-testing-services/ (689ms)
+  ok  53 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/blast-chiller-calibration/ (883ms)
+  ok  54 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/blast-freezer-calibration/ (854ms)
+  ok  55 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/building-envelope-infrared-thermography-inspection-service/ (751ms)
+  ok  56 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/cable-testing/ (773ms)
+  ok  57 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/calibrator-calibration/ (838ms)
+  ok  58 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/capacitor-bank-test/ (694ms)
+  ok  59 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/chiller-calibration/ (874ms)
+  ok  60 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/circuit-breaker-testing/ (663ms)
+  ok  61 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-inspection-services-dubai-uae/ (929ms)
+  ok  62 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-testing/ (680ms)
+  ok  63 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/compliance-as-a-service/ (728ms)
+  ok  64 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/contact-resistance-testing-service/ (886ms)
+  ok  65 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/continuity-testing/ (702ms)
+  ok  66 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/digital-thermometer-calibration/ (652ms)
+  ok  67 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-fault-loop-impedence-test/ (641ms)
+  ok  68 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-ground-testing-service/ (657ms)
+  ok  69 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-motor-testing/ (845ms)
+  ok  70 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-switchgear-testing-services/ (667ms)
+  ok  71 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-calibration/ (663ms)
+  ok  72 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-compliance-inspection/ (956ms)
+  ok  73 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-installations-certification-service/ (780ms)
+  ok  74 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit-service/ (781ms)
+  ok  75 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit/ (907ms)
+  ok  76 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-auditing-inspection-service/ (692ms)
+  ok  77 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-testing/ (735ms)
+  ok  78 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ (705ms)
+  ok  79 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-safety-inspection-services/ (710ms)
+  ok  80 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-thermography-inspection/ (699ms)
+  ok  81 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/energy-auditing-service/ (634ms)
+  ok  82 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/factory-acceptance-testing-services/ (694ms)
+  ok  83 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-electrical-testing/ (664ms)
+  ok  84 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-wire-testing/ (618ms)
+  ok  85 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/frequency-stability-analysis/ (638ms)
+  ok  86 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/generator-load-bank-testing/ (703ms)
+  ok  87 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/gfci-standard-inspection-service/ (762ms)
+  ok  88 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ground-fault-testing/ (816ms)
+  ok  89 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-grid-study-analysis/ (731ms)
+  ok  90 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-system-design-and-planning/ (647ms)
+  ok  91 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/harmonic-study-analysis/ (679ms)
+  ok  92 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/insulation-resistance-test-service/ (717ms)
+  ok  93 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/leakage-current-measurement/ (719ms)
+  ok  94 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing-service/ (691ms)
+  ok  95 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing/ (683ms)
+  ok  96 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/live-testing/ (691ms)
+  ok  97 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/load-flow-analysis/ (682ms)
+  ok  98 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lv-panel-inspection/ (687ms)
+  ok  99 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-panel-operation-testing/ (722ms)
+  ok 100 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-switchgear-assessment/ (853ms)
+  ok 101 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/megger-test/ (759ms)
+  ok 102 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/motor-acceleration-study-analysis/ (694ms)
+  ok 103 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/pfc-psc-test/ (644ms)
+  ok 104 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/polarity-test-service/ (722ms)
+  ok 105 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/portable-appliance-testing-dubai-uae/ (663ms)
+  ok 106 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study-analysis/ (899ms)
+  ok 107 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study/ (717ms)
+  ok 108 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-restoration-optimization/ (825ms)
+  ok 109 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-system-study-analysis/ (681ms)
+  ok 110 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/primary-current-injection-test/ (631ms)
+  ok 111 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ (666ms)
+  ok 112 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-coordination-study/ (822ms)
+  ok 113 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-relay-testing-services/ (663ms)
+  ok 114 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protective-devices-testing-services/ (721ms)
+  ok 115 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/relay-coordination-study-and-analysis/ (845ms)
+  ok 116 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety-2/ (810ms)
+  ok 117 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety/ (677ms)
+  ok 118 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/secondary-current-injection-test/ (630ms)
+  ok 119 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/short-circuit-study-analysis/ (648ms)
+  ok 120 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/soil-resistivity-test/ (670ms)
+  ok 121 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/thermographic-inspection/ (733ms)
+  ok 122 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-certification/ (659ms)
+  ok 123 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-inspection-company-uae/ (844ms)
+  ok 124 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-inspection-electrical-installation/ (651ms)
+  ok 125 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/torque-test/ (717ms)
+  ok 126 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/unbalanced-load-flow-study-analysis/ (626ms)
+  ok 127 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/vibration-study-and-analysis/ (622ms)
+  ok 128 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-drop-study-analysis/ (678ms)
+  ok 129 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-imbalance-study/ (867ms)
+
+
+  1) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ 
+
+    Error: Stray asterisks on /ae/blog/learn-how-insulation-resistance-test-done/: **VoltageLevel	IR Tester**
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      49 |         asteriskLines.length,
+      50 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 51 |       ).toBe(0);
+         |         ^
+      52 |
+      53 |       // No ellipses indicating truncated content
+      54 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:51:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-6ba59-ation-resistance-test-done-\error-context.md
+
+  2) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ 
+
+    Error: Stray asterisks on /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/: **Type of Soil or Water	Typical ResistivityΩm	Usual LimitΩm**
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m2[39m
+
+      49 |         asteriskLines.length,
+      50 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 51 |       ).toBe(0);
+         |         ^
+      52 |
+      53 |       // No ellipses indicating truncated content
+      54 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:51:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-045b4-l-resistivity-testing-done-\error-context.md
+
+  3) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ 
+
+    Error: Stray asterisks on /ae/blog/what-short-circuit-analysis-done-why/: Short circuit analysis essentially consists of determining the steady state solution of a linear net
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      49 |         asteriskLines.length,
+      50 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 51 |       ).toBe(0);
+         |         ^
+      52 |
+      53 |       // No ellipses indicating truncated content
+      54 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:51:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e916f--circuit-analysis-done-why-\error-context.md
+
+  3 failed
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ 
+  126 passed (1.8m)

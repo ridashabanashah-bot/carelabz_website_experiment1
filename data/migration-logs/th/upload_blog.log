@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'th-blog-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_blog_arc_flash_study_3fe06095e7.png
+  OK    load-flow-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_blog_load_flow_analysis_a2a6424e3e.png
+  OK    relay-coordination-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_blog_relay_coordination_study_d17a0b8971.png
+  OK    short-circuit-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_blog_short_circuit_analysis_1468bdf9f9.png
+
+Uploaded/reused: 4, skipped: 0, failed: 0

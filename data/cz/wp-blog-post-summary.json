@@ -1,0 +1,16 @@
+{
+  "created": [
+    "arc-flash-study-cz",
+    "motor-start-analysis-cz",
+    "power-quality-analysis-cz"
+  ],
+  "updated": [
+    "czech-guidelines-for-testing-and-verifying-electrical-motor-efficiency-cz",
+    "harmonic-study-analysis-cz",
+    "how-are-the-dependability-and-performance-of-commercial-motors-assessed-cz",
+    "power-system-study-analysis-cz",
+    "the-importance-of-load-flow-and-short-circuit-analysis-to-a-czech-business-cz"
+  ],
+  "skipped": [],
+  "failed": []
+}

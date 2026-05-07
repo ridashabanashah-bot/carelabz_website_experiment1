@@ -1,0 +1,67 @@
+  NEW   arc-flash-study-pl (published)
+  ENR   harmonic-study-analysis-pl (2475c -> 4799c)
+  ENR   how-are-the-dependability-and-performance-of-commercial-motors-assessed-pl (3774c -> 16309c)
+  NEW   motor-start-analysis-pl (published)
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 903, in _error_catcher
+    yield
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1418, in read_chunked
+    self._update_chunk_length()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1333, in _update_chunk_length
+    line = self._fp.fp.readline()  # type: ignore[union-attr]
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 822, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1250, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1397, in read_chunked
+    with self._error_catcher():
+         ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 908, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='rational-cheese-8e8c4f80ea.strapiapp.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-post.py", line 170, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-post.py", line 146, in main
+    ok, info = put_update(kind, doc_id, enrich)
+               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-post.py", line 67, in put_update
+    r = requests.put(f"{STRAPI}/{endpoint(kind)}/{doc_id}", headers=HP, json={"data": data}, timeout=30)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 749, in send
+    r.content
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 904, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 828, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='rational-cheese-8e8c4f80ea.strapiapp.com', port=443): Read timed out.

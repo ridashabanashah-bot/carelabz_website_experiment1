@@ -1,0 +1,11 @@
+{
+  "created": [],
+  "updated": [
+    "arc-flash-study-sg",
+    "load-flow-analysis-sg",
+    "relay-coordination-study-sg",
+    "short-circuit-analysis-sg"
+  ],
+  "skipped": [],
+  "failed": []
+}

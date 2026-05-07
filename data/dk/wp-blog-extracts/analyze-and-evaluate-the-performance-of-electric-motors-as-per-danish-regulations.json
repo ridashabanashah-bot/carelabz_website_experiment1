@@ -1,0 +1,27 @@
+{
+  "data": {
+    "region": "dk",
+    "slug": "analyze-and-evaluate-the-performance-of-electric-motors-as-per-danish-regulations-dk",
+    "title": "Analyse and Evaluate the Performance of Electric Motors as per Danish Regulations",
+    "metaTitle": "Analyse and Evaluate the Performance of Electric Motors as per Danish Regulations | Carelabs",
+    "metaDescription": "Home About Us Our Services Arc Flash Study Harmonic Study and Analysis Power Quality Analysis Power System Study and Analysis Motor Start Analysis Contact Us",
+    "excerpt": "Home About Us Our Services Arc Flash Study Harmonic Study and Analysis Power Quality Analysis Power System Study and Analysis Motor Start Analysis Contact Us Read Industrial electric motors are used to power a wide range.",
+    "body": "![motor-start](https://carelabz.com/dk/wp-content/uploads/2023/03/MicrosoftTeams-image-32-1.jpg)\n\nIndustrial electric motors are used to power a wide range of applications across the world. The car industry utilizes up to 70% of all industrial energy, 35% of all energy used in the commercial and service sectors, and 45% of all electricity produced globally, according to the International Energy Agency (IEA). Each hour of downtime due to a motor failure costs thousands of dollars, highlighting the significance of electric motors in a wide range of industrial activities. They are the principal source of greenhouse gases emitted by power plants, which have a harmful influence on the environment. They are also principally responsible for the huge growth in power usage in developing countries. \n\nOn a global scale, there is an economic opportunity to increase the energy efficiency of industrial motors by 20% to 30%, with typical payback periods of less than three years. Electric motors emit 15%, or 4.3 billion tons, of the world’s 26 billion tons of CO2. Increasing energy efficiency is one of the most cost-effective and low-risk methods for reducing greenhouse gas emissions and slowing energy consumption growth. \n\n**Use a well-functioning motor because:**\n\n- Lower operational costs\n- A longer, colder, and calmer distance.\n- Motors that last longer and perform better\n- There will be fewer greenhouse gas emissions into the atmosphere.\n\n### Starting a Motor:\n\nElectric motors do not often convert all electricity into mechanical energy. Some energy is lost due to friction, windage, and losses in the stator, rotor, and magnetic core. The motor’s performance is diminishing because of these losses. When you examine how much energy is utilized and how electric motors are used in industry, you can see why and how important it is to analyze energy efficiency and set minimum energy performance standards. The testing approach employed determines the precision with which efficiency and motor loss are measured. There is no one testing process used in all businesses throughout the world. Even though the principle is simple, quantifying and certifying a motor’s energy efficiency using various standards may be complicated.\n\n### Globally Recognized Methods for Assessing Efficacy Include:\n\n**The following testing processes are frequently mentioned in industrial settings:**\n\nIEEE (Institute of Electrical and Electronics Engineers) 112-2004 is a common test technique for multiphase motors and generators. “Methods for estimating the efficiency and losses of rotating electrical equipment,” International Electrotechnical Commission (IEC) Publication 60034-2-1, Tests, International Electrotechnical Commission (IEC), 2014. The Japanese Electrotechnical Committee created the JEC 37 standard for induction devices. IEEE Spec 112-2004 IEEE Spec 112-2004\n\n**This approach contains ten parameters for assessing energy consumption efficiency. To select the most important:**\n\n- Simple input and output testing\n- Input and output testing using loss separation.\n- Testing of two coupled devices in parallel.\n- The smoothed residual losses are used to compute the load losses.\n- The “Eh-star” method\n\n**There are three types of IEC standard testing:**\n\n- Calculating the input and output power of a single machine.\n- Power entering and exiting two series-connected devices is monitored.\n- A single machine’s losses were totaled.\n\nThe increased load losses are unimportant to the Japanese JEC standard 37 test techniques. Businesses may save money while also helping the environment by lowering the energy use of their equipment and appliances. This is only one of many substantial economic and environmental advantages. We provide motor start analysis services in all major cities, including Copenhagen, Aarhus, Odense, and Aalborg.",
+    "author": "admin",
+    "category": "Insights",
+    "tags": [],
+    "publishedDate": "2023-03-17T06:41:50Z",
+    "heroImage": "https://rational-cheese-8e8c4f80ea.media.strapiapp.com/dk_blog_analyze_and_evaluate_the_performance_of_electric_motors_as_per_danish_regulations_f0ab904470.jpg",
+    "heroImageAlt": "power-system-blog",
+    "seoKeywords": [
+      "analyse and evaluate the performance of electric motors as per danish regulations",
+      "analyse and evaluate the performance of electric motors as per danish regulations DK"
+    ],
+    "publishedAt": null
+  },
+  "_source": {
+    "wp_url": "https://carelabz.com/dk/analyze-and-evaluate-the-performance-of-electric-motors-as-per-danish-regulations/",
+    "wp_screenshot": "tests/screenshots/wp-dk-blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-danish-regulations.png",
+    "body_chars": 3841
+  }
+}

@@ -1,0 +1,16 @@
+  SKIP  arc-flash-study-in-greece-pt (5706c vs 5706c)
+  SKIP  arc-flash-study-in-portugal-pt (5706c vs 5706c)
+  SKIP  harmonic-study-and-analysis-in-greece-pt (5828c vs 5828c)
+  SKIP  harmonic-study-and-analysis-in-portugal-pt (5828c vs 5828c)
+  SKIP  motor-start-analysis-in-greece-pt (6046c vs 6046c)
+  SKIP  motor-start-analysis-in-portugal-pt (6046c vs 6046c)
+  SKIP  power-quality-analysis-in-greece-pt (5384c vs 5384c)
+  SKIP  power-quality-analysis-in-portugal-pt (5384c vs 5384c)
+  SKIP  power-system-study-and-analysis-in-greece-pt (5966c vs 5966c)
+  SKIP  power-system-study-and-analysis-in-portugal-pt (5966c vs 5966c)
+
+=== DONE pt/service ===
+Created:  0
+Enriched: 0
+Skipped:  10
+Failed:   0

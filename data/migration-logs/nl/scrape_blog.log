@@ -1,0 +1,11 @@
+
+Running 3 tests using 1 worker
+
+  [200] nl/blog/examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations body=4835c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nl blog › scrape nl/blog: examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations (1.1m)
+  [200] nl/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7647c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nl blog › scrape nl/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.1m)
+  [200] nl/blog/the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses body=4372c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nl blog › scrape nl/blog: the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses (1.1m)
+
+  3 passed (3.3m)

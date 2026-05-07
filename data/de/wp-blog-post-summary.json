@@ -1,0 +1,14 @@
+{
+  "created": [],
+  "updated": [
+    "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-de",
+    "the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses-de"
+  ],
+  "skipped": [
+    [
+      "verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming-de",
+      "existing 3028c >= new 3623c"
+    ]
+  ],
+  "failed": []
+}

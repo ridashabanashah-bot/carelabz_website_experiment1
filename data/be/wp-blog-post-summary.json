@@ -1,0 +1,14 @@
+{
+  "created": [],
+  "updated": [
+    "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-be",
+    "the-importance-of-load-flow-and-short-circuit-analysis-for-belgian-businesses-be"
+  ],
+  "skipped": [
+    [
+      "verify-that-electrical-motor-performance-complies-with-belgian-regulations-by-inspecting-and-confirming-be",
+      "existing 3072c >= new 3658c"
+    ]
+  ],
+  "failed": []
+}

@@ -1,0 +1,11 @@
+
+Running 3 tests using 1 worker
+
+  [200] de/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7253c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — de blog › scrape de/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.0m)
+  [200] de/blog/the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses body=4279c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — de blog › scrape de/blog: the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses (1.0m)
+  [200] de/blog/verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming body=4391c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — de blog › scrape de/blog: verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming (1.0m)
+
+  3 passed (3.1m)

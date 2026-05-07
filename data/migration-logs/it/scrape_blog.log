@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] it/blog/arc-flash-analysis-in-italy-a-detailed-guide body=318c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: arc-flash-analysis-in-italy-a-detailed-guide (1.1m)
+  [200] it/blog/arc-flash-risk-evaluation-and-mitigation-are-essential body=3022c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: arc-flash-risk-evaluation-and-mitigation-are-essential (1.6m)
+  [200] it/blog/harmonic-examination-of-the-italian-power-system body=2917c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: harmonic-examination-of-the-italian-power-system (1.4m)
+  [200] it/blog/how-to-conduct-power-quality-analysis-in-italy-2 body=2511c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: how-to-conduct-power-quality-analysis-in-italy-2 (1.4m)
+  [200] it/blog/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors body=3818c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors (1.4m)
+  [200] it/blog/importance-of-load-flow-and-short-circuit-analysis-for-a-italian-business body=3097c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: importance-of-load-flow-and-short-circuit-analysis-for-a-italian-business (1.6m)
+  [200] it/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=3037c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.6m)
+  [200] it/blog/power-quality-working-principles-in-italy body=3212c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: power-quality-working-principles-in-italy (1.4m)
+  [200] it/blog/test-and-verifelectrical-motor-efficiency-in-accordance-with-italian-guidelines body=2720c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: test-and-verifelectrical-motor-efficiency-in-accordance-with-italian-guidelines (1.5m)
+  [200] it/blog/why-is-harmonic-analysis-and-research-important-for-italian-businesses body=2683c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — it blog › scrape it/blog: why-is-harmonic-analysis-and-research-important-for-italian-businesses (1.7m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (14.7m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (14.7m)

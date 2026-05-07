@@ -1,0 +1,9 @@
+Country: mx
+  Blog:    /mx/blogs/
+  Service: /mx/service/
+
+Crawling blog index...
+  Blog posts found: 8
+
+Crawling services index...
+  Service pages found: 4

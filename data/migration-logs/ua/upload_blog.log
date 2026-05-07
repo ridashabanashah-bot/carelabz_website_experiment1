@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'ua-blog-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_arc_flash_study_c8b80eb87d.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_harmonic_study_analysis_5fe0bada78.png
+  OK    how-are-the-dependability-and-performance-of-commercial-motors-assessed -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_how_are_the_dependability_and_performance_of_commercial_motors_assessed_f1b181da89.jpg
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_motor_start_analysis_ea4d990fc0.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_power_quality_analysis_4b80c7a633.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_power_system_study_analysis_ab2e085bba.png
+  OK    the-importance-of-load-flow-and-short-circuit-analysis-to-a-ukrainian-business -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_the_importance_of_load_flow_and_short_circuit_analysis_to_a_ukrainian_business_e303d973a2.jpg
+  OK    ukrainian-guidelines-for-testing-and-verifying-electrical-motor-efficiency -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_blog_ukrainian_guidelines_for_testing_and_verifying_electrical_motor_efficiency_79896d8f1f.jpg
+
+Uploaded/reused: 8, skipped: 0, failed: 0

@@ -1,0 +1,9 @@
+Country: gr
+  Blog:    /gr/blogs/
+  Service: /gr/services/
+
+Crawling blog index...
+  Blog posts found: 15
+
+Crawling services index...
+  Service pages found: 5

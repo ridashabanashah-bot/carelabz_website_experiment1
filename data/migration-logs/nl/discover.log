@@ -1,0 +1,9 @@
+Country: nl
+  Blog:    /nl/blog/
+  Service: /nl/services/
+
+Crawling blog index...
+  Blog posts found: 8
+
+Crawling services index...
+  Service pages found: 5

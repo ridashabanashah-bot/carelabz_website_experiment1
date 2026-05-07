@@ -1,0 +1,47 @@
+{
+  "created": [],
+  "updated": [],
+  "skipped": [
+    [
+      "arc-flash-study-in-greece-pt",
+      "existing 5706c >= new 5706c"
+    ],
+    [
+      "arc-flash-study-in-portugal-pt",
+      "existing 5706c >= new 5706c"
+    ],
+    [
+      "harmonic-study-and-analysis-in-greece-pt",
+      "existing 5828c >= new 5828c"
+    ],
+    [
+      "harmonic-study-and-analysis-in-portugal-pt",
+      "existing 5828c >= new 5828c"
+    ],
+    [
+      "motor-start-analysis-in-greece-pt",
+      "existing 6046c >= new 6046c"
+    ],
+    [
+      "motor-start-analysis-in-portugal-pt",
+      "existing 6046c >= new 6046c"
+    ],
+    [
+      "power-quality-analysis-in-greece-pt",
+      "existing 5384c >= new 5384c"
+    ],
+    [
+      "power-quality-analysis-in-portugal-pt",
+      "existing 5384c >= new 5384c"
+    ],
+    [
+      "power-system-study-and-analysis-in-greece-pt",
+      "existing 5966c >= new 5966c"
+    ],
+    [
+      "power-system-study-and-analysis-in-portugal-pt",
+      "existing 5966c >= new 5966c"
+    ]
+  ],
+  "failed": []
+}

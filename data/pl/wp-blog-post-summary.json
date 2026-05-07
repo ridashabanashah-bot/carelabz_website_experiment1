@@ -1,0 +1,39 @@
+{
+  "created": [],
+  "updated": [],
+  "skipped": [
+    [
+      "arc-flash-study-pl",
+      "existing 4638c >= new 4638c"
+    ],
+    [
+      "harmonic-study-analysis-pl",
+      "existing 4799c >= new 4799c"
+    ],
+    [
+      "how-are-the-dependability-and-performance-of-commercial-motors-assessed-pl",
+      "existing 16309c >= new 16309c"
+    ],
+    [
+      "motor-start-analysis-pl",
+      "existing 4202c >= new 4202c"
+    ],
+    [
+      "polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency-pl",
+      "existing 15254c >= new 15254c"
+    ],
+    [
+      "power-quality-analysis-pl",
+      "existing 4139c >= new 4139c"
+    ],
+    [
+      "power-system-study-analysis-pl",
+      "existing 4859c >= new 4859c"
+    ],
+    [
+      "the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business-pl",
+      "existing 15098c >= new 15098c"
+    ]
+  ],
+  "failed": []
+}

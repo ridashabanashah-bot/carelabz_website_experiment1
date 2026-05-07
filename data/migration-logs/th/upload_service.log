@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'th-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-inailand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_service_arc_flash_study_inailand_ca6f3a4931.jpg
+  OK    load-flow-analysis-inailand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_service_load_flow_analysis_inailand_33d0aa712a.png
+  OK    relay-coordination-study-inailand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_service_relay_coordination_study_inailand_c32cafd7c5.png
+  OK    short-circuit-analysis-inailand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/th_service_short_circuit_analysis_inailand_f387968719.png
+
+Uploaded/reused: 4, skipped: 0, failed: 0

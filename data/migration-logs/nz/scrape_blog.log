@@ -1,0 +1,19 @@
+
+Running 7 tests using 1 worker
+
+  [200] nz/blog/arc-flash-risks-in-new-zealand-causes-and-preventive-measures body=6813c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: arc-flash-risks-in-new-zealand-causes-and-preventive-measures (47.6s)
+  [200] nz/blog/balancing-operational-efficiency-and-arc-flash-safety-a-delicate-trade-off body=6341c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: balancing-operational-efficiency-and-arc-flash-safety-a-delicate-trade-off (47.2s)
+  [200] nz/blog/common-myths-about-short-circuit-analysis body=5445c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: common-myths-about-short-circuit-analysis (47.0s)
+  [200] nz/blog/how-relay-coordination-supports-electrical-system-stability-in-industrial-facilities body=5520c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: how-relay-coordination-supports-electrical-system-stability-in-industrial-facilities (47.1s)
+  [200] nz/blog/how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use-in-new-zealand body=5503c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: how-to-audit-electric-motor-efficiency-and-reliability-for-commercial-use-in-new-zealand (31.9s)
+  [200] nz/blog/step-by-step-guide-to-perform-arc-flash-analysis-in-new-zealand body=5374c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: step-by-step-guide-to-perform-arc-flash-analysis-in-new-zealand (31.8s)
+  [200] nz/blog/why-overloaded-equipment-is-a-problem-load-flow-analysis-to-the-rescue body=5702c img=Y
+  ok 7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz blog › scrape nz/blog: why-overloaded-equipment-is-a-problem-load-flow-analysis-to-the-rescue (47.0s)
+
+  7 passed (5.0m)

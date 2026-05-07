@@ -1,0 +1,23 @@
+
+Running 8 tests using 1 worker
+
+  [200] hu/blog/arc-flash-study body=5232c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: arc-flash-study (1.8m)
+  [200] hu/blog/harmonic-study-analysis body=5424c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: harmonic-study-analysis (1.8m)
+  [200] hu/blog/how-are-the-dependability-and-performance-of-commercial-motors-assessed body=9687c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: how-are-the-dependability-and-performance-of-commercial-motors-assessed (1.1m)
+  [200] hu/blog/hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency body=8768c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency (1.1m)
+  [200] hu/blog/motor-start-analysis body=4865c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: motor-start-analysis (1.8m)
+  [200] hu/blog/power-quality-analysis body=4781c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: power-quality-analysis (1.8m)
+  [200] hu/blog/power-system-study-analysis body=5464c img=Y
+  ok 7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: power-system-study-analysis (1.8m)
+  [200] hu/blog/the-importance-of-load-flow-and-short-circuit-analysis-to-a-hungarian-business body=8616c img=Y
+  ok 8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hu blog › scrape hu/blog: the-importance-of-load-flow-and-short-circuit-analysis-to-a-hungarian-business (1.1m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (12.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  8 passed (12.2m)

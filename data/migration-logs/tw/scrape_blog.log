@@ -1,0 +1,37 @@
+
+Running 15 tests using 1 worker
+
+  [200] tw/blog/analysis-of-harmonics-in-the-taiwanese-power-system body=5905c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: analysis-of-harmonics-in-the-taiwanese-power-system (1.3m)
+  [200] tw/blog/analysis-of-power-system-load-flow-short-circuit-and-relay-coordination body=7905c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: analysis-of-power-system-load-flow-short-circuit-and-relay-coordination (1.3m)
+  [200] tw/blog/arc-flash-study body=5498c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: arc-flash-study (1.8m)
+  [200] tw/blog/check-and-test-the-performance-of-electric-motors-according-to-taiwanese-rules body=7032c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: check-and-test-the-performance-of-electric-motors-according-to-taiwanese-rules (1.3m)
+  [200] tw/blog/harmonic-study-and-analysis body=5477c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: harmonic-study-and-analysis (1.8m)
+  [200] tw/blog/how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated body=5781c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated (1.3m)
+  [200] tw/blog/how-to-conduct-a-power-quality-analysis-in-taiwan body=5613c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: how-to-conduct-a-power-quality-analysis-in-taiwan (1.3m)
+  [200] tw/blog/motor-start-analysis body=5183c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: motor-start-analysis (1.8m)
+  [200] tw/blog/power-quality-analysis body=5209c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: power-quality-analysis (1.8m)
+  [200] tw/blog/power-system-study-and-analysis body=5855c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: power-system-study-and-analysis (1.8m)
+  [200] tw/blog/taiwanese-arc-flash-analysis-a-comprehensive-guide body=5785c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: taiwanese-arc-flash-analysis-a-comprehensive-guide (1.3m)
+  [200] tw/blog/the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques body=5400c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques (1.3m)
+  [200] tw/blog/why-are-harmonic-analysis-and-research-crucial-for-taiwanese-businesses body=5446c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: why-are-harmonic-analysis-and-research-crucial-for-taiwanese-businesses (1.3m)
+  [200] tw/blog/why-load-flow-and-short-circuit-analysis-are-important-for-a-taiwanese-business body=4754c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: why-load-flow-and-short-circuit-analysis-are-important-for-a-taiwanese-business (1.3m)
+  [200] tw/blog/working-principles-for-power-quality-in-taiwan body=8620c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — tw blog › scrape tw/blog: working-principles-for-power-quality-in-taiwan (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (22.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (22.0m)

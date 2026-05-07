@@ -1,0 +1,13 @@
+{
+  "created": [
+    "harmonic-study-analysis-sa",
+    "power-system-study-analysis-sa"
+  ],
+  "updated": [
+    "arc-flash-study-sa",
+    "motor-start-analysis-sa",
+    "power-quality-analysis-sa"
+  ],
+  "skipped": [],
+  "failed": []
+}

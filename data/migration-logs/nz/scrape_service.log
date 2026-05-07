@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+  [200] nz/service/arc-flash-analysis-in-new-zealand body=5276c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz service › scrape nz/service: arc-flash-analysis-in-new-zealand (1.0m)
+  [200] nz/service/load-flow-analysis-in-new-zealand body=5325c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz service › scrape nz/service: load-flow-analysis-in-new-zealand (1.0m)
+  [200] nz/service/relay-coordination-study-in-new-zealand body=3444c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz service › scrape nz/service: relay-coordination-study-in-new-zealand (1.0m)
+  [200] nz/service/short-circuit-analysis-in-new-zealand body=5249c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — nz service › scrape nz/service: short-circuit-analysis-in-new-zealand (1.0m)
+
+  4 passed (4.2m)

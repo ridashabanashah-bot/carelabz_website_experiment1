@@ -1,0 +1,25 @@
+
+Running 9 tests using 1 worker
+
+  [404] my/service/arc-flash-study-in-singapore body=0c img=N
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: arc-flash-study-in-singapore (2.4s)
+  [200] my/service/harmonic-study-and-analysis body=5205c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: harmonic-study-and-analysis (1.5m)
+  [200] my/service/motor-start-analysis body=4789c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: motor-start-analysis (1.5m)
+  [200] my/service/power-quality-analysis body=4790c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: power-quality-analysis (1.5m)
+  [200] my/service/power-system-study-and-analysis body=5317c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: power-system-study-and-analysis (1.5m)
+  [200] my/service/arc-flash-analysis-in-malaysia body=5304c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: arc-flash-analysis-in-malaysia (1.3m)
+  [200] my/service/load-flow-analysis-in-malaysia body=4748c img=Y
+  ok 7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: load-flow-analysis-in-malaysia (1.3m)
+  [200] my/service/relay-coordination-study-in-malaysia body=5094c img=Y
+  ok 8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: relay-coordination-study-in-malaysia (1.3m)
+  [200] my/service/short-circuit-analysis-in-malaysia body=4551c img=Y
+  ok 9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my service › scrape my/service: short-circuit-analysis-in-malaysia (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (11.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  9 passed (11.5m)

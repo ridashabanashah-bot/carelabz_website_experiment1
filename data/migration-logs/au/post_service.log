@@ -1,0 +1,14 @@
+  NEW   arc-flash-risks-au (published)
+  ENR   arc-flash-study-in-australia-au (245c -> 3788c)
+  ENR   load-flow-analysis-in-australia-au (245c -> 3488c)
+  NEW   load-flow-analysis-au (published)
+  ENR   relay-coordination-study-services-in-australia-au (245c -> 3718c)
+  NEW   relay-coordination-study-au (published)
+  ENR   short-circuit-analysis-in-australia-au (245c -> 3706c)
+  NEW   short-circuit-analysis-au (published)
+
+=== DONE au/service ===
+Created:  4
+Enriched: 4
+Skipped:  0
+Failed:   0

@@ -1,0 +1,11 @@
+{
+  "created": [],
+  "updated": [
+    "arc-flash-study-id",
+    "load-flow-analysis-id",
+    "relay-coordination-study-id",
+    "short-circuit-analysis-id"
+  ],
+  "skipped": [],
+  "failed": []
+}

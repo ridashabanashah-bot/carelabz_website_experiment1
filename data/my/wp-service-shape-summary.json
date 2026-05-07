@@ -1,0 +1,18 @@
+{
+  "shaped": [
+    "harmonic-study-and-analysis",
+    "motor-start-analysis",
+    "power-quality-analysis",
+    "power-system-study-and-analysis",
+    "arc-flash-analysis-in-malaysia",
+    "load-flow-analysis-in-malaysia",
+    "relay-coordination-study-in-malaysia",
+    "short-circuit-analysis-in-malaysia"
+  ],
+  "skipped": [
+    {
+      "slug": "arc-flash-study-in-singapore",
+      "reason": "status 404 body 0c"
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+Loaded 134 issues from QA report
+
+
+============================================================
+Page: /ae/about/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/about-earth-fault-loop-impedence-test/ (6 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/j3hsa35ypv3yu9ukoo2wef2d
+
+============================================================
+Page: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ (1 issues)
+============================================================
+  Issue types: {'CLOUDFLARE_ARTIFACT'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-about-residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-continuity-testing-what-how/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/learn-how-insulation-resistance-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Collapsed multiple spaces
+    OK PUT blog-posts/uyvpoj75cm8q6ntvql3wi7lm
+
+============================================================
+Page: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/qz1pjsol2hlfh9etqfmpgqow
+
+============================================================
+Page: /ae/blog/megger-test-performed/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/tkrbemu1waiykxx4cak91m2m
+
+============================================================
+Page: /ae/blog/need-conduct-electrical-safety-testing/ (3 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Collapsed multiple spaces
+    OK PUT blog-posts/em9nav0jgo01v3kr76vvk8yb
+
+============================================================
+Page: /ae/blog/purpose-lightning-arrester-testing-necessary/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/yrntfon5frula86tuec84kkq
+
+============================================================
+Page: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-cable-testing-how-cable-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/bfyd0rb8t6f09z6fzp7lnhtu
+
+============================================================
+Page: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-factory-acceptance-testing-how-fat-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT blog-posts/ovj901qs2r2ixbtyerx2uk5i
+
+============================================================
+Page: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Stripped leading orphan *
+    - body: Collapsed multiple spaces
+    OK PUT blog-posts/xhpncw3paxjmxe3sb8vc3nb6
+
+============================================================
+Page: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    - body: Collapsed multiple spaces
+    OK PUT blog-posts/ekxjv107m1dfsibgjct5ul0a
+
+============================================================
+Page: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space before open)
+    OK PUT blog-posts/cskmea0vo02xhwoxewcutyg4
+
+============================================================
+Page: /ae/blog/what-pat-test-why-pat-test-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-polarity-test-why-conduct-polarity-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-protective-device-testing-how-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Collapsed multiple spaces
+    OK PUT blog-posts/i9wykhre3pdfs8gla3l52035
+
+============================================================
+Page: /ae/blog/what-short-circuit-analysis-done-why/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/what-you-need-to-know-about-arc-flash/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/contact/ (4 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/ (9 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/arc-flash-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/automatic-transfer-switch-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/battery-testing-services-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/biomedical-equipment-safety-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/building-envelope-infrared-thermography-inspection-service/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Stripped leading orphan *
+    - body: Removed orphaned **: Carelabs is authorized provider of Electrical Installation’s
+    OK PUT service-pages/xq5gk19tdtmztv8gihdxeowh
+
+============================================================
+Page: /ae/services/cable-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - faqs[].answer: Stripped leading orphan *
+    OK PUT service-pages/h5isrsm8v61twcwb5pzwej0k
+
+============================================================
+Page: /ae/services/capacitor-bank-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/chiller-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    - body: Collapsed multiple spaces
+    OK PUT service-pages/nto6wf5g4tesdmvcvq8xoc87
+
+============================================================
+Page: /ae/services/circuit-breaker-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/x00ia3jphtpaauihjji2ocxx
+
+============================================================
+Page: /ae/services/commercial-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/contact-resistance-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/continuity-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/digital-thermometer-calibration/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    - body: Collapsed multiple spaces
+    OK PUT service-pages/tupms6cry8m8fkaldv22rt69
+
+============================================================
+Page: /ae/services/earth-fault-loop-impedence-test/ (5 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/vphhqcgf2iiu5bzcdvr7xhmn
+
+============================================================
+Page: /ae/services/earth-ground-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electric-motor-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electric-switchgear-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/ueertxdywi7jocopttv6yt58
+
+============================================================
+Page: /ae/services/electrical-calibration/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - faqs[].answer: Stripped leading orphan *
+    OK PUT service-pages/qkssag48siyaedlhobs0wzqo
+
+============================================================
+Page: /ae/services/electrical-compliance-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-installations-certification-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-safety-audit-service/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space before open)
+    - body: Stripped leading orphan *
+    - body: Collapsed multiple spaces
+    OK PUT service-pages/uvq7td170pr9zb6dqyhfhk96
+
+============================================================
+Page: /ae/services/electrical-safety-auditing-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (3):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    - body: Stripped leading orphan *
+    OK PUT service-pages/oly7bj1i309uhowjug7fb92o
+
+============================================================
+Page: /ae/services/electrical-safety-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-switchgear-safety-inspection-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/electrical-thermography-inspection/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/factory-acceptance-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/fixed-electrical-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/fixed-wire-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/lcza2wlwpz8tgf9c0cdofybn
+
+============================================================
+Page: /ae/services/frequency-stability-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/vw7pkg1ka07hljxq8aaulctm
+
+============================================================
+Page: /ae/services/generator-load-bank-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/gfci-standard-inspection-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/ground-fault-testing/ (4 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/jfnx1nvvseayl87gs9xpsins
+
+============================================================
+Page: /ae/services/grounding-grid-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/grounding-system-design-and-planning/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/yeiwmva19vghcy6e7e9cboqr
+
+============================================================
+Page: /ae/services/harmonic-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/z7p7de9bl71mfgteq8pwlalw
+
+============================================================
+Page: /ae/services/insulation-resistance-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/leakage-current-measurement/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/lightning-arrester-testing-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/lightning-arrester-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/live-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/load-flow-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/mcc-panel-operation-testing/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/megger-test/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    OK PUT service-pages/ke6011hsfmg5nxxoyu7yy1nf
+
+============================================================
+Page: /ae/services/motor-acceleration-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/pfc-psc-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/jlzle6mwjzmzx0tqoknqeifs
+
+============================================================
+Page: /ae/services/polarity-test-service/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/portable-appliance-testing-dubai-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/rpf70ax3oh0x474e0gdo24bo
+
+============================================================
+Page: /ae/services/power-quality-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/pdhq37icxjjfnbzzgfg63qvv
+
+============================================================
+Page: /ae/services/power-system-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Removed orphaned **: Carelabs is competent provider of Power System Study, Analys
+    OK PUT service-pages/rkev4aghp4u1fj1dnh1qg5if
+
+============================================================
+Page: /ae/services/primary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  Fixes (1):
+    - body: Fixed glued **bold** pairs (no space after close)
+    OK PUT service-pages/qhpu53ye44npav7y1qeeqsi7
+
+============================================================
+Page: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ (2 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Fixed glued **bold** pairs (no space before open)
+    OK PUT service-pages/onw6092tk8x5kyfkl6ouj155
+
+============================================================
+Page: /ae/services/protection-relay-testing-services/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/relay-coordination-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety-2/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/residual-current-device-testing-safety/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/secondary-current-injection-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/short-circuit-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-certification/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/third-party-electrical-inspection-company-uae/ (1 issues)
+============================================================
+  Issue types: {'ASTERISK'}
+  Fixes (2):
+    - body: Fixed glued **bold** pairs (no space after close)
+    - body: Collapsed multiple spaces
+    OK PUT service-pages/lwolrilkexu9zdkw2nhmz0a8
+
+============================================================
+Page: /ae/services/third-party-inspection-electrical-installation/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/torque-test/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/unbalanced-load-flow-study-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/vibration-study-and-analysis/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/voltage-drop-study-analysis/ (3 issues)
+============================================================
+  Issue types: {'ASTERISK', 'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+Page: /ae/services/voltage-imbalance-study/ (1 issues)
+============================================================
+  Issue types: {'ELLIPSIS'}
+  No Strapi-fixable issues
+
+============================================================
+DONE — fixes applied: 56, skipped: 76

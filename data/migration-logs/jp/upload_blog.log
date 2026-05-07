@@ -1,0 +1,15 @@
+Fetching existing Strapi media (prefix 'jp-blog-')...
+  0 matching files in Strapi
+
+  OK    analysis-of-harmonics-in-the-japanese-power-system -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_analysis_of_harmonics_in_the_japanese_power_system_4a5b08c90c.jpg
+  OK    analysis-of-power-system-load-flow-short-circuit-and-relay-coordination -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_analysis_of_power_system_load_flow_short_circuit_and_relay_coordination_b1297d749c.jpg
+  OK    check-and-test-the-performance-of-electric-motors-according-to-japanese-rules -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_check_and_test_the_performance_of_electric_motors_according_to_japanese_rules_267eef4dc4.png
+  OK    how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_how_can_the_quality_and_dependability_of_commercial_motors_be_evaluated_ccbf3277c6.jpg
+  OK    how-to-conduct-a-power-quality-analysis-in-japan -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_how_to_conduct_a_power_quality_analysis_in_japan_c6bf7b86c8.png
+  OK    japanese-arc-flash-analysis-a-comprehensive-guide -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_japanese_arc_flash_analysis_a_comprehensive_guide_5d1de672b3.jpg
+  OK    the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_the_significance_of_arc_flash_hazard_analysis_and_mitigation_techniques_27d0c721b0.jpg
+  OK    why-are-harmonic-analysis-and-research-crucial-for-japanese-businesses -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_why_are_harmonic_analysis_and_research_crucial_for_japanese_businesses_a20a7ebed1.png
+  OK    why-load-flow-and-short-circuit-analysis-are-important-for-a-japanese-business -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_why_load_flow_and_short_circuit_analysis_are_important_for_a_japanese_business_eb6c5b2a03.jpg
+  OK    working-principles-for-power-quality-in-japan -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_blog_working_principles_for_power_quality_in_japan_4a18cbacb7.jpg
+
+Uploaded/reused: 10, skipped: 0, failed: 0

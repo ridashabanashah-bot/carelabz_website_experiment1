@@ -1,0 +1,9 @@
+Country: ca
+  Blog:    /ca/blogs/
+  Service: /ca/services/
+
+Crawling blog index...
+  Blog posts found: 10
+
+Crawling services index...
+  Service pages found: 5

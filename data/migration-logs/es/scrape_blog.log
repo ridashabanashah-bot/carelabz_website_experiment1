@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] es/blog/arc-flash-analysis-in-spain-a-step-by-step-guide body=2832c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: arc-flash-analysis-in-spain-a-step-by-step-guide (1.1m)
+  [200] es/blog/harmonic-analysis-in-power-system-in-spain body=2932c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: harmonic-analysis-in-power-system-in-spain (1.6m)
+  [200] es/blog/how-to-conduct-power-quality-analysis-in-spain body=2511c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: how-to-conduct-power-quality-analysis-in-spain (1.4m)
+  [200] es/blog/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors body=3815c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors (1.6m)
+  [200] es/blog/importance-of-arc-flash-hazard-analysis-and-mitigation-methods body=3248c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: importance-of-arc-flash-hazard-analysis-and-mitigation-methods (1.7m)
+  [200] es/blog/importance-of-load-flow-and-short-circuit-analysis-for-a-spanish-business body=3129c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: importance-of-load-flow-and-short-circuit-analysis-for-a-spanish-business (1.4m)
+  [200] es/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=3057c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.5m)
+  [200] es/blog/power-quality-working-principles-in-spain body=3179c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: power-quality-working-principles-in-spain (1.4m)
+  [200] es/blog/test-and-verify-electrical-motor-efficiency-in-accordance-with-spanish-guidelines body=2748c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: test-and-verify-electrical-motor-efficiency-in-accordance-with-spanish-guidelines (1.4m)
+  [200] es/blog/why-is-harmonic-analysis-and-study-important-for-spanish-businesses body=2648c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — es blog › scrape es/blog: why-is-harmonic-analysis-and-study-important-for-spanish-businesses (1.4m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (14.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (14.5m)

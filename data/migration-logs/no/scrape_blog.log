@@ -1,0 +1,33 @@
+
+Running 13 tests using 1 worker
+
+  [200] no/blog/a-step-by-step-guide-to-arc-flash-analysis-in-norway body=5949c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: a-step-by-step-guide-to-arc-flash-analysis-in-norway (48.3s)
+  [200] no/blog/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom body=5949c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom (49.0s)
+  [200] no/blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-norwegian-regulations body=4985c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: analyze-and-evaluate-the-performance-of-electric-motors-as-per-norwegian-regulations (47.7s)
+  [200] no/blog/harmonic-analysis-of-norwegian-power-system body=6405c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: harmonic-analysis-of-norwegian-power-system (47.8s)
+  [200] no/blog/how-can-the-electricity-quality-in-norway-be-analyzed body=5921c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: how-can-the-electricity-quality-in-norway-be-analyzed (48.0s)
+  [200] no/blog/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors body=5990c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors (47.8s)
+  [200] no/blog/load-flow-and-short-circuit-analysis-significance-for-norwegian-businesses body=5186c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: load-flow-and-short-circuit-analysis-significance-for-norwegian-businesses (47.8s)
+  [200] no/blog/norwegian-power-quality-working-principles body=9118c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: norwegian-power-quality-working-principles (48.0s)
+  [200] no/blog/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination body=8220c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination (48.0s)
+  [200] no/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-norway body=6300c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-norway (48.0s)
+  [200] no/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk body=6300c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk (48.9s)
+  [200] no/blog/why-are-harmonic-analysis-and-studies-so-vital-for-norwegian-businesses body=5695c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: why-are-harmonic-analysis-and-studies-so-vital-for-norwegian-businesses (47.8s)
+  [200] no/blog/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses body=5695c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — no blog › scrape no/blog: why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses (48.7s)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  13 passed (10.5m)

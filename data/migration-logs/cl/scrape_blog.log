@@ -1,0 +1,37 @@
+
+Running 15 tests using 1 worker
+
+  [200] cl/blog/arc-flash-analysis-in-chile-a-detailed-guide body=5696c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: arc-flash-analysis-in-chile-a-detailed-guide (1.0m)
+  [200] cl/blog/arc-flash-study body=5396c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: arc-flash-study (1.5m)
+  [200] cl/blog/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial body=5437c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial (1.0m)
+  [200] cl/blog/examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations body=4799c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: examine-and-confirm-electrical-motor-performance-in-compliance-with-chilean-regulations (1.0m)
+  [200] cl/blog/harmonic-analysis-of-the-chile-power-system body=5606c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: harmonic-analysis-of-the-chile-power-system (1.0m)
+  [200] cl/blog/harmonic-study-and-analysis body=5448c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: harmonic-study-and-analysis (1.5m)
+  [200] cl/blog/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated body=5596c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated (1.0m)
+  [200] cl/blog/how-to-perform-a-power-quality-analysis-in-chile body=5458c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: how-to-perform-a-power-quality-analysis-in-chile (1.0m)
+  [200] cl/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7612c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.0m)
+  [200] cl/blog/motor-start-analysis body=5182c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: motor-start-analysis (1.5m)
+  [200] cl/blog/power-quality-analysis body=4936c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: power-quality-analysis (1.5m)
+  [200] cl/blog/power-system-study-and-analysis body=5516c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: power-system-study-and-analysis (1.6m)
+  [200] cl/blog/principles-of-power-quality-work-in-chile body=8597c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: principles-of-power-quality-work-in-chile (1.1m)
+  [200] cl/blog/why-are-harmonic-analysis-and-study-important-for-businesses-in-chile body=5398c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: why-are-harmonic-analysis-and-study-important-for-businesses-in-chile (1.1m)
+  [200] cl/blog/why-load-flow-and-short-circuit-analysis-important-for-chilean-business body=4533c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cl blog › scrape cl/blog: why-load-flow-and-short-circuit-analysis-important-for-chilean-business (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (18.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (18.3m)

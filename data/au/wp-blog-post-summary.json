@@ -1,0 +1,19 @@
+{
+  "created": [
+    "arc-flash-study-in-australia-au",
+    "load-flow-analysis-in-australia-au",
+    "load-flow-analysis-au",
+    "relay-coordination-study-services-in-australia-au",
+    "relay-coordination-study-au",
+    "short-circuit-analysis-in-australia-au",
+    "short-circuit-analysis-au"
+  ],
+  "updated": [],
+  "skipped": [
+    [
+      "arc-flash-risks-au",
+      "existing 3865c >= new 4208c"
+    ]
+  ],
+  "failed": []
+}

@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'sg-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-in-singapore -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/sg_service_arc_flash_study_in_singapore_a9880e71a7.jpg
+  OK    load-flow-analysis-in-singapore -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/sg_service_load_flow_analysis_in_singapore_c926b93109.jpg
+  OK    relay-coordination-study-in-singapore -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/sg_service_relay_coordination_study_in_singapore_71a7fc57ee.jpg
+  OK    short-circuit-analysis-3 -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/sg_service_short_circuit_analysis_3_7da6928111.jpg
+
+Uploaded/reused: 4, skipped: 0, failed: 0

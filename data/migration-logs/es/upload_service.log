@@ -1,0 +1,15 @@
+Fetching existing Strapi media (prefix 'es-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_arc_flash_study_in_greece_f3f697c5ea.jpg
+  OK    arc-flash-study-in-spain -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_arc_flash_study_in_spain_815a660506.jpg
+  OK    harmonic-study-analysis-in-spain -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_harmonic_study_analysis_in_spain_7423dd15b6.jpg
+  OK    harmonic-study-and-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_harmonic_study_and_analysis_in_greece_37b9104194.jpg
+  OK    motor-start-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_motor_start_analysis_in_greece_4c2e114935.jpg
+  OK    motor-start-analysis-in-spain -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_motor_start_analysis_in_spain_4a19a8f542.jpg
+  OK    power-quality-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_power_quality_analysis_in_greece_b1515c5377.jpg
+  OK    power-quality-analysis-in-spain -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_power_quality_analysis_in_spain_04455f65da.jpg
+  OK    power-system-study-analysis-in-spain -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_power_system_study_analysis_in_spain_0053988f17.jpg
+  OK    power-system-study-and-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/es_service_power_system_study_and_analysis_in_greece_6e14a6145b.jpg
+
+Uploaded/reused: 10, skipped: 0, failed: 0

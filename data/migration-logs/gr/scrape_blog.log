@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] gr/blog/arc-flash-analysis-in-greece-a-step-by-step-guide body=5433c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: arc-flash-analysis-in-greece-a-step-by-step-guide (49.1s)
+  [200] gr/blog/harmonic-analysis-in-power-system-in-greece body=5911c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: harmonic-analysis-in-power-system-in-greece (1.1m)
+  [200] gr/blog/how-to-conduct-power-quality-analysis-in-greece-2 body=5386c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: how-to-conduct-power-quality-analysis-in-greece-2 (1.1m)
+  [200] gr/blog/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors body=5477c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors (1.1m)
+  [200] gr/blog/importance-of-arc-flash-hazard-analysis-and-mitigation-methods body=5485c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: importance-of-arc-flash-hazard-analysis-and-mitigation-methods (1.1m)
+  [200] gr/blog/importance-of-load-flow-and-short-circuit-analysis-for-a-greek-business body=4641c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: importance-of-load-flow-and-short-circuit-analysis-for-a-greek-business (1.1m)
+  [200] gr/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7758c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.1m)
+  [200] gr/blog/power-quality-working-principles-in-greece body=8704c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: power-quality-working-principles-in-greece (48.7s)
+  [200] gr/blog/test-and-verifelectrical-motor-efficiency-in-accordance-with-greek-guidelines body=4838c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: test-and-verifelectrical-motor-efficiency-in-accordance-with-greek-guidelines (1.1m)
+  [200] gr/blog/why-is-harmonic-analysis-and-study-important-for-greek-businesses body=5310c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — gr blog › scrape gr/blog: why-is-harmonic-analysis-and-study-important-for-greek-businesses (1.1m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (10.1m)

@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+  [200] mx/service/arc-flash-studies-in-mexico body=4626c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx service › scrape mx/service: arc-flash-studies-in-mexico (1.1m)
+  [200] mx/service/load-flow-analysis-in-mexico body=4682c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx service › scrape mx/service: load-flow-analysis-in-mexico (1.1m)
+  [200] mx/service/relay-coordination-study-in-mexico body=4550c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx service › scrape mx/service: relay-coordination-study-in-mexico (1.1m)
+  [200] mx/service/short-circuit-analysis-in-mexico body=5018c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx service › scrape mx/service: short-circuit-analysis-in-mexico (1.1m)
+
+  4 passed (4.4m)

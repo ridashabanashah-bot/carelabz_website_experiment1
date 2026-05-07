@@ -1,0 +1,27 @@
+{
+  "data": {
+    "region": "no",
+    "slug": "why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses-no",
+    "title": "Why are Harmonic Analysis and Study so Vital for Norwegian Businesses?",
+    "metaTitle": "Why are Harmonic Analysis and Study so Vital for Norwegian Businesses? | Carelabs",
+    "metaDescription": "Kolejna witryna oparta na WordPressie",
+    "excerpt": "Kolejna witryna oparta na WordPressie",
+    "body": "![harmonic](https://carelabz.com/no/wp-content/uploads/2023/03/MicrosoftTeams-image-36.jpg)\n\nHarmonics is a vital part of a power system since it influences the quality of the electricity and how things run. High harmonic levels can cause parts to overheat, reducing the equipment’s life. Harmonics alter the pure sine wave produced by a perfect power source. Harmonic distortion makes it difficult for a corporation to manufacture goods and conduct business. Here are a few examples of how harmonic distortion affects business.\n\n- Components lose more energy because of harmonics (Joule effect).\n- When there are harmonics, the quantity of power subscribed increases. As a result, costs rise, which implies that client services become more expensive.\n- Equipment that is too large because the power supply is insufficient\n- When the amount of distortion approaches 10%, the life of various parts is reduced, lowering productivity.\n- Harmonics create peak currents, which cause antiquated technology to trip, resulting in output losses and a significant cost for the time needed to restore the system to operational status.\n\n### Harmonics Results In:\n\nLoads that do not follow a straight line and take in current in brief, rapid pulses produce harmonics. These pulses create distorted current waves to propagate throughout the power system as harmonic currents. Harmonics degrade electricity reliability and efficiency in industry. Most businesses have an electrical system that can handle up to 15% nonlinear loads without difficulty. \n\nIf nonlinear loads account for more than 15% of total load, they may generate harmonic distortions with negative consequences. As a result, it is critical to check harmonic levels to ensure they do not get excessively high. As a result, harmonic research and analysis can help track potential hazards and causes. This can assist in eliminating harmonic-related issues during the design stage and reduce the likelihood of unpleasant things happening.\n\n### Harmonic Analysis Procedure:\n\nEven though harmonic difficulties are unlikely, a harmonic analysis must be performed on time to ensure they are not too severe. Here are the steps for deciding the harmonic level:\n\n- The first step is to create a one-line diagram of the electrical system and find any nonlinear loads.\n- The diagram is largely concerned with finding the common connection (PCC).\n- There is an emphasis on plants in system buses that distort.\n- All harmonics information has been obtained.\n- Get the utility company’s predefined PCC values. This has the maximum and minimum short-circuit fault levels and the permissible current and voltage harmonics.\n- A simulated harmonic analysis is carried out using free software.\n- Perform a harmonic analysis on the electricity in the system.\n- Calculate the total and discrete current and voltage distortions at the buses and the PCC.\n- Create a harmonic frequency spectrum.\n- Select the proper methods for controlling harmonics. Harmonic distortion is more than is allowed.\n- Repeat the harmonic analysis after implementing mitigating measures.\n\nCareLabs is a licensed firm that analyses and studies harmonics. Professionals with extensive knowledge may do clear and safe assessments to identify possible harmonic levels and assist in keeping harmonics at appropriate levels so that they do not create future difficulties.\n\n### The Advantages of CareLabs Service:\n\n- Power systems that are safer and adhere to regulatory norms and regulations\n- Working with full power systems saves time and money.\n- Make your workplace more secure.\n- Provide immediate alternatives in an emergency.\n- Increase the margins of safety.\n- Make work permits and arc flash labels automatically to save time.\n- Avoid potential penalties and legal expenses.\n\nCareLabs employs crew members in several locations to ensure that our professionals are nearby in the event of a routine task or an emergency. CareLabs immediately achieved ISO 9001:2008 certification and established a client base with a solid reputation and positive comments. CareLabs provides investigation and analysis services in Oslo, Bergen, Trondheim, and Stavanger, among other important cities.",
+    "author": "admin",
+    "category": "Power Systems",
+    "tags": [],
+    "publishedDate": "2023-03-17T06:05:31Z",
+    "heroImage": "https://rational-cheese-8e8c4f80ea.media.strapiapp.com/no_blog_why_are_harmonic_analysis_and_studies_so_vital_for_uk_businesses_b7c0ca6084.jpg",
+    "heroImageAlt": "harmonic",
+    "seoKeywords": [
+      "why are harmonic analysis and study so vital for norwegian businesses?",
+      "why are harmonic analysis and study so vital for norwegian businesses? NO"
+    ],
+    "publishedAt": null
+  },
+  "_source": {
+    "wp_url": "https://carelabz.com/no/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses/",
+    "wp_screenshot": "tests/screenshots/wp-no-blog/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses.png",
+    "body_chars": 4189
+  }
+}

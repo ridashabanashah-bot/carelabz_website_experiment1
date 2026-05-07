@@ -1,0 +1,15 @@
+Fetching existing Strapi media (prefix 'it-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_arc_flash_study_in_greece_0b7971b4ca.jpg
+  OK    arc-flash-study-inaly -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_arc_flash_study_inaly_0cbfdf9727.jpg
+  OK    harmonic-study-and-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_harmonic_study_and_analysis_in_greece_84bb5893b4.jpg
+  OK    harmonic-study-and-analysis-inaly -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_harmonic_study_and_analysis_inaly_9ee45eca46.jpg
+  OK    motor-start-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_motor_start_analysis_in_greece_f41561665e.jpg
+  OK    motor-start-analysis-inaly -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_motor_start_analysis_inaly_3204a3d99a.jpg
+  OK    power-quality-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_power_quality_analysis_in_greece_6441192c99.jpg
+  OK    power-quality-analysis-inaly -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_power_quality_analysis_inaly_3fc469f0c9.jpg
+  OK    power-system-study-and-analysis-in-greece -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_power_system_study_and_analysis_in_greece_c2925be152.jpg
+  OK    power-system-study-and-analysis-inaly -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/it_service_power_system_study_and_analysis_inaly_bec944668b.jpg
+
+Uploaded/reused: 10, skipped: 0, failed: 0

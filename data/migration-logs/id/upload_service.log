@@ -1,0 +1,10 @@
+Fetching existing Strapi media (prefix 'id-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-in-indonesia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/id_service_arc_flash_study_in_indonesia_dcd438dfaa.png
+  OK    home -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/id_service_home_19115fd2ce.png
+  OK    load-flow-analysis-in-indonesia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/id_service_load_flow_analysis_in_indonesia_f1c28c6ba6.png
+  OK    relay-coordination-study-in-indonesia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/id_service_relay_coordination_study_in_indonesia_2a40eace27.png
+  OK    short-circuit-analysis-in-indonesia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/id_service_short_circuit_analysis_in_indonesia_69fe176863.png
+
+Uploaded/reused: 5, skipped: 0, failed: 0

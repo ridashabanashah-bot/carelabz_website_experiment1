@@ -1,0 +1,17 @@
+Migration queue (1): nz
+Logs: data\migration-logs/{cc}/*.log
+Progress: data\migration-progress.json
+
+[1/1] -- elapsed 0.0m
+
+=== NZ ===  start 2026-04-30T09:43:26.275387+00:00
+  [nz] discover                 ... OK (4s)
+  [nz] shape_blog               ... OK (1s)
+  [nz] shape_service            ... OK (1s)
+  [nz] upload_blog_heroes       ... OK (20s)
+  [nz] upload_service_heroes    ... OK (10s)
+  [nz] post_blog                ... OK (15s)
+  [nz] post_service             ... OK (12s)
+=== NZ done ===
+
+All done. Total elapsed: 6.1m

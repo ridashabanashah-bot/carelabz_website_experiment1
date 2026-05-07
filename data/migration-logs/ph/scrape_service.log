@@ -1,0 +1,23 @@
+
+Running 8 tests using 1 worker
+
+  [200] ph/service/arc-flash-study-in-philippines body=3228c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: arc-flash-study-in-philippines (1.6m)
+  [200] ph/service/arc-flash-study body=4807c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: arc-flash-study (1.3m)
+  [200] ph/service/load-flow-analysis-in-philippines body=2975c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: load-flow-analysis-in-philippines (1.6m)
+  [200] ph/service/load-flow-analysis body=4749c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: load-flow-analysis (1.3m)
+  [200] ph/service/relay-coordination-study-in-philippines body=2967c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: relay-coordination-study-in-philippines (1.5m)
+  [200] ph/service/relay-coordination-study body=4761c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: relay-coordination-study (1.3m)
+  [200] ph/service/short-circuit-analysis-in-philippines body=3082c img=Y
+  ok 7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: short-circuit-analysis-in-philippines (1.6m)
+  [200] ph/service/short-circuit-analysis body=4757c img=Y
+  ok 8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph service › scrape ph/service: short-circuit-analysis (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (11.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  8 passed (11.5m)

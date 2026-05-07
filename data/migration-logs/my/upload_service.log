@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'my-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-analysis-in-malaysia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_arc_flash_analysis_in_malaysia_5da1119acf.jpg
+  OK    harmonic-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_harmonic_study_and_analysis_8015554719.jpg
+  OK    load-flow-analysis-in-malaysia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_load_flow_analysis_in_malaysia_3bc313667a.jpg
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_motor_start_analysis_89c52ed92e.jpg
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_power_quality_analysis_05208e5b41.jpg
+  OK    power-system-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_power_system_study_and_analysis_026dbdb9a2.jpg
+  OK    relay-coordination-study-in-malaysia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_relay_coordination_study_in_malaysia_46459bee31.jpg
+  OK    short-circuit-analysis-in-malaysia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/my_service_short_circuit_analysis_in_malaysia_4b6a1a1540.jpg
+
+Uploaded/reused: 8, skipped: 0, failed: 0

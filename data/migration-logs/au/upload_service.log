@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'au-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-risks -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_arc_flash_risks_6b22e8d168.png
+  OK    arc-flash-study-instralia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_arc_flash_study_instralia_78a22108cc.png
+  OK    load-flow-analysis-instralia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_load_flow_analysis_instralia_ac4252812f.png
+  OK    load-flow-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_load_flow_analysis_d8c3c53bf5.png
+  OK    relay-coordination-study-services-instralia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_relay_coordination_study_services_instralia_e10880ec81.png
+  OK    relay-coordination-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_relay_coordination_study_db588f08fd.png
+  OK    short-circuit-analysis-instralia -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_short_circuit_analysis_instralia_841934b9ff.png
+  OK    short-circuit-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/au_service_short_circuit_analysis_66275eb675.png
+
+Uploaded/reused: 8, skipped: 0, failed: 0

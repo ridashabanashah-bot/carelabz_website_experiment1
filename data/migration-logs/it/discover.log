@@ -1,0 +1,9 @@
+Country: it
+  Blog:    /it/blogs/
+  Service: /it/services/
+
+Crawling blog index...
+  Blog posts found: 15
+
+Crawling services index...
+  Service pages found: 10

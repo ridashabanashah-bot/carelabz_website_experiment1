@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+  [200] mx/blog/arc-flash-study body=6574c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx blog › scrape mx/blog: arc-flash-study (1.1m)
+  [200] mx/blog/load-flow-analysis body=5034c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx blog › scrape mx/blog: load-flow-analysis (1.1m)
+  [200] mx/blog/relay-coordination-study body=6090c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx blog › scrape mx/blog: relay-coordination-study (1.0m)
+  [200] mx/blog/short-circuit-analysis body=5693c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — mx blog › scrape mx/blog: short-circuit-analysis (1.0m)
+
+  4 passed (4.2m)

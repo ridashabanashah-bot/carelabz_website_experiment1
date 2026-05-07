@@ -1,0 +1,152 @@
+Rescue queue (19):
+  shape  ar service
+  shape  au blog
+  shape  cl service
+  shape  cn service
+  shape  co service
+  shape  cz service
+  shape  hk service
+  shape  hu service
+  shape  kr service
+  shape  pe service
+  shape  ph blog
+  shape  pl service
+  shape  ro service
+  shape  ru service
+  shape  sk service
+  shape  tw service
+  shape  ua service
+  shape  za blog
+  upload us blog
+
+=== RESCUE AR / service ===
+  [ar] rediscover... rc=0
+  [ar] scrape_service           ... OK (474s)
+  [ar] shape_service            ... OK (1s)
+  [ar] upload_service_heroes    ... OK (14s)
+  [ar] post_service             ... OK (11s)
+
+=== RESCUE AU / blog ===
+  [au] rediscover... rc=0
+  [au] scrape_blog              ... OK (721s)
+  [au] shape_blog               ... OK (2s)
+  [au] upload_blog_heroes       ... OK (21s)
+  [au] post_blog                ... OK (40s)
+
+=== RESCUE CL / service ===
+  [cl] rediscover... rc=0
+  [cl] scrape_service           ... OK (470s)
+  [cl] shape_service            ... OK (1s)
+  [cl] upload_service_heroes    ... OK (14s)
+  [cl] post_service             ... OK (12s)
+
+=== RESCUE CN / service ===
+  [cn] rediscover... rc=0
+  [cn] scrape_service           ... OK (543s)
+  [cn] shape_service            ... OK (2s)
+  [cn] upload_service_heroes    ... OK (14s)
+  [cn] post_service             ... OK (10s)
+
+=== RESCUE CO / service ===
+  [co] rediscover... rc=0
+  [co] scrape_service           ... OK (468s)
+  [co] shape_service            ... OK (2s)
+  [co] upload_service_heroes    ... OK (15s)
+  [co] post_service             ... OK (11s)
+
+=== RESCUE CZ / service ===
+  [cz] rediscover... rc=0
+  [cz] scrape_service           ... OK (681s)
+  [cz] shape_service            ... OK (2s)
+  [cz] upload_service_heroes    ... OK (20s)
+  [cz] post_service             ... OK (18s)
+
+=== RESCUE HK / service ===
+  [hk] rediscover... rc=0
+  [hk] scrape_service           ... OK (542s)
+  [hk] shape_service            ... OK (2s)
+  [hk] upload_service_heroes    ... OK (15s)
+  [hk] post_service             ... OK (10s)
+
+=== RESCUE HU / service ===
+  [hu] rediscover... rc=0
+  [hu] scrape_service           ... OK (681s)
+  [hu] shape_service            ... OK (2s)
+  [hu] upload_service_heroes    ... OK (16s)
+  [hu] post_service             ... OK (19s)
+
+=== RESCUE KR / service ===
+  [kr] rediscover... rc=0
+  [kr] scrape_service           ... OK (543s)
+  [kr] shape_service            ... OK (2s)
+  [kr] upload_service_heroes    ... OK (15s)
+  [kr] post_service             ... OK (13s)
+
+=== RESCUE PE / service ===
+  [pe] rediscover... rc=0
+  [pe] scrape_service           ... OK (479s)
+  [pe] shape_service            ... OK (2s)
+  [pe] upload_service_heroes    ... OK (15s)
+  [pe] post_service             ... OK (11s)
+
+=== RESCUE PH / blog ===
+  [ph] rediscover... rc=0
+  [ph] scrape_blog              ... OK (785s)
+  [ph] shape_blog               ... OK (2s)
+  [ph] upload_blog_heroes       ... OK (31s)
+  [ph] post_blog                ... OK (20s)
+
+=== RESCUE PL / service ===
+  [pl] rediscover... rc=0
+  [pl] scrape_service           ... OK (684s)
+  [pl] shape_service            ... OK (2s)
+  [pl] upload_service_heroes    ... OK (16s)
+  [pl] post_service             ... OK (24s)
+
+=== RESCUE RO / service ===
+  [ro] rediscover... rc=0
+  [ro] scrape_service           ... OK (684s)
+  [ro] shape_service            ... OK (2s)
+  [ro] upload_service_heroes    ... OK (17s)
+  [ro] post_service             ... OK (18s)
+
+=== RESCUE RU / service ===
+  [ru] rediscover... rc=0
+  [ru] scrape_service           ... OK (701s)
+  [ru] shape_service            ... OK (2s)
+  [ru] upload_service_heroes    ... OK (17s)
+  [ru] post_service             ... OK (19s)
+
+=== RESCUE SK / service ===
+  [sk] rediscover... rc=0
+  [sk] scrape_service           ... OK (684s)
+  [sk] shape_service            ... OK (2s)
+  [sk] upload_service_heroes    ... OK (18s)
+  [sk] post_service             ... OK (17s)
+
+=== RESCUE TW / service ===
+  [tw] rediscover... rc=0
+  [tw] scrape_service           ... OK (544s)
+  [tw] shape_service            ... OK (2s)
+  [tw] upload_service_heroes    ... OK (19s)
+  [tw] post_service             ... OK (211s)
+
+=== RESCUE UA / service ===
+  [ua] rediscover... rc=0
+  [ua] scrape_service           ... OK (684s)
+  [ua] shape_service            ... OK (2s)
+  [ua] upload_service_heroes    ... OK (52s)
+  [ua] post_service             ... OK (31s)
+
+=== RESCUE ZA / blog ===
+  [za] rediscover... rc=0
+  [za] scrape_blog              ... OK (1322s)
+  [za] shape_blog               ... OK (4s)
+  [za] upload_blog_heroes       ... OK (39s)
+  [za] post_blog                ... OK (36s)
+
+=== RESCUE US / upload_blog_heroes ===
+  [us] upload_blog_heroes       ... OK (2s)
+  [us] post_blog                ... OK (9s)
+
+Rescue elapsed: 213.0m

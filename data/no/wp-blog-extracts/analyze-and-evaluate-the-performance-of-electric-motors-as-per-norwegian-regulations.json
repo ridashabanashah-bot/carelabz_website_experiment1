@@ -1,0 +1,27 @@
+{
+  "data": {
+    "region": "no",
+    "slug": "analyze-and-evaluate-the-performance-of-electric-motors-as-per-norwegian-regulations-no",
+    "title": "Analyse and Evaluate the Performance of Electric Motors as per Norwegian Regulations",
+    "metaTitle": "Analyse and Evaluate the Performance of Electric Motors as per Norwegian Regulations | Carelabs",
+    "metaDescription": "Kolejna witryna oparta na WordPressie",
+    "excerpt": "Kolejna witryna oparta na WordPressie",
+    "body": "![motor-start](https://carelabz.com/no/wp-content/uploads/2023/03/MicrosoftTeams-image-32-1.jpg)\n\nIndustrial electric motors are used in various applications worldwide. According to the International Energy Agency (IEA), the automobile industry consumes up to 70% of all energy used in an industrial context, 35% of all energy consumed in the commercial and service sectors, and 45% of all electricity produced worldwide. These figures demonstrate the significance of electric motors in many industrial operations, since each hour of downtime caused by a motor failure costs thousands of dollars. They are the primary source of greenhouse gases that harm the environment. They are also largely to responsible for the dramatic increase in demand for power in developing nations. There is a global economic potential to enhance industrial motor energy efficiency by 20% to 30%, with most payback periods of less than three years. Electric motors account for around 15%, or 4.3 billion tons, of the world’s yearly CO2 emissions, which total 26 billion tons. Increasing energy efficiency is one of the most cost-effective and low-risk approaches to reduce greenhouse gas emissions and decrease the growth in energy consumption.\n\n**Use a reliable motor because:**\n\n- Reduced operational expenses\n- A less noisy and cooler run\n- Motors that are more durable and efficient\n- Fewer greenhouse gases are discharged into the atmosphere\n\n### How to Begin a Motor Analysis:\n\nElectric motors do not always convert all of the energy they consume into mechanical energy. Friction, windage, and losses in the stator, rotor, and magnetic core all contribute to energy loss. The motor’s efficiency is decreasing because of these losses. When you consider how much energy is consumed and how electric motors are used in industry, it is simple to see why and how critical it is to assess efficiency and establish minimum energy performance criteria. \n\nThe test technique utilized determines how accurately efficiency and motor loss are assessed. There is no single testing procedure that is employed in every business worldwide. Even though the concept is simple, measuring and confirming the motor’s energy efficiency using various criteria can be difficult.\n\n### Internationally Acknowledged Techniques for Measuring Effectiveness:\n\nThe following testing methodologies are frequently discussed in industrial settings: IEEE (Institute of Electrical and Electronics Engineers) 112-2004 is a typical method for testing multiphase motors and generators. “Methods for estimating the efficiency and losses of rotating electrical machinery,” International Electrotechnical Commission (IEC) Publication 60034-2-1, 2014. JEC 37 is the standard for induction machines developed by the Japanese Electrotechnical Committee. IEEE/ANSI 112-2004 IEEE/ANSI 112-2004 \n\n**This technique includes 10 ways to assess how efficiently energy is used. To highlight the most important:** \n\n- Input and output tests are simple.\n- Loss-separated input and output testing.\n- Back-to-back testing of two computers linked together.\n- The load losses are calculated using smoothed residual losses.\n- The “Eh-star” technique\n\n**There are three distinct types of IEC standard tests:**\n\n- Measuring the power that goes into and comes out of a single machine.\n- Monitoring the power flowing into and coming out of two devices that are linked back-to-back.\n- One machine’s losses were totaled.\n\nThe increased load losses are completely ignored by the Japanese JEC standard 37 test methods. Businesses may save money and protect the environment by reducing the amount of energy used by their equipment and appliances. This is only one of several significant economic and environmental benefits. We provide motor start analysis services in Oslo, Bergen, Trondheim, and Stavanger, among other significant cities.",
+    "author": "admin",
+    "category": "Insights",
+    "tags": [],
+    "publishedDate": "2023-03-17T06:41:50Z",
+    "heroImage": "https://rational-cheese-8e8c4f80ea.media.strapiapp.com/no_blog_analyze_and_evaluate_the_performance_of_electric_motors_as_perrwegian_regulations_7f7ee9986a.jpg",
+    "heroImageAlt": "power-system-blog",
+    "seoKeywords": [
+      "analyse and evaluate the performance of electric motors as per norwegian regulations",
+      "analyse and evaluate the performance of electric motors as per norwegian regulations NO"
+    ],
+    "publishedAt": null
+  },
+  "_source": {
+    "wp_url": "https://carelabz.com/no/analyze-and-evaluate-the-performance-of-electric-motors-as-per-norwegian-regulations/",
+    "wp_screenshot": "tests/screenshots/wp-no-blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-norwegian-regulations.png",
+    "body_chars": 3855
+  }
+}

@@ -1,0 +1,35 @@
+
+Running 14 tests using 1 worker
+
+  [200] ie/blog/a-step-by-step-guide-to-arc-flash-analysis-in-ireland body=6249c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: a-step-by-step-guide-to-arc-flash-analysis-in-ireland (48.5s)
+  [200] ie/blog/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom body=6249c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom (49.4s)
+  [200] ie/blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-irish-regulations body=4944c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: analyze-and-evaluate-the-performance-of-electric-motors-as-per-irish-regulations (48.1s)
+  [200] ie/blog/harmonic-analysis-of-irish-power-system body=6316c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: harmonic-analysis-of-irish-power-system (47.8s)
+  [200] ie/blog/how-can-the-electricity-quality-in-irish-be-analyzed body=5952c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: how-can-the-electricity-quality-in-irish-be-analyzed (47.8s)
+  [200] ie/blog/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors body=6015c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors (48.1s)
+  [200] ie/blog/irish-power-quality-working-principles body=9096c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: irish-power-quality-working-principles (47.8s)
+  [200] ie/blog/load-flow-and-short-circuit-analysis-significance-for-irish-businesses body=5153c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: load-flow-and-short-circuit-analysis-significance-for-irish-businesses (47.7s)
+  [200] ie/blog/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination body=8213c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination (47.7s)
+  [200] ie/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-ireland body=6200c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-ireland (47.9s)
+  [200] ie/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk body=6200c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk (49.2s)
+  [200] ie/blog/uk-power-quality-working-principles body=9096c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: uk-power-quality-working-principles (49.3s)
+  [200] ie/blog/why-are-harmonic-analysis-and-studies-so-vital-for-irish-businesses body=5752c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: why-are-harmonic-analysis-and-studies-so-vital-for-irish-businesses (47.8s)
+  [200] ie/blog/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses body=5752c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ie blog › scrape ie/blog: why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses (50.0s)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (11.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  14 passed (11.3m)

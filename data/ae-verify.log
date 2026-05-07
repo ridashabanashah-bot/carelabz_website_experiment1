@@ -1,0 +1,2250 @@
+
+Running 129 tests using 1 worker
+
+  ok   1 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/ (1.1s)
+  ok   2 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/about/ (835ms)
+  ok   3 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/ (943ms)
+  x    4 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/about-earth-fault-loop-impedence-test/ (756ms)
+  ok   5 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-infrared-thermography-inspection-important/ (940ms)
+  x    6 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ (818ms)
+  ok   7 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/how-what-why-generator-load-bank-testing-done/ (967ms)
+  x    8 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-about-residual-current-device-testing-safety/ (858ms)
+  x    9 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-continuity-testing-what-how/ (908ms)
+  x   10 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ (913ms)
+  x   11 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ (834ms)
+  x   12 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/megger-test-performed/ (1.0s)
+  x   13 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/need-conduct-electrical-safety-testing/ (832ms)
+  ok  14 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/protecting-electrical-systems/ (823ms)
+  x   15 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/purpose-lightning-arrester-testing-necessary/ (714ms)
+  ok  16 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/thermography-test-of-electrical-panels/ (883ms)
+  ok  17 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/thermography-testing-of-electrical-equipment/ (741ms)
+  x   18 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ (684ms)
+  x   19 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-cable-testing-how-cable-testing-done/ (924ms)
+  x   20 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ (904ms)
+  x   21 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ (976ms)
+  x   22 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ (792ms)
+  ok  23 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-earth-grounding/ (809ms)
+  x   24 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-factory-acceptance-testing-how-fat-done/ (737ms)
+  x   25 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ (860ms)
+  ok  26 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-how-grounding-design-planning/ (781ms)
+  ok  27 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-how-harmonic-study-analysis-done/ (669ms)
+  x   28 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ (743ms)
+  x   29 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ (802ms)
+  x   30 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ (864ms)
+  x   31 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ (979ms)
+  ok  32 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-motor-acceleration-study-analysis/ (808ms)
+  x   33 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-pat-test-why-pat-test-done/ (741ms)
+  x   34 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-polarity-test-why-conduct-polarity-test/ (777ms)
+  x   35 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-protective-device-testing-how-done/ (929ms)
+  x   36 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ (910ms)
+  ok  37 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-voltage-drop-study-analysis/ (897ms)
+  ok  38 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-why-load-flow-analysis-power-flow-analysis-done/ (821ms)
+  x   39 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ (933ms)
+  x   40 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash/ (835ms)
+  x   41 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ (834ms)
+  ok  42 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/case-studies/ (795ms)
+  ok  43 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/case-studies/coca-cola-abu-dhabi-arc-flash-study/ (878ms)
+  x   44 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/contact/ (983ms)
+  ok  45 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ (962ms)
+  x   46 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study-analysis/ (834ms)
+  ok  47 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study/ (1.1s)
+  x   48 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/automatic-transfer-switch-testing-service/ (688ms)
+  ok  49 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/bain-marie-calibration/ (1.0s)
+  x   50 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/battery-testing-services-dubai-uae/ (722ms)
+  x   51 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-inspection-services/ (853ms)
+  x   52 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-testing-services/ (951ms)
+  ok  53 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/blast-chiller-calibration/ (808ms)
+  ok  54 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/blast-freezer-calibration/ (647ms)
+  x   55 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/building-envelope-infrared-thermography-inspection-service/ (716ms)
+  x   56 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/cable-testing/ (808ms)
+  ok  57 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/calibrator-calibration/ (981ms)
+  x   58 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/capacitor-bank-test/ (760ms)
+  x   59 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/chiller-calibration/ (873ms)
+  x   60 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/circuit-breaker-testing/ (817ms)
+  ok  61 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-inspection-services-dubai-uae/ (1.0s)
+  x   62 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-testing/ (674ms)
+  ok  63 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/compliance-as-a-service/ (1.0s)
+  x   64 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/contact-resistance-testing-service/ (829ms)
+  x   65 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/continuity-testing/ (870ms)
+  x   66 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/digital-thermometer-calibration/ (1.0s)
+  x   67 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-fault-loop-impedence-test/ (915ms)
+  x   68 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-ground-testing-service/ (811ms)
+  x   69 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-motor-testing/ (1.1s)
+  x   70 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-switchgear-testing-services/ (842ms)
+  x   71 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-calibration/ (809ms)
+  x   72 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-compliance-inspection/ (962ms)
+  x   73 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-installations-certification-service/ (863ms)
+  x   74 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit-service/ (853ms)
+  ok  75 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit/ (950ms)
+  x   76 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-auditing-inspection-service/ (719ms)
+  x   77 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-testing/ (818ms)
+  x   78 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ (943ms)
+  x   79 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-safety-inspection-services/ (893ms)
+  x   80 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-thermography-inspection/ (860ms)
+  ok  81 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/energy-auditing-service/ (881ms)
+  x   82 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/factory-acceptance-testing-services/ (763ms)
+  x   83 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-electrical-testing/ (879ms)
+  x   84 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-wire-testing/ (828ms)
+  x   85 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/frequency-stability-analysis/ (858ms)
+  x   86 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/generator-load-bank-testing/ (873ms)
+  x   87 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/gfci-standard-inspection-service/ (880ms)
+  x   88 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ground-fault-testing/ (1.0s)
+  x   89 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-grid-study-analysis/ (795ms)
+  x   90 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-system-design-and-planning/ (813ms)
+  x   91 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/harmonic-study-analysis/ (861ms)
+  x   92 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/insulation-resistance-test-service/ (922ms)
+  x   93 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/leakage-current-measurement/ (904ms)
+  x   94 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing-service/ (941ms)
+  x   95 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing/ (855ms)
+  x   96 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/live-testing/ (882ms)
+  x   97 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/load-flow-analysis/ (881ms)
+  ok  98 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lv-panel-inspection/ (1.0s)
+  x   99 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-panel-operation-testing/ (735ms)
+  ok 100 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-switchgear-assessment/ (999ms)
+  x  101 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/megger-test/ (683ms)
+  x  102 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/motor-acceleration-study-analysis/ (1.0s)
+  x  103 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/pfc-psc-test/ (836ms)
+  x  104 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/polarity-test-service/ (853ms)
+  x  105 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/portable-appliance-testing-dubai-uae/ (825ms)
+  x  106 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study-analysis/ (830ms)
+  ok 107 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study/ (1.0s)
+  ok 108 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-restoration-optimization/ (626ms)
+  x  109 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-system-study-analysis/ (723ms)
+  x  110 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/primary-current-injection-test/ (768ms)
+  x  111 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ (934ms)
+  ok 112 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-coordination-study/ (1.0s)
+  x  113 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-relay-testing-services/ (725ms)
+  ok 114 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protective-devices-testing-services/ (816ms)
+  x  115 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/relay-coordination-study-and-analysis/ (675ms)
+  x  116 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety-2/ (834ms)
+  x  117 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety/ (833ms)
+  x  118 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/secondary-current-injection-test/ (818ms)
+  x  119 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/short-circuit-study-analysis/ (883ms)
+  ok 120 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/soil-resistivity-test/ (835ms)
+  ok 121 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/thermographic-inspection/ (628ms)
+  x  122 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-certification/ (716ms)
+  x  123 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-inspection-company-uae/ (811ms)
+  x  124 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-inspection-electrical-installation/ (921ms)
+  x  125 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/torque-test/ (990ms)
+  x  126 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/unbalanced-load-flow-study-analysis/ (924ms)
+  x  127 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/vibration-study-and-analysis/ (893ms)
+  x  128 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-drop-study-analysis/ (826ms)
+  x  129 tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-imbalance-study/ (919ms)
+
+
+  1) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/about-earth-fault-loop-impedence-test/ 
+
+    Error: Stray asterisks on /ae/blog/about-earth-fault-loop-impedence-test/: **Step 1:**Use an Earth Fault Loop Tester or select the Earth Fault Loop Test option on a multifunct
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m5[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e4cc9--fault-loop-impedence-test-\error-context.md
+
+  2) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: not [32m"[email protected]"[39m
+    Received string:        [31m"Skip to content[39m
+    [31mABOUT US[39m
+    [31mSERVICES[39m
+    [31mCONTACT US[39m
+    [31mGET A QUOTE[39m
+    [31mHOME[39m
+    [31mINSIGHTS[39m
+    [31mINSPECTION & COMPLIANCE[39m
+    [31mELECTRICAL INSTALLATION INSPECTION TO GET OPERATION FITNESS CERTIFICATE (OFC)[39m
+    [31mBy Carelabs Engineering Team[39m
+    [31m1 January 2026[39m
+    [31mCARELABS PROVIDE FOLLOWING INSPECTION AND CERTIFICATION SERVICES NEEDED TO OBTAIN OFC[39m
+    [31m[39m
+    [31mBased on the Typical EHS Checklist for Operational Inspections following are the points that need to be fulfilled to obtain OFC.[39m
+    [31m[39m
+    [31mDefective electrical equipment/cables/apparatus etc shall be rectified prior to use. Warning tag system shall be in place until the equipment is rectified & ready for use.[39m
+    [31mEarthing where necessary for any electrical equipment shall be done prior to undertake any work/repair/maintenance.[39m
+    [31mThe isolators for machines should be identified with engraved label to indicate circuit number/source of supply.[39m
+    [31mThe live electrical parts in the control panel should be shrouded.[39m
+    [31mThe machines should have an individual MCB and ELCB (100 Ma) protection.[39m
+    [31mThe paint storage or a production area with flammable gas shall be provided with electrical equipment of appropriate Ex category.[39m
+    [31mThe power factor correction capacitors should be provided, p.f. should be maintained at 0.9 (lag).[39m
+    [31mThe wiring for machines should be preferably carried out using armoured cable or single core wires in GI conduit/ trunking.[39m
+    [31mOTHER SERVICES THAT MIGHT BE REQUIRED TO FULFIL CERTAIN CRITERIA[39m
+    [31mElectrical Audit for Risk assessment[39m
+    [31mThird Party Inspection, Testing, & Certification for Electrical Installation[39m
+    [31mVisual & Thermography Inspection[39m
+    [31mElectrical Safety Test[39m
+    [31mBuilding Envelope Thermography Inspection[39m
+    [31mThermography Testing[39m
+    [31mElectrical Switchgear Testing & Certification[39m
+    [31mCommercial Electrical Inspection[39m
+    [31mBiomedical Equipment Safety Inspection[39m
+    [31mProtective Devices Testing – Primary & Secondary Injection Test[39m
+    [31mShort Circuit Analysis[39m
+    [31mRelay Co-ordination Study[39m
+    [31mLoad Flow Analysis[39m
+    [31mPower Quality Study[39m
+    [31mHarmonic Analysis[39m
+    [31mEnergy Auditing[39m
+    [31mArc Flash Hazard Assessment[39m
+    [31mArc Flash Study & Analysis[39m
+    [31mPortable Appliance Test[39m
+    [31mElectrical Safety Test of Biomedical Equipment’s[39m
+    [31mEarth Bonding & Grounding Tests[39m
+    [31mProtection down conductors and Air-terminals[39m
+    [31mServicing of Circuit Breaker[39m
+    [31mLoad Test for Generator, UPS[39m
+    [31mTripping Test and Calibration of Circuit Breakers[39m
+    [31mEmergency Light Maintenance[39m
+    [31mBattery Test & Maintenance[39m
+    [31mAll Electrical Testing Services[39m
+    [31m[39m
+    [31mYou can enquire on any other activities that you need by emailing us on [7m[email protected][27m[39m
+    [31m[39m
+    [31mPURPOSE OF OFC[39m
+    [31m[39m
+    [31mThe Process of Operation Fitness Certification (OFC) ensures that each company operating from any facility located/built on plot land/pre-built units within the jurisdiction areas of Jebel Ali Free Zone & Techno Park complies with all the requirements set forth by Environment, Health & Safety (EHS). OFC Inspection Request form shall require to be submitted prior to the start of any operations/activities carried out in a particular facility or pre-built unit/s (specifying the date of commencement of operations in the application form) not later than 7 days from the start of operation/s.[39m
+    [31m[39m
+    [31mAPPLICABLE REGULATIONS[39m
+    [31mEnvironmental Regulations & Environmental Guidelines[39m
+    [31mOccupational Safety Regulations[39m
+    [31mConstruction Safety Regulations[39m
+    [31mEHS Design Development Regulations[39m
+    [31mGreen Building Regulations[39m
+    [31mCED Building Regulations[39m
+    [31mFZ/DM Rules (Wherever applicable)[39m
+    [31mOPERATIONS AND ACTIVITIES THAT REQUIRE TO OBTAIN OFC[39m
+    [31mAll kinds of Manufacturing and Industrial Operations (including Assembling, Testing, Repair & Maintenance, Cleaning/Washing, Fabrication & Painting, Refining, Processing, Blending, Re-packaging and Re-filling etc.)[39m
+    [31mTrading Activities & Storage/warehousing Facilities.[39m
+    [31mGeneral Warehousing & Logistics Activities (including Freight Forwarding/clearing etc.)[39m
+    [31m[39m
+    [31mIt is to be noted that EHS NOC shall be issued to facilities having only office facilities and not carrying out any operational activities and not having facilities for storage/warehousing and machine/equipment etc. and small retail outlets for example mobile phone shop, Tailoring shop and photo studio etc.[39m
+    [31m[39m
+    [31mWHO NEEDS TO OBTAIN OFC[39m
+    [31m[39m
+    [31mAll companies operating from plot of land facility or pre-built warehouse units having Industrial, Trading, Commercial or Professional activities or operations which may also involves use of machine/ equipment &/or handling/processing/storage of the materials, waste generation within the areas governed by Jebel Ali Free Zone & Techno Park.[39m
+    [31m[39m
+    [31mA separate OFC shall be issued for each facility to a company having more than one facility and located at different plot facility or pre-built warehouse unit (i.e. not adjacent and joined with each other), separated by any other facility/property not belongs to them or located across the road.[39m
+    [31m[39m
+    [31mWherever an existing company modifies/expand its facilities or adds/amend his activities/ operations in a particular plot/s, an existing OFC for a particular plot/s shall needs to be amended to reflect the modifications/changes/amendment. In the same regard, the OFC procedure as above shall be followed. This is applicable for sub-lessee and addition of any new materials storage also.[39m
+    [31m[39m
+    [31mOFC RENEWAL[39m
+    [31m[39m
+    [31mBased on the License expiry, the EHS OFC Admin shall automatically initiate the inspection schedule/renewal process for OFC on an annual basis within 60 days prior to expiry of the client License. No advance intimation to the client is given on the inspection visit to their facility. However, this doesn’t relieve the client’s responsibility to ensure that their OFC is renewed before the OFC/License expiry date. Any delays in renewal of the OFC may affect the renewal process of their License and Customs Import Code. Upon compliance with EHS requirements, the OFC with original approval (date) and current validity shall be issued to the client.[39m
+    [31m[39m
+    [31mINSPECTION & COMPLIANCE[39m
+    [31mELECTRICAL SAFETY[39m
+    [31mUAE[39m
+    [31mDEWA[39m
+    [31m[39m
+    [31mGET STARTED[39m
+    [31m[39m
+    [31mNEED EXPERT SUPPORT?[39m
+    [31m[39m
+    [31mCarelabs delivers arc flash studies, power system analysis, and DEWA compliance services across the UAE.[39m
+    [31m[39m
+    [31mGET A QUOTE[39m
+    [31mMORE ARTICLES[39m
+    [31m[39m
+    [31mCarelabs delivers DEWA-compliant arc flash studies, power system engineering, and electrical safety solutions across the United Arab Emirates.[39m
+    [31m[39m
+    [31mSERVICES[39m
+    [31mArc Flash Study[39m
+    [31mShort Circuit Analysis[39m
+    [31mLoad Flow Analysis[39m
+    [31mRelay Coordination Study[39m
+    [31mPower System Protection[39m
+    [31mCable Testing[39m
+    [31mCOMPANY[39m
+    [31mAbout[39m
+    [31mInsights[39m
+    [31mCase Studies[39m
+    [31mContact[39m
+    [31mCONTACT[39m
+    [31minfo@carelabz.com[39m
+    [31m+971 4 000 0000[39m
+    [31mDubai, United Arab Emirates[39m
+    [31m[39m
+    [31m© 2026 Carelabs. All rights reserved.[39m
+    [31m[39m
+    [31mENGINEERED FOR THE UAE."[39m
+
+      78 |       // No Cloudflare artifacts
+      79 |       expect(fullHTML).not.toContain("/cdn-cgi/l/email-protection");
+    > 80 |       expect(bodyText).not.toContain("[email protected]");
+         |                            ^
+      81 |
+      82 |       // No null emails
+      83 |       expect(fullHTML).not.toContain("nullinfo@");
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:80:28
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-42316-on-fitness-certificate-ofc-\error-context.md
+
+  3) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-about-residual-current-device-testing-safety/ 
+
+    Error: Truncated content on /ae/blog/learn-about-residual-current-device-testing-safety/: The RCD Testing Requirements indicate that a manager is required to test each device every three mon
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1e33d-rent-device-testing-safety-\error-context.md
+
+  4) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-continuity-testing-what-how/ 
+
+    Error: Truncated content on /ae/blog/learn-continuity-testing-what-how/: Multimeters and ohmmeters are normally used for continuity tests. Specialized continuity testers are
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-12fa3-ontinuity-testing-what-how-\error-context.md
+
+  5) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ 
+
+    Error: Truncated content on /ae/blog/learn-how-insulation-resistance-test-done/: This circuit is the one…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-6ba59-ation-resistance-test-done-\error-context.md
+
+  6) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ 
+
+    Error: Stray asterisks on /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/: **THERE ARE FIVE BASIC TEST METHODS AS NOTED BELOWSOIL RESISTIVITY TESTING:**WENNER FOUR-POLE EQUAL 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-05b21-est-why-and-how-is-it-done-\error-context.md
+
+  7) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/megger-test-performed/ 
+
+    Error: Truncated content on /ae/blog/megger-test-performed/: Deflecting coil or current coil connected in series and allow…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-7faa8-blog-megger-test-performed-\error-context.md
+
+  8) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/need-conduct-electrical-safety-testing/ 
+
+    Error: Stray asterisks on /ae/blog/need-conduct-electrical-safety-testing/: **Electric shock:**Electrical shock is caused by flow of current through human body. This kind of el
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m2[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-b8321--electrical-safety-testing-\error-context.md
+
+  9) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/purpose-lightning-arrester-testing-necessary/ 
+
+    Error: Truncated content on /ae/blog/purpose-lightning-arrester-testing-necessary/: The b…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-374be-arrester-testing-necessary-\error-context.md
+
+  10) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/: Verify indicator LEDs on the transfer switch ope…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-0ea00-ansfer-switch-testing-done-\error-context.md
+
+  11) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-cable-testing-how-cable-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-cable-testing-how-cable-testing-done/: Lastly, if all goes well, at the end of the application time (4), the insulation test is made, and t
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-b028c-ing-how-cable-testing-done-\error-context.md
+
+  12) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/: RECORD…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-19c64-apacitor-bank-testing-done-\error-context.md
+
+  13) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/: Overload tripping components of CBs can be tested by inputting 300% of the breaker rating into each 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-f5d7a-rcuit-breaker-testing-done-\error-context.md
+
+  14) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/: A new method will solve it. This method is very useful for measuring contact resistance in complicat
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-7836b-ct-resistance-testing-done-\error-context.md
+
+  15) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-factory-acceptance-testing-how-fat-done/ 
+
+    Error: Truncated content on /ae/blog/what-factory-acceptance-testing-how-fat-done/: Engage the operators and technicians. Focus on the personnel who will ultimately be responsible for 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-91361-tance-testing-how-fat-done-\error-context.md
+
+  16) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ 
+
+    Error: Truncated content on /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/: The testing gear needed consists of a high-current supply sufficient enough to…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-f69a0-nd-fault-testing-important-\error-context.md
+
+  17) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ 
+
+    Error: Stray asterisks on /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/: *The above-mentioned tests are offline tests.Dynamic Motor Testing or online Testing A more recent a
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2d369-testing-and-why-is-it-done-\error-context.md
+
+  18) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/: This test requires the user to place four equally spaced auxiliary probes into the earth to determin
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-045b4-l-resistivity-testing-done-\error-context.md
+
+  19) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ 
+
+    Error: Truncated content on /ae/blog/what-is-torque-testing-how-is-torque-testing-done/: Always follow the…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-233f5-how-is-torque-testing-done-\error-context.md
+
+  20) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ 
+
+    Error: Stray asterisks on /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/: A copper foil of a specific dimension is placed on the housing, for a nonconductive housings, and th
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2b858-ent-testing-measuring-done-\error-context.md
+
+  21) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-pat-test-why-pat-test-done/ 
+
+    Error: Truncated content on /ae/blog/what-pat-test-why-pat-test-done/: The current law requires that all employers maintain portable appliances and ensure their safety. PA
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-6322c-pat-test-why-pat-test-done-\error-context.md
+
+  22) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-polarity-test-why-conduct-polarity-test/ 
+
+    Error: Truncated content on /ae/blog/what-polarity-test-why-conduct-polarity-test/: Although polarity is towards the end of the recommended test sequence, it is sensible, on lighting c
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-3bc87--why-conduct-polarity-test-\error-context.md
+
+  23) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-protective-device-testing-how-done/ 
+
+    Error: Truncated content on /ae/blog/what-protective-device-testing-how-done/: The first electrical test made on the relay should be a pickup test. Pickup is defined as that value
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-408fe-ve-device-testing-how-done-\error-context.md
+
+  24) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ 
+
+    Error: Stray asterisks on /ae/blog/what-short-circuit-analysis-done-why/: Short circuit analysis essentially consists of determining the steady state solution of a linear net
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e916f--circuit-analysis-done-why-\error-context.md
+
+  25) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ 
+
+    Error: Truncated content on /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/: Choose…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-5b4e3--hazard-study-and-analysis-\error-context.md
+
+  26) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash/ 
+
+    Error: Truncated content on /ae/blog/what-you-need-to-know-about-arc-flash/: Employ High-Resistance Grounding: During ground faults, High-Resistance Grounding systems provide a 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-4187a-ed-to-know-about-arc-flash-\error-context.md
+
+  27) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ 
+
+    Error: Truncated content on /ae/blog/why-how-what-automatic-transfer-switch-testing-done/: For existing facilities, a study should be done to determine which specific transfer switches feed l
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-8b857-ansfer-switch-testing-done-\error-context.md
+
+  28) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/contact/ 
+
+    Error: Stray asterisks on /ae/contact/: Full Name *
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m3[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-3ae76-Tolerance-Clean-ae-contact-\error-context.md
+
+  29) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study-analysis/ 
+
+    Error: Truncated content on /ae/services/arc-flash-study-analysis/: A short circuit study is required to determine the magnitude of current flowing throughout the power
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-18b4d-s-arc-flash-study-analysis-\error-context.md
+
+  30) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/automatic-transfer-switch-testing-service/ 
+
+    Error: Truncated content on /ae/services/automatic-transfer-switch-testing-service/: ATS is a pretty simple device. It senses power source and behaves accordi…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-81211-fer-switch-testing-service-\error-context.md
+
+  31) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/battery-testing-services-dubai-uae/ 
+
+    Error: Truncated content on /ae/services/battery-testing-services-dubai-uae/: Measuring voltage tells only part of the story. A load test should also be performed to accurately d
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-0e239-testing-services-dubai-uae-\error-context.md
+
+  32) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-inspection-services/ 
+
+    Error: Truncated content on /ae/services/biomedical-equipment-safety-inspection-services/: Applied Part or Patient Leakage: current flowing through a person to Earth from the Applied Part or 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-df6bf-safety-inspection-services-\error-context.md
+
+  33) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-testing-services/ 
+
+    Error: Truncated content on /ae/services/biomedical-equipment-safety-testing-services/: Applied Part or Patient Leakage: current flowing through a person to Earth from the Applied Part or 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-ca629-nt-safety-testing-services-\error-context.md
+
+  34) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/building-envelope-infrared-thermography-inspection-service/ 
+
+    Error: Stray asterisks on /ae/services/building-envelope-infrared-thermography-inspection-service/: *Carelabs is authorized provider of Electrical Installation’s Study, Analysis, Inspection, and Certi
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-b6d26-ography-inspection-service-\error-context.md
+
+  35) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/cable-testing/ 
+
+    Error: Truncated content on /ae/services/cable-testing/: The inst…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-4f27b--ae-services-cable-testing-\error-context.md
+
+  36) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/capacitor-bank-test/ 
+
+    Error: Truncated content on /ae/services/capacitor-bank-test/: It is advised not to detach capacitor units for measurement so as to elude involuntary damage to the
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-01486-rvices-capacitor-bank-test-\error-context.md
+
+  37) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/chiller-calibration/ 
+
+    Error: Stray asterisks on /ae/services/chiller-calibration/: Chilled water is cooled by industrial chiller. Industrial absorption chillers provides specific cool
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-0eef7-rvices-chiller-calibration-\error-context.md
+
+  38) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/circuit-breaker-testing/ 
+
+    Error: Truncated content on /ae/services/circuit-breaker-testing/: Connection TestConnection testing is important to mak…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e3c57-es-circuit-breaker-testing-\error-context.md
+
+  39) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-testing/ 
+
+    Error: Truncated content on /ae/services/commercial-electrical-testing/: Operation Efficiency is Improved An electrical inspector will not only inspect for faults in the wir
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-9d2ae-mercial-electrical-testing-\error-context.md
+
+  40) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/contact-resistance-testing-service/ 
+
+    Error: Truncated content on /ae/services/contact-resistance-testing-service/: At the aspect of the machinery assembly, the contact resistance of metals contact surface is used in
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-be930-resistance-testing-service-\error-context.md
+
+  41) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/continuity-testing/ 
+
+    Error: Truncated content on /ae/services/continuity-testing/: The lowest range setting should be used when te…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-aae0c-ervices-continuity-testing-\error-context.md
+
+  42) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/digital-thermometer-calibration/ 
+
+    Error: Stray asterisks on /ae/services/digital-thermometer-calibration/: Digital pipe thermometer measures the pipe or liquids and solids in one unit**.** Standard products 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-601b1-al-thermometer-calibration-\error-context.md
+
+  43) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-fault-loop-impedence-test/ 
+
+    Error: Stray asterisks on /ae/services/earth-fault-loop-impedence-test/: **Step 1:**Earth Fault Loop Tester or Earth Fault Loop Test option is selected on a multifunctional 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m4[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e98a9--fault-loop-impedence-test-\error-context.md
+
+  44) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-ground-testing-service/ 
+
+    Error: Truncated content on /ae/services/earth-ground-testing-service/: This test uses a special transformer to induce an oscillating voltage (often 1.7 kHz) into the groun
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2dc2b-rth-ground-testing-service-\error-context.md
+
+  45) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-motor-testing/ 
+
+    Error: Truncated content on /ae/services/electric-motor-testing/: Earth Continuity: Use your ohmmeter to verify the resistance between earth and mot…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-5d319-ces-electric-motor-testing-\error-context.md
+
+  46) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-switchgear-testing-services/ 
+
+    Error: Truncated content on /ae/services/electric-switchgear-testing-services/: Calculate the contact dc resistance among panels by inserting 100Ampere DC. This will involve busbar
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-ce26d-witchgear-testing-services-\error-context.md
+
+  47) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-calibration/ 
+
+    Error: Truncated content on /ae/services/electrical-calibration/: Calibration defines the accuracy and quality of measurements recorded using a piece of equipment. Ov
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e032f-ces-electrical-calibration-\error-context.md
+
+  48) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-compliance-inspection/ 
+
+    Error: Truncated content on /ae/services/electrical-compliance-inspection/: Fulfilling these rules and regula…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-9831d-ical-compliance-inspection-\error-context.md
+
+  49) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-installations-certification-service/ 
+
+    Error: Truncated content on /ae/services/electrical-installations-certification-service/: The type of wiring system and its condition. For example, cables coated in black rubber were phased 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-8ab5b-ions-certification-service-\error-context.md
+
+  50) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit-service/ 
+
+    Error: Stray asterisks on /ae/services/electrical-safety-audit-service/: Carelabs is authorized provider of Electrical Installation’s Study, Analysis, Inspection, and Certif
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-327b0-rical-safety-audit-service-\error-context.md
+
+  51) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-auditing-inspection-service/ 
+
+    Error: Truncated content on /ae/services/electrical-safety-auditing-inspection-service/: The follow…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-abbba-uditing-inspection-service-\error-context.md
+
+  52) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-testing/ 
+
+    Error: Truncated content on /ae/services/electrical-safety-testing/: There are different t…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-d78f6--electrical-safety-testing-\error-context.md
+
+  53) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ 
+
+    Error: Truncated content on /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/: Presence of…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-44b36-dy-hazard-analysis-service-\error-context.md
+
+  54) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-safety-inspection-services/ 
+
+    Error: Truncated content on /ae/services/electrical-switchgear-safety-inspection-services/: If corona occurs in switchgear assemblies, it is usually localized in thin air gaps that exist betwe
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1fef3-safety-inspection-services-\error-context.md
+
+  55) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-thermography-inspection/ 
+
+    Error: Truncated content on /ae/services/electrical-thermography-inspection/: The integrity of outdoor switchge…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2502e-al-thermography-inspection-\error-context.md
+
+  56) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/factory-acceptance-testing-services/ 
+
+    Error: Truncated content on /ae/services/factory-acceptance-testing-services/: The testing included in a FAT procedure should be largely derived from the performance criteria defi
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-c769f-cceptance-testing-services-\error-context.md
+
+  57) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-electrical-testing/ 
+
+    Error: Truncated content on /ae/services/fixed-electrical-testing/: The Periodic Inspection and Testing procedure will require isolation of all electrical circuits for 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1aabb-s-fixed-electrical-testing-\error-context.md
+
+  58) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-wire-testing/ 
+
+    Error: Truncated content on /ae/services/fixed-wire-testing/: Test 8: Operation of Devices for Isolation and SwitchingVerifying how effectiv…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e7b2e-ervices-fixed-wire-testing-\error-context.md
+
+  59) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/frequency-stability-analysis/ 
+
+    Error: Truncated content on /ae/services/frequency-stability-analysis/: Gap HandlingIn order to keep up the correct implied time period between measurements, gaps must be c
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-41bf5-equency-stability-analysis-\error-context.md
+
+  60) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/generator-load-bank-testing/ 
+
+    Error: Truncated content on /ae/services/generator-load-bank-testing/: Step 1 We check all fluid levels in the generator and make sure the fuel tank is…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-4d798-enerator-load-bank-testing-\error-context.md
+
+  61) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/gfci-standard-inspection-service/ 
+
+    Error: Truncated content on /ae/services/gfci-standard-inspection-service/: Proper term…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-200c5-tandard-inspection-service-\error-context.md
+
+  62) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ground-fault-testing/ 
+
+    Error: Stray asterisks on /ae/services/ground-fault-testing/: **Testing neutral insulation resistance:**Testing the insulation resistance is crucial, as issues ar
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m3[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-fd0f1-vices-ground-fault-testing-\error-context.md
+
+  63) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-grid-study-analysis/ 
+
+    Error: Truncated content on /ae/services/grounding-grid-study-analysis/: Determination of maximum ground fault current: The following steps are involved in determin…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-25163-unding-grid-study-analysis-\error-context.md
+
+  64) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-system-design-and-planning/ 
+
+    Error: Truncated content on /ae/services/grounding-system-design-and-planning/: Step 3: Complex image methodIn order to improve the efficiency of Green’s functions calculation, the
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-c5ea1-system-design-and-planning-\error-context.md
+
+  65) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/harmonic-study-analysis/ 
+
+    Error: Truncated content on /ae/services/harmonic-study-analysis/: A harmonics analyser is the best equipment for conducting study and analysis of power quality to fin
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-b5aad-es-harmonic-study-analysis-\error-context.md
+
+  66) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/insulation-resistance-test-service/ 
+
+    Error: Truncated content on /ae/services/insulation-resistance-test-service/: Expected IR value gets on Temp. 20 to 30 decree centigrade. If this temperature reduces by 10 degree
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-d5060-on-resistance-test-service-\error-context.md
+
+  67) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/leakage-current-measurement/ 
+
+    Error: Truncated content on /ae/services/leakage-current-measurement/: If you measured the same circuit loaded with office equipment, the result would be signifi…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-0c15c-eakage-current-measurement-\error-context.md
+
+  68) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing-service/ 
+
+    Error: Truncated content on /ae/services/lightning-arrester-testing-service/: As large parts of the lightning protection system may be hidden or inaccessible after completion, it
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-a876c-g-arrester-testing-service-\error-context.md
+
+  69) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing/ 
+
+    Error: Truncated content on /ae/services/lightning-arrester-testing/: As large parts of the lightning protection system may be hidden or inaccessible after completion, it
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-d06a4-lightning-arrester-testing-\error-context.md
+
+  70) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/live-testing/ 
+
+    Error: Truncated content on /ae/services/live-testing/: To perfo…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-350fe-n-ae-services-live-testing-\error-context.md
+
+  71) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/load-flow-analysis/ 
+
+    Error: Truncated content on /ae/services/load-flow-analysis/: Each system nod…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-247bf-ervices-load-flow-analysis-\error-context.md
+
+  72) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-panel-operation-testing/ 
+
+    Error: Truncated content on /ae/services/mcc-panel-operation-testing/: Check the termination of the cables…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-a5154-cc-panel-operation-testing-\error-context.md
+
+  73) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/megger-test/ 
+
+    Error: Stray asterisks on /ae/services/megger-test/: Megger Testing is a spot insulation test which uses an applied DC voltage, either 250Vdc, 500Vdc 1,0
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2a66c-an-ae-services-megger-test-\error-context.md
+
+  74) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/motor-acceleration-study-analysis/ 
+
+    Error: Truncated content on /ae/services/motor-acceleration-study-analysis/: As electrical consultants, motor starting studies help to improve the reliability engineering for th
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-6af99-cceleration-study-analysis-\error-context.md
+
+  75) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/pfc-psc-test/ 
+
+    Error: Truncated content on /ae/services/pfc-psc-test/: Some test meters require that the third (usually green) lead to be connected on the Neutr…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-36aa1-n-ae-services-pfc-psc-test-\error-context.md
+
+  76) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/polarity-test-service/ 
+
+    Error: Truncated content on /ae/services/polarity-test-service/: If visual inspection is not possible, we will need to use a low-resistance ohmmeter for this test. W
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-a1741-ices-polarity-test-service-\error-context.md
+
+  77) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/portable-appliance-testing-dubai-uae/ 
+
+    Error: Stray asterisks on /ae/services/portable-appliance-testing-dubai-uae/: *WHY PAT IS DONE?THE KEYWORD IS LIABILITY. AN EMPLOYER OR MANUFACTURER SHOULD SHOW AS MUCH CONCERN A
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-92df3-ppliance-testing-dubai-uae-\error-context.md
+
+  78) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study-analysis/ 
+
+    Error: Truncated content on /ae/services/power-quality-study-analysis/: The aim of the survey is noted down that will be ut…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-3a383-wer-quality-study-analysis-\error-context.md
+
+  79) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-system-study-analysis/ 
+
+    Error: Stray asterisks on /ae/services/power-system-study-analysis/: **Carelabs is competent provider of Power System Study, Analysis, and Certification services in Midd
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m2[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-d5615-ower-system-study-analysis-\error-context.md
+
+  80) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/primary-current-injection-test/ 
+
+    Error: Truncated content on /ae/services/primary-current-injection-test/: The automatic current regulation, the pre-s…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-e3a66-ary-current-injection-test-\error-context.md
+
+  81) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ 
+
+    Error: Stray asterisks on /ae/services/prospective-short-circuit-test-prospective-fault-current-test/: PSC will be greater than the PFC. Prospective fault current and short circuit current of a circuit i
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-3535e-pective-fault-current-test-\error-context.md
+
+  82) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-relay-testing-services/ 
+
+    Error: Truncated content on /ae/services/protection-relay-testing-services/: High Frequency Disturbance Test The High Frequency Disturbance Te…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-97629-ion-relay-testing-services-\error-context.md
+
+  83) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/relay-coordination-study-and-analysis/ 
+
+    Error: Truncated content on /ae/services/relay-coordination-study-and-analysis/: If the study is on a new system or already existing system, attain or create a one- line diagram of 
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-25f65-ination-study-and-analysis-\error-context.md
+
+  84) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety-2/ 
+
+    Error: Truncated content on /ae/services/residual-current-device-testing-safety-2/: A plug-in RCD can cost as little as 120 AED. A fixed RCD will cos…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-4ec01-nt-device-testing-safety-2-\error-context.md
+
+  85) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety/ 
+
+    Error: Truncated content on /ae/services/residual-current-device-testing-safety/: Operating Time Test: This test measures how long the RCD takes to trip, indicating whether it is fas
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1e676-rent-device-testing-safety-\error-context.md
+
+  86) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/secondary-current-injection-test/ 
+
+    Error: Truncated content on /ae/services/secondary-current-injection-test/: The protective operations of the electronic circuit are checked similar to a no-trip mode test, with
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-0648c-ary-current-injection-test-\error-context.md
+
+  87) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/short-circuit-study-analysis/ 
+
+    Error: Truncated content on /ae/services/short-circuit-study-analysis/: The ANSI C37.010 standard intended to use for power circuit breaker choice, but it does give informa
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-3b016-ort-circuit-study-analysis-\error-context.md
+
+  88) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-certification/ 
+
+    Error: Truncated content on /ae/services/third-party-electrical-certification/: Code 2: Minor deviation from the regulations, remedial works are required to the electrical installa
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-78637-y-electrical-certification-\error-context.md
+
+  89) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-inspection-company-uae/ 
+
+    Error: Stray asterisks on /ae/services/third-party-electrical-inspection-company-uae/: *Carelabs is authorized provider of Electrical Installation’s Study, Analysis, Inspection, and Certi
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      47 |         asteriskLines.length,
+      48 |         `Stray asterisks on ${urlPath}: ${asteriskLines[0]?.slice(0, 100)}`
+    > 49 |       ).toBe(0);
+         |         ^
+      50 |
+      51 |       // No ellipses indicating truncated content
+      52 |       const ellipsisLines = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:49:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1f03f-cal-inspection-company-uae-\error-context.md
+
+  90) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-inspection-electrical-installation/ 
+
+    Error: Truncated content on /ae/services/third-party-inspection-electrical-installation/: Connect two leads (positive and negative) across an insulation barrier. After making connections, ap
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-2419b-on-electrical-installation-\error-context.md
+
+  91) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/torque-test/ 
+
+    Error: Truncated content on /ae/services/torque-test/: The ISO 9001 quality regulation sets out the torque values and gauges awaited and necessary of vario
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-1eb07-an-ae-services-torque-test-\error-context.md
+
+  92) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/unbalanced-load-flow-study-analysis/ 
+
+    Error: Truncated content on /ae/services/unbalanced-load-flow-study-analysis/: In distribution systems loads exist in one, two and three phase loads with delta connections. Also l
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-df251-d-load-flow-study-analysis-\error-context.md
+
+  93) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/vibration-study-and-analysis/ 
+
+    Error: Truncated content on /ae/services/vibration-study-and-analysis/: This divides the total…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-becb1-bration-study-and-analysis-\error-context.md
+
+  94) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-drop-study-analysis/ 
+
+    Error: Truncated content on /ae/services/voltage-drop-study-analysis/: Vdrop= |Vs| – |Vr…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-5808e-oltage-drop-study-analysis-\error-context.md
+
+  95) tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-imbalance-study/ 
+
+    Error: Truncated content on /ae/services/voltage-imbalance-study/: MITIGATION TECHNIQUES FOR FACILITIES:…
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m1[39m
+
+      60 |         ellipsisLines.length,
+      61 |         `Truncated content on ${urlPath}: ${ellipsisLines[0]?.slice(0, 100)}`
+    > 62 |       ).toBe(0);
+         |         ^
+      63 |
+      64 |       // No markdown headers visible as text
+      65 |       const mdHeaders = bodyText
+        at C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\tests\ae-post-fix-verify.spec.ts:62:9
+
+    Error Context: tests\results\ae-post-fix-verify-AE-Post-59a4f-es-voltage-imbalance-study-\error-context.md
+
+  95 failed
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/about-earth-fault-loop-impedence-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/electrical-installation-inspection-fulfilling-trakhees-guidelines-to-procure-operation-fitness-certificate-ofc/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-about-residual-current-device-testing-safety/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-continuity-testing-what-how/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-how-insulation-resistance-test-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/learn-what-is-earth-ground-test-why-and-how-is-it-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/megger-test-performed/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/need-conduct-electrical-safety-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/purpose-lightning-arrester-testing-necessary/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-automatic-transfer-switch-testing-how-automatic-transfer-switch-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-cable-testing-how-cable-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-capacitor-bank-testing-why-capacitor-bank-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-circuit-breaker-testing-how-circuit-breaker-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-contact-resistance-test-why-contact-resistance-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-factory-acceptance-testing-how-fat-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-ground-fault-testing-why-ground-fault-testing-important/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-electric-motor-testing-and-why-is-it-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-soil-resistivity-test-how-is-soil-resistivity-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-is-torque-testing-how-is-torque-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-leakage-current-testing-measuring-how-leakage-current-testing-measuring-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-pat-test-why-pat-test-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-polarity-test-why-conduct-polarity-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-protective-device-testing-how-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-short-circuit-analysis-done-why/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash-hazard-study-and-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/what-you-need-to-know-about-arc-flash/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/blog/why-how-what-automatic-transfer-switch-testing-done/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/contact/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/arc-flash-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/automatic-transfer-switch-testing-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/battery-testing-services-dubai-uae/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-inspection-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/biomedical-equipment-safety-testing-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/building-envelope-infrared-thermography-inspection-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/cable-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/capacitor-bank-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/chiller-calibration/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/circuit-breaker-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/commercial-electrical-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/contact-resistance-testing-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/continuity-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/digital-thermometer-calibration/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-fault-loop-impedence-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/earth-ground-testing-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-motor-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electric-switchgear-testing-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-calibration/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-compliance-inspection/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-installations-certification-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-audit-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-auditing-inspection-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-safety-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-risk-assessment-study-hazard-analysis-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-switchgear-safety-inspection-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/electrical-thermography-inspection/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/factory-acceptance-testing-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-electrical-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/fixed-wire-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/frequency-stability-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/generator-load-bank-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/gfci-standard-inspection-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/ground-fault-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-grid-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/grounding-system-design-and-planning/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/harmonic-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/insulation-resistance-test-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/leakage-current-measurement/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/lightning-arrester-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/live-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/load-flow-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/mcc-panel-operation-testing/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/megger-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/motor-acceleration-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/pfc-psc-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/polarity-test-service/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/portable-appliance-testing-dubai-uae/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-quality-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/power-system-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/primary-current-injection-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/prospective-short-circuit-test-prospective-fault-current-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/protection-relay-testing-services/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/relay-coordination-study-and-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety-2/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/residual-current-device-testing-safety/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/secondary-current-injection-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/short-circuit-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-certification/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-electrical-inspection-company-uae/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/third-party-inspection-electrical-installation/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/torque-test/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/unbalanced-load-flow-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/vibration-study-and-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-drop-study-analysis/ 
+    tests\ae-post-fix-verify.spec.ts:20:9 › AE Post-Fix Verification — Zero Tolerance › Clean: /ae/services/voltage-imbalance-study/ 
+  34 passed (4.1m)

@@ -1,0 +1,19 @@
+
+Running 6 tests using 1 worker
+
+  [200] vn/blog/analyze-and-assess-electric-motor-performance-in-compliance-with-vietnam-legislation body=5608c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: analyze-and-assess-electric-motor-performance-in-compliance-with-vietnam-legislation (1.0m)
+  [200] vn/blog/ensuring-electrical-safety-in-vietnam-arc-flash-study-and-compliance-with-cr-mark-standards body=3887c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: ensuring-electrical-safety-in-vietnam-arc-flash-study-and-compliance-with-cr-mark-standards (1.0m)
+  [200] vn/blog/etap-short-circuit-analysis-to-secure-vietnams-manufacturing-hubs body=4406c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: etap-short-circuit-analysis-to-secure-vietnams-manufacturing-hubs (1.0m)
+  [200] vn/blog/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed body=6142c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: how-can-the-performance-and-dependability-of-commercial-motors-be-assessed (1.0m)
+  [200] vn/blog/load-flow-analysis-for-reliable-solar-wind-power-in-vietnam body=4387c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: load-flow-analysis-for-reliable-solar-wind-power-in-vietnam (1.0m)
+  [200] vn/blog/relay-coordination-study-to-ensure-power-stability-in-vietnams-electronics-sector body=4686c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — vn blog › scrape vn/blog: relay-coordination-study-to-ensure-power-stability-in-vietnams-electronics-sector (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (6.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  6 passed (6.3m)

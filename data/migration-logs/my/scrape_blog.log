@@ -1,0 +1,19 @@
+
+Running 6 tests using 1 worker
+
+  [200] my/blog/analyze-and-assess-electric-motor-performance-in-compliance-with-malaysian-legislation body=5271c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: analyze-and-assess-electric-motor-performance-in-compliance-with-malaysian-legislation (1.1m)
+  [200] my/blog/arc-flash-study-in-malaysia-evolving-methods-for-superior-electrical-safety body=5224c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: arc-flash-study-in-malaysia-evolving-methods-for-superior-electrical-safety (1.0m)
+  [200] my/blog/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed body=6406c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: how-can-the-performance-and-dependability-of-commercial-motors-be-assessed (1.0m)
+  [200] my/blog/how-to-do-short-circuit-analysis-best-practices-for-protecting-your-power-systems body=4725c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: how-to-do-short-circuit-analysis-best-practices-for-protecting-your-power-systems (1.0m)
+  [200] my/blog/power-system-protection-and-coordination-study-5-myths-that-could-compromise-your-electrical-safety-in-malaysia body=5124c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: power-system-protection-and-coordination-study-5-myths-that-could-compromise-your-electrical-safety-in-malaysia (1.0m)
+  [200] my/blog/why-do-we-need-load-flow-analysis-in-malaysia-expert-insights body=4669c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — my blog › scrape my/blog: why-do-we-need-load-flow-analysis-in-malaysia-expert-insights (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (6.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  6 passed (6.3m)

@@ -1,0 +1,37 @@
+
+Running 15 tests using 1 worker
+
+  [200] ar/blog/arc-flash-analysis-in-argentina-a-detailed-guide body=5485c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: arc-flash-analysis-in-argentina-a-detailed-guide (1.1m)
+  [200] ar/blog/arc-flash-study body=5331c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: arc-flash-study (1.6m)
+  [200] ar/blog/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial body=5304c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial (1.0m)
+  [200] ar/blog/examine-and-confirm-electrical-motor-performance-in-compliance-with-argentine-regulations body=4780c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: examine-and-confirm-electrical-motor-performance-in-compliance-with-argentine-regulations (1.0m)
+  [200] ar/blog/harmonic-analysis-of-the-argentine-power-system body=5818c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: harmonic-analysis-of-the-argentine-power-system (1.0m)
+  [200] ar/blog/harmonic-study-and-analysis body=5351c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: harmonic-study-and-analysis (1.5m)
+  [200] ar/blog/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated body=5612c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated (1.1m)
+  [200] ar/blog/how-to-perform-a-power-quality-analysis-in-argentina body=5432c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: how-to-perform-a-power-quality-analysis-in-argentina (1.0m)
+  [200] ar/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=7502c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.0m)
+  [200] ar/blog/motor-start-analysis body=5107c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: motor-start-analysis (1.5m)
+  [200] ar/blog/power-quality-analysis body=4883c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: power-quality-analysis (1.5m)
+  [200] ar/blog/power-system-study-and-analysis body=5425c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: power-system-study-and-analysis (1.6m)
+  [200] ar/blog/principles-of-power-quality-work-in-argentina body=8398c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: principles-of-power-quality-work-in-argentina (1.0m)
+  [200] ar/blog/why-are-harmonic-analysis-and-study-important-for-businesses-in-argentina body=5278c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: why-are-harmonic-analysis-and-study-important-for-businesses-in-argentina (1.0m)
+  [200] ar/blog/why-load-flow-and-short-circuit-analysis-important-for-argentine-business body=4499c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ar blog › scrape ar/blog: why-load-flow-and-short-circuit-analysis-important-for-argentine-business (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (18.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (18.2m)

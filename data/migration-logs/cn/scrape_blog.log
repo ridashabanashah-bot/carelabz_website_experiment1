@@ -1,0 +1,37 @@
+
+Running 15 tests using 1 worker
+
+  [200] cn/blog/analysis-of-harmonics-in-the-chinese-power-system body=6008c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: analysis-of-harmonics-in-the-chinese-power-system (1.3m)
+  [200] cn/blog/analysis-of-power-system-load-flow-short-circuit-and-relay-coordination body=7712c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: analysis-of-power-system-load-flow-short-circuit-and-relay-coordination (1.3m)
+  [200] cn/blog/arc-flash-study body=5586c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: arc-flash-study (1.8m)
+  [200] cn/blog/check-and-test-the-performance-of-electric-motors-according-to-chinese-rules body=4940c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: check-and-test-the-performance-of-electric-motors-according-to-chinese-rules (1.3m)
+  [200] cn/blog/chinese-arc-flash-analysis-a-comprehensive-guide body=6190c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: chinese-arc-flash-analysis-a-comprehensive-guide (1.3m)
+  [200] cn/blog/harmonic-study-and-analysis body=5691c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: harmonic-study-and-analysis (1.8m)
+  [200] cn/blog/how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated body=5736c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated (1.3m)
+  [200] cn/blog/how-to-conduct-a-power-quality-analysis-in-china body=5630c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: how-to-conduct-a-power-quality-analysis-in-china (1.3m)
+  [200] cn/blog/motor-start-analysis body=5315c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: motor-start-analysis (1.8m)
+  [200] cn/blog/power-quality-analysis body=5167c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: power-quality-analysis (1.8m)
+  [200] cn/blog/power-system-study-and-analysis body=5664c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: power-system-study-and-analysis (1.8m)
+  [200] cn/blog/the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques body=5553c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques (1.3m)
+  [200] cn/blog/why-are-harmonic-analysis-and-research-crucial-for-chinese-businesses body=5503c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: why-are-harmonic-analysis-and-research-crucial-for-chinese-businesses (1.3m)
+  [200] cn/blog/why-load-flow-and-short-circuit-analysis-are-important-for-a-chinese-business body=4445c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: why-load-flow-and-short-circuit-analysis-are-important-for-a-chinese-business (1.3m)
+  [200] cn/blog/working-principles-for-power-quality-in-china body=8496c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — cn blog › scrape cn/blog: working-principles-for-power-quality-in-china (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (22.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (22.0m)

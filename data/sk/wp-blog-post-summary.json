@@ -1,0 +1,16 @@
+{
+  "created": [
+    "arc-flash-study-sk",
+    "motor-start-analysis-sk",
+    "power-quality-analysis-sk"
+  ],
+  "updated": [
+    "harmonic-study-analysis-sk",
+    "how-are-the-dependability-and-performance-of-commercial-motors-assessed-sk",
+    "power-system-study-analysis-sk",
+    "slovak-guidelines-for-testing-and-verifying-electrical-motor-efficiency-sk",
+    "the-importance-of-load-flow-and-short-circuit-analysis-to-a-slovak-business-sk"
+  ],
+  "skipped": [],
+  "failed": []
+}

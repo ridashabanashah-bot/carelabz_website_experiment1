@@ -1,0 +1,10 @@
+Fetching existing Strapi media (prefix 'ca-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ca_service_arc_flash_study_fc49986e5d.webp
+  OK    case-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ca_service_case_study_52aa6ce1b8.jpg
+  OK    load-flow-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ca_service_load_flow_analysis_46578c23bc.webp
+  OK    relay-coordination-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ca_service_relay_coordination_study_08b58d4e59.webp
+  OK    short-circuit-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ca_service_short_circuit_analysis_0cae99246d.webp
+
+Uploaded/reused: 5, skipped: 0, failed: 0

@@ -1,0 +1,16 @@
+{
+  "created": [
+    "arc-flash-study-ua",
+    "harmonic-study-analysis-ua",
+    "motor-start-analysis-ua",
+    "power-quality-analysis-ua",
+    "power-system-study-analysis-ua"
+  ],
+  "updated": [
+    "how-are-the-dependability-and-performance-of-commercial-motors-assessed-ua",
+    "the-importance-of-load-flow-and-short-circuit-analysis-to-a-ukrainian-business-ua",
+    "ukrainian-guidelines-for-testing-and-verifying-electrical-motor-efficiency-ua"
+  ],
+  "skipped": [],
+  "failed": []
+}

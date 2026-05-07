@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'mx-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-studies-in-mexico -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/mx_service_arc_flash_studies_in_mexico_523cd78f7a.jpeg
+  OK    load-flow-analysis-in-mexico -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/mx_service_load_flow_analysis_in_mexico_35418a2014.jpeg
+  OK    relay-coordination-study-in-mexico -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/mx_service_relay_coordination_study_in_mexico_b0f306f350.png
+  OK    short-circuit-analysis-in-mexico -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/mx_service_short_circuit_analysis_in_mexico_65fae6fea0.jpg
+
+Uploaded/reused: 4, skipped: 0, failed: 0

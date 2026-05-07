@@ -1,0 +1,9 @@
+Country: nz
+  Blog:    /nz/blog/
+  Service: /nz/services/
+
+Crawling blog index...
+  Blog posts found: 11
+
+Crawling services index...
+  Service pages found: 4

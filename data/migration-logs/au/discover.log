@@ -1,0 +1,9 @@
+Country: au
+  Blog:    /au/blog/
+  Service: /au/services/
+
+Crawling blog index...
+  Blog posts found: 8
+
+Crawling services index...
+  Service pages found: 8

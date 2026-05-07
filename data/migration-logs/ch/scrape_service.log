@@ -1,0 +1,17 @@
+
+Running 5 tests using 1 worker
+
+  [200] ch/service/arc-flash-study body=7503c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ch service › scrape ch/service: arc-flash-study (1.6m)
+  [200] ch/service/harmonic-study-and-analysis body=7746c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ch service › scrape ch/service: harmonic-study-and-analysis (1.6m)
+  [200] ch/service/motor-start-analysis body=7345c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ch service › scrape ch/service: motor-start-analysis (1.6m)
+  [200] ch/service/power-quality-analysis body=7339c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ch service › scrape ch/service: power-quality-analysis (1.6m)
+  [200] ch/service/power-system-study-and-analysis body=7723c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ch service › scrape ch/service: power-system-study-and-analysis (1.6m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (7.8m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  5 passed (7.9m)

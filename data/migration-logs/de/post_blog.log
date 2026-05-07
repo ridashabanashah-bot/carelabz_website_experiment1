@@ -1,0 +1,9 @@
+  ENR   load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-de (4055c -> 6517c)
+  ENR   the-importance-of-load-flow-and-short-circuit-analysis-for-german-businesses-de (2650c -> 3494c)
+  SKIP  verify-that-electrical-motor-performance-complies-with-german-regulations-by-inspecting-and-confirming-de (3028c vs 3623c)
+
+=== DONE de/blog ===
+Created:  0
+Enriched: 2
+Skipped:  1
+Failed:   0

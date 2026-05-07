@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'ph-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-inilippines -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_arc_flash_study_inilippines_9c323d8c00.png
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_arc_flash_study_dc127e2e7d.png
+  OK    load-flow-analysis-inilippines -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_load_flow_analysis_inilippines_8e49810b82.png
+  OK    load-flow-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_load_flow_analysis_e2e7bbc9b6.png
+  OK    relay-coordination-study-inilippines -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_relay_coordination_study_inilippines_3ddcb93388.png
+  OK    relay-coordination-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_relay_coordination_study_5e186240c5.png
+  OK    short-circuit-analysis-inilippines -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_short_circuit_analysis_inilippines_9b6f6f4071.png
+  OK    short-circuit-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ph_service_short_circuit_analysis_bccb80d156.png
+
+Uploaded/reused: 8, skipped: 0, failed: 0

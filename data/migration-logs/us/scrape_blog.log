@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] us/blog/arc-flash-study-a-grandeur-or-mandate body=10981c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: arc-flash-study-a-grandeur-or-mandate (48.3s)
+  [200] us/blog/energy-conservation-by-auditing-power-quality body=4552c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: energy-conservation-by-auditing-power-quality (47.7s)
+  [200] us/blog/improving-reliability-through-electrical-safety-audit-at-a-retail-company body=4749c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: improving-reliability-through-electrical-safety-audit-at-a-retail-company (47.3s)
+  [200] us/blog/prioritizing-a-safe-work-environment-at-a-multinational-technology-company body=4240c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: prioritizing-a-safe-work-environment-at-a-multinational-technology-company (47.3s)
+  [200] us/blog/resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company body=4704c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company (47.4s)
+  [200] us/blog/the-importance-of-relay-coordination-in-power-system body=6666c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: the-importance-of-relay-coordination-in-power-system (47.3s)
+  [200] us/blog/three-mile-island-blast-1979 body=4266c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: three-mile-island-blast-1979 (47.3s)
+  [200] us/blog/upgrading-your-power-system-dont-ignore-the-short-circuit-analysis body=6085c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: upgrading-your-power-system-dont-ignore-the-short-circuit-analysis (47.4s)
+  [200] us/blog/what-are-the-key-insights-obtained-from-load-flow-analysis body=5992c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: what-are-the-key-insights-obtained-from-load-flow-analysis (1.0m)
+  [200] us/blog/which-of-these-facts-about-arc-flashes-are-true body=6989c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — us blog › scrape us/blog: which-of-these-facts-about-arc-flashes-are-true (47.6s)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (8.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (8.2m)

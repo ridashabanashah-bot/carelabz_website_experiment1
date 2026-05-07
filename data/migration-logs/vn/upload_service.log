@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'vn-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-analysis-in-vietnam -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_arc_flash_analysis_in_vietnam_2190f33074.webp
+  OK    harmonic-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_harmonic_study_and_analysis_86440c5ca4.jpg
+  OK    load-flow-analysis-in-vietnam -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_load_flow_analysis_in_vietnam_3b27a80a06.webp
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_motor_start_analysis_3af5ea23f6.jpg
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_power_quality_analysis_9848ed4469.jpg
+  OK    power-system-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_power_system_study_and_analysis_c5a43df513.jpg
+  OK    relay-coordination-study-in-vietnam -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_relay_coordination_study_in_vietnam_0511b41c49.webp
+  OK    short-circuit-analysis-in-vietnam -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/vn_service_short_circuit_analysis_in_vietnam_f161f0a950.webp
+
+Uploaded/reused: 8, skipped: 0, failed: 0

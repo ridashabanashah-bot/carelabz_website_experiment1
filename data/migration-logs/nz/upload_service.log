@@ -1,0 +1,9 @@
+Fetching existing Strapi media (prefix 'nz-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-analysis-in-new-zealand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/nz_service_arc_flash_analysis_in_new_zealand_8750fcc3de.webp
+  OK    load-flow-analysis-in-new-zealand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/nz_service_load_flow_analysis_in_new_zealand_8620ac30b9.webp
+  OK    relay-coordination-study-in-new-zealand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/nz_service_relay_coordination_study_in_new_zealand_133e0dde4c.webp
+  OK    short-circuit-analysis-in-new-zealand -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/nz_service_short_circuit_analysis_in_new_zealand_8fba8b44f8.webp
+
+Uploaded/reused: 4, skipped: 0, failed: 0

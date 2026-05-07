@@ -1,0 +1,17 @@
+{
+  "created": [],
+  "updated": [
+    "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-nl"
+  ],
+  "skipped": [
+    [
+      "examine-and-confirm-electrical-motor-performance-complies-with-dutch-regulations-nl",
+      "existing 3150c >= new 3726c"
+    ],
+    [
+      "the-importance-of-load-flow-and-short-circuit-analysis-for-dutch-businesses-nl",
+      "existing 2545c >= new 3243c"
+    ]
+  ],
+  "failed": []
+}

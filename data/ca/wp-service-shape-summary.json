@@ -1,0 +1,10 @@
+{
+  "shaped": [
+    "case-study",
+    "arc-flash-study",
+    "load-flow-analysis",
+    "relay-coordination-study",
+    "short-circuit-analysis"
+  ],
+  "skipped": []
+}

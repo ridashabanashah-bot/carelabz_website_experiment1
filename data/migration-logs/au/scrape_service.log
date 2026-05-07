@@ -1,0 +1,23 @@
+
+Running 8 tests using 1 worker
+
+  [200] au/service/arc-flash-risks body=5769c img=Y
+  ok 1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: arc-flash-risks (1.6m)
+  [200] au/service/arc-flash-study-in-australia body=5731c img=Y
+  ok 2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: arc-flash-study-in-australia (1.1m)
+  [200] au/service/load-flow-analysis-in-australia body=5080c img=Y
+  ok 3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: load-flow-analysis-in-australia (1.6m)
+  [200] au/service/load-flow-analysis body=5903c img=Y
+  ok 4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: load-flow-analysis (1.6m)
+  [200] au/service/relay-coordination-study-services-in-australia body=5488c img=Y
+  ok 5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: relay-coordination-study-services-in-australia (1.6m)
+  [200] au/service/relay-coordination-study body=5887c img=Y
+  ok 6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: relay-coordination-study (1.6m)
+  [200] au/service/short-circuit-analysis-in-australia body=5369c img=Y
+  ok 7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: short-circuit-analysis-in-australia (1.6m)
+  [200] au/service/short-circuit-analysis body=5676c img=Y
+  ok 8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — au service › scrape au/service: short-circuit-analysis (1.6m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (12.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  8 passed (12.0m)

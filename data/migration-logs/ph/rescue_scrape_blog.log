@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] ph/blog/analyze-and-assess-electric-motor-performance-in-compliance-with-philippines-legislation body=5417c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: analyze-and-assess-electric-motor-performance-in-compliance-with-philippines-legislation (1.3m)
+  [200] ph/blog/arc-flash-analysis-step-by-step-instructions-for-philippines body=6019c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: arc-flash-analysis-step-by-step-instructions-for-philippines (1.3m)
+  [200] ph/blog/how-can-the-performance-and-dependability-of-commercial-motors-be-assessed body=6001c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: how-can-the-performance-and-dependability-of-commercial-motors-be-assessed (1.3m)
+  [200] ph/blog/how-to-perform-a-study-of-power-quality-in-philippines body=5563c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: how-to-perform-a-study-of-power-quality-in-philippines (1.3m)
+  [200] ph/blog/philippine-power-system-harmonic-analysis body=5477c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: philippine-power-system-harmonic-analysis (1.3m)
+  [200] ph/blog/power-quality-working-principles-in-philippines body=8556c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: power-quality-working-principles-in-philippines (1.3m)
+  [200] ph/blog/significance-of-arc-flash-risk-evaluation-and-mitigation-techniques body=6096c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: significance-of-arc-flash-risk-evaluation-and-mitigation-techniques (1.3m)
+  [200] ph/blog/the-importance-of-load-flow-and-short-circuit-analysis-for-philippine-companies body=4836c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: the-importance-of-load-flow-and-short-circuit-analysis-for-philippine-companies (1.3m)
+  [200] ph/blog/the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow body=8067c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: the-study-of-the-power-system-looks-at-relay-coordination-short-circuits-and-load-flow (1.3m)
+  [200] ph/blog/why-is-harmonic-analysis-and-study-so-important-for-philippine-businesses body=5518c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — ph blog › scrape ph/blog: why-is-harmonic-analysis-and-study-so-important-for-philippine-businesses (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (13.0m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (13.0m)

@@ -1,0 +1,37 @@
+
+Running 15 tests using 1 worker
+
+  [200] co/blog/arc-flash-analysis-in-colombia-a-detailed-guide body=5463c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: arc-flash-analysis-in-colombia-a-detailed-guide (1.0m)
+  [200] co/blog/arc-flash-study body=5287c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: arc-flash-study (1.5m)
+  [200] co/blog/assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial body=5476c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: assessing-and-lowering-the-danger-of-an-arc-flash-is-crucial (1.0m)
+  [200] co/blog/examine-and-confirm-electrical-motor-performance-in-compliance-with-colombian-regulations body=5510c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: examine-and-confirm-electrical-motor-performance-in-compliance-with-colombian-regulations (1.0m)
+  [200] co/blog/harmonic-analysis-of-the-colombian-power-system body=5469c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: harmonic-analysis-of-the-colombian-power-system (1.1m)
+  [200] co/blog/harmonic-study-and-analysis body=5443c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: harmonic-study-and-analysis (1.5m)
+  [200] co/blog/how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated body=5490c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: how-can-efficiency-and-reliability-of-commercial-motors-be-evaluated (1.0m)
+  [200] co/blog/how-to-perform-a-power-quality-analysis-in-colombia body=5473c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: how-to-perform-a-power-quality-analysis-in-colombia (1.0m)
+  [200] co/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=5494c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.0m)
+  [200] co/blog/motor-start-analysis body=5181c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: motor-start-analysis (1.5m)
+  [200] co/blog/power-quality-analysis body=4940c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: power-quality-analysis (1.5m)
+  [200] co/blog/power-system-study-and-analysis body=5506c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: power-system-study-and-analysis (1.5m)
+  [200] co/blog/principles-of-power-quality-work-in-colombia body=5460c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: principles-of-power-quality-work-in-colombia (1.0m)
+  [200] co/blog/why-are-harmonic-analysis-and-study-important-for-businesses-in-colombia body=5488c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: why-are-harmonic-analysis-and-study-important-for-businesses-in-colombia (1.0m)
+  [200] co/blog/why-load-flow-and-short-circuit-analysis-important-for-colombian-business body=5495c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — co blog › scrape co/blog: why-load-flow-and-short-circuit-analysis-important-for-colombian-business (1.0m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (18.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (18.3m)

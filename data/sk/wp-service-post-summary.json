@@ -1,0 +1,14 @@
+{
+  "created": [
+    "404-2-sk",
+    "harmonic-study-analysis-sk",
+    "power-system-study-analysis-sk"
+  ],
+  "updated": [
+    "arc-flash-study-sk",
+    "motor-start-analysis-sk",
+    "power-quality-analysis-sk"
+  ],
+  "skipped": [],
+  "failed": []
+}

@@ -1,0 +1,11 @@
+Fetching existing Strapi media (prefix 'ua-service-')...
+  0 matching files in Strapi
+
+  OK    404-2 -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_404_2_133edebb9b.png
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_arc_flash_study_3e8b55a78e.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_harmonic_study_analysis_0c3dfd1724.png
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_motor_start_analysis_bab70c2b1c.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_power_quality_analysis_818b67457d.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/ua_service_power_system_study_analysis_2fbf763882.png
+
+Uploaded/reused: 6, skipped: 0, failed: 0

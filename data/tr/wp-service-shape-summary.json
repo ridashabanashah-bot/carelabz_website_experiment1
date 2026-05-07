@@ -1,0 +1,10 @@
+{
+  "shaped": [
+    "arc-flash-study",
+    "harmonic-study-analysis",
+    "motor-start-analysis",
+    "power-quality-analysis",
+    "power-system-study-analysis"
+  ],
+  "skipped": []
+}

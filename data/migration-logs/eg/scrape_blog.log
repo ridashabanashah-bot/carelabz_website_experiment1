@@ -1,0 +1,41 @@
+
+Running 17 tests using 1 worker
+
+  [200] eg/blog/a-comprehensive-guide-to-arc-flash-analysis-in-egypt body=5818c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: a-comprehensive-guide-to-arc-flash-analysis-in-egypt (1.0m)
+  [200] eg/blog/a-comprehensive-guide-to-arc-flash-analysis-in-south-africa body=5818c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: a-comprehensive-guide-to-arc-flash-analysis-in-south-africa (1.1m)
+  [200] eg/blog/analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow body=7529c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: analysis-of-the-power-systems-coordination-of-relays-short-circuits-and-load-flow (1.0m)
+  [200] eg/blog/arc-flash-risk-must-be-evaluated-and-reduced-immediately body=5252c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: arc-flash-risk-must-be-evaluated-and-reduced-immediately (1.0m)
+  [200] eg/blog/harmonics-analysis-of-the-egypt-electric-power-system body=5601c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: harmonics-analysis-of-the-egypt-electric-power-system (1.0m)
+  [200] eg/blog/harmonics-analysis-of-the-south-african-electric-power-system body=5601c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: harmonics-analysis-of-the-south-african-electric-power-system (1.1m)
+  [200] eg/blog/how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated body=5433c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: how-can-the-performance-and-dependability-of-commercial-motors-be-evaluated (1.1m)
+  [200] eg/blog/how-significant-is-harmonic-analysis-in-egyptian-firm body=5112c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: how-significant-is-harmonic-analysis-in-egyptian-firm (1.0m)
+  [200] eg/blog/how-significant-is-harmonic-analysis-in-south-african-firm body=5112c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: how-significant-is-harmonic-analysis-in-south-african-firm (1.1m)
+  [200] eg/blog/how-to-analyze-egyptian-power-quality body=5353c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: how-to-analyze-egyptian-power-quality (1.0m)
+  [200] eg/blog/how-to-analyze-south-african-power-quality body=5353c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: how-to-analyze-south-african-power-quality (1.1m)
+  [200] eg/blog/principles-of-work-on-egypt-power-quality body=8527c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: principles-of-work-on-egypt-power-quality (1.1m)
+  [200] eg/blog/principles-of-work-on-south-african-power-quality body=8527c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: principles-of-work-on-south-african-power-quality (1.1m)
+  [200] eg/blog/verify-egyptian-electrical-motor-performance-regulations-compliance body=4602c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: verify-egyptian-electrical-motor-performance-regulations-compliance (1.0m)
+  [200] eg/blog/verify-south-african-electrical-motor-performance-regulations-compliance body=4602c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: verify-south-african-electrical-motor-performance-regulations-compliance (1.1m)
+  [200] eg/blog/why-does-egyptian-business-need-short-circuit-and-load-flow-analysis body=4320c img=Y
+  ok 16 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: why-does-egyptian-business-need-short-circuit-and-load-flow-analysis (1.0m)
+  [200] eg/blog/why-does-south-african-business-need-short-circuit-and-load-flow-analysis body=4320c img=Y
+  ok 17 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — eg blog › scrape eg/blog: why-does-south-african-business-need-short-circuit-and-load-flow-analysis (1.1m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (17.9m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  17 passed (18.0m)

@@ -1,0 +1,13 @@
+{
+  "created": [
+    "case-study-ca"
+  ],
+  "updated": [
+    "arc-flash-study-ca",
+    "load-flow-analysis-ca",
+    "relay-coordination-study-ca",
+    "short-circuit-analysis-ca"
+  ],
+  "skipped": [],
+  "failed": []
+}

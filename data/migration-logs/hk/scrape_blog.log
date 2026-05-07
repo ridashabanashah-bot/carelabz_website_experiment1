@@ -1,0 +1,39 @@
+
+Running 16 tests using 1 worker
+
+  [200] hk/blog/analysis-of-harmonics-in-the-hong-konger-power-system body=6120c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: analysis-of-harmonics-in-the-hong-konger-power-system (1.3m)
+  [200] hk/blog/analysis-of-power-system-load-flow-short-circuit-and-relay-coordination body=7835c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: analysis-of-power-system-load-flow-short-circuit-and-relay-coordination (1.3m)
+  [200] hk/blog/arc-flash-study body=5531c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: arc-flash-study (1.8m)
+  [200] hk/blog/check-and-test-the-performance-of-electric-motors-according-to-hong-konger-rules body=5183c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: check-and-test-the-performance-of-electric-motors-according-to-hong-konger-rules (1.3m)
+  [200] hk/blog/harmonic-study-and-analysis body=5621c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: harmonic-study-and-analysis (1.8m)
+  [200] hk/blog/hong-konger-arc-flash-analysis-a-comprehensive-guide body=6029c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: hong-konger-arc-flash-analysis-a-comprehensive-guide (1.3m)
+  [200] hk/blog/how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated body=5849c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: how-can-the-quality-and-dependability-of-commercial-motors-be-evaluated (1.3m)
+  [200] hk/blog/how-to-conduct-a-power-quality-analysis-in-hong-kong body=5592c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: how-to-conduct-a-power-quality-analysis-in-hong-kong (1.3m)
+  [200] hk/blog/japanese-arc-flash-analysis-a-comprehensive-guide body=1018c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: japanese-arc-flash-analysis-a-comprehensive-guide (1.8m)
+  [200] hk/blog/motor-start-analysis body=5614c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: motor-start-analysis (1.8m)
+  [200] hk/blog/power-quality-analysis body=5219c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: power-quality-analysis (1.8m)
+  [200] hk/blog/power-system-study-and-analysis body=5766c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: power-system-study-and-analysis (1.8m)
+  [200] hk/blog/the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques body=5939c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: the-significance-of-arc-flash-hazard-analysis-and-mitigation-techniques (1.3m)
+  [200] hk/blog/why-are-harmonic-analysis-and-research-crucial-for-hong-konger-businesses body=5332c img=Y
+  ok 14 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: why-are-harmonic-analysis-and-research-crucial-for-hong-konger-businesses (1.3m)
+  [200] hk/blog/why-load-flow-and-short-circuit-analysis-are-important-for-a-hong-konger-business body=4916c img=Y
+  ok 15 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: why-load-flow-and-short-circuit-analysis-are-important-for-a-hong-konger-business (1.3m)
+  [200] hk/blog/working-principles-for-power-quality-in-hong-kong body=8759c img=Y
+  ok 16 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — hk blog › scrape hk/blog: working-principles-for-power-quality-in-hong-kong (1.3m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (23.7m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  16 passed (23.8m)

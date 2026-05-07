@@ -1,0 +1,33 @@
+
+Running 13 tests using 1 worker
+
+  [200] fi/blog/a-step-by-step-guide-to-arc-flash-analysis-in-finland body=5946c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: a-step-by-step-guide-to-arc-flash-analysis-in-finland (51.2s)
+  [200] fi/blog/a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom body=5946c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: a-step-by-step-guide-to-arc-flash-analysis-in-the-united-kingdom (49.0s)
+  [200] fi/blog/analyze-and-evaluate-the-performance-of-electric-motors-as-per-finnish-regulations body=5080c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: analyze-and-evaluate-the-performance-of-electric-motors-as-per-finnish-regulations (48.0s)
+  [200] fi/blog/finnish-power-quality-working-principles body=9141c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: finnish-power-quality-working-principles (47.9s)
+  [200] fi/blog/harmonic-analysis-of-finnish-power-system body=6281c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: harmonic-analysis-of-finnish-power-system (48.0s)
+  [200] fi/blog/how-can-the-electricity-quality-in-finland-be-analyzed body=5815c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: how-can-the-electricity-quality-in-finland-be-analyzed (48.0s)
+  [200] fi/blog/how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors body=6083c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: how-can-you-evaluate-the-functionality-and-dependability-of-commercial-motors (47.8s)
+  [200] fi/blog/load-flow-and-short-circuit-analysis-significance-for-finnish-businesses body=4995c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: load-flow-and-short-circuit-analysis-significance-for-finnish-businesses (47.9s)
+  [200] fi/blog/study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination body=7886c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: study-of-the-power-systems-load-flow-short-circuit-and-relay-coordination (47.9s)
+  [200] fi/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-finland body=5921c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-finland (47.7s)
+  [200] fi/blog/the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk body=5921c img=Y
+  ok 11 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: the-value-of-arc-flash-risk-assessment-and-prevention-strategies-in-the-uk (48.8s)
+  [200] fi/blog/why-are-harmonic-analysis-and-studies-so-vital-for-finnish-businesses body=5523c img=Y
+  ok 12 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: why-are-harmonic-analysis-and-studies-so-vital-for-finnish-businesses (47.7s)
+  [200] fi/blog/why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses body=5523c img=Y
+  ok 13 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — fi blog › scrape fi/blog: why-are-harmonic-analysis-and-studies-so-vital-for-uk-businesses (49.1s)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  13 passed (10.5m)

@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'hu-blog-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_arc_flash_study_ee653b0028.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_harmonic_study_analysis_2170176cf9.png
+  OK    how-are-the-dependability-and-performance-of-commercial-motors-assessed -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_how_are_the_dependability_and_performance_of_commercial_motors_assessed_450c549c53.jpg
+  OK    hungarian-guidelines-for-testing-and-verifying-electrical-motor-efficiency -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_hungarian_guidelines_for_testing_and_verifying_electrical_motor_efficiency_3a40f04925.jpg
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_motor_start_analysis_0d9a1bb23d.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_power_quality_analysis_e42ae9512d.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_power_system_study_analysis_e3f6c09e24.png
+  OK    the-importance-of-load-flow-and-short-circuit-analysis-to-angarian-business -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/hu_blog_the_importance_of_load_flow_and_short_circuit_analysis_to_angarian_business_69c9f0ba12.jpg
+
+Uploaded/reused: 8, skipped: 0, failed: 0

@@ -1,0 +1,13 @@
+Fetching existing Strapi media (prefix 'pl-blog-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_arc_flash_study_f6074fd1fd.png
+  OK    harmonic-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_harmonic_study_analysis_f1f78fa9ca.png
+  OK    how-are-the-dependability-and-performance-of-commercial-motors-assessed -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_how_are_the_dependability_and_performance_of_commercial_motors_assessed_7af3e19803.jpg
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_motor_start_analysis_1a2304b95a.png
+  OK    polish-guidelines-for-testing-and-verifying-electrical-motor-efficiency -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_polish_guidelines_for_testing_and_verifying_electrical_motor_efficiency_f6f27a8bbf.jpg
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_power_quality_analysis_bf801ac826.png
+  OK    power-system-study-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_power_system_study_analysis_d4b03f9cea.png
+  OK    the-importance-of-load-flow-and-short-circuit-analysis-to-a-polish-business -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/pl_blog_the_importance_of_load_flow_and_short_circuit_analysis_to_a_polish_business_f5e38cbd7a.jpg
+
+Uploaded/reused: 8, skipped: 0, failed: 0

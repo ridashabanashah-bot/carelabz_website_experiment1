@@ -1,0 +1,14 @@
+{
+  "created": [
+    "404-2-cz",
+    "harmonic-study-analysis-cz",
+    "power-system-study-analysis-cz"
+  ],
+  "updated": [
+    "arc-flash-study-cz",
+    "motor-start-analysis-cz",
+    "power-quality-analysis-cz"
+  ],
+  "skipped": [],
+  "failed": []
+}

@@ -1,0 +1,27 @@
+
+Running 10 tests using 1 worker
+
+  [200] pt/blog/arc-flash-analysis-in-portugal-a-step-by-step-guide body=2855c img=Y
+  ok  1 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: arc-flash-analysis-in-portugal-a-step-by-step-guide (52.9s)
+  [200] pt/blog/harmonic-analysis-in-power-system-in-portugal body=2952c img=Y
+  ok  2 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: harmonic-analysis-in-power-system-in-portugal (1.1m)
+  [200] pt/blog/how-to-conduct-a-power-quality-analysis-in-portugal body=2555c img=Y
+  ok  3 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: how-to-conduct-a-power-quality-analysis-in-portugal (1.1m)
+  [200] pt/blog/how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors body=3768c img=Y
+  ok  4 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: how-to-evaluate-the-efficiency-and-dependability-of-commercial-motors (1.1m)
+  [200] pt/blog/importance-of-arc-flash-hazard-analysis-and-mitigation-methods body=3079c img=Y
+  ok  5 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: importance-of-arc-flash-hazard-analysis-and-mitigation-methods (1.1m)
+  [200] pt/blog/importance-of-load-flow-and-short-circuit-analysis-for-a-portuguese-business body=3109c img=Y
+  ok  6 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: importance-of-load-flow-and-short-circuit-analysis-for-a-portuguese-business (1.0m)
+  [200] pt/blog/load-flow-short-circuit-and-relay-coordination-in-power-system-analysis body=3050c img=Y
+  ok  7 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: load-flow-short-circuit-and-relay-coordination-in-power-system-analysis (1.1m)
+  [200] pt/blog/power-quality-working-principles-in-portugal body=3245c img=Y
+  ok  8 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: power-quality-working-principles-in-portugal (48.2s)
+  [200] pt/blog/test-and-verifelectrical-motor-efficiency-in-accordance-with-portuguese-guidelines body=2840c img=Y
+  ok  9 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: test-and-verifelectrical-motor-efficiency-in-accordance-with-portuguese-guidelines (1.1m)
+  [200] pt/blog/why-is-harmonic-analysis-and-study-important-for-portuguese-businesses body=2670c img=Y
+  ok 10 tests\country-wp-scrape.spec.ts:52:9 › Country WP scrape — pt blog › scrape pt/blog: why-is-harmonic-analysis-and-study-important-for-portuguese-businesses (1.1m)
+
+  Slow test file: tests\country-wp-scrape.spec.ts (10.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  10 passed (10.1m)

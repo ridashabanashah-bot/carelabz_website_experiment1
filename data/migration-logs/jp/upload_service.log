@@ -1,0 +1,10 @@
+Fetching existing Strapi media (prefix 'jp-service-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_service_arc_flash_study_fb081a3cd6.jpg
+  OK    harmonic-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_service_harmonic_study_and_analysis_bfea034738.jpg
+  OK    motor-start-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_service_motor_start_analysis_de8687b0ac.png
+  OK    power-quality-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_service_power_quality_analysis_582d907b4f.png
+  OK    power-system-study-and-analysis -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/jp_service_power_system_study_and_analysis_1f39fd241e.png
+
+Uploaded/reused: 5, skipped: 0, failed: 0

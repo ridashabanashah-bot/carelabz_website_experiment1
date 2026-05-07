@@ -1,0 +1,14 @@
+{
+  "created": [],
+  "updated": [
+    "load-flow-short-circuit-and-relay-coordination-in-power-system-analysis-ch",
+    "the-importance-of-load-flow-and-short-circuit-analysis-for-swiss-businesses-ch"
+  ],
+  "skipped": [
+    [
+      "verify-that-electrical-motor-performance-complies-with-swiss-regulations-by-inspecting-and-confirming-ch",
+      "existing 3098c >= new 3655c"
+    ]
+  ],
+  "failed": []
+}

@@ -1,0 +1,538 @@
+Migration queue (48): ar at au be br ca ch cl cn co cz de dk eg es fi fr gr hk hu id ie in it jp kr mx my nl no nz pe ph pl pt ro ru sa se sg sk th tr tw ua us vn za
+Logs: data\migration-logs/{cc}/*.log
+Progress: data\migration-progress.json
+
+[1/48] -- elapsed 0.0m
+
+=== AR ===  start 2026-04-30T09:50:30.296010+00:00
+  [ar] discover                 ... OK (9s)
+  [ar] shape_blog               ... OK (3s)
+  [ar] shape_service            ... FAIL rc=1 (1s)
+  [ar] upload_blog_heroes       ... OK (41s)
+  [ar] post_blog                ... OK (42s)
+=== AR done ===
+
+[2/48] -- elapsed 19.9m
+
+=== AT ===  start 2026-04-30T10:10:22.652984+00:00
+  [at] discover                 ... OK (8s)
+  [at] shape_blog               ... OK (1s)
+  [at] shape_service            ... OK (2s)
+  [at] upload_blog_heroes       ... OK (11s)
+  [at] upload_service_heroes    ... OK (16s)
+  [at] post_blog                ... OK (5s)
+  [at] post_service             ... OK (11s)
+=== AT done ===
+
+[3/48] -- elapsed 28.7m
+
+=== AU ===  start 2026-04-30T10:19:14.158332+00:00
+  [au] discover                 ... OK (7s)
+  [au] shape_blog               ... FAIL rc=1 (1s)
+  [au] shape_service            ... OK (2s)
+  [au] upload_service_heroes    ... OK (25s)
+  [au] post_service             ... OK (26s)
+=== AU done ===
+
+[4/48] -- elapsed 41.8m
+
+=== BE ===  start 2026-04-30T10:32:16.833343+00:00
+  [be] discover                 ... OK (10s)
+  [be] shape_blog               ... OK (1s)
+  [be] shape_service            ... OK (2s)
+  [be] upload_blog_heroes       ... OK (12s)
+  [be] upload_service_heroes    ... OK (19s)
+  [be] post_blog                ... OK (6s)
+  [be] post_service             ... OK (11s)
+=== BE done ===
+
+[5/48] -- elapsed 50.7m
+
+=== BR ===  start 2026-04-30T10:41:11.661003+00:00
+  [br] discover                 ... OK (9s)
+  [br] shape_blog               ... OK (2s)
+  [br] shape_service            ... OK (2s)
+  [br] upload_blog_heroes       ... OK (26s)
+  [br] upload_service_heroes    ... OK (13s)
+  [br] post_blog                ... OK (22s)
+  [br] post_service             ... OK (11s)
+=== BR done ===
+
+[6/48] -- elapsed 62.7m
+
+=== CA ===  start 2026-04-30T10:53:10.772934+00:00
+  [ca] discover                 ... OK (5s)
+  [ca] shape_blog               ... OK (2s)
+  [ca] shape_service            ... OK (2s)
+  [ca] upload_blog_heroes       ... OK (21s)
+  [ca] upload_service_heroes    ... OK (18s)
+  [ca] post_blog                ... OK (19s)
+  [ca] post_service             ... OK (13s)
+=== CA done ===
+
+[7/48] -- elapsed 70.8m
+
+=== CH ===  start 2026-04-30T11:01:16.721045+00:00
+  [ch] discover                 ... OK (8s)
+  [ch] shape_blog               ... OK (1s)
+  [ch] shape_service            ... OK (2s)
+  [ch] upload_blog_heroes       ... OK (11s)
+  [ch] upload_service_heroes    ... OK (16s)
+  [ch] post_blog                ... OK (5s)
+  [ch] post_service             ... OK (12s)
+=== CH done ===
+
+[8/48] -- elapsed 79.6m
+
+=== CL ===  start 2026-04-30T11:10:06.283214+00:00
+  [cl] discover                 ... OK (9s)
+  [cl] shape_blog               ... OK (3s)
+  [cl] shape_service            ... FAIL rc=1 (1s)
+  [cl] upload_blog_heroes       ... OK (40s)
+  [cl] post_blog                ... OK (40s)
+=== CL done ===
+
+[9/48] -- elapsed 99.4m
+
+=== CN ===  start 2026-04-30T11:29:56.140145+00:00
+  [cn] discover                 ... OK (8s)
+  [cn] shape_blog               ... OK (4s)
+  [cn] shape_service            ... FAIL rc=1 (1s)
+  [cn] upload_blog_heroes       ... OK (39s)
+  [cn] post_blog                ... OK (40s)
+=== CN done ===
+
+[10/48] -- elapsed 123.0m
+
+=== CO ===  start 2026-04-30T11:53:28.536708+00:00
+  [co] discover                 ... OK (9s)
+  [co] shape_blog               ... OK (3s)
+  [co] shape_service            ... FAIL rc=1 (1s)
+  [co] upload_blog_heroes       ... OK (41s)
+  [co] post_blog                ... OK (41s)
+=== CO done ===
+
+[11/48] -- elapsed 142.8m
+
+=== CZ ===  start 2026-04-30T12:13:19.642913+00:00
+  [cz] discover                 ... OK (6s)
+  [cz] shape_blog               ... OK (2s)
+  [cz] shape_service            ... FAIL rc=1 (1s)
+  [cz] upload_blog_heroes       ... OK (25s)
+  [cz] post_blog                ... OK (22s)
+=== CZ done ===
+
+[12/48] -- elapsed 156.0m
+
+=== DE ===  start 2026-04-30T12:26:29.504446+00:00
+  [de] discover                 ... OK (4s)
+  [de] shape_blog               ... OK (1s)
+  [de] shape_service            ... OK (2s)
+  [de] upload_blog_heroes       ... OK (11s)
+  [de] upload_service_heroes    ... OK (17s)
+  [de] post_blog                ... OK (5s)
+  [de] post_service             ... OK (11s)
+=== DE done ===
+
+[13/48] -- elapsed 164.5m
+
+=== DK ===  start 2026-04-30T12:35:02.073312+00:00
+  [dk] discover                 ... OK (6s)
+  [dk] shape_blog               ... OK (4s)
+  [dk] shape_service            ... OK (2s)
+  [dk] upload_blog_heroes       ... OK (31s)
+  [dk] upload_service_heroes    ... OK (14s)
+  [dk] post_blog                ... OK (32s)
+  [dk] post_service             ... OK (12s)
+=== DK done ===
+
+[14/48] -- elapsed 176.7m
+
+=== EG ===  start 2026-04-30T12:47:13.501507+00:00
+  [eg] discover                 ... OK (6s)
+  [eg] shape_blog               ... OK (4s)
+  [eg] shape_service            ... OK (1s)
+  [eg] upload_blog_heroes       ... OK (40s)
+  [eg] upload_service_heroes    ... OK (18s)
+  [eg] post_blog                ... OK (53s)
+  [eg] post_service             ... OK (15s)
+=== EG done ===
+
+[15/48] -- elapsed 197.0m
+
+=== ES ===  start 2026-04-30T13:07:31.524543+00:00
+  [es] discover                 ... OK (7s)
+  [es] shape_blog               ... OK (2s)
+  [es] shape_service            ... OK (2s)
+  [es] upload_blog_heroes       ... OK (28s)
+  [es] upload_service_heroes    ... OK (25s)
+  [es] post_blog                ... OK (21s)
+  [es] post_service             ... OK (40s)
+=== ES done ===
+
+[16/48] -- elapsed 216.2m
+
+=== FI ===  start 2026-04-30T13:26:42.653099+00:00
+  [fi] discover                 ... OK (6s)
+  [fi] shape_blog               ... OK (4s)
+  [fi] shape_service            ... OK (2s)
+  [fi] upload_blog_heroes       ... OK (33s)
+  [fi] upload_service_heroes    ... OK (23s)
+  [fi] post_blog                ... OK (33s)
+  [fi] post_service             ... OK (12s)
+=== FI done ===
+
+[17/48] -- elapsed 228.7m
+
+=== FR ===  start 2026-04-30T13:39:09.422845+00:00
+  [fr] discover                 ... OK (8s)
+  [fr] shape_blog               ... OK (1s)
+  [fr] shape_service            ... OK (2s)
+  [fr] upload_blog_heroes       ... OK (10s)
+  [fr] upload_service_heroes    ... OK (18s)
+  [fr] post_blog                ... OK (6s)
+  [fr] post_service             ... OK (12s)
+=== FR done ===
+
+[18/48] -- elapsed 237.5m
+
+=== GR ===  start 2026-04-30T13:48:01.364987+00:00
+  [gr] discover                 ... OK (6s)
+  [gr] shape_blog               ... OK (4s)
+  [gr] shape_service            ... OK (2s)
+  [gr] upload_blog_heroes       ... OK (32s)
+  [gr] upload_service_heroes    ... OK (13s)
+  [gr] post_blog                ... OK (20s)
+  [gr] post_service             ... OK (20s)
+=== GR done ===
+
+[19/48] -- elapsed 249.3m
+
+=== HK ===  start 2026-04-30T13:59:48.088836+00:00
+  [hk] discover                 ... OK (6s)
+  [hk] shape_blog               ... OK (5s)
+  [hk] shape_service            ... FAIL rc=1 (1s)
+  [hk] upload_blog_heroes       ... OK (43s)
+  [hk] post_blog                ... OK (44s)
+=== HK done ===
+
+[20/48] -- elapsed 274.7m
+
+=== HU ===  start 2026-04-30T14:25:14.339324+00:00
+  [hu] discover                 ... OK (6s)
+  [hu] shape_blog               ... OK (2s)
+  [hu] shape_service            ... FAIL rc=1 (1s)
+  [hu] upload_blog_heroes       ... OK (24s)
+  [hu] post_blog                ... OK (22s)
+=== HU done ===
+
+[21/48] -- elapsed 287.9m
+
+=== ID ===  start 2026-04-30T14:38:22.696649+00:00
+  [id] discover                 ... OK (6s)
+  [id] shape_blog               ... OK (1s)
+  [id] shape_service            ... OK (1s)
+  [id] upload_blog_heroes       ... OK (22s)
+  [id] upload_service_heroes    ... OK (23s)
+  [id] post_blog                ... OK (9s)
+  [id] post_service             ... OK (20s)
+=== ID done ===
+
+[22/48] -- elapsed 295.9m
+
+=== IE ===  start 2026-04-30T14:46:22.875285+00:00
+  [ie] discover                 ... OK (7s)
+  [ie] shape_blog               ... OK (4s)
+  [ie] shape_service            ... OK (2s)
+  [ie] upload_blog_heroes       ... OK (35s)
+  [ie] upload_service_heroes    ... OK (14s)
+  [ie] post_blog                ... OK (36s)
+  [ie] post_service             ... OK (11s)
+=== IE done ===
+
+[23/48] -- elapsed 309.1m
+
+=== IN ===  start 2026-04-30T14:59:33.644630+00:00
+  [in] discover                 ... OK (6s)
+  [in] shape_blog               ... OK (1s)
+  [in] shape_service            ... OK (1s)
+  [in] upload_blog_heroes       ... OK (19s)
+  [in] upload_service_heroes    ... OK (26s)
+  [in] post_blog                ... OK (9s)
+  [in] post_service             ... OK (16s)
+=== IN done ===
+
+[24/48] -- elapsed 315.7m
+
+=== IT ===  start 2026-04-30T15:06:13.238679+00:00
+  [it] discover                 ... OK (7s)
+  [it] shape_blog               ... OK (2s)
+  [it] shape_service            ... OK (2s)
+  [it] upload_blog_heroes       ... OK (28s)
+  [it] upload_service_heroes    ... OK (23s)
+  [it] post_blog                ... OK (21s)
+  [it] post_service             ... OK (38s)
+=== IT done ===
+
+[25/48] -- elapsed 334.0m
+
+=== JP ===  start 2026-04-30T15:24:32.712046+00:00
+  [jp] discover                 ... OK (7s)
+  [jp] shape_blog               ... OK (4s)
+  [jp] shape_service            ... OK (2s)
+  [jp] upload_blog_heroes       ... OK (28s)
+  [jp] upload_service_heroes    ... OK (14s)
+  [jp] post_blog                ... OK (21s)
+  [jp] post_service             ... OK (11s)
+=== JP done ===
+
+[26/48] -- elapsed 348.4m
+
+=== KR ===  start 2026-04-30T15:38:57.196213+00:00
+  [kr] discover                 ... OK (7s)
+  [kr] shape_blog               ... OK (5s)
+  [kr] shape_service            ... FAIL rc=1 (1s)
+  [kr] upload_blog_heroes       ... OK (42s)
+  [kr] post_blog                ... OK (41s)
+=== KR done ===
+
+[27/48] -- elapsed 372.1m
+
+=== MX ===  start 2026-04-30T16:02:36.575269+00:00
+  [mx] discover                 ... OK (8s)
+  [mx] shape_blog               ... OK (1s)
+  [mx] shape_service            ... OK (2s)
+  [mx] upload_blog_heroes       ... OK (18s)
+  [mx] upload_service_heroes    ... OK (15s)
+  [mx] post_blog                ... OK (15s)
+  [mx] post_service             ... OK (15s)
+=== MX done ===
+
+[28/48] -- elapsed 377.8m
+
+=== MY ===  start 2026-04-30T16:08:17.142200+00:00
+  [my] discover                 ... OK (5s)
+  [my] shape_blog               ... OK (2s)
+  [my] shape_service            ... OK (2s)
+  [my] upload_blog_heroes       ... OK (23s)
+  [my] upload_service_heroes    ... OK (30s)
+  [my] post_blog                ... OK (12s)
+  [my] post_service             ... OK (25s)
+=== MY done ===
+
+[29/48] -- elapsed 390.9m
+
+=== NL ===  start 2026-04-30T16:21:25.908172+00:00
+  [nl] discover                 ... OK (9s)
+  [nl] shape_blog               ... OK (1s)
+  [nl] shape_service            ... OK (2s)
+  [nl] upload_blog_heroes       ... OK (11s)
+  [nl] upload_service_heroes    ... OK (16s)
+  [nl] post_blog                ... OK (4s)
+  [nl] post_service             ... OK (11s)
+=== NL done ===
+
+[30/48] -- elapsed 399.7m
+
+=== NO ===  start 2026-04-30T16:30:15.039211+00:00
+  [no] discover                 ... OK (6s)
+  [no] shape_blog               ... OK (3s)
+  [no] shape_service            ... OK (2s)
+  [no] upload_blog_heroes       ... OK (33s)
+  [no] upload_service_heroes    ... OK (14s)
+  [no] post_blog                ... OK (33s)
+  [no] post_service             ... OK (11s)
+=== NO done ===
+
+[31/48] -- elapsed 411.9m
+
+=== NZ ===  start 2026-04-30T16:42:26.457474+00:00
+=== NZ done ===
+
+[32/48] -- elapsed 411.9m
+
+=== PE ===  start 2026-04-30T16:42:26.484387+00:00
+  [pe] discover                 ... OK (9s)
+  [pe] shape_blog               ... OK (3s)
+  [pe] shape_service            ... FAIL rc=1 (1s)
+  [pe] upload_blog_heroes       ... OK (43s)
+  [pe] post_blog                ... OK (39s)
+=== PE done ===
+
+[33/48] -- elapsed 432.0m
+
+=== PH ===  start 2026-04-30T17:02:33.264567+00:00
+  [ph] discover                 ... OK (6s)
+  [ph] shape_blog               ... FAIL rc=1 (1s)
+  [ph] shape_service            ... OK (2s)
+  [ph] upload_service_heroes    ... OK (41s)
+  [ph] post_service             ... OK (31s)
+=== PH done ===
+
+[34/48] -- elapsed 444.9m
+
+=== PL ===  start 2026-04-30T17:15:24.622852+00:00
+  [pl] discover                 ... OK (6s)
+  [pl] shape_blog               ... OK (2s)
+  [pl] shape_service            ... FAIL rc=1 (1s)
+  [pl] upload_blog_heroes       ... OK (25s)
+  [pl] post_blog                ... FAIL rc=1 (48s)
+=== PL done ===
+
+[35/48] -- elapsed 458.5m
+
+=== PT ===  start 2026-04-30T17:28:59.098573+00:00
+  [pt] discover                 ... OK (7s)
+  [pt] shape_blog               ... OK (2s)
+  [pt] shape_service            ... OK (2s)
+  [pt] upload_blog_heroes       ... OK (28s)
+  [pt] upload_service_heroes    ... OK (24s)
+  [pt] post_blog                ... OK (30s)
+  [pt] post_service             ... FAIL rc=1 (66s)
+=== PT done ===
+
+[36/48] -- elapsed 474.9m
+
+=== RO ===  start 2026-04-30T17:45:26.234311+00:00
+  [ro] discover                 ... OK (6s)
+  [ro] shape_blog               ... OK (2s)
+  [ro] shape_service            ... FAIL rc=1 (1s)
+  [ro] upload_blog_heroes       ... OK (23s)
+  [ro] post_blog                ... OK (22s)
+=== RO done ===
+
+[37/48] -- elapsed 488.0m
+
+=== RU ===  start 2026-04-30T17:58:33.188057+00:00
+  [ru] discover                 ... OK (7s)
+  [ru] shape_blog               ... OK (2s)
+  [ru] shape_service            ... FAIL rc=1 (1s)
+  [ru] upload_blog_heroes       ... OK (23s)
+  [ru] post_blog                ... OK (22s)
+=== RU done ===
+
+[38/48] -- elapsed 501.2m
+
+=== SA ===  start 2026-04-30T18:11:40.119608+00:00
+  [sa] discover                 ... OK (6s)
+  [sa] shape_blog               ... OK (3s)
+  [sa] shape_service            ... OK (2s)
+  [sa] upload_blog_heroes       ... OK (26s)
+  [sa] upload_service_heroes    ... OK (1s)
+  [sa] post_blog                ... OK (21s)
+  [sa] post_service             ... OK (14s)
+=== SA done ===
+
+[39/48] -- elapsed 516.5m
+
+=== SE ===  start 2026-04-30T18:26:58.574994+00:00
+  [se] discover                 ... OK (6s)
+  [se] shape_blog               ... OK (4s)
+  [se] shape_service            ... OK (2s)
+  [se] upload_blog_heroes       ... OK (38s)
+  [se] upload_service_heroes    ... OK (14s)
+  [se] post_blog                ... OK (31s)
+  [se] post_service             ... OK (11s)
+=== SE done ===
+
+[40/48] -- elapsed 529.7m
+
+=== SG ===  start 2026-04-30T18:40:13.958340+00:00
+  [sg] discover                 ... OK (7s)
+  [sg] shape_blog               ... OK (1s)
+  [sg] shape_service            ... OK (1s)
+  [sg] upload_blog_heroes       ... OK (16s)
+  [sg] upload_service_heroes    ... OK (13s)
+  [sg] post_blog                ... OK (10s)
+  [sg] post_service             ... OK (15s)
+=== SG done ===
+
+[41/48] -- elapsed 536.1m
+
+=== SK ===  start 2026-04-30T18:46:35.784191+00:00
+  [sk] discover                 ... OK (7s)
+  [sk] shape_blog               ... OK (2s)
+  [sk] shape_service            ... FAIL rc=1 (1s)
+  [sk] upload_blog_heroes       ... OK (27s)
+  [sk] post_blog                ... OK (22s)
+=== SK done ===
+
+[42/48] -- elapsed 549.3m
+
+=== TH ===  start 2026-04-30T18:59:49.536920+00:00
+  [th] discover                 ... OK (7s)
+  [th] shape_blog               ... OK (1s)
+  [th] shape_service            ... OK (1s)
+  [th] upload_blog_heroes       ... OK (19s)
+  [th] upload_service_heroes    ... OK (15s)
+  [th] post_blog                ... OK (8s)
+  [th] post_service             ... OK (15s)
+=== TH done ===
+
+[43/48] -- elapsed 555.8m
+
+=== TR ===  start 2026-04-30T19:06:17.535733+00:00
+  [tr] discover                 ... OK (6s)
+  [tr] shape_blog               ... OK (6s)
+  [tr] shape_service            ... OK (3s)
+  [tr] upload_blog_heroes       ... OK (28s)
+  [tr] upload_service_heroes    ... OK (1s)
+  [tr] post_blog                ... OK (28s)
+  [tr] post_service             ... OK (14s)
+=== TR done ===
+
+[44/48] -- elapsed 571.0m
+
+=== TW ===  start 2026-04-30T19:21:32.473397+00:00
+  [tw] discover                 ... OK (6s)
+  [tw] shape_blog               ... OK (5s)
+  [tw] shape_service            ... FAIL rc=1 (1s)
+  [tw] upload_blog_heroes       ... OK (42s)
+  [tw] post_blog                ... OK (40s)
+=== TW done ===
+
+[45/48] -- elapsed 594.6m
+
+=== UA ===  start 2026-04-30T19:45:07.925546+00:00
+  [ua] discover                 ... OK (6s)
+  [ua] shape_blog               ... OK (2s)
+  [ua] shape_service            ... FAIL rc=1 (1s)
+  [ua] upload_blog_heroes       ... OK (23s)
+  [ua] post_blog                ... OK (25s)
+=== UA done ===
+
+[46/48] -- elapsed 607.8m
+
+=== US ===  start 2026-04-30T19:58:17.644769+00:00
+  [us] discover                 ... OK (5s)
+  [us] shape_blog               ... OK (3s)
+  [us] shape_service            ... OK (2s)
+  [us] upload_blog_heroes       ... FAIL rc=1 (79s)
+  [us] upload_service_heroes    ... OK (26s)
+  [us] post_blog                ... OK (37s)
+  [us] post_service             ... OK (17s)
+=== US done ===
+
+[47/48] -- elapsed 618.8m
+
+=== VN ===  start 2026-04-30T20:09:21.071410+00:00
+  [vn] discover                 ... OK (4s)
+  [vn] shape_blog               ... OK (1s)
+  [vn] shape_service            ... OK (1s)
+  [vn] upload_blog_heroes       ... OK (21s)
+  [vn] upload_service_heroes    ... OK (26s)
+  [vn] post_blog                ... OK (13s)
+  [vn] post_service             ... OK (24s)
+=== VN done ===
+
+[48/48] -- elapsed 631.8m
+
+=== ZA ===  start 2026-04-30T20:22:18.507008+00:00
+  [za] discover                 ... OK (7s)
+  [za] shape_blog               ... FAIL rc=1 (1s)
+  [za] shape_service            ... OK (4s)
+  [za] upload_service_heroes    ... OK (38s)
+  [za] post_service             ... OK (53s)
+=== ZA done ===
+
+All done. Total elapsed: 655.4m

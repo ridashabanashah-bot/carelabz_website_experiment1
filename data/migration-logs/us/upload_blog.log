@@ -1,0 +1,75 @@
+Fetching existing Strapi media (prefix 'us-blog-')...
+  0 matching files in Strapi
+
+  OK    arc-flash-study-a-grandeur-or-mandate -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/us_blog_arc_flash_study_a_grandeur_or_mandate_d220690eb3.png
+  OK    energy-conservation-by-auditing-power-quality -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/us_blog_energy_conservation_by_auditing_power_quality_f4b84cc953.jpg
+  OK    improving-reliability-through-electrical-safety-audit-at-a-retail-company -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/us_blog_improving_reliability_through_electrical_safety_audit_at_a_retail_company_64342cbf70.jpg
+  OK    prioritizing-a-safe-work-environment-at-a-multinational-technology-company -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/us_blog_prioritizing_a_safe_work_environment_at_a_multinational_technology_company_6e1f05f839.jpg
+  OK    resolving-safety-issues-with-arc-flash-and-lockout-tagout-services-at-a-leading-medical-company -> https://rational-cheese-8e8c4f80ea.media.strapiapp.com/us_blog_resolving_safety_issues_with_arc_flash_and_lockout_tagout_services_at_a_leading_medical_company_1a8a27e898.jpg
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 903, in _error_catcher
+    yield
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1028, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1011, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ~~~~~~~~~~~~~^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 484, in read
+    s = self.fp.read(amt)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 822, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1257, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1112, in read
+    data = self._raw_read(amt)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 1027, in _raw_read
+    with self._error_catcher():
+         ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\response.py", line 908, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='rational-cheese-8e8c4f80ea.strapiapp.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-upload-hero-images.py", line 168, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-upload-hero-images.py", line 152, in main
+    url = upload(local)
+  File "C:\Users\RidaShahariyar\OneDrive - Care Labs\Desktop\website_rebuild_project\scripts\country-upload-hero-images.py", line 96, in upload
+    r = requests.post(f"{STRAPI}/api/upload", headers=H, files=files, timeout=60)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 749, in send
+    r.content
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 904, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RidaShahariyar\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\models.py", line 828, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='rational-cheese-8e8c4f80ea.strapiapp.com', port=443): Read timed out.

@@ -1,0 +1,10 @@
+  NEW   arc-flash-analysis-in-new-zealand-nz (published)
+  ENR   load-flow-analysis-in-new-zealand-nz (288c -> 5838c)
+  ENR   relay-coordination-study-in-new-zealand-nz (328c -> 3307c)
+  ENR   short-circuit-analysis-in-new-zealand-nz (301c -> 5692c)
+
+=== DONE nz/service ===
+Created:  1
+Enriched: 3
+Skipped:  0
+Failed:   0
